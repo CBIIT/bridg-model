@@ -1,0 +1,9 @@
+SELECT distinct t_object.stereotype AS [RIM Class Name],  t_attribute.Name AS [Attribute Name], "Stereotype" as [Stereotype Indicator]
+FROM (t_object INNER JOIN t_attribute ON t_object.Object_ID = t_attribute.Object_ID)
+WHERE ((t_object.Object_Type)="Class")
+AND      ((t_object.stereotype) is not null)
+UNION SELECT distinct t_object.name AS [RIM Class Name],  t_attribute.Name AS [Attribute Name], "No Stereotype" as [Stereotype Indicator]
+FROM (t_object INNER JOIN t_attribute ON t_object.Object_ID = t_attribute.Object_ID)
+WHERE ((t_object.Object_Type)="Class")
+AND      ((t_object.stereotype) is null)
+ORDER BY [Stereotype Indicator], [RIM Class Name], [Attribute Name];

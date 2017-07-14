@@ -1,0 +1,8 @@
+SELECT t_package.Name AS Package, t_object.Name AS Class, t_attribute.Name AS Attribute, t_attribute.Type, t_attribute.Notes, t_attribute.Pos, t_attribute.ID
+FROM t_package LEFT JOIN (t_object LEFT JOIN t_attribute ON t_object.Object_ID = t_attribute.Object_ID) ON t_package.Package_ID = t_object.Package_ID
+WHERE (((t_object.Object_Type)="class"))
+ORDER BY t_package.Name, t_object.Name, t_attribute.Pos;
+
+
+
+

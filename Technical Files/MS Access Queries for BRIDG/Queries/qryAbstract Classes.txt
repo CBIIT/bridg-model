@@ -1,0 +1,4 @@
+SELECT t_package.Name AS Package, t_object.Name AS Class, t_object.Note AS Definition, t_object.Abstract
+FROM t_package INNER JOIN t_object ON t_package.Package_ID = t_object.Package_ID
+WHERE (((t_package.Name)="Protocol Representation Sub-domain" Or (t_package.Name)="Common Sub-domain" Or (t_package.Name)="Adverse Event Sub-domain" Or (t_package.Name)="Regulatory Sub-domain" Or (t_package.Name)="Study Conduct Sub-domain") AND ((t_object.Abstract)="1") AND ((t_object.Object_Type)="Class"))
+ORDER BY t_package.Name, t_object.Name;

@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="BRIDGBuild" default="all" basedir=".">
+  <property name="ITS_DIR" value="UNSPECIFIED"/>
+  <import file="${ITS_DIR}\ToolFiles\build.xml"/>
+<!--  <property name="candir" value="${basedir}\_Common\"/>
+  <import file="..\_Common\bin\build.xml"/>-->
+  <property name="tmp.visioList" value="visioList.tmp"/>
+  <property name="xmi.bridg" value="../Model - UML/BRIDG.XML"/>
+  <!-- Override ITS directories -->
+  <property name="dirs.input" value="${basedir}/input/"/>
+  <property name="dirs.temp" value="${basedir}/temporary/"/>
+  <property name="dirs.output" value="${basedir}/output/"/>
+  <property name="dirs.build" value="${dirs.temp}build"/>
+  <property name="dirs.buildVisios" value="${dirs.temp}visio"/>
+  <property name="dirs.buildCommon" value="${dirs.temp}buildCommon"/>
+  <property name="dirs.visios" value="${dirs.input}visios"/>
+  <property name="dirs.dynamic" value="${dirs.input}dynamicModelFiles"/>
+  <property name="dirs.reports" value="${dirs.output}reports"/>
+  <property name="dirs.validate" value="${dirs.output}validate"/>
+
+  <property name="sourceOrigDir.visioXml" value="${dirs.visios}"/>
+  <property name="sourceExt.visioBackupXml" value="_bak.xml"/>
+  <property name="dirs.input.hmd" value="${dirs.visios}\"/>
+  <property name="dirs.input.cmet" value="${dirs.visios}\"/>
+  <property name="dirs.input.common" value="${dirs.visios}\"/>
+  <property name="dirs.input.rim" value="${ITS_DIR}\inputFiles\CommonSourceFiles\"/>
+  <property name="dirs.input.vocab" value="${ITS_DIR}\inputFiles\CommonSourceFiles\"/>
+  <property name="sourceDir.visioXml" value="${dirs.buildVisios}"/>
+  <property name="dirs.input.visio" value="${sourceDir.visioXml}\"/>
+  <property name="dirs.input.derived" value="${dirs.build}\"/>
+  <property name="dirs.output.relative.mif2" value="../output/MIF2/"/>
+  <property name="buildName.combinedXml" value="combined.mif"/>
+  <property name="buildLib.combinedXml" value="${dirs.build}/${buildName.combinedXml}"/>
+  <property name="buildName.combinedCollapsedXml" value="combinedCollapsed.mif"/>
+  <property name="buildLib.combinedCollapsedXml" value="${dirs.build}/${buildName.combinedCollapsedXml}"/>
+  <property name="buildLib.mifInfo" value="${dirs.build}/mifInfo.xml"/>
+  <property name="buildName.xmiInfo" value="xmiInfo.xml"/>
+  <property name="buildLib.xmiInfo" value="${dirs.build}/${buildName.xmiInfo}"/>
+  <property name="buildLib.mappingCSV" value="${dirs.reports}/BRIDG UML to RIM Mapping.csv"/>
+  <!-- ======================================================= -->
+  <target name="all" depends="MakeDirectories, CopyVisio, CheckBRIDGStuff, MIFXMICompare, VocabDomainReport, CodeReport, IssuesReport, MappingCSV, V3Generator.all">
+    <tstamp/>
+    <echo message="${DSTAMP} ${TSTAMP}"/>
+  </target>
+  <target name="CheckBRIDGStuff" depends="VisioToMif">
+    <xslt basedir="${dirs.initialMif}" destdir="${dirs.validate}" includes="*${ext.mifFlat}" extension="-BRIDG.txt" classpathref="saxon" style="tools/CheckBRIDGStuff.xslt">
+      <factory name="${path.saxon}"/>
+    </xslt>
+  </target>
+  <target name="VocabDomainReport" depends="CombineMif">
+    <xslt in="${buildLib.combinedXml}" out="${dirs.reports}/vocabularyDomains.txt" classpathref="saxon" style="tools/VocabDomainReport.xslt">
+      <factory name="${path.saxon}"/>
+    </xslt>
+  </target>
+  <target name="CodeReport" depends="CombineMif">
+    <xslt in="${buildLib.combinedXml}" out="${dirs.reports}/vocabularyCodes.txt" classpathref="saxon" style="tools/VocabCodeReport.xslt">
+      <factory name="${path.saxon}"/>
+    </xslt>
+  </target>
+  <target name="IssuesReport" depends="CombineMif">
+    <xslt in="${buildLib.combinedXml}" out="${dirs.reports}/openIssues.txt" classpathref="saxon" style="tools/IssuesReport.xslt">
+      <factory name="${path.saxon}"/>
+    </xslt>
+  </target>
+  <target name="MIFInfo" depends="CombineMif">
+    <xslt in="${buildLib.combinedXml}" out="${buildLib.mifInfo}" classpathref="saxon" style="tools/ExtractMIFInfo.xslt">
+      <factory name="${path.saxon}"/>
+    </xslt>
+  </target>
+  <target name="MappingCSV" depends="MIFInfo">
+    <xslt in="${buildLib.mifInfo}" out="${buildLib.mappingCSV}" classpathref="saxon" style="tools/CreateExcelMappingReport.xslt">
+      <factory name="${path.saxon}"/>
+    </xslt>
+  </target>
+  <target name="XMIInfo" depends="CombineMif">
+    <xslt in="${xmi.bridg}" out="${buildLib.xmiInfo}" classpathref="saxon" style="tools/ExtractUMLModelInfo.xslt">
+      <factory name="${path.saxon}"/>
+    </xslt>
+  </target>
+  <target name="MIFXMICompare" depends="MIFInfo, XMIInfo">
+    <dependset>
+      <srcfilelist dir="${dirs.build}" files="${buildName.xmiInfo}"/>
+      <targetfilelist dir="${dirs.reports}" files="MIFandXMICompare.txt"/>
+    </dependset>
+    <xslt in="${buildLib.mifInfo}" out="${dirs.reports}/MIFandXMICompare.txt" classpathref="saxon" style="tools/CompareMIFandXMI.xslt">
+      <factory name="${path.saxon}"/>
+      <param name="xmiInfoName" expression="${buildLib.xmiInfo}"/>
+    </xslt>
+  </target>
+  <target name="VisioList">
+    <if>
+      <not>
+        <uptodate targetfile="${dirs.temp}${tmp.visioList}">
+          <srcfiles dir="${sourceDir.visioXml}" includes="*${sourceExt.visioXml}"/>
+        </uptodate>
+      </not>
+      <then>
+        <echo message="" file="${dirs.temp}${tmp.visioList}"/>
+        <foreach target="ListVisioFile" param="filepathname" inheritall="true">
+          <path>
+            <fileset dir="${sourceDir.visioXml}" includes="*${sourceExt.visioXml}"/>
+          </path>
+        </foreach>
+      </then>
+    </if>
+  </target>
+  <target name="ListVisioFile">
+    <pathconvert property="trimmedName" pathsep=";">
+      <path location="${filepathname}"/>
+      <mapper type="regexp" from="([^\\/]*[\\/])*([^\s]*)(.*)" to="\2*"/>
+    </pathconvert>
+    <echo message="${trimmedName}&#x0A;" file="${dirs.temp}${tmp.visioList}" append="true"/>
+  </target>
+  <target name="CombineMif" depends="FilterNames, VisioList">
+    <dependset>
+      <srcfileset dir="${dirs.temp}" includes="*${ext.mifFlat}"/>
+      <targetfilelist dir="${dirs.build}" files="${buildName.combinedXml}"/>
+    </dependset>
+    <if>
+      <not>
+        <available filepath="${dirs.build}" file="${buildName.combinedXml}"/>
+      </not>
+      <then>
+        <concat destfile="${buildLib.combinedXml}" append="no">&lt;?xml version="1.0" encoding="iso-8859-1"?&gt;
+&lt;staticModels&gt;
+        </concat>
+        <concat destfile="${buildLib.combinedXml}" append="yes">
+          <fileset dir="${dirs.gennedMif}" includesFile="${dirs.temp}${tmp.visioList}"/>
+        </concat>
+        <concat destfile="${buildLib.combinedXml}" append="yes">
+&lt;/staticModels&gt;
+        </concat>
+      </then>
+    </if>
+  </target>
+  <target name="CombineCollapsedMif" depends="CollapseMIF, VisioList">
+    <dependset>
+      <srcfileset dir="${buildDir.fixedMif}" includes="*${buildExt.fixedMif}"/>
+      <targetfilelist dir="${dirs.build}" files="${buildName.combinedCollapsedXml}"/>
+    </dependset>
+    <if>
+      <not>
+        <available filepath="${dirs.build}" file="${buildName.combinedCollapsedXml}"/>
+      </not>
+      <then>
+        <concat destfile="${buildLib.combinedCollapsedXml}" append="no">&lt;?xml version="1.0" encoding="iso-8859-1"?&gt;
+&lt;staticModels&gt;
+        </concat>
+        <concat destfile="${buildLib.combinedCollapsedXml}" append="yes">
+          <fileset dir="${buildDir.fixedMif}" includesFile="${dirs.temp}${tmp.visioList}">
+            <filename name="*${buildExt.fixedMif}"/>
+          </fileset>
+        </concat>
+        <concat destfile="${buildLib.combinedCollapsedXml}" append="yes">
+&lt;/staticModels&gt;
+        </concat>
+      </then>
+    </if>
+  </target>
+  <target name="init">
+    <tstamp/>
+    <echo message="Starting ${proj}"/>
+    <delete>
+      <fileset dir="${sourceOrigDir.visioXml}" includes="*${sourceExt.visioBackupXml}"/>
+    </delete>
+  </target>
+  <target name="HMDToStaticMIF" depends="CommonMIFFiles,CopyVisio">
+    <dependset>
+      <srcfilelist dir="${dirs.tools.xslt}" files="${xslt.name.convertBase},${xslt.name.transformPackageIds}"/>
+      <targetfileset dir="${buildDir.flatMif}" includes="*${ext.mifInput}"/>
+    </dependset>
+  </target>
+  <target name="MakeDirectories" depends="init">
+    <mkdir dir="${dirs.reports}"/>
+    <mkdir dir="${dirs.validate}"/>
+    <mkdir dir="${dirs.visios}"/>
+    <mkdir dir="${dirs.buildVisios}"/>
+  </target>
+  <target name="CopyVisio" depends="init, CleanFiles">
+    <if>
+      <available file="${lib.visioIncludes}"/>
+      <then>
+        <copy todir="${sourceDir.visioXml}" flatten="true">
+          <fileset dir="${basedir}/.." includesfile="${lib.visioIncludes}"/>
+        </copy>
+      </then>
+    </if>
+    <delete>
+      <fileset dir="${sourceDir.visioXml}" includes="*_bak.xml"/>
+    </delete>
+    <copy todir="${sourceDir.visioXml}">
+      <fileset dir="${sourceOrigDir.visioXml}" includes="*${sourceExt.visioXml}"/>
+    </copy>
+  </target>
+  <!-- Todo: Report of all unique issues (and another of impNotes) with model/class/attribute (unique by class, attribute & text), unique report of all "mapped items" as XML so we can cross-compare w/ BRIDG -->
+</project>

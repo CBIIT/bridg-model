@@ -1,0 +1,12 @@
+<!--$Id: BuildApprovalCompositePackage.xsl 7375 2009-01-26 19:26:53Z wbeeler $ -->
+		<package packageKind="root" name="Ballot2011Jan"
+         title="Ballot Reference and Structural Elements for Ballot2011Jan"
+         isComplete="false"
+         schemaVersion="2.0">
+   <packageLocation root="PUB" combinedId="Ballot2011Jan"/>
+   <header>
+      <legalese copyrightOwner="Health Level Seven, Inc." copyrightYears="2010"/>
+      <responsibleGroup groupName="V3 Publishing Committee" organizationName="HL7"/>
+   </header>
+   <content/>
+</package>

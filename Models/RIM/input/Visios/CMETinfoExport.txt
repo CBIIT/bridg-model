@@ -1,0 +1,60 @@
+name,artifactId,classCode,rootClass,description,attributionLevel
+E_Device,COCT_MT140007US,DEV,Entity,blah,informational
+E_LivingSubject,COCT_MT030000US,LIV,Entity,blah,universal
+E_Organization,COCT_MT150000US,ORG,Entity,blah,universal
+E_Person,COCT_MT030200US,PSN,Entity,blah,universal
+E_Place,COCT_MT710000US,PLC,Entity,blah,universal
+E_ProductKind,POCP_MT010200US,MAT,Entity,blah,universal
+E_PublicHealthMaterial,COCT_RM841200US,MAT,Entity,blah,universal
+R_AssignedPerson,COCT_MT090100US,ASSIGNED,Role(Performed only),blah,universal
+R_InvestigativeSubject,COCT_MT550000US,IDENT,Role(Performed only),blah,universal
+R_ProductListed,POCP_MT010100US,MANU,Role(Performed only),blah,universal
+R_RelatedParty,COCT_RM910000US,ROL,Role(Performed only),blah,universal
+R_ServiceDeliveryLocation,COCT_MT240000US,SDLOC,Role(Performed only),blah,universal
+R_ServiceDeliveryLocation,COCT_MT240003US,SDLOC,Role(Performed only),blah,contact
+R_Specimen,COCT_MT080000US,SPEC,Role(Performed only),blah,universal
+A_AdministrativeActivity,POOO_RM000002US,ACT,Act,blah,universal
+A_AdverseEvent,REPC_RM000012US,OBS,Act,blah,universal
+A_DefinedActivity,COMT_MT000002US,ACT,Act,blah,universal
+A_DefinedActivityBase,COMT_MT000005US,ACT,Act,blah,universal
+A_DefinedCriterionGroup,COMT_MT000006US,ACT,Act,blah,universal
+A_DefinedNotification,COMT_MT000010US,INFRM,Act,blah,universal
+A_DefinedObservation,POOB_RM410001US,OBS,Act,blah,universal
+A_DefinedObservationResult,POOB_RM410011US,OBS,Act,blah,universal
+A_DefinedSubstanceAdmin,PORX_RM000003US,SBADM,Act,blah,universal
+A_Document,POCD_MT000001US,DOC,Act,blah,universal
+A_PerformedNotification,COMT_MT000011US,INFRM,Act,blah,universal
+A_PlannedActivity,COMT_MT000001US,ACT,Act,blah,universal
+A_PlannedNotification,COMT_MT000012US,INFRM,Act,blah,universal
+A_PlannedRandomization,PORT_DM100003US,OBS,Act,blah,universal
+A_PerformedActivity,COMT_MT000003US,ACT,Act,blah,universal
+A_PerformedActivityBase,COMT_MT000004US,ACT,Act,blah,universal
+A_PerformedObservation,POOB_RM410000US,OBS,Act,blah,universal
+A_PerformedObservationResult,POOB_RM410010US,OBS,Act,blah,universal
+A_ProcedureEvent,POOO_RM000001US,PROC,Act,blah,universal
+A_ScheduledNotification,COMT_MT000013US,INFRM,Act,blah,universal
+A_StudyAgentTransfer,PORX_RM000002US,SPLY,Act,blah,universal
+A_StudyArm,COCT_MT000018US,CLUSTER,Act,blah,universal
+A_StudyEpoch,COCT_MT000020US,CLUSTER,Act,blah,universal
+A_StatisticalAnalysisPlan,COCT_MT000021US,ACT,Act,blah,universal
+R_StudySubject,COCT_MT000022US,ADMM,Role(Performed only),blah,universal
+A_SubstanceAdminEvent,PORX_RM000001US,SBADM,Act,blah,universal
+E_Biologic,COCT_MT000029US,MMAT,Entity,blah,universal
+E_BiologicEntityPart,COCT_MT000014US,LIV,Entity,blah,universal
+E_BiologicEntityGroup,COCT_MT000015US,LIV,Entity,blah,universal
+E_Device,COCT_MT000025US,DEV,Entity,blah,universal
+E_ProductGroup,COCT_MT000028US,MMAT,Entity,blah,universal
+R_DocumentAuthor,COCT_MT000032US,ROL,Role(Performed only),blah,universal
+R_ExperimentalUnit,COCT_MT000026US,ROL,Role(Performed only),blah,universal
+R_Laboratory,COCT_MT000019US,ASSIGNED,Role(Performed only),blah,universal
+R_OversightCommittee,COCT_MT000017US,LIC,Role(Performed only),blah,universal
+R_Performer,COCT_MT000024US,ROL,Role(Performed only),blah,universal
+R_RegulatoryAuthority,COCT_MT000016US,LIC,Role(Performed only),blah,universal
+R_ResearchStaff,COCT_MT000012US,CRINV,Role(Performed only),blah,universal
+R_StratumGroup,COCT_MT000035US,RESBJ,Role(Performed only),blah,universal
+R_StudyLegalSponsor,COCT_MT000030US,ASSIGNED,Role(Performed only),blah,universal
+R_StudyPersonnel,COCT_MT000033US,ROL,Role(Performed only),blah,universal
+R_StudyResearchCoordinator,COCT_MT000031US,ASSIGNED,Role(Performed only),blah,universal
+R_StudySite,COCT_MT000009US,SDLOC,Role(Performed only),blah,universal
+R_StudySitePersonnel,COCT_MT000034US,ROL,Role(Performed only),blah,universal
+R_StudySiteResearchCoordinator,COCT_MT000027US,ASSIGNED,Role(Performed only),blah,universal

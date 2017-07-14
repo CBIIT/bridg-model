@@ -1,0 +1,3 @@
+Tools > Options
+select Object
+click on Show Duplicate Tags

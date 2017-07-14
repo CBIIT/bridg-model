@@ -1,0 +1,136 @@
+# Schema generator parameters
+
+# modelPrefix: <string>
+#	Limits processing to only those models whose filenames have a matching 
+#	prefix.  
+#
+#	Note: specifying an xxxx_MT prefix may prevent processing of models
+#	      contained within an HD file.
+modelPrefix = 
+
+# interactionPrefix: <string>
+#	limits generation of dynamic schemas to *only* those with ids which are an
+#	exact match for the specified id
+interactionPrefix = 
+
+# generate: static/dynamic/all
+#	- if set to 'static', will migrate all static schemas from the source files
+#	directory and any dependent CMET schemas
+#	- if set to 'dynamic', will migrate all interaction schemas referenced in
+#     the dynamic model files, as well as any dependent model and CMET schemas
+#	- if set to 'all' will migrate all generated schemas
+generate = static
+
+# showAnnotations: none/MIF
+#	Indicates what sort of annotations should be included within the schema:
+#	  - None - no annotations will be specified.
+#	  - MIF - Annotations will be full MIF content which defines the element
+showAnnotations = MIF
+
+# includeChildModelDerivations: true/false
+# If true when creating MIF from Visio models, derivations to an equivalent
+# HMD and R-MIM will be added when producing the MIF for MT files.
+includeChildModelDerivations = false
+
+# useDescriptiveNames: true/false
+# If true, generated filenames will include descriptive names in addition 
+# to model identifiers.  This parameter must always be false when 
+# generating ballot output.
+useDescriptiveNames = true
+
+# useIdBasedFileNames: true/false
+# If true, when processing MIF files will generate MT and HD filenames based
+# on the identifier in the entry-point.  If false, will generate filenames
+# corresponding exactly to the entry point identifier only
+useIdBasedFileNames = false
+
+# logLevel: error/warn/info/verbose/debug
+#	sets level of log file content. Default should be "warn"
+logLevel = warn
+
+# checkMifValidity: true/false
+#	If true, runs a validation against the generated MIF files to verify 
+#	whether they are compliant with the MIF schemas and displays any errors.
+checkMifValidity = false
+
+# checkSchemaValidity: true/false
+#	If true, runs a validation against the generated schema files to verify 
+#	whether they are valid according to Xerces 2.5
+checkSchemaValidity = false
+
+# cleanOutputDirectories: true/false
+#	If true, will clean the output directories as part of a 'clean before build'.
+#       Otherwise, will leave the existing content (though it may overwrite).
+cleanOutputDirectories = false
+
+# cleanBeforeBuild: true/false
+#	If true, wipes the output and temporary directories to force regeneration 
+#	of all files
+cleanBeforeBuild = false
+
+# dropUVnnFromFileNames: true/false
+#   added to support publication of first Edition(s)
+#	If true, causes version code ('UVnn') to be dropped when
+#   creating *-NoEdit.hm (table view) and *.csv (Excel) files
+#   and also suppresses these within these files when generating 
+#   references to these files and to the rmim *.htm files.
+dropUVnnFromFileNames = false
+
+# coreSchemaPath: relative path
+#	The relative path from principle schema directory to the core schemas
+#coreSchemaPath = ../coreschemas/
+coreSchemaPath = ../coreschemas/
+
+# createCollapsed: true/false
+# if true, collapsed versions of the static models are created, including
+# HTML views
+createCollapsed = false
+
+# createMif2: true/false
+# if true, generates MIF2 artifacts for use with the Eclipse v3 editor
+# and other MIF2-based tools
+createMif2 = true
+
+# generateMTs: true/false
+# If true, generates Excel views for MTs as well as HMDs
+generateMTs = true
+
+# generateSchemas: true/false
+#	If true, causes XML ITS schemas to be generated
+generateSchemas = true
+
+# generateTables: true/false
+#	If true, causes HTML table-views to be generated
+generateTables = true
+
+# generateCSVs: true/false
+#	If true, causes CSV files to be generated for Excel
+generateCSVs = true
+
+# generateExampleSchemas: true/false
+#	If true, causes XML ITS Schemas with example-validation extensions to be 
+# generated for Excel
+generateExampleSchemas = false
+
+# generateExamples: true/false
+#	- if true will generate examples from the "fragments" directory.
+generateExamples = false
+
+# validateExamples: true/false
+#	If true, generates schemas for and validates example fragments
+validateExamples = false
+
+# createSVG: true/false
+# if true, creates SVG graphic descriptions of the static models for use
+# in publishing and other MIF2-based tools -- still in BETA
+createSVG = false
+
+cmetsRealm = US
+cmetsVersion = BRIDG
+datatypesRealm = UV
+datatypesVersion = 2.0
+vocabRealm = UV
+generateCollapsedSchemas = false
+packageStatus =
+generateDatatypeSchemas = false
+splitDMIMModels = true

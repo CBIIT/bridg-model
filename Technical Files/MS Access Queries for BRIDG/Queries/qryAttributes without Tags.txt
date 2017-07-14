@@ -1,0 +1,4 @@
+SELECT t_package.Name AS Package, t_object.Name AS Class, t_attribute.Name AS Attribute, t_attributetag.PropertyID AS Tag
+FROM t_package INNER JOIN ((t_object INNER JOIN t_attribute ON t_object.Object_ID = t_attribute.Object_ID) LEFT JOIN t_attributetag ON t_attribute.ID = t_attributetag.ElementID) ON t_package.Package_ID = t_object.Package_ID
+WHERE (((t_attributetag.PropertyID) Is Null) AND ((t_object.Object_Type)="Class")) AND ((t_package.Name)="Protocol Representation Sub-domain" Or (t_package.Name)="Common Sub-domain" Or (t_package.Name)="Adverse Event Sub-domain" Or (t_package.Name)="Regulatory Sub-domain" Or (t_package.Name)="Study Conduct Sub-domain")
+ORDER BY t_package.Name, t_object.Name, t_attribute.Name, t_attributetag.PropertyID;

@@ -1,0 +1,3 @@
+README.txt for BRIDG Queries
+
+The MS Access queries in this folder are purely intended for the internal BRIDG modeling team use.  The BRIDG modeling team uses these as base queries and edits and updates them for many different internal purposes.  As such, the queries may not execute in another environment and will not be supported by the BRIDG modeling team.

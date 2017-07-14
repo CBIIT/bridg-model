@@ -1,0 +1,11 @@
+SELECT t_object.object_id, t_object.name, t_object.author, t_object.note, home_package.name as "Home Package",home_package.package_id as "Home Package ID",  parent_package.name as "Parent Package",  parent_package.package_id as "Parent Package ID",
+end_connected_object.name as "End Connected Object", start_connected_object.name as "Start Connected Object"
+from (((((t_object LEFT JOIN t_package as home_package ON t_object.package_id = home_package.package_id ) 
+                          LEFT JOIN t_package as parent_package ON home_package.parent_id = parent_package.package_id ) 
+                          LEFT JOIN t_connector as start_connector ON t_object.object_id = start_connector.start_object_id) 
+                          LEFT JOIN t_object as end_connected_object ON start_connector.end_object_id = end_connected_object.object_id) 
+                          LEFT JOIN t_connector as end_connector ON t_object.object_id = end_connector.end_object_id) 
+                          LEFT JOIN t_object as start_connected_object ON end_connector.start_object_id = start_connected_object.object_id
+where t_object.object_type = "Note"
+and home_package.package_id NOT in (23, 305, 307, 309, 312, 311)
+order by parent_package.package_id, home_package.package_id, t_object.object_id;

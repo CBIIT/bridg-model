@@ -1,0 +1,35 @@
+READ ME BEFORE RUNNING THESE QUERIES:
+
+Note that either of these queries will need to be updated if more sub-domain packages are added.
+Also if a different diagram is used as the comprehensive diagram you're comparing against, you'll have to updated the diagram_id value.
+
+
+Classes in the comprehensive diagram that are not in the official packages:
+
+select t_object.name, t_object.object_id
+from t_object inner join t_diagramObjects on t_diagramObjects.object_id = t_object.object_id
+where t_object.object_id not in
+(Select t_object2.object_id
+from t_object as t_object2 
+where t_object2.package_id in (574, 575, 576, 577, 578, 579, 580, 612, 613, 614)
+and t_object2.object_type = "Class"
+)
+and   t_diagramObjects.diagram_id = 963
+and   t_object.object_type = "Class"
+order by 1
+
+
+Classes in the official packages that are not in the comprehensive diagram:
+
+Select t_object.name, t_object.object_id
+from t_object 
+where t_object.object_id not in
+(select t_object2.object_id
+from t_object as t_object2 inner join t_diagramObjects on t_diagramObjects.object_id = t_object2.object_id
+where t_diagramObjects.diagram_id = 963
+and   t_object2.object_type = "Class"
+)
+and   t_object.package_id in (574, 575, 576, 577, 578, 579, 580, 612, 613, 614)
+and   t_object.object_type = "Class"
+order by 1
+

@@ -1,0 +1,4 @@
+SELECT t_package.Name, t_object.name, t_objectproperties.property, t_objectproperties.value
+FROM t_objectproperties, t_package INNER JOIN t_object ON t_package.Package_ID = t_object.Package_ID
+WHERE (((t_object.object_id)=[t_objectproperties].[object_id]))
+ORDER BY t_object.name;

@@ -1,0 +1,17 @@
+<!--
+  - This file contains a complete list of the domains within the UML model to be exported.
+  - Each domain includes two pieces of information: 
+  - - the domain 'code', used in tags to filter and modify content for the domain
+  - - the domain 'diagram title', representing the class diagram which includes all domain content.
+  -  -  (Actual diagram names are expected to be in the format "View [code]: [title]".  For example "View AE: Adverse Event")
+  -
+  - The information in this file is used in the creation of the domain specific views of the base UML model.
+  -->
+<domains>
+  <domain code="AE" diagramTitle="Adverse Event"/>
+  <domain code="CM" diagramTitle="Common"/>
+  <domain code="PR" diagramTitle="Protocol Representation"/>
+  <domain code="RG" diagramTitle="Regulatory"/>
+  <domain code="SA" diagramTitle="Statistical Analysis"/>
+  <domain code="SC" diagramTitle="Study Conduct"/>
+</domains>

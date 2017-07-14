@@ -1,0 +1,5 @@
+READ ME for MS Access Queries for BRIDG
+
+The files in this folder are for internal use by the BRIDG modeling team and are not intended to be used by others.  As such, they will not be supported by the team for external use.
+
+Instructions for how to run the BRIDG validation script are included in the EAP Script - Validate BRIDG Model - Documentation.xlsx file

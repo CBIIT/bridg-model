@@ -1,0 +1,4 @@
+SELECT t_package.Name AS Package, t_object.Name AS Class, t_objectconstraint.ConstraintType, t_objectconstraint.Constraint, t_objectconstraint.Notes
+FROM t_package INNER JOIN (t_object INNER JOIN t_objectconstraint ON t_object.Object_ID = t_objectconstraint.Object_ID) ON t_package.Package_ID = t_object.Package_ID
+WHERE ((t_package.Name)="Protocol Representation Sub-domain" Or (t_package.Name)="Common Sub-domain" Or (t_package.Name)="Adverse Event Sub-domain" Or (t_package.Name)="Regulatory Sub-domain" Or (t_package.Name)="Study Conduct Sub-domain")
+ORDER BY t_objectconstraint.Constraint, t_object.Name;

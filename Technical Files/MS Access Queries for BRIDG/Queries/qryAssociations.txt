@@ -1,0 +1,77 @@
+ORIGINAL Query in SVN:
+
+SELECT t_connector.Connector_Type, 
+t_package.Name AS StartPackage, 
+t_object.Name AS StartClass, 
+t_connector.SourceRole,  
+t_connector.SourceCard,  
+t_connector.Name, 
+t_connectorconstraint.Constraint AS [Inverse Name], 
+t_connector.DestRole, 
+t_connector.DestCard, 
+t_object_1.Name AS EndClass, 
+t_package_1.Name AS EndPackage, 
+t_connector.Notes
+FROM ((t_package INNER JOIN ((t_object INNER JOIN t_connector ON t_object.Object_ID = t_connector.Start_Object_ID) INNER JOIN t_object AS t_object_1 ON t_connector.End_Object_ID = t_object_1.Object_ID) ON t_package.Package_ID = t_object.Package_ID) INNER JOIN t_package AS t_package_1 ON t_object_1.Package_ID = t_package_1.Package_ID) LEFT JOIN t_connectorconstraint ON t_connector.Connector_ID = t_connectorconstraint.ConnectorID
+WHERE (((t_object.Object_Type)="Class") AND ((t_object_1.Object_Type)="Class") AND ((t_connectorconstraint.ConstraintType)="Inverse Relation"))
+ORDER BY  t_package.Name, t_connector.Connector_Type, t_object.Name, t_object_1.Name;
+
+
+Edited query for LSDAM classes only:
+
+SELECT t_sourcepackage.Name AS [Source Package],  
+t_connector.Connector_Type, 
+t_sourceobject.Name AS [Source Class], 
+t_connector.SourceRole,  
+t_connector.SourceCard,  
+t_connector.Name AS [Connector Name], 
+t_connectorconstraint.ConstraintType,
+t_connectorconstraint.Constraint AS [Inverse Name], 
+t_connector.DestRole AS [TargetRole], 
+t_connector.DestCard AS [TargetCard], 
+t_targetobject.Name AS [Target Class], 
+t_targetpackage.Name AS [Target Package], 
+t_connector.Notes
+FROM (  (  t_package AS t_sourcepackage
+                  INNER JOIN (  (  t_object AS t_sourceobject
+                                             INNER JOIN t_connector ON t_sourceobject.Object_ID = t_connector.Start_Object_ID
+                                          ) 
+                                          INNER JOIN t_object AS t_targetobject ON t_connector.End_Object_ID = t_targetobject.Object_ID
+                                       ) 
+                                       ON t_sourcepackage.Package_ID = t_sourceobject.Package_ID
+                ) 
+                INNER JOIN t_package AS t_targetpackage ON t_targetobject.Package_ID = t_targetpackage.Package_ID
+             ) 
+             LEFT JOIN t_connectorconstraint ON t_connector.Connector_ID = t_connectorconstraint.ConnectorID
+WHERE ( ((t_sourceobject.Object_Type)="Class") 
+AND        ((t_targetobject.Object_Type)="Class")
+AND        ((t_sourcepackage.parent_id) = 616) )
+ORDER BY 1, 3, 2, 10;
+
+Query for Unified BRIDG (clinical plus life sciences packages):
+
+SELECT t_connector.Connector_Type, 
+t_package.Name AS StartPackage, 
+t_object.Name AS StartClass, 
+t_connector.SourceRole,  
+t_connector.SourceCard,  
+t_connector.Name, 
+t_connectorconstraint.Constraint AS [Inverse Name], 
+t_connector.DestRole, 
+t_connector.DestCard, 
+t_object_1.Name AS EndClass, 
+t_package_1.Name AS EndPackage, 
+t_connector.Notes
+FROM ((t_package INNER JOIN ((t_object INNER JOIN t_connector ON t_object.Object_ID = t_connector.Start_Object_ID) INNER JOIN t_object AS t_object_1 ON t_connector.End_Object_ID = t_object_1.Object_ID) ON t_package.Package_ID = t_object.Package_ID) INNER JOIN t_package AS t_package_1 ON t_object_1.Package_ID = t_package_1.Package_ID) LEFT JOIN t_connectorconstraint ON t_connector.Connector_ID = t_connectorconstraint.ConnectorID
+WHERE (((t_object.Object_Type)="Class") AND ((t_object_1.Object_Type)="Class") AND ((t_connectorconstraint.ConstraintType)="Inverse Relation"))
+AND (((t_package.Name)="Protocol Representation Sub-Domain" 
+Or (t_package.Name)="Common Sub-Domain" 
+Or (t_package.Name)="Adverse Event Sub-Domain" 
+Or (t_package.Name)="Regulatory Sub-Domain" 
+Or (t_package.Name)="Study Conduct Sub-Domain"
+Or (t_package.Name)="Statistical Analysis Sub-Domain"
+Or (t_package.Name)="Experiment Sub-Domain"
+Or (t_package.Name)="Molecular Biology Sub-Domain"
+Or (t_package.Name)="Biospecimen Sub-Domain") 
+AND ((t_object.Object_Type)="Class"))
+ORDER BY  t_package.Name, t_connector.Connector_Type, t_object.Name, t_object_1.Name;

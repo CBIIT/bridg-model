@@ -1,0 +1,13 @@
+Enterprise Architect files with .EAP extensions are readable with old versions of MS Access.
+
+NOTE:  Some of these instructions may become out of date due to changing versions of MS Access.  Since these instructions are intended for internal BRIDG modeling team use, the team will not support these instructions and external users attempting to execute this process may do so at their own risk.
+
+To open an .EAP file in MS Access:
+
+1. Make you you have an old version of MS Access - e.g. MS Access 2007 is old enough to be able to convert .mdb files to .accdb (other versions may as well but that's the one the BRIDG modeling team uses)
+2. Make a copy of the .EAP file of interest and the extension from .EAP to .mdb
+3. Double click on the file name.
+4. When Access opens up it will automatically offer to update the database to a .accdb - click Yes on that pop-up
+5. Save the *.accdb file in desired location
+6. Use the Query Design feature of MS Access to run queries against the BRIDG model
+7. If you wish to use the output in Excel, use the MS Access Export > Excel feature to ensure all data is exported. Using copy/paste will truncate cells to 255 characters.

@@ -1,0 +1,129 @@
+Error: Type differs for attribute and no qualifier specified BiologicEntityGroup.actualIndicator.  UML:BL MIF:CS
+Error: Type differs for attribute and no qualifier specified DefinedActivity.nameCode.  UML:CD MIF:HIST<CD>
+Error: Type differs for attribute and no qualifier specified DefinedActivity.repeatFrequencyRatio.  UML:RTO<INT.NONNEG,PQ.TIME> MIF:QSET<TS>
+Error: Type differs for attribute and no qualifier specified DefinedObservationResult.derivationExpression.  UML:ST MIF:ST.SIMPLE
+Error: Type differs for attribute and no qualifier specified DefinedObservationResult.targetCodingSystem.  UML:OID MIF:CD
+Error: Type differs for attribute and no qualifier specified DefinedProcedure.methodCode.  UML:CD MIF:DSET<CD>
+Error: Type differs for attribute and no qualifier specified DefinedProcedure.targetAnatomicSiteCode.  UML:CD MIF:DSET<CD>
+Error: Type differs for attribute and no qualifier specified DefinedSubstanceAdministration.doseFrequencyCode.  UML:CD MIF:QSC<TS>
+Error: Type differs for attribute and no qualifier specified DefinedSubstanceAdministration.flowRate.  UML:RTO<PQ,PQ.TIME> MIF:PQ
+Error: Type differs for attribute and no qualifier specified DocumentVersion.keywordCode.  UML:DSET<CD> MIF:CD
+Error: Type differs for attribute and no qualifier specified InterventionalStudyProtocolVersion.blindedRoleCode.  UML:DSET<CD> MIF:CD
+Error: Type differs for attribute and no qualifier specified PerformedMedicalConditionResult.endRelativeToReferenceCode.  UML:CD MIF:BL
+Error: Type differs for attribute and no qualifier specified PerformedObservationResult.resultClassificationCode.  UML:DSET<CD> MIF:CD
+Error: Type differs for attribute and no qualifier specified PerformedSubstanceAdministration.doseFrequencyCode.  UML:CD MIF:QSC<TS>
+Error: Type differs for attribute and no qualifier specified PerformedSubstanceAdministration.flowRate.  UML:RTO<PQ,PQ.TIME> MIF:PQ
+Error: Type differs for attribute and no qualifier specified PerformedSubstanceAdministration.interruptionDuration.  UML:PQ.TIME MIF:IVL.WIDTH<TS.DATETIME>
+Error: Type differs for attribute and no qualifier specified Product.classCode.  UML:DSET<CD> MIF:CD
+Error: Type differs for attribute and no qualifier specified Product.expirationDate.  UML:TS.DATE.FULL MIF:IVL.HIGH<TS.DATE.FULL>
+Error: Type differs for attribute and no qualifier specified ProductGroup.actualIndicator.  UML:BL MIF:CS
+Error: Type differs for attribute and no qualifier specified RegulatoryAssessment.expectedResubmissionDate.  UML:TS.DATETIME MIF:IVL.HIGH<TS.DATETIME>
+Error: Type differs for attribute and no qualifier specified StudyAgent.firstInHumanRiskFactorCode.  UML:DSET<CD> MIF:CD
+Error: Type differs for attribute and no qualifier specified StudyOutcomeMeasure.typeCode.  UML:DSET<CD> MIF:CD
+Error: Type differs for attribute and no qualifier specified StudyProtocolVersion.participatingLocationCode.  UML:DSET<CD> MIF:CD
+Error: Type differs for attribute and no qualifier specified StudyProtocolVersion.studySchematic.  UML:ED MIF:ED.IMAGE
+Error: Type differs for attribute and no qualifier specified TargetAnatomicSite.code.  UML:CD MIF:DSET<CD>
+Warning: Attribute DocumentVersionWorkflowStatus.code exists in the MIF with multiple datatypes: BL, CS, DSET<CD>, BL
+Warning: Attribute Material.code exists in the MIF with multiple datatypes: HIST<CD>, CD
+Warning: Attribute ScheduledActivity.statusCode exists in the MIF with multiple datatypes: HXIT<CS>, BL
+Warning: Attribute StudyOverallStatus.code exists in the MIF with multiple datatypes: HXIT<CS>, CS, BL, CS
+Warning: Attribute StudyProtocolVersion.periodicTargetAccrualNumber exists in the MIF with multiple datatypes: IVL.WIDTH<TS.DATE>, INT
+Warning: Attribute StudySiteOversightStatus.reviewBoardProcessCode exists in the MIF with multiple datatypes: BL, CD, BL
+Warning: Attribute StudySiteRecruitmentStatus.code exists in the MIF with multiple datatypes: CV, CS
+Warning: Attribute StudySubject.statusCode exists in the MIF with multiple datatypes: CS, BL, CS, HXIT<CS>
+Warning: Type differs for attribute Animal.reproductiveOrgansPresentIndicator.  UML:BL MIF:CD (Qualifier: Intact = true, Neutered = false)
+Warning: Type differs for attribute AssociatedBiologicEntity.typeCode.  UML:DSET<CD> MIF:CD (Qualifier: For multiple codes there must be multiple repetitions.)
+Warning: Type differs for attribute BiologicEntity.actualIndicator.  UML:BL MIF:CS (Qualifier: true if INSTANCE)
+Warning: Type differs for attribute CompanionStudyRelationship.registrationRequiredIndicator.  UML:BL MIF:CS (Qualifier: If code is CMPN then false, otherwise true.)
+Warning: Type differs for attribute DefinedActivity.repeatFrequencyCode.  UML:CD MIF:QSET<TS> (Qualifier: QSC<TS>)
+Warning: Type differs for attribute DefinedActivity.statusDate.  UML:TS.DATETIME MIF:HXIT<CS> (Qualifier: validTime)
+Warning: Type differs for attribute DefinedContingentOnRelationship.completionRequiredBeforeStartingIndicator.  UML:BL MIF:CS (Qualifier: if SAE, then true, else false)
+Warning: Type differs for attribute DefinedEligibilityCriterionAnswer.requiredIndicator.  UML:BL MIF:REAL (Qualifier: 0=false, 1=true)
+Warning: Type differs for attribute DefinedImaging.enhancementRate.  UML:RTO<PQ,PQ.TIME> MIF:PQ (Qualifier: numerator portion)
+Warning: Type differs for attribute DefinedProcedure.nameCodeModifiedText.  UML:ST MIF:HIST<CD> (Qualifier: originalText on prior history item)
+Warning: Type differs for attribute DefinedSubstanceAdministration.dosePeriodCode.  UML:CD MIF:RTO<EXPR<PQ>,PQ.TIME> (Qualifier: denominator.unit)
+Warning: Type differs for attribute DefinedSubstanceAdministration.periodProductDoseTotal.  UML:EXPR<PQ> MIF:RTO<EXPR<PQ>,PQ.TIME> (Qualifier: numerator)
+Warning: Type differs for attribute Device.manufactureDate.  UML:TS.DATETIME MIF:IVL<TS.DATETIME> (Qualifier: low)
+Warning: Type differs for attribute Device.singleUseDeviceIndicator.  UML:BL MIF:CS (Qualifier: RDEV = false, NRD = true)
+Warning: Type differs for attribute DocumentIdentifier.primaryIndicator.  UML:BL MIF:INT.POS (Qualifier: If 1, then true, otherwise false)
+Warning: Type differs for attribute DocumentVersion.keywordText.  UML:DSET<ST> MIF:CD (Qualifier: originalText)
+Warning: Type differs for attribute EvaluatedActivityRelationship.probabilityCode.  UML:CD MIF:ANY (Qualifier: Datatype is constrained to either REAL (probability) or CD (uncertainty))
+Warning: Type differs for attribute EvaluatedActivityRelationship.probabilityPercent.  UML:REAL MIF:ANY (Qualifier: Datatype is constrained to either REAL (probability) or CD (uncertainty))
+Warning: Type differs for attribute EvaluatedActivityRelationship.uncertaintyCode.  UML:CD MIF:ANY (Qualifier: Datatype is constrained to either REAL (probability) or CD (uncertainty))
+Warning: Type differs for attribute EvaluatedResultRelationship.probabilityCode.  UML:CD MIF:ANY (Qualifier: Datatype is constrained to either REAL (probability) or CD (uncertainty))
+Warning: Type differs for attribute EvaluatedResultRelationship.probabilityPercent.  UML:REAL MIF:ANY (Qualifier: Datatype is constrained to either REAL (probability) or CD (uncertainty))
+Warning: Type differs for attribute EvaluatedResultRelationship.uncertaintyCode.  UML:CD MIF:ANY (Qualifier: Datatype is constrained to either REAL (probability) or CD (uncertainty))
+Warning: Type differs for attribute ExperimentalUnit.statusDate.  UML:TS.DATETIME MIF:HXIT<CS> (Qualifier: validTime)
+Warning: Type differs for attribute GovernmentFunding.fundingMechanismCode.  UML:CD MIF:II (Qualifier: concatenated with other nih id parts)
+Warning: Type differs for attribute GovernmentFunding.nihInstituteCode.  UML:CD MIF:II (Qualifier: concatenated with other nih id parts)
+Warning: Type differs for attribute GovernmentFunding.serialNumberText.  UML:ST.SIMPLE MIF:II (Qualifier: concatenated with other nih id parts)
+Warning: Type differs for attribute GovernmentFunding.typeCode.  UML:CD MIF:II (Qualifier: concatenated with other nih id parts)
+Warning: Type differs for attribute Material.actualIndicator.  UML:BL MIF:CS (Qualifier: true if INSTANCE)
+Warning: Type differs for attribute Organization.actualIndicator.  UML:BL MIF:CS (Qualifier: If true, then INSTANCE, otherwise KIND)
+Warning: Type differs for attribute OrganizationIdentifier.primaryIndicator.  UML:BL MIF:INT.POS (Qualifier: True if 1, otherwise false)
+Warning: Type differs for attribute OrganizationalContact.primaryIndicator.  UML:BL MIF:INT.POS (Qualifier: If 1, then true)
+Warning: Type differs for attribute OrganizationalContact.typeCode.  UML:DSET<CD> MIF:CD (Qualifier: one contact for each type)
+Warning: Type differs for attribute PerformedActivity.negationReason.  UML:DSET<SC> MIF:DSET<CD> (Qualifier: always populate original text)
+Warning: Type differs for attribute PerformedActivity.statusDate.  UML:TS.DATETIME MIF:HXIT<CS> (Qualifier: validTime)
+Warning: Type differs for attribute PerformedClinicalResult.asCollectedIndicator.  UML:BL MIF:HIST<ANY> (Qualifier: FALSE if originalText specified)
+Warning: Type differs for attribute PerformedDiagnosisProcedureRelationship.primaryIndicator.  UML:BL MIF:INT.POS (Qualifier: true if 1, false otherwise)
+Warning: Type differs for attribute PerformedImaging.enhancementRate.  UML:RTO<PQ,PQ.TIME> MIF:PQ (Qualifier: represents numerator portion)
+Warning: Type differs for attribute PerformedLesionDescription.lesionNumber.  UML:INT.NONNEG MIF:II (Qualifier: extension)
+Warning: Type differs for attribute PerformedObservationResult.value.  UML:ANY MIF:HIST<ANY> (Qualifier: Note: Can only have one of resultCode, numericResult or booleanResult)
+Warning: Type differs for attribute PerformedObservationResult.valueCodeModifiedText.  UML:ST MIF:HIST<ANY> (Qualifier: originalText of earlier HIST repetition)
+Warning: Type differs for attribute PerformedSubstanceAdministration.activeIngredientDoseDescription.  UML:ST MIF:PQ (Qualifier: originalText)
+Warning: Type differs for attribute PerformedSubstanceAdministration.changeReason.  UML:ST MIF:CD (Qualifier: originalText)
+Warning: Type differs for attribute PerformedSubstanceAdministration.dosePeriodCode.  UML:CD MIF:RTO<PQ,PQ.TIME> (Qualifier: denomerator)
+Warning: Type differs for attribute PerformedSubstanceAdministration.periodProductDoseTotal.  UML:PQ MIF:RTO<PQ,PQ.TIME> (Qualifier: numerator)
+Warning: Type differs for attribute Person.initials.  UML:ST MIF:DSET<EN> (Qualifier: Maps to BiologicEntity.name when at least one of the name part qualifiers is not "IN" (Initial). Maps to Person.initials when all name part qualifiers are "IN". (Can only have 1 set of initials))
+Warning: Type differs for attribute Place.identifierCode.  UML:CD MIF:DSET<II> (Qualifier: identifierCode.code maps to extension. IdentifierCode.codeSystem maps to root. IdentifierCode.codeSystemName maps to identifierName Nothing else maps.)
+Warning: Type differs for attribute PlannedActivity.duration.  UML:PQ.TIME MIF:QSET<TS> (Qualifier: IVL.width)
+Warning: Type differs for attribute PlannedActivity.repeatFrequencyCode.  UML:CD MIF:QSET<TS> (Qualifier: QSC.code)
+Warning: Type differs for attribute PlannedActivity.repeatFrequencyRatio.  UML:RTO<INT.NONNEG,PQ.TIME> MIF:QSET<TS> (Qualifier: PIVL.frequency)
+Warning: Type differs for attribute PlannedContingentOnRelationship.completionRequiredBeforeStartingIndicator.  UML:BL MIF:CS (Qualifier: if SAE, then true, else false)
+Warning: Type differs for attribute PlannedNotification.studyAccrualThresholdPercent.  UML:INT.POS MIF:PQ (Qualifier: unit must be "%" Value represents studySiteAccrual if location participation is present, otherwise studyAccrual)
+Warning: Type differs for attribute PlannedNotification.studySiteAccrualThresholdPercent.  UML:INT.POS MIF:PQ (Qualifier: unit must be "%" Value represents studySiteAccrual if location participation is present, otherwise studyAccrual)
+Warning: Type differs for attribute PlannedStudySite.leadIndicator.  UML:BL MIF:INT.POS (Qualifier: True if 1, false otherwise)
+Warning: Type differs for attribute Product.codeModifiedText.  UML:ST MIF:HIST<CD> (Qualifier: originalText on older repetition in HIST)
+Warning: Type differs for attribute ProductRelationship.activeIngredientIndicator.  UML:BL MIF:CS (Qualifier: true if classCode=ACTI, false otherwise)
+Warning: Type differs for attribute ReferenceToStudyResults.linkPageDescription.  UML:ST MIF:ED (Qualifier: description)
+Warning: Type differs for attribute ReferenceToStudyResults.uniformResourceLocator.  UML:TEL.URL MIF:ED (Qualifier: reference)
+Warning: Type differs for attribute ReportReceiver.receivedIndicator.  UML:BL MIF:CS (Qualifier: true if 'completed')
+Warning: Type differs for attribute ReportVersion.dueDate.  UML:TS.DATETIME MIF:URG<TS.DATETIME> (Qualifier: high)
+Warning: Type differs for attribute ReportVersion.physicianSignOffIndicator.  UML:BL MIF:CD (Qualifier: true if S, false otherwise)
+Warning: Type differs for attribute ResearchStaff.jobTitle.  UML:ST MIF:CD (Qualifier: originalText)
+Warning: Type differs for attribute ScheduledActivity.statusDate.  UML:TS.DATETIME MIF:HXIT<CS> (Qualifier: validTime)
+Warning: Type differs for attribute Specimen.accessionNumberText.  UML:ST.SIMPLE MIF:II (Qualifier: extension)
+Warning: Type differs for attribute StatisticalAnalysisPlanVersionStatus.code.  UML:CD MIF:HIST<CS> (Qualifier: code)
+Warning: Type differs for attribute StatisticalAnalysisPlanVersionStatus.date.  UML:TS.DATETIME MIF:HIST<CS> (Qualifier: validTime)
+Warning: Type differs for attribute StratumGroup.groupNumber.  UML:INT.NONNEG MIF:II (Qualifier: extension)
+Warning: Type differs for attribute StudyAgent.blindedName.  UML:ST MIF:TN (Qualifier: use=ANON)
+Warning: Type differs for attribute StudyAgent.statusDate.  UML:TS.DATETIME MIF:HXIT<CS> (Qualifier: validTime)
+Warning: Type differs for attribute StudyCondition.leadIndicator.  UML:BL MIF:INT.POS (Qualifier: True if 1, false otherwise)
+Warning: Type differs for attribute StudyLegalSponsor.primaryIndicator.  UML:BL MIF:INT.POS (Qualifier: true when 1, otherwise false)
+Warning: Type differs for attribute StudyOutcomeMeasure.primaryIndicator.  UML:BL MIF:INT (Qualifier: If 1 then true, otherwise false)
+Warning: Type differs for attribute StudyOutcomeMeasure.timeFrameText.  UML:ST MIF:QSET<TS> (Qualifier: use QSET.originalText)
+Warning: Type differs for attribute StudyOverallStatus.anticipatedIndicator.  UML:BL MIF:CD (Qualifier: true if 'N', otherwise false)
+Warning: Type differs for attribute StudyPersonnel.primaryIndicator.  UML:BL MIF:INT.POS (Qualifier: true when 1, false otherwise)
+Warning: Type differs for attribute StudyProtocolVersion.aeCodingSystem.  UML:OID MIF:II (Qualifier: Code systems "to be used" cannot be transmitted directly within an HL7 instance at this time. The only way to convey this sort of information is to reference a protocol which has defined the code systems to be used.)
+Warning: Type differs for attribute StudyProtocolVersion.amendmentGracePeriod.  UML:PQ.TIME MIF:URG<PQ.TIME> (Qualifier: high)
+Warning: Type differs for attribute StudyProtocolVersion.conditionCodingSystem.  UML:OID MIF:II (Qualifier: Code systems "to be used" cannot be transmitted directly within an HL7 instance at this time. The only way to convey this sort of information is to reference a protocol which has defined the code systems to be used.)
+Warning: Type differs for attribute StudyProtocolVersion.mandatoryIndicator.  UML:BL MIF:URG<PQ.TIME> (Qualifier: not null)
+Warning: Type differs for attribute StudyProtocolVersion.multiInstitutionIndicator.  UML:BL MIF:URG<INT> (Qualifier: If high=1, then false, otherwise low must be 1 and isClosed must be false)
+Warning: Type differs for attribute StudyProtocolVersion.purposeStatement.  UML:ST MIF:CD (Qualifier: originalText)
+Warning: Type differs for attribute StudyRecruitmentStatus.date.  UML:TS.DATETIME MIF:HXIT<CS> (Qualifier: validTime)
+Warning: Type differs for attribute StudyReference.linkPageDescription.  UML:ST MIF:ED (Qualifier: description)
+Warning: Type differs for attribute StudyReference.uniformResourceLocator.  UML:TEL.URL MIF:ED (Qualifier: reference)
+Warning: Type differs for attribute StudyRegistry.acronym.  UML:ST MIF:DSET<EN> (Qualifier: Do not use components, just a single "anonymous" part. Use name qualifier of "IN" to differentiate acronym from name. You can only have one of each.)
+Warning: Type differs for attribute StudyRegistry.name.  UML:ST MIF:DSET<EN> (Qualifier: Do not use components, just a single "anonymous" part. Use name qualifier of "IN" to differentiate acronym from name. You can only have one of each.)
+Warning: Type differs for attribute StudyResource.inactiveComment.  UML:ST MIF:CV (Qualifier: originalText)
+Warning: Type differs for attribute StudyResource.primaryIndicator.  UML:BL MIF:INT.POS (Qualifier: If 1, then true, otherwise false)
+Warning: Type differs for attribute StudySite.leadIndicator.  UML:BL MIF:INT.POS (Qualifier: If 1 then true, otherwise false)
+Warning: Type differs for attribute StudySite.statusDate.  UML:TS.DATETIME MIF:HXIT<CS> (Qualifier: HXIT.validTime)
+Warning: Type differs for attribute StudySiteOversightStatus.reviewBoardApprovalNumberText.  UML:ST.SIMPLE MIF:II (Qualifier: extension)
+Warning: Type differs for attribute StudySitePersonnel.primaryIndicator.  UML:BL MIF:INT.POS (Qualifier: true when 1, false otherwise)
+Warning: Type differs for attribute StudySubject.confidentialityIndicator.  UML:BL MIF:CD (Qualifier: true if 'R', false if 'N')
+Warning: Type differs for attribute StudySubject.statusDate.  UML:TS.DATETIME MIF:HXIT<CS> (Qualifier: Note: this would actually change on any revision to any of the business statuses, not just the role status)
+Warning: Type differs for attribute SubjectIdentifier.primaryIndicator.  UML:BL MIF:INT.POS (Qualifier: True if 1, false otherwise)
+Warning: Type differs for attribute Submission.statusDate.  UML:TS.DATETIME MIF:HXIT<CS> (Qualifier: validTime)
+Warning: Type differs for attribute TargetAnatomicSite.primaryIndicator.  UML:BL MIF:DSET<CD> (Qualifier: true if first repetition, false otherwise)

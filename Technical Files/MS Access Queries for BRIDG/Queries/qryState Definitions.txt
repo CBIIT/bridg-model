@@ -1,0 +1,4 @@
+SELECT t_package.Name AS [Package Name], t_object.Object_Type, t_object.Name, t_object.Note, t_object.Author
+FROM t_package INNER JOIN t_object ON t_package.Package_ID = t_object.Package_ID
+WHERE (((t_object.Object_Type)="State" Or (t_object.Object_Type)="StateNode"))
+ORDER BY t_package.Name, t_object.Name;

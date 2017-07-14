@@ -1,0 +1,8 @@
+SELECT t_package.Name AS [Package Name], t_object.Name AS [Class Name], "" AS [Attribute Name], "" AS [Data Type], "" AS [Attribute Position], "" AS [LowerBound], "" AS [UpperBound], 1 AS [custom orderby]
+FROM t_object INNER JOIN t_package on t_object.package_id = t_package.package_id
+WHERE (((t_package.Name)="Protocol Representation Sub-Domain" Or (t_package.Name)="Common Sub-Domain" Or (t_package.Name)="Adverse Event Sub-Domain" Or (t_package.Name)="Regulatory Sub-Domain" Or (t_package.Name)="Study Conduct Sub-Domain") AND ((t_object.Object_Type)="Class"))
+UNION ALL
+SELECT  t_package.Name AS [Package Name], t_object.Name AS [Class Name], t_attribute.Name AS [Attribute Name], t_attribute.Type AS [Data Type],  t_attribute.Pos AS [Attribute Position], t_attribute.LowerBound AS [LowerBound], t_attribute.UpperBound AS [UpperBound], 2 AS [custom orderby]
+FROM (t_object INNER JOIN t_package on t_object.package_id = t_package.package_id) INNER JOIN t_attribute ON t_object.Object_ID = t_attribute.Object_ID
+WHERE (((t_package.Name)="Protocol Representation Sub-Domain" Or (t_package.Name)="Common Sub-Domain" Or (t_package.Name)="Adverse Event Sub-Domain" Or (t_package.Name)="Regulatory Sub-Domain" Or (t_package.Name)="Study Conduct Sub-Domain") AND ((t_object.Object_Type)="Class"))
+ORDER BY [Package Name], [Class Name], [custom orderby], [Attribute Name];

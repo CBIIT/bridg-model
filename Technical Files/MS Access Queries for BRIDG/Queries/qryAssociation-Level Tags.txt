@@ -1,0 +1,4 @@
+SELECT t_package.Name AS Package, t_connector.connector_type AS [Connector Type], source_class.name AS [Source Class], t_connector.name AS [Connector Name], target_class.name AS [Target Class], t_connectortag.property AS [Tag Name], t_connectortag.value AS [Tag Value]
+FROM t_connector, t_object AS target_class, t_connectortag, t_object AS source_class INNER JOIN t_package ON source_class.Package_ID = t_package.Package_ID
+WHERE (((t_connector.connector_type)='Association') AND ((t_connector.start_object_id)=[source_class].[object_id]) AND ((t_connector.end_object_id)=[target_class].[object_id]) AND ((source_class.object_type)='Class') AND ((target_class.object_type)='Class') AND ((t_connector.connector_id)=[t_connectortag].[elementid]))
+ORDER BY  t_package.Name

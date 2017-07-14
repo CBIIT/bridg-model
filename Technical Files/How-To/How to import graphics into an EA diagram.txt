@@ -1,0 +1,7 @@
+1. Add a note to the diagram
+2. Right click on the note > Appearance > Select Alternate Image > Add New…
+3. Then select the image using the browser – note that long file names seem to be a problem (give a misleading message saying it’s the wrong file type) so I just used 8 character file names with no spaces to be safe
+4. Just say OK when it asks you to specify the name of the file.
+5. The file will then appear in the list and should be selected already and displayed in the preview (thumbnail) window
+6. Click OK
+7. Resize the image as needed (e.g. to fit on a portrait or landscape page) because it imports them LARGE!

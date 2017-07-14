@@ -1,0 +1,30 @@
+QUESTION
+
+Hi
+
+At the moment I have two queries, one producing a full
+list and the other a shortened list of the full list but
+with the same fields.
+I want to subtract the short list from the full list - a
+MINUS I thought but I can't seem to do this in Access.
+Is there a way around this? or do I have to do it in my
+code once I have extracted the data from Access? (I'm
+using stored queries.
+
+Thanks in advance.
+
+ 
+ANSWER
+
+Access does not support a MINUS operation, but you can get the same result
+by using an Outer Join on the keys combined with a Null test.
+
+SELECT BigTable.*
+FROM BigTable
+LEFT JOIN SmallTable
+ON BigTable.PKey = SmallTable.PKey
+WHERE SmallTable.PKey IS NULL
+
+ 
+
+            

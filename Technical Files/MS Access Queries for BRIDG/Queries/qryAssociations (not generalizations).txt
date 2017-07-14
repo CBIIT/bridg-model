@@ -1,0 +1,11 @@
+SELECT t_package.Name AS Package, 
+t_connector.Connector_Type AS Relationship_Type, 
+t_object.Name AS Source, 
+t_connector.SourceCard, 
+t_connector.Name AS Association_Label_not_direction_specific, 
+t_connector.DestCard AS TargetCard, 
+t_object_1.Name AS Target, 
+t_connector.notes AS Association_Definition
+FROM t_package INNER JOIN ((t_connector INNER JOIN t_object ON t_connector.Start_Object_ID = t_object.Object_ID) INNER JOIN t_object AS t_object_1 ON t_connector.End_Object_ID = t_object_1.Object_ID) ON (t_package.Package_ID = t_object.Package_ID) AND (t_package.Package_ID = t_object_1.Package_ID)
+WHERE (((t_package.Name)="Common Sub-domain" Or (t_package.Name)="Adverse Event Sub-domain" Or (t_package.Name)="Regulatory Sub-domain" Or (t_package.Name)="Protocol Representation Sub-domain" Or (t_package.Name)="Study Conduct Sub-domain") AND ((t_connector.Connector_Type) Not Like "Generalization") AND ((t_object.Object_Type)="Class") AND ((t_object_1.Object_Type)="Class") AND ((UCase([t_object].[name])) Not Like "DELETED*") AND ((UCase([t_object_1].[name])) Not Like "DELETED*"))
+ORDER BY t_package.Name, t_object.Name, t_object_1.Name;

@@ -1,0 +1,4 @@
+SELECT t_package.Name AS Package, t_object.name AS Class, t_attribute.name AS Attribute, t_attributetag.property AS [Tag Name], t_attributetag.value AS [Tag Value]
+FROM t_attribute, t_attributetag, t_package INNER JOIN t_object ON t_package.Package_ID = t_object.Package_ID
+WHERE (((t_object.object_type)='Class') AND ((t_object.object_id)=[t_attribute].[object_id]) AND ((t_attribute.id)=[t_attributetag].[elementid]))
+ORDER BY t_package.Name, t_object.Name, t_attribute.Name, t_attributetag.PropertyID;

@@ -1,0 +1,6 @@
+How to hide attributes in EA diagram by diagram
+
+- Right click the class
+- Select Features & Properties > Features and Compartment Visibility...
+- In the pop-up window, under the Attribute Visibility section, click the Custom button
+- Select the attributes you want to hide, then click OK

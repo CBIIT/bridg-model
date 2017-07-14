@@ -1,0 +1,25 @@
+SELECT '1' as [qry], t_package.package_id as [main_pkg_id], t_package.name as [main_pkg_name], '' as [child_pkg_id], '' as [child_pkg_name]
+FROM t_package
+WHERE t_package.parent_id = 87
+UNION 
+SELECT '2' as [qry], t_package.package_id as [main_pkg_id], t_package.name as [main_pkg_name], child_pkg.package_id as [child_pkg_id], child_pkg.name as [child_pkg_name]
+FROM t_package inner join t_package as child_pkg ON t_package.package_id = child_pkg.parent_id
+WHERE t_package.parent_id = 87
+order by [main_pkg_name], [child_pkg_name]
+;
+
+
+SELECT t_package.name as [main_pkg_name], '' as [child_pkg_name], t_object.name as [actor_name], t_object.note as [actor_description]
+FROM t_package inner join t_object on t_package.package_id = t_object.package_id
+WHERE t_package.parent_id = 87
+AND   t_object.object_type = 'Actor'
+UNION 
+SELECT t_package.name as [main_pkg_name], child_pkg.name as [child_pkg_name], t_object.name as [actor_name], t_object.note as [actor_description]
+FROM (t_package inner join t_package as child_pkg ON t_package.package_id = child_pkg.parent_id)
+       inner join t_object on child_pkg.package_id = t_object.package_id
+WHERE t_package.parent_id = 87
+AND   t_object.object_type = 'Actor'
+order by [main_pkg_name], [child_pkg_name], [actor_name]
+;
+
+

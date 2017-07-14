@@ -1,0 +1,63 @@
+SELECT t_object.Name AS [Class Name], t_object.Note AS [Class Defintion], "" AS [Attribute Name], "" AS [Attribute Defintion], "" AS [Attribute Source], "" AS [Data Type], "" AS [Attr Source Relation], "0" AS [Inheritance Level], "" AS [Attribute Position]
+FROM (t_object)
+WHERE ((t_object.Object_Type)="Class")
+UNION ALL
+SELECT t_object.Name AS [Class Name], "" AS [Class Defintion], t_attribute.Name AS [Attribute Name], t_attribute.Notes AS [Attribute Defintion], t_object.Name AS [Attribute Source], t_attribute.Type AS [Data Type], "" AS [Attr Source Relation], "4" AS [Inheritance Level], t_attribute.Pos AS [Attribute Position]
+FROM (t_object INNER JOIN t_attribute ON t_object.Object_ID = t_attribute.Object_ID)
+WHERE ((t_object.Object_Type)="Class")
+UNION ALL
+SELECT t_object.Name AS [Class Name], "" AS [Class Defintion], t_attribute_1.Name AS [Attribute Name], t_attribute_1.Notes AS [Attribute Defintion], t_object_1.Name AS [Attribute Source], t_attribute_1.Type AS [Data Type], t_connector.Connector_Type AS [Attr Source Relation], "3" AS [Inheritance Level], t_attribute_1.Pos AS [Attribute Position]
+FROM (t_object INNER JOIN t_connector ON t_object.Object_ID = t_connector.Start_Object_ID) 
+         INNER JOIN (t_object AS t_object_1 INNER JOIN t_attribute AS t_attribute_1 ON t_object_1.Object_ID = t_attribute_1.Object_ID) ON t_connector.End_Object_ID = t_object_1.Object_ID
+WHERE (  ((t_object.Object_Type)="Class") AND ((t_object_1.Object_Type)="Class")  
+               AND ((t_connector.Connector_Type)="Generalization")  )
+UNION ALL
+SELECT t_object.Name AS [Class Name], "" AS [Class Defintion], t_attribute_2.Name AS [Attribute Name], t_attribute_2.Notes AS [Attribute Defintion], t_object_2.Name AS [Attribute Source], t_attribute_2.Type AS [Data Type], t_connector_1.Connector_Type AS [Attr Source Relation], "2" AS [Inheritance Level], t_attribute_2.Pos AS [Attribute Position]
+FROM (  (  (  t_object INNER JOIN t_connector ON t_object.Object_ID = t_connector.Start_Object_ID  ) 
+                INNER JOIN t_object AS t_object_1 ON t_connector.End_Object_ID = t_object_1.Object_ID )
+             INNER JOIN t_connector AS t_connector_1 ON t_object_1.Object_ID = t_connector_1.Start_Object_ID )
+         INNER JOIN (t_object AS t_object_2 INNER JOIN t_attribute AS t_attribute_2 ON t_object_2.Object_ID = t_attribute_2.Object_ID) ON t_connector_1.End_Object_ID = t_object_2.Object_ID
+WHERE (  ((t_object.Object_Type)="Class") AND ((t_object_1.Object_Type)="Class") AND ((t_object_2.Object_Type)="Class")  
+               AND ((t_connector.Connector_Type)="Generalization") AND ((t_connector_1.Connector_Type)="Generalization")  )
+UNION ALL 
+SELECT t_object.Name AS [Class Name], "" AS [Class Defintion], t_attribute_3.Name AS [Attribute Name], t_attribute_3.Notes AS [Attribute Defintion], t_object_3.Name AS [Attribute Source], t_attribute_3.Type AS [Data Type], t_connector_2.Connector_Type AS [Attr Source Relation], "1" AS [Inheritance Level], t_attribute_3.Pos AS [Attribute Position]
+FROM (  (  (  (  (  t_object INNER JOIN t_connector ON t_object.Object_ID = t_connector.Start_Object_ID  ) 
+                       INNER JOIN t_object AS t_object_1 ON t_connector.End_Object_ID = t_object_1.Object_ID  )
+                   INNER JOIN t_connector AS t_connector_1 ON t_object_1.Object_ID = t_connector_1.Start_Object_ID )
+                INNER JOIN t_object AS t_object_2 ON t_connector_1.End_Object_ID = t_object_2.Object_ID  )
+             INNER JOIN t_connector AS t_connector_2 ON t_object_2.Object_ID = t_connector_2.Start_Object_ID )
+         INNER JOIN (t_object AS t_object_3 INNER JOIN t_attribute AS t_attribute_3 ON t_object_3.Object_ID = t_attribute_3.Object_ID) ON t_connector_2.End_Object_ID = t_object_3.Object_ID
+WHERE (  ((t_object.Object_Type)="Class") AND ((t_object_1.Object_Type)="Class") AND ((t_object_2.Object_Type)="Class") AND ((t_object_3.Object_Type)="Class")  
+               AND ((t_connector.Connector_Type)="Generalization") AND ((t_connector_1.Connector_Type)="Generalization") AND ((t_connector_2.Connector_Type)="Generalization")  )
+ORDER BY [Class Name], [Inheritance Level], [Attribute Position];
+
+
+
+
+
+REVISED query to return only sub-domain packages (not ISO), however, something is wrong. The inhertied attributes are not being returned for the Adverse Event Sub-Domain. It appears to funcitoning correctly for all other sub-domains.
+
+SELECT t_package.Name AS [Package Name], t_object.Name AS [Class Name], t_object.Note AS [Class Definition], "" AS [Attribute Name], "" AS [Attribute Definition], "" AS [Attribute Source], "" AS [Data Type], "" AS [Attr Source Relation], "0" AS [Inheritance Level], "" AS [Attribute Position]
+FROM t_package INNER JOIN t_object ON t_package.Package_ID = t_object.Package_ID
+WHERE (((t_object.Object_Type)="Class") AND ((t_package.Name)="Adverse Event Sub-Domain" Or (t_package.Name)="Common Sub-Domain" Or (t_package.Name)="Regulatory Sub-Domain" Or (t_package.Name)="Protocol Representation Sub-Domain" Or (t_package.Name)="Study Conduct Sub-Domain"))
+UNION ALL
+SELECT  t_package.Name AS [Package Name], t_object.Name AS [Class Name], "" AS [Class Definition], t_attribute.Name AS [Attribute Name], t_attribute.Notes AS [Attribute Definition], t_object.Name AS [Attribute Source],  t_attribute.Type AS [Data Type], "" AS [Attr Source Relation], "4" AS [Inheritance Level], t_attribute.Pos AS [Attribute Position]
+FROM t_package INNER JOIN (t_object INNER JOIN t_attribute ON t_object.Object_ID = t_attribute.Object_ID) ON t_package.Package_ID = t_object.Package_ID
+WHERE (((t_object.Object_Type)="Class") AND ((t_package.Name)="Adverse Event Sub-Domain" Or (t_package.Name)="Common Sub-Domain" Or (t_package.Name)="Regulatory Sub-Domain" Or (t_package.Name)="Protocol Representation Sub-Domain" Or (t_package.Name)="Study Conduct Sub-Domain"))
+UNION ALL
+SELECT t_package.Name AS [Package Name], t_object.Name AS [Class Name], "" AS [Class Definition], t_attribute_1.Name AS [Attribute Name], t_attribute_1.Notes AS [Attribute Definition], 
+t_object_1.Name AS [Attribute Source], t_attribute_1.Type AS [Data Type], t_connector.Connector_Type AS [Attr Source Relation], "3" AS [Inheritance Level], t_attribute_1.Pos AS [Attribute Position]
+FROM t_package INNER JOIN ((t_object INNER JOIN t_connector ON t_object.Object_ID = t_connector.Start_Object_ID) INNER JOIN (t_object AS t_object_1 INNER JOIN t_attribute AS t_attribute_1 ON t_object_1.Object_ID = t_attribute_1.Object_ID) ON t_connector.End_Object_ID = t_object_1.Object_ID) ON (t_object_1.Package_ID = t_package.Package_ID) AND (t_package.Package_ID = t_object.Package_ID)
+WHERE (((t_connector.Connector_Type)="Generalization") AND ((t_object.Object_Type)="Class") AND ((t_object_1.Object_Type)="Class") AND ((t_package.Name)="Adverse Event Sub-Domain" Or (t_package.Name)="Common Sub-Domain" Or (t_package.Name)="Regulatory Sub-Domain" Or (t_package.Name)="Protocol Representation Sub-Domain" Or (t_package.Name)="Study Conduct Sub-Domain"))
+UNION ALL
+SELECT t_package.Name AS [Package Name], t_object.Name AS [Class Name], "" AS [Class Definition], t_attribute_2.Name AS [Attribute Name], t_attribute_2.Notes AS [Attribute Definition], 
+t_object_2.Name AS [Attribute Source], t_attribute_2.Type AS [Data Type], t_connector_1.Connector_Type AS [Attr Source Relation], "2" AS [Inheritance Level], t_attribute_2.Pos AS [Attribute Position]
+FROM t_package INNER JOIN ((((t_object INNER JOIN t_connector ON t_object.Object_ID = t_connector.Start_Object_ID) INNER JOIN t_object AS t_object_1 ON t_connector.End_Object_ID = t_object_1.Object_ID) INNER JOIN t_connector AS t_connector_1 ON t_object_1.Object_ID = t_connector_1.Start_Object_ID) INNER JOIN (t_object AS t_object_2 INNER JOIN t_attribute AS t_attribute_2 ON t_object_2.Object_ID = t_attribute_2.Object_ID) ON t_connector_1.End_Object_ID = t_object_2.Object_ID) ON (t_object_1.Package_ID = t_package.Package_ID) AND (t_package.Package_ID = t_object.Package_ID)
+WHERE (((t_connector_1.Connector_Type)="Generalization") AND ((t_object.Object_Type)="Class") AND ((t_object_1.Object_Type)="Class") AND 
+((t_object_2.Object_Type)="Class") AND ((t_connector.Connector_Type)="Generalization") AND 
+((t_package.Name)="Adverse Event Sub-Domain" Or (t_package.Name)="Common Sub-Domain" Or (t_package.Name)="Regulatory Sub-Domain" Or (t_package.Name)="Protocol Representation Sub-Domain" Or (t_package.Name)="Study Conduct Sub-Domain"))
+UNION ALL 
+SELECT t_package.Name AS [Package Name], t_object.Name AS [Class Name], "" AS [Class Definition], t_attribute_3.Name AS [Attribute Name], t_attribute_3.Notes AS [Attribute Definition], t_object_3.Name AS [Attribute Source], t_attribute_3.Type AS [Data Type], t_connector_2.Connector_Type AS [Attr Source Relation], "1" AS [Inheritance Level], t_attribute_3.Pos AS [Attribute Position]
+FROM t_package INNER JOIN ((((((t_object INNER JOIN t_connector ON t_object.Object_ID = t_connector.Start_Object_ID) INNER JOIN t_object AS t_object_1 ON t_connector.End_Object_ID = t_object_1.Object_ID) INNER JOIN t_connector AS t_connector_1 ON t_object_1.Object_ID = t_connector_1.Start_Object_ID) INNER JOIN t_object AS t_object_2 ON t_connector_1.End_Object_ID = t_object_2.Object_ID) INNER JOIN t_connector AS t_connector_2 ON t_object_2.Object_ID = t_connector_2.Start_Object_ID) INNER JOIN (t_object AS t_object_3 INNER JOIN t_attribute AS t_attribute_3 ON t_object_3.Object_ID = t_attribute_3.Object_ID) ON t_connector_2.End_Object_ID = t_object_3.Object_ID) ON (t_package.Package_ID = t_object.Package_ID) AND (t_package.Package_ID = t_object_1.Package_ID)
+WHERE (((t_package.Name)="Adverse Event Sub-Domain" Or (t_package.Name)="Common Sub-Domain" Or (t_package.Name)="Regulatory Sub-Domain" Or (t_package.Name)=" Protocol Representation Sub-Domain" Or (t_package.Name)="Study Conduct Sub-Domain") AND ((t_connector_2.Connector_Type)="Generalization") AND ((t_object.Object_Type)="Class") AND ((t_object_1.Object_Type)="Class") AND ((t_object_2.Object_Type)="Class") AND ((t_object_3.Object_Type)="Class") AND ((t_connector.Connector_Type)="Generalization") AND ((t_connector_1.Connector_Type)="Generalization"))
+ORDER BY [Package Name], [Class Name], [Inheritance Level], [Attribute Position];
