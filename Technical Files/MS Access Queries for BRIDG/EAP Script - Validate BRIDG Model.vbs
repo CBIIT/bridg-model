@@ -28,7 +28,8 @@ option explicit
 	
     ' Create Array of diagram names in BRIDG Model to be used for checking
 	' diagrams for elements
-    dim tempArray(9)
+	' Changed tempArray(9) to tempArray(10), added Imaging - WNV 20170828
+    dim tempArray(10)
 	tempArray(0) = "UML-Based Comprehensive BRIDG Model Diagram"
 	tempArray(1) = "View AE: Adverse Event"
 	tempArray(2) = "View BSP: Biospecimen"
@@ -39,6 +40,7 @@ option explicit
 	tempArray(7) = "View RG: Regulatory"
 	tempArray(8) = "View SA: Statistical Analysis"	
 	tempArray(9) = "View SC: Study Conduct"	
+	tempArray(10) = "View IM: Imaging"	
 
 ' Initialization
 	InitializeOutput
@@ -255,7 +257,7 @@ Sub ValidateClass ( theClass )
 	'	WriteMessage currentClass.Type, currentClass.Name, MsgWarning, Msg, Pkg
 	'end if
 	
-	' Each class must have at least one relationships
+	' Each class must have at least one relationship
 	If currentClass.Connectors.Count = 0 Then
 		Msg = "Each class must have at least one relationship."
 		WriteMessage currentClass.Type, currentClass.Name, MsgError, Msg, Pkg
@@ -297,6 +299,8 @@ Sub ValidateClass ( theClass )
 	' a particular sub-Domain (EA Package), these values are hard coded (Colors are decimal
 	' representation of hex colors exactly as stored by EA). Each package is assigned its
 	' default diagram. MWW
+	' Added cases for Imaging, Out of Scope MB, updated colors after setting defaults correctly
+	' in EAP - WNV 20170828
 	dim tempSearchColor, tempSearchColorName, tempDiagToCheck
 	tempDiagToCheck = 0	
 	Select Case currentPackage.Name
@@ -305,7 +309,7 @@ Sub ValidateClass ( theClass )
 		tempSearchColorName = "Green"
 		tempDiagToCheck = "View AE: Adverse Event"
 	Case "Biospecimen Sub-Domain"
-		tempSearchColor = "-1"
+		tempSearchColor = "33023"
 		tempSearchColorName = "Default"
 		tempDiagToCheck = "View BSP: Biospecimen"
 	Case "Common Sub-Domain"
@@ -313,11 +317,15 @@ Sub ValidateClass ( theClass )
 		tempSearchColorName = "Aqua Blue"
 		tempDiagToCheck = "View CM: Common"
 	Case "Experiment Sub-Domain"
-		tempSearchColor = "-1"
+		tempSearchColor = "16729600"
 		tempSearchColorName = "Default"
 		tempDiagToCheck = "View EX: Experiment"
 	Case "Molecular Biology Sub-Domain"
-		tempSearchColor = "-1"
+		tempSearchColor = "49280"
+		tempSearchColorName = "Default"
+		tempDiagToCheck = "View MB: Molecular Biology"
+	Case "Out of Scope for HL7 May 2017 Ballot Cycle: Molecular Biology Sub-Domain"
+		tempSearchColor = "49280"
 		tempSearchColorName = "Default"
 		tempDiagToCheck = "View MB: Molecular Biology"
 	Case "Protocol Representation Sub-Domain"
@@ -336,6 +344,10 @@ Sub ValidateClass ( theClass )
 		tempSearchColor = "13684974"
 		tempSearchColorName = "Pink"
 		tempDiagToCheck = "View SC: Study Conduct"
+	Case "Imaging Sub-Domain"
+		tempSearchColor = "16752895"
+		tempSearchColorName = "Magenta"
+		tempDiagToCheck = "View IM: Imaging"
 Session.Output( "Got here 1" )
 	Case Else
 		tempSearchColor = "Undefined"
@@ -702,7 +714,7 @@ Sub ValidateAssociation ( theAssociation )
 	'	End if
 	end if
 	
-' Each association must source multiplicity
+' Each association must have source multiplicity
 	If currentAssociation.ClientEnd.Cardinality = Empty Then
 		Msg = "Each connection must have multiplicity defined for source."
 		WriteMessage currentAssociation.Type, holdAssocName, MsgError, Msg, Pkg
@@ -719,7 +731,7 @@ Sub ValidateAssociation ( theAssociation )
 		End if
 	end if
 	
-	' Each association must target multiplicity
+	' Each association must have target multiplicity
 	If currentAssociation.SupplierEnd.Cardinality = Empty Then
 		Msg = "Each connection must have multiplicity defined for target."
 		WriteMessage currentAssociation.Type, holdAssocName, MsgError, Msg, Pkg
@@ -956,7 +968,7 @@ Sub ValidateAttribute (CurrentItem)
 		'?	
 	Case "BAG<TEL>", "TEL"
 		if lcase(Right(currentAttribute.Name,14)) <> "telecomaddress" Then 
-			Msg = "Verify attribute name is valid for data type (" & currentAttribute.Type & "). Looking for 'telecom address'"
+			Msg = "Verify attribute name is valid for data type (" & currentAttribute.Type & "). Looking for 'telecomaddress'"
 			WriteMessage "Attribute", holdAttribName, MsgWarning, Msg, Pkg
 		end if
 	Case "BL"
@@ -974,7 +986,8 @@ Sub ValidateAttribute (CurrentItem)
 			Msg = "Verify attribute name is valid for data type (" & currentAttribute.Type & "). Looking for 'name'"
 			WriteMessage "Attribute", holdAttribName, MsgWarning, Msg, Pkg
 		end if
-	Case "DSET<II>", "II"
+	' Added ID and DSET<ID> - WNV 20170828
+	Case "DSET<II>", "II", "ID", "DSET<ID>"
 		if lcase(Right(currentAttribute.Name,10)) <> "identifier" Then 
 			Msg = "Verify attribute name is valid for data type (" & currentAttribute.Type & "). Looking for 'identifier'"
 			WriteMessage "Attribute", holdAttribName, MsgWarning, Msg, Pkg
@@ -994,26 +1007,33 @@ Sub ValidateAttribute (CurrentItem)
 	Case "EXPR<PQ>"
 		'no further validation required
 	Case "INT.POS", "INT.NONNEG"
+	' Added Coordinate - WNV 20170828
 		if lcase(Right(currentAttribute.Name,7)) <> "integer" and _
 		lcase(Right(currentAttribute.Name,5)) <> "count" and _
 		lcase(Right(currentAttribute.Name,6)) <> "number" and _
 		lcase(Right(currentAttribute.Name,5)) <> "order" and _
 		lcase(Right(currentAttribute.Name,7)) <> "percent" and _
-		lcase(Right(currentAttribute.Name,8)) <> "quantity" Then 
+		lcase(Right(currentAttribute.Name,8)) <> "quantity" and _
+		lcase(Right(currentAttribute.Name,10)) <> "coordinate" Then 
 			Msg = "Verify attribute name is valid for data type (" & currentAttribute.Type & "). Looking for 'integer', 'count', " _
-			& "'order', 'percent', 'number', or 'quantity'"	
+			& "'order', 'percent', 'number', 'quantity', or 'coordinate'"	
 			WriteMessage "Attribute", holdAttribName, MsgWarning, Msg, Pkg
 		end if
 	Case "OID"
 		if lcase(Right(currentAttribute.Name,12)) <> "codingsystem" Then 
-			Msg = "Verify attribute name is valid for data type (" & currentAttribute.Type & "). Looking for 'coding system'"
+			Msg = "Verify attribute name is valid for data type (" & currentAttribute.Type & "). Looking for 'codingsystem'"
 			WriteMessage "Attribute", holdAttribName, MsgWarning, Msg, Pkg
 		end if
 	Case "PQ", "EXPR<PQ>"
+	' Added width, height, diameter, and dimension - WNV 20170828
 		if lcase(Right(currentAttribute.Name,8)) <> "quantity" and _ 
 		lcase(Right(currentAttribute.Name,4)) <> "dose" and _ 
-		lcase(Right(currentAttribute.Name,5)) <> "total" Then 
-			Msg = "Verify attribute name is valid for data type (" & currentAttribute.Type & "). Looking for 'quantity', 'dose' or 'total'"
+		lcase(Right(currentAttribute.Name,5)) <> "total" and _ 
+		lcase(Right(currentAttribute.Name,5)) <> "width" and _ 
+		lcase(Right(currentAttribute.Name,6)) <> "height" and _ 
+		lcase(Right(currentAttribute.Name,8)) <> "diameter" and _ 
+		lcase(Right(currentAttribute.Name,9)) <> "dimension" Then 
+			Msg = "Verify attribute name is valid for data type (" & currentAttribute.Type & "). Looking for 'quantity', 'dose', 'total', 'width', 'height', 'diameter', or 'dimension' "
 			WriteMessage "Attribute", holdAttribName, MsgWarning, Msg, Pkg
 		end if
 	Case "PQ.TIME"
@@ -1022,10 +1042,13 @@ Sub ValidateAttribute (CurrentItem)
 			WriteMessage "Attribute", holdAttribName, MsgWarning, Msg, Pkg
 		end if
 	Case "REAL"
+	' Added Capacity and Quotient - WNV 20170828
 		if lcase(Right(currentAttribute.Name,7)) <> "percent" _ 
 		and lcase(Right(currentAttribute.Name,6)) <> "number" _
-		and lcase(Right(currentAttribute.Name,8)) <> "fraction" Then 
-			Msg = "Verify attribute name is valid for data type (" & currentAttribute.Type & "). Looking for 'number', 'percent' or 'fraction'"
+		and lcase(Right(currentAttribute.Name,8)) <> "fraction" _
+		and lcase(Right(currentAttribute.Name,8)) <> "capacity" _
+		and lcase(Right(currentAttribute.Name,8)) <> "quotient" Then 
+			Msg = "Verify attribute name is valid for data type (" & currentAttribute.Type & "). Looking for 'number', 'percent', 'fraction', 'capacity', or 'quotient' "
 			WriteMessage "Attribute", holdAttribName, MsgWarning, Msg, Pkg
 		end if
 	Case "SC"
