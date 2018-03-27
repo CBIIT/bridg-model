@@ -1,0 +1,124 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>View BSP: Biospecimen</title>
+<link href="../../css/ea.css" rel="stylesheet" type="text/css" />
+<script>
+function initPage(src) {	
+	if(parent==this&&(this.location+"").indexOf('EARoot')!=-1)
+		document.location=(this.location+"").substring(0,(this.location+"").indexOf('EARoot'))+"index"+(this.location+"").substring((this.location+"").lastIndexOf('.'))+"?goto="+((this.location+"").substring((this.location+"").indexOf('EARoot')+7,(this.location+"").lastIndexOf('.')).replace(/\//g,':').replace(/EA/g,""));
+	else
+		parent.initPage(src);
+}
+
+function nameClassifier(name, separator)
+{
+  var str = name;
+  var classifierName;
+  var node = document.getElementById('name_classifier');
+  if(node != null)
+  {
+    classifierName = node.innerHTML;
+  }
+  if(classifierName != "")
+  {
+   str += separator + classifierName;
+  }
+  
+  return str;
+}
+</script>
+</head>
+<body onload="initPage(this);" class="Content">
+<div class="PageBody">
+	
+<img src="EA46.png" usemap="#EA46" border="0" />
+
+<MAP NAME="EA46">
+<area shape="rect" coords="170,1166,357,1345" href="../EA3/EA77.htm" target="_self">
+<area shape="rect" coords="532,18,1151,78" href="EA50.htm" target="_self">
+<area shape="rect" coords="514,96,1163,199" href="EA48.htm" target="_self">
+<area shape="rect" coords="77,104,192,207" href="EA49.htm" target="_self">
+<area shape="rect" coords="1846,664,2155,1008" href="../EA7/EA271.htm" target="_self">
+<area shape="rect" coords="2501,621,2753,1043" href="../EA10/EA386.htm" target="_self">
+<area shape="rect" coords="742,822,998,1189" href="../EA3/EA88.htm" target="_self">
+<area shape="rect" coords="1187,721,1446,1195" href="../EA3/EA146.htm" target="_self">
+<area shape="rect" coords="2020,1520,2271,1861" href="../EA7/EA278.htm" target="_self">
+<area shape="rect" coords="2199,661,2470,1018" href="../EA10/EA387.htm" target="_self">
+<area shape="rect" coords="262,10,479,238" href="../EA11/EA635.htm" target="_self">
+<area shape="rect" coords="1541,1364,1780,1708" href="../EA10/EA399.htm" target="_self">
+<area shape="rect" coords="556,307,770,411" href="../EA3/EA98.htm" target="_self">
+<area shape="rect" coords="2778,412,3034,792" href="../EA10/EA392.htm" target="_self">
+<area shape="rect" coords="2343,88,2567,536" href="../EA10/EA395.htm" target="_self">
+<area shape="rect" coords="1982,45,2236,485" href="../EA7/EA282.htm" target="_self">
+<area shape="rect" coords="1537,45,1853,295" href="../EA7/EA272.htm" target="_self">
+<area shape="rect" coords="1560,905,1783,1285" href="../EA3/EA84.htm" target="_self">
+<area shape="rect" coords="2357,1389,2572,1704" href="../EA10/EA374.htm" target="_self">
+<area shape="rect" coords="2723,1655,2937,1938" href="../EA10/EA373.htm" target="_self">
+<area shape="rect" coords="1698,1922,1879,2276" href="../EA7/EA257.htm" target="_self">
+<area shape="rect" coords="1923,1935,2104,2263" href="EA52.htm" target="_self">
+<area shape="rect" coords="2623,1172,2884,1568" href="EA53.htm" target="_self">
+<area shape="rect" coords="541,1769,827,2126" href="EA56.htm" target="_self">
+<area shape="rect" coords="1207,1982,1534,2252" href="EA59.htm" target="_self">
+<area shape="rect" coords="861,1791,1173,1967" href="../EA7/EA256.htm" target="_self">
+<area shape="rect" coords="868,1995,1144,2279" href="../EA3/EA126.htm" target="_self">
+<area shape="rect" coords="2652,2046,2764,2196" href="EA58.htm" target="_self">
+<area shape="rect" coords="2473,2049,2589,2199" href="../EA3/EA110.htm" target="_self">
+<area shape="rect" coords="2295,2062,2423,2180" href="../EA3/EA130.htm" target="_self">
+<area shape="rect" coords="243,702,404,768" href="../EA4/EA163.htm" target="_self">
+<area shape="rect" coords="489,481,698,1284" href="../EA3/EA127.htm" target="_self">
+<area shape="rect" coords="721,1253,883,1594" href="../EA3/EA75.htm" target="_self">
+<area shape="rect" coords="1101,1271,1285,1657" href="../EA3/EA109.htm" target="_self">
+<area shape="rect" coords="1303,1224,1510,1649" href="../EA3/EA82.htm" target="_self">
+<area shape="rect" coords="909,1233,1079,1616" href="../EA3/EA81.htm" target="_self">
+<area shape="rect" coords="995,577,1164,777" href="../EA3/EA107.htm" target="_self">
+<area shape="rect" coords="368,2001,494,2072" href="../EA10/EA369.htm" target="_self">
+<area shape="rect" coords="24,1820,326,1961" href="../EA3/EA113.htm" target="_self">
+<area shape="rect" coords="122,1367,363,1757" href="../EA3/EA120.htm" target="_self">
+<area shape="rect" coords="207,836,411,1117" href="../EA3/EA73.htm" target="_self">
+<area shape="rect" coords="13,350,295,542" href="../EA3/EA76.htm" target="_self">
+<area shape="rect" coords="409,1638,612,1683" href="EA57.htm" target="_self">
+<area shape="rect" coords="30,235,974,284" href="../EA3/EA151.htm" target="_self">
+<area shape="rect" coords="808,391,967,543" href="EA55.htm" target="_self">
+<area shape="rect" coords="1202,47,1340,197" href="EA51.htm" target="_self">
+<area shape="rect" coords="1140,237,1364,450" href="EA54.htm" target="_self">
+</MAP>
+
+	<div class="ObjectTitle">View BSP: Biospecimen : Class diagram</div>
+	<table border="0" cellpadding="0" cellspacing="0" class="ObjectDetails">
+		<tr>
+			<td width="15%" class="ObjectDetailsTopic">Created:</td>
+			<td width="85%" class="ObjectDetailsValue">9/15/2013 12:00:00 AM</td>
+		</tr>
+		<tr>
+			<td width="15%" class="ObjectDetailsTopic">Modified:</td>
+			<td width="85%" class="ObjectDetailsValue">8/28/2017 4:44:56 PM</td>
+		</tr>
+		<tr style="padding-top: 10px;">
+			<td width="15%" class="ObjectDetailsTopic"><img src="../../images/plus03.gif" align="absmiddle" id="proj" onclick="parent.toggleData(this.id)" />Project:</td>
+			<td width="85%" class="ObjectDetailsValue"></td>			
+		</tr>
+		<tr id="proj00" style="display: none;">
+			<td width="15%" class="ObjectDetailsTopic" style="padding-left: 18px;">Author:</td>
+			<td width="85%" class="ObjectDetailsValue">BRIDG Development Team</td>
+		</tr>
+		<tr id="proj01" style="display: none;">
+			<td width="15%" class="ObjectDetailsTopic" style="padding-left: 18px;">Version:</td>
+			<td width="85%" class="ObjectDetailsValue">5.0.1</td>
+		</tr>
+		<tr>
+			<td width="15%" class="ObjectDetailsTopic"><img src="../../images/plus03.gif" align="absmiddle" id="adv" onclick="parent.toggleData(this.id)" />Advanced:</td>
+			<td width="85%" class="ObjectDetailsValue"></td>			
+		</tr>
+		<tr id="adv00" style="display: none;">
+			<td width="15%" class="ObjectDetailsTopic" style="padding-left: 18px;">ID:</td>
+			<td width="85%" class="ObjectDetailsValue">{02A2D295-F42F-4ca4-885D-1209237CC5A1}</td>
+		</tr>
+	</table>
+	<div class="ObjectDetailsNotes">The Biospecimen sub-domain includes concepts related to a biologic specimen, including collection and processing.&lt;br/&gt;&lt;br/&gt;&lt;font color=&quot;#ff0000&quot;&gt;&lt;b&gt;Collaboration with other HL7 Work Groups&lt;/b&gt;: With the broader scope of BRIDG 4.0 covering translational research and the harmonization of Life Sciences Model and CDISC Pharmogenomic &amp; Pharmocogenetics domains, it is likely that there is some overlap of concepts between BRIDG Biospecimen subdomain concepts and the models being developed in the HL7 Clinical Genomics (CG), Orders &amp; Observations and Anatomic pathology work groups.&#160; BRIDG recognizes these work group models as peer or sibling models and is committed to working with the work group members to align on common semantics.&#160; The BRIDG team has started the conversation with the work groups to this effect and plan to continue the dialogue on how to operationalize the collaboration and leverage the subject matter expertise of this HL7 group members.&#160; &lt;/font&gt;&lt;br/&gt;</div>
+
+</div>
+ 
+</body>
+</html>

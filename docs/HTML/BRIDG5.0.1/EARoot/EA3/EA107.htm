@@ -1,0 +1,896 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>Common Sub-Domain::Material</title>
+<link href="../../css/ea.css" rel="stylesheet" type="text/css" />
+<script>
+function initPage(src) {	
+	if(parent==this&&(this.location+"").indexOf('EARoot')!=-1)
+		document.location=(this.location+"").substring(0,(this.location+"").indexOf('EARoot'))+"index"+(this.location+"").substring((this.location+"").lastIndexOf('.'))+"?goto="+((this.location+"").substring((this.location+"").indexOf('EARoot')+7,(this.location+"").lastIndexOf('.')).replace(/\//g,':').replace(/EA/g,""));
+	else
+		parent.initPage(src);
+}
+
+function nameClassifier(name, separator)
+{
+  var str = name;
+  var classifierName;
+  var node = document.getElementById('name_classifier');
+  if(node != null)
+  {
+    classifierName = node.innerHTML;
+  }
+  if(classifierName != "")
+  {
+   str += separator + classifierName;
+  }
+  
+  return str;
+}
+</script>
+</head>
+<body onload="initPage(this);" class="Content">
+<div class="pageHeader"></div>
+<div class="PageBody">
+	<div id="name_classifier" style="display: none;"></div>
+	<span class="ObjectTitle"><script type="text/javascript">document.write(nameClassifier("Material", " : "))</script>  : Public   Class</span>
+	<table border="0" cellpadding="0" cellspacing="0" class="ObjectDetails">
+		<tr>
+			<td width="15%" class="ObjectDetailsTopic">Created:</td>
+			<td width="85%" class="ObjectDetailsValue">1/5/2005 2:49:47 PM</td>
+		</tr>
+		<tr>
+			<td class="ObjectDetailsTopic">Modified:</td>
+			<td class="ObjectDetailsValue">8/26/2017 2:00:38 AM</td>
+		</tr>
+		<tr style="height: 10px"><td colspan="2"></td></tr>
+		<tr>
+			<td class="ObjectDetailsTopic"><img src="../../images/plus03.gif" align="absmiddle" id="proj" onclick="parent.toggleData(this.id)" />Project:</td>
+			<td class="ObjectDetailsValue"></td>
+		</tr>
+		<tr id="proj00" style="display: none;">
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Author:</td>
+			<td class="ObjectDetailsValue">BRIDG SCC</td>
+		</tr>
+		<tr id="proj01" style="display: none;">
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Version:</td>
+			<td class="ObjectDetailsValue">1.0</td>
+		</tr>
+		<tr id="proj02" style="display: none;">
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Phase:</td>
+			<td class="ObjectDetailsValue">1.0</td>
+		</tr>
+		<tr id="proj03" style="display: none;">
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Status:</td>
+			<td class="ObjectDetailsValue"><none></td>
+		</tr>
+		<tr id="proj04" style="display: none;">
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Complexity:</td>
+			<td class="ObjectDetailsValue">Easy</td>
+		</tr>
+		<tr id="proj05" style="display: none;">
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Difficulty:</td>
+			<td class="ObjectDetailsValue"></td>
+		</tr>
+		<tr id="proj06" style="display: none;">
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Priority:</td>
+			<td class="ObjectDetailsValue"></td>
+		</tr>
+		<tr id="proj05" style="display: none;">
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Multiplicity:</td>
+			<td class="ObjectDetailsValue"></td>
+		</tr>
+		<tr>
+			<td class="ObjectDetailsTopic"><img src="../../images/plus03.gif" align="absmiddle" id="adv" onclick="parent.toggleData(this.id)" />Advanced:</td>
+			<td class="ObjectDetailsValue"></td>
+		</tr>
+		<tr id="adv00" style="display: none;">
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">UUID:</td>
+			<td class="ObjectDetailsValue">{37536741-5B4E-4801-88DE-15BF55C88510}</td>
+		</tr>
+		<tr id="adv01" style="display: none;">
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Appears In:</td>
+			<td class="ObjectDetailsValue"><a href="../EA1.htm">UML-Based Comprehensive BRIDG Model Diagram</a>, <a href="../EA2/EA45.htm">View BSP: Biospecimen</a>, <a href="../EA4/EA155.htm">View EX: Experiment</a>, <a href="../EA6/EA204.htm">View MB: Molecular Biology</a>, <a href="../EA1/EA28.htm">View AE: Adverse Event</a>, <a href="EA60.htm">View CM: Common</a>, <a href="../EA7/EA240.htm">View PR: Protocol Representation</a>, <a href="../EA8/EA325.htm">View RG: Regulatory</a>, <a href="../EA10/EA356.htm">View SC: Study Conduct</a>, <a href="../EA5/EA170.htm">View IM: Imaging</a>, <a href="../EA11/EA452.htm">Product</a>, <a href="../EA5/EA174.htm">DICOM SR TID 1500 BRIDG Class Diagram</a>, <a href="../EA11/EA454.htm">SDTM 3.1.3 View</a>, <a href="../EA11/EA456.htm">SDTM Exposure (EX) Domain View</a>, <a href="../EA11/EA438.htm">ClinicalTrials.gov</a>, <a href="../EA11/EA448.htm">Participant Registration</a></td>
+		</tr>
+	</table>
+	<div class="ObjectDetailsNotes">DEFINITION:&lt;br/&gt;A physical substance or system.&lt;br/&gt;&lt;br/&gt;EXAMPLE(S):&lt;br/&gt;drugs such as aspirin&lt;br/&gt;devices such as pacemakers or freezers&lt;br/&gt;systems such as software programs&lt;br/&gt;biologics such as blood&lt;br/&gt;food products such as broccoli&lt;br/&gt;cosmetics such as lipstick&lt;br/&gt;containers such as a blister pack or a test tube&lt;br/&gt;&lt;br/&gt;OTHER NAME(S):&lt;br/&gt;&lt;br/&gt;NOTE(S):&lt;br/&gt;Materials may be naturally occurring or may be made by natural or engineered processes.&lt;br/&gt;</div>
+
+	<div class="TableGroup" id="TableGroup">
+		<ul class="ItemTitle">
+			<li onClick="parent.toggleItem('Attributes');" id="AttributesTitle">Attributes</li>
+			<li onClick="parent.toggleItem('AssociationsTo');" id="AssociationsToTitle">Associations To</li>
+			<li onClick="parent.toggleItem('AssociationsFrom');" id="AssociationsFromTitle">Associations From</li>
+			<li onClick="parent.toggleItem('TaggedVal');" id="TaggedValTitle">Tagged Values</li>
+			<li onClick="parent.toggleItem('Constraints');" id="ConstraintsTitle">Constraints</li>
+			<li onClick="parent.toggleItem('Links');" id="LinksTitle">Other Links</li>
+		</ul>
+<div class="ItemBody" id="AttributesTable">
+	<table border="0" cellspacing="0" cellpadding="0" class="Table">
+		<tr>
+			<td width="100%" class="TableHeading">Attribute</td>
+		</tr>
+						<tr>
+				<td width="100%" class="TableRow">
+					<i>Public ID</i><br /><strong>&nbsp;&nbsp;identifier</strong>
+				</td>
+			</tr>
+			<tr>
+				<td class="TableRowBottomDashed"  colspan="1">										
+					<a href="#" onclick="parent.toggleData('DetailsImageAttributes578')" style="text-decoration: none; color: #000000;"><img src="../../images/plus03.gif" align="absmiddle" id="DetailsImageAttributes578" border="0" />Details:</a>
+					<table border="0" cellspacing="0" cellpadding="0" class="Table" style="padding: 4px 18px;">
+					
+						<tr id="DetailsImageAttributes578_00" style="display: none;">
+							<td width="75"><i>Alias:</i></td>
+							<td></td>
+						</tr>
+						<tr id="DetailsImageAttributes578_01" style="display: none;">
+							<td width="75"><i>Initial:</i></td>
+							<td></td>
+						</tr>
+						<tr id="DetailsImageAttributes578_02" style="display: none;">
+							<td width="75"><i>Stereotype: </i></td>
+							<td></td>
+						</tr>
+						<tr id="DetailsImageAttributes578_03" style="display: none;">
+							<td width="75"><i>Ordered: </i></td>
+							<td></td>
+						</tr>
+						<tr id="DetailsImageAttributes578_04" style="display: none;">
+							<td width="75"><i>Range: </i></td>
+							<td>Range:1. to 1</td>
+						</tr>
+						<tr id="DetailsImageAttributes578_05" style="display: none;">
+							<td width="75"><i>Transient: </i></td>
+							<td>False</td>
+						</tr>
+						<tr id="DetailsImageAttributes578_06" style="display: none;">
+							<td width="75"><i>Derived: </i></td>
+							<td>False</td>
+						</tr>
+							<tr id="DetailsImageAttributes578_07" style="display: none;">
+							<td width="75"><i>IsID: </i></td>
+						<td>False</td>
+						</tr>
+					</table>
+					
+					Map:AE=Package.identifier<br>Map:AE=Device.modelNumber<br>Map:AE=Ingredient.batchnumber<br>Map:AE=Device.serialNumber<br>Map:AE=Device.otherNumber<br>Map:AE=Device.catalogNumber<br>Map:AE=Component.batchNumber<br>Map:AIM v4 rv48=Equipment.deviceSerialNumber<br>Map:C3PRv2.9=ScheduledArm.kitNumber<br>Map:caAERSv2.2=MedicalDevice.modelNumber<br>Map:caAERSv2.2=MedicalDevice.catalogNumber<br>Map:caAERSv2.2=Agent.nscNumber<br>Map:CDASHv1.1=DA.DAREFID<br>Map:CTOM=Specimen.sampleIdentifier<br>Map:CTR&Rr2=Related IMP sequence number<br>Map:CTRPv1.0=Material.identifier<br>Map:CTRPv1.0=Biologic.identifier<br>Map:CTRPv1.0=Cosmetic.identifier<br>Map:CTRPv1.0=Device.identifier<br>Map:CTRPv1.0=Product.identifier<br>Map:CTRPv1.0=FoodProduct.identifier<br>Map:CTRPv1.0=Drug.identifier<br>Map:CTRRr3=Material.identifier<br>Map:CTRv1.0=MaterialIdentifier.identifier<br>Map:DICOM=Equipment Specification Module - Model Specification Sequence (0018,9912) > Device Serial Number (0018,1000)<br>Map:DICOM=TID 1004 DeviceObserverIdentifyingAttributes > Device Observer UID<br>Map:DICOM=General Equipment Module - Device Serial Number (0018,1000)<br>Map:DICOM=TID 1004 DeviceObserverIdentifyingAttributes > Device Observer Serial Number<br>Map:FDA HL7 SD SD DSTU2012=manufacturedProduct.id<br>Map:HCTv1.0=CDE 2808120:Anatomic Structure, System, or Substance.NMDP Cord Blood Unit ID:<br>Map:HCTv1.0=CDE 2735595:Anatomic Structure, System, or Substance.Non-NMDP Cord Blood Unit (CBU) ID:<br>Map:HCTv1.0=MD Anderson Specific Content: Transplant.BMT# or GMP #<br>Map:ICSRr2=Specimen.id (in R_Specimen universal)<br>Map:ICSRr2=ProductInstance.id (in R_Product)<br>Map:ICSRr2=ManufacturedProduct.id (in R_Product)<br>Map:ICSRr2=IdentifiedItem.id (in R_Product)<br>Map:ICSRr2=DeviceInstance.id (in R_Product)<br>Map:Lab=Specimen.identifier<br>Map:LabViewer2.2=Specimen.identifier<br>Map:LSDAMv2.2.3Plus=MaterialIdentifier.identifier<br>Map:LSDAMv2.2.3Plus=Software.identifier<br>Map:PGx v1.0=BE.BEREFID<br>Map:PGx v1.0=PF.PFREFID<br>Map:PGx v1.0=SB.SBREFID<br>Map:PGx v1.0=BE.SPDEVID<br>Map:PGx v1.0=BS.BSREFID<br>Map:PGx v1.0=PG.PGREFID<br>Map:PGx v1.0=RELSPEC.PARENT<br>Map:PGx v1.0=RELSPEC.REFID<br>Map:SDTM IGv3.1.2=DA.DAREFID<br>Map:SDTM IGv3.1.2=MB.MBREFID<br>Map:SDTM IGv3.1.2=PC.PCREFID<br>Map:SDTM IGv3.1.2=MS.MSREFID<br>Map:SDTM IGv3.1.3=DA.DAREFID<br>Map:SDTM IGv3.1.3=DA.DASPID<br>Map:SDTM IGv3.1.3=MS.MSREFID<br>Map:SDTM IGv3.1.3=MB.MBREFID<br>Map:SDTM IGv3.1.3=PC.PCREFID<br>Map:SDTM IGv3.1.3=LB.LBREFID<br>
+						<div class="ObjectDetailsNotes"><table>
+	<tr>
+		<td valign="top">
+			<i>Notes: </i><span style="margin-left: .4cm;"> </span>
+		</td>
+		<td>
+			DEFINITION:&lt;br/&gt;A unique symbol that establishes identity of the material.&lt;br/&gt;&lt;br/&gt;EXAMPLE(S):&lt;br/&gt;serial number, product number, model number&lt;br/&gt;&lt;br/&gt;OTHER NAME(S):&lt;br/&gt;&lt;br/&gt;NOTE(S):&lt;br/&gt;There are multiple ways in which an identifier can be associated to a product; inherited from MaterialIdentifier.identifier, the association to ProcessedProduct.identifier, and the association to ProductRelationship.identifier.&#160; If there is no context associated with the identifier, then MaterialIdentifier.identifier should be used.&#160; However, if the identifier for a product would be different in different context, one of the other identifiers should be used.&#160; If a kind of product is produced by different processors, and each processor assigns the product a different identifier, then ProcessedProduct.identifier should be used. If the product is used in multiple assemblies, and in each assembly it would be assigned a different identifier, then ProductRelationship.identifier should be used. &lt;br/&gt;
+		</td>
+	</tr>
+</table></div>
+
+						
+				</td>
+			</tr>			<tr>
+				<td width="100%" class="TableRow">
+					<i>Public CD</i><br /><strong>&nbsp;&nbsp;code</strong>
+				</td>
+			</tr>
+			<tr>
+				<td class="TableRowBottomDashed"  colspan="1">										
+					<a href="#" onclick="parent.toggleData('DetailsImageAttributes579')" style="text-decoration: none; color: #000000;"><img src="../../images/plus03.gif" align="absmiddle" id="DetailsImageAttributes579" border="0" />Details:</a>
+					<table border="0" cellspacing="0" cellpadding="0" class="Table" style="padding: 4px 18px;">
+					
+						<tr id="DetailsImageAttributes579_00" style="display: none;">
+							<td width="75"><i>Alias:</i></td>
+							<td></td>
+						</tr>
+						<tr id="DetailsImageAttributes579_01" style="display: none;">
+							<td width="75"><i>Initial:</i></td>
+							<td></td>
+						</tr>
+						<tr id="DetailsImageAttributes579_02" style="display: none;">
+							<td width="75"><i>Stereotype: </i></td>
+							<td></td>
+						</tr>
+						<tr id="DetailsImageAttributes579_03" style="display: none;">
+							<td width="75"><i>Ordered: </i></td>
+							<td></td>
+						</tr>
+						<tr id="DetailsImageAttributes579_04" style="display: none;">
+							<td width="75"><i>Range: </i></td>
+							<td>Range:0 to 1</td>
+						</tr>
+						<tr id="DetailsImageAttributes579_05" style="display: none;">
+							<td width="75"><i>Transient: </i></td>
+							<td>False</td>
+						</tr>
+						<tr id="DetailsImageAttributes579_06" style="display: none;">
+							<td width="75"><i>Derived: </i></td>
+							<td>False</td>
+						</tr>
+							<tr id="DetailsImageAttributes579_07" style="display: none;">
+							<td width="75"><i>IsID: </i></td>
+						<td>False</td>
+						</tr>
+					</table>
+					
+					Map:caAERSv2.2=SAEReportPriorTherapy.other<br>Map:caAERSv2.2=SAEReportPreExistingCondition > PriorTherapy.text<br>Map:caAERSv2.2=ChemoAgent.name<br>Map:caAERSv2.2=SAEReportPreExistingCondition > PriorTherapy.meddraCode<br>Map:caAERSv2.2=StudyParticipantPreExistingCondition > PriorTherapy.text<br>Map:caAERSv2.2=StudyParticipantPreExistingCondition > PriorTherapy.meddraTerm<br>Map:caAERSv2.2=StudyAgent.otherAgent<br>Map:caAERSv2.2=StudyParticipantPreExistingCondition > PriorTherapy.meddraCode<br>Map:caAERSv2.2=SAEReportPreExistingCondition > PriorTherapy.meddraTerm<br>Map:caAERSv2.2=StudyParticipantPriorTherapy.other<br>Map:CDASHv1.1=CM.CMINGRD<br>Map:CTR&Rr2=Tissue Engineered Other<br>Map:CTR&Rr2=Placebo major ingredients<br>Map:CTR&Rr2=AS current sponsor code<br>Map:CTR&Rr2=Tissue Engineered type stem<br>Map:CTR&Rr2=Comparator another MP<br>Map:CTR&Rr2=Tissue Engineered type differentiated<br>Map:CTR&Rr2=Other comparator<br>Map:CTR&Rr2=EV Identifiable Product Code<br>Map:CTR&Rr2=Comparator a placebo<br>Map:CTR&Rr2=EV (EudraVigilance) Substance Code<br>Map:CTRPv1.0=Drug.nameCode<br>Map:CTRPv1.0=SubstanceAdministration.treatmentVehicleCode<br>Map:CTRR=StudyAgent<br>Map:CTRR=Comparator(s) product name(s)<br>Map:CTRR=Intervention Name<br>Map:CTRRr3=Product.nameCode<br>Map:CTRv1.0=Material.code<br>Map:DICOM=Enhanced PET Isotope Module - Radiopharmaceutical Information Sequence > Radiopharmaceutical Code Sequence (0054,0304)<br>Map:DICOM=Enhanced Contrast/Bolus Module - Contrast/Bolus Agent Sequence > Contrast/Bolus Ingredient Code Sequence <br>Map:DICOM=Enhanced Contrast/Bolus Module - Contrast/Bolus Agent Sequence  (0018,0012)<br>Map:DICOM=Contrast/Bolus Module - Contrast/Bolus Agent (0018,0010)<br>Map:DICOM=Contrast/Bolus Module - Contrast/Bolus Ingredient (0018,1048)<br>Map:DICOM=Contrast/Bolus Module - Contrast/Bolus Agent Sequence (0018,0012)<br>Map:FDA HL7 SD SD DSTU2012=manufacturedMaterial.code<br>Map:HCTv1.0=CDE 2739625:Preparative Regimen.What was the type of preparative regimen medication?<br>Map:ICSRr2=MaterialKind.code (in R_Product)<br>Map:ICSRr2=ManufacturedMaterial.code (in R_Specimen universal)<br>Map:ICSRr2=Natural.code (in R_Specimen universal)<br>Map:LabViewer2.2=SpecimenMaterialType.code<br>Map:LabViewer2.2=SpecimenMaterialType.codeSystem<br>Map:LabViewer2.2=SpecimenMaterialType.displayName<br>Map:LabViewer2.2=SpecimenMaterialType.codeSystemVersion<br>Map:LabViewer2.2=SpecimenMaterialType.codeSystemName<br>Map:LSDAMv2.2.3Plus=Place.locatorTypeCode<br>Map:LSDAMv2.2.3Plus=Material.nameCode<br>Map:NCI CRF Standard=CDE 2867247v1.0: Agent NCI Enterprise Vocabulary Services Code<br>Map:PGx v1.0=PF.PFSPEC<br>Map:PGx v1.0=BS.BSSPEC<br>Map:PGx v1.0=PG.PGSPEC<br>Map:PGx v1.0=RELSPEC.SPEC<br>Map:SDTM IGv3.1.1=EX.EXTRTV<br>Map:SDTM IGv3.1.1=CM.CMTRT<br>Map:SDTM IGv3.1.2=SU.SUDECOD<br>Map:SDTM IGv3.1.2=EX.EXTRTV<br>Map:SDTM IGv3.1.2=PP.PPSPEC<br>Map:SDTM IGv3.1.2=PC.PCSPEC<br>Map:SDTM IGv3.1.2=LB.LBSPEC<br>Map:SDTM IGv3.1.2=CM.CMDECOD<br>Map:SDTM IGv3.1.2=MB.MBSPEC<br>Map:SDTM IGv3.1.3=TS.TSVALCD WHERE TSPARMCD = "ADDON"<br>Map:SDTM IGv3.1.3=TS.TSVCDREF WHERE TSPARMCD = "COMPTRT"<br>Map:SDTM IGv3.1.3=TS.TSVCDREF WHERE TSPARMCD = "TRT"<br>Map:SDTM IGv3.1.3=TS.TSVALCD WHERE TSPARMCD = "TRT"<br>Map:SDTM IGv3.1.3=TS.TSVCDVER WHERE TSPARMCD = "COMPTRT"<br>Map:SDTM IGv3.1.3=TS.TSVCDVER WHERE TSPARMCD = "TRT"<br>Map:SDTM IGv3.1.3=LB.LBSPEC<br>Map:SDTM IGv3.1.3=CM.CMDECOD<br>Map:SDTM IGv3.1.3=TS.TSVAL WHERE TSPARMCD = "ADDON"<br>Map:SDTM IGv3.1.3=EX.EXTRTV<br>Map:SDTM IGv3.1.3=TS.TSVCDREF WHERE TSPARMCD = "ADDON"<br>Map:SDTM IGv3.1.3=TS.TSVCDVER WHERE TSPARMCD = "ADDON"<br>Map:SDTM IGv3.1.3=TS.TSVALCD WHERE TSPARMCD = "COMPTRT"<br>Map:SDTM IGv3.1.3=TS.TSVALNF WHERE TSPARMCD = "ADDON"<br>Map:SDTM IGv3.1.3=MB.MBSPEC<br>Map:SDTM IGv3.1.3=SU.SUTRT<br>Map:SDTM IGv3.1.3=CM.CMTRT<br>Map:SDTM IGv3.1.3=MB.MBSPEC<br>Map:SDTM IGv3.1.3=PC.PCSPEC<br>Map:SDTM IGv3.1.3=SU.SUDECOD<br>Map:SDTM IGv3.1.3=SU.SUTRT<br>
+						<div class="ObjectDetailsNotes"><table>
+	<tr>
+		<td valign="top">
+			<i>Notes: </i><span style="margin-left: .4cm;"> </span>
+		</td>
+		<td>
+			DEFINITION:&lt;br/&gt;A coded value specifying the non-unique textual identifier for the material.&lt;br/&gt;&lt;br/&gt;EXAMPLE(S):&lt;br/&gt;aspirin, tobacco, caffeine, tongue depressors, x-ray machine, olive oil, oats, lipstick, skin moisturizer, blisterpack, test tube, specimen slide, urine, blood, plasma, platelet rich plasma, serum, DNA, gDNA, RNA, gRNA, mRNA, Fluorodeoxyglucose F^18^ &lt;br/&gt;&lt;br/&gt;OTHER NAME(S):&lt;br/&gt;&lt;br/&gt;NOTE(S):&lt;br/&gt;The granularity of the code may vary depending on the specificity of the material. For example, acetaminophen, Tylenol, Tylenol 250 mg gel cap.&lt;br/&gt;
+		</td>
+	</tr>
+</table></div>
+
+						
+				</td>
+			</tr>			<tr>
+				<td width="100%" class="TableRow">
+					<i>Public CD</i><br /><strong>&nbsp;&nbsp;formCode</strong>
+				</td>
+			</tr>
+			<tr>
+				<td class="TableRowBottomDashed"  colspan="1">										
+					<a href="#" onclick="parent.toggleData('DetailsImageAttributes580')" style="text-decoration: none; color: #000000;"><img src="../../images/plus03.gif" align="absmiddle" id="DetailsImageAttributes580" border="0" />Details:</a>
+					<table border="0" cellspacing="0" cellpadding="0" class="Table" style="padding: 4px 18px;">
+					
+						<tr id="DetailsImageAttributes580_00" style="display: none;">
+							<td width="75"><i>Alias:</i></td>
+							<td></td>
+						</tr>
+						<tr id="DetailsImageAttributes580_01" style="display: none;">
+							<td width="75"><i>Initial:</i></td>
+							<td></td>
+						</tr>
+						<tr id="DetailsImageAttributes580_02" style="display: none;">
+							<td width="75"><i>Stereotype: </i></td>
+							<td></td>
+						</tr>
+						<tr id="DetailsImageAttributes580_03" style="display: none;">
+							<td width="75"><i>Ordered: </i></td>
+							<td></td>
+						</tr>
+						<tr id="DetailsImageAttributes580_04" style="display: none;">
+							<td width="75"><i>Range: </i></td>
+							<td>Range:0 to 1</td>
+						</tr>
+						<tr id="DetailsImageAttributes580_05" style="display: none;">
+							<td width="75"><i>Transient: </i></td>
+							<td>False</td>
+						</tr>
+						<tr id="DetailsImageAttributes580_06" style="display: none;">
+							<td width="75"><i>Derived: </i></td>
+							<td>False</td>
+						</tr>
+							<tr id="DetailsImageAttributes580_07" style="display: none;">
+							<td width="75"><i>IsID: </i></td>
+						<td>False</td>
+						</tr>
+					</table>
+					
+					Map:AE=Product.formCode<br>Map:AE=Component.formCode<br>Map:AE=Package.formCode<br>Map:caAERSv2.2=CourseAgent.formulation<br>Map:CDASHv1.1=CM.CMDOSFRM<br>Map:CDASHv1.1=EX.EXDOSFRM<br>Map:CTOM=AgentOccurrence.formCode<br>Map:CTR&Rr2=IMP Pharmaceutical Form<br>Map:CTR&Rr2=Placebo Pharmaceutical form<br>Map:CTRPv1.0=Biologic.formCode<br>Map:CTRPv1.0=Drug.formCode<br>Map:CTRPv1.0=FoodProduct.formCode<br>Map:CTRPv1.0=Material.formCode<br>Map:CTRPv1.0=Device.formCode<br>Map:CTRPv1.0=Cosmetic.formCode<br>Map:CTRPv1.0=Product.formCode<br>Map:CTRPv3.8=PlannedSubstanceAdministration.doseFormCode<br>Map:CTRRr3=Material.formCode<br>Map:CTRv1.0=Material.formCode<br>Map:FDA HL7 SD SD DSTU2012=manufacturedMaterial.formCode<br>Map:HL7SD=Product.formCode<br>Map:ICSRr2=Container.formCode (in R_Product)<br>Map:ICSRr2=PackagedProduct.formCode (in R_Product)<br>Map:ICSRr2=Product.formCode (in R_Product)<br>Map:LSDAMv2.2.3Plus=Material.formCode<br>Map:NCI CRF Standard=CDE 2179618v1.0: Agent Formulation Descriptive Text<br>Map:SDTM IGv3.1.1=CM.CMDOSFRM<br>Map:SDTM IGv3.1.1=LB.LBSPEC<br>Map:SDTM IGv3.1.1=EX.EXDOSFRM<br>Map:SDTM IGv3.1.1=SU.SUDOSFRM<br>Map:SDTM IGv3.1.2=SU.SUDOSFRM<br>Map:SDTM IGv3.1.2=EX.EXDOSFRM<br>Map:SDTM IGv3.1.2=CM.CMDOSFRM<br>Map:SDTM IGv3.1.3=CM.CMDOSFRM<br>Map:SDTM IGv3.1.3=EX.EXDOSFRM<br>Map:SDTM IGv3.1.3=SU.SUDOSFRM<br>
+						<div class="ObjectDetailsNotes"><table>
+	<tr>
+		<td valign="top">
+			<i>Notes: </i><span style="margin-left: .4cm;"> </span>
+		</td>
+		<td>
+			DEFINITION:&lt;br/&gt;A coded value specifying the state and nature of the material.&lt;br/&gt;&lt;br/&gt;EXAMPLE(S):&lt;br/&gt;solid, liquid, gas, tablet, ointment, gel&lt;br/&gt;&lt;br/&gt;OTHER NAME(S):&lt;br/&gt;&lt;br/&gt;NOTE(S):&lt;br/&gt;
+		</td>
+	</tr>
+</table></div>
+
+						
+				</td>
+			</tr>			<tr>
+				<td width="100%" class="TableRow">
+					<i>Public ST</i><br /><strong>&nbsp;&nbsp;description</strong>
+				</td>
+			</tr>
+			<tr>
+				<td class="TableRowBottomDashed"  colspan="1">										
+					<a href="#" onclick="parent.toggleData('DetailsImageAttributes581')" style="text-decoration: none; color: #000000;"><img src="../../images/plus03.gif" align="absmiddle" id="DetailsImageAttributes581" border="0" />Details:</a>
+					<table border="0" cellspacing="0" cellpadding="0" class="Table" style="padding: 4px 18px;">
+					
+						<tr id="DetailsImageAttributes581_00" style="display: none;">
+							<td width="75"><i>Alias:</i></td>
+							<td></td>
+						</tr>
+						<tr id="DetailsImageAttributes581_01" style="display: none;">
+							<td width="75"><i>Initial:</i></td>
+							<td></td>
+						</tr>
+						<tr id="DetailsImageAttributes581_02" style="display: none;">
+							<td width="75"><i>Stereotype: </i></td>
+							<td></td>
+						</tr>
+						<tr id="DetailsImageAttributes581_03" style="display: none;">
+							<td width="75"><i>Ordered: </i></td>
+							<td></td>
+						</tr>
+						<tr id="DetailsImageAttributes581_04" style="display: none;">
+							<td width="75"><i>Range: </i></td>
+							<td>Range:0 to 1</td>
+						</tr>
+						<tr id="DetailsImageAttributes581_05" style="display: none;">
+							<td width="75"><i>Transient: </i></td>
+							<td>False</td>
+						</tr>
+						<tr id="DetailsImageAttributes581_06" style="display: none;">
+							<td width="75"><i>Derived: </i></td>
+							<td>False</td>
+						</tr>
+							<tr id="DetailsImageAttributes581_07" style="display: none;">
+							<td width="75"><i>IsID: </i></td>
+						<td>False</td>
+						</tr>
+					</table>
+					
+					Map:caAERSv2.2=Agent.descriptionText<br>Map:CTGOV=Biospecimen Description<br>Map:CTOM=Agent.descriptionText<br>Map:CTR&Rr2=Tissue Engineered differentiated specification<br>Map:CTR&Rr2=Other comparator specification<br>Map:CTR&Rr2=Device Other specification<br>Map:CTR&Rr2=Device description<br>Map:CTR&Rr2=AS description<br>Map:CTR&Rr2=Tissue Engineered Other specification<br>Map:CTRPv1.0=ObservationalStudyProtocol.biospecimenDescription<br>Map:CTRPv1.0=Material.description<br>Map:CTRPv1.0=FoodProduct.description<br>Map:CTRPv1.0=Cosmetic.description<br>Map:CTRPv1.0=Device.description<br>Map:CTRPv1.0=Biologic.description<br>Map:CTRPv1.0=Drug.description<br>Map:CTRPv1.0=Product.description<br>Map:CTRRr3=Material.description<br>Map:CTRv1.0=Material.description<br>Map:ICSRr2=DeviceInstance.desc (in R_Product)<br>Map:ICSRr2=Container.desc (in R_Product)<br>Map:ICSRr2=Substance.desc (in R_Product)<br>Map:ICSRr2=PackagedProduct.desc (in R_Product)<br>Map:ICSRr2=Product.desc (in R_Product)<br>Map:ICSRr2=ProductInstance.desc (in R_Product)<br>Map:LSDAMv2.2.3Plus=Material.description<br>Map:LSDAMv2.2.3Plus=Container.description<br>
+						<div class="ObjectDetailsNotes"><table>
+	<tr>
+		<td valign="top">
+			<i>Notes: </i><span style="margin-left: .4cm;"> </span>
+		</td>
+		<td>
+			DEFINITION:&lt;br/&gt;The textual representation of the material.&lt;br/&gt;&lt;br/&gt;EXAMPLE(S):&lt;br/&gt;&lt;br/&gt;OTHER NAME(S):&lt;br/&gt;&lt;br/&gt;NOTE(S):&lt;br/&gt;
+		</td>
+	</tr>
+</table></div>
+
+						
+				</td>
+			</tr>			<tr>
+				<td width="100%" class="TableRow">
+					<i>Public DSET&lt;CD&gt;</i><br /><strong>&nbsp;&nbsp;characteristicBehaviorCode</strong>
+				</td>
+			</tr>
+			<tr>
+				<td class="TableRowBottomDashed"  colspan="1">										
+					<a href="#" onclick="parent.toggleData('DetailsImageAttributes582')" style="text-decoration: none; color: #000000;"><img src="../../images/plus03.gif" align="absmiddle" id="DetailsImageAttributes582" border="0" />Details:</a>
+					<table border="0" cellspacing="0" cellpadding="0" class="Table" style="padding: 4px 18px;">
+					
+						<tr id="DetailsImageAttributes582_00" style="display: none;">
+							<td width="75"><i>Alias:</i></td>
+							<td></td>
+						</tr>
+						<tr id="DetailsImageAttributes582_01" style="display: none;">
+							<td width="75"><i>Initial:</i></td>
+							<td></td>
+						</tr>
+						<tr id="DetailsImageAttributes582_02" style="display: none;">
+							<td width="75"><i>Stereotype: </i></td>
+							<td></td>
+						</tr>
+						<tr id="DetailsImageAttributes582_03" style="display: none;">
+							<td width="75"><i>Ordered: </i></td>
+							<td></td>
+						</tr>
+						<tr id="DetailsImageAttributes582_04" style="display: none;">
+							<td width="75"><i>Range: </i></td>
+							<td></td>
+						</tr>
+						<tr id="DetailsImageAttributes582_05" style="display: none;">
+							<td width="75"><i>Transient: </i></td>
+							<td>False</td>
+						</tr>
+						<tr id="DetailsImageAttributes582_06" style="display: none;">
+							<td width="75"><i>Derived: </i></td>
+							<td>False</td>
+						</tr>
+							<tr id="DetailsImageAttributes582_07" style="display: none;">
+							<td width="75"><i>IsID: </i></td>
+						<td>False</td>
+						</tr>
+					</table>
+					
+					Map:LSDAMv2.2.3Plus=Material.functionTypeCode<br>
+						<div class="ObjectDetailsNotes"><table>
+	<tr>
+		<td valign="top">
+			<i>Notes: </i><span style="margin-left: .4cm;"> </span>
+		</td>
+		<td>
+			DEFINITION:&lt;br/&gt;A coded value specifying the essential traits of the material that result from the chemical and physical composition and properties of the entity.&#160; &lt;br/&gt;&lt;br/&gt;EXAMPLE(S):&lt;br/&gt;kinase, RNAse &lt;br/&gt;&lt;br/&gt;properties of gold might include:&#160; good conductor, unaffected by air or moisture, almost insoluble, etc.&#160; &lt;br/&gt;&lt;br/&gt;OTHER NAME(S):&lt;br/&gt;&lt;br/&gt;NOTE(S):&lt;br/&gt;
+		</td>
+	</tr>
+</table></div>
+
+						
+				</td>
+			</tr>			<tr>
+				<td width="100%" class="TableRow">
+					<i>Public BL</i><br /><strong>&nbsp;&nbsp;actualIndicator</strong>
+				</td>
+			</tr>
+			<tr>
+				<td class="TableRowBottomDashed"  colspan="1">										
+					<a href="#" onclick="parent.toggleData('DetailsImageAttributes583')" style="text-decoration: none; color: #000000;"><img src="../../images/plus03.gif" align="absmiddle" id="DetailsImageAttributes583" border="0" />Details:</a>
+					<table border="0" cellspacing="0" cellpadding="0" class="Table" style="padding: 4px 18px;">
+					
+						<tr id="DetailsImageAttributes583_00" style="display: none;">
+							<td width="75"><i>Alias:</i></td>
+							<td></td>
+						</tr>
+						<tr id="DetailsImageAttributes583_01" style="display: none;">
+							<td width="75"><i>Initial:</i></td>
+							<td></td>
+						</tr>
+						<tr id="DetailsImageAttributes583_02" style="display: none;">
+							<td width="75"><i>Stereotype: </i></td>
+							<td></td>
+						</tr>
+						<tr id="DetailsImageAttributes583_03" style="display: none;">
+							<td width="75"><i>Ordered: </i></td>
+							<td></td>
+						</tr>
+						<tr id="DetailsImageAttributes583_04" style="display: none;">
+							<td width="75"><i>Range: </i></td>
+							<td>Range:1. to 1</td>
+						</tr>
+						<tr id="DetailsImageAttributes583_05" style="display: none;">
+							<td width="75"><i>Transient: </i></td>
+							<td>False</td>
+						</tr>
+						<tr id="DetailsImageAttributes583_06" style="display: none;">
+							<td width="75"><i>Derived: </i></td>
+							<td>False</td>
+						</tr>
+							<tr id="DetailsImageAttributes583_07" style="display: none;">
+							<td width="75"><i>IsID: </i></td>
+						<td>False</td>
+						</tr>
+					</table>
+					
+					Map:CTRv1.0=Material.actualIndicator<br>Map:HL7SD=ExperimentalUnit>ExperimentalUnit2(choice box).determinerCode<br>Map:HL7SD=R_AssignedEntity(Universal)<br>Map:ICSRr2=MaterialKind.determinerCode (in R_Product)<br>Map:ICSRr2=Product.determinerCode (in R_Product)<br>Map:LSDAMv2.2.3Plus=Material.actualIndicator<br>
+						<div class="ObjectDetailsNotes"><table>
+	<tr>
+		<td valign="top">
+			<i>Notes: </i><span style="margin-left: .4cm;"> </span>
+		</td>
+		<td>
+			DEFINITION:&lt;br/&gt;Specifies whether the material is a particular instance (actual) vs. universal kind.&lt;br/&gt;&lt;br/&gt;EXAMPLE(S):&lt;br/&gt;To indicate a particular Material, actualIndicator = &quot;true&quot;. To indicate a kind of Material, actualIndicator = &quot;false&quot;.&lt;br/&gt;&lt;br/&gt;OTHER NAME(S):&lt;br/&gt;&lt;br/&gt;NOTE(S):&lt;br/&gt;
+		</td>
+	</tr>
+</table></div>
+
+						
+				</td>
+			</tr>			<tr>
+				<td width="100%" class="TableRow">
+					<i>Public IVL&lt;TS.DATETIME&gt;</i><br /><strong>&nbsp;&nbsp;effectiveDateRange</strong>
+				</td>
+			</tr>
+			<tr>
+				<td class="TableRowBottomDashed"  colspan="1">										
+					<a href="#" onclick="parent.toggleData('DetailsImageAttributes584')" style="text-decoration: none; color: #000000;"><img src="../../images/plus03.gif" align="absmiddle" id="DetailsImageAttributes584" border="0" />Details:</a>
+					<table border="0" cellspacing="0" cellpadding="0" class="Table" style="padding: 4px 18px;">
+					
+						<tr id="DetailsImageAttributes584_00" style="display: none;">
+							<td width="75"><i>Alias:</i></td>
+							<td></td>
+						</tr>
+						<tr id="DetailsImageAttributes584_01" style="display: none;">
+							<td width="75"><i>Initial:</i></td>
+							<td></td>
+						</tr>
+						<tr id="DetailsImageAttributes584_02" style="display: none;">
+							<td width="75"><i>Stereotype: </i></td>
+							<td></td>
+						</tr>
+						<tr id="DetailsImageAttributes584_03" style="display: none;">
+							<td width="75"><i>Ordered: </i></td>
+							<td></td>
+						</tr>
+						<tr id="DetailsImageAttributes584_04" style="display: none;">
+							<td width="75"><i>Range: </i></td>
+							<td>Range:0 to 1</td>
+						</tr>
+						<tr id="DetailsImageAttributes584_05" style="display: none;">
+							<td width="75"><i>Transient: </i></td>
+							<td>False</td>
+						</tr>
+						<tr id="DetailsImageAttributes584_06" style="display: none;">
+							<td width="75"><i>Derived: </i></td>
+							<td>False</td>
+						</tr>
+							<tr id="DetailsImageAttributes584_07" style="display: none;">
+							<td width="75"><i>IsID: </i></td>
+						<td>False</td>
+						</tr>
+					</table>
+					
+					Map:CTOM=Agent.statusCode<br>Map:CTRPv1.0=Biologic.statusDateRange<br>Map:CTRPv1.0=FoodProduct.statusDateRange<br>Map:CTRPv1.0=Material.statusCode<br>Map:CTRPv1.0=Product.statusCode<br>Map:CTRPv1.0=Drug.statusCode<br>Map:CTRPv1.0=FoodProduct.statusCode<br>Map:CTRPv1.0=Product.statusDateRange<br>Map:CTRPv1.0=TherapeuticProduct.statusDateRange<br>Map:CTRPv1.0=Cosmetic.statusDateRange<br>Map:CTRPv1.0=TherapeuticAgent.StatusCode<br>Map:CTRPv1.0=Biologic.statusCode<br>Map:CTRPv1.0=Material.statusDateRange<br>Map:CTRPv1.0=Device.statusCode<br>Map:CTRPv1.0=Drug.statusDateRange<br>Map:CTRPv1.0=Cosmetic.statusCode<br>Map:CTRPv1.0=Device.statusDateRange<br>Map:CTRv1.0=Material.effectiveDateRange<br>Map:ICSRr2=DeviceInstance.existenceTime (in R_Product)<br>Map:ICSRr2=ProductInstance.existenceTime (in R_Product)<br>Map:LSDAMv2.2.3Plus=Software.effectiveDateRange<br>Map:LSDAMv2.2.3Plus=Material.effectiveDateRange<br>
+						<div class="ObjectDetailsNotes"><table>
+	<tr>
+		<td valign="top">
+			<i>Notes: </i><span style="margin-left: .4cm;"> </span>
+		</td>
+		<td>
+			DEFINITION:&lt;br/&gt;The date (and time) span for when the material is active.&lt;br/&gt;&lt;br/&gt;EXAMPLE(S):&lt;br/&gt;&lt;br/&gt;OTHER NAME(S):&lt;br/&gt;&lt;br/&gt;NOTE(S):&lt;br/&gt;
+		</td>
+	</tr>
+</table></div>
+
+						
+				</td>
+			</tr>
+	</table>
+</div>
+		<div class="ItemBody" id="AssociationsToTable">
+			<table border="0" cellspacing="0" cellpadding="0" class="Table">
+				<tr>
+					<td width="40%" class="TableHeading">Element</td>
+					<td width="30%" class="TableHeading">Source Role</td>
+					<td width="30%" class="TableHeading">Target Role</td>
+				</tr>
+				<tr>
+					<td width="40%" class="TableRow" valign="top">
+						<a href="../EA10/EA386.htm">PerformedMaterialProcessStep</a><br />
+						Class &nbsp;
+					</td>
+					<td width="30%" class="TableRow" valign="top">
+						<strong>Name:</strong> producedMaterial<br />
+						&nbsp;
+					</td>
+					<td width="30%" class="TableRow" valign="top">
+						<strong>Name:</strong> producingPerformedMaterialProcessStep<br />
+						&nbsp;	
+					</td>
+				</tr>
+				<tr>
+					<td class="TableRowBottomDashed"  colspan="3">
+						<div class="DetailsDivParent"><img src="../../images/minus03.gif" align="absmiddle" id="DetailsImageLink585" onclick="parent.toggleDiv('detailsDIVLink585','DetailsImageLink585')" />Details:
+							<div id="detailsDIVLink585" class="DetailsDiv" >
+							<div class="ObjectDetailsNotes">DESCRIPTION:&lt;br/&gt;Each Material might have been produced by one PerformedMaterialProcessStep. Each PerformedMaterialProcessStep might have produced one or more Material.&lt;br/&gt;&lt;br/&gt;DEFINITION:&lt;br/&gt;Indicates that material was produced by a process step.&lt;br/&gt;&lt;br/&gt;EXAMPLE(S):&lt;br/&gt;A blood product has anticoagulants added to it to preserve the product&lt;br/&gt;A blood product has growth factor added to it to induce cell growth&lt;br/&gt;&lt;br/&gt;OTHER NAME(S):&lt;br/&gt;&lt;br/&gt;NOTE(S):&#160; &lt;br/&gt;</div>
+
+							</div>
+						</div>
+					</td>
+				</tr>
+				<tr>
+					<td width="40%" class="TableRow" valign="top">
+						<a href="../EA7/EA271.htm">DefinedMaterialProcessStep</a><br />
+						Class &nbsp;
+					</td>
+					<td width="30%" class="TableRow" valign="top">
+						<strong>Name:</strong> producedMaterial<br />
+						&nbsp;
+					</td>
+					<td width="30%" class="TableRow" valign="top">
+						<strong>Name:</strong> producingDefinedMaterialProcessStep<br />
+						&nbsp;	
+					</td>
+				</tr>
+				<tr>
+					<td class="TableRowBottomDashed"  colspan="3">
+						<div class="DetailsDivParent"><img src="../../images/minus03.gif" align="absmiddle" id="DetailsImageLink586" onclick="parent.toggleDiv('detailsDIVLink586','DetailsImageLink586')" />Details:
+							<div id="detailsDIVLink586" class="DetailsDiv" >
+							<div class="ObjectDetailsNotes">DESCRIPTION:&lt;br/&gt;Each Material might have been produced by one DefinedMaterialProcessStep. Each DefinedMaterialProcessStep might have produced one or more Material.&lt;br/&gt;&lt;br/&gt;DEFINITION:&lt;br/&gt;Indicates that material is produced by a process step.&lt;br/&gt;&lt;br/&gt;EXAMPLE(S):&lt;br/&gt;A blood product has anticoagulants added to it to preserve the product&lt;br/&gt;A blood product has growth factor added to it to induce cell growth&lt;br/&gt;&lt;br/&gt;OTHER NAME(S):&lt;br/&gt;&lt;br/&gt;NOTE(S): &lt;br/&gt;</div>
+
+							</div>
+						</div>
+					</td>
+				</tr>
+
+			</table>
+		</div>
+		<div class="ItemBody" id="AssociationsFromTable">
+			<table border="0" cellspacing="0" cellpadding="0" class="Table">
+				<tr>
+					<td width="40%" class="TableHeading">Element</td>
+					<td width="30%" class="TableHeading">Source Role</td>
+					<td width="30%" class="TableHeading">Target Role</td>
+				</tr>
+				<tr>
+					<td width="40%" class="TableRow" valign="top">
+						<a href="../EA6/EA223.htm">MessengerRNA</a><br />
+						Class &nbsp;
+					</td>
+					<td width="30%" class="TableRow" valign="top">
+						<strong>Name:</strong> characterizingMessengerRNA<br />
+						&nbsp;
+					</td>
+					<td width="30%" class="TableRow" valign="top">
+						<strong>Name:</strong> characterizedMaterial<br />
+						&nbsp;	
+					</td>
+				</tr>
+				<tr>
+					<td class="TableRowBottomDashed"  colspan="3">
+						<div class="DetailsDivParent"><img src="../../images/minus03.gif" align="absmiddle" id="DetailsImageLink587" onclick="parent.toggleDiv('detailsDIVLink587','DetailsImageLink587')" />Details:
+							<div id="detailsDIVLink587" class="DetailsDiv" >
+							<div class="ObjectDetailsNotes">DESCRIPTION:&lt;br/&gt;Each MessengerRNA might characterize one or more Material. Each Material might be characterized by one or more MessengerRNA.&lt;br/&gt;&lt;br/&gt;DEFINITION:&lt;br/&gt;&lt;br/&gt;EXAMPLE(S):&lt;br/&gt;&lt;br/&gt;OTHER NAME(S):&lt;br/&gt;&lt;br/&gt;NOTE(S):&lt;br/&gt;</div>
+
+							</div>
+						</div>
+					</td>
+				</tr>
+				<tr>
+					<td width="40%" class="TableRow" valign="top">
+						<a href="EA122.htm">PointOfContact</a><br />
+						Class &nbsp;
+					</td>
+					<td width="30%" class="TableRow" valign="top">
+						<strong>Name:</strong> supportingPointOfContact<br />
+						&nbsp;
+					</td>
+					<td width="30%" class="TableRow" valign="top">
+						<strong>Name:</strong> supportedMaterial<br />
+						&nbsp;	
+					</td>
+				</tr>
+				<tr>
+					<td class="TableRowBottomDashed"  colspan="3">
+						<div class="DetailsDivParent"><img src="../../images/minus03.gif" align="absmiddle" id="DetailsImageLink588" onclick="parent.toggleDiv('detailsDIVLink588','DetailsImageLink588')" />Details:
+							<div id="detailsDIVLink588" class="DetailsDiv" >
+							<div class="ObjectDetailsNotes">DESCRIPTION:&lt;br/&gt;Each PointOfContact might support one or more Material.&#160; Each Material might be supported by one or more PointOfContact.&lt;br/&gt;&lt;br/&gt;DEFINITION:&lt;br/&gt;&lt;br/&gt;EXAMPLE(S):&lt;br/&gt;&lt;br/&gt;OTHER NAME(S):&lt;br/&gt;&lt;br/&gt;NOTE(S):&lt;br/&gt;</div>
+
+							</div>
+						</div>
+					</td>
+				</tr>
+				<tr>
+					<td width="40%" class="TableRow" valign="top">
+						<a href="../EA2/EA54.htm">Specimen</a><br />
+						Class &nbsp;
+					</td>
+					<td width="30%" class="TableRow" valign="top">
+						<strong>Name:</strong> performedSpecimen<br />
+						&nbsp;
+					</td>
+					<td width="30%" class="TableRow" valign="top">
+						<strong>Name:</strong> performingMaterial<br />
+						&nbsp;	
+					</td>
+				</tr>
+				<tr>
+					<td class="TableRowBottomDashed"  colspan="3">
+						<div class="DetailsDivParent"><img src="../../images/minus03.gif" align="absmiddle" id="DetailsImageLink589" onclick="parent.toggleDiv('detailsDIVLink589','DetailsImageLink589')" />Details:
+							<div id="detailsDIVLink589" class="DetailsDiv" >
+							<div class="ObjectDetailsNotes">DESCRIPTION:&lt;br/&gt;Each Specimen always is a function performed by one Material.&#160; Each Material might function as one Specimen.&lt;br/&gt;&lt;br/&gt;DEFINITION:&lt;br/&gt;&lt;br/&gt;EXAMPLE(S):&lt;br/&gt;&lt;br/&gt;OTHER NAME(S):&lt;br/&gt;&lt;br/&gt;NOTE(S):&lt;br/&gt;</div>
+
+							</div>
+						</div>
+					</td>
+				</tr>
+				<tr>
+					<td width="40%" class="TableRow" valign="top">
+						<a href="../EA4/EA163.htm">ExperimentalActivityItem</a><br />
+						Class &nbsp;
+					</td>
+					<td width="30%" class="TableRow" valign="top">
+						<strong>Name:</strong> playedExperimentalActivityItem<br />
+						&nbsp;
+					</td>
+					<td width="30%" class="TableRow" valign="top">
+						<strong>Name:</strong> playingMaterial<br />
+						&nbsp;	
+					</td>
+				</tr>
+				<tr>
+					<td class="TableRowBottomDashed"  colspan="3">
+						<div class="DetailsDivParent"><img src="../../images/minus03.gif" align="absmiddle" id="DetailsImageLink590" onclick="parent.toggleDiv('detailsDIVLink590','DetailsImageLink590')" />Details:
+							<div id="detailsDIVLink590" class="DetailsDiv" >
+							<div class="ObjectDetailsNotes">DESCRIPTION:&lt;br/&gt;Each ExperimentalActivityItem might be played by one Material. Each Material might play one or more ExperimentalActivityItem. &lt;br/&gt;&lt;br/&gt;DEFINITION:&lt;br/&gt;&lt;br/&gt;EXAMPLE(S):&lt;br/&gt;&lt;br/&gt;OTHER NAME(S):&lt;br/&gt;&lt;br/&gt;NOTE(S):&lt;br/&gt;</div>
+
+							</div>
+						</div>
+					</td>
+				</tr>
+				<tr>
+					<td width="40%" class="TableRow" valign="top">
+						<a href="../EA6/EA235.htm">Protein</a><br />
+						Class &nbsp;
+					</td>
+					<td width="30%" class="TableRow" valign="top">
+						<strong>Name:</strong> characterizingProtein<br />
+						&nbsp;
+					</td>
+					<td width="30%" class="TableRow" valign="top">
+						<strong>Name:</strong> characterizedMaterial<br />
+						&nbsp;	
+					</td>
+				</tr>
+				<tr>
+					<td class="TableRowBottomDashed"  colspan="3">
+						<div class="DetailsDivParent"><img src="../../images/minus03.gif" align="absmiddle" id="DetailsImageLink591" onclick="parent.toggleDiv('detailsDIVLink591','DetailsImageLink591')" />Details:
+							<div id="detailsDIVLink591" class="DetailsDiv" >
+							<div class="ObjectDetailsNotes">DESCRIPTION:&lt;br/&gt;Each Protein might characterize one or more Material. Each Material might be characterized by one or more Protein.&lt;br/&gt;&lt;br/&gt;DEFINITION:&lt;br/&gt;&lt;br/&gt;EXAMPLE(S):&lt;br/&gt;&lt;br/&gt;OTHER NAME(S):&lt;br/&gt;&lt;br/&gt;NOTE(S):&lt;br/&gt;</div>
+
+							</div>
+						</div>
+					</td>
+				</tr>
+				<tr>
+					<td width="40%" class="TableRow" valign="top">
+						<a href="EA108.htm">MaterialName</a><br />
+						Class &nbsp;
+					</td>
+					<td width="30%" class="TableRow" valign="top">
+						<strong>Name:</strong> namingMaterialName<br />
+						&nbsp;
+					</td>
+					<td width="30%" class="TableRow" valign="top">
+						<strong>Name:</strong> namedMaterial<br />
+						&nbsp;	
+					</td>
+				</tr>
+				<tr>
+					<td class="TableRowBottomDashed"  colspan="3">
+						<div class="DetailsDivParent"><img src="../../images/minus03.gif" align="absmiddle" id="DetailsImageLink592" onclick="parent.toggleDiv('detailsDIVLink592','DetailsImageLink592')" />Details:
+							<div id="detailsDIVLink592" class="DetailsDiv" >
+							<div class="ObjectDetailsNotes">DESCRIPTION:&lt;br/&gt;Each MaterialName always names one Material. Each Material always is named by one or more MaterialName.&lt;br/&gt;&lt;br/&gt;DEFINITION:&lt;br/&gt;&lt;br/&gt;EXAMPLE(S):&lt;br/&gt;&lt;br/&gt;OTHER NAME(S):&lt;br/&gt;&lt;br/&gt;NOTE(S):&lt;br/&gt;&lt;br/&gt;</div>
+
+							</div>
+						</div>
+					</td>
+				</tr>
+				<tr>
+					<td width="40%" class="TableRow" valign="top">
+						<a href="../EA6/EA226.htm">MolecularSequence</a><br />
+						Class &nbsp;
+					</td>
+					<td width="30%" class="TableRow" valign="top">
+						<strong>Name:</strong> characterizingMolecularSequence<br />
+						&nbsp;
+					</td>
+					<td width="30%" class="TableRow" valign="top">
+						<strong>Name:</strong> characterizedMaterial<br />
+						&nbsp;	
+					</td>
+				</tr>
+				<tr>
+					<td class="TableRowBottomDashed"  colspan="3">
+						<div class="DetailsDivParent"><img src="../../images/minus03.gif" align="absmiddle" id="DetailsImageLink593" onclick="parent.toggleDiv('detailsDIVLink593','DetailsImageLink593')" />Details:
+							<div id="detailsDIVLink593" class="DetailsDiv" >
+							<div class="ObjectDetailsNotes">DESCRIPTION:&lt;br/&gt;Each MolecularSequence might characterize one or more Material. Each Material might be characterized by one or more MolecularSequence.&lt;br/&gt;&lt;br/&gt;DEFINITION:&lt;br/&gt;&lt;br/&gt;EXAMPLE(S):&lt;br/&gt;&lt;br/&gt;OTHER NAME(S):&lt;br/&gt;&lt;br/&gt;NOTE(S):&lt;br/&gt;</div>
+
+							</div>
+						</div>
+					</td>
+				</tr>
+
+			</table>
+		</div>
+<div class="ItemBody" id="TaggedValTable">
+	<table align="center" border="0" cellspacing="0" cellpadding="0" class="Table">
+		<tr>
+			<td width="50%" class="TableHeading">Tag</td>
+			<td width="50%" class="TableHeading">Value</td>
+		</tr>
+					<tr>
+				<td width="50%" class="TableRow" valign="top">Map:CTRPv1.0</td>
+				<td width="50%" class="TableRow" valign="top">Material</td>
+			</tr>	
+			<tr>
+				<td class="TableRowBottomDashed"  colspan="2">
+					<div class="DetailsDivParent"><img src="../../images/minus03.gif" align="absmiddle" id="DetailsImageScenario594" onclick="parent.toggleDiv('detailsDIVScenario594','DetailsImageScenario594')" />Details:
+						<div id="detailsDIVScenario594" class="DetailsDiv" >
+						&nbsp;
+						</div>
+					</div>
+				</td>
+			</tr>			<tr>
+				<td width="50%" class="TableRow" valign="top">Map:CTRRr3</td>
+				<td width="50%" class="TableRow" valign="top">Material</td>
+			</tr>	
+			<tr>
+				<td class="TableRowBottomDashed"  colspan="2">
+					<div class="DetailsDivParent"><img src="../../images/minus03.gif" align="absmiddle" id="DetailsImageScenario595" onclick="parent.toggleDiv('detailsDIVScenario595','DetailsImageScenario595')" />Details:
+						<div id="detailsDIVScenario595" class="DetailsDiv" >
+						&nbsp;
+						</div>
+					</div>
+				</td>
+			</tr>			<tr>
+				<td width="50%" class="TableRow" valign="top">Map:CTRv1.0</td>
+				<td width="50%" class="TableRow" valign="top">Material</td>
+			</tr>	
+			<tr>
+				<td class="TableRowBottomDashed"  colspan="2">
+					<div class="DetailsDivParent"><img src="../../images/minus03.gif" align="absmiddle" id="DetailsImageScenario596" onclick="parent.toggleDiv('detailsDIVScenario596','DetailsImageScenario596')" />Details:
+						<div id="detailsDIVScenario596" class="DetailsDiv" >
+						&nbsp;
+						</div>
+					</div>
+				</td>
+			</tr>			<tr>
+				<td width="50%" class="TableRow" valign="top">Map:ICSRr2</td>
+				<td width="50%" class="TableRow" valign="top">ManufacturedMaterial (in R_Specimen universal)</td>
+			</tr>	
+			<tr>
+				<td class="TableRowBottomDashed"  colspan="2">
+					<div class="DetailsDivParent"><img src="../../images/minus03.gif" align="absmiddle" id="DetailsImageScenario597" onclick="parent.toggleDiv('detailsDIVScenario597','DetailsImageScenario597')" />Details:
+						<div id="detailsDIVScenario597" class="DetailsDiv" >
+						&nbsp;
+						</div>
+					</div>
+				</td>
+			</tr>			<tr>
+				<td width="50%" class="TableRow" valign="top">Map:ICSRr2</td>
+				<td width="50%" class="TableRow" valign="top">Natural (in R_Specimen universal)</td>
+			</tr>	
+			<tr>
+				<td class="TableRowBottomDashed"  colspan="2">
+					<div class="DetailsDivParent"><img src="../../images/minus03.gif" align="absmiddle" id="DetailsImageScenario598" onclick="parent.toggleDiv('detailsDIVScenario598','DetailsImageScenario598')" />Details:
+						<div id="detailsDIVScenario598" class="DetailsDiv" >
+						&nbsp;
+						</div>
+					</div>
+				</td>
+			</tr>			<tr>
+				<td width="50%" class="TableRow" valign="top">Map:LSDAMv2.2.3Plus</td>
+				<td width="50%" class="TableRow" valign="top">Material</td>
+			</tr>	
+			<tr>
+				<td class="TableRowBottomDashed"  colspan="2">
+					<div class="DetailsDivParent"><img src="../../images/minus03.gif" align="absmiddle" id="DetailsImageScenario599" onclick="parent.toggleDiv('detailsDIVScenario599','DetailsImageScenario599')" />Details:
+						<div id="detailsDIVScenario599" class="DetailsDiv" >
+						&nbsp;
+						</div>
+					</div>
+				</td>
+			</tr>
+	</table>
+</div>		<div class="ItemBody" id="ConstraintsTable">
+			<table border="0" cellspacing="0" cellpadding="0" class="Table">
+			  	<tr>
+					<td width="80%" class="TableHeading">Constraint</td>
+					<td width="10%" class="TableHeading">Type</td>
+					<td width="10%" class="TableHeading">Status</td>
+				</tr>
+				<tr>
+					<td width="80%" class="TableRow">Attribute Set actualIndicator Qualifier</td>
+					<td width="10%" class="TableRow">Invariant</td>
+					<td width="10%" class="TableRow">Approved</td>
+				</tr>
+				<tr>
+					<td class="TableRowBottomDashed"  colspan="3">
+						<div class="DetailsDivParent"><img src="../../images/minus03.gif" align="absmiddle" id="DetailsImageConstraints600" onclick="parent.toggleDiv('detailsDIVConstraints600','DetailsImageConstraints600')" />Details:
+							<div id="detailsDIVConstraints600" class="DetailsDiv" >
+							<div class="ObjectDetailsNotes">effectiveDateRange is valid only when actualIndicator = &quot;true&quot;.&lt;br/&gt;</div>
+
+							</div>
+						</div>
+					</td>
+				</tr>
+
+			</table>
+		</div>
+		<div class="ItemBody" id="LinksTable">
+			<table align="center" border="0" cellspacing="0" cellpadding="0" class="Table">
+				<tr>
+					<td width="30%" class="TableHeading">Object</td>
+					<td width="10%" class="TableHeading">Type</td>
+					<td width="10%" class="TableHeading">Connection</td>
+					<td width="10%" class="TableHeading">Direction</td>
+					<td width="40%" class="TableHeading">Notes</td>
+				</tr>
+				<tr>
+					<td width="30%" class="TableRow" valign="top"><a href="EA127.htm">Product</a></td>
+					<td width="10%" class="TableRow" valign="top">Class</td>
+					<td width="10%" class="TableRow" valign="top">Generalization</td>
+					<td width="10%" class="TableRow" valign="top">From</td>
+					<td width="40%" class="TableRow" valign="top">DESCRIPTION:
+Each Product always specializes one Material. Each Material might be specialized by one Product.
+
+DEFINITION:
+
+EXAMPLE(S):
+
+OTHER NAME(S):
+
+NOTE(S):
+</td>
+				</tr>
+
+			</table>
+		</div>
+	</div>
+<div class="pageFooter"></div>
+ 
+</body>
+</html>
