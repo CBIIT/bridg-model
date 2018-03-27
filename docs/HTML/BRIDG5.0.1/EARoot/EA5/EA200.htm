@@ -1,0 +1,1007 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>Imaging Sub-Domain::PerformedImagingStudy</title>
+<link href="../../css/ea.css" rel="stylesheet" type="text/css" />
+<script>
+function initPage(src) {	
+	if(parent==this&&(this.location+"").indexOf('EARoot')!=-1)
+		document.location=(this.location+"").substring(0,(this.location+"").indexOf('EARoot'))+"index"+(this.location+"").substring((this.location+"").lastIndexOf('.'))+"?goto="+((this.location+"").substring((this.location+"").indexOf('EARoot')+7,(this.location+"").lastIndexOf('.')).replace(/\//g,':').replace(/EA/g,""));
+	else
+		parent.initPage(src);
+}
+
+function nameClassifier(name, separator)
+{
+  var str = name;
+  var classifierName;
+  var node = document.getElementById('name_classifier');
+  if(node != null)
+  {
+    classifierName = node.innerHTML;
+  }
+  if(classifierName != "")
+  {
+   str += separator + classifierName;
+  }
+  
+  return str;
+}
+</script>
+</head>
+<body onload="initPage(this);" class="Content">
+<div class="pageHeader"></div>
+<div class="PageBody">
+	<div id="name_classifier" style="display: none;"></div>
+	<span class="ObjectTitle"><script type="text/javascript">document.write(nameClassifier("PerformedImagingStudy", " : "))</script>  : Public   Class</span>
+	<table border="0" cellpadding="0" cellspacing="0" class="ObjectDetails">
+		<tr>
+			<td width="15%" class="ObjectDetailsTopic">Created:</td>
+			<td width="85%" class="ObjectDetailsValue">7/13/2009 12:53:45 PM</td>
+		</tr>
+		<tr>
+			<td class="ObjectDetailsTopic">Modified:</td>
+			<td class="ObjectDetailsValue">8/26/2017 2:17:59 AM</td>
+		</tr>
+		<tr style="height: 10px"><td colspan="2"></td></tr>
+		<tr>
+			<td class="ObjectDetailsTopic"><img src="../../images/plus03.gif" align="absmiddle" id="proj" onclick="parent.toggleData(this.id)" />Project:</td>
+			<td class="ObjectDetailsValue"></td>
+		</tr>
+		<tr id="proj00" style="display: none;">
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Author:</td>
+			<td class="ObjectDetailsValue">BRIDG SCC</td>
+		</tr>
+		<tr id="proj01" style="display: none;">
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Version:</td>
+			<td class="ObjectDetailsValue">1.0</td>
+		</tr>
+		<tr id="proj02" style="display: none;">
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Phase:</td>
+			<td class="ObjectDetailsValue">1.0</td>
+		</tr>
+		<tr id="proj03" style="display: none;">
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Status:</td>
+			<td class="ObjectDetailsValue"><none></td>
+		</tr>
+		<tr id="proj04" style="display: none;">
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Complexity:</td>
+			<td class="ObjectDetailsValue">Easy</td>
+		</tr>
+		<tr id="proj05" style="display: none;">
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Difficulty:</td>
+			<td class="ObjectDetailsValue"></td>
+		</tr>
+		<tr id="proj06" style="display: none;">
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Priority:</td>
+			<td class="ObjectDetailsValue"></td>
+		</tr>
+		<tr id="proj05" style="display: none;">
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Multiplicity:</td>
+			<td class="ObjectDetailsValue"></td>
+		</tr>
+		<tr>
+			<td class="ObjectDetailsTopic"><img src="../../images/plus03.gif" align="absmiddle" id="adv" onclick="parent.toggleData(this.id)" />Advanced:</td>
+			<td class="ObjectDetailsValue"></td>
+		</tr>
+		<tr id="adv00" style="display: none;">
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">UUID:</td>
+			<td class="ObjectDetailsValue">{90FEC6CD-8144-476b-87F5-E52E2EA222FA}</td>
+		</tr>
+		<tr id="adv01" style="display: none;">
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Appears In:</td>
+			<td class="ObjectDetailsValue"><a href="../EA1.htm">UML-Based Comprehensive BRIDG Model Diagram</a>, <a href="../EA10/EA356.htm">View SC: Study Conduct</a>, <a href="EA170.htm">View IM: Imaging</a>, <a href="EA172.htm">Imaging Acquisition</a>, <a href="../EA11/EA440.htm">Oncology View</a></td>
+		</tr>
+	</table>
+	<div class="ObjectDetailsNotes">DEFINITION:&lt;br/&gt;A collection of images and information that are logically related for the purpose of diagnosing an imaging study subject. [Source:&#160; http://dicom.nema.org/medical/dicom/current/output/chtml/part03/chapter_A.html#sect_A.1.2.2] &lt;br/&gt;&lt;br/&gt;EXAMPLE(S):&lt;br/&gt;&lt;br/&gt;OTHER NAME(S):&lt;br/&gt;&lt;br/&gt;NOTE(S):&lt;br/&gt;The BRIDG modelers acknowledge that the term &quot;study&quot; is somewhat overloaded and must be qualified to provide semantic context.&#160; That said, &quot;Imaging Study&quot; is a very commonly used term in the imaging community.&#160; Any given Imaging Study does&#160; necessarily have to be associated with a clinical trial or study protocol.&#160; The definition of this class should be sufficient to distinguish from other uses of the term &quot;study&quot;. &lt;br/&gt;</div>
+
+	<div class="TableGroup" id="TableGroup">
+		<ul class="ItemTitle">
+			<li onClick="parent.toggleItem('Attributes');" id="AttributesTitle">Attributes</li>
+			<li onClick="parent.toggleItem('TaggedVal');" id="TaggedValTitle">Tagged Values</li>
+			<li onClick="parent.toggleItem('Constraints');" id="ConstraintsTitle">Constraints</li>
+			<li onClick="parent.toggleItem('Files');" id="FilesTitle">Files</li>
+			<li onClick="parent.toggleItem('Links');" id="LinksTitle">Other Links</li>
+		</ul>
+<div class="ItemBody" id="AttributesTable">
+	<table border="0" cellspacing="0" cellpadding="0" class="Table">
+		<tr>
+			<td width="100%" class="TableHeading">Attribute</td>
+		</tr>
+						<tr>
+				<td width="100%" class="TableRow">
+					<i>Public ST</i><br /><strong>&nbsp;&nbsp;dicomStudyID</strong>
+				</td>
+			</tr>
+			<tr>
+				<td class="TableRowBottomDashed"  colspan="1">										
+					<a href="#" onclick="parent.toggleData('DetailsImageAttributes1325')" style="text-decoration: none; color: #000000;"><img src="../../images/plus03.gif" align="absmiddle" id="DetailsImageAttributes1325" border="0" />Details:</a>
+					<table border="0" cellspacing="0" cellpadding="0" class="Table" style="padding: 4px 18px;">
+					
+						<tr id="DetailsImageAttributes1325_00" style="display: none;">
+							<td width="75"><i>Alias:</i></td>
+							<td></td>
+						</tr>
+						<tr id="DetailsImageAttributes1325_01" style="display: none;">
+							<td width="75"><i>Initial:</i></td>
+							<td></td>
+						</tr>
+						<tr id="DetailsImageAttributes1325_02" style="display: none;">
+							<td width="75"><i>Stereotype: </i></td>
+							<td></td>
+						</tr>
+						<tr id="DetailsImageAttributes1325_03" style="display: none;">
+							<td width="75"><i>Ordered: </i></td>
+							<td></td>
+						</tr>
+						<tr id="DetailsImageAttributes1325_04" style="display: none;">
+							<td width="75"><i>Range: </i></td>
+							<td>Range:0 to 1</td>
+						</tr>
+						<tr id="DetailsImageAttributes1325_05" style="display: none;">
+							<td width="75"><i>Transient: </i></td>
+							<td>False</td>
+						</tr>
+						<tr id="DetailsImageAttributes1325_06" style="display: none;">
+							<td width="75"><i>Derived: </i></td>
+							<td>False</td>
+						</tr>
+							<tr id="DetailsImageAttributes1325_07" style="display: none;">
+							<td width="75"><i>IsID: </i></td>
+						<td>False</td>
+						</tr>
+					</table>
+					
+					Map:DICOM=General Study Module - Study ID (0020,0010)<br>Map:DICOM=Study Level Keys for the Patient Root Query/Retrieve Information Model -  Study ID (0020,0010)<br>
+						<div class="ObjectDetailsNotes"><table>
+	<tr>
+		<td valign="top">
+			<i>Notes: </i><span style="margin-left: .4cm;"> </span>
+		</td>
+		<td>
+			DEFINITION:&lt;br/&gt;The user- or equipment-generated identifier of an instance of a DICOM study entity that corresponds to the performed imaging study.&lt;br/&gt;&lt;br/&gt;EXAMPLE(S):&lt;br/&gt;1234&lt;br/&gt;&lt;br/&gt;OTHER NAME(S):&lt;br/&gt;FHIR ImagingStudy.identifier&lt;br/&gt;&lt;br/&gt;NOTE(S):&lt;br/&gt;This is intended to be a&#160; human readable identifier.&lt;br/&gt;
+		</td>
+	</tr>
+</table></div>
+
+						
+				</td>
+			</tr>			<tr>
+				<td width="100%" class="TableRow">
+					<i>Public II</i><br /><strong>&nbsp;&nbsp;imagingAccessionIdentifier</strong>
+				</td>
+			</tr>
+			<tr>
+				<td class="TableRowBottomDashed"  colspan="1">										
+					<a href="#" onclick="parent.toggleData('DetailsImageAttributes1326')" style="text-decoration: none; color: #000000;"><img src="../../images/plus03.gif" align="absmiddle" id="DetailsImageAttributes1326" border="0" />Details:</a>
+					<table border="0" cellspacing="0" cellpadding="0" class="Table" style="padding: 4px 18px;">
+					
+						<tr id="DetailsImageAttributes1326_00" style="display: none;">
+							<td width="75"><i>Alias:</i></td>
+							<td></td>
+						</tr>
+						<tr id="DetailsImageAttributes1326_01" style="display: none;">
+							<td width="75"><i>Initial:</i></td>
+							<td></td>
+						</tr>
+						<tr id="DetailsImageAttributes1326_02" style="display: none;">
+							<td width="75"><i>Stereotype: </i></td>
+							<td></td>
+						</tr>
+						<tr id="DetailsImageAttributes1326_03" style="display: none;">
+							<td width="75"><i>Ordered: </i></td>
+							<td></td>
+						</tr>
+						<tr id="DetailsImageAttributes1326_04" style="display: none;">
+							<td width="75"><i>Range: </i></td>
+							<td>Range:0 to 1</td>
+						</tr>
+						<tr id="DetailsImageAttributes1326_05" style="display: none;">
+							<td width="75"><i>Transient: </i></td>
+							<td>False</td>
+						</tr>
+						<tr id="DetailsImageAttributes1326_06" style="display: none;">
+							<td width="75"><i>Derived: </i></td>
+							<td>False</td>
+						</tr>
+							<tr id="DetailsImageAttributes1326_07" style="display: none;">
+							<td width="75"><i>IsID: </i></td>
+						<td>False</td>
+						</tr>
+					</table>
+					
+					Map:DICOM=General Study Module - Accession Number (0008,0050)<br>Map:DICOM=General Study Module - Issuer of Accession Number Sequence (0008,0051)<br>Map:DICOM=Study Level Keys for the Patient Root Query/Retrieve Information Model -  Accession Number (0008,0050)<br>
+						<div class="ObjectDetailsNotes"><table>
+	<tr>
+		<td valign="top">
+			<i>Notes: </i><span style="margin-left: .4cm;"> </span>
+		</td>
+		<td>
+			DEFINITION:&lt;br/&gt;An order filler system-generated identifier for the order for the imaging study.&lt;br/&gt;&lt;br/&gt;EXAMPLE(S):&lt;br/&gt;&lt;br/&gt;OTHER NAME(S):&lt;br/&gt;&lt;br/&gt;NOTE(S):&lt;br/&gt;
+		</td>
+	</tr>
+</table></div>
+
+						
+				</td>
+			</tr>			<tr>
+				<td width="100%" class="TableRow">
+					<i>Public ST</i><br /><strong>&nbsp;&nbsp;description</strong>
+				</td>
+			</tr>
+			<tr>
+				<td class="TableRowBottomDashed"  colspan="1">										
+					<a href="#" onclick="parent.toggleData('DetailsImageAttributes1327')" style="text-decoration: none; color: #000000;"><img src="../../images/plus03.gif" align="absmiddle" id="DetailsImageAttributes1327" border="0" />Details:</a>
+					<table border="0" cellspacing="0" cellpadding="0" class="Table" style="padding: 4px 18px;">
+					
+						<tr id="DetailsImageAttributes1327_00" style="display: none;">
+							<td width="75"><i>Alias:</i></td>
+							<td></td>
+						</tr>
+						<tr id="DetailsImageAttributes1327_01" style="display: none;">
+							<td width="75"><i>Initial:</i></td>
+							<td></td>
+						</tr>
+						<tr id="DetailsImageAttributes1327_02" style="display: none;">
+							<td width="75"><i>Stereotype: </i></td>
+							<td></td>
+						</tr>
+						<tr id="DetailsImageAttributes1327_03" style="display: none;">
+							<td width="75"><i>Ordered: </i></td>
+							<td></td>
+						</tr>
+						<tr id="DetailsImageAttributes1327_04" style="display: none;">
+							<td width="75"><i>Range: </i></td>
+							<td>Range:0 to 1</td>
+						</tr>
+						<tr id="DetailsImageAttributes1327_05" style="display: none;">
+							<td width="75"><i>Transient: </i></td>
+							<td>False</td>
+						</tr>
+						<tr id="DetailsImageAttributes1327_06" style="display: none;">
+							<td width="75"><i>Derived: </i></td>
+							<td>False</td>
+						</tr>
+							<tr id="DetailsImageAttributes1327_07" style="display: none;">
+							<td width="75"><i>IsID: </i></td>
+						<td>False</td>
+						</tr>
+					</table>
+					
+					Map:DICOM=General Study Module - Study Description (0008,1030)<br>Map:DICOM=Study Level Keys for the Patient Root Query/Retrieve Information Model -  Study Description (0008,1030)<br>
+						<div class="ObjectDetailsNotes"><table>
+	<tr>
+		<td valign="top">
+			<i>Notes: </i><span style="margin-left: .4cm;"> </span>
+		</td>
+		<td>
+			DEFINITION:&lt;br/&gt;The textual representation of the certain or salient aspects, characteristics, or features of the imaging study. [Adapted from www.businessdictionary.com]&lt;br/&gt;&lt;br/&gt;EXAMPLE(S):&lt;br/&gt;&lt;br/&gt;OTHER NAME(S):&lt;br/&gt;&lt;br/&gt;NOTE(S):&lt;br/&gt;Usually this describes the manner in which the imaging study was performed.&lt;br/&gt;
+		</td>
+	</tr>
+</table></div>
+
+						
+				</td>
+			</tr>			<tr>
+				<td width="100%" class="TableRow">
+					<i>Public DSET&lt;CD&gt;</i><br /><strong>&nbsp;&nbsp;admittingDiagnosisCode</strong>
+				</td>
+			</tr>
+			<tr>
+				<td class="TableRowBottomDashed"  colspan="1">										
+					<a href="#" onclick="parent.toggleData('DetailsImageAttributes1328')" style="text-decoration: none; color: #000000;"><img src="../../images/plus03.gif" align="absmiddle" id="DetailsImageAttributes1328" border="0" />Details:</a>
+					<table border="0" cellspacing="0" cellpadding="0" class="Table" style="padding: 4px 18px;">
+					
+						<tr id="DetailsImageAttributes1328_00" style="display: none;">
+							<td width="75"><i>Alias:</i></td>
+							<td></td>
+						</tr>
+						<tr id="DetailsImageAttributes1328_01" style="display: none;">
+							<td width="75"><i>Initial:</i></td>
+							<td></td>
+						</tr>
+						<tr id="DetailsImageAttributes1328_02" style="display: none;">
+							<td width="75"><i>Stereotype: </i></td>
+							<td></td>
+						</tr>
+						<tr id="DetailsImageAttributes1328_03" style="display: none;">
+							<td width="75"><i>Ordered: </i></td>
+							<td></td>
+						</tr>
+						<tr id="DetailsImageAttributes1328_04" style="display: none;">
+							<td width="75"><i>Range: </i></td>
+							<td>Range:0 to *</td>
+						</tr>
+						<tr id="DetailsImageAttributes1328_05" style="display: none;">
+							<td width="75"><i>Transient: </i></td>
+							<td>False</td>
+						</tr>
+						<tr id="DetailsImageAttributes1328_06" style="display: none;">
+							<td width="75"><i>Derived: </i></td>
+							<td>False</td>
+						</tr>
+							<tr id="DetailsImageAttributes1328_07" style="display: none;">
+							<td width="75"><i>IsID: </i></td>
+						<td>False</td>
+						</tr>
+					</table>
+					
+					Map:DICOM=Patient Study Module - Admitting Diagnoses Description (0008,1080)<br>Map:DICOM=Patient Study Module - Admitting Diagnoses Code Sequence (0008,1084)<br>Map:DICOM=Study Level Keys for the Patient Root Query/Retrieve Information Model -  Admitting Diagnoses Description (0008,1080)<br>
+						<div class="ObjectDetailsNotes"><table>
+	<tr>
+		<td valign="top">
+			<i>Notes: </i><span style="margin-left: .4cm;"> </span>
+		</td>
+		<td>
+			DEFINITION:&lt;br/&gt;The identified disease(s) or illness(es) at the time of the admission during which imaging was performed.&lt;br/&gt;&lt;br/&gt;EXAMPLE(S):&lt;br/&gt;&lt;br/&gt;OTHER NAME(S):&lt;br/&gt;&lt;br/&gt;NOTE(S):&lt;br/&gt;This value is derived from the path:&#160; PerformedImagingStudy #gt; Subject #gt; PerformedObservation #gt; PerformedDiagnosis.value (ANY=#gt;PQ.TIME) WHERE PerformedObservation #gt; DefinedObservation.nameCode = &quot;diagnosis&quot;&lt;br/&gt;
+		</td>
+	</tr>
+</table></div>
+
+						
+				</td>
+			</tr>			<tr>
+				<td width="100%" class="TableRow">
+					<i>Public DSET&lt;CD&gt;</i><br /><strong>&nbsp;&nbsp;nonAcquisitionModalitiesInStudyCode</strong>
+				</td>
+			</tr>
+			<tr>
+				<td class="TableRowBottomDashed"  colspan="1">										
+					<a href="#" onclick="parent.toggleData('DetailsImageAttributes1329')" style="text-decoration: none; color: #000000;"><img src="../../images/plus03.gif" align="absmiddle" id="DetailsImageAttributes1329" border="0" />Details:</a>
+					<table border="0" cellspacing="0" cellpadding="0" class="Table" style="padding: 4px 18px;">
+					
+						<tr id="DetailsImageAttributes1329_00" style="display: none;">
+							<td width="75"><i>Alias:</i></td>
+							<td></td>
+						</tr>
+						<tr id="DetailsImageAttributes1329_01" style="display: none;">
+							<td width="75"><i>Initial:</i></td>
+							<td></td>
+						</tr>
+						<tr id="DetailsImageAttributes1329_02" style="display: none;">
+							<td width="75"><i>Stereotype: </i></td>
+							<td></td>
+						</tr>
+						<tr id="DetailsImageAttributes1329_03" style="display: none;">
+							<td width="75"><i>Ordered: </i></td>
+							<td></td>
+						</tr>
+						<tr id="DetailsImageAttributes1329_04" style="display: none;">
+							<td width="75"><i>Range: </i></td>
+							<td>Range:0 to *</td>
+						</tr>
+						<tr id="DetailsImageAttributes1329_05" style="display: none;">
+							<td width="75"><i>Transient: </i></td>
+							<td>False</td>
+						</tr>
+						<tr id="DetailsImageAttributes1329_06" style="display: none;">
+							<td width="75"><i>Derived: </i></td>
+							<td>False</td>
+						</tr>
+							<tr id="DetailsImageAttributes1329_07" style="display: none;">
+							<td width="75"><i>IsID: </i></td>
+						<td>False</td>
+						</tr>
+					</table>
+					
+					Map:DICOM=Study Level Keys for the Patient Root Query/Retrieve Information Model -  Modalities in Study (0008,0061)<br>Map:DICOM=General Series Module - Modality (0008,0060)<br>
+						<div class="ObjectDetailsNotes"><table>
+	<tr>
+		<td valign="top">
+			<i>Notes: </i><span style="margin-left: .4cm;"> </span>
+		</td>
+		<td>
+			DEFINITION:&lt;br/&gt;A coded value specifying the type of equipment that created the images in this imaging study other than that used to acquire the original data.&lt;br/&gt;&lt;br/&gt;EXAMPLE(S):&lt;br/&gt;SR (Structured Report), KO (Key Object), SEG (Segmentation), DOC (document)&lt;br/&gt;&lt;br/&gt;OTHER NAME(S):&lt;br/&gt;&lt;br/&gt;NOTE(S):&lt;br/&gt;This is a characterization of those devices other than those devices that are used to acquire the images which are encoded in Device.typeCode.&lt;br/&gt;
+		</td>
+	</tr>
+</table></div>
+
+						
+				</td>
+			</tr>			<tr>
+				<td width="100%" class="TableRow">
+					<i>Public ST</i><br /><strong>&nbsp;&nbsp;subjectHistory</strong>
+				</td>
+			</tr>
+			<tr>
+				<td class="TableRowBottomDashed"  colspan="1">										
+					<a href="#" onclick="parent.toggleData('DetailsImageAttributes1330')" style="text-decoration: none; color: #000000;"><img src="../../images/plus03.gif" align="absmiddle" id="DetailsImageAttributes1330" border="0" />Details:</a>
+					<table border="0" cellspacing="0" cellpadding="0" class="Table" style="padding: 4px 18px;">
+					
+						<tr id="DetailsImageAttributes1330_00" style="display: none;">
+							<td width="75"><i>Alias:</i></td>
+							<td></td>
+						</tr>
+						<tr id="DetailsImageAttributes1330_01" style="display: none;">
+							<td width="75"><i>Initial:</i></td>
+							<td></td>
+						</tr>
+						<tr id="DetailsImageAttributes1330_02" style="display: none;">
+							<td width="75"><i>Stereotype: </i></td>
+							<td></td>
+						</tr>
+						<tr id="DetailsImageAttributes1330_03" style="display: none;">
+							<td width="75"><i>Ordered: </i></td>
+							<td></td>
+						</tr>
+						<tr id="DetailsImageAttributes1330_04" style="display: none;">
+							<td width="75"><i>Range: </i></td>
+							<td>Range:0 to 1</td>
+						</tr>
+						<tr id="DetailsImageAttributes1330_05" style="display: none;">
+							<td width="75"><i>Transient: </i></td>
+							<td>False</td>
+						</tr>
+						<tr id="DetailsImageAttributes1330_06" style="display: none;">
+							<td width="75"><i>Derived: </i></td>
+							<td>True</td>
+						</tr>
+							<tr id="DetailsImageAttributes1330_07" style="display: none;">
+							<td width="75"><i>IsID: </i></td>
+						<td>False</td>
+						</tr>
+					</table>
+					
+					Map:DICOM=Patient Study Module - Additional Patient History (0010,21B0)<br>Map:DICOM=Study Level Keys for the Patient Root Query/Retrieve Information Model -  Additional Patient History (0010,21B0)<br>
+						<div class="ObjectDetailsNotes"><table>
+	<tr>
+		<td valign="top">
+			<i>Notes: </i><span style="margin-left: .4cm;"> </span>
+		</td>
+		<td>
+			DEFINITION:&lt;br/&gt;Information about the subject obtained by asking questions [Adapted from:&#160; https://en.wikipedia.org/wiki/Medical_history]&lt;br/&gt;&lt;br/&gt;EXAMPLE(S):&lt;br/&gt;&lt;br/&gt;OTHER NAME(S):&lt;br/&gt;&lt;br/&gt;NOTE(S):&lt;br/&gt;This value is derived from the path:&#160; Subject #gt; PerformedObservation #gt; PerformedObservationResult.value (ANY=#gt;PQ.TIME) WHERE PerformedObservation #gt; DefinedObservation.nameCode = &quot;patient history&quot;&lt;br/&gt;
+		</td>
+	</tr>
+</table></div>
+
+						
+				</td>
+			</tr>			<tr>
+				<td width="100%" class="TableRow">
+					<i>Public PQ.TIME</i><br /><strong>&nbsp;&nbsp;subjectAge</strong>
+				</td>
+			</tr>
+			<tr>
+				<td class="TableRowBottomDashed"  colspan="1">										
+					<a href="#" onclick="parent.toggleData('DetailsImageAttributes1331')" style="text-decoration: none; color: #000000;"><img src="../../images/plus03.gif" align="absmiddle" id="DetailsImageAttributes1331" border="0" />Details:</a>
+					<table border="0" cellspacing="0" cellpadding="0" class="Table" style="padding: 4px 18px;">
+					
+						<tr id="DetailsImageAttributes1331_00" style="display: none;">
+							<td width="75"><i>Alias:</i></td>
+							<td></td>
+						</tr>
+						<tr id="DetailsImageAttributes1331_01" style="display: none;">
+							<td width="75"><i>Initial:</i></td>
+							<td></td>
+						</tr>
+						<tr id="DetailsImageAttributes1331_02" style="display: none;">
+							<td width="75"><i>Stereotype: </i></td>
+							<td></td>
+						</tr>
+						<tr id="DetailsImageAttributes1331_03" style="display: none;">
+							<td width="75"><i>Ordered: </i></td>
+							<td></td>
+						</tr>
+						<tr id="DetailsImageAttributes1331_04" style="display: none;">
+							<td width="75"><i>Range: </i></td>
+							<td>Range:0 to 1</td>
+						</tr>
+						<tr id="DetailsImageAttributes1331_05" style="display: none;">
+							<td width="75"><i>Transient: </i></td>
+							<td>False</td>
+						</tr>
+						<tr id="DetailsImageAttributes1331_06" style="display: none;">
+							<td width="75"><i>Derived: </i></td>
+							<td>True</td>
+						</tr>
+							<tr id="DetailsImageAttributes1331_07" style="display: none;">
+							<td width="75"><i>IsID: </i></td>
+						<td>False</td>
+						</tr>
+					</table>
+					
+					Map:DICOM=Patient Study Module - Patient's Age (0010,1010)<br>Map:DICOM=Study Level Keys for the Patient Root Query/Retrieve Information Model -  Patient's Age (0010,1010)<br>
+						<div class="ObjectDetailsNotes"><table>
+	<tr>
+		<td valign="top">
+			<i>Notes: </i><span style="margin-left: .4cm;"> </span>
+		</td>
+		<td>
+			DEFINITION:&lt;br/&gt;The length of time since the birth of the imaging subject in completed units. [Adapted from:&#160; Google and caDSR Public ID 2423393]&lt;br/&gt;&lt;br/&gt;EXAMPLE(S):&lt;br/&gt;17 years (years completed)&lt;br/&gt;&lt;br/&gt;OTHER NAME(S):&lt;br/&gt;&lt;br/&gt;NOTE(S):&lt;br/&gt;This value is derived from the path:&#160; Subject #gt; PerformedObservation #gt; PerformedObservationResult.value (ANY=#gt;PQ.TIME) WHERE PerformedObservation #gt; DefinedObservation.nameCode = &quot;age&quot;&lt;br/&gt;
+		</td>
+	</tr>
+</table></div>
+
+						
+				</td>
+			</tr>			<tr>
+				<td width="100%" class="TableRow">
+					<i>Public PQ</i><br /><strong>&nbsp;&nbsp;subjectHeight</strong>
+				</td>
+			</tr>
+			<tr>
+				<td class="TableRowBottomDashed"  colspan="1">										
+					<a href="#" onclick="parent.toggleData('DetailsImageAttributes1332')" style="text-decoration: none; color: #000000;"><img src="../../images/plus03.gif" align="absmiddle" id="DetailsImageAttributes1332" border="0" />Details:</a>
+					<table border="0" cellspacing="0" cellpadding="0" class="Table" style="padding: 4px 18px;">
+					
+						<tr id="DetailsImageAttributes1332_00" style="display: none;">
+							<td width="75"><i>Alias:</i></td>
+							<td></td>
+						</tr>
+						<tr id="DetailsImageAttributes1332_01" style="display: none;">
+							<td width="75"><i>Initial:</i></td>
+							<td></td>
+						</tr>
+						<tr id="DetailsImageAttributes1332_02" style="display: none;">
+							<td width="75"><i>Stereotype: </i></td>
+							<td></td>
+						</tr>
+						<tr id="DetailsImageAttributes1332_03" style="display: none;">
+							<td width="75"><i>Ordered: </i></td>
+							<td></td>
+						</tr>
+						<tr id="DetailsImageAttributes1332_04" style="display: none;">
+							<td width="75"><i>Range: </i></td>
+							<td>Range:0 to 1</td>
+						</tr>
+						<tr id="DetailsImageAttributes1332_05" style="display: none;">
+							<td width="75"><i>Transient: </i></td>
+							<td>False</td>
+						</tr>
+						<tr id="DetailsImageAttributes1332_06" style="display: none;">
+							<td width="75"><i>Derived: </i></td>
+							<td>True</td>
+						</tr>
+							<tr id="DetailsImageAttributes1332_07" style="display: none;">
+							<td width="75"><i>IsID: </i></td>
+						<td>False</td>
+						</tr>
+					</table>
+					
+					Map:DICOM=Patient Study Module - Patient's Size (0010,1020)<br>Map:DICOM=Study Level Keys for the Patient Root Query/Retrieve Information Model -  Patient's Size (0010,1020)<br>
+						<div class="ObjectDetailsNotes"><table>
+	<tr>
+		<td valign="top">
+			<i>Notes: </i><span style="margin-left: .4cm;"> </span>
+		</td>
+		<td>
+			DEFINITION:&lt;br/&gt;The distance from the bottom to the top of the imaging study subject. [adapted from http://www.merriam-webster.com/dictionary/height]&lt;br/&gt;&lt;br/&gt;EXAMPLE(S):&lt;br/&gt;1.75 meters&lt;br/&gt;&lt;br/&gt;OTHER NAME(S):&lt;br/&gt;&lt;br/&gt;NOTE(S):&lt;br/&gt;This value is derived from the path:&#160; Subject #gt; PerformedObservation #gt; PerformedObservationResult.value (ANY=#gt;PQ.TIME) WHERE PerformedObservation #gt; DefinedObservation.nameCode = &quot;height&quot;&lt;br/&gt;
+		</td>
+	</tr>
+</table></div>
+
+						
+				</td>
+			</tr>			<tr>
+				<td width="100%" class="TableRow">
+					<i>Public PQ</i><br /><strong>&nbsp;&nbsp;subjectWeight</strong>
+				</td>
+			</tr>
+			<tr>
+				<td class="TableRowBottomDashed"  colspan="1">										
+					<a href="#" onclick="parent.toggleData('DetailsImageAttributes1333')" style="text-decoration: none; color: #000000;"><img src="../../images/plus03.gif" align="absmiddle" id="DetailsImageAttributes1333" border="0" />Details:</a>
+					<table border="0" cellspacing="0" cellpadding="0" class="Table" style="padding: 4px 18px;">
+					
+						<tr id="DetailsImageAttributes1333_00" style="display: none;">
+							<td width="75"><i>Alias:</i></td>
+							<td></td>
+						</tr>
+						<tr id="DetailsImageAttributes1333_01" style="display: none;">
+							<td width="75"><i>Initial:</i></td>
+							<td></td>
+						</tr>
+						<tr id="DetailsImageAttributes1333_02" style="display: none;">
+							<td width="75"><i>Stereotype: </i></td>
+							<td></td>
+						</tr>
+						<tr id="DetailsImageAttributes1333_03" style="display: none;">
+							<td width="75"><i>Ordered: </i></td>
+							<td></td>
+						</tr>
+						<tr id="DetailsImageAttributes1333_04" style="display: none;">
+							<td width="75"><i>Range: </i></td>
+							<td>Range:0 to 1</td>
+						</tr>
+						<tr id="DetailsImageAttributes1333_05" style="display: none;">
+							<td width="75"><i>Transient: </i></td>
+							<td>False</td>
+						</tr>
+						<tr id="DetailsImageAttributes1333_06" style="display: none;">
+							<td width="75"><i>Derived: </i></td>
+							<td>True</td>
+						</tr>
+							<tr id="DetailsImageAttributes1333_07" style="display: none;">
+							<td width="75"><i>IsID: </i></td>
+						<td>False</td>
+						</tr>
+					</table>
+					
+					Map:DICOM=Patient Study Module - Patient's Weight (0010, 1030)<br>Map:DICOM=Study Level Keys for the Patient Root Query/Retrieve Information Model -  Patient's Weight (0010, 1030)<br>
+						<div class="ObjectDetailsNotes"><table>
+	<tr>
+		<td valign="top">
+			<i>Notes: </i><span style="margin-left: .4cm;"> </span>
+		</td>
+		<td>
+			DEFINITION:&lt;br/&gt;The measurement that indicates how heavy an imaging study subject is. [adapted from http://www.merriam-webster.com/dictionary/weight]&lt;br/&gt;&lt;br/&gt;EXAMPLE(S):&lt;br/&gt;75 kg&lt;br/&gt;&lt;br/&gt;OTHER NAME(S):&lt;br/&gt;&lt;br/&gt;NOTE(S):&lt;br/&gt;This value is derived from the path:&#160; Subject #gt; PerformedObservation #gt; PerformedObservationResult.value (ANY=#gt;PQ.TIME) WHERE PerformedObservation #gt; DefinedObservation.nameCode = &quot;weight&quot;&lt;br/&gt;
+		</td>
+	</tr>
+</table></div>
+
+						
+				</td>
+			</tr>			<tr>
+				<td width="100%" class="TableRow">
+					<i>Public DSET&lt;OID&gt;</i><br /><strong>&nbsp;&nbsp;storageSOPClassesInStudy</strong>
+				</td>
+			</tr>
+			<tr>
+				<td class="TableRowBottomDashed"  colspan="1">										
+					<a href="#" onclick="parent.toggleData('DetailsImageAttributes1334')" style="text-decoration: none; color: #000000;"><img src="../../images/plus03.gif" align="absmiddle" id="DetailsImageAttributes1334" border="0" />Details:</a>
+					<table border="0" cellspacing="0" cellpadding="0" class="Table" style="padding: 4px 18px;">
+					
+						<tr id="DetailsImageAttributes1334_00" style="display: none;">
+							<td width="75"><i>Alias:</i></td>
+							<td></td>
+						</tr>
+						<tr id="DetailsImageAttributes1334_01" style="display: none;">
+							<td width="75"><i>Initial:</i></td>
+							<td></td>
+						</tr>
+						<tr id="DetailsImageAttributes1334_02" style="display: none;">
+							<td width="75"><i>Stereotype: </i></td>
+							<td></td>
+						</tr>
+						<tr id="DetailsImageAttributes1334_03" style="display: none;">
+							<td width="75"><i>Ordered: </i></td>
+							<td></td>
+						</tr>
+						<tr id="DetailsImageAttributes1334_04" style="display: none;">
+							<td width="75"><i>Range: </i></td>
+							<td>Range:0 to *</td>
+						</tr>
+						<tr id="DetailsImageAttributes1334_05" style="display: none;">
+							<td width="75"><i>Transient: </i></td>
+							<td>False</td>
+						</tr>
+						<tr id="DetailsImageAttributes1334_06" style="display: none;">
+							<td width="75"><i>Derived: </i></td>
+							<td>False</td>
+						</tr>
+							<tr id="DetailsImageAttributes1334_07" style="display: none;">
+							<td width="75"><i>IsID: </i></td>
+						<td>False</td>
+						</tr>
+					</table>
+					
+					Map:DICOM=Study Level Keys for the Patient Root Query/Retrieve Information Model - SOP Classes in Study (0008,0062)<br>
+						<div class="ObjectDetailsNotes"><table>
+	<tr>
+		<td valign="top">
+			<i>Notes: </i><span style="margin-left: .4cm;"> </span>
+		</td>
+		<td>
+			DEFINITION:&lt;br/&gt;The unique identifier of a DICOM Storage Service-Object Pair Class used to encode an instance of the imaging study.&lt;br/&gt;&lt;br/&gt;EXAMPLE(S):&lt;br/&gt;1.2.840.10008.5.1.4.1.1.2 (CT Image Storage SOP Class)&lt;br/&gt;&lt;br/&gt;OTHER NAME(S):&lt;br/&gt;SOP Classes in Study (0008,0062)&lt;br/&gt;&lt;br/&gt;NOTE(S):&lt;br/&gt;
+		</td>
+	</tr>
+</table></div>
+
+						
+				</td>
+			</tr>			<tr>
+				<td width="100%" class="TableRow">
+					<i>Public BL</i><br /><strong>&nbsp;&nbsp;lossyImageCompressionIndicator</strong>
+				</td>
+			</tr>
+			<tr>
+				<td class="TableRowBottomDashed"  colspan="1">										
+					<a href="#" onclick="parent.toggleData('DetailsImageAttributes1335')" style="text-decoration: none; color: #000000;"><img src="../../images/plus03.gif" align="absmiddle" id="DetailsImageAttributes1335" border="0" />Details:</a>
+					<table border="0" cellspacing="0" cellpadding="0" class="Table" style="padding: 4px 18px;">
+					
+						<tr id="DetailsImageAttributes1335_00" style="display: none;">
+							<td width="75"><i>Alias:</i></td>
+							<td></td>
+						</tr>
+						<tr id="DetailsImageAttributes1335_01" style="display: none;">
+							<td width="75"><i>Initial:</i></td>
+							<td></td>
+						</tr>
+						<tr id="DetailsImageAttributes1335_02" style="display: none;">
+							<td width="75"><i>Stereotype: </i></td>
+							<td></td>
+						</tr>
+						<tr id="DetailsImageAttributes1335_03" style="display: none;">
+							<td width="75"><i>Ordered: </i></td>
+							<td></td>
+						</tr>
+						<tr id="DetailsImageAttributes1335_04" style="display: none;">
+							<td width="75"><i>Range: </i></td>
+							<td>Range:0 to 1</td>
+						</tr>
+						<tr id="DetailsImageAttributes1335_05" style="display: none;">
+							<td width="75"><i>Transient: </i></td>
+							<td>False</td>
+						</tr>
+						<tr id="DetailsImageAttributes1335_06" style="display: none;">
+							<td width="75"><i>Derived: </i></td>
+							<td>False</td>
+						</tr>
+							<tr id="DetailsImageAttributes1335_07" style="display: none;">
+							<td width="75"><i>IsID: </i></td>
+						<td>False</td>
+						</tr>
+					</table>
+					
+					Map:DICOM=General Image Module - Lossy Image Compression (0028,2110)<br>Map:DICOM=Enhanced CT Image Module - Lossy Image Compression (0028,2110)<br>Map:DICOM=Enhanced MR Image Module - Lossy Image Compression (0028,2110)<br>Map:DICOM=Enhanced PET Image Module - Lossy Image Compression (0028,2110)<br>
+						<div class="ObjectDetailsNotes"><table>
+	<tr>
+		<td valign="top">
+			<i>Notes: </i><span style="margin-left: .4cm;"> </span>
+		</td>
+		<td>
+			DEFINITION:&lt;br/&gt;Specifies whether any images in the study are irreversibly altered during encoding at any time during its life.&lt;br/&gt;&lt;br/&gt;EXAMPLE(S):&lt;br/&gt;If even just one image in the study has been lossy compressed, the loggyImageCompressionIndicator = &quot;true&quot;.&lt;br/&gt;&lt;br/&gt;OTHER NAME(S):&lt;br/&gt;&lt;br/&gt;NOTE(S):&lt;br/&gt;
+		</td>
+	</tr>
+</table></div>
+
+						
+				</td>
+			</tr>			<tr>
+				<td width="100%" class="TableRow">
+					<i>Public INT.NONNEG</i><br /><strong>&nbsp;&nbsp;seriesCount</strong>
+				</td>
+			</tr>
+			<tr>
+				<td class="TableRowBottomDashed"  colspan="1">										
+					<a href="#" onclick="parent.toggleData('DetailsImageAttributes1336')" style="text-decoration: none; color: #000000;"><img src="../../images/plus03.gif" align="absmiddle" id="DetailsImageAttributes1336" border="0" />Details:</a>
+					<table border="0" cellspacing="0" cellpadding="0" class="Table" style="padding: 4px 18px;">
+					
+						<tr id="DetailsImageAttributes1336_00" style="display: none;">
+							<td width="75"><i>Alias:</i></td>
+							<td></td>
+						</tr>
+						<tr id="DetailsImageAttributes1336_01" style="display: none;">
+							<td width="75"><i>Initial:</i></td>
+							<td></td>
+						</tr>
+						<tr id="DetailsImageAttributes1336_02" style="display: none;">
+							<td width="75"><i>Stereotype: </i></td>
+							<td></td>
+						</tr>
+						<tr id="DetailsImageAttributes1336_03" style="display: none;">
+							<td width="75"><i>Ordered: </i></td>
+							<td></td>
+						</tr>
+						<tr id="DetailsImageAttributes1336_04" style="display: none;">
+							<td width="75"><i>Range: </i></td>
+							<td>Range:0 to 1</td>
+						</tr>
+						<tr id="DetailsImageAttributes1336_05" style="display: none;">
+							<td width="75"><i>Transient: </i></td>
+							<td>False</td>
+						</tr>
+						<tr id="DetailsImageAttributes1336_06" style="display: none;">
+							<td width="75"><i>Derived: </i></td>
+							<td>False</td>
+						</tr>
+							<tr id="DetailsImageAttributes1336_07" style="display: none;">
+							<td width="75"><i>IsID: </i></td>
+						<td>False</td>
+						</tr>
+					</table>
+					
+					Map:DICOM=Study Level Keys for the Patient Root Query/Retrieve Information Model -  Number of Study Related Series (0020,1206)<br>
+						<div class="ObjectDetailsNotes"><table>
+	<tr>
+		<td valign="top">
+			<i>Notes: </i><span style="margin-left: .4cm;"> </span>
+		</td>
+		<td>
+			DEFINITION:&lt;br/&gt;The number of DICOM series in the performed imaging study.&lt;br/&gt;&lt;br/&gt;EXAMPLE(S):&lt;br/&gt;&lt;br/&gt;OTHER NAME(S):&lt;br/&gt;Number of Study Related Series (0020,1206)&lt;br/&gt;&lt;br/&gt;NOTE(S):&lt;br/&gt;
+		</td>
+	</tr>
+</table></div>
+
+						
+				</td>
+			</tr>			<tr>
+				<td width="100%" class="TableRow">
+					<i>Public INT.NONNEG</i><br /><strong>&nbsp;&nbsp;imageCount</strong>
+				</td>
+			</tr>
+			<tr>
+				<td class="TableRowBottomDashed"  colspan="1">										
+					<a href="#" onclick="parent.toggleData('DetailsImageAttributes1337')" style="text-decoration: none; color: #000000;"><img src="../../images/plus03.gif" align="absmiddle" id="DetailsImageAttributes1337" border="0" />Details:</a>
+					<table border="0" cellspacing="0" cellpadding="0" class="Table" style="padding: 4px 18px;">
+					
+						<tr id="DetailsImageAttributes1337_00" style="display: none;">
+							<td width="75"><i>Alias:</i></td>
+							<td></td>
+						</tr>
+						<tr id="DetailsImageAttributes1337_01" style="display: none;">
+							<td width="75"><i>Initial:</i></td>
+							<td></td>
+						</tr>
+						<tr id="DetailsImageAttributes1337_02" style="display: none;">
+							<td width="75"><i>Stereotype: </i></td>
+							<td></td>
+						</tr>
+						<tr id="DetailsImageAttributes1337_03" style="display: none;">
+							<td width="75"><i>Ordered: </i></td>
+							<td></td>
+						</tr>
+						<tr id="DetailsImageAttributes1337_04" style="display: none;">
+							<td width="75"><i>Range: </i></td>
+							<td>Range:0 to 1</td>
+						</tr>
+						<tr id="DetailsImageAttributes1337_05" style="display: none;">
+							<td width="75"><i>Transient: </i></td>
+							<td>False</td>
+						</tr>
+						<tr id="DetailsImageAttributes1337_06" style="display: none;">
+							<td width="75"><i>Derived: </i></td>
+							<td>False</td>
+						</tr>
+							<tr id="DetailsImageAttributes1337_07" style="display: none;">
+							<td width="75"><i>IsID: </i></td>
+						<td>False</td>
+						</tr>
+					</table>
+					
+					Map:DICOM=Study Level Keys for the Patient Root Query/Retrieve Information Model -  Number of Study Related Instances (0020,1208)<br>
+						<div class="ObjectDetailsNotes"><table>
+	<tr>
+		<td valign="top">
+			<i>Notes: </i><span style="margin-left: .4cm;"> </span>
+		</td>
+		<td>
+			DEFINITION:&lt;br/&gt;The number of DICOM instances in the performed imaging study.&lt;br/&gt;&lt;br/&gt;EXAMPLE(S):&lt;br/&gt;&lt;br/&gt;OTHER NAME(S):&lt;br/&gt;Number of Study Related Instances (0020,1208)&lt;br/&gt;&lt;br/&gt;NOTE(S):&lt;br/&gt;
+		</td>
+	</tr>
+</table></div>
+
+						
+				</td>
+			</tr>
+	</table>
+</div>
+<div class="ItemBody" id="TaggedValTable">
+	<table align="center" border="0" cellspacing="0" cellpadding="0" class="Table">
+		<tr>
+			<td width="50%" class="TableHeading">Tag</td>
+			<td width="50%" class="TableHeading">Value</td>
+		</tr>
+					<tr>
+				<td width="50%" class="TableRow" valign="top">Map:CTRv1.0</td>
+				<td width="50%" class="TableRow" valign="top">PerformedImaging</td>
+			</tr>	
+			<tr>
+				<td class="TableRowBottomDashed"  colspan="2">
+					<div class="DetailsDivParent"><img src="../../images/minus03.gif" align="absmiddle" id="DetailsImageScenario1338" onclick="parent.toggleDiv('detailsDIVScenario1338','DetailsImageScenario1338')" />Details:
+						<div id="detailsDIVScenario1338" class="DetailsDiv" >
+						&nbsp;
+						</div>
+					</div>
+				</td>
+			</tr>			<tr>
+				<td width="50%" class="TableRow" valign="top">Map:DICOM</td>
+				<td width="50%" class="TableRow" valign="top">General Study Module</td>
+			</tr>	
+			<tr>
+				<td class="TableRowBottomDashed"  colspan="2">
+					<div class="DetailsDivParent"><img src="../../images/minus03.gif" align="absmiddle" id="DetailsImageScenario1339" onclick="parent.toggleDiv('detailsDIVScenario1339','DetailsImageScenario1339')" />Details:
+						<div id="detailsDIVScenario1339" class="DetailsDiv" >
+						&nbsp;
+						</div>
+					</div>
+				</td>
+			</tr>			<tr>
+				<td width="50%" class="TableRow" valign="top">Map:DICOM</td>
+				<td width="50%" class="TableRow" valign="top">Clinical Trial Study Module</td>
+			</tr>	
+			<tr>
+				<td class="TableRowBottomDashed"  colspan="2">
+					<div class="DetailsDivParent"><img src="../../images/minus03.gif" align="absmiddle" id="DetailsImageScenario1340" onclick="parent.toggleDiv('detailsDIVScenario1340','DetailsImageScenario1340')" />Details:
+						<div id="detailsDIVScenario1340" class="DetailsDiv" >
+						&nbsp;
+						</div>
+					</div>
+				</td>
+			</tr>			<tr>
+				<td width="50%" class="TableRow" valign="top">Map:LSDAMv2.2.3Plus</td>
+				<td width="50%" class="TableRow" valign="top">PerformedImaging</td>
+			</tr>	
+			<tr>
+				<td class="TableRowBottomDashed"  colspan="2">
+					<div class="DetailsDivParent"><img src="../../images/minus03.gif" align="absmiddle" id="DetailsImageScenario1341" onclick="parent.toggleDiv('detailsDIVScenario1341','DetailsImageScenario1341')" />Details:
+						<div id="detailsDIVScenario1341" class="DetailsDiv" >
+						&nbsp;
+						</div>
+					</div>
+				</td>
+			</tr>
+	</table>
+</div>		<div class="ItemBody" id="ConstraintsTable">
+			<table border="0" cellspacing="0" cellpadding="0" class="Table">
+			  	<tr>
+					<td width="80%" class="TableHeading">Constraint</td>
+					<td width="10%" class="TableHeading">Type</td>
+					<td width="10%" class="TableHeading">Status</td>
+				</tr>
+				<tr>
+					<td width="80%" class="TableRow">be participated in by Qualifier</td>
+					<td width="10%" class="TableRow">Invariant</td>
+					<td width="10%" class="TableRow">Approved</td>
+				</tr>
+				<tr>
+					<td class="TableRowBottomDashed"  colspan="3">
+						<div class="DetailsDivParent"><img src="../../images/minus03.gif" align="absmiddle" id="DetailsImageConstraints1342" onclick="parent.toggleDiv('detailsDIVConstraints1342','DetailsImageConstraints1342')" />Details:
+							<div id="detailsDIVConstraints1342" class="DetailsDiv" >
+							<div class="ObjectDetailsNotes">Associations from Subject (including StudySubject) and Experimental Unit are valid for BiologicEntity, BiologicEntityGroup, BiologicEntityPart and Specimen, not for Product, ProductGroup, Organization or HealthcareFacility.&lt;br/&gt;</div>
+
+							</div>
+						</div>
+					</td>
+				</tr>
+
+			</table>
+		</div>
+		<div class="ItemBody" id="FilesTable">
+			<table border="0" cellspacing="0" cellpadding="0" class="Table">
+				<tr>
+					<td width="90%" class="TableHeading">File</td>
+					<td width="10%" class="TableHeading">Type</td>
+				</tr>
+			<tr>
+				<td width="50%" class="TableRow"><a href="http://dicom.nema.org/medical/dicom/current/output/chtml/part03/sect_C.7.2.3.html">http://dicom.nema.org/medical/dicom/current/output/chtml/part03/sect_C.7.2.3.html</a></td>
+				<td width="10%" class="TableRow">Web Address</td>
+			</tr>
+			<tr>
+				<td class="TableRowBottomDashed"  colspan="2">
+					<div class="DetailsDivParent"><img src="../../images/minus03.gif" align="absmiddle" id="DetailsImageFiles1343" onclick="parent.toggleDiv('detailsDIVFiles1343','DetailsImageFiles1343')" />Details:
+						<div id="detailsDIVFiles1343" class="DetailsDiv" >
+							<div class="ObjectDetailsNotes">This is a test to see if EA can capture a link from a UML class to an external web site.</div>
+<br />
+							<span class="NoteHeading">File Size:</span> <br />
+							<span class="NoteHeading">Time Stamp:</span> <br />
+						</div>
+					</div>
+				</td>
+			</tr>
+
+			</table>
+		</div>
+		<div class="ItemBody" id="LinksTable">
+			<table align="center" border="0" cellspacing="0" cellpadding="0" class="Table">
+				<tr>
+					<td width="30%" class="TableHeading">Object</td>
+					<td width="10%" class="TableHeading">Type</td>
+					<td width="10%" class="TableHeading">Connection</td>
+					<td width="10%" class="TableHeading">Direction</td>
+					<td width="40%" class="TableHeading">Notes</td>
+				</tr>
+				<tr>
+					<td width="30%" class="TableRow" valign="top"><a href="../EA10/EA390.htm">PerformedObservation</a></td>
+					<td width="10%" class="TableRow" valign="top">Class</td>
+					<td width="10%" class="TableRow" valign="top">Generalization</td>
+					<td width="10%" class="TableRow" valign="top">To</td>
+					<td width="40%" class="TableRow" valign="top">DESCRIPTION:
+Each PerformedImagingStudy always specializes one PerformedObservation. Each PerformedObservation might be specialized by one PerformedImagingStudy.
+
+DEFINITION:
+
+EXAMPLE(S):
+
+OTHER NAME(S):
+
+NOTE(S):</td>
+				</tr>
+
+			</table>
+		</div>
+	</div>
+<div class="pageFooter"></div>
+ 
+</body>
+</html>

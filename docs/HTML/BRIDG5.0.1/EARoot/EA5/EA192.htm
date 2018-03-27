@@ -1,0 +1,608 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>Imaging Sub-Domain::ImagingAcquisitionProtocolElement</title>
+<link href="../../css/ea.css" rel="stylesheet" type="text/css" />
+<script>
+function initPage(src) {	
+	if(parent==this&&(this.location+"").indexOf('EARoot')!=-1)
+		document.location=(this.location+"").substring(0,(this.location+"").indexOf('EARoot'))+"index"+(this.location+"").substring((this.location+"").lastIndexOf('.'))+"?goto="+((this.location+"").substring((this.location+"").indexOf('EARoot')+7,(this.location+"").lastIndexOf('.')).replace(/\//g,':').replace(/EA/g,""));
+	else
+		parent.initPage(src);
+}
+
+function nameClassifier(name, separator)
+{
+  var str = name;
+  var classifierName;
+  var node = document.getElementById('name_classifier');
+  if(node != null)
+  {
+    classifierName = node.innerHTML;
+  }
+  if(classifierName != "")
+  {
+   str += separator + classifierName;
+  }
+  
+  return str;
+}
+</script>
+</head>
+<body onload="initPage(this);" class="Content">
+<div class="pageHeader"></div>
+<div class="PageBody">
+	<div id="name_classifier" style="display: none;"></div>
+	<span class="ObjectTitle"><script type="text/javascript">document.write(nameClassifier("ImagingAcquisitionProtocolElement", " : "))</script>  : Public   Class</span>
+	<table border="0" cellpadding="0" cellspacing="0" class="ObjectDetails">
+		<tr>
+			<td width="15%" class="ObjectDetailsTopic">Created:</td>
+			<td width="85%" class="ObjectDetailsValue">6/1/2016 4:50:26 PM</td>
+		</tr>
+		<tr>
+			<td class="ObjectDetailsTopic">Modified:</td>
+			<td class="ObjectDetailsValue">8/26/2017 2:17:56 AM</td>
+		</tr>
+		<tr style="height: 10px"><td colspan="2"></td></tr>
+		<tr>
+			<td class="ObjectDetailsTopic"><img src="../../images/plus03.gif" align="absmiddle" id="proj" onclick="parent.toggleData(this.id)" />Project:</td>
+			<td class="ObjectDetailsValue"></td>
+		</tr>
+		<tr id="proj00" style="display: none;">
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Author:</td>
+			<td class="ObjectDetailsValue">wverhoef</td>
+		</tr>
+		<tr id="proj01" style="display: none;">
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Version:</td>
+			<td class="ObjectDetailsValue">1.0</td>
+		</tr>
+		<tr id="proj02" style="display: none;">
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Phase:</td>
+			<td class="ObjectDetailsValue">1.0</td>
+		</tr>
+		<tr id="proj03" style="display: none;">
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Status:</td>
+			<td class="ObjectDetailsValue"><none></td>
+		</tr>
+		<tr id="proj04" style="display: none;">
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Complexity:</td>
+			<td class="ObjectDetailsValue">Easy</td>
+		</tr>
+		<tr id="proj05" style="display: none;">
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Difficulty:</td>
+			<td class="ObjectDetailsValue"></td>
+		</tr>
+		<tr id="proj06" style="display: none;">
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Priority:</td>
+			<td class="ObjectDetailsValue"></td>
+		</tr>
+		<tr id="proj05" style="display: none;">
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Multiplicity:</td>
+			<td class="ObjectDetailsValue"></td>
+		</tr>
+		<tr>
+			<td class="ObjectDetailsTopic"><img src="../../images/plus03.gif" align="absmiddle" id="adv" onclick="parent.toggleData(this.id)" />Advanced:</td>
+			<td class="ObjectDetailsValue"></td>
+		</tr>
+		<tr id="adv00" style="display: none;">
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">UUID:</td>
+			<td class="ObjectDetailsValue">{C534C45A-B956-4c45-8FDA-F601AFD89FD3}</td>
+		</tr>
+		<tr id="adv01" style="display: none;">
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Appears In:</td>
+			<td class="ObjectDetailsValue"><a href="../EA1.htm">UML-Based Comprehensive BRIDG Model Diagram</a>, <a href="EA170.htm">View IM: Imaging</a>, <a href="EA172.htm">Imaging Acquisition</a></td>
+		</tr>
+	</table>
+	<div class="ObjectDetailsNotes">DEFINITION:&lt;br/&gt;A set of scanning parameter values necessary to perform a single scan in the acquisition protocol. [adapted from NEMA XR 25-2010, https://www.nema.org/Standards/Pages/Computed-Tomography-Dose-Check.aspx]&lt;br/&gt;&lt;br/&gt;EXAMPLE(S):&lt;br/&gt;A chest Protocol might include three elements:&#160; two localizer CT radiographs (AP and Lateral) and a single helical scan, each of which would be described in separate steps with different parameter values.&lt;br/&gt;&lt;br/&gt;OTHER NAME(S):&lt;br/&gt;&lt;br/&gt;NOTE(S): &lt;br/&gt;Given that this subclass of&#160; ImagingProcessProtocolElement actually names the process as Acquisition and includes that word in the name of the class, the word Process is omitted from the class name.&lt;br/&gt;</div>
+
+	<div class="TableGroup" id="TableGroup">
+		<ul class="ItemTitle">
+			<li onClick="parent.toggleItem('Attributes');" id="AttributesTitle">Attributes</li>
+			<li onClick="parent.toggleItem('AssociationsFrom');" id="AssociationsFromTitle">Associations From</li>
+			<li onClick="parent.toggleItem('TaggedVal');" id="TaggedValTitle">Tagged Values</li>
+			<li onClick="parent.toggleItem('Links');" id="LinksTitle">Other Links</li>
+		</ul>
+<div class="ItemBody" id="AttributesTable">
+	<table border="0" cellspacing="0" cellpadding="0" class="Table">
+		<tr>
+			<td width="100%" class="TableHeading">Attribute</td>
+		</tr>
+						<tr>
+				<td width="100%" class="TableRow">
+					<i>Public DSET&lt;CD&gt;</i><br /><strong>&nbsp;&nbsp;acquisitionTypeCode</strong>
+				</td>
+			</tr>
+			<tr>
+				<td class="TableRowBottomDashed"  colspan="1">										
+					<a href="#" onclick="parent.toggleData('DetailsImageAttributes1273')" style="text-decoration: none; color: #000000;"><img src="../../images/plus03.gif" align="absmiddle" id="DetailsImageAttributes1273" border="0" />Details:</a>
+					<table border="0" cellspacing="0" cellpadding="0" class="Table" style="padding: 4px 18px;">
+					
+						<tr id="DetailsImageAttributes1273_00" style="display: none;">
+							<td width="75"><i>Alias:</i></td>
+							<td></td>
+						</tr>
+						<tr id="DetailsImageAttributes1273_01" style="display: none;">
+							<td width="75"><i>Initial:</i></td>
+							<td></td>
+						</tr>
+						<tr id="DetailsImageAttributes1273_02" style="display: none;">
+							<td width="75"><i>Stereotype: </i></td>
+							<td></td>
+						</tr>
+						<tr id="DetailsImageAttributes1273_03" style="display: none;">
+							<td width="75"><i>Ordered: </i></td>
+							<td></td>
+						</tr>
+						<tr id="DetailsImageAttributes1273_04" style="display: none;">
+							<td width="75"><i>Range: </i></td>
+							<td>Range:0 to 1</td>
+						</tr>
+						<tr id="DetailsImageAttributes1273_05" style="display: none;">
+							<td width="75"><i>Transient: </i></td>
+							<td>False</td>
+						</tr>
+						<tr id="DetailsImageAttributes1273_06" style="display: none;">
+							<td width="75"><i>Derived: </i></td>
+							<td>False</td>
+						</tr>
+							<tr id="DetailsImageAttributes1273_07" style="display: none;">
+							<td width="75"><i>IsID: </i></td>
+						<td>False</td>
+						</tr>
+					</table>
+					
+					Map:DICOM=MR Image Module - MR Acquisition Type (0018,0023)<br>Map:DICOM=CT Acquisition Details Macro - CT Acquisition Type Sequence > Acquisition Type (0018,9302)<br>Map:DICOM=MR Pulse Sequence Module - MR Acquisition Type (0018,0023)<br>Map:DICOM=Performed CT Acquisition Module - Acquisition Protocol Element Sequence (0018,9920) > Acquisition Type (0018,9302)<br>
+						<div class="ObjectDetailsNotes"><table>
+	<tr>
+		<td valign="top">
+			<i>Notes: </i><span style="margin-left: .4cm;"> </span>
+		</td>
+		<td>
+			DEFINITION:&lt;br/&gt;A coded value specifying spatial aspects of the mechanism of data collection.&lt;br/&gt;&lt;br/&gt;EXAMPLE(S):&lt;br/&gt;For CT, this specifies the trajectory of the X-Ray source relative to the object being imaged, e.g. SEQUENCED, SPIRAL, CONSTANT_ANGLE, STATIONARY, FREE&lt;br/&gt;For MRI, this specifies the spatial encoding scheme, e.g. 1D, 2D, 3D&lt;br/&gt;&lt;br/&gt;OTHER NAME(S):&lt;br/&gt;Acquisition Type (0018,9302)&lt;br/&gt;&lt;br/&gt;NOTE(S):&lt;br/&gt;
+		</td>
+	</tr>
+</table></div>
+
+						
+				</td>
+			</tr>			<tr>
+				<td width="100%" class="TableRow">
+					<i>Public DSET&lt;CD&gt;</i><br /><strong>&nbsp;&nbsp;imageTypeCode</strong>
+				</td>
+			</tr>
+			<tr>
+				<td class="TableRowBottomDashed"  colspan="1">										
+					<a href="#" onclick="parent.toggleData('DetailsImageAttributes1274')" style="text-decoration: none; color: #000000;"><img src="../../images/plus03.gif" align="absmiddle" id="DetailsImageAttributes1274" border="0" />Details:</a>
+					<table border="0" cellspacing="0" cellpadding="0" class="Table" style="padding: 4px 18px;">
+					
+						<tr id="DetailsImageAttributes1274_00" style="display: none;">
+							<td width="75"><i>Alias:</i></td>
+							<td></td>
+						</tr>
+						<tr id="DetailsImageAttributes1274_01" style="display: none;">
+							<td width="75"><i>Initial:</i></td>
+							<td></td>
+						</tr>
+						<tr id="DetailsImageAttributes1274_02" style="display: none;">
+							<td width="75"><i>Stereotype: </i></td>
+							<td></td>
+						</tr>
+						<tr id="DetailsImageAttributes1274_03" style="display: none;">
+							<td width="75"><i>Ordered: </i></td>
+							<td></td>
+						</tr>
+						<tr id="DetailsImageAttributes1274_04" style="display: none;">
+							<td width="75"><i>Range: </i></td>
+							<td></td>
+						</tr>
+						<tr id="DetailsImageAttributes1274_05" style="display: none;">
+							<td width="75"><i>Transient: </i></td>
+							<td>False</td>
+						</tr>
+						<tr id="DetailsImageAttributes1274_06" style="display: none;">
+							<td width="75"><i>Derived: </i></td>
+							<td>False</td>
+						</tr>
+							<tr id="DetailsImageAttributes1274_07" style="display: none;">
+							<td width="75"><i>IsID: </i></td>
+						<td>False</td>
+						</tr>
+					</table>
+					
+					Map:DICOM=MR Image Frame Type Macro - MR Image Frame Type Sequence > Frame Type (0008,9007)<br>Map:DICOM=General Image Module - Image Type (0008,0008)<br>Map:DICOM=MR Image Module - Image Type (0008,0008)<br>Map:DICOM=PET Image Module - Image Type (0008,0008)<br>Map:DICOM=CT Image Frame Type Macro - CT Image Frame Type Sequence > Frame Type (0008,9007)<br>Map:DICOM=Enhanced CT Image Module - Image Type (0008,0008)<br>Map:DICOM=CT Image Module - Image Type (0008,0008)<br>Map:DICOM=Enhanced PET Image Module - Image Type (0008,0008)<br>Map:DICOM=PET Frame Type Macro - PET Frame Type Sequence > Frame Type (0008,9007)<br>Map:DICOM=Enhanced MR Image Module - Image Type (0008,0008)<br>
+						<div class="ObjectDetailsNotes"><table>
+	<tr>
+		<td valign="top">
+			<i>Notes: </i><span style="margin-left: .4cm;"> </span>
+		</td>
+		<td>
+			DEFINITION:&lt;br/&gt;A coded value that specifies the most important aspect of the images or their derivation.&lt;br/&gt;&lt;br/&gt;EXAMPLE(S):&lt;br/&gt;DYNAMIC, STRESS, RCBV&lt;br/&gt;&lt;br/&gt;OTHER NAME(S):&lt;br/&gt;&lt;br/&gt;NOTE(S):&lt;br/&gt;
+		</td>
+	</tr>
+</table></div>
+
+						
+				</td>
+			</tr>			<tr>
+				<td width="100%" class="TableRow">
+					<i>Public CD</i><br /><strong>&nbsp;&nbsp;cardiacSynchronizationTechniqueCode</strong>
+				</td>
+			</tr>
+			<tr>
+				<td class="TableRowBottomDashed"  colspan="1">										
+					<a href="#" onclick="parent.toggleData('DetailsImageAttributes1275')" style="text-decoration: none; color: #000000;"><img src="../../images/plus03.gif" align="absmiddle" id="DetailsImageAttributes1275" border="0" />Details:</a>
+					<table border="0" cellspacing="0" cellpadding="0" class="Table" style="padding: 4px 18px;">
+					
+						<tr id="DetailsImageAttributes1275_00" style="display: none;">
+							<td width="75"><i>Alias:</i></td>
+							<td></td>
+						</tr>
+						<tr id="DetailsImageAttributes1275_01" style="display: none;">
+							<td width="75"><i>Initial:</i></td>
+							<td></td>
+						</tr>
+						<tr id="DetailsImageAttributes1275_02" style="display: none;">
+							<td width="75"><i>Stereotype: </i></td>
+							<td></td>
+						</tr>
+						<tr id="DetailsImageAttributes1275_03" style="display: none;">
+							<td width="75"><i>Ordered: </i></td>
+							<td></td>
+						</tr>
+						<tr id="DetailsImageAttributes1275_04" style="display: none;">
+							<td width="75"><i>Range: </i></td>
+							<td>Range:0 to 1</td>
+						</tr>
+						<tr id="DetailsImageAttributes1275_05" style="display: none;">
+							<td width="75"><i>Transient: </i></td>
+							<td>False</td>
+						</tr>
+						<tr id="DetailsImageAttributes1275_06" style="display: none;">
+							<td width="75"><i>Derived: </i></td>
+							<td>False</td>
+						</tr>
+							<tr id="DetailsImageAttributes1275_07" style="display: none;">
+							<td width="75"><i>IsID: </i></td>
+						<td>False</td>
+						</tr>
+					</table>
+					
+					Map:DICOM=Performed CT Acquisition Module - Acquisition Protocol Element Sequence (0018,9920) > CT X-Ray Details Sequence (0018,9325) > Cardiac Synchronization Technique (0018,9037)<br>
+						<div class="ObjectDetailsNotes"><table>
+	<tr>
+		<td valign="top">
+			<i>Notes: </i><span style="margin-left: .4cm;"> </span>
+		</td>
+		<td>
+			DEFINITION:&lt;br/&gt;The means used to coordinate the collection or reconstruction of data with the cardiac cycle.&lt;br/&gt;&lt;br/&gt;EXAMPLE(S):&lt;br/&gt;NONE,&#160; REALTIME,&#160; PROSPECTIVE,&#160; RETROSPECTIVE,&#160; PACED&lt;br/&gt;&lt;br/&gt;OTHER NAME(S):&lt;br/&gt;Cardiac Synchronization Technique (0018,9037)&lt;br/&gt;&lt;br/&gt;NOTE(S):&lt;br/&gt;
+		</td>
+	</tr>
+</table></div>
+
+						
+				</td>
+			</tr>			<tr>
+				<td width="100%" class="TableRow">
+					<i>Public CD</i><br /><strong>&nbsp;&nbsp;respiratoryMotionTechniqueCode</strong>
+				</td>
+			</tr>
+			<tr>
+				<td class="TableRowBottomDashed"  colspan="1">										
+					<a href="#" onclick="parent.toggleData('DetailsImageAttributes1276')" style="text-decoration: none; color: #000000;"><img src="../../images/plus03.gif" align="absmiddle" id="DetailsImageAttributes1276" border="0" />Details:</a>
+					<table border="0" cellspacing="0" cellpadding="0" class="Table" style="padding: 4px 18px;">
+					
+						<tr id="DetailsImageAttributes1276_00" style="display: none;">
+							<td width="75"><i>Alias:</i></td>
+							<td></td>
+						</tr>
+						<tr id="DetailsImageAttributes1276_01" style="display: none;">
+							<td width="75"><i>Initial:</i></td>
+							<td></td>
+						</tr>
+						<tr id="DetailsImageAttributes1276_02" style="display: none;">
+							<td width="75"><i>Stereotype: </i></td>
+							<td></td>
+						</tr>
+						<tr id="DetailsImageAttributes1276_03" style="display: none;">
+							<td width="75"><i>Ordered: </i></td>
+							<td></td>
+						</tr>
+						<tr id="DetailsImageAttributes1276_04" style="display: none;">
+							<td width="75"><i>Range: </i></td>
+							<td>Range:0 to 1</td>
+						</tr>
+						<tr id="DetailsImageAttributes1276_05" style="display: none;">
+							<td width="75"><i>Transient: </i></td>
+							<td>False</td>
+						</tr>
+						<tr id="DetailsImageAttributes1276_06" style="display: none;">
+							<td width="75"><i>Derived: </i></td>
+							<td>False</td>
+						</tr>
+							<tr id="DetailsImageAttributes1276_07" style="display: none;">
+							<td width="75"><i>IsID: </i></td>
+						<td>False</td>
+						</tr>
+					</table>
+					
+					Map:DICOM=Respiratory Synchronization Module - Respiratory Motion Compensation Technique (0018,9170)<br>Map:DICOM=Performed CT Acquisition Module - Acquisition Protocol Element Sequence (0018,9920) > CT X-Ray Details Sequence (0018,9325) > Respiratory Motion Compensation Technique (0018,9170)<br>
+						<div class="ObjectDetailsNotes"><table>
+	<tr>
+		<td valign="top">
+			<i>Notes: </i><span style="margin-left: .4cm;"> </span>
+		</td>
+		<td>
+			DEFINITION:&lt;br/&gt;The means to be used to coordinate the collection or reconstruction of data with breathing.&lt;br/&gt;&lt;br/&gt;EXAMPLE(S):&lt;br/&gt;NONE,&#160; BREATH_HOLD,&#160; REALTIME,&#160; GATING, TRACKING, RETROSPECTIVE,&#160; CORRECTION&lt;br/&gt;&lt;br/&gt;OTHER NAME(S):&lt;br/&gt;Respiratory Motion Compensation Technique (0018,9170)&lt;br/&gt;&lt;br/&gt;NOTE(S):&lt;br/&gt;
+		</td>
+	</tr>
+</table></div>
+
+						
+				</td>
+			</tr>			<tr>
+				<td width="100%" class="TableRow">
+					<i>Public PQ</i><br /><strong>&nbsp;&nbsp;dataCollectionDiameter</strong>
+				</td>
+			</tr>
+			<tr>
+				<td class="TableRowBottomDashed"  colspan="1">										
+					<a href="#" onclick="parent.toggleData('DetailsImageAttributes1277')" style="text-decoration: none; color: #000000;"><img src="../../images/plus03.gif" align="absmiddle" id="DetailsImageAttributes1277" border="0" />Details:</a>
+					<table border="0" cellspacing="0" cellpadding="0" class="Table" style="padding: 4px 18px;">
+					
+						<tr id="DetailsImageAttributes1277_00" style="display: none;">
+							<td width="75"><i>Alias:</i></td>
+							<td></td>
+						</tr>
+						<tr id="DetailsImageAttributes1277_01" style="display: none;">
+							<td width="75"><i>Initial:</i></td>
+							<td></td>
+						</tr>
+						<tr id="DetailsImageAttributes1277_02" style="display: none;">
+							<td width="75"><i>Stereotype: </i></td>
+							<td></td>
+						</tr>
+						<tr id="DetailsImageAttributes1277_03" style="display: none;">
+							<td width="75"><i>Ordered: </i></td>
+							<td></td>
+						</tr>
+						<tr id="DetailsImageAttributes1277_04" style="display: none;">
+							<td width="75"><i>Range: </i></td>
+							<td>Range:0 to 1</td>
+						</tr>
+						<tr id="DetailsImageAttributes1277_05" style="display: none;">
+							<td width="75"><i>Transient: </i></td>
+							<td>False</td>
+						</tr>
+						<tr id="DetailsImageAttributes1277_06" style="display: none;">
+							<td width="75"><i>Derived: </i></td>
+							<td>False</td>
+						</tr>
+							<tr id="DetailsImageAttributes1277_07" style="display: none;">
+							<td width="75"><i>IsID: </i></td>
+						<td>False</td>
+						</tr>
+					</table>
+					
+					Map:DICOM=CT Acquisition Details Macro - CT Acquisition Details Sequence > Data Collection Diameter (0018,0090)<br>Map:DICOM=PET Frame Acquisition Macro - PET Frame Acquisition Sequence > Data Collection Diameter (0018,0090)<br>Map:DICOM=Performed CT Acquisition Module - Acquisition Protocol Element Sequence (0018,9920) > CT X-Ray Details Sequence (0018,9325) > Data Collection Diameter (0018,0090)<br>
+						<div class="ObjectDetailsNotes"><table>
+	<tr>
+		<td valign="top">
+			<i>Notes: </i><span style="margin-left: .4cm;"> </span>
+		</td>
+		<td>
+			DEFINITION:&lt;br/&gt;The diameter of the region over which information is acquired.&lt;br/&gt;&lt;br/&gt;EXAMPLE(S):&lt;br/&gt;&lt;br/&gt;OTHER NAME(S):&lt;br/&gt;Exposure Modulation Type (0018,9323)&lt;br/&gt;&lt;br/&gt;NOTE(S):&lt;br/&gt;The units are of linear distince, e.g. mm..&lt;br/&gt;
+		</td>
+	</tr>
+</table></div>
+
+						
+				</td>
+			</tr>			<tr>
+				<td width="100%" class="TableRow">
+					<i>Public CD</i><br /><strong>&nbsp;&nbsp;bodyPositionCode</strong>
+				</td>
+			</tr>
+			<tr>
+				<td class="TableRowBottomDashed"  colspan="1">										
+					<a href="#" onclick="parent.toggleData('DetailsImageAttributes1278')" style="text-decoration: none; color: #000000;"><img src="../../images/plus03.gif" align="absmiddle" id="DetailsImageAttributes1278" border="0" />Details:</a>
+					<table border="0" cellspacing="0" cellpadding="0" class="Table" style="padding: 4px 18px;">
+					
+						<tr id="DetailsImageAttributes1278_00" style="display: none;">
+							<td width="75"><i>Alias:</i></td>
+							<td></td>
+						</tr>
+						<tr id="DetailsImageAttributes1278_01" style="display: none;">
+							<td width="75"><i>Initial:</i></td>
+							<td></td>
+						</tr>
+						<tr id="DetailsImageAttributes1278_02" style="display: none;">
+							<td width="75"><i>Stereotype: </i></td>
+							<td></td>
+						</tr>
+						<tr id="DetailsImageAttributes1278_03" style="display: none;">
+							<td width="75"><i>Ordered: </i></td>
+							<td></td>
+						</tr>
+						<tr id="DetailsImageAttributes1278_04" style="display: none;">
+							<td width="75"><i>Range: </i></td>
+							<td>Range:0 to 1</td>
+						</tr>
+						<tr id="DetailsImageAttributes1278_05" style="display: none;">
+							<td width="75"><i>Transient: </i></td>
+							<td>False</td>
+						</tr>
+						<tr id="DetailsImageAttributes1278_06" style="display: none;">
+							<td width="75"><i>Derived: </i></td>
+							<td>False</td>
+						</tr>
+							<tr id="DetailsImageAttributes1278_07" style="display: none;">
+							<td width="75"><i>IsID: </i></td>
+						<td>False</td>
+						</tr>
+					</table>
+					
+					Map:DICOM=Patient Positioning Module - Protocol Defined Patient Position (0018,9947)<br>
+						<div class="ObjectDetailsNotes"><table>
+	<tr>
+		<td valign="top">
+			<i>Notes: </i><span style="margin-left: .4cm;"> </span>
+		</td>
+		<td>
+			DEFINITION:&lt;br/&gt;A coded value specifying the 3-dimensional spatial orientation of a subject during this imaging acquisition protocol element.&lt;br/&gt;&lt;br/&gt;EXAMPLE(S):&lt;br/&gt;supine, trendelenburg, standing&lt;br/&gt;&lt;br/&gt;OTHER NAME(S):&lt;br/&gt;&lt;br/&gt;NOTE(S):&lt;br/&gt;
+		</td>
+	</tr>
+</table></div>
+
+						
+				</td>
+			</tr>
+	</table>
+</div>
+		<div class="ItemBody" id="AssociationsFromTable">
+			<table border="0" cellspacing="0" cellpadding="0" class="Table">
+				<tr>
+					<td width="40%" class="TableHeading">Element</td>
+					<td width="30%" class="TableHeading">Source Role</td>
+					<td width="30%" class="TableHeading">Target Role</td>
+				</tr>
+				<tr>
+					<td width="40%" class="TableRow" valign="top">
+						<a href="EA195.htm">ImagingReconstructionProtocolElement</a><br />
+						Class &nbsp;
+					</td>
+					<td width="30%" class="TableRow" valign="top">
+						<strong>Name:</strong> reconstructingImagingReconstructionProtocolElement<br />
+						&nbsp;
+					</td>
+					<td width="30%" class="TableRow" valign="top">
+						<strong>Name:</strong> reconstructedImagingAcquisitionProtocolElement<br />
+						&nbsp;	
+					</td>
+				</tr>
+				<tr>
+					<td class="TableRowBottomDashed"  colspan="3">
+						<div class="DetailsDivParent"><img src="../../images/minus03.gif" align="absmiddle" id="DetailsImageLink1279" onclick="parent.toggleDiv('detailsDIVLink1279','DetailsImageLink1279')" />Details:
+							<div id="detailsDIVLink1279" class="DetailsDiv" >
+							<div class="ObjectDetailsNotes">DESCRIPTION:&lt;br/&gt;Each ImagingReconstructionProtocolElement always specifies a reconstruction of one or more ImagingAcquisitionProtocolElement. Each ImagingAcquisitionProtocolElement might be specified for reconstructing one or more ImagingReconstructionProtocolElement.&lt;br/&gt;&lt;br/&gt;DEFINITION:&lt;br/&gt;&lt;br/&gt;EXAMPLE(S):&lt;br/&gt;&lt;br/&gt;OTHER NAME(S):&lt;br/&gt;&lt;br/&gt;NOTE(S):&lt;br/&gt;</div>
+
+							</div>
+						</div>
+					</td>
+				</tr>
+
+			</table>
+		</div>
+<div class="ItemBody" id="TaggedValTable">
+	<table align="center" border="0" cellspacing="0" cellpadding="0" class="Table">
+		<tr>
+			<td width="50%" class="TableHeading">Tag</td>
+			<td width="50%" class="TableHeading">Value</td>
+		</tr>
+					<tr>
+				<td width="50%" class="TableRow" valign="top">Map:DICOM</td>
+				<td width="50%" class="TableRow" valign="top">Defined CT Acquisition Module - Acquisition Protocol Element Specification Sequence (0018,991F)</td>
+			</tr>	
+			<tr>
+				<td class="TableRowBottomDashed"  colspan="2">
+					<div class="DetailsDivParent"><img src="../../images/minus03.gif" align="absmiddle" id="DetailsImageScenario1280" onclick="parent.toggleDiv('detailsDIVScenario1280','DetailsImageScenario1280')" />Details:
+						<div id="detailsDIVScenario1280" class="DetailsDiv" >
+						&nbsp;
+						</div>
+					</div>
+				</td>
+			</tr>			<tr>
+				<td width="50%" class="TableRow" valign="top">Map:DICOM</td>
+				<td width="50%" class="TableRow" valign="top">CT Image Module - Image Type (0008,0008)</td>
+			</tr>	
+			<tr>
+				<td class="TableRowBottomDashed"  colspan="2">
+					<div class="DetailsDivParent"><img src="../../images/minus03.gif" align="absmiddle" id="DetailsImageScenario1281" onclick="parent.toggleDiv('detailsDIVScenario1281','DetailsImageScenario1281')" />Details:
+						<div id="detailsDIVScenario1281" class="DetailsDiv" >
+						&nbsp;
+						</div>
+					</div>
+				</td>
+			</tr>
+	</table>
+</div>		<div class="ItemBody" id="LinksTable">
+			<table align="center" border="0" cellspacing="0" cellpadding="0" class="Table">
+				<tr>
+					<td width="30%" class="TableHeading">Object</td>
+					<td width="10%" class="TableHeading">Type</td>
+					<td width="10%" class="TableHeading">Connection</td>
+					<td width="10%" class="TableHeading">Direction</td>
+					<td width="40%" class="TableHeading">Notes</td>
+				</tr>
+				<tr>
+					<td width="30%" class="TableRow" valign="top"><a href="EA194.htm">ImagingProcessProtocolElement</a></td>
+					<td width="10%" class="TableRow" valign="top">Class</td>
+					<td width="10%" class="TableRow" valign="top">Generalization</td>
+					<td width="10%" class="TableRow" valign="top">To</td>
+					<td width="40%" class="TableRow" valign="top">DESCRIPTION:
+Each ImagingAcquisitionProtocolElement always specializes one ImagingProcessProtocolElement. Each ImagingProcessProtocolElement might be specialized by one ImagingAcquisitionProtocolElement.
+
+DEFINITION:
+
+EXAMPLE(S):
+
+OTHER NAME(S):
+
+NOTE(S):</td>
+				</tr>
+				<tr>
+					<td width="30%" class="TableRow" valign="top"><a href="EA196.htm">MRImagingAcquisitionProtocolElement</a></td>
+					<td width="10%" class="TableRow" valign="top">Class</td>
+					<td width="10%" class="TableRow" valign="top">Generalization</td>
+					<td width="10%" class="TableRow" valign="top">From</td>
+					<td width="40%" class="TableRow" valign="top">DESCRIPTION:
+Each MRImagingAcquisitionProtocolElement always specializes one ImagingAcquisitionProtocolElement. Each ImagingAcquisitionProtocolElement might be specialized by one MRImagingAcquisitionProtocolElement.
+
+DEFINITION:
+
+EXAMPLE(S):
+
+OTHER NAME(S):
+
+NOTE(S):</td>
+				</tr>
+				<tr>
+					<td width="30%" class="TableRow" valign="top"><a href="EA189.htm">CTImagingAcquisitionProtocolElement</a></td>
+					<td width="10%" class="TableRow" valign="top">Class</td>
+					<td width="10%" class="TableRow" valign="top">Generalization</td>
+					<td width="10%" class="TableRow" valign="top">From</td>
+					<td width="40%" class="TableRow" valign="top">DESCRIPTION:
+Each CTImagingAcquisitionProtocolElement always specializes one ImagingAcquisitionProtocolElement. Each ImagingAcquisitionProtocolElement might be specialized by one CTImagingAcquisitionProtocolElement.
+
+DEFINITION:
+
+EXAMPLE(S):
+
+OTHER NAME(S):
+
+NOTE(S):</td>
+				</tr>
+				<tr>
+					<td width="30%" class="TableRow" valign="top"><a href="EA198.htm">PETImagingAcquisitionProtocolElement</a></td>
+					<td width="10%" class="TableRow" valign="top">Class</td>
+					<td width="10%" class="TableRow" valign="top">Generalization</td>
+					<td width="10%" class="TableRow" valign="top">From</td>
+					<td width="40%" class="TableRow" valign="top">DESCRIPTION:
+Each PETImagingAcquisitionProtocolElement always specializes one ImagingAcquisitionProtocolElement. Each ImagingAcquisitionProtocolElement might be specialized by one PETImagingAcquisitionProtocolElement.
+
+DEFINITION:
+
+EXAMPLE(S):
+
+OTHER NAME(S):
+
+NOTE(S):</td>
+				</tr>
+
+			</table>
+		</div>
+	</div>
+<div class="pageFooter"></div>
+ 
+</body>
+</html>
