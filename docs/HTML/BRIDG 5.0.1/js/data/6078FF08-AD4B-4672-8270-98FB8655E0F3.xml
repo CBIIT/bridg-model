@@ -1,0 +1,13 @@
+tocTab[tocTab.length] = new Array("0:1", "", "UML-Based Comprehensive BRIDG Model Diagram", "EARoot/EA1.htm", "175.png", "1409", "0", "", "Logical diagram0","{EB2DB575-6309-420d-8A26-5D6F69B0EC06}");
+tocTab[tocTab.length] = new Array("0:2", "", "BRIDG Sub-Domain Packages Diagram", "EARoot/EA3.htm", "175.png", "1408", "0", "", "Logical diagram0","{B8E04A0B-9CBC-4d9a-89B8-8150B3F1BCAF}");
+tocTab[tocTab.length] = new Array("0.1", "1", "Adverse Event Sub-Domain", "EARoot/EA1/EA30.htm", "4.png", "", "", "{5A40B74C-78C3-4788-BC62-1E7061F5C00C}", "Package");
+tocTab[tocTab.length] = new Array("0.2", "1", "Biospecimen Sub-Domain", "EARoot/EA2/EA47.htm", "4.png", "", "", "{2E7E0D46-3B19-42fb-A5AD-2BED11039EDD}", "Package");
+tocTab[tocTab.length] = new Array("0.3", "1", "Common Sub-Domain", "EARoot/EA3/EA64.htm", "4.png", "", "", "{E7CF4F65-E7C2-404d-8204-75B0F9A7B585}", "Package");
+tocTab[tocTab.length] = new Array("0.4", "1", "Experiment Sub-Domain", "EARoot/EA4/EA157.htm", "4.png", "", "", "{2D321221-354F-4c8d-A954-4F4D05F37ED8}", "Package");
+tocTab[tocTab.length] = new Array("0.5", "1", "Imaging Sub-Domain", "EARoot/EA5/EA176.htm", "4.png", "", "", "{D82E4410-D008-426e-A4AF-E78378354F17}", "Package");
+tocTab[tocTab.length] = new Array("0.6", "1", "Out of Scope for HL7 May 2017 Ballot Cycle: Molecular Biology Sub-Domain", "EARoot/EA6/EA206.htm", "4.png", "", "", "{0E75781D-D8CA-4d18-A0B6-2365848B4730}", "Package");
+tocTab[tocTab.length] = new Array("0.7", "1", "Protocol Representation Sub-Domain", "EARoot/EA7/EA244.htm", "4.png", "", "", "{6B25174F-5AC4-4bda-A950-8213D9DD8686}", "Package");
+tocTab[tocTab.length] = new Array("0.8", "1", "«DEPRECATED» Regulatory Sub-Domain", "EARoot/EA8/EA327.htm", "4.png", "", "", "{95ED20B4-E9B6-4cfa-B3CB-BFB2829809E9}", "Package");
+tocTab[tocTab.length] = new Array("0.9", "1", "Statistical Analysis Sub-Domain", "EARoot/EA9/EA341.htm", "4.png", "", "", "{0DF2E941-36F7-4cff-9B1C-8EDE1EFAEAFC}", "Package");
+tocTab[tocTab.length] = new Array("0.10", "1", "Study Conduct Sub-Domain", "EARoot/EA10/EA358.htm", "4.png", "", "", "{C1D5C0DB-1DED-46f1-80B7-BBCC6B6A2F68}", "Package");
+tocTab[tocTab.length] = new Array("0.11", "1", "Additional Focused Views", "EARoot/EA11/EA468.htm", "4.png", "", "", "{1CE60609-EB0F-4688-939F-921E03E0C1B9}", "Package");

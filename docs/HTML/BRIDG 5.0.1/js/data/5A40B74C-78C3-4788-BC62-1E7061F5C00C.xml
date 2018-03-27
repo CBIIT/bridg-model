@@ -1,0 +1,12 @@
+tocTab[tocTab.length] = new Array("0.1:1", "", "View AE: Adverse Event", "EARoot/EA1/EA28.htm", "175.png", "1414", "0", "", "Logical diagram0","{EE227C56-F249-41fa-8DF4-93D772D62666}");
+tocTab[tocTab.length] = new Array("0.1:2", "", "AdverseEvent", "EARoot/EA1/EA31.htm", "5.png", "E32239", "0", "", "Class0","{EC125D25-9421-4273-BBF8-1148D7427E77}");
+tocTab[tocTab.length] = new Array("0.1:3", "", "AdverseEventOutcomeAssessment", "EARoot/EA1/EA32.htm", "5.png", "E32240", "0", "", "Class0","{A518E8D1-6943-4e8f-9637-8FF7BAF0554A}");
+tocTab[tocTab.length] = new Array("0.1:4", "", "AdverseEventOutcomeResult", "EARoot/EA1/EA33.htm", "5.png", "E32241", "0", "", "Class0","{940B5C4F-64F5-41d5-A644-CD74F8AF8890}");
+tocTab[tocTab.length] = new Array("0.1:5", "", "AdverseEventSeriousness", "EARoot/EA1/EA34.htm", "5.png", "E32242", "0", "", "Class0","{C551B1D3-3776-415e-B2A9-933ED8B483C3}");
+tocTab[tocTab.length] = new Array("0.1:6", "", "CausalAssessment", "EARoot/EA1/EA35.htm", "5.png", "E32243", "0", "", "Class0","{CC8C8A1F-9738-40f8-9377-FF18004883E1}");
+tocTab[tocTab.length] = new Array("0.1:7", "", "EvaluatedActivityRelationship", "EARoot/EA1/EA36.htm", "5.png", "E32244", "0", "", "Class0","{3EF30B12-17C3-4216-A16A-76AAA52474CC}");
+tocTab[tocTab.length] = new Array("0.1:8", "", "EvaluatedResultRelationship", "EARoot/EA1/EA37.htm", "5.png", "E32245", "0", "", "Class0","{7B771A56-31ED-4cbc-9685-2E225A1470B2}");
+tocTab[tocTab.length] = new Array("0.1:9", "", "PerformedProductInvestigation", "EARoot/EA1/EA40.htm", "5.png", "E32246", "0", "", "Class0","{DAEA9581-D4BB-4d66-8C7D-7047806783D4}");
+tocTab[tocTab.length] = new Array("0.1:10", "", "PerformedProductInvestigationResult", "EARoot/EA1/EA41.htm", "5.png", "E32247", "0", "", "Class0","{70C4D5B8-A429-4bde-A709-C4C5035D6D15}");
+tocTab[tocTab.length] = new Array("0.1:11", "", "PerformedProductProblemDiscovery", "EARoot/EA1/EA42.htm", "5.png", "E32248", "0", "", "Class0","{E1CDEEC7-8FF0-4605-928C-624B033E4BDD}");
+tocTab[tocTab.length] = new Array("0.1:12", "", "SafetyReportVersion", "EARoot/EA1/EA43.htm", "5.png", "E32249", "0", "", "Class0","{67A32AF7-6AC8-4366-AC41-2CB43F48C801}");
