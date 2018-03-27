@@ -1,0 +1,10 @@
+tocTab[tocTab.length] = new Array("0.2:1", "", "View BSP: Biospecimen", "EARoot/EA2/EA45.htm", "175.png", "1410", "0", "", "Logical diagram0","{02A2D295-F42F-4ca4-885D-1209237CC5A1}");
+tocTab[tocTab.length] = new Array("0.2:2", "", "BiologicSpecimen", "EARoot/EA2/EA51.htm", "5.png", "E32162", "0", "", "Class0","{DE36547D-B00C-4982-9887-922CEAD025C9}");
+tocTab[tocTab.length] = new Array("0.2:3", "", "DefinedSpecimenMove", "EARoot/EA2/EA52.htm", "5.png", "E32163", "0", "", "Class0","{39383370-4456-45b2-B59A-D1CBD7E301F6}");
+tocTab[tocTab.length] = new Array("0.2:4", "", "PerformedSpecimenMove", "EARoot/EA2/EA53.htm", "5.png", "E32164", "0", "", "Class0","{BF687265-D584-4c25-860B-50FBA0C5E658}");
+tocTab[tocTab.length] = new Array("0.2:5", "", "Specimen", "EARoot/EA2/EA54.htm", "5.png", "E32165", "0", "", "Class0","{2D175F44-7249-4f42-B967-BDD5FBE0CDE6}");
+tocTab[tocTab.length] = new Array("0.2:6", "", "SpecimenCollectionGroup", "EARoot/EA2/EA55.htm", "5.png", "E32166", "0", "", "Class0","{8415BC65-6880-409e-BA64-ED916DD15636}");
+tocTab[tocTab.length] = new Array("0.2:7", "", "SpecimenCollectionProtocol", "EARoot/EA2/EA56.htm", "5.png", "E32167", "0", "", "Class0","{402BD8FA-64B7-4210-9564-702FEDA0D927}");
+tocTab[tocTab.length] = new Array("0.2:8", "", "SpecimenCollectionProtocolSubject", "EARoot/EA2/EA57.htm", "5.png", "E32168", "0", "", "Class0","{866BD66E-5F5D-4934-9448-938ABD6A6852}");
+tocTab[tocTab.length] = new Array("0.2:9", "", "SpecimenProcessing", "EARoot/EA2/EA58.htm", "5.png", "E32169", "0", "", "Class0","{B622C028-DA44-4e21-83AB-1D61C1C7E53F}");
+tocTab[tocTab.length] = new Array("0.2:10", "", "SpecimenProcessingProtocol", "EARoot/EA2/EA59.htm", "5.png", "E32170", "0", "", "Class0","{387441A3-16FB-4f95-8A87-C5BF836D79F7}");
