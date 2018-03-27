@@ -1,0 +1,1609 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>Study Conduct Sub-Domain::PerformedObservationResult</title>
+<link href="../../css/ea.css" rel="stylesheet" type="text/css" />
+<script>
+function initPage(src) {	
+	if(parent==this&&(this.location+"").indexOf('EARoot')!=-1)
+		document.location=(this.location+"").substring(0,(this.location+"").indexOf('EARoot'))+"index"+(this.location+"").substring((this.location+"").lastIndexOf('.'))+"?goto="+((this.location+"").substring((this.location+"").indexOf('EARoot')+7,(this.location+"").lastIndexOf('.')).replace(/\//g,':').replace(/EA/g,""));
+	else
+		parent.initPage(src);
+}
+
+function nameClassifier(name, separator)
+{
+  var str = name;
+  var classifierName;
+  var node = document.getElementById('name_classifier');
+  if(node != null)
+  {
+    classifierName = node.innerHTML;
+  }
+  if(classifierName != "")
+  {
+   str += separator + classifierName;
+  }
+  
+  return str;
+}
+</script>
+</head>
+<body onload="initPage(this);" class="Content">
+<div class="pageHeader"></div>
+<div class="PageBody">
+	<div id="name_classifier" style="display: none;"></div>
+	<span class="ObjectTitle"><script type="text/javascript">document.write(nameClassifier("PerformedObservationResult", " : "))</script>  : Public   Class</span>
+	<table border="0" cellpadding="0" cellspacing="0" class="ObjectDetails">
+		<tr>
+			<td width="15%" class="ObjectDetailsTopic">Created:</td>
+			<td width="85%" class="ObjectDetailsValue">6/14/2007 10:23:21 AM</td>
+		</tr>
+		<tr>
+			<td class="ObjectDetailsTopic">Modified:</td>
+			<td class="ObjectDetailsValue">8/26/2017 2:57:15 AM</td>
+		</tr>
+		<tr style="height: 10px"><td colspan="2"></td></tr>
+		<tr>
+			<td class="ObjectDetailsTopic"><img src="../../images/plus03.gif" align="absmiddle" id="proj" onclick="parent.toggleData(this.id)" />Project:</td>
+			<td class="ObjectDetailsValue"></td>
+		</tr>
+		<tr id="proj00" style="display: none;">
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Author:</td>
+			<td class="ObjectDetailsValue">BRIDG SCC</td>
+		</tr>
+		<tr id="proj01" style="display: none;">
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Version:</td>
+			<td class="ObjectDetailsValue">1.0</td>
+		</tr>
+		<tr id="proj02" style="display: none;">
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Phase:</td>
+			<td class="ObjectDetailsValue">1.0</td>
+		</tr>
+		<tr id="proj03" style="display: none;">
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Status:</td>
+			<td class="ObjectDetailsValue"><none></td>
+		</tr>
+		<tr id="proj04" style="display: none;">
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Complexity:</td>
+			<td class="ObjectDetailsValue">Easy</td>
+		</tr>
+		<tr id="proj05" style="display: none;">
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Difficulty:</td>
+			<td class="ObjectDetailsValue"></td>
+		</tr>
+		<tr id="proj06" style="display: none;">
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Priority:</td>
+			<td class="ObjectDetailsValue"></td>
+		</tr>
+		<tr id="proj05" style="display: none;">
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Multiplicity:</td>
+			<td class="ObjectDetailsValue"></td>
+		</tr>
+		<tr>
+			<td class="ObjectDetailsTopic"><img src="../../images/plus03.gif" align="absmiddle" id="adv" onclick="parent.toggleData(this.id)" />Advanced:</td>
+			<td class="ObjectDetailsValue"></td>
+		</tr>
+		<tr id="adv00" style="display: none;">
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">UUID:</td>
+			<td class="ObjectDetailsValue">{3DFFDCBD-226F-41b6-9D1D-EE96D8652BAC}</td>
+		</tr>
+		<tr id="adv01" style="display: none;">
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Appears In:</td>
+			<td class="ObjectDetailsValue"><a href="../EA1.htm">UML-Based Comprehensive BRIDG Model Diagram</a>, <a href="../EA4/EA155.htm">View EX: Experiment</a>, <a href="../EA6/EA204.htm">View MB: Molecular Biology</a>, <a href="../EA1/EA28.htm">View AE: Adverse Event</a>, <a href="../EA3/EA60.htm">View CM: Common</a>, <a href="EA356.htm">View SC: Study Conduct</a>, <a href="../EA5/EA170.htm">View IM: Imaging</a>, <a href="../EA11/EA434.htm">Adverse Events</a>, <a href="../EA11/EA446.htm">Observations and Results</a>, <a href="../EA5/EA174.htm">DICOM SR TID 1500 BRIDG Class Diagram</a>, <a href="../EA11/EA440.htm">Oncology View</a>, <a href="../EA11/EA454.htm">SDTM 3.1.3 View</a>, <a href="../EA11/EA460.htm">SDTM Vital Signs (VS) View</a>, <a href="../EA11/EA458.htm">SDTM Disease Response (RS) Domain View</a>, <a href="../EA11/EA448.htm">Participant Registration</a>, <a href="../EA11/EA462.htm">SEER View</a></td>
+		</tr>
+	</table>
+	<div class="ObjectDetailsNotes">DEFINITION:&lt;br/&gt;The data or finding obtained by observing, monitoring, measuring or otherwise qualitatively or quantitatively recording one or more aspects of a subject, experimental unit, system, or process. &lt;br/&gt;&lt;br/&gt;EXAMPLE(S):&lt;br/&gt;A blood chemistry result&lt;br/&gt;A diagnosis of breast cancer&lt;br/&gt;A pregnancy test result&lt;br/&gt;A blood pressure measurement&lt;br/&gt;Identification of nausea as an adverse event&lt;br/&gt;The conclusion of an adverse event outcome assessment&lt;br/&gt;The finding from an experiment&lt;br/&gt;The data used as input to an experiment&lt;br/&gt;Data produced by computation&lt;br/&gt;An image annotation&lt;br/&gt;The reformatting, transformation, semantic/syntactic normalization or downloading of data from public resources&lt;br/&gt;A cell count&lt;br/&gt;Neoplastic cellularity&lt;br/&gt;&lt;br/&gt;OTHER NAME(S):&lt;br/&gt;Data&lt;br/&gt;Data Acquisition Result&lt;br/&gt;Finding&lt;br/&gt;&lt;br/&gt;NOTE(S):&lt;br/&gt;</div>
+
+	<div class="TableGroup" id="TableGroup">
+		<ul class="ItemTitle">
+			<li onClick="parent.toggleItem('Attributes');" id="AttributesTitle">Attributes</li>
+			<li onClick="parent.toggleItem('AssociationsTo');" id="AssociationsToTitle">Associations To</li>
+			<li onClick="parent.toggleItem('AssociationsFrom');" id="AssociationsFromTitle">Associations From</li>
+			<li onClick="parent.toggleItem('TaggedVal');" id="TaggedValTitle">Tagged Values</li>
+			<li onClick="parent.toggleItem('Links');" id="LinksTitle">Other Links</li>
+		</ul>
+<div class="ItemBody" id="AttributesTable">
+	<table border="0" cellspacing="0" cellpadding="0" class="Table">
+		<tr>
+			<td width="100%" class="TableHeading">Attribute</td>
+		</tr>
+						<tr>
+				<td width="100%" class="TableRow">
+					<i>Public ID</i><br /><strong>&nbsp;&nbsp;identifier</strong>
+				</td>
+			</tr>
+			<tr>
+				<td class="TableRowBottomDashed"  colspan="1">										
+					<a href="#" onclick="parent.toggleData('DetailsImageAttributes2687')" style="text-decoration: none; color: #000000;"><img src="../../images/plus03.gif" align="absmiddle" id="DetailsImageAttributes2687" border="0" />Details:</a>
+					<table border="0" cellspacing="0" cellpadding="0" class="Table" style="padding: 4px 18px;">
+					
+						<tr id="DetailsImageAttributes2687_00" style="display: none;">
+							<td width="75"><i>Alias:</i></td>
+							<td></td>
+						</tr>
+						<tr id="DetailsImageAttributes2687_01" style="display: none;">
+							<td width="75"><i>Initial:</i></td>
+							<td></td>
+						</tr>
+						<tr id="DetailsImageAttributes2687_02" style="display: none;">
+							<td width="75"><i>Stereotype: </i></td>
+							<td></td>
+						</tr>
+						<tr id="DetailsImageAttributes2687_03" style="display: none;">
+							<td width="75"><i>Ordered: </i></td>
+							<td></td>
+						</tr>
+						<tr id="DetailsImageAttributes2687_04" style="display: none;">
+							<td width="75"><i>Range: </i></td>
+							<td>Range:0 to 1</td>
+						</tr>
+						<tr id="DetailsImageAttributes2687_05" style="display: none;">
+							<td width="75"><i>Transient: </i></td>
+							<td>False</td>
+						</tr>
+						<tr id="DetailsImageAttributes2687_06" style="display: none;">
+							<td width="75"><i>Derived: </i></td>
+							<td>False</td>
+						</tr>
+							<tr id="DetailsImageAttributes2687_07" style="display: none;">
+							<td width="75"><i>IsID: </i></td>
+						<td>False</td>
+						</tr>
+					</table>
+					
+					Map:AIM v4 rv48=Entity.uniqueIdentifier<br>Map:CDASHv1.1=EX.EXYN<br>Map:CDASHv1.1=SU.SUNCF<br>Map:CDASHv1.1=EX.EXDOSADJ<br>Map:CDASHv1.1=EX.EXTRTCMP<br>Map:CDASHv1.1=CM.CMMHNO<br>Map:CDASHv1.1=CM.CMAENO <br>Map:CDASHv1.1=EG.EGREFID<br>Map:CTOM=Imaging.imageIdentifier<br>Map:CTOM=Imaging.identifier<br>Map:CTRv1.0=PerformedObservationResult.identifier<br>Map:DICOM=TID 1410 PlanarROIMeasurements > Measurement Group > Tracking Unique Identifier<br>Map:DICOM=TID 1411 VolumetricROIMeasurements > Measurement Group > Tracking Unique Identifier<br>Map:DICOM=TID 1501 MeasurementGroup > Measurement Group > Tracking Unique Identifier<br>Map:ICSRr2=DefectReference.id (in IndividualCaseSafetyReport)<br>Map:ICSRr2=AdverseEventAssessment.id (in IndividualCaseSafetyReport)<br>Map:ICSRr2=ObservationEvent.id (in IndividualCaseSafetyReport)<br>Map:ICSRr2=ProductDefectAssessment.id (in IndividualCaseSafetyReport)<br>Map:LSDAMv2.2.3Plus=PerformedImaging.imageIdentifier<br>Map:LSDAMv2.2.3Plus=ImageAnnotation.uniqueIdentifier<br>Map:LSDAMv2.2.3Plus=PerformedObservationResult.identifier<br>Map:SDTM IGv3.1.2=DV.DVREFID<br>Map:SDTM IGv3.1.2=CE.CEREFID<br>Map:SDTM IGv3.1.2=EG.EGREFID<br>Map:SDTM IGv3.1.2=MH.MHREFID<br>Map:SDTM IGv3.1.3=MH.MHREFID<br>Map:SDTM IGv3.1.3=TU.TUREFID<br>Map:SDTM IGv3.1.3=EG.EGREFID<br>Map:SDTM IGv3.1.3=DV.DVREFID<br>Map:SDTM IGv3.1.3=CE.CEREFID<br>
+						<div class="ObjectDetailsNotes"><table>
+	<tr>
+		<td valign="top">
+			<i>Notes: </i><span style="margin-left: .4cm;"> </span>
+		</td>
+		<td>
+			DEFINITION:&lt;br/&gt;The unique symbol that establishes identity of the observation result.&lt;br/&gt;&lt;br/&gt;EXAMPLE(S):&lt;br/&gt;&lt;br/&gt;OTHER NAME(S):&lt;br/&gt;&lt;br/&gt;NOTE(S):&lt;br/&gt;
+		</td>
+	</tr>
+</table></div>
+
+						
+				</td>
+			</tr>			<tr>
+				<td width="100%" class="TableRow">
+					<i>Public CD</i><br /><strong>&nbsp;&nbsp;typeCode</strong>
+				</td>
+			</tr>
+			<tr>
+				<td class="TableRowBottomDashed"  colspan="1">										
+					<a href="#" onclick="parent.toggleData('DetailsImageAttributes2688')" style="text-decoration: none; color: #000000;"><img src="../../images/plus03.gif" align="absmiddle" id="DetailsImageAttributes2688" border="0" />Details:</a>
+					<table border="0" cellspacing="0" cellpadding="0" class="Table" style="padding: 4px 18px;">
+					
+						<tr id="DetailsImageAttributes2688_00" style="display: none;">
+							<td width="75"><i>Alias:</i></td>
+							<td></td>
+						</tr>
+						<tr id="DetailsImageAttributes2688_01" style="display: none;">
+							<td width="75"><i>Initial:</i></td>
+							<td></td>
+						</tr>
+						<tr id="DetailsImageAttributes2688_02" style="display: none;">
+							<td width="75"><i>Stereotype: </i></td>
+							<td></td>
+						</tr>
+						<tr id="DetailsImageAttributes2688_03" style="display: none;">
+							<td width="75"><i>Ordered: </i></td>
+							<td></td>
+						</tr>
+						<tr id="DetailsImageAttributes2688_04" style="display: none;">
+							<td width="75"><i>Range: </i></td>
+							<td>Range:0 to 1</td>
+						</tr>
+						<tr id="DetailsImageAttributes2688_05" style="display: none;">
+							<td width="75"><i>Transient: </i></td>
+							<td>False</td>
+						</tr>
+						<tr id="DetailsImageAttributes2688_06" style="display: none;">
+							<td width="75"><i>Derived: </i></td>
+							<td>False</td>
+						</tr>
+							<tr id="DetailsImageAttributes2688_07" style="display: none;">
+							<td width="75"><i>IsID: </i></td>
+						<td>False</td>
+						</tr>
+					</table>
+					
+					Map:CTOM=ClinicalResult.value<br>Map:CTRPv3.8=ObservationResult.typeCode<br>Map:CTRv1.0=PerformedObservationResult.typeCode<br>Map:ICSRr2=ObservationEvent.code (in IndividualCaseSafetyReport)<br>Map:ICSRr2=Characteristics.code (in R_Product)<br>Map:ICSRr2=AdverseEventAssessment.code (in IndividualCaseSafetyReport)<br>Map:ICSRr2=InvestigationCharacteristic.code (in IndividualCaseSafetyReport)<br>Map:LSDAMv2.2.3Plus=ImageAnnotation.type<br>Map:LSDAMv2.2.3Plus=PerformedObservationResult.typeCode<br>
+						<div class="ObjectDetailsNotes"><table>
+	<tr>
+		<td valign="top">
+			<i>Notes: </i><span style="margin-left: .4cm;"> </span>
+		</td>
+		<td>
+			DEFINITION:&lt;br/&gt;A coded value specifying the kind of observation result.&lt;br/&gt;&lt;br/&gt;EXAMPLE(S):&lt;br/&gt;A single blood pressure observation has two results, typeCode = &quot;systolic&quot; and typeCode = &quot;diastolic&quot;.&lt;br/&gt;&lt;br/&gt;OTHER NAME(S):&lt;br/&gt;&lt;br/&gt;NOTE(S):&lt;br/&gt;
+		</td>
+	</tr>
+</table></div>
+
+						
+				</td>
+			</tr>			<tr>
+				<td width="100%" class="TableRow">
+					<i>Public ANY</i><br /><strong>&nbsp;&nbsp;value</strong>
+				</td>
+			</tr>
+			<tr>
+				<td class="TableRowBottomDashed"  colspan="1">										
+					<a href="#" onclick="parent.toggleData('DetailsImageAttributes2689')" style="text-decoration: none; color: #000000;"><img src="../../images/plus03.gif" align="absmiddle" id="DetailsImageAttributes2689" border="0" />Details:</a>
+					<table border="0" cellspacing="0" cellpadding="0" class="Table" style="padding: 4px 18px;">
+					
+						<tr id="DetailsImageAttributes2689_00" style="display: none;">
+							<td width="75"><i>Alias:</i></td>
+							<td></td>
+						</tr>
+						<tr id="DetailsImageAttributes2689_01" style="display: none;">
+							<td width="75"><i>Initial:</i></td>
+							<td></td>
+						</tr>
+						<tr id="DetailsImageAttributes2689_02" style="display: none;">
+							<td width="75"><i>Stereotype: </i></td>
+							<td></td>
+						</tr>
+						<tr id="DetailsImageAttributes2689_03" style="display: none;">
+							<td width="75"><i>Ordered: </i></td>
+							<td></td>
+						</tr>
+						<tr id="DetailsImageAttributes2689_04" style="display: none;">
+							<td width="75"><i>Range: </i></td>
+							<td>Range:1. to 1</td>
+						</tr>
+						<tr id="DetailsImageAttributes2689_05" style="display: none;">
+							<td width="75"><i>Transient: </i></td>
+							<td>False</td>
+						</tr>
+						<tr id="DetailsImageAttributes2689_06" style="display: none;">
+							<td width="75"><i>Derived: </i></td>
+							<td>False</td>
+						</tr>
+							<tr id="DetailsImageAttributes2689_07" style="display: none;">
+							<td width="75"><i>IsID: </i></td>
+						<td>False</td>
+						</tr>
+					</table>
+					
+					Map:AE=AdverseEvent.adverseEventTermCode<br>Map:AE=Person.numberOfSiblings<br>Map:AE=AdverseEvent.reactionText<br>Map:AE=Animal.overallStateOfHealthCode<br>Map:AE=Assessment.textInterpretation<br>Map:AE=InvestigativeSubject.gestationPeriod<br>Map:AE=Assessment.codedInterpretation<br>Map:AE=ProductObservation.value<br>Map:AE=ProductInvestigation.evaluationResultCode<br>Map:AIM v4 rv48=CalculationResult.unitOfMeasure<br>Map:AIM v4 rv48=CalculationData.value<br>Map:AIM v4 rv48=InferenceEntity.typeCode<br>Map:AIM v4 rv48=ImagingObservationEntity.typeCode<br>Map:AIM v4 rv48=ImagingObservationCharacteristic.typeCode<br>Map:C3PR=StratificationCriterionPermissbleAnswer.permissibleAnswer<br>Map:C3PRv2.9=SubjectEligibilityAnswer.answerText<br>Map:C3PRv2.9=DiseaseHistory.otherPrimaryDiseaseCode<br>Map:C3PRv2.9=SubjectStratificationAnswer<br>Map:C3PRv2.9=AdverseEvent.verbatim<br>Map:caAERSv2.2=AdverseEventResponseDescription.studyDrugInterrupted<br>Map:caAERSv2.2=DiseaseHistory.otherPrimaryDisease<br>Map:caAERSv2.2=LabValue.value<br>Map:caAERSv2.2=AbstractMeddraDomain.icd10Code<br>Map:caAERSv2.2=AbstractMeddraDomain.meddraTerm<br>Map:caAERSv2.2=AdverseEventResponseDescription.eventAbate<br>Map:caAERSv2.2=PreExistingCondition.text > SAEReportPreExistingCondition<br>Map:caAERSv2.2=AbstractMeddraDomain.version_id<br>Map:caAERSv2.2=ParticipantHistory.weight<br>Map:caAERSv2.2=StudyParticipantDiseaseHistory.otherPrimaryDisease<br>Map:caAERSv2.2=MeddraVersion.name > AdverseEvent<br>Map:caAERSv2.2=CtcTerm.select > AdverseEventCtcTerm<br>Map:caAERSv2.2=CtcTerm.ctepCode > AdverseEvent<br>Map:caAERSv2.2=StudyParticipantAssignment.baselinePerformance<br>Map:caAERSv2.2=AbstractMeddraDomain.icd9Code<br>Map:caAERSv2.2=ParticipantHistory.height<br>Map:caAERSv2.2=AbstractMeddraDomain.meddraCode > AdverseEventMeddraLowLevelTerm<br>Map:caAERSv2.2=DiseaseHistory > AbstractStudyDisease<br>Map:caAERSv2.2=PreExistingCondition.meddraLowLevelTerm > StudyParticipantPreExistingCondition<br>Map:caAERSv2.2=ParticipantHistory.baselinePerformanceStatus<br>Map:caAERSv2.2=AbstractMeddraDomain.whoArtCode<br>Map:caAERSv2.2=AbstractMeddraDomain.jartCode<br>Map:caAERSv2.2=AbstractMeddraDomain.costartSymbol<br>Map:caAERSv2.2=AbstractMeddraDomain.meddraCode > AdverseEvent<br>Map:caAERSv2.2=Ctc.name > AdverseEventCtcTerm<br>Map:caAERSv2.2=Lab.units<br>Map:caAERSv2.2=PreExistingCondition.meddraLowLevelTermCode > StudyParticipantPreExistingCondition<br>Map:caAERSv2.2=CtcTerm.term > AdverseEventCtcTerm<br>Map:caAERSv2.2=AdverseEventResponseDescription.presentStatus<br>Map:caAERSv2.2=AdverseEventResponseDescription.causeOfDeath<br>Map:caAERSv2.2=PreExistingCondition.text > StudyParticipantPreExistingCondition<br>Map:caAERSv2.2=PreExistingCondition.meddraLowLevelTerm > SAEReportPreExistingCondition<br>Map:caAERSv2.2=PreExistingCondition.meddraLowLevelTermCode > SAEReportPreExistingCondition<br>Map:caAERSv2.2=AdverseEventResponseDescription.eventDescription<br>Map:caAERSv2.2=SAEReportPreExistingCondition.other<br>Map:caAERSv2.2=AbstractMeddraDomain.icd9CmCode<br>Map:caAERSv2.2=AbstractMeddraDomain.hartsCode<br>Map:caAERSv2.2=AdverseEvent > AbstractAdverseEventTerm<br>Map:caAERSv2.2=MeddraVersion.name > AdverseEventMeddraLowLevelTerm<br>Map:caAERSv2.2=StudyParticipantPreExistingCondition.other<br>Map:CDASHv1.1=MH.MHYN<br>Map:CDASHv1.1=AE.AETERM<br>Map:CDASHv1.1=DV.DVTERM<br>Map:CDASHv1.1=DS.DSDECOD<br>Map:CDASHv1.1=MH.MHOCCUR<br>Map:CDASHv1.1=LB.LBORRES<br>Map:CDASHv1.1=PE.PEDESC<br>Map:CDASHv1.1=SC.SCPERF<br>Map:CDASHv1.1=DS.DSTERM<br>Map:CDASHv1.1=EG.EGPERF<br>Map:CDASHv1.1=AE.AEOCCUR<br>Map:CDASHv1.1=DV.DVYN<br>Map:CDASHv1.1=EG.EGORRES<br>Map:CDASHv1.1=AE.AEYN<br>Map:CDASHv1.1=PE.PERES<br>Map:CDASHv1.1=MH.MHTERM<br>Map:CDASHv1.1=CM.CMOCCUR<br>Map:CDASHv1.1=AE.AEOUT<br>Map:CDASHv1.1=MH.MHCTRL<br>Map:CDASHv1.1=VS.VSORRESU<br>Map:CDASHv1.1=DV.DVDECOD<br>Map:CDASHv1.1=PE.PEPERF<br>Map:CDASHv1.1=VS.VSORRES<br>Map:CDASHv1.1=SC.SCORRES<br>Map:CDASHv1.1=LB.LBORRESU<br>Map:CDASHv1.1=CM.CMYN<br>Map:CTOM=ParticipantEligibilityAnswer.answerText<br>Map:CTOM=Specimen.volume<br>Map:CTOM=DeathSummary.deathCauseCode<br>Map:CTOM=CancerStage.stageCodeSystem<br>Map:CTOM=FemaleReproductiveCharacteristic.stillBirthCount<br>Map:CTOM=Histopathology.grossExamResultCode<br>Map:CTOM=QualitativeEvaluation.survivalStatusDescriptionText<br>Map:CTOM=FemaleReproductiveCharacteristic.abortionIndicator<br>Map:CTOM=FemaleReproductiveCharacteristic.firstLiveBirthAge<br>Map:CTOM=Participant.householdIncomeCode<br>Map:CTOM=QualitativeEvaluation.menstrualPatternTypeCode<br>Map:CTOM=AdverseEvent.descriptionText<br>Map:CTOM=Person.employmentStatusCode<br>Map:CTOM=QualitativeEvaluation.performanceStatusCodeSystem<br>Map:CTOM=AdverseEvent.outcomeCode<br>Map:CTOM=FemaleReproductiveCharacteristic.liveBirthCount<br>Map:CTOM=DiseaseResponse.responseCode<br>Map:CTOM=QualitativeEvaluation.menstrualIndicator<br>Map:CTOM=ClinicalResult.valueUnitOfMeasureCode<br>Map:CTOM=Specimen.volumeUnitOfMeasureCode<br>Map:CTOM=FemaleReproductiveCharacteristic.menopauseAge<br>Map:CTOM=Participant.employmentStatusOtherText<br>Map:CTOM=ClinicalResult.value<br>Map:CTOM=Diagnosis.diseaseDiagnosisCode<br>Map:CTOM=QualitativeEvaluation.anamResultAccuracyPercent<br>Map:CTOM=Participant.employmentStatusCode<br>Map:CTOM=Neoplasm.cellTypeCode<br>Map:CTOM=QualitativeEvaluation.painIndexCodeSystem<br>Map:CTOM=Person.householdIncomeCode<br>Map:CTOM=QualitativeEvaluation.painIndexCode<br>Map:CTOM=LesionEvaluation.evaluationCode<br>Map:CTOM=CancerStage.stageCode<br>Map:CTOM=Diagnosis.diseaseDiagnosisCodeSystem<br>Map:CTOM=QualitativeEvaluation.survivalStatusCode<br>Map:CTOM=DiseaseResponse.responseCodeSystem<br>Map:CTOM=QualitativeEvaluation.performanceStatusCode<br>Map:CTOM=DeathSummary.deathCauseText<br>Map:CTOM=DiseaseResponse.courseDispositionCode<br>Map:CTRPv3.8=ObservationResult.resultCode<br>Map:CTRPv3.8=ObservationResult.resultQuantity<br>Map:CTRPv3.8=ObservationResult.resultText<br>Map:CTRPv3.8=ObservationResult.resultIndicator<br>Map:CTRv1.0=PerformedObservationResult.value<br>Map:CTRv1.0=PerformedObservationResult.categoryCode<br>Map:DICOM=TID 1410 PlanarROIMeasurements > Measurement Group > $QualitativeEvaluation<br>Map:DICOM=TID 1411 VolumetricROIMeasurements > Measurement Group > $QualitativeEvaluation<br>Map:DICOM=TID 1500 MeasurementReport > Qualitative Evaluations > (unconstrained name/value pair)<br>Map:DICOM=TID 1501 MeasurementGroup > Measurement Group > $QualitativeEvaluation<br>Map:DICOM=TID 300 Measurement > $Measurement parameter<br>Map:DICOM=TID 1419 ROIMeasurements > $Measurement parameter<br>Map:HCTv1.0=CDE 2695297:Lab Results.Second C antigen specificity:<br>Map:HCTv1.0=CDE 2979356:Diagnosis.Specify the ratio of HER2 signals to 17 centromere signals:<br>Map:HCTv1.0=CDE 2675085:Diagnosis.Specify the type of acute lymphoblastic leukemia (ALL):<br>Map:HCTv1.0=CDE 2685380:Diagnosis.Specify the other type of leukemia:<br>Map:HCTv1.0=CDE 2798687:Chronic or Associated Diseases and Exposures.How many years did the recipient smoke cigarettes?<br>Map:HCTv1.0=CDE 2558043:Disease Response.What was the recipient's survival status at latest follow-up?<br>Map:HCTv1.0=CDE 2729161:Lab Results.Total volume of product:<br>Map:HCTv1.0=CDE 2729065:Adverse Events.If the donor died as a result of the collection, specify the cause of death:<br>Map:HCTv1.0=CDE 2686104:Diagnosis.Specify the other hemoglobinopathy:<br>Map:HCTv1.0=CDE 2871881:Lab Results.What is the cm H2O value of the cerebrospinal fluid opening pressure:<br>Map:HCTv1.0=CDE 2784433:Lab Results.For the bacterial or fungal infection cultures performed prior to infusion, specify the 3rd organism with name(s):<br>Map:HCTv1.0=CDE 2770355:Lab Results.Was the disease detected by molecular analysis?<br>Map:HCTv1.0=CDE 2971688:Lab Results.Specify level and units:<br>Map:HCTv1.0=CDE 3086799:Lab Results.What is the value of serum IgG?<br>Map:HCTv1.0=CDE 2760127:Lab Results.Total value of mononucleated cells:<br>Map:HCTv1.0=CDE 2951827:Diagnosis.What was the result of the PET assessment?<br>Map:HCTv1.0=CDE 2760540:Diagnosis.Specify the other CNS / psychiatric diagnosis:<br>Map:HCTv1.0=CDE 3118470:Medical Records and Forms.Search result:<br>Map:HCTv1.0=CDE 2802770:Lab Results.Specify cluster of differentiation type:<br>Map:HCTv1.0=CDE 2969591:Involvement and Extent of Disease.What was the stage of breast cancer at diagnosis?<br>Map:HCTv1.0=CDE 2693524:Lab Results.First A* allele designations:<br>Map:HCTv1.0=CDE 2695029:Lab Results.Test results of infectious disease marker for human immunodeficiency virus(HIV)-1 p24 antigen:<br>Map:HCTv1.0=CDE 2974113:Disease, Disorder or Finding.What was the aplastic anemia etiology?<br>Map:HCTv1.0=CDE 2983177:Lab Results.Specify the proliferative index value:<br>Map:HCTv1.0=CDE 2964425:Diagnosis.Specify the histological diagnosis of resected tissue<br>Map:HCTv1.0=MD Anderson Specific Content: Product.CD19%<br>Map:HCTv1.0=CDE 3104029:Lab Results.ER % cells stained positive:<br>Map:HCTv1.0=CDE 2797534:Diagnosis.Specify the clinical sign, symptom or evaluation used to diagnose liver toxicity:<br>Map:HCTv1.0=CDE 2760898:Diagnosis.Specify the other pulmonary diagnosis:<br>Map:HCTv1.0=CDE 2932807:Disease, Disorder or Finding.Specify prior disease:<br>Map:HCTv1.0=CDE 3123937:Lab Results.What is the eosinophils percentage value?<br>Map:HCTv1.0=CDE 2861067:Lab Results.Serum albumin value:<br>Map:HCTv1.0=CDE 3179295:Lab Results.Does the recipient have clinical significant zygomycota fungal infection history?<br>Map:HCTv1.0=CDE 2799091:Lab Results.What is the value of platelets? 0<br>Map:HCTv1.0=CDE 3020044:Disease, Disorder or Finding.What is the central nervous system abnormality type?<br>Map:HCTv1.0=CDE 2686200:Lab Results.What was the CPK test result?<br>Map:HCTv1.0=CDE 2952921:Lab Results.What is the value of serum creatinine?<br>Map:HCTv1.0=CDE 2756919:Lab Results.What is the value of the immunoglobulin test?<br>Map:HCTv1.0=CDE 2974091:Involvement and Extent of Disease.Specify the Evans Stage:<br>Map:HCTv1.0=CDE 2950911:Lab Results.Is the histology a transformation from CLL?<br>Map:HCTv1.0=CDE 2760473:Diagnosis.Specify the chromosome abnormality:<br>Map:HCTv1.0=CDE 3073243:Lab Results.What is the reason for the DPA1 allelles missing value?<br>Map:HCTv1.0=CDE 2689329:Lab Results.For systemic lupus, erythematosus, what was the total complement test result?<br>Map:HCTv1.0=CDE 2771987:Lab Results.Mesenchymal cells exponent value:<br>Map:HCTv1.0=CDE 2694887:Lab Results.First DPB1* allele designations:<br>Map:HCTv1.0=CDE 2704246:Lab Results.First DP antigen specificity:<br>Map:HCTv1.0=CDE 2974069:Involvement and Extent of Disease.What is the Pediatric Oncology Group Stage?<br>Map:HCTv1.0=CDE 2967232:Lab Results.What is the value of homovanillic acid?<br>Map:HCTv1.0=CDE 2816459:Behavior.What is the average number of packs of cigarettes smoked per day?<br>Map:HCTv1.0=CDE 2005035:Lab Results.Hemoglobin<br>Map:HCTv1.0=CDE 3073235:Lab Results.What is the reason for the DQB1 allelles missing value?<br>Map:HCTv1.0=CDE 2494701:Pre-Preparative Regimen.Which scale was used to measure/report the functional status?<br>Map:HCTv1.0=CDE 2782511:Symptoms.Specify the symptoms of engraftment syndrome:<br>Map:HCTv1.0=CDE 3010717:Diagnosis.What is the inheritance of immune deficiency?<br>Map:HCTv1.0=CDE 2679790:Disease, Disorder or Finding.Specify the other inherited platelet abnormalities:<br>Map:HCTv1.0=CDE 2875701:Physical Description of Individuals.What is the dosing body weight unit of measure?<br>Map:HCTv1.0=CDE 2760808:Diagnosis.Specify the other genitourinary diagnosis:<br>Map:HCTv1.0=CDE 2675091:Diagnosis.Specify the type of other acute leukemia:<br>Map:HCTv1.0=CDE 2748995:Techniques.Was a particular tumor cell detection method used after purging?<br>Map:HCTv1.0=CDE 2773882:Lab Results.CD8+ cells exponent value:<br>Map:HCTv1.0=CDE 2953272:Individuals.Specify other health insurance:<br>Map:HCTv1.0=CDE 2965430:Symptoms.Did chronic diarrhea occur ?<br>Map:HCTv1.0=CDE 3073233:Lab Results.What is the reason for the DRB5 allelles missing value?<br>Map:HCTv1.0=CDE 2897746:Lab Results.What is the percent of basophils?<br>Map:HCTv1.0=CDE 2780171:Lab Results.Chimerism study cell type:<br>Map:HCTv1.0=CDE 2744521:Techniques.Specify portion manipulated:<br>Map:HCTv1.0=CDE 2686171:Diagnosis.Specify the other autoimmune cytopenia:<br>Map:HCTv1.0=CDE 2682630:Diagnosis.What was the W.H.O classification of the acute myelogenous leukemia (AML) or acute nonlymphocytic leukemia (ANLL)?<br>Map:HCTv1.0=CDE 2634620:Lab Results.Hepatitis A antibody status<br>Map:HCTv1.0=CDE 2782552:Adverse Events.Specify the other hematopoietic stem cell infusion adverse event type<br>Map:HCTv1.0=CDE 2793799:Diagnosis.Diagnosis of chronic GVHD was based on:<br>Map:HCTv1.0=CDE 3076040:Lab Results.What is the percentage of monocytes?<br>Map:HCTv1.0=CDE 2799093:Lab Results.What is the unit of measure for platelets?<br>Map:HCTv1.0=CDE 3179231:Lab Results.Does the recipient have clinical significant rhizopus fungal infection history?<br>Map:HCTv1.0=CDE 2704199:Lab Results.Number of DP antigens provided:<br>Map:HCTv1.0=CDE 3181250:Lab Results.Specify drug level:<br>Map:HCTv1.0=CDE 2682913:Lab Results.For the systemic lupus erythematosus, what was the test results at diagnosis for the other antibody?<br>Map:HCTv1.0=CDE 2695328:Lab Results.Number of DQ antigens provided:<br>Map:HCTv1.0=CDE 2677117:Biological Process.If there was a relapse of the other malignancy, what was the sensitivity to chemotherapy?<br>Map:HCTv1.0=CDE 2685061:Diagnosis.Specify the type of non-hodgkin lymphoma:<br>Map:HCTv1.0=CDE 2965215:Chronic or Associated Diseases and Exposures.Was maternal engraftment present?<br>Map:HCTv1.0=CDE 3212372:Lab Results.Were host cells present as determined by non-quantitative means?<br>Map:HCTv1.0=CDE 2957357:UML DEFAULT CD.Progesterone Receptor status<br>Map:HCTv1.0=CDE 2695291:Lab Results.First C antigen specificity<br>Map:HCTv1.0=CDE 2798778:Lab Results.What is the unit of measure for LDH?<br>Map:HCTv1.0=CDE 2863881:Lab Results.What is the value of serum ferritin?<br>Map:HCTv1.0=CDE 2963407:Lab Results.What is the value of lymphocytes present in bone marrow?<br>Map:HCTv1.0=MD Anderson Specific Content: Product.CD8%<br>Map:HCTv1.0=CDE 3105041:Disease-Disorder Classification.What was the classification of hematologic disorder?<br>Map:HCTv1.0=CDE 2003853:Pre-Preparative Regimen.Performance Status<br>Map:HCTv1.0=CDE 2798697:Occurrences.Which malignancy(ies) occurred?<br>Map:HCTv1.0=CDE 2704121:Lab Results.First DRB4* allele designations:<br>Map:HCTv1.0=CDE 2597018:Lab Results.Lactate Dehydrogenase<br>Map:HCTv1.0=CDE 2798756:Lab Results.What is the value of serum glutamic oxaloacetic transferase?<br>Map:HCTv1.0=CDE 3141228:Quality of Life.Lansky Performance Status Score<br>Map:HCTv1.0=CDE 2689395:Diagnosis.Specify the other vasculitis:<br>Map:HCTv1.0=CDE 2760660:Diagnosis.What is the endocrine disorder diagnosis type?<br>Map:HCTv1.0=CDE 2952899:Lab Results.What is the unit of measure for serum immunoglobulin light chain, Kappa?<br>Map:HCTv1.0=CDE 3126070:Procedures.What was the visual eye acuity snellen fraction denominator?<br>Map:HCTv1.0=CDE 3028428:Lab Results.Specify the other disease enzyme evaluated for activity level<br>Map:HCTv1.0=CDE 2860212:Lab Results.What was the status of the monocyte finding?<br>Map:HCTv1.0=CDE 2738883:Disease, Disorder or Finding.Specify predisposing condition:<br>Map:HCTv1.0=CDE 58208 /:Diagnosis.Rai Stage Classification<br>Map:HCTv1.0=CDE 2693547:Lab Results.Second B* allele designations:<br>Map:HCTv1.0=CDE 2970552:Lab Results.Were proto-oncogenes detected?<br>Map:HCTv1.0=CDE 2986313:Lab Results.What was the histology type of the malignant testicular germ cell tumor?<br>Map:HCTv1.0=CDE 2769598:Adverse Events.What is the most likely cause of the adverse event?<br>Map:HCTv1.0=CDE 2677067:Disease Response.Specify the type of complete remission of the breast cancer at the time of transplantation:<br>Map:HCTv1.0=CDE 2782608:Lab Results.What is the unit of measure for AST (SGOT)?<br>Map:HCTv1.0=CDE 2724626:Diagnosis.Primary cancer type<br>Map:HCTv1.0=CDE 2967342:Individuals.Specify relationship:<br>Map:HCTv1.0=CDE 2969090:Lab Results.What is the value of vanillylmandelic acid measurement?<br>Map:HCTv1.0=CDE 2685070:Diagnosis.Specify the other T / NK cell lymphoma:<br>Map:HCTv1.0=CDE 2860890:Lab Results.What is the percentage of plasma cells in bone marrow biopsy?<br>Map:HCTv1.0=CDE 2676557:Diagnosis.Was the breast cancer inflammatory or non-inflammatory?<br>Map:HCTv1.0=CDE 2970589:Lab Results.Specify copy number:<br>Map:HCTv1.0=CDE 2795420:Lab Results.Did the recipient recover and maintain ANC greater than or equal to 500/mmE3 following the decline?<br>Map:HCTv1.0=CDE 3158627:Therapies.What is the indication for cellular therapy?<br>Map:HCTv1.0=CDE 2952877:Lab Results.Urinary monoclonal light chains:<br>Map:HCTv1.0=CDE 2756925:Lab Results.What is the unit of measure for the Ig test?<br>Map:HCTv1.0=CDE 3061213:Adverse Events.What is the percentage of body surface area affected by skin rash due to engraftment syndrome?<br>Map:HCTv1.0=CDE 2968379:Individuals.Specify other genetic disease:<br>Map:HCTv1.0=CDE 2686173:Diagnosis.Specify the other autoimmune bowel disorder:<br>Map:HCTv1.0=CDE 3017711:Molecular Abnormality.Were cytogenetics tested?<br>Map:HCTv1.0=CDE 2861135:Lab Results.What was the percentage of plasma cells in bone marrow from the unknown source?<br>Map:HCTv1.0=CDE 3117210:Lab Results.Specify the testicular cancer stage:<br>Map:HCTv1.0=CDE 2815530:Individuals.What is the combined househould gross annual income?<br>Map:HCTv1.0=CDE 2780733:Lab Results.Chimerism study total number of host cells:<br>Map:HCTv1.0=CDE 3179207:Lab Results.Does the recipient have clinical significant fusarium fungal infection history?<br>Map:HCTv1.0=CDE 2780118:Lab Results.What is the value of hemoglobin?<br>Map:HCTv1.0=CDE 2704151:Lab Results.DR52 specificity present?<br>Map:HCTv1.0=CDE 2695347:Lab Results.Second DQ antigen specificity:<br>Map:HCTv1.0=CDE 3017713:Molecular Abnormality.What was the outcome of the cytogenetic analysis?<br>Map:HCTv1.0=MD Anderson Specific Content: Recipient.Recipient body surface area (m^2)<br>Map:HCTv1.0=CDE 2795891:Outcome of Therapy.Overall severity of chronic GVHD:<br>Map:HCTv1.0=CDE 2693554:Lab Results.First C* allele designations:<br>Map:HCTv1.0=CDE 3158540:Therapies.Specify other indication for cellular therapy:<br>Map:HCTv1.0=CDE 2952923:Lab Results.Serum free light chains (lambda):<br>Map:HCTv1.0=CDE 3028423:Lab Results.Indicate the enzyme that was evaluated for activity level:<br>Map:HCTv1.0=CDE 2954522:Involvement and Extent of Disease.Specify the lymphoma stage of organ involvement:<br>Map:HCTv1.0=CDE 3179224:Lab Results.Does the recipient have clinical significant zygomycosis fungal infection history?<br>Map:HCTv1.0=CDE 2760532:Diagnosis.What is the CNS / psychiatric diagnosis type?<br>Map:HCTv1.0=CDE 2772026:Disease, Disorder or Finding.Specify genetic disease:<br>Map:HCTv1.0=CDE 3115777:Lab Results.What was the serum alpha-fetoprotein value?<br>Map:HCTv1.0=CDE 2691376:Lab Results.For the polymyositis-dermatomyositis, were the EMG results typical of the disease?<br>Map:HCTv1.0=CDE 2985301:Lab Results.Specify the chimerism laboratory procedure cell type:<br>Map:HCTv1.0=CDE 3010917:Diagnosis.What is the type of Batten disease?<br>Map:HCTv1.0=CDE 2704139:Lab Results.First DRB5 * allele designations:<br>Map:HCTv1.0=CDE 2785867:Activity.Was the cord blood unit completely frozen when it arrived at your center?<br>Map:HCTv1.0=CDE 2952892:Lab Results.Serum free light chains (kappa):<br>Map:HCTv1.0=CDE 2775872:Lab Results.What is the value of WBC:<br>Map:HCTv1.0=CDE 2787461:Diagnosis.What is the primary disease for which the HSCT was performed?<br>Map:HCTv1.0=CDE 2784437:Lab Results.For the bacterial or fungal infection cultures performed prior to infusion, specify the 5th organism with name(s):<br>Map:HCTv1.0=CDE 2965920:Lab Results.What is the IgA level?<br>Map:HCTv1.0=CDE 2704175:Lab Results.First DQA1* allele designations:<br>Map:HCTv1.0=CDE 3061542:Medical Imaging.What were the results of the image studies performed?<br>Map:HCTv1.0=CDE 2686182:Lab Results.For the systemic lupus erythematosus, what was the ANA test result?<br>Map:HCTv1.0=CDE 2968377:Individuals.What was the other genetic disorder in the first degree relative?<br>Map:HCTv1.0=CDE 2760129:Lab Results.Mononucleated cells exponent value:<br>Map:HCTv1.0=CDE 2695088:Lab Results.Test results of infectious disease marker for syphilis using serologic testing for syphilis(STS)<br>Map:HCTv1.0=CDE 2760860:Diagnosis.What is the liver diagnosis type?<br>Map:HCTv1.0=CDE 2688923:Diagnosis.What was the classification of plasma cell disorders?<br>Map:HCTv1.0=CDE 2953024:Lab Results.What is the value of serum monoclonal M protein?<br>Map:HCTv1.0=CDE 2694901:Lab Results.Second DPB1* allele designations:<br>Map:HCTv1.0=CDE 2967327:Individuals.Are other family members known to have neuroblastoma or ganglioneuroma?<br>Map:HCTv1.0=CDE 2749839:Lab Results.Were tumor cells detected in collected cells, before purging prior to HSCT?<br>Map:HCTv1.0=CDE 2793785:Quality of Life.What was the Karnofsky / Lansky score?<br>Map:HCTv1.0=CDE 3009207:Disease, Disorder or Finding.Specify the hematologic status:<br>Map:HCTv1.0=CDE 2181361:Diagnosis.Durie-Salmon Sub-stage<br>Map:HCTv1.0=CDE 2689272:Diagnosis.What was the classification of the immune deficiency?<br>Map:HCTv1.0=CDE 2695343:Lab Results.First DQ antigen specificity:<br>Map:HCTv1.0=CDE 2695021:Lab Results.Test results of infectious disease marker for hepatitis C virus (HCV) antibody (Anti-HCV)<br>Map:HCTv1.0=CDE 2770702:Biological Process.Specify the etiology of the other organism:<br>Map:HCTv1.0=CDE 3181148:Lab Results.Specify neutrophils one decimal place billion per liter value:<br>Map:HCTv1.0=CDE 2964760:Lab Results.What is the status of B-cell engraftment?<br>Map:HCTv1.0=CDE 2780726:Lab Results.Chimerism study total number of donor cells:<br>Map:HCTv1.0=CDE 2786671:Activity.Was the primary container (e.g.,cord blood unit bag) intact upon thawing?<br>Map:HCTv1.0=CDE 2677074:Disease, Disorder or Finding.If the breast cancer was in the state of relapse at the time of transplantation, what was the sensitivity to chemotherapy?<br>Map:HCTv1.0=CDE 2784431:Lab Results.For the bacterial or fungal infection cultures performed prior to infusion, specify the 2nd organism with name(s):<br>Map:HCTv1.0=CDE 3028430:Lab Results.What is the value of the enzyme evaluated for activity level?<br>Map:HCTv1.0=CDE 3073220:Lab Results.What is the reason for the B alleles missing value?<br>Map:HCTv1.0=CDE 2705046:Lab Results.First DRB3* allele designations:<br>Map:HCTv1.0=MD Anderson Specific Content: Product.Regulatory T cells<br>Map:HCTv1.0=CDE 2760290:Lab Results.CD34+ cells exponent value:<br>Map:HCTv1.0=CDE 2769017:Involvement and Extent of Disease.Primary cause of death:<br>Map:HCTv1.0=CDE 2866117:Lab Results.Cerebrospinal fluid(CSF) total protein value:<br>Map:HCTv1.0=CDE 2804619:Data Source.Is the data reported on this form based on contact with the physician?<br>Map:HCTv1.0=CDE 2182896:Chronic or Associated Diseases and Exposures.Have you smoked at least 100 cigarettes in your entire life?<br>Map:HCTv1.0=CDE 2695308:Lab Results.First DR antigen specificity:<br>Map:HCTv1.0=MD Anderson Specific Content: Product.Mesenchymal cells<br>Map:HCTv1.0=CDE 2954716:Outcome of Therapy.Specify the sensitivity of myeloma to chemotherapy:<br>Map:HCTv1.0=CDE 2695323:Lab Results.Second DR antigen specificity:<br>Map:HCTv1.0=CDE 2749870:Lab Results.For the antiphospholipid syndrome, what was the result of the laboratory procedure?<br>Map:HCTv1.0=CDE 2950614:Lab Results.What was the status of the serum immunofixation finding?<br>Map:HCTv1.0=CDE 2704223:Lab Results.Second DPA1* allele designations:<br>Map:HCTv1.0=CDE 2705050:Lab Results.Second DRB3* allele designations:<br>Map:HCTv1.0=CDE 2963361:Lab Results.Was the diagnositic image positive for CNS tumor?<br>Map:HCTv1.0=CDE 2691365:Lab Results.For the polymyositis-dermatomyositis, were the biopsy results typical of the disease?<br>Map:HCTv1.0=CDE 2737648:Disease, Disorder or Finding.What was the cause of the therapy related AML?<br>Map:HCTv1.0=CDE 2815190:Personal attributes.What is the person's retirement income status?<br>Map:HCTv1.0=CDE 2737638:Disease, Disorder or Finding.Specify the other type of clinically significant comorbidity:<br>Map:HCTv1.0=CDE 2935457:Disease Response.Specify the degree of disease response to treatment(s):<br>Map:HCTv1.0=CDE 2693560:Lab Results.Second C* allele designations:<br>Map:HCTv1.0=CDE 2760378:Specimen Characteristics.Was the cell viability tested?<br>Map:HCTv1.0=CDE 2679527:Diagnosis.Specify the type of other solid tumor:<br>Map:HCTv1.0=CDE 2704125:Lab Results.Second DRB4* allele designations:<br>Map:HCTv1.0=CDE 3024868:Disease, Disorder or Finding.Were the exam results normal or abnormal?<br>Map:HCTv1.0=CDE 3073237:Lab Results.What is the reason for the DPB1 allelles missing value?<br>Map:HCTv1.0=CDE 2704143:Lab Results.Second DRB5 * allele designations:<br>Map:HCTv1.0=CDE 2802822:Lab Results.What is the unit of measure for the cluster of differentiation?<br>Map:HCTv1.0=CDE 2514317:Diagnosis.CML Lineage<br>Map:HCTv1.0=CDE 2704098:Lab Results.Bw4 specificity present?<br>Map:HCTv1.0=CDE 2685162:Diagnosis.Specify the other histiocytic disorder:<br>Map:HCTv1.0=CDE 2676358:Therapies.Did graft failure occur?<br>Map:HCTv1.0=CDE 2986513:Outcome of Therapy.What was the sensitivity of the testicular carcinoma to chemotherapy?<br>Map:HCTv1.0=CDE 2859803:Lab Results.Plasma cells in blood percentage value:<br>Map:HCTv1.0=CDE 2978596:Lab Results.Specify estrogen receptor assay results:<br>Map:HCTv1.0=CDE 2695074:Procedures.Was FDA licensed nucleic acid amplification test (NAT) for hepatitis C virus performed; specify results<br>Map:HCTv1.0=CDE 2693528:Lab Results.Second A* allele designations:<br>Map:HCTv1.0=CDE 3061554:Lab Results.Serum beta-human chorionic gonadotropin value:<br>Map:HCTv1.0=CDE 2677079:Diagnosis.What was the classification of the other malignancy?<br>Map:HCTv1.0=CDE 2695078:Lab Results.Test results of infectious disease marker for Anti-HIV 1 and anti-HIV 2 (antibodies to Human Immunodeficiency Viruses):<br>Map:HCTv1.0=CDE 2798745:Occurrences.Specify the other malignancy(ies):<br>Map:HCTv1.0=MD Anderson Specific Content: Product.Hematopoietic stem cells<br>Map:HCTv1.0=CDE 3031295:Lab Results.What is the value of urinary monoclonal light chains?<br>Map:HCTv1.0=CDE 2749801:Lab Results.Were tumor cells detected in bone marrow, in the interval between last systemic therapy and collection prior to HSCT?<br>Map:HCTv1.0=CDE 2180578:Disease, Disorder or Finding.Left Ventricular Ejection Fraction at Rest<br>Map:HCTv1.0=CDE 2860225:Lab Results.Absolute number of plasma cells in blood unit of measure:<br>Map:HCTv1.0=CDE 2695096:Lab Results.Test results of infectious disease marker for west nile virus (WNV) using nucleic acid amplification test (NAT)<br>Map:HCTv1.0=CDE 2739683:Therapy Results.Was a complete remission (CR) ever achieved in response to the HSCT?<br>Map:HCTv1.0=CDE 2974122:Disease, Disorder or Finding.Specify other aplastic anemia etiology:<br>Map:HCTv1.0=CDE 2986573:Outcome of Therapy.Indicate the sensitivity of the testicular carcinoma to any platinum-containing chemotherapeutic agent administered:<br>Map:HCTv1.0=CDE 2939337:Lab Results.Specify which type of cytogenetic and or molecular abnormalities showed a positive result:<br>Map:HCTv1.0=CDE 2675089:Diagnosis.What was the W.H.O. classification of the other acute leukemia?<br>Map:HCTv1.0=CDE 2677061:Disease, Disorder or Finding.If the breast cancer was in the state of relapse at the time of transplantation, what was the number of the relapse?<br>Map:HCTv1.0=MD Anderson Specific Content: Product.CD3%<br>Map:HCTv1.0=CDE 2729172:Lab Results.What was the unit of measure for the total volume of the product being analyzed?<br>Map:HCTv1.0=CDE 3141318:Lab Results.Specify test sensitivity to cross-linking agents test results:<br>Map:HCTv1.0=CDE 2798766:Lab Results.What is the LDH lab value?<br>Map:HCTv1.0=CDE 2760451:Diagnosis.What is the chromosome abnormality diagnosis type?<br>Map:HCTv1.0=CDE 2795147:Lab Results.What is the percentage of neutrophils?<br>Map:HCTv1.0=CDE 3212384:Lab Results.Were donor cells present as determined by non-quantitative means?<br>Map:HCTv1.0=CDE 2815058:Personal attributes.Is the person an adult or emancipated minor?<br>Map:HCTv1.0=CDE 3124170:Lab Results.Did any cytogenetic or molecular testing for BCR/ABL or Ph+ show a positive result?<br>Map:HCTv1.0=CDE 2986133:Lab Results.What is the value of leukocyte enzyme activity level?<br>Map:HCTv1.0=CDE 2939877:Diagnosis.Specify the number of phases experienced:<br>Map:HCTv1.0=CDE 2775874:Lab Results.What is the unit of measure for WBC?<br>Map:HCTv1.0=CDE 2760821:Diagnosis.What is the hematologic diagnostic type?<br>Map:HCTv1.0=CDE 3126069:Procedures.What was the visual eye acuity snellen fraction numerator?<br>Map:HCTv1.0=CDE 3181117:Lab Results.Specify paroxysmal nocturnal hemoglobinuria results:<br>Map:HCTv1.0=CDE 2688882:Diagnosis.What is the classification of the other leukemia?<br>Map:HCTv1.0=CDE 3009223:Disease, Disorder or Finding.Specify the renal status:<br>Map:HCTv1.0=CDE 2685168:Diagnosis.What was the classification of the inherited disorders of metabolism / osteopetrosis?<br>Map:HCTv1.0=CDE 2603692:Outcome of Therapy.What was the maximum Grade of acute graft versus host disease<br>Map:HCTv1.0=CDE 2679800:Diagnosis.Specify the other inherited disorder of metabolism:<br>Map:HCTv1.0=CDE 2685158:Diagnosis.What was the classification of the histiocytic disorder?<br>Map:HCTv1.0=CDE 2695284:Lab Results.Second B antigen specificity:<br>Map:HCTv1.0=CDE 3030987:Lab Results.What is the value of serum free light chains lambda?<br>Map:HCTv1.0=CDE 2962097:Disease, Disorder or Finding.Was there a family history of cancer in first degree relatives under 40 years of age?<br>Map:HCTv1.0=CDE 2695304:Lab Results.Number of DR antigens provided<br>Map:HCTv1.0=CDE 2749826:Lab Results.Were tumor cells detected in circulating blood cells prior to HSCT?<br>Map:HCTv1.0=CDE 2760905:Diagnosis.Specify the other diagnosis:<br>Map:HCTv1.0=CDE 2895871:Disease, Disorder or Finding.What type of the cell origin of the new malignancy is it?<br>Map:HCTv1.0=CDE 2688790:Diagnosis.What was the classification of the chronic myelogenous leukemia (Philadelphia chromosome+, Ph+, t(9;22)(q34;q11), or variant OR bcr/abl+)?<br>Map:HCTv1.0=CDE 2685390:Diagnosis.Specify the other constitutional anemia:<br>Map:HCTv1.0=CDE 2538920:Units of Measure.Height Unit of Measure UCUM Code<br>Map:HCTv1.0=CDE 2760281:Diagnosis.What is the cardiovascular diagnosis type?<br>Map:HCTv1.0=CDE 3050012:Techniques.Specify portion of cells cryopreserved prior to infusion<br>Map:HCTv1.0=CDE 2594609:Lab Results.Was the lymphoma or lymphoproliferative disease EBV positive?<br>Map:HCTv1.0=CDE 2965306:Disease, Disorder or Finding.What is the cause of disease type ?<br>Map:HCTv1.0=CDE 2769129:Involvement and Extent of Disease.Specify contributing cause of death:<br>Map:HCTv1.0=CDE 2685046:Disease Response.If there was a relapse of hodgkin lymphoma at the time of transplantation, what was the sensitivity to chemotherapy?<br>Map:HCTv1.0=CDE 2977753:Lab Results.Specify the histologic findings by Shimada classification:<br>Map:HCTv1.0=CDE 2939856:Disease, Disorder or Finding.How many blast phases occurred?<br>Map:HCTv1.0=CDE 2911999:Diagnosis.What was the classification of the aplastic anemia?<br>Map:HCTv1.0=CDE 2686194:Lab Results.For the systemic lupus erythematosus, what was the C3 test result?<br>Map:HCTv1.0=CDE 2798645:Personal attributes.What is the blood type and Rh factor?<br>Map:HCTv1.0=CDE 2760804:Diagnosis.What is the genitourinary diagnosis type?<br>Map:HCTv1.0=CDE 3021261:Quality of Life.What is the value of the mental process development assessment score?<br>Map:HCTv1.0=CDE 2693568:Lab Results.Test results of infectious disease marker for hepatitis B virus (HBV) surface antigen(HBsAg)<br>Map:HCTv1.0=CDE 2871885:Procedures.What is the cm H2O value of the cerebrospinal fluid closing pressure:<br>Map:HCTv1.0=CDE 2950698:Lab Results.What is the lymphoma histology type?<br>Map:HCTv1.0=CDE 2875642:Individuals.Weight<br>Map:HCTv1.0=CDE 2760306:Lab Results.CD3+ cells exponent value:<br>Map:HCTv1.0=CDE 2955919:Lab Results.Specify cell line:<br>Map:HCTv1.0=CDE 2676555:Involvement and Extent of Disease.What was the stage of the breast cancer at diagnosis?<br>Map:HCTv1.0=CDE 2965922:Lab Results.What is the IgE level?<br>Map:HCTv1.0=CDE 2695275:Lab Results.First B antigen specificity:<br>Map:HCTv1.0=CDE 2797618:Outcome of Therapy.List the maximum severity of acute graft versus host disease skin involvement:<br>Map:HCTv1.0=CDE 2695256:Lab Results.1st A antigen specificity:<br>Map:HCTv1.0=CDE 3128032:Symptoms.What were the chronic lymphocytic leukemia symptoms?<br>Map:HCTv1.0=CDE 3086814:Lab Results.What is the oxygen saturation level percentage?<br>Map:HCTv1.0=CDE 2950619:Lab Results.Specify monoclonal immunoglobulin result:<br>Map:HCTv1.0=CDE 2964762:Lab Results.What is the status of myeloid engraftment?<br>Map:HCTv1.0=CDE 2692300:Diagnosis.Specify the other juvenile idiopathic arthritis:<br>Map:HCTv1.0=CDE 2953022:Specimen Characteristics.Specify the size of the largest neoplasm mass:<br>Map:HCTv1.0=CDE 2760790:Diagnosis.Specify the other gastrointestinal diagnosis:<br>Map:HCTv1.0=CDE 2936204:Abnormal Cell.Were cytogenetic abnormalities present at diagnosis?<br>Map:HCTv1.0=CDE 2861069:Lab Results.What is the unit of measure for serum albumin?<br>Map:HCTv1.0=CDE 2964752:Lab Results.What is the status of T-cell engraftment?<br>Map:HCTv1.0=CDE 2991013:Lab Results.What is the unit of measure for leukocyte enzyme activity level?<br>Map:HCTv1.0=CDE 2780721:Lab Results.Chimerism study total cells examined:<br>Map:HCTv1.0=CDE 2950700:Lab Results.Specify the lymphoma histology:<br>Map:HCTv1.0=CDE 2749843:Lab Results.For the systemic sclerosis, what was the result of the laboratory procedure?<br>Map:HCTv1.0=CDE 3103994:Biological Process.What was the sensitivity of the lymphoma to chemotherapy?<br>Map:HCTv1.0=CDE 2739534:Adverse Events.What type of Adverse Events were associated with the stem cell infusion?<br>Map:HCTv1.0=CDE 2974108:Lab Results.What was the gamma-enolase value ?<br>Map:HCTv1.0=CDE 2936025:Lab Results.Results of cytogenetic testing:<br>Map:HCTv1.0=CDE 64516//:Lab Results.Provide DNA Index of Leukemic Cells<br>Map:HCTv1.0=CDE 2738465:Disease, Disorder or Finding.What was the cause of the therapy-related MDS/MPS?<br>Map:HCTv1.0=CDE 2785810:Involvement and Extent of Disease.What was the maximum extent of chronic GVHD during this period?<br>Map:HCTv1.0=CDE 2953026:Lab Results.What is the serum M protein unit of measure?<br>Map:HCTv1.0=CDE 2002838:Procedures.Total number of axillary lymph nodes examined<br>Map:HCTv1.0=CDE 3128022:Diagnosis.Specify other autoimmune disease:<br>Map:HCTv1.0=CDE 2967344:Individuals.Number affected:<br>Map:HCTv1.0=CDE 2760374:Lab Results.CD4+ cells exponent value:<br>Map:HCTv1.0=CDE 3128020:Disease, Disorder or Finding.What was the chronic lymphocytic leukemia histology type?<br>Map:HCTv1.0=CDE 2789977:Personal attributes.Donor's blood type and Rh factor:<br>Map:HCTv1.0=CDE 2693507:Lab Results.Number of B antigens provided:<br>Map:HCTv1.0=CDE 2953097:Lab Results.Serum Calcium Unit of Measure<br>Map:HCTv1.0=CDE 2738971:Disease, Disorder or Finding.Specify other predisposing condition:<br>Map:HCTv1.0=CDE 3158590:Medical Records and Forms.What is the indication for CIBMTR recipient ID (CRID) assignment?<br>Map:HCTv1.0=CDE 2771985:Lab Results.Total value of mesenchymal cells:<br>Map:HCTv1.0=CDE 2760286:Lab Results.Total value of CD34+ cells:<br>Map:HCTv1.0=CDE 2963549:Lab Results.Did hypercalcemia occur?<br>Map:HCTv1.0=CDE 2685348:Diagnosis.Specify the other type of plasma cell disorder:<br>Map:HCTv1.0=CDE 2760831:Diagnosis.Specify the other hematologic diagnosis:<br>Map:HCTv1.0=CDE 3008133:Disease, Disorder or Finding.Specify the cardiac status:<br>Map:HCTv1.0=CDE 2649435:Diagnosis.What was the subtype of the non-hodgkin lymphoma diffuse, large B-cell lymphoma?<br>Map:HCTv1.0=CDE 2986478:Disease, Disorder or Finding.Specify testicular non-seminomatous germ cell tumor prognosis:<br>Map:HCTv1.0=CDE 2798679:Property or Attribute.Have you smoked cigarettes within the past year?<br>Map:HCTv1.0=CDE 3188446:Diagnosis.Specify the enzyme deficiency:<br>Map:HCTv1.0=CDE 2769602:Adverse Events.Specify other illness cause of the adverse event:<br>Map:HCTv1.0=CDE 2957553:Lab Results.Specify abnormality:<br>Map:HCTv1.0=CDE 2181363:Diagnosis.Durie-Salmon Stage<br>Map:HCTv1.0=CDE 2434914:Eligibility.Menopausal status<br>Map:HCTv1.0=CDE 2737130:Disease, Disorder or Finding.What was the clinically significant co-existing disease or organ impairment?<br>Map:HCTv1.0=CDE 2784435:Lab Results.For the bacterial or fungal infection cultures performed prior to infusion, specify the 4th organism with name(s):<br>Map:HCTv1.0=CDE 2704135:Lab Results.DR51 specificity present?<br>Map:HCTv1.0=CDE 2974120:Disease, Disorder or Finding.Specify viral hepatitis type:<br>Map:HCTv1.0=CDE 2967294:Anatomic Sites.Number of tumors present:<br>Map:HCTv1.0=CDE 2769114:Involvement and Extent of Disease.Contributing cause of death:<br>Map:HCTv1.0=CDE 2798684:Property or Attribute.Have you smoked cigarettes prior to but not during the past year?<br>Map:HCTv1.0=CDE 3123936:Disease, Disorder or Finding.What is the result of the audiometric test assessed at the speech threshold for 2000 hertz?<br>Map:HCTv1.0=CDE 2180456:Lab Results.Hepatitis B surface antibody Status<br>Map:HCTv1.0=CDE 2630453:Lab Results.Specify test results for test performed on other infectious disease marker<br>Map:HCTv1.0=CDE 2860221:Lab Results.Absolute number of plasma cells in blood value:<br>Map:HCTv1.0=CDE 2749841:Lab Results.For the systemic sclerosis, what was the laboratory procedure type?<br>Map:HCTv1.0=MD Anderson Specific Content: Product.Transgene %<br>Map:HCTv1.0=CDE 2686163:Diagnosis.Specify the other autoimmune neurological disorder:<br>Map:HCTv1.0=MD Anderson Specific Content: Transplant.Total number of cells infused<br>Map:HCTv1.0=CDE 2002710:Chronic or Associated Diseases and Exposures.Specify other<br>Map:HCTv1.0=CDE 3086802:Units of Measure.What is the unit of measure for serum IgG?<br>Map:HCTv1.0=CDE 3179200:Lab Results.Does the recipient have clinical significant aspergillus fungal infection history?<br>Map:HCTv1.0=CDE 2704262:Therapy Doses.Was the entire volume of product infused?<br>Map:HCTv1.0=CDE 2802820:Lab Results.What is the value of the cluster of differentiation?<br>Map:HCTv1.0=CDE 2801066:Diagnosis.Specify the diagnosis of liver toxicity by the type of clinical signs, symptoms or evaluation:<br>Map:HCTv1.0=CDE 2953262:Individuals.Specify the type of health insurance:<br>Map:HCTv1.0=CDE 2695025:Lab Results.Test results of infectious disease marker for human T-Lymphotropic virus antibody (Anti-HTLV I / II):<br>Map:HCTv1.0=CDE 2729902:Lab Results.For the bacterial or fungal infection cultures performed prior to infusion, specify the results:<br>Map:HCTv1.0=CDE 2760382:Lab Results.When the colony-forming units (CFU) were assessed, what was the total number of CFU-GM counted?<br>Map:HCTv1.0=CDE 2815349:Disease, Disorder or Finding.How many prior HSCTs have been done?<br>Map:HCTv1.0=CDE 2704184:Lab Results.Second DQA1* allele designations:<br>Map:HCTv1.0=CDE 2679802:Diagnosis.Specify the type of autoimmune disease:<br>Map:HCTv1.0=CDE 2952925:Lab Results.What is the unit of measure for serum immunoglobulin light chain lambda?<br>Map:HCTv1.0=CDE 2760303:Lab Results.Total value of CD3+ cells:<br>Map:HCTv1.0=CDE 2939332:Organ Measurements.What was the spleen size?<br>Map:HCTv1.0=CDE 3061152:Lab Results.What is the percentage of hematocrit?<br>Map:HCTv1.0=CDE 2953285:Affiliation Type.Is the person enrolled in school?<br>Map:HCTv1.0=CDE 3073228:Lab Results.What is the reason for the DRB4 alleles missing value?<br>Map:HCTv1.0=CDE 3136597:Biological Process.What was the sensitivity of the disease to chemotherapy?<br>Map:HCTv1.0=CDE 2760372:Lab Results.Total value of CD4+ cells:<br>Map:HCTv1.0=CDE 2951780:Lab Results.Heavy chain<br>Map:HCTv1.0=CDE 2986435:Disease, Disorder or Finding.What was the prognosis type of seminoma?<br>Map:HCTv1.0=CDE 2986315:Lab Results.Specify malignant testicular germ cell tumor histology:<br>Map:HCTv1.0=CDE 2784429:Lab Results.For the bacterial or fungal infection cultures performed prior to infusion, specify the 1st organism with name(s):<br>Map:HCTv1.0=CDE 2689280:Involvement and Extent of Disease.What was the International Staging System for Myeloma Stage?<br>Map:HCTv1.0=CDE 2797508:Involvement and Extent of Disease.Specify any other non-infectious pulmonary abnormalities that developed:<br>Map:HCTv1.0=CDE 2760760:Diagnosis.What is the gastrointestinal diagnosis type?<br>Map:HCTv1.0=CDE 2676483:Diagnosis.Specify the type of hodgkin lymphoma:<br>Map:HCTv1.0=CDE 2971761:Lab Results.Were any other molecular abnormalities present?<br>Map:HCTv1.0=CDE 3081978:Diagnosis.What was the subtype for which the HSCT was performed?<br>Map:HCTv1.0=CDE 62732//:Therapy Results.Has residual primary tumor been detected (after resection)?<br>Map:HCTv1.0=CDE 2861058:Lab Results.Serum beta 2 microglobulin value:<br>Map:HCTv1.0=CDE 2982573:Lab Results.What was the result of the bone marrow laboratory procedure?<br>Map:HCTv1.0=CDE 2861157:Lab Results.What is the percent of blasts in the bone marrow?<br>Map:HCTv1.0=CDE 2682797:Chronic Myelogenous Leukemia (CML): Part 1 of 2.At the time of transplantation, what was the number of the status of the CML?<br>Map:HCTv1.0=CDE 2681619:Pre-Preparative Regimen.What was the recipient's test results for the presence of CMV-antibodies?<br>Map:HCTv1.0=CDE 2730798:Lab Results.When the colony-forming units (CFU) were assessed, what was the total number of colonies counted?<br>Map:HCTv1.0=CDE 2965899:Lab Results.What is the IgG level?<br>Map:HCTv1.0=CDE 2695060:Lab Results.If FDA licensed nucleic acid amplification test (NAT) for human immunodeficiency virus(HIV)-1 performed; specify results<br>Map:HCTv1.0=CDE 2689324:Lab Results.For the systemic lupus erythematosus (SLE), what was the C4 test result?<br>Map:HCTv1.0=CDE 2780738:Lab Results.Chimerism study percent of donor cells:<br>Map:HCTv1.0=CDE 2963521:Lab Results.Leukemia cell type:<br>Map:HCTv1.0=MD Anderson Specific Content: Product.CD4%<br>Map:HCTv1.0=CDE 2693511:Lab Results.Number of C antigens provided:<br>Map:HCTv1.0=MD Anderson Specific Content: Recipient.Recipient weight (kg)<br>Map:HCTv1.0=CDE 2682005:Therapies.As part of a toxicity modifying regimen, was FGF (velafermin) started or is there a plan to use it?<br>Map:HCTv1.0=CDE 2785785:Activity.Were the secondary containers (e.g., insulated shipping containers and unit cassette) intact when they arrived at your center?<br>Map:HCTv1.0=CDE 2965477:Lab Results.What is the status of B-cell function?<br>Map:HCTv1.0=CDE 2695266:Lab Results.2nd A antigen specificity<br>Map:HCTv1.0=CDE 2952509:Lab Results.Was the monoclonal band type present?<br>Map:HCTv1.0=CDE 2693502:Lab Results.Number of A antigens provided:<br>Map:HCTv1.0=CDE 2962101:Disease, Disorder or Finding.Specify the family history of cancer in first degree relatives under 40 years of age:<br>Map:HCTv1.0=CDE 3030931:Lab Results.What is the value of platelets?<br>Map:HCTv1.0=CDE 2686147:Diagnosis.Specify the other arthritis:<br>Map:HCTv1.0=CDE 2686111:Diagnosis.Specify the other SCID:<br>Map:HCTv1.0=MD Anderson Specific Content: Product.Frozen product<br>Map:HCTv1.0=CDE 2962099:Disease, Disorder or Finding.What was the family history of cancer in first degree relatives under 40 years of age?<br>Map:HCTv1.0=CDE 2694875:Lab Results.First DQB1* allele designations:<br>Map:HCTv1.0=CDE 2691374:Lab Results.For the dermatomyositis, was there a rash present that was typical of the disease?<br>Map:HCTv1.0=MD Anderson Specific Content: Product.Effector T cells<br>Map:HCTv1.0=CDE 2658051:Lab Results.Light Chain Involved<br>Map:HCTv1.0=CDE 58265 /:Lab Results.Marrow Cellularity Status<br>Map:HCTv1.0=CDE 2860911:Lab Results.What is the value of plasma cells in bone marrow aspirate?<br>Map:HCTv1.0=CDE 2694882:Lab Results.Second DQB1* allele designations:<br>Map:HCTv1.0=CDE 2954746:Therapies.At what point in the disease course was the HSCT performed?<br>Map:HCTv1.0=CDE 2953095:Lab Results.What is the value of serum calcium?<br>Map:HCTv1.0=CDE 2967346:Individuals.Number unknown:<br>Map:HCTv1.0=CDE 2980333:Involvement and Extent of Disease.Specify the recurrent disease present in another site:<br>Map:HCTv1.0=MD Anderson Specific Content: Product.CAR%<br>Map:HCTv1.0=CDE 3128021:Disease, Disorder or Finding.Specify the Chronic Lymphocytic Leukemia histology:<br>Map:HCTv1.0=CDE 2962086:Involvement and Extent of Disease.What was the history of co-existing phakomatosis?<br>Map:HCTv1.0=CDE 2963374:Lab Results.Was any tumor present in the biopsy?<br>Map:HCTv1.0=CDE 2693543:Lab Results.First B* allele designations:<br>Map:HCTv1.0=CDE 2785801:Lab Results.When the colony-forming units were assessed, was there growth?<br>Map:HCTv1.0=CDE 2965468:Lab Results.What is the status of T-cell function?<br>Map:HCTv1.0=CDE 2691627:Disease Response.If the plasma cell disorder was treated, what was the number of the response?<br>Map:HCTv1.0=CDE 2969621:Lab Results.Was the biopsy site positive for neuroblastoma?<br>Map:HCTv1.0=CDE 2769109:Involvement and Extent of Disease.Specify primary cause of death:<br>Map:HCTv1.0=CDE 3073218:Lab Results.What is the reason for the A alleles missing value?<br>Map:HCTv1.0=CDE 2728988:Adverse Events.Specify the life-threatening complications that the donor experienced during or after the collection:<br>Map:HCTv1.0=CDE 2793779:Diagnosis.What was the type of chronic GVHD onset?<br>Map:HCTv1.0=CDE 2797671:Outcome of Therapy.List the maximum severity of acute graft versus host disease liver involvement:<br>Map:HCTv1.0=CDE 2874163:Individuals.Height<br>Map:HCTv1.0=CDE 3098936:Individuals.What is the reason for the missing number of pregnancies?<br>Map:HCTv1.0=CDE 2704210:Lab Results.First DPA1* allele designations:<br>Map:HCTv1.0=CDE 2704252:Lab Results.Second DP antigen specificity:<br>Map:HCTv1.0=CDE 2912001:Diagnosis.What was the classification of the congenital abnormalities of erythrocyte differentiation or function?<br>Map:HCTv1.0=CDE 2971763:Lab Results.Specify other molecular abnormality:<br>Map:HCTv1.0=CDE 2693570:Lab Results.Second DRB1* allele designations:<br>Map:HCTv1.0=CDE 2954687:Symptoms.Specify the systemic symptoms:<br>Map:HCTv1.0=CDE 2866119:Lab Results.What is the unit of measure for the cerebrospinal fluid total protein:<br>Map:HCTv1.0=CDE 2760867:Diagnosis.Specify the other liver disease diagnosis:<br>Map:HCTv1.0=CDE 2685309:Diagnosis.Specify the type of other connective tissue disease:<br>Map:HCTv1.0=CDE 2787346:Disease, Disorder or Finding.Specify the result of the diagnosis based on evidence from the biopsy (histology):<br>Map:HCTv1.0=CDE 2704158:Lab Results.DR53 specificity present?<br>Map:HCTv1.0=CDE 3030985:Lab Results.What is the value of serum free light chains (kappa):<br>Map:HCTv1.0=CDE 2738448:Diagnosis.What was the MDS or myeloproliferative disease classification?<br>Map:HCTv1.0=CDE 2760279:Lab Results.Total value of nucleated red blood cells:<br>Map:HCTv1.0=CDE 2798928:Lab Results.What is the hemoglobin lab value?<br>Map:HCTv1.0=CDE 2935895:Molecular Abnormality.Specify the Philadelphia chromosome positive metaphases value (%):<br>Map:HCTv1.0=CDE 2775909:Lab Results.What is the unit of measure for hemoglobin?<br>Map:HCTv1.0=CDE 2794427:Specimen Characteristics.Percent Cells Viable:<br>Map:HCTv1.0=CDE 2677072:Disease, Disorder or Finding.If the breast cancer was in the state of relapse at the time of transplantation, was the cancer local or metastatic?<br>Map:HCTv1.0=CDE 2780745:Lab Results.Chimerism study percent of host cells:<br>Map:HCTv1.0=CDE 2946347:Involvement and Extent of Disease.What kind of disease present?<br>Map:HCTv1.0=CDE 2693564:Lab Results.First DRB1* allele designations:<br>Map:HCTv1.0=CDE 2962060:Involvement and Extent of Disease.What was the extent stage of the CNS tumor?<br>Map:HCTv1.0=CDE 3123938:Disease, Disorder or Finding.What is the result of the audiometric test assessed at the speech threshold for 500 hertz?<br>Map:HCTv1.0=CDE 2798924:Lab Results.What is the lymphocytes lab value?<br>Map:HCTv1.0=CDE 2771967:Lab Results.NK cells exponent value:<br>Map:HCTv1.0=CDE 2974055:Involvement and Extent of Disease.Specify the International Neuroblastoma Staging System disease stage:<br>Map:HCTv1.0=CDE 2967337:Individuals.Specify the family member(s) diagnosed with neuroblastoma or ganglioneuroma:<br>Map:HCTv1.0=CDE 2626962:Procedures.Number of metaphases examined<br>Map:HCTv1.0=CDE 3181189:Lab Results.Specify reticulocytes one decimal place billion per liter value:<br>Map:HCTv1.0=CDE 2967358:Individuals.Is there a family history of other genetic diseases in first-degree blood relatives?<br>Map:HCTv1.0=CDE 3057303:Quality of Life.What was the Vineland adaptive behavior scales value?<br>Map:HCTv1.0=CDE 2782521:Lab Results.Was the disease detected by cytogenetic analysis?<br>Map:HCTv1.0=CDE 2681691:Chronic or Associated Diseases and Exposures.What was the recipient's test results for the presence of CMV-antibodies?(Chronic)<br>Map:HCTv1.0=CDE 2646370:Lab Results.PgR % cells stained positive<br>Map:HCTv1.0=CDE 2974177:Diagnosis.What was the primary CNS disease for which the HSCT was performed?<br>Map:HCTv1.0=CDE 2686127:Diagnosis.Specify the other immune deficiency:<br>Map:HCTv1.0=CDE 3057316:Lab Results.What is the value of the cerebrospinal fluid total protein measurement?<br>Map:HCTv1.0=CDE 2769651:Individuals.What is the number of pregnancies?<br>Map:HCTv1.0=CDE 2681996:Therapies.Was KGF (palifermin, Kepivance) started or is there a plan to use it?<br>Map:HCTv1.0=CDE 2982953:Lab Results.What is the percentage of the percent of cells positive for neuroblastoma?<br>Map:HCTv1.0=CDE 2861060:Lab Results.Serum beta 2-microglobulin unit of measure:<br>Map:HCTv1.0=CDE 3204062:Individuals.What adjusted body weight was used?<br>Map:HCTv1.0=MD Anderson Specific Content: Product.CD56%<br>Map:HCTv1.0=CDE 2760071:Diagnosis.Specify the other autoimmune disease diagnosis:<br>Map:HCTv1.0=CDE 3073239:Lab Results.What is the reason for the DQA1 allelles missing value?<br>Map:HCTv1.0=MD Anderson Specific Content: Product.Fresh product<br>Map:HCTv1.0=CDE 2760261:Lab Results.Nucleated cells exponent value:<br>Map:HCTv1.0=CDE 3021221:Diagnosis.Specify the valvular insufficiency type:<br>Map:HCTv1.0=CDE 2961440:Lab Results.What is the stroma-rich histology?<br>Map:HCTv1.0=CDE 2784439:Lab Results.For the bacterial or fungal infection cultures performed prior to infusion, specify the 6th organism with name(s):<br>Map:HCTv1.0=CDE 3024910:Disease, Disorder or Finding.What is the percentage of ejection fraction?<br>Map:HCTv1.0=CDE 2772153:Lab Results.Total value of CD8+ cells:<br>Map:HCTv1.0=CDE 2634596:Lab Results.Hepatitis B - DNA status<br>Map:HCTv1.0=CDE 2749876:Lab Results.For the wegener granulomatosis, what was the result of the laboratory procedure?<br>Map:HCTv1.0=CDE 2782626:Lab Results.What is the unit of measure for total serum bilirubin?<br>Map:HCTv1.0=CDE 2861046:Lab Results.What is the percent of blasts in blood?<br>Map:HCTv1.0=CDE 3031315:Lab Results.What is the unit of measure for urinary monoclonal light chains?<br>Map:HCTv1.0=CDE 3123697:Disease, Disorder or Finding.What were the results for the tympanometry assessment?<br>Map:HCTv1.0=CDE 2002839:Lab Results.Number of positive axillary lymph nodes<br>Map:HCTv1.0=CDE 2676535:Biological Process.If there was a relapse of non-hodgkin lymphoma at the time of transplantation, what was the sensitivity to chemotherapy?<br>Map:HCTv1.0=CDE 2630200:Units of Measure.Weight Unit of Measure UCUM Code<br>Map:HCTv1.0=MD Anderson Specific Content: Product.NK cells<br>Map:HCTv1.0=CDE 3008193:Disease, Disorder or Finding.Specify the hepatic status:<br>Map:HCTv1.0=CDE 2760894:Diagnosis.What is the pulmonary diagnosis type?<br>Map:HCTv1.0=CDE 2695092:Lab Results.Test results of infectious disease marker for cytomegalovirus(CMV) antibody (IgG or total):<br>Map:HCTv1.0=CDE 2686055:DONOR'.For an HLA-mismatched related donor, what was the degree of mismatch:<br>Map:HCTv1.0=CDE 2873940:Diagnostic or Prognostic Factor.Test results of infectious disease marker for Epstein-Barr antibody:<br>Map:HCTv1.0=CDE 2797633:Outcome of Therapy.List the maximum severity of the acute graft versus host disease lower intestinal tract involvement:<br>Map:HCTv1.0=CDE 2940579:Diagnosis.Specify which accelerated phase symptoms were present:<br>Map:HCTv1.0=CDE 2180758:Disease, Disorder or Finding.Shortening Fraction<br>Map:HCTv1.0=CDE 2685385:Diagnosis.Specify the other acquired cytopenic syndrome:<br>Map:HCTv1.0=CDE 2969596:Diagnosis.Specify breast cancer histology:<br>Map:HCTv1.0=CDE 2932805:Disease, Disorder or Finding.What was the prior disease?<br>Map:HCTv1.0=CDE 2965903:Lab Results.What is the IgM level?<br>Map:HCTv1.0=CDE 2704108:Lab Results.Bw6 specificity present?<br>Map:HCTv1.0=CDE 2950916:Lab Results.Immunochemical Type<br>Map:HCTv1.0=CDE 2686188:Lab Results.For the systemic lupus erythematosus, what was the ds DNA test result?<br>Map:HCTv1.0=CDE 2694945:Lab Results.Test results of infectious disease marker for hepatitis B virus (HBV) core antibody (Anti HBc)<br>Map:HCTv1.0=CDE 3073222:Lab Results.What is the reason for the C alleles missing value?<br>Map:HCTv1.0=CDE 3135354:Organ Measurements.Specify the spleen size below costal margin in centimeters:<br>Map:HCTv1.0=CDE 2936194:Lab Results.Specify BCR/ABL or other molecular tests results:<br>Map:HCTv1.0=CDE 2950100:Disease, Disorder or Finding.What kind of clinical features were presented ?<br>Map:HCTv1.0=CDE 2939876:Disease, Disorder or Finding.Specify the number of blast phases:<br>Map:HCTv1.0=CDE 3158516:Medical Records and Forms.Specify other indication for CIBMTR recipient ID (CRID) assignment:<br>Map:HCTv1.0=CDE 2952507:Lab Results.Which monoclonal bands were present?<br>Map:HCTv1.0=CDE 2782624:Lab Results.What is the value of total serum bilirubin?<br>Map:HCTv1.0=CDE 2871879:Lab Results.Was the cerebrospinal fluid opening pressure known?<br>Map:HCTv1.0=CDE 2760275:Lab Results.Nucleated red blood cells exponent value:<br>Map:HCTv1.0=CDE 2494565:Diagnosis.What was the primary disease for which the HSCT was performed?<br>Map:HCTv1.0=CDE 2771962:Lab Results.Total value of NK cells:<br>Map:HCTv1.0=CDE 2798800:Lab Results.What is the unit of measure for serum creatinine?<br>Map:HCTv1.0=CDE 2867502:Lab Results.Serum creatinine:<br>Map:HCTv1.0=CDE 3129551:Involvement and Extent of Disease.What was the Binet stage?<br>Map:HCTv1.0=CDE 3031376:Disease, Disorder or Finding.What is the result of the method used to assess disease?<br>Map:HCTv1.0=CDE 3073224:Lab Results.What is the reason for the DRB1 allelles missing value?<br>Map:HCTv1.0=CDE 2867504:Lab Results.Serum creatinine 2 decimal place value:<br>Map:HCTv1.0=CDE 2965488:Lab Results.What is the mitogen proliferation response?<br>Map:HCTv1.0=CDE 3073226:Lab Results.What is the reason for the DRB3 allelles missing value?<br>Map:HCTv1.0=CDE 2760234:Lab Results.Total value of nucleated cells:<br>Map:HCTv1.0=CDE 2760665:Diagnosis.Specify the other endocrine diagnosis:<br>Map:HCTv1.0=CDE 3028432:Lab Results.What is the unit of measure for enzyme evaluated for activity level?<br>Map:HCTv1.0=CDE 2797722:Involvement and Extent of Disease.Specify the other non-infectious liver toxicity:<br>Map:HCTv1.0=CDE 2969619:Eligibility.Specify the patient's age at menopause:<br>Map:HCTv1.0=CDE 2770662:Biological Process.Specify the etiology of the other virus:<br>Map:HCTv1.0=CDE 2965208:Lab Results.What is the percentage of lymphocytes?<br>Map:HCTv1.0=CDE 2681693:Pre-Preparative Regimen.What was the donor test results for the presence of CMV-antibodies?<br>Map:HCTv1.0=CDE 2768641:Outcome of Therapy.Specify the other HSCT related main cause(s) of death:<br>Map:HCTv1.0=CDE 2797645:Outcome of Therapy.List the maximum severity of the acute graft versus host disease upper intestinal tract involvement:<br>Map:HCTv1.0=CDE 2760294:Diagnosis.Specify the other cardiovascular diagnosis:<br>Map:HCTv1.0=CDE 2685066:Diagnosis.Specify the type of other B-cell lymphoma:<br>Map:HCTv1.0=CDE 2965492:Lab Results.What is the natural killer cell function?<br>Map:HCTv1.0=CDE 2679566:Disease, Disorder or Finding.What was the classification of the platelet disorder?<br>Map:HL7SP=VerificationEvent.value<br>Map:ICSRr2=Characteristics.value (in R_Product)<br>Map:ICSRr2=AdverseEventAssessment.text (in IndividualCaseSafetyReport)<br>Map:ICSRr2=ObservationEvent.value (in IndividualCaseSafetyReport)<br>Map:ICSRr2=InvestigationCharacteristic.value (in IndividualCaseSafetyReport)<br>Map:Lab=LabResult.numericResult<br>Map:Lab=LabResult.textResult<br>Map:Lab=LabResult.referenceTextList<br>Map:Lab=LabResult.numericPrecision<br>Map:Lab=LaboratoryResult.numericResult<br>Map:LabViewer2.2=LabResultUnitOfMeasure.code<br>Map:LabViewer2.2=LaboratoryResult.numericPrecision<br>Map:LabViewer2.2=LaboratoryResult.textResult<br>Map:LSDAMv2.2.3Plus=PerformedLesionDescription.venousInvasion<br>Map:LSDAMv2.2.3Plus=PerformedPathologicalStaging.numberLymphNodesInvolved<br>Map:LSDAMv2.2.3Plus=PerformedLesionDescription.lymphaticInvasion<br>Map:LSDAMv2.2.3Plus=PerformedObservationResult.result<br>Map:LSDAMv2.2.3Plus=PerformedPathologicalStaging.primaryTumorStage<br>Map:LSDAMv2.2.3Plus=PerformedLesionDescription.perineuralInvasion<br>Map:LSDAMv2.2.3Plus=PerformedPathologicalStaging.numberLymphNodesExamined<br>Map:NCI CRF Standard=CDE 323v3.0: Common Toxicity Criteria Adverse Event Term Type
+<br>Map:NCI CRF Standard=CDE 3419395v1.0: Breast Cancer American Joint Committee on Cancer (AJCC) Edition 7 Pathologic Regional Lymph Node N Stage<br>Map:NCI CRF Standard=CDE 2787947v1.0: Laboratory Test Result Unit of Measure Unified Code for Units of Measure Code<br>Map:NCI CRF Standard=CDE 2435038v1.0: Protocol Deviation Description Text<br>Map:NCI CRF Standard=CDE 2201348v1.0: Adverse Event Suspected Other Attribution Text Name<br>Map:NCI CRF Standard=CDE 2183360v2.0: Laboratory Test Result Numeric Value<br>Map:NCI CRF Standard=CDE 2538246v1.0: MedDRA Adverse Event Code<br>Map:NCI CRF Standard=CDE 2902396v1.0: CML Disease Phase Category<br>Map:NCI CRF Standard=CDE 2181363v1.0:  Myeloma Diagnosis Stage<br>Map:NCI CRF Standard=CDE 3125302v1.1: Common Terminology Criteria for Adverse Events Version 4.0 Low Level Term Name<br>Map:NCI CRF Standard=CDE 3419389v1.0: Breast Cancer American Joint Committee on Cancer (AJCC) Edition 7 Clinical Regional Lymph Node N Stage<br>Map:NCI CRF Standard=CDE 2902402v1.0: Lymphoma B-Symptoms Medical Record Documented Indicator<br>Map:NCI CRF Standard=CDE 3133353v1.0: Common Terminology Criterio for Adverse Events Version 4.0 Mapped Low Level Term MedDRA Code<br>Map:NCI CRF Standard=CDE 2179892v1.0: Adverse Event Cancer Treatment Related Type<br>Map:NCI CRF Standard=CDE 3419393v1.0: Breast Cancer American Joint Committee on Cancer (AJCC) Edition 7 Pathologic Tumor T Stage<br>Map:NCI CRF Standard=CDE 2848650v1.0: Binet Staging System Stage<br>Map:NCI CRF Standard=CDE 58208v3.0: CLL Leukemia RAI Stage<br>Map:NCI CRF Standard=CDE 2003874v3.0: Medical History Description<br>Map:NCI CRF Standard=CDE 2902417v1.0: Lymphoma Ann Arbor Staging System Stage<br>Map:NCI CRF Standard=CDE 3192550v1.0: Medical History Review of Systems Finding Type<br>Map:NCI CRF Standard=CDE 2201880v1.0: Patient Abnormal Physical Examination Specify<br>Map:NCI CRF Standard=CDE 2689280v1.0: Plasma Cell Myeloma International Staging System for Myeloma Stage<br>Map:NCI CRF Standard=CDE 2746517v1.0: Adverse Event Outcome Type<br>Map:NCI CRF Standard=CDE 2902443v1.0: Hodgkin's Lymphoma Modified Ann Arbor Staging System Stage<br>Map:NCI CRF Standard=CDE 2902378v1.0: Prostate Carcinoma Whitmore-Jewett System Stage<br>Map:NCI CRF Standard=CDE 3241064v1.0: Laboratory Test Result Character Value<br>Map:NCI CRF Standard=CDE 3116943v1.0: Gynecologic Tumor Grouping FIGO 2009 Cervical Carcinoma Stage<br>Map:NCI CRF Standard=CDE 3419407v1.0: Breast Cancer American Joint Committee on Cancer (AJCC) Edition 7 Group Stage<br>Map:NCI CRF Standard=CDE 3419391v1.0: Breast Cancer American Joint Committee on Cancer (AJCC) Edition 7 Clinical Distant Metastasis M Stage<br>Map:NCI CRF Standard=CDE 2188132v1.0: Adverse Event Verbatim Term Text<br>Map:NCI CRF Standard=CDE 2004106v3.0: Dose Limiting Toxicity Ind<br>Map:NCI CRF Standard=CDE 3192455v1.0: Physical Examination Finding Type<br>Map:NCI CRF Standard=CDE 3419406v1.0: Breast Cancer American Joint Committee on Cancer (AJCC) Edition 7 Pathologic Distant Metastasis M Stage<br>Map:NCI CRF Standard=CDE 2902390v1.0: Pediatric Lymphoid Cancer St. Jude Stage<br>Map:NCI CRF Standard=CDE 3419387v1.0: Breast Cancer American Joint Committee on Cancer (AJCC) Edition 7 Clinical Tumor T Stage<br>Map:PGx v1.0=PF.PFSTRESC<br>Map:PGx v1.0=PG.PGSTRESN<br>Map:PGx v1.0=PG.PGSTRESU<br>Map:PGx v1.0=PF.PFORRESU<br>Map:PGx v1.0=BS.BSSTRESU<br>Map:PGx v1.0=PF.PFSTRESN<br>Map:PGx v1.0=PF.PFORRES<br>Map:PGx v1.0=PG.PGSTRESC<br>Map:PGx v1.0=PG.PGORRESU<br>Map:PGx v1.0=PF.PFSTRESU<br>Map:PGx v1.0=BS.BSSTRESN<br>Map:PGx v1.0=BS.BSSTRESC<br>Map:PGx v1.0=BS.BSORRESU<br>Map:PGx v1.0=BS.BSORRES<br>Map:PGx v1.0=PG.PGORRES<br>Map:PGx v1.0=PF.PFRESCAT<br>Map:SDTM IGv3.1.1=IE.IESTRESC<br>Map:SDTM IGv3.1.1=QS.QSSTRESC<br>Map:SDTM IGv3.1.1=VS.VSSTRESC<br>Map:SDTM IGv3.1.1=IE.IEORRES<br>Map:SDTM IGv3.1.1=VS.VSLOINC<br>Map:SDTM IGv3.1.1=DS.DSTERM<br>Map:SDTM IGv3.1.1=CM.CMOCCUR<br>Map:SDTM IGv3.1.1=MH.MHDECOD<br>Map:SDTM IGv3.1.1=EG.EGORRES<br>Map:SDTM IGv3.1.1=AE.AESOD<br>Map:SDTM IGv3.1.1=VS.VSORRES<br>Map:SDTM IGv3.1.1=AE.AESCAN<br>Map:SDTM IGv3.1.1=AE.AESDTH<br>Map:SDTM IGv3.1.1=SC.SCORRES<br>Map:SDTM IGv3.1.1=PE.PESTRESU <br>Map:SDTM IGv3.1.1=PE.PEORRESU<br>Map:SDTM IGv3.1.1=AE.AESMIE<br>Map:SDTM IGv3.1.1=AE.AESLIFE<br>Map:SDTM IGv3.1.1=EG.EGORRESU<br>Map:SDTM IGv3.1.1=SC.SCSTRESN<br>Map:SDTM IGv3.1.1=LB.LBSTRESU<br>Map:SDTM IGv3.1.1=PE.PESTRESN<br>Map:SDTM IGv3.1.1=EG.EGSTRESU<br>Map:SDTM IGv3.1.1=AE.AESCONG<br>Map:SDTM IGv3.1.1=PE.PESTRESC<br>Map:SDTM IGv3.1.1=TS.TSVAL<br>Map:SDTM IGv3.1.1=EG.EGLOINC<br>Map:SDTM IGv3.1.1=DV.DVDECOD<br>Map:SDTM IGv3.1.1=QS.QSORRES<br>Map:SDTM IGv3.1.1=LB.LBSTRESN<br>Map:SDTM IGv3.1.1=LB.LBORRES<br>Map:SDTM IGv3.1.1=EG.EGSTRESC<br>Map:SDTM IGv3.1.1=SC.SCSTRESU<br>Map:SDTM IGv3.1.1=AE.AEOUT<br>Map:SDTM IGv3.1.1=LB.LBSTRESC<br>Map:SDTM IGv3.1.1=LB.LBORRESU<br>Map:SDTM IGv3.1.1=SC.SCORRESU<br>Map:SDTM IGv3.1.1=SC.SCSTRESC<br>Map:SDTM IGv3.1.1=MH.MHTERM<br>Map:SDTM IGv3.1.1=QS.QSORRESU<br>Map:SDTM IGv3.1.1=MH.MHOCCUR<br>Map:SDTM IGv3.1.1=QS.QSSTRESU<br>Map:SDTM IGv3.1.1=AE.AETERM<br>Map:SDTM IGv3.1.1=AE.AERELNST<br>Map:SDTM IGv3.1.1=QS.QSSTRESN<br>Map:SDTM IGv3.1.1=VS.VSSTRESN<br>Map:SDTM IGv3.1.1=EG.EGSTRESN<br>Map:SDTM IGv3.1.1=AE.AESDISAB<br>Map:SDTM IGv3.1.1=AE.AEDECOD<br>Map:SDTM IGv3.1.1=LB.LBLOINC<br>Map:SDTM IGv3.1.1=VS.VSSTRESU<br>Map:SDTM IGv3.1.1=PE.PEORRES<br>Map:SDTM IGv3.1.1=AE.AEREL<br>Map:SDTM IGv3.1.1=VS.VSORRESU<br>Map:SDTM IGv3.1.2=PE.PEORRESU<br>Map:SDTM IGv3.1.2=PC.PCORRESU<br>Map:SDTM IGv3.1.2=MH.MHTERM<br>Map:SDTM IGv3.1.2=AE.AEDECOD<br>Map:SDTM IGv3.1.2=PP.PPSTRESC<br>Map:SDTM IGv3.1.2=FA.FASTRESC<br>Map:SDTM IGv3.1.2=QS.QSORRES<br>Map:SDTM IGv3.1.2=MS.MSORRES<br>Map:SDTM IGv3.1.2=MB.MBRESCAT<br>Map:SDTM IGv3.1.2=MS.MSSTRESC<br>Map:SDTM IGv3.1.2=QS.QSSTRESC<br>Map:SDTM IGv3.1.2=QS.QSSTRESN<br>Map:SDTM IGv3.1.2=VS.VSORRES<br>Map:SDTM IGv3.1.2=LB.LBSTRESU<br>Map:SDTM IGv3.1.2=PE.PEORRES<br>Map:SDTM IGv3.1.2=EG.EGFXN<br>Map:SDTM IGv3.1.2=MS.MSRESCAT<br>Map:SDTM IGv3.1.2=CE.CETERM<br>Map:SDTM IGv3.1.2=EG.EGORRES<br>Map:SDTM IGv3.1.2=CM.CMOCCUR<br>Map:SDTM IGv3.1.2=FA.FASTRESU<br>Map:SDTM IGv3.1.2=VS.VSSTRESC<br>Map:SDTM IGv3.1.2=MH.MHOCCUR<br>Map:SDTM IGv3.1.2=PP.PPSTRESU<br>Map:SDTM IGv3.1.2=MB.MBORRESU<br>Map:SDTM IGv3.1.2=FA.FAORRESU<br>Map:SDTM IGv3.1.2=LB.LBORRESU<br>Map:SDTM IGv3.1.2=MS.MSSTRESU<br>Map:SDTM IGv3.1.2=EG.EGSTRESC<br>Map:SDTM IGv3.1.2=FA.FAORRES<br>Map:SDTM IGv3.1.2=PP.PPORRES<br>Map:SDTM IGv3.1.2=MB.MBSTRESU<br>Map:SDTM IGv3.1.2=PE.PESTRESC<br>Map:SDTM IGv3.1.2=SC.SCSTRESC<br>Map:SDTM IGv3.1.2=FA.FAOBJ<br>Map:SDTM IGv3.1.2=AE.AETERM<br>Map:SDTM IGv3.1.2=MS.MSORRESU<br>Map:SDTM IGv3.1.2=LB.LBORRES<br>Map:SDTM IGv3.1.2=LB.LBSTRESC<br>Map:SDTM IGv3.1.2=IE.IESTRESC<br>Map:SDTM IGv3.1.2=SC.SCORRESU<br>Map:SDTM IGv3.1.2=DS.DSDECOD<br>Map:SDTM IGv3.1.2=PC.PCSTRESN<br>Map:SDTM IGv3.1.2=CE.CEDECOD<br>Map:SDTM IGv3.1.2=VS.VSSTRESN<br>Map:SDTM IGv3.1.2=DS.DSTERM<br>Map:SDTM IGv3.1.2=VS.VSORRESU<br>Map:SDTM IGv3.1.2=QS.QSSTRESU<br>Map:SDTM IGv3.1.2=PP.PPORRESU<br>Map:SDTM IGv3.1.2=VS.VSSTRESU<br>Map:SDTM IGv3.1.2=DV.DVDECOD<br>Map:SDTM IGv3.1.2=FA.FASTRESN<br>Map:SDTM IGv3.1.2=SU.SUOCCUR<br>Map:SDTM IGv3.1.2=MB.MBSTRESN<br>Map:SDTM IGv3.1.2=MB.MBORRES<br>Map:SDTM IGv3.1.2=EG.EGSTRESN<br>Map:SDTM IGv3.1.2=MS.MSSTRESN<br>Map:SDTM IGv3.1.2=SC.SCSTRESU<br>Map:SDTM IGv3.1.2=EG.EGORRESU<br>Map:SDTM IGv3.1.2=DV.DVTERM<br>Map:SDTM IGv3.1.2=AE.AEOUT<br>Map:SDTM IGv3.1.2=SC.SCSTRESN<br>Map:SDTM IGv3.1.2=PC.PCORRES<br>Map:SDTM IGv3.1.2=LB.LBSTRESN<br>Map:SDTM IGv3.1.2=MH.MHDECOD<br>Map:SDTM IGv3.1.2=MB.MBSTRESC<br>Map:SDTM IGv3.1.2=PC.PCSTRESU<br>Map:SDTM IGv3.1.2=EG.EGSTRESU<br>Map:SDTM IGv3.1.2=PC.PCSTRESC<br>Map:SDTM IGv3.1.2=CE.CEOCCUR<br>Map:SDTM IGv3.1.2=PP.PPSTRESN<br>Map:SDTM IGv3.1.2=SC.SCORRES<br>Map:SDTM IGv3.1.2=QS.QSORRESU<br>Map:SDTM IGv3.1.3=TU.TUORRES<br>Map:SDTM IGv3.1.3=TU.TUSTRESC<br>Map:SDTM IGv3.1.3=TR.TRSTRESC<br>Map:SDTM IGv3.1.3=TR.TRORRES<br>Map:SDTM IGv3.1.3=SU.SUSTAT<br>Map:SDTM IGv3.1.3=SU.SUOCCUR<br>Map:SDTM IGv3.1.3=SC.SCSTRESU<br>Map:SDTM IGv3.1.3=SC.SCSTRESN<br>Map:SDTM IGv3.1.3=SC.SCSTRESC<br>Map:SDTM IGv3.1.3=SC.SCORRESU<br>Map:SDTM IGv3.1.3=VS.VSORRES<br>Map:SDTM IGv3.1.3=RS.RSSTRESC<br>Map:SDTM IGv3.1.3=RS.RSORRES<br>Map:SDTM IGv3.1.3=QS.QSSTRESU<br>Map:SDTM IGv3.1.3=SC.SCORRES<br>Map:SDTM IGv3.1.3=MB.MBRESCAT<br>Map:SDTM IGv3.1.3=QS.QSSTRESN<br>Map:SDTM IGv3.1.3=VS.VSORRESU<br>Map:SDTM IGv3.1.3=VS.VSSTRESU<br>Map:SDTM IGv3.1.3=VS.VSSTRESN<br>Map:SDTM IGv3.1.3=VS.VSSTRESC<br>Map:SDTM IGv3.1.3=EG.EGORRES<br>Map:SDTM IGv3.1.3=LB.LBORRESU<br>Map:SDTM IGv3.1.3=LB.LBORRES<br>Map:SDTM IGv3.1.3=IE.IESTRESC<br>Map:SDTM IGv3.1.3=IE.IEORRES<br>Map:SDTM IGv3.1.3=FA.FASTRESU<br>Map:SDTM IGv3.1.3=FA.FASTRESN<br>Map:SDTM IGv3.1.3=FA.FASTRESC<br>Map:SDTM IGv3.1.3=FA.FAORRESU<br>Map:SDTM IGv3.1.3=FA.FAORRES<br>Map:SDTM IGv3.1.3=FA.FAOBJ<br>Map:SDTM IGv3.1.3=EG.EGSTRESU<br>Map:SDTM IGv3.1.3=EG.EGSTRESN<br>Map:SDTM IGv3.1.3=LB.LBSTRESC<br>Map:SDTM IGv3.1.3=EG.EGORRESU<br>Map:SDTM IGv3.1.3=CE.CETERM<br>Map:SDTM IGv3.1.3=DV.DVTERM<br>Map:SDTM IGv3.1.3=DV.DVDECOD<br>Map:SDTM IGv3.1.3=CM.CMSTAT<br>Map:SDTM IGv3.1.3=QS.QSSTRESC<br>Map:SDTM IGv3.1.3=CE.CESTAT<br>Map:SDTM IGv3.1.3=MB.MBSTRESN<br>Map:SDTM IGv3.1.3=CE.CEDECOD<br>Map:SDTM IGv3.1.3=AE.AETERM<br>Map:SDTM IGv3.1.3=AE.AEPTCD<br>Map:SDTM IGv3.1.3=AE.AEOUT<br>Map:SDTM IGv3.1.3=AE.AEDECOD<br>Map:SDTM IGv3.1.3=EG.EGSTRESC<br>Map:SDTM IGv3.1.3=MS.MSSTRESN<br>Map:SDTM IGv3.1.3=QS.QSORRESU<br>Map:SDTM IGv3.1.3=PE.PEORRES<br>Map:SDTM IGv3.1.3=QS.QSORRES<br>Map:SDTM IGv3.1.3=PE.PEORRESU<br>Map:SDTM IGv3.1.3=PE.PESTRESC<br>Map:SDTM IGv3.1.3=PC.PCSTRESN<br>Map:SDTM IGv3.1.3=PC.PCSTRESC<br>Map:SDTM IGv3.1.3=PC.PCORRESU<br>Map:SDTM IGv3.1.3=LB.LBSTRESN<br>Map:SDTM IGv3.1.3=MS.MSSTRESU<br>Map:SDTM IGv3.1.3=PC.PCSTRESU<br>Map:SDTM IGv3.1.3=MS.MSSTRESC<br>Map:SDTM IGv3.1.3=MS.MSRESCAT<br>Map:SDTM IGv3.1.3=CE.CEOCCUR<br>Map:SDTM IGv3.1.3=LB.LBSTRESU<br>Map:SDTM IGv3.1.3=MB.MBORRES<br>Map:SDTM IGv3.1.3=MB.MBORRESU<br>Map:SDTM IGv3.1.3=PC.PCORRES<br>Map:SDTM IGv3.1.3=MB.MBSTRESC<br>Map:SDTM IGv3.1.3=MS.MSORRESU<br>Map:SDTM IGv3.1.3=MB.MBSTRESU<br>Map:SDTM IGv3.1.3=MH.MHDECOD<br>Map:SDTM IGv3.1.3=MH.MHOCCUR<br>Map:SDTM IGv3.1.3=MH.MHSTAT<br>Map:SDTM IGv3.1.3=MH.MHTERM<br>Map:SDTM IGv3.1.3=MS.MSORRES<br>Map:SEER 2015=SECTION VI COLLABORATIVE STAGE DATA COLLECTION SYSTEM - CS SITE-SPECIFIC FACTORS 1 - 25<br>Map:SEER 2015=SECTION VII FIRST COURSE OF THERAPY - SURGERY OF PRIMARY SITE<br>Map:SEER 2015=SECTION VII FIRST COURSE OF THERAPY - SURGICAL PROCEDURE OF OTHER SITE<br>Map:SEER 2015=SECTION VII FIRST COURSE OF THERAPY - CHEMOTHERAPY<br>Map:SEER 2015=SECTION VII FIRST COURSE OF THERAPY - HORMONE THERAPY<br>Map:SEER 2015=SECTION VII FIRST COURSE OF THERAPY - IMMUNOTHERAPY<br>Map:SEER 2015=SECTION VII FIRST COURSE OF THERAPY - SCOPE OF REGIONAL LYMPH NODE SURGERY<br>Map:SEER 2015=SECTION VII FIRST COURSE OF THERAPY - HEMATOLOGIC TRANSPLANT AND ENDOCRINE PROCEDURES<br>Map:SEER 2015=SECTION VII FIRST COURSE OF THERAPY - OTHER THERAPY<br>Map:SEER 2015=SECTION VIII FOLLOW UP INFORMATION - ICD CODE REVISION USED FOR CAUSE OF DEATH<br>Map:SEER 2015=SECTION VIII FOLLOW UP INFORMATION - UNDERLYING CAUSE OF DEATH<br>Map:SEER 2015=SECTION VIII FOLLOW UP INFORMATION - SURVIVAL DATA ITEMS - Surv-Date Active Followup<br>Map:SEER 2015=SECTION VIII FOLLOW UP INFORMATION - SURVIVAL DATA ITEMS - Surv-Flag Active Followup<br>Map:SEER 2015=SECTION VIII FOLLOW UP INFORMATION - SURVIVAL DATA ITEMS - Surv-Mos Active Followup<br>Map:SEER 2015=SECTION VI COLLABORATIVE STAGE DATA COLLECTION SYSTEM - CS SITE-SPECIFIC FACTORS 1 - 25<br>Map:SEER 2015=SECTION VIII FOLLOW UP INFORMATION - SURVIVAL DATA ITEMS - Surv-Flag Presumed Alive<br>Map:SEER 2015=SECTION IX ADMINISTRATIVE CODES - SEQUENCE NUMBER/ILL-DEFINED SITE INTERFIELD REVIEW<br>Map:SEER 2015=SECTION VIII FOLLOW UP INFORMATION - SURVIVAL DATA ITEMS - Surv-Mos Presumed Alive<br>Map:SEER 2015=SECTION VIII FOLLOW UP INFORMATION - SURVIVAL DATA ITEMS - Surv-Date Presumed Alive<br>Map:SEER 2015=SECTION IV DESCRIPTION OF THIS NEOPLASM - SEQUENCE NUMBER-CENTRAL<br>Map:SEER 2015=SECTION VIII FOLLOW UP INFORMATION - SURVIVAL DATA ITEMS - Surv-Date DX Recode<br>Map:SEER 2015=SECTION IV DESCRIPTION OF THIS NEOPLASM - MORPHOLOGY<br>Map:SEER 2015=SECTION IV DESCRIPTION OF THIS NEOPLASM - HISTOLOGIC TYPE ICD-O-3<br>Map:SEER 2015=SECTION IV DESCRIPTION OF THIS NEOPLASM - BEHAVIOR CODE<br>Map:SEER 2015=SECTION IX ADMINISTRATIVE CODES - SITE/TYPE INTERFIELD REVIEW<br>Map:SEER 2015=SECTION IX ADMINISTRATIVE CODES - HISTOLOGY/BEHAVIOR INTERFIELD REVIEW<br>Map:SEER 2015=SECTION IX ADMINISTRATIVE CODES - AGE/SITE/HISTOLOGY INTERFIELD REVIEW<br>Map:SEER 2015=SECTION IX ADMINISTRATIVE CODES - SEQUENCE NUMBER/DIAGNOSTIC CONFIRMATION INTERFIELD REVIEW<br>Map:SEER 2015=SECTION IX ADMINISTRATIVE CODES - SITE/HISTOLOGY/LATERALITY/SEQUENCE INTERRECORD REVIEW<br>Map:SEER 2015=SECTION IX ADMINISTRATIVE CODES - TYPE OF REPORTING SOURCE/SEQUENCE NUMBER INTERFIELD REVIEW<br>Map:SEER 2015=SECTION IX ADMINISTRATIVE CODES - LEUKEMIA OR LYMPHOMA/DIAGNOSTIC CONFIRMATION INTERFIELD REVIEW<br>Map:SEER 2015=SECTION VI COLLABORATIVE STAGE DATA COLLECTION SYSTEM - REGIONAL NODES EXAMINED<br>Map:SEER 2015=SECTION IX ADMINISTRATIVE CODES - OVER-RIDE FLAG FOR SITE/BEHAVIOR (IF39)<br>Map:SEER 2015=SECTION IX ADMINISTRATIVE CODES - OVER-RIDE FLAG FOR SITE/EOD/DIAGNOSIS DATE (IF40)<br>Map:SEER 2015=SECTION IX ADMINISTRATIVE CODES - OVER-RIDE FLAG FOR SITE/LATERALITY/EOD (IF41)<br>Map:SEER 2015=SECTION IX ADMINISTRATIVE CODES - OVER-RIDE FLAG FOR SITE/LATERALITY/MORPHOLOGY (IF42)<br>Map:SEER 2015=SECTION VI COLLABORATIVE STAGE DATA COLLECTION SYSTEM - GRADE PATH VALUE<br>Map:SEER 2015=SECTION VI COLLABORATIVE STAGE DATA COLLECTION SYSTEM - GRADE PATH SYSTEM<br>Map:SEER 2015=SECTION VI COLLABORATIVE STAGE DATA COLLECTION SYSTEM - LYMPH-VASCULAR INVASION<br>Map:SEER 2015=SECTION VI COLLABORATIVE STAGE DATA COLLECTION SYSTEM - CS TUMOR SIZE<br>Map:SEER 2015=SECTION VI COLLABORATIVE STAGE DATA COLLECTION SYSTEM - REGIONAL NODES POSITIVE<br>Map:SEER 2015=SECTION IX ADMINISTRATIVE CODES - SURGERY/DIAGNOSTIC CONFIRMATION INTERFIELD REVIEW<br>
+						<div class="ObjectDetailsNotes"><table>
+	<tr>
+		<td valign="top">
+			<i>Notes: </i><span style="margin-left: .4cm;"> </span>
+		</td>
+		<td>
+			DEFINITION:&lt;br/&gt;Data or information that is determined by an act of observation.&lt;br/&gt;&lt;br/&gt;EXAMPLE(S):&lt;br/&gt;The result of a lab test, physical finding, self-reported symptom.&lt;br/&gt;&lt;br/&gt;The adverse event term code.&lt;br/&gt;&lt;br/&gt;OTHER NAME(S):&lt;br/&gt;&lt;br/&gt;NOTE(S):&lt;br/&gt;
+		</td>
+	</tr>
+</table></div>
+
+						
+				</td>
+			</tr>			<tr>
+				<td width="100%" class="TableRow">
+					<i>Public ST</i><br /><strong>&nbsp;&nbsp;valueCodeModifiedText</strong>
+				</td>
+			</tr>
+			<tr>
+				<td class="TableRowBottomDashed"  colspan="1">										
+					<a href="#" onclick="parent.toggleData('DetailsImageAttributes2690')" style="text-decoration: none; color: #000000;"><img src="../../images/plus03.gif" align="absmiddle" id="DetailsImageAttributes2690" border="0" />Details:</a>
+					<table border="0" cellspacing="0" cellpadding="0" class="Table" style="padding: 4px 18px;">
+					
+						<tr id="DetailsImageAttributes2690_00" style="display: none;">
+							<td width="75"><i>Alias:</i></td>
+							<td></td>
+						</tr>
+						<tr id="DetailsImageAttributes2690_01" style="display: none;">
+							<td width="75"><i>Initial:</i></td>
+							<td></td>
+						</tr>
+						<tr id="DetailsImageAttributes2690_02" style="display: none;">
+							<td width="75"><i>Stereotype: </i></td>
+							<td></td>
+						</tr>
+						<tr id="DetailsImageAttributes2690_03" style="display: none;">
+							<td width="75"><i>Ordered: </i></td>
+							<td></td>
+						</tr>
+						<tr id="DetailsImageAttributes2690_04" style="display: none;">
+							<td width="75"><i>Range: </i></td>
+							<td>Range:0 to 1</td>
+						</tr>
+						<tr id="DetailsImageAttributes2690_05" style="display: none;">
+							<td width="75"><i>Transient: </i></td>
+							<td>False</td>
+						</tr>
+						<tr id="DetailsImageAttributes2690_06" style="display: none;">
+							<td width="75"><i>Derived: </i></td>
+							<td>False</td>
+						</tr>
+							<tr id="DetailsImageAttributes2690_07" style="display: none;">
+							<td width="75"><i>IsID: </i></td>
+						<td>False</td>
+						</tr>
+					</table>
+					
+					Map:CTRPv3.8=ObservationResult.resultCodeModifiedText<br>Map:CTRv1.0=PerformedObservationResult.valueCodeModifiedText<br>Map:LSDAMv2.2.3Plus=PerformedObservationResult.resultCodeModifiedText<br>Map:SDTM IGv3.1.1=AE.AEMODIFY<br>Map:SDTM IGv3.1.1=PE.PEMODIFY<br>Map:SDTM IGv3.1.1=MH.MHMODIFY<br>Map:SDTM IGv3.1.2=AE.AEMODIFY<br>Map:SDTM IGv3.1.2=PE.PEMODIFY<br>Map:SDTM IGv3.1.2=MH.MHMODIFY<br>Map:SDTM IGv3.1.3=PE.PEMODIFY<br>Map:SDTM IGv3.1.3=MH.MHMODIFY<br>Map:SDTM IGv3.1.3=AE.AEMODIFY<br>
+						<div class="ObjectDetailsNotes"><table>
+	<tr>
+		<td valign="top">
+			<i>Notes: </i><span style="margin-left: .4cm;"> </span>
+		</td>
+		<td>
+			DEFINITION:&lt;br/&gt;A character string that is a revision of the original text observation result to enable the coding of the text. &lt;br/&gt;&lt;br/&gt;EXAMPLE(S):&lt;br/&gt;If the originalText is &quot;hedache&quot;, the valueCodeModifiedText could be changed to &quot;headache&quot;, so that the text can be successfully coded.&lt;br/&gt;&lt;br/&gt;OTHER NAME(S):&lt;br/&gt;&lt;br/&gt;NOTE(S):&lt;br/&gt;In the context of BRIDG, text modification occurs a single time for a given instance of originalText. &lt;br/&gt;
+		</td>
+	</tr>
+</table></div>
+
+						
+				</td>
+			</tr>			<tr>
+				<td width="100%" class="TableRow">
+					<i>Public ST</i><br /><strong>&nbsp;&nbsp;valueNullFlavorReason</strong>
+				</td>
+			</tr>
+			<tr>
+				<td class="TableRowBottomDashed"  colspan="1">										
+					<a href="#" onclick="parent.toggleData('DetailsImageAttributes2691')" style="text-decoration: none; color: #000000;"><img src="../../images/plus03.gif" align="absmiddle" id="DetailsImageAttributes2691" border="0" />Details:</a>
+					<table border="0" cellspacing="0" cellpadding="0" class="Table" style="padding: 4px 18px;">
+					
+						<tr id="DetailsImageAttributes2691_00" style="display: none;">
+							<td width="75"><i>Alias:</i></td>
+							<td></td>
+						</tr>
+						<tr id="DetailsImageAttributes2691_01" style="display: none;">
+							<td width="75"><i>Initial:</i></td>
+							<td></td>
+						</tr>
+						<tr id="DetailsImageAttributes2691_02" style="display: none;">
+							<td width="75"><i>Stereotype: </i></td>
+							<td></td>
+						</tr>
+						<tr id="DetailsImageAttributes2691_03" style="display: none;">
+							<td width="75"><i>Ordered: </i></td>
+							<td></td>
+						</tr>
+						<tr id="DetailsImageAttributes2691_04" style="display: none;">
+							<td width="75"><i>Range: </i></td>
+							<td>Range:0 to 1</td>
+						</tr>
+						<tr id="DetailsImageAttributes2691_05" style="display: none;">
+							<td width="75"><i>Transient: </i></td>
+							<td>False</td>
+						</tr>
+						<tr id="DetailsImageAttributes2691_06" style="display: none;">
+							<td width="75"><i>Derived: </i></td>
+							<td>False</td>
+						</tr>
+							<tr id="DetailsImageAttributes2691_07" style="display: none;">
+							<td width="75"><i>IsID: </i></td>
+						<td>False</td>
+						</tr>
+					</table>
+					
+					Map:BRIDGSCC=Model Integrity<br>Map:CTRv1.0=PerformedObservationResult.valueNullFlavorReason<br>Map:HCTv1.0=CDE 2773885:Lab Results.Did laboratory procedure test for CD8+cells?<br>Map:HCTv1.0=CDE 3024912:Data Source.What is the reason for the ejection fraction missing value?<br>Map:HCTv1.0=CDE 2775883:Lab Results.What is the reason for the neutrophils missing value?<br>Map:HCTv1.0=CDE 2730853:Lab Results.When the colony-forming units were assessed, was the total number of colonies unknown?<br>Map:HCTv1.0=CDE 3085846:Quality of Life.What is the Vineland Adaptive Behavior Scales performance type?<br>Map:HCTv1.0=CDE 2953093:Lab Results.What was the status of the serum calcium finding?<br>Map:HCTv1.0=CDE 2775920:Lab Results.What is the reason for the hematocrit missing value?<br>Map:HCTv1.0=CDE 2799095:Lab Results.What is the reason for the platelets missing value?<br>Map:HCTv1.0=CDE 2978413:Tumor Measurements.What is the reason for the primary neoplasm size missing value?<br>Map:HCTv1.0=CDE 3181147:Lab Results.What is the reason for the drug level missing value?<br>Map:HCTv1.0=CDE 3057314:Data Source.If necessary, specify the reason for the missing visual acuity value:<br>Map:HCTv1.0=CDE 2780740:Lab Results.What is the reason for the chimerism study percent of donor cells missing value?<br>Map:HCTv1.0=CDE 2756923:Lab Results.What is the reason for the immunoglobulin missing value?<br>Map:HCTv1.0=CDE 2782618:Lab Results.What is the reason for the Serum Glutamic Oxaloacetic Transferase missing value?<br>Map:HCTv1.0=CDE 2775911:Lab Results.What is the reason for the hemoglobin missing value?<br>Map:HCTv1.0=CDE 2775889:Lab Results.What is the reason for the lymphocytes missing value?<br>Map:HCTv1.0=CDE 2974128:Disease, Disorder or Finding.What is the reason for the aplastic anemia etiology missing value?<br>Map:HCTv1.0=CDE 2798802:Lab Results.What is the reason for the serum creatinine missing value?<br>Map:HCTv1.0=CDE 3024914:Data Source.What is the reason for the shortening fraction result missing value?<br>Map:HCTv1.0=CDE 3020350:Quality of Life.What is the reason for the mental process development assessment score missing value?<br>Map:HCTv1.0=CDE 2775876:Lab Results.What is the reason for the WBC missing value?<br>Map:HCTv1.0=CDE 3057305:Quality of Life.What is the reason for the Vineland adaptive behavior scales score missing value?<br>Map:HCTv1.0=CDE 2798689:Chronic or Associated Diseases and Exposures.What is the reason for the smoking duration missing value?<br>Map:HCTv1.0=CDE 2816461:Behavior.What is the reason for the cigarette average daily pack use missing value?<br>Map:HCTv1.0=CDE 3024947:Quality of Life.What is the mental development testing score type?<br>Map:HCTv1.0=CDE 2974126:Disease, Disorder or Finding.What is the reason for the viral hepatitis type missing value?<br>Map:HCTv1.0=CDE 2771977:Lab Results.What is the reason for the NK cells missing value?<br>Map:HCTv1.0=CDE 3030971:Lab Results.What was the reason for the laboratory procedure specimen source missing value?<br>Map:HCTv1.0=CDE 2782628:Lab Results.What is the reason for the total serum bilirubin missing value?<br>Map:HCTv1.0=CDE 2771989:Lab Results.What is the reason for the mesenchymal cells missing value?<br>Map:HCTv1.0=CDE 2802830:Lab Results.What is the reason for the cluster of differentiation missing value?<br>Map:HCTv1.0=CDE 2760398:Lab Results.When the colony-forming units were assessed, was the total number of CFU-GM unknown?<br>Map:HCTv1.0=CDE 2780747:Lab Results.What is the reason for the chimerism study percent of host cells missing value?<br>Map:HCTv1.0=CDE 2965152:Disease Response.What was the reason the best response to disease not assessed?<br>Map:HCTv1.0=CDE 2798786:Lab Results.What is the reason for the lactate dehydrogenase missing value?<br>Map:HCTv1.0=CDE 3024908:Lab Results.What is the reason for the oxygen saturation percentage level missing value?<br>Map:SDTM IGv3.1.3=SU.SUREASND<br>Map:SDTM IGv3.1.3=MH.MHREASND<br>Map:SDTM IGv3.1.3=CM.CMREASND<br>Map:SDTM IGv3.1.3=CE.CEREASND<br>
+						<div class="ObjectDetailsNotes"><table>
+	<tr>
+		<td valign="top">
+			<i>Notes: </i><span style="margin-left: .4cm;"> </span>
+		</td>
+		<td>
+			DEFINITION:&lt;br/&gt;The text and/or code that describes why no result was provided.&lt;br/&gt;&lt;br/&gt;EXAMPLE(S):&lt;br/&gt;Subject refused to answer question.&lt;br/&gt;&lt;br/&gt;Error message returned by equipment to explain why the device was unable to produce a result.&lt;br/&gt;&lt;br/&gt;OTHER NAME(S):&lt;br/&gt;&lt;br/&gt;NOTE(S):&lt;br/&gt;This value should only be populated if PerformedObservationResult.value is null.&lt;br/&gt;
+		</td>
+	</tr>
+</table></div>
+
+						
+				</td>
+			</tr>			<tr>
+				<td width="100%" class="TableRow">
+					<i>Public CD</i><br /><strong>&nbsp;&nbsp;confidentialityCode</strong>
+				</td>
+			</tr>
+			<tr>
+				<td class="TableRowBottomDashed"  colspan="1">										
+					<a href="#" onclick="parent.toggleData('DetailsImageAttributes2692')" style="text-decoration: none; color: #000000;"><img src="../../images/plus03.gif" align="absmiddle" id="DetailsImageAttributes2692" border="0" />Details:</a>
+					<table border="0" cellspacing="0" cellpadding="0" class="Table" style="padding: 4px 18px;">
+					
+						<tr id="DetailsImageAttributes2692_00" style="display: none;">
+							<td width="75"><i>Alias:</i></td>
+							<td></td>
+						</tr>
+						<tr id="DetailsImageAttributes2692_01" style="display: none;">
+							<td width="75"><i>Initial:</i></td>
+							<td></td>
+						</tr>
+						<tr id="DetailsImageAttributes2692_02" style="display: none;">
+							<td width="75"><i>Stereotype: </i></td>
+							<td></td>
+						</tr>
+						<tr id="DetailsImageAttributes2692_03" style="display: none;">
+							<td width="75"><i>Ordered: </i></td>
+							<td></td>
+						</tr>
+						<tr id="DetailsImageAttributes2692_04" style="display: none;">
+							<td width="75"><i>Range: </i></td>
+							<td>Range:0 to 1</td>
+						</tr>
+						<tr id="DetailsImageAttributes2692_05" style="display: none;">
+							<td width="75"><i>Transient: </i></td>
+							<td>False</td>
+						</tr>
+						<tr id="DetailsImageAttributes2692_06" style="display: none;">
+							<td width="75"><i>Derived: </i></td>
+							<td>False</td>
+						</tr>
+							<tr id="DetailsImageAttributes2692_07" style="display: none;">
+							<td width="75"><i>IsID: </i></td>
+						<td>False</td>
+						</tr>
+					</table>
+					
+					Map:CTOM=Histopathology.confidentialityCode<br>Map:CTOM=ClinicalResult.confidentialityCode<br>Map:CTOM=Observation.confidentialityCode<br>Map:CTOM=LesionDescription.confidentialityCode<br>Map:CTRv1.0=PerformedObservationResult.confidentialityCode<br>Map:ICSRr2=InvestigativeEvent.confidentialityCode (in IndividualCaseSafetyReport)<br>Map:ICSRr2=RelatedInvestigation.confidentialityCode (in IndividualCaseSafetyReport)<br>Map:LSDAMv2.2.3Plus=PerformedObservationResult.confidentialityCode<br>
+						<div class="ObjectDetailsNotes"><table>
+	<tr>
+		<td valign="top">
+			<i>Notes: </i><span style="margin-left: .4cm;"> </span>
+		</td>
+		<td>
+			DEFINITION:&lt;br/&gt;A coded value specifying the degree of privacy applicable for the observation result. &lt;br/&gt;&lt;br/&gt;EXAMPLE(S):&lt;br/&gt;Do not reveal to study sponsor.&lt;br/&gt;&lt;br/&gt;OTHER NAME(S):&lt;br/&gt;&lt;br/&gt;NOTE(S):&lt;br/&gt;
+		</td>
+	</tr>
+</table></div>
+
+						
+				</td>
+			</tr>			<tr>
+				<td width="100%" class="TableRow">
+					<i>Public CD</i><br /><strong>&nbsp;&nbsp;uncertaintyCode</strong>
+				</td>
+			</tr>
+			<tr>
+				<td class="TableRowBottomDashed"  colspan="1">										
+					<a href="#" onclick="parent.toggleData('DetailsImageAttributes2693')" style="text-decoration: none; color: #000000;"><img src="../../images/plus03.gif" align="absmiddle" id="DetailsImageAttributes2693" border="0" />Details:</a>
+					<table border="0" cellspacing="0" cellpadding="0" class="Table" style="padding: 4px 18px;">
+					
+						<tr id="DetailsImageAttributes2693_00" style="display: none;">
+							<td width="75"><i>Alias:</i></td>
+							<td></td>
+						</tr>
+						<tr id="DetailsImageAttributes2693_01" style="display: none;">
+							<td width="75"><i>Initial:</i></td>
+							<td></td>
+						</tr>
+						<tr id="DetailsImageAttributes2693_02" style="display: none;">
+							<td width="75"><i>Stereotype: </i></td>
+							<td></td>
+						</tr>
+						<tr id="DetailsImageAttributes2693_03" style="display: none;">
+							<td width="75"><i>Ordered: </i></td>
+							<td></td>
+						</tr>
+						<tr id="DetailsImageAttributes2693_04" style="display: none;">
+							<td width="75"><i>Range: </i></td>
+							<td>Range:0 to 1</td>
+						</tr>
+						<tr id="DetailsImageAttributes2693_05" style="display: none;">
+							<td width="75"><i>Transient: </i></td>
+							<td>False</td>
+						</tr>
+						<tr id="DetailsImageAttributes2693_06" style="display: none;">
+							<td width="75"><i>Derived: </i></td>
+							<td>False</td>
+						</tr>
+							<tr id="DetailsImageAttributes2693_07" style="display: none;">
+							<td width="75"><i>IsID: </i></td>
+						<td>False</td>
+						</tr>
+					</table>
+					
+					AE:Exclude=True<br>Map:CTOM=Observation.uncertaintyCode<br>Map:CTOM=ClinicalResult.uncertaintyCode<br>Map:CTOM=LesionDescription.uncertaintyCode<br>Map:CTOM=Histopathology.uncertaintyCode<br>Map:CTRv1.0=PerformedObservationResult.uncertaintyCode<br>Map:HCTv1.0=CDE 2695060:Lab Results.If FDA licensed nucleic acid amplification test (NAT) for human immunodeficiency virus(HIV)-1 performed; specify results<br>Map:LSDAMv2.2.3Plus=PerformedObservationResult.uncertaintyCode<br>
+						<div class="ObjectDetailsNotes"><table>
+	<tr>
+		<td valign="top">
+			<i>Notes: </i><span style="margin-left: .4cm;"> </span>
+		</td>
+		<td>
+			DEFINITION:&lt;br/&gt;A coded value specifying whether and to what degree this evaluation or observation has been asserted to be in doubt in any way. &lt;br/&gt;&lt;br/&gt;EXAMPLE(S):&lt;br/&gt;A patient might have had a cholecystectomy procedure in the past, but isn&#39;t sure what the outcome was. &lt;br/&gt;&lt;br/&gt;OTHER NAME(S):&lt;br/&gt;&lt;br/&gt;NOTE(S):&lt;br/&gt;
+		</td>
+	</tr>
+</table></div>
+
+						
+				</td>
+			</tr>			<tr>
+				<td width="100%" class="TableRow">
+					<i>Public BL</i><br /><strong>&nbsp;&nbsp;baselineIndicator</strong>
+				</td>
+			</tr>
+			<tr>
+				<td class="TableRowBottomDashed"  colspan="1">										
+					<a href="#" onclick="parent.toggleData('DetailsImageAttributes2694')" style="text-decoration: none; color: #000000;"><img src="../../images/plus03.gif" align="absmiddle" id="DetailsImageAttributes2694" border="0" />Details:</a>
+					<table border="0" cellspacing="0" cellpadding="0" class="Table" style="padding: 4px 18px;">
+					
+						<tr id="DetailsImageAttributes2694_00" style="display: none;">
+							<td width="75"><i>Alias:</i></td>
+							<td></td>
+						</tr>
+						<tr id="DetailsImageAttributes2694_01" style="display: none;">
+							<td width="75"><i>Initial:</i></td>
+							<td></td>
+						</tr>
+						<tr id="DetailsImageAttributes2694_02" style="display: none;">
+							<td width="75"><i>Stereotype: </i></td>
+							<td></td>
+						</tr>
+						<tr id="DetailsImageAttributes2694_03" style="display: none;">
+							<td width="75"><i>Ordered: </i></td>
+							<td></td>
+						</tr>
+						<tr id="DetailsImageAttributes2694_04" style="display: none;">
+							<td width="75"><i>Range: </i></td>
+							<td>Range:0 to 1</td>
+						</tr>
+						<tr id="DetailsImageAttributes2694_05" style="display: none;">
+							<td width="75"><i>Transient: </i></td>
+							<td>False</td>
+						</tr>
+						<tr id="DetailsImageAttributes2694_06" style="display: none;">
+							<td width="75"><i>Derived: </i></td>
+							<td>False</td>
+						</tr>
+							<tr id="DetailsImageAttributes2694_07" style="display: none;">
+							<td width="75"><i>IsID: </i></td>
+						<td>False</td>
+						</tr>
+					</table>
+					
+					Map:caAERSv2.2=AdverseEventReportingPeriod.isBaseline<br>Map:CTRv1.0=PerformedObservationResult.baselineIndicator<br>Map:LSDAMv2.2.3Plus=PerformedObservationResult.baselineIndicator<br>Map:PGx v1.0=BS.BSBLFL<br>Map:PGx v1.0=PF.PFBLFL<br>Map:SDTM IGv3.1.2=EG.EGBLFL<br>Map:SDTM IGv3.1.2=FA.FABLFL<br>Map:SDTM IGv3.1.2=MB.MBBLFL<br>Map:SDTM IGv3.1.2=LB.LBBLFL<br>Map:SDTM IGv3.1.2=QS.QSBLFL<br>Map:SDTM IGv3.1.2=MS.MSBLFL<br>Map:SDTM IGv3.1.2=VS.VSBLFL<br>Map:SDTM IGv3.1.3=VS.VSBLFL<br>Map:SDTM IGv3.1.3=QS.QSBLFL<br>Map:SDTM IGv3.1.3=MS.MSBLFL<br>Map:SDTM IGv3.1.3=MB.MBBLFL<br>Map:SDTM IGv3.1.3=LB.LBBLFL<br>Map:SDTM IGv3.1.3=FA.FABLFL<br>Map:SDTM IGv3.1.3=EG.EGBLFL<br>
+						<div class="ObjectDetailsNotes"><table>
+	<tr>
+		<td valign="top">
+			<i>Notes: </i><span style="margin-left: .4cm;"> </span>
+		</td>
+		<td>
+			DEFINITION:&lt;br/&gt;Specifies whether the result is a starting point to which other results may be compared.&lt;br/&gt;&lt;br/&gt;EXAMPLE(S):&lt;br/&gt;&lt;br/&gt;OTHER NAME(S):&lt;br/&gt;&lt;br/&gt;NOTE(S):&lt;br/&gt;
+		</td>
+	</tr>
+</table></div>
+
+						
+				</td>
+			</tr>			<tr>
+				<td width="100%" class="TableRow">
+					<i>Public TS.DATETIME</i><br /><strong>&nbsp;&nbsp;createdDate</strong>
+				</td>
+			</tr>
+			<tr>
+				<td class="TableRowBottomDashed"  colspan="1">										
+					<a href="#" onclick="parent.toggleData('DetailsImageAttributes2695')" style="text-decoration: none; color: #000000;"><img src="../../images/plus03.gif" align="absmiddle" id="DetailsImageAttributes2695" border="0" />Details:</a>
+					<table border="0" cellspacing="0" cellpadding="0" class="Table" style="padding: 4px 18px;">
+					
+						<tr id="DetailsImageAttributes2695_00" style="display: none;">
+							<td width="75"><i>Alias:</i></td>
+							<td></td>
+						</tr>
+						<tr id="DetailsImageAttributes2695_01" style="display: none;">
+							<td width="75"><i>Initial:</i></td>
+							<td></td>
+						</tr>
+						<tr id="DetailsImageAttributes2695_02" style="display: none;">
+							<td width="75"><i>Stereotype: </i></td>
+							<td></td>
+						</tr>
+						<tr id="DetailsImageAttributes2695_03" style="display: none;">
+							<td width="75"><i>Ordered: </i></td>
+							<td></td>
+						</tr>
+						<tr id="DetailsImageAttributes2695_04" style="display: none;">
+							<td width="75"><i>Range: </i></td>
+							<td>Range:0 to 1</td>
+						</tr>
+						<tr id="DetailsImageAttributes2695_05" style="display: none;">
+							<td width="75"><i>Transient: </i></td>
+							<td>False</td>
+						</tr>
+						<tr id="DetailsImageAttributes2695_06" style="display: none;">
+							<td width="75"><i>Derived: </i></td>
+							<td>False</td>
+						</tr>
+							<tr id="DetailsImageAttributes2695_07" style="display: none;">
+							<td width="75"><i>IsID: </i></td>
+						<td>False</td>
+						</tr>
+					</table>
+					
+					Map:caAERSv2.2=Outcome.date<br>Map:CTRv1.0=AdverseEventSeriousness.date<br>Map:LSDAMv2.2.3Plus=MolecularSequenceAnnotation.date<br>Map:LSDAMv2.2.3Plus=Data.creationDate<br>
+						<div class="ObjectDetailsNotes"><table>
+	<tr>
+		<td valign="top">
+			<i>Notes: </i><span style="margin-left: .4cm;"> </span>
+		</td>
+		<td>
+			DEFINITION:&lt;br/&gt;The date (and time) on which the result is created.&lt;br/&gt;&lt;br/&gt;EXAMPLE(S):&lt;br/&gt;A computational process runs for 3 days and generates data periodically in output files (resulting in a one-to-many relationship between the processing activity and the multiple resulting files).&lt;br/&gt;&lt;br/&gt;OTHER NAME(S):&lt;br/&gt;&lt;br/&gt;NOTE(S):&lt;br/&gt;The createdDate of results is distinct from reportedDate which represents the date on which results were reported to the requestor (usually a physician or similar entity) and distinct from the dateRange of the PerformedObservation which represents the time period during which the activity occurred.&lt;br/&gt;
+		</td>
+	</tr>
+</table></div>
+
+						
+				</td>
+			</tr>			<tr>
+				<td width="100%" class="TableRow">
+					<i>Public TS.DATETIME</i><br /><strong>&nbsp;&nbsp;reportedDate</strong>
+				</td>
+			</tr>
+			<tr>
+				<td class="TableRowBottomDashed"  colspan="1">										
+					<a href="#" onclick="parent.toggleData('DetailsImageAttributes2696')" style="text-decoration: none; color: #000000;"><img src="../../images/plus03.gif" align="absmiddle" id="DetailsImageAttributes2696" border="0" />Details:</a>
+					<table border="0" cellspacing="0" cellpadding="0" class="Table" style="padding: 4px 18px;">
+					
+						<tr id="DetailsImageAttributes2696_00" style="display: none;">
+							<td width="75"><i>Alias:</i></td>
+							<td></td>
+						</tr>
+						<tr id="DetailsImageAttributes2696_01" style="display: none;">
+							<td width="75"><i>Initial:</i></td>
+							<td></td>
+						</tr>
+						<tr id="DetailsImageAttributes2696_02" style="display: none;">
+							<td width="75"><i>Stereotype: </i></td>
+							<td></td>
+						</tr>
+						<tr id="DetailsImageAttributes2696_03" style="display: none;">
+							<td width="75"><i>Ordered: </i></td>
+							<td></td>
+						</tr>
+						<tr id="DetailsImageAttributes2696_04" style="display: none;">
+							<td width="75"><i>Range: </i></td>
+							<td>Range:0 to 1</td>
+						</tr>
+						<tr id="DetailsImageAttributes2696_05" style="display: none;">
+							<td width="75"><i>Transient: </i></td>
+							<td>False</td>
+						</tr>
+						<tr id="DetailsImageAttributes2696_06" style="display: none;">
+							<td width="75"><i>Derived: </i></td>
+							<td>False</td>
+						</tr>
+							<tr id="DetailsImageAttributes2696_07" style="display: none;">
+							<td width="75"><i>IsID: </i></td>
+						<td>False</td>
+						</tr>
+					</table>
+					
+					Map:AE=Reporter.initialReporterIndicator<br>Map:CTOM=ClinicalResult.reportingDate<br>Map:CTOM=Observation.reportingDate<br>Map:CTOM=LesionDescription.reportingDate<br>Map:CTOM=Histopathology.reportingDate<br>Map:CTRv1.0=PerformedObservationResult.reportedDate<br>Map:LSDAMv2.2.3Plus=PerformedObservationResult.reportedDate<br>Map:NCI CRF Standard=CDE 2435009v1.1: Protocol Deviation Notification Date<br>
+						<div class="ObjectDetailsNotes"><table>
+	<tr>
+		<td valign="top">
+			<i>Notes: </i><span style="margin-left: .4cm;"> </span>
+		</td>
+		<td>
+			DEFINITION:&lt;br/&gt;The date (and time) on which the result is reported.&lt;br/&gt;&lt;br/&gt;EXAMPLE(S):&lt;br/&gt;&lt;br/&gt;OTHER NAME(S):&lt;br/&gt;&lt;br/&gt;NOTE(S):&lt;br/&gt;
+		</td>
+	</tr>
+</table></div>
+
+						
+				</td>
+			</tr>			<tr>
+				<td width="100%" class="TableRow">
+					<i>Public ST</i><br /><strong>&nbsp;&nbsp;comment</strong>
+				</td>
+			</tr>
+			<tr>
+				<td class="TableRowBottomDashed"  colspan="1">										
+					<a href="#" onclick="parent.toggleData('DetailsImageAttributes2697')" style="text-decoration: none; color: #000000;"><img src="../../images/plus03.gif" align="absmiddle" id="DetailsImageAttributes2697" border="0" />Details:</a>
+					<table border="0" cellspacing="0" cellpadding="0" class="Table" style="padding: 4px 18px;">
+					
+						<tr id="DetailsImageAttributes2697_00" style="display: none;">
+							<td width="75"><i>Alias:</i></td>
+							<td></td>
+						</tr>
+						<tr id="DetailsImageAttributes2697_01" style="display: none;">
+							<td width="75"><i>Initial:</i></td>
+							<td></td>
+						</tr>
+						<tr id="DetailsImageAttributes2697_02" style="display: none;">
+							<td width="75"><i>Stereotype: </i></td>
+							<td></td>
+						</tr>
+						<tr id="DetailsImageAttributes2697_03" style="display: none;">
+							<td width="75"><i>Ordered: </i></td>
+							<td></td>
+						</tr>
+						<tr id="DetailsImageAttributes2697_04" style="display: none;">
+							<td width="75"><i>Range: </i></td>
+							<td>Range:0 to 1</td>
+						</tr>
+						<tr id="DetailsImageAttributes2697_05" style="display: none;">
+							<td width="75"><i>Transient: </i></td>
+							<td>False</td>
+						</tr>
+						<tr id="DetailsImageAttributes2697_06" style="display: none;">
+							<td width="75"><i>Derived: </i></td>
+							<td>False</td>
+						</tr>
+							<tr id="DetailsImageAttributes2697_07" style="display: none;">
+							<td width="75"><i>IsID: </i></td>
+						<td>False</td>
+						</tr>
+					</table>
+					
+					Map:caAERSv2.2=AdverseEvent.comments<br>Map:caAERSv2.2=ReportReviewComment<br>Map:caAERSv2.2=ReportingPeriodReviewComment<br>Map:CTOM=HistopathologyGrade.commentText<br>Map:CTOM=DiseaseResponse.commentText<br>Map:CTRv1.0=PerformedObservationResult.comment<br>Map:ICSRr2=Characteristics.text (in R_Product)<br>Map:Lab=LabResult.referenceRangeComments<br>Map:LSDAMv2.2.3Plus=PerformedObservationResult.comment<br>Map:NCI CRF Standard=CDE 797v5.0: Research Comments Text<br>Map:SDTM IGv3.1.1=CO.COVAL<br>Map:SDTM IGv3.1.2=CO.COVAL<br>Map:SDTM IGv3.1.3=CO.COVAL<br>
+						<div class="ObjectDetailsNotes"><table>
+	<tr>
+		<td valign="top">
+			<i>Notes: </i><span style="margin-left: .4cm;"> </span>
+		</td>
+		<td>
+			DEFINITION:&lt;br/&gt;Additional description of the observation result.&lt;br/&gt;&lt;br/&gt;EXAMPLE(S):&lt;br/&gt;Comments from the investigator regarding the condition of the specimen or any other observation.&lt;br/&gt;&lt;br/&gt;Comments in addition to the specimen condition from the central or performing laboratory describing the specimen.&lt;br/&gt;&lt;br/&gt;OTHER NAME(S):&lt;br/&gt;&lt;br/&gt;NOTE(S):&lt;br/&gt;
+		</td>
+	</tr>
+</table></div>
+
+						
+				</td>
+			</tr>
+	</table>
+</div>
+		<div class="ItemBody" id="AssociationsToTable">
+			<table border="0" cellspacing="0" cellpadding="0" class="Table">
+				<tr>
+					<td width="40%" class="TableHeading">Element</td>
+					<td width="30%" class="TableHeading">Source Role</td>
+					<td width="30%" class="TableHeading">Target Role</td>
+				</tr>
+				<tr>
+					<td width="40%" class="TableRow" valign="top">
+						<a href="EA391.htm">PerformedObservationResult</a><br />
+						Class &nbsp;
+					</td>
+					<td width="30%" class="TableRow" valign="top">
+						<strong>Name:</strong> inferredPerformedObservationResult<br />
+						&nbsp;
+					</td>
+					<td width="30%" class="TableRow" valign="top">
+						<strong>Name:</strong> infersPerformedObservationResult<br />
+						&nbsp;	
+					</td>
+				</tr>
+				<tr>
+					<td class="TableRowBottomDashed"  colspan="3">
+						<div class="DetailsDivParent"><img src="../../images/minus03.gif" align="absmiddle" id="DetailsImageLink2698" onclick="parent.toggleDiv('detailsDIVLink2698','DetailsImageLink2698')" />Details:
+							<div id="detailsDIVLink2698" class="DetailsDiv" >
+							<div class="ObjectDetailsNotes">DESCRIPTION:&lt;br/&gt;Each PerformedObservationResult might be inferred from one PerformedObservationResult. Each PerformedObservationResult might infer one or more PerformedObservationResult.&lt;br/&gt;&lt;br/&gt;DEFINITION:&lt;br/&gt;&lt;br/&gt;EXAMPLE(S):&lt;br/&gt;&lt;br/&gt;OTHER NAME(S):&lt;br/&gt;&lt;br/&gt;NOTE(S):&lt;br/&gt;&lt;br/&gt;</div>
+
+							</div>
+						</div>
+					</td>
+				</tr>
+				<tr>
+					<td width="40%" class="TableRow" valign="top">
+						<a href="EA390.htm">PerformedObservation</a><br />
+						Class &nbsp;
+					</td>
+					<td width="30%" class="TableRow" valign="top">
+						<strong>Name:</strong> resultedPerformedObservationResult<br />
+						&nbsp;
+					</td>
+					<td width="30%" class="TableRow" valign="top">
+						<strong>Name:</strong> producingPerformedObservation<br />
+						&nbsp;	
+					</td>
+				</tr>
+				<tr>
+					<td class="TableRowBottomDashed"  colspan="3">
+						<div class="DetailsDivParent"><img src="../../images/minus03.gif" align="absmiddle" id="DetailsImageLink2699" onclick="parent.toggleDiv('detailsDIVLink2699','DetailsImageLink2699')" />Details:
+							<div id="detailsDIVLink2699" class="DetailsDiv" >
+							<div class="ObjectDetailsNotes">DESCRIPTION:&lt;br/&gt;Each PerformedObservationResult always is a result of one PerformedObservation.&#160; Each PerformedObservation might result in one or more PerformedObservationResult.&lt;br/&gt;&lt;br/&gt;DEFINITION:&lt;br/&gt;&lt;br/&gt;EXAMPLE(S):&lt;br/&gt;&lt;br/&gt;OTHER NAME(S):&lt;br/&gt;&lt;br/&gt;NOTE(S):&lt;br/&gt;&lt;br/&gt;</div>
+
+							</div>
+						</div>
+					</td>
+				</tr>
+				<tr>
+					<td width="40%" class="TableRow" valign="top">
+						<a href="../EA6/EA213.htm">Biomarker</a><br />
+						Class &nbsp;
+					</td>
+					<td width="30%" class="TableRow" valign="top">
+						<strong>Name:</strong> establishingPerformedObservationResult<br />
+						&nbsp;
+					</td>
+					<td width="30%" class="TableRow" valign="top">
+						<strong>Name:</strong> establishedBiomarker<br />
+						&nbsp;	
+					</td>
+				</tr>
+				<tr>
+					<td class="TableRowBottomDashed"  colspan="3">
+						<div class="DetailsDivParent"><img src="../../images/minus03.gif" align="absmiddle" id="DetailsImageLink2700" onclick="parent.toggleDiv('detailsDIVLink2700','DetailsImageLink2700')" />Details:
+							<div id="detailsDIVLink2700" class="DetailsDiv" >
+							<div class="ObjectDetailsNotes">DESCRIPTION:&lt;br/&gt;Each PerformedObservationResult might establish one or more Biomarker.&#160; Each Biomarker might be established by one or more PerformedObservationResult.&lt;br/&gt;&lt;br/&gt;DEFINITION:&lt;br/&gt;Identifies the finding that results in the identification of a biomarker.&lt;br/&gt;&lt;br/&gt;EXAMPLE(S):&lt;br/&gt;&lt;br/&gt;OTHER NAME(S):&lt;br/&gt;&lt;br/&gt;NOTE(S):&lt;br/&gt;</div>
+
+							</div>
+						</div>
+					</td>
+				</tr>
+				<tr>
+					<td width="40%" class="TableRow" valign="top">
+						<a href="EA373.htm">PerformedActivity</a><br />
+						Class &nbsp;
+					</td>
+					<td width="30%" class="TableRow" valign="top">
+						<strong>Name:</strong> startEvaluatedPerformedObservationResult<br />
+						&nbsp;
+					</td>
+					<td width="30%" class="TableRow" valign="top">
+						<strong>Name:</strong> startRelatedPerformedActivity<br />
+						&nbsp;	
+					</td>
+				</tr>
+				<tr>
+					<td class="TableRowBottomDashed"  colspan="3">
+						<div class="DetailsDivParent"><img src="../../images/minus03.gif" align="absmiddle" id="DetailsImageLink2701" onclick="parent.toggleDiv('detailsDIVLink2701','DetailsImageLink2701')" />Details:
+							<div id="detailsDIVLink2701" class="DetailsDiv" >
+							<div class="ObjectDetailsNotes">DESCRIPTION:&lt;br/&gt;Each PerformedObservationResult might have start evaluated in relation to one PerformedActivity. Each PerformedActivity might be the timepoint for evaluating start of one or more PerformedObservationResult.&lt;br/&gt;&lt;br/&gt;DEFINITION:&lt;br/&gt;&lt;br/&gt;EXAMPLE(S):&lt;br/&gt;In CDISC SDTM, CESTTPT indicates a study event that may be a reference event for the start of a clinical event (PerformedObservationResult).&lt;br/&gt;&lt;br/&gt;OTHER NAME(S):&lt;br/&gt;&lt;br/&gt;NOTE(S):&lt;br/&gt;As per CDISC, any given observation result can have its start evaluated in relation to a performed activity. Likewise it can also have its end evaluated in relation to a performed activity.&#160; The two performed activities need not necessarily be the same in both cases, thus there are two distinct associations between PerformeObservationResult and PerformedActivity for evaluating start and end of the result.&lt;br/&gt;</div>
+
+							</div>
+						</div>
+					</td>
+				</tr>
+				<tr>
+					<td width="40%" class="TableRow" valign="top">
+						<a href="EA373.htm">PerformedActivity</a><br />
+						Class &nbsp;
+					</td>
+					<td width="30%" class="TableRow" valign="top">
+						<strong>Name:</strong> endEvaluatedPerformedObservationResult<br />
+						&nbsp;
+					</td>
+					<td width="30%" class="TableRow" valign="top">
+						<strong>Name:</strong> endRelatedPerformedActivity<br />
+						&nbsp;	
+					</td>
+				</tr>
+				<tr>
+					<td class="TableRowBottomDashed"  colspan="3">
+						<div class="DetailsDivParent"><img src="../../images/minus03.gif" align="absmiddle" id="DetailsImageLink2702" onclick="parent.toggleDiv('detailsDIVLink2702','DetailsImageLink2702')" />Details:
+							<div id="detailsDIVLink2702" class="DetailsDiv" >
+							<div class="ObjectDetailsNotes">DESCRIPTION:&lt;br/&gt;Each PerformedObservationResult might have end evaluated in relation to one PerformedActivity. Each PerformedActivity might be the timpoint for evaluating end of one or more PerformedObservationResult.&lt;br/&gt;&lt;br/&gt;DEFINITION:&lt;br/&gt;&lt;br/&gt;EXAMPLE(S):&lt;br/&gt;In CDISC SDTM, AEENTPT indicates a study event that may be a reference event for the end of an adverse event, CEENTPT indicates a study event that may be a reference event for the end of a clinical event (PerformedObservationResult) and MHENTPT indicates a study event that may be a reference event for the end of a medical condition (PerformedMedicalConditionResult).&lt;br/&gt;&lt;br/&gt;OTHER NAME(S):&lt;br/&gt;&lt;br/&gt;NOTE(S):&lt;br/&gt;As per CDISC, any given observation result can have its start evaluated in relation to a performed activities. Likewise it can also have its end evaluated in relation to a performed activity.&#160; The two performed activities need not necessarily be the same in both cases, thus there are two distinct associations between PerformeObservationResult and PerformedActivity for evaluating start and end of the result.&lt;br/&gt;&lt;br/&gt;</div>
+
+							</div>
+						</div>
+					</td>
+				</tr>
+
+			</table>
+		</div>
+		<div class="ItemBody" id="AssociationsFromTable">
+			<table border="0" cellspacing="0" cellpadding="0" class="Table">
+				<tr>
+					<td width="40%" class="TableHeading">Element</td>
+					<td width="30%" class="TableHeading">Source Role</td>
+					<td width="30%" class="TableHeading">Target Role</td>
+				</tr>
+				<tr>
+					<td width="40%" class="TableRow" valign="top">
+						<a href="EA391.htm">PerformedObservationResult</a><br />
+						Class &nbsp;
+					</td>
+					<td width="30%" class="TableRow" valign="top">
+						<strong>Name:</strong> inferredPerformedObservationResult<br />
+						&nbsp;
+					</td>
+					<td width="30%" class="TableRow" valign="top">
+						<strong>Name:</strong> infersPerformedObservationResult<br />
+						&nbsp;	
+					</td>
+				</tr>
+				<tr>
+					<td class="TableRowBottomDashed"  colspan="3">
+						<div class="DetailsDivParent"><img src="../../images/minus03.gif" align="absmiddle" id="DetailsImageLink2703" onclick="parent.toggleDiv('detailsDIVLink2703','DetailsImageLink2703')" />Details:
+							<div id="detailsDIVLink2703" class="DetailsDiv" >
+							<div class="ObjectDetailsNotes">DESCRIPTION:&lt;br/&gt;Each PerformedObservationResult might be inferred from one PerformedObservationResult. Each PerformedObservationResult might infer one or more PerformedObservationResult.&lt;br/&gt;&lt;br/&gt;DEFINITION:&lt;br/&gt;&lt;br/&gt;EXAMPLE(S):&lt;br/&gt;&lt;br/&gt;OTHER NAME(S):&lt;br/&gt;&lt;br/&gt;NOTE(S):&lt;br/&gt;&lt;br/&gt;</div>
+
+							</div>
+						</div>
+					</td>
+				</tr>
+				<tr>
+					<td width="40%" class="TableRow" valign="top">
+						<a href="EA392.htm">PerformedProcedure</a><br />
+						Class &nbsp;
+					</td>
+					<td width="30%" class="TableRow" valign="top">
+						<strong>Name:</strong> recordedPerformedProcedure<br />
+						&nbsp;
+					</td>
+					<td width="30%" class="TableRow" valign="top">
+						<strong>Name:</strong> triggeringPerformedObservationResult<br />
+						&nbsp;	
+					</td>
+				</tr>
+				<tr>
+					<td class="TableRowBottomDashed"  colspan="3">
+						<div class="DetailsDivParent"><img src="../../images/minus03.gif" align="absmiddle" id="DetailsImageLink2704" onclick="parent.toggleDiv('detailsDIVLink2704','DetailsImageLink2704')" />Details:
+							<div id="detailsDIVLink2704" class="DetailsDiv" >
+							<div class="ObjectDetailsNotes">DESCRIPTION:&lt;br/&gt;Each PerformedProcedure might be recorded as a result of one PerformedObservationResult. Each PerformedObservationResult might result in recording one or more PerformedProcedure.&lt;br/&gt;&lt;br/&gt;DEFINITION:&lt;br/&gt;&lt;br/&gt;EXAMPLE(S):&lt;br/&gt;&lt;br/&gt;OTHER NAME(S):&lt;br/&gt;&lt;br/&gt;NOTE(S):&lt;br/&gt;&lt;br/&gt;</div>
+
+							</div>
+						</div>
+					</td>
+				</tr>
+				<tr>
+					<td width="40%" class="TableRow" valign="top">
+						<a href="../EA3/EA122.htm">PointOfContact</a><br />
+						Class &nbsp;
+					</td>
+					<td width="30%" class="TableRow" valign="top">
+						<strong>Name:</strong> supportingPointOfContact<br />
+						&nbsp;
+					</td>
+					<td width="30%" class="TableRow" valign="top">
+						<strong>Name:</strong> supportedPerformedObservationResult<br />
+						&nbsp;	
+					</td>
+				</tr>
+				<tr>
+					<td class="TableRowBottomDashed"  colspan="3">
+						<div class="DetailsDivParent"><img src="../../images/minus03.gif" align="absmiddle" id="DetailsImageLink2705" onclick="parent.toggleDiv('detailsDIVLink2705','DetailsImageLink2705')" />Details:
+							<div id="detailsDIVLink2705" class="DetailsDiv" >
+							<div class="ObjectDetailsNotes">DESCRIPTION:&lt;br/&gt;Each PointOfContact might support one or more PerformedObservationResult.&#160; Each PerformedObservationResult might be supported by one or more PointOfContact.&lt;br/&gt;&lt;br/&gt;DEFINITION:&lt;br/&gt;&lt;br/&gt;EXAMPLE(S):&lt;br/&gt;&lt;br/&gt;OTHER NAME(S):&lt;br/&gt;&lt;br/&gt;NOTE(S):&lt;br/&gt;</div>
+
+							</div>
+						</div>
+					</td>
+				</tr>
+				<tr>
+					<td width="40%" class="TableRow" valign="top">
+						<a href="../EA3/EA136.htm">ReportVersion</a><br />
+						Class &nbsp;
+					</td>
+					<td width="30%" class="TableRow" valign="top">
+						<strong>Name:</strong> describingReportVersion<br />
+						&nbsp;
+					</td>
+					<td width="30%" class="TableRow" valign="top">
+						<strong>Name:</strong> describedPerformedObservationResult<br />
+						&nbsp;	
+					</td>
+				</tr>
+				<tr>
+					<td class="TableRowBottomDashed"  colspan="3">
+						<div class="DetailsDivParent"><img src="../../images/minus03.gif" align="absmiddle" id="DetailsImageLink2706" onclick="parent.toggleDiv('detailsDIVLink2706','DetailsImageLink2706')" />Details:
+							<div id="detailsDIVLink2706" class="DetailsDiv" >
+							<div class="ObjectDetailsNotes">DESCRIPTION:&lt;br/&gt;Each ReportVersion might describe one or more PerformedObservationResult.&#160; Each PerformedObservationResult might be described by one or more ReportVersion.&lt;br/&gt;&lt;br/&gt;DEFINITION:&lt;br/&gt;&lt;br/&gt;EXAMPLE(S):&lt;br/&gt;surgical pathology report describes observations about a specimen collection group&lt;br/&gt;&lt;br/&gt;OTHER NAME(S):&lt;br/&gt;&lt;br/&gt;NOTE(S):&lt;br/&gt;</div>
+
+							</div>
+						</div>
+					</td>
+				</tr>
+				<tr>
+					<td width="40%" class="TableRow" valign="top">
+						<a href="EA390.htm">PerformedObservation</a><br />
+						Class &nbsp;
+					</td>
+					<td width="30%" class="TableRow" valign="top">
+						<strong>Name:</strong> recordedPerformedObservation<br />
+						&nbsp;
+					</td>
+					<td width="30%" class="TableRow" valign="top">
+						<strong>Name:</strong> triggeringPerformedObservationResult<br />
+						&nbsp;	
+					</td>
+				</tr>
+				<tr>
+					<td class="TableRowBottomDashed"  colspan="3">
+						<div class="DetailsDivParent"><img src="../../images/minus03.gif" align="absmiddle" id="DetailsImageLink2707" onclick="parent.toggleDiv('detailsDIVLink2707','DetailsImageLink2707')" />Details:
+							<div id="detailsDIVLink2707" class="DetailsDiv" >
+							<div class="ObjectDetailsNotes">DESCRIPTION:&lt;br/&gt;Each PerformedObservation might be recorded as a result of one PerformedObservationResult. Each PerformedObservationResult might result in recording one or more PerformedObservation.&lt;br/&gt;&lt;br/&gt;DEFINITION:&lt;br/&gt;&lt;br/&gt;EXAMPLE(S):&lt;br/&gt;&lt;br/&gt;OTHER NAME(S):&lt;br/&gt;&lt;br/&gt;NOTE(S):&lt;br/&gt;</div>
+
+							</div>
+						</div>
+					</td>
+				</tr>
+				<tr>
+					<td width="40%" class="TableRow" valign="top">
+						<a href="EA366.htm">AssessedResultRelationship</a><br />
+						Class &nbsp;
+					</td>
+					<td width="30%" class="TableRow" valign="top">
+						<strong>Name:</strong> assessingAssessedResultRelationship<br />
+						&nbsp;
+					</td>
+					<td width="30%" class="TableRow" valign="top">
+						<strong>Name:</strong> assessedPerformedObservationResult<br />
+						&nbsp;	
+					</td>
+				</tr>
+				<tr>
+					<td class="TableRowBottomDashed"  colspan="3">
+						<div class="DetailsDivParent"><img src="../../images/minus03.gif" align="absmiddle" id="DetailsImageLink2708" onclick="parent.toggleDiv('detailsDIVLink2708','DetailsImageLink2708')" />Details:
+							<div id="detailsDIVLink2708" class="DetailsDiv" >
+							<div class="ObjectDetailsNotes">DESCRIPTION:&lt;br/&gt;Each AssessedResultRelationship always has as subject one PerformedObservationResult. Each PerformedObservationResult might be the subject of one or more AssessedResultRelationship.&lt;br/&gt;&lt;br/&gt;DEFINITION:&lt;br/&gt;&lt;br/&gt;EXAMPLE(S):&lt;br/&gt;&lt;br/&gt;OTHER NAME(S):&lt;br/&gt;&lt;br/&gt;NOTE(S):&lt;br/&gt;&lt;br/&gt;</div>
+
+							</div>
+						</div>
+					</td>
+				</tr>
+				<tr>
+					<td width="40%" class="TableRow" valign="top">
+						<a href="../EA1/EA37.htm">EvaluatedResultRelationship</a><br />
+						Class &nbsp;
+					</td>
+					<td width="30%" class="TableRow" valign="top">
+						<strong>Name:</strong> evaluatingEvaluatedResultRelationship<br />
+						&nbsp;
+					</td>
+					<td width="30%" class="TableRow" valign="top">
+						<strong>Name:</strong> evaluatedPerformedObservationResult<br />
+						&nbsp;	
+					</td>
+				</tr>
+				<tr>
+					<td class="TableRowBottomDashed"  colspan="3">
+						<div class="DetailsDivParent"><img src="../../images/minus03.gif" align="absmiddle" id="DetailsImageLink2709" onclick="parent.toggleDiv('detailsDIVLink2709','DetailsImageLink2709')" />Details:
+							<div id="detailsDIVLink2709" class="DetailsDiv" >
+							<div class="ObjectDetailsNotes">DESCRIPTION:&lt;br/&gt;Each EvaluatedResultRelationship always evaluates one PerformedObservationResult. Each PerformedObservationResult might be evaluated by one or more EvaluatedResultRelationship.&lt;br/&gt;&lt;br/&gt;DEFINITION:&lt;br/&gt;&lt;br/&gt;EXAMPLE(S):&lt;br/&gt;&lt;br/&gt;OTHER NAME(S):&lt;br/&gt;&lt;br/&gt;NOTE(S):&lt;br/&gt;&lt;br/&gt;</div>
+
+							</div>
+						</div>
+					</td>
+				</tr>
+				<tr>
+					<td width="40%" class="TableRow" valign="top">
+						<a href="../EA3/EA92.htm">DocumentVersion</a><br />
+						Class &nbsp;
+					</td>
+					<td width="30%" class="TableRow" valign="top">
+						<strong>Name:</strong> containingDocumentVersion<br />
+						&nbsp;
+					</td>
+					<td width="30%" class="TableRow" valign="top">
+						<strong>Name:</strong> containedPerformedObservationResult<br />
+						&nbsp;	
+					</td>
+				</tr>
+				<tr>
+					<td class="TableRowBottomDashed"  colspan="3">
+						<div class="DetailsDivParent"><img src="../../images/minus03.gif" align="absmiddle" id="DetailsImageLink2710" onclick="parent.toggleDiv('detailsDIVLink2710','DetailsImageLink2710')" />Details:
+							<div id="detailsDIVLink2710" class="DetailsDiv" >
+							<div class="ObjectDetailsNotes">DESCRIPTION:&lt;br/&gt;Each DocumentVersion might contain one or more PerformedObservationResult.&#160; Each PerformedObservationResult might be the contents for one or more DocumentVersion.&lt;br/&gt;&lt;br/&gt;DEFINITION:&lt;br/&gt;&lt;br/&gt;EXAMPLE(S):&lt;br/&gt;A finding might be published in a scientific journal.&lt;br/&gt;&lt;br/&gt;A data set produced by a computational process might be circulated as a document.&lt;br/&gt;&lt;br/&gt;OTHER NAME(S):&lt;br/&gt;&lt;br/&gt;NOTE(S):&lt;br/&gt;</div>
+
+							</div>
+						</div>
+					</td>
+				</tr>
+				<tr>
+					<td width="40%" class="TableRow" valign="top">
+						<a href="EA430.htm">TargetAnatomicSite</a><br />
+						Class &nbsp;
+					</td>
+					<td width="30%" class="TableRow" valign="top">
+						<strong>Name:</strong> describingTargetAnatomicSite<br />
+						&nbsp;
+					</td>
+					<td width="30%" class="TableRow" valign="top">
+						<strong>Name:</strong> describedPerformedObservationResult<br />
+						&nbsp;	
+					</td>
+				</tr>
+				<tr>
+					<td class="TableRowBottomDashed"  colspan="3">
+						<div class="DetailsDivParent"><img src="../../images/minus03.gif" align="absmiddle" id="DetailsImageLink2711" onclick="parent.toggleDiv('detailsDIVLink2711','DetailsImageLink2711')" />Details:
+							<div id="detailsDIVLink2711" class="DetailsDiv" >
+							<div class="ObjectDetailsNotes">DESCRIPTION:&lt;br/&gt;Each TargetAnatomicSite always described one PerformedObservationResult. Each PerformedObservationResult might be described by one or more TargetAnatomicSite.&lt;br/&gt;&lt;br/&gt;DEFINITION:&lt;br/&gt;Indicates result being described by a particular site.&lt;br/&gt;&lt;br/&gt;EXAMPLE(S):&lt;br/&gt;&lt;br/&gt;OTHER NAME(S):&lt;br/&gt;&lt;br/&gt;NOTE(S):&lt;br/&gt;</div>
+
+							</div>
+						</div>
+					</td>
+				</tr>
+				<tr>
+					<td width="40%" class="TableRow" valign="top">
+						<a href="EA406.htm">ResultClassification</a><br />
+						Class &nbsp;
+					</td>
+					<td width="30%" class="TableRow" valign="top">
+						<strong>Name:</strong> classifyingResultClassification<br />
+						&nbsp;
+					</td>
+					<td width="30%" class="TableRow" valign="top">
+						<strong>Name:</strong> classifiedPerformedObservationResult<br />
+						&nbsp;	
+					</td>
+				</tr>
+				<tr>
+					<td class="TableRowBottomDashed"  colspan="3">
+						<div class="DetailsDivParent"><img src="../../images/minus03.gif" align="absmiddle" id="DetailsImageLink2712" onclick="parent.toggleDiv('detailsDIVLink2712','DetailsImageLink2712')" />Details:
+							<div id="detailsDIVLink2712" class="DetailsDiv" >
+							<div class="ObjectDetailsNotes">DESCRIPTION:&lt;br/&gt;Each ResultClassification always classifies one PerformedObservationResult.&#160; Each PerformedObservationResult might be classified by one or more ResultClassification.&lt;br/&gt;&lt;br/&gt;DEFINITION:&lt;br/&gt;&lt;br/&gt;EXAMPLE(S):&lt;br/&gt;&lt;br/&gt;OTHER NAME(S):&lt;br/&gt;&lt;br/&gt;NOTE(S):&lt;br/&gt;</div>
+
+							</div>
+						</div>
+					</td>
+				</tr>
+				<tr>
+					<td width="40%" class="TableRow" valign="top">
+						<a href="EA372.htm">ObservationResultActionTakenRelationship</a><br />
+						Class &nbsp;
+					</td>
+					<td width="30%" class="TableRow" valign="top">
+						<strong>Name:</strong> triggeredObservationResultActionTakenRelationship<br />
+						&nbsp;
+					</td>
+					<td width="30%" class="TableRow" valign="top">
+						<strong>Name:</strong> triggeringPerformedObservationResult<br />
+						&nbsp;	
+					</td>
+				</tr>
+				<tr>
+					<td class="TableRowBottomDashed"  colspan="3">
+						<div class="DetailsDivParent"><img src="../../images/minus03.gif" align="absmiddle" id="DetailsImageLink2713" onclick="parent.toggleDiv('detailsDIVLink2713','DetailsImageLink2713')" />Details:
+							<div id="detailsDIVLink2713" class="DetailsDiv" >
+							<div class="ObjectDetailsNotes">DESCRIPTION:&lt;br/&gt;Each ObservationResultActionTakenRelationship always is triggered by one PerformedObservationResult. Each PerformedObservationResult might trigger one or more ObservationResultActionTakenRelationship.&lt;br/&gt;&lt;br/&gt;DEFINITION:&lt;br/&gt;Indicates the ObservationResult that causes the initiation of a PerformedActivity&lt;br/&gt;&lt;br/&gt;EXAMPLE(S):&lt;br/&gt;&lt;br/&gt;OTHER NAME(S):&lt;br/&gt;&lt;br/&gt;NOTE(S):&lt;br/&gt;</div>
+
+							</div>
+						</div>
+					</td>
+				</tr>
+				<tr>
+					<td width="40%" class="TableRow" valign="top">
+						<a href="../EA6/EA213.htm">Biomarker</a><br />
+						Class &nbsp;
+					</td>
+					<td width="30%" class="TableRow" valign="top">
+						<strong>Name:</strong> basingBiomarker<br />
+						&nbsp;
+					</td>
+					<td width="30%" class="TableRow" valign="top">
+						<strong>Name:</strong> basedPerformedObservationResult<br />
+						&nbsp;	
+					</td>
+				</tr>
+				<tr>
+					<td class="TableRowBottomDashed"  colspan="3">
+						<div class="DetailsDivParent"><img src="../../images/minus03.gif" align="absmiddle" id="DetailsImageLink2714" onclick="parent.toggleDiv('detailsDIVLink2714','DetailsImageLink2714')" />Details:
+							<div id="detailsDIVLink2714" class="DetailsDiv" >
+							<div class="ObjectDetailsNotes">DESCRIPTION:&lt;br/&gt;Each Biomarker might be based on one or more PerformedObservationResult.&#160; Each PerformedObservationResult might be the basis of one or more Biomarker.&lt;br/&gt;&lt;br/&gt;DEFINITION:&lt;br/&gt;&lt;br/&gt;EXAMPLE(S):&lt;br/&gt;An image annotation might be the basis for a biomarker.&lt;br/&gt;&lt;br/&gt;OTHER NAME(S):&lt;br/&gt;&lt;br/&gt;NOTE(S):&lt;br/&gt;</div>
+
+							</div>
+						</div>
+					</td>
+				</tr>
+
+			</table>
+		</div>
+<div class="ItemBody" id="TaggedValTable">
+	<table align="center" border="0" cellspacing="0" cellpadding="0" class="Table">
+		<tr>
+			<td width="50%" class="TableHeading">Tag</td>
+			<td width="50%" class="TableHeading">Value</td>
+		</tr>
+					<tr>
+				<td width="50%" class="TableRow" valign="top">Map:AIM v4 rv48</td>
+				<td width="50%" class="TableRow" valign="top">CalculationResult</td>
+			</tr>	
+			<tr>
+				<td class="TableRowBottomDashed"  colspan="2">
+					<div class="DetailsDivParent"><img src="../../images/minus03.gif" align="absmiddle" id="DetailsImageScenario2715" onclick="parent.toggleDiv('detailsDIVScenario2715','DetailsImageScenario2715')" />Details:
+						<div id="detailsDIVScenario2715" class="DetailsDiv" >
+						&nbsp;
+						</div>
+					</div>
+				</td>
+			</tr>			<tr>
+				<td width="50%" class="TableRow" valign="top">Map:C3PRv2.9</td>
+				<td width="50%" class="TableRow" valign="top">SubjectEligibilityAnswer</td>
+			</tr>	
+			<tr>
+				<td class="TableRowBottomDashed"  colspan="2">
+					<div class="DetailsDivParent"><img src="../../images/minus03.gif" align="absmiddle" id="DetailsImageScenario2716" onclick="parent.toggleDiv('detailsDIVScenario2716','DetailsImageScenario2716')" />Details:
+						<div id="detailsDIVScenario2716" class="DetailsDiv" >
+						&nbsp;
+						</div>
+					</div>
+				</td>
+			</tr>			<tr>
+				<td width="50%" class="TableRow" valign="top">Map:CTRPv3.8</td>
+				<td width="50%" class="TableRow" valign="top">ObservationResult</td>
+			</tr>	
+			<tr>
+				<td class="TableRowBottomDashed"  colspan="2">
+					<div class="DetailsDivParent"><img src="../../images/minus03.gif" align="absmiddle" id="DetailsImageScenario2717" onclick="parent.toggleDiv('detailsDIVScenario2717','DetailsImageScenario2717')" />Details:
+						<div id="detailsDIVScenario2717" class="DetailsDiv" >
+						&nbsp;
+						</div>
+					</div>
+				</td>
+			</tr>			<tr>
+				<td width="50%" class="TableRow" valign="top">Map:CTRPv3.8</td>
+				<td width="50%" class="TableRow" valign="top">PerformedObservationResult</td>
+			</tr>	
+			<tr>
+				<td class="TableRowBottomDashed"  colspan="2">
+					<div class="DetailsDivParent"><img src="../../images/minus03.gif" align="absmiddle" id="DetailsImageScenario2718" onclick="parent.toggleDiv('detailsDIVScenario2718','DetailsImageScenario2718')" />Details:
+						<div id="detailsDIVScenario2718" class="DetailsDiv" >
+						&nbsp;
+						</div>
+					</div>
+				</td>
+			</tr>			<tr>
+				<td width="50%" class="TableRow" valign="top">Map:CTRv1.0</td>
+				<td width="50%" class="TableRow" valign="top">PerformedObservationResult</td>
+			</tr>	
+			<tr>
+				<td class="TableRowBottomDashed"  colspan="2">
+					<div class="DetailsDivParent"><img src="../../images/minus03.gif" align="absmiddle" id="DetailsImageScenario2719" onclick="parent.toggleDiv('detailsDIVScenario2719','DetailsImageScenario2719')" />Details:
+						<div id="detailsDIVScenario2719" class="DetailsDiv" >
+						&nbsp;
+						</div>
+					</div>
+				</td>
+			</tr>			<tr>
+				<td width="50%" class="TableRow" valign="top">Map:HCTv1.0</td>
+				<td width="50%" class="TableRow" valign="top">CDE 2769634:Adverse Events.Specify other most likely cause of the adverse event:</td>
+			</tr>	
+			<tr>
+				<td class="TableRowBottomDashed"  colspan="2">
+					<div class="DetailsDivParent"><img src="../../images/minus03.gif" align="absmiddle" id="DetailsImageScenario2720" onclick="parent.toggleDiv('detailsDIVScenario2720','DetailsImageScenario2720')" />Details:
+						<div id="detailsDIVScenario2720" class="DetailsDiv" >
+						&nbsp;
+						</div>
+					</div>
+				</td>
+			</tr>			<tr>
+				<td width="50%" class="TableRow" valign="top">Map:ICSRr2</td>
+				<td width="50%" class="TableRow" valign="top">Characteristics (in R_Product)</td>
+			</tr>	
+			<tr>
+				<td class="TableRowBottomDashed"  colspan="2">
+					<div class="DetailsDivParent"><img src="../../images/minus03.gif" align="absmiddle" id="DetailsImageScenario2721" onclick="parent.toggleDiv('detailsDIVScenario2721','DetailsImageScenario2721')" />Details:
+						<div id="detailsDIVScenario2721" class="DetailsDiv" >
+						&nbsp;
+						</div>
+					</div>
+				</td>
+			</tr>			<tr>
+				<td width="50%" class="TableRow" valign="top">Map:ICSRr2</td>
+				<td width="50%" class="TableRow" valign="top">InvestigationCharacteristic (in IndividualCaseSafetyReport)</td>
+			</tr>	
+			<tr>
+				<td class="TableRowBottomDashed"  colspan="2">
+					<div class="DetailsDivParent"><img src="../../images/minus03.gif" align="absmiddle" id="DetailsImageScenario2722" onclick="parent.toggleDiv('detailsDIVScenario2722','DetailsImageScenario2722')" />Details:
+						<div id="detailsDIVScenario2722" class="DetailsDiv" >
+						&nbsp;
+						</div>
+					</div>
+				</td>
+			</tr>			<tr>
+				<td width="50%" class="TableRow" valign="top">Map:LSDAMv2.2.3Plus</td>
+				<td width="50%" class="TableRow" valign="top">PerformedSpecimenReviewResult</td>
+			</tr>	
+			<tr>
+				<td class="TableRowBottomDashed"  colspan="2">
+					<div class="DetailsDivParent"><img src="../../images/minus03.gif" align="absmiddle" id="DetailsImageScenario2723" onclick="parent.toggleDiv('detailsDIVScenario2723','DetailsImageScenario2723')" />Details:
+						<div id="detailsDIVScenario2723" class="DetailsDiv" >
+						&nbsp;
+						</div>
+					</div>
+				</td>
+			</tr>			<tr>
+				<td width="50%" class="TableRow" valign="top">Map:LSDAMv2.2.3Plus</td>
+				<td width="50%" class="TableRow" valign="top">PerformedPathologicalStaging</td>
+			</tr>	
+			<tr>
+				<td class="TableRowBottomDashed"  colspan="2">
+					<div class="DetailsDivParent"><img src="../../images/minus03.gif" align="absmiddle" id="DetailsImageScenario2724" onclick="parent.toggleDiv('detailsDIVScenario2724','DetailsImageScenario2724')" />Details:
+						<div id="detailsDIVScenario2724" class="DetailsDiv" >
+						&nbsp;
+						</div>
+					</div>
+				</td>
+			</tr>			<tr>
+				<td width="50%" class="TableRow" valign="top">Map:LSDAMv2.2.3Plus</td>
+				<td width="50%" class="TableRow" valign="top">PerformedObservationResult</td>
+			</tr>	
+			<tr>
+				<td class="TableRowBottomDashed"  colspan="2">
+					<div class="DetailsDivParent"><img src="../../images/minus03.gif" align="absmiddle" id="DetailsImageScenario2725" onclick="parent.toggleDiv('detailsDIVScenario2725','DetailsImageScenario2725')" />Details:
+						<div id="detailsDIVScenario2725" class="DetailsDiv" >
+						&nbsp;
+						</div>
+					</div>
+				</td>
+			</tr>			<tr>
+				<td width="50%" class="TableRow" valign="top">Map:LSDAMv2.2.3Plus</td>
+				<td width="50%" class="TableRow" valign="top">ImageAnnotation</td>
+			</tr>	
+			<tr>
+				<td class="TableRowBottomDashed"  colspan="2">
+					<div class="DetailsDivParent"><img src="../../images/minus03.gif" align="absmiddle" id="DetailsImageScenario2726" onclick="parent.toggleDiv('detailsDIVScenario2726','DetailsImageScenario2726')" />Details:
+						<div id="detailsDIVScenario2726" class="DetailsDiv" >
+						&nbsp;
+						</div>
+					</div>
+				</td>
+			</tr>			<tr>
+				<td width="50%" class="TableRow" valign="top">Map:LSDAMv2.2.3Plus</td>
+				<td width="50%" class="TableRow" valign="top">Finding</td>
+			</tr>	
+			<tr>
+				<td class="TableRowBottomDashed"  colspan="2">
+					<div class="DetailsDivParent"><img src="../../images/minus03.gif" align="absmiddle" id="DetailsImageScenario2727" onclick="parent.toggleDiv('detailsDIVScenario2727','DetailsImageScenario2727')" />Details:
+						<div id="detailsDIVScenario2727" class="DetailsDiv" >
+						&nbsp;
+						</div>
+					</div>
+				</td>
+			</tr>			<tr>
+				<td width="50%" class="TableRow" valign="top">Map:LSDAMv2.2.3Plus</td>
+				<td width="50%" class="TableRow" valign="top">Data</td>
+			</tr>	
+			<tr>
+				<td class="TableRowBottomDashed"  colspan="2">
+					<div class="DetailsDivParent"><img src="../../images/minus03.gif" align="absmiddle" id="DetailsImageScenario2728" onclick="parent.toggleDiv('detailsDIVScenario2728','DetailsImageScenario2728')" />Details:
+						<div id="detailsDIVScenario2728" class="DetailsDiv" >
+						&nbsp;
+						</div>
+					</div>
+				</td>
+			</tr>
+	</table>
+</div>		<div class="ItemBody" id="LinksTable">
+			<table align="center" border="0" cellspacing="0" cellpadding="0" class="Table">
+				<tr>
+					<td width="30%" class="TableHeading">Object</td>
+					<td width="10%" class="TableHeading">Type</td>
+					<td width="10%" class="TableHeading">Connection</td>
+					<td width="10%" class="TableHeading">Direction</td>
+					<td width="40%" class="TableHeading">Notes</td>
+				</tr>
+				<tr>
+					<td width="30%" class="TableRow" valign="top"><a href="EA376.htm">PerformedClinicalResult</a></td>
+					<td width="10%" class="TableRow" valign="top">Class</td>
+					<td width="10%" class="TableRow" valign="top">Generalization</td>
+					<td width="10%" class="TableRow" valign="top">From</td>
+					<td width="40%" class="TableRow" valign="top">DESCRIPTION:
+Each PerformedClinicalResult always specializes one PerformedObservationResult. Each PerformedObservationResult might be specialized by one PerformedClinicalResult.
+
+DEFINITION:
+
+EXAMPLE(S):
+
+OTHER NAME(S):
+
+NOTE(S):
+</td>
+				</tr>
+				<tr>
+					<td width="30%" class="TableRow" valign="top"><a href="../EA1/EA41.htm">PerformedProductInvestigationResult</a></td>
+					<td width="10%" class="TableRow" valign="top">Class</td>
+					<td width="10%" class="TableRow" valign="top">Generalization</td>
+					<td width="10%" class="TableRow" valign="top">From</td>
+					<td width="40%" class="TableRow" valign="top">DESCRIPTION:
+Each PerformedProductInvestigationResult always specializes one PerformedObservationResult. Each PerformedObservationResult might be specialized by one PerformedProductInvestigationResult.
+
+DEFINITION:
+
+EXAMPLE(S):
+
+OTHER NAME(S):
+
+NOTE(S):
+</td>
+				</tr>
+				<tr>
+					<td width="30%" class="TableRow" valign="top"><a href="EA394.htm">PerformedProtocolDeviation</a></td>
+					<td width="10%" class="TableRow" valign="top">Class</td>
+					<td width="10%" class="TableRow" valign="top">Generalization</td>
+					<td width="10%" class="TableRow" valign="top">From</td>
+					<td width="40%" class="TableRow" valign="top">DESCRIPTION:
+Each PerformedProtocolDeviation always specializes one PerformedObservationResult. Each PerformedObservationResult might be specialized by one PerformedProtocolDeviation.
+
+DEFINITION:
+
+EXAMPLE(S):
+
+OTHER NAME(S):
+
+NOTE(S):
+</td>
+				</tr>
+				<tr>
+					<td width="30%" class="TableRow" valign="top"><a href="../EA1/EA42.htm">PerformedProductProblemDiscovery</a></td>
+					<td width="10%" class="TableRow" valign="top">Class</td>
+					<td width="10%" class="TableRow" valign="top">Generalization</td>
+					<td width="10%" class="TableRow" valign="top">From</td>
+					<td width="40%" class="TableRow" valign="top">DESCRIPTION:
+Each PerformedProductProblemDiscovery always specializes one PerformedObservationResult. Each PerformedObservationResult might be specialized by one PerformedProductProblemDiscovery.
+
+DEFINITION:
+
+EXAMPLE(S):
+
+OTHER NAME(S):
+
+NOTE(S):
+</td>
+				</tr>
+				<tr>
+					<td width="30%" class="TableRow" valign="top"><a href="EA388.htm">PerformedMedicalConditionResult</a></td>
+					<td width="10%" class="TableRow" valign="top">Class</td>
+					<td width="10%" class="TableRow" valign="top">Generalization</td>
+					<td width="10%" class="TableRow" valign="top">From</td>
+					<td width="40%" class="TableRow" valign="top">DESCRIPTION:
+Each PerformedMedicalConditionResult always specializes one PerformedObservationResult. Each PerformedObservationResult might be specialized by one PerformedMedicalConditionResult.
+
+DEFINITION:
+
+EXAMPLE(S):
+
+OTHER NAME(S):
+
+NOTE(S):
+</td>
+				</tr>
+				<tr>
+					<td width="30%" class="TableRow" valign="top"><a href="../EA6/EA232.htm">PerformedGeneticInterpretation</a></td>
+					<td width="10%" class="TableRow" valign="top">Class</td>
+					<td width="10%" class="TableRow" valign="top">Generalization</td>
+					<td width="10%" class="TableRow" valign="top">From</td>
+					<td width="40%" class="TableRow" valign="top">DESCRIPTION:
+Each PerformedGeneticInterpretation always specializes one PerformedObservationResult. Each PerformedObservationResult might be specialized by one PerformedGeneticInterpretation.
+
+DEFINITION:
+
+EXAMPLE(S):
+
+OTHER NAME(S):
+
+NOTE(S):</td>
+				</tr>
+				<tr>
+					<td width="30%" class="TableRow" valign="top"><a href="../EA6/EA227.htm">MolecularSequenceAnnotation</a></td>
+					<td width="10%" class="TableRow" valign="top">Class</td>
+					<td width="10%" class="TableRow" valign="top">Generalization</td>
+					<td width="10%" class="TableRow" valign="top">From</td>
+					<td width="40%" class="TableRow" valign="top">DESCRIPTION:
+Each MolecularSequenceAnnotation always specializes one PerformedObservationResult. Each PerformedObservationResult might be specialized by one MolecularSequenceAnnotation.
+
+DEFINITION:
+
+EXAMPLE(S):
+
+OTHER NAME(S):
+
+NOTE(S):</td>
+				</tr>
+				<tr>
+					<td width="30%" class="TableRow" valign="top"><a href="../EA1/EA31.htm">AdverseEvent</a></td>
+					<td width="10%" class="TableRow" valign="top">Class</td>
+					<td width="10%" class="TableRow" valign="top">Generalization</td>
+					<td width="10%" class="TableRow" valign="top">From</td>
+					<td width="40%" class="TableRow" valign="top">DESCRIPTION:
+Each AdverseEvent always specializes one PerformedObservationResult. Each PerformedObservationResult might be specialized by one AdverseEvent.
+
+DEFINITION:
+
+EXAMPLE(S):
+
+OTHER NAME(S):
+
+NOTE(S):
+</td>
+				</tr>
+				<tr>
+					<td width="30%" class="TableRow" valign="top"><a href="../EA6/EA234.htm">PerformedGeneticObservationResult</a></td>
+					<td width="10%" class="TableRow" valign="top">Class</td>
+					<td width="10%" class="TableRow" valign="top">Generalization</td>
+					<td width="10%" class="TableRow" valign="top">From</td>
+					<td width="40%" class="TableRow" valign="top">DESCRIPTION:
+Each PerformedGeneticObservationResult always specializes one PerformedObservationResult. Each PerformedObservationResult might be specialized by one PerformedGeneticObservationResult.
+
+DEFINITION:
+
+EXAMPLE(S):
+
+OTHER NAME(S):
+
+NOTE(S):</td>
+				</tr>
+				<tr>
+					<td width="30%" class="TableRow" valign="top"><a href="EA378.htm">PerformedDiagnosis</a></td>
+					<td width="10%" class="TableRow" valign="top">Class</td>
+					<td width="10%" class="TableRow" valign="top">Generalization</td>
+					<td width="10%" class="TableRow" valign="top">From</td>
+					<td width="40%" class="TableRow" valign="top">DESCRIPTION:
+Each PerformedDiagnosis always specializes one PerformedObservationResult. Each PerformedObservationResult might be specialized by one PerformedDiagnosis.
+
+DEFINITION:
+
+EXAMPLE(S):
+
+OTHER NAME(S):
+
+NOTE(S):
+</td>
+				</tr>
+				<tr>
+					<td width="30%" class="TableRow" valign="top"><a href="EA383.htm">PerformedHistopathologyResult</a></td>
+					<td width="10%" class="TableRow" valign="top">Class</td>
+					<td width="10%" class="TableRow" valign="top">Generalization</td>
+					<td width="10%" class="TableRow" valign="top">From</td>
+					<td width="40%" class="TableRow" valign="top">DESCRIPTION:
+Each PerformedHistopathology always specializes one PerformedObservationResult. Each PerformedObservationResult might be specialized by one PerformedHistopathology.
+
+DEFINITION:
+
+EXAMPLE(S):
+
+OTHER NAME(S):
+
+NOTE(S):
+</td>
+				</tr>
+				<tr>
+					<td width="30%" class="TableRow" valign="top"><a href="EA375.htm">PerformedClinicalInterpretation</a></td>
+					<td width="10%" class="TableRow" valign="top">Class</td>
+					<td width="10%" class="TableRow" valign="top">Generalization</td>
+					<td width="10%" class="TableRow" valign="top">From</td>
+					<td width="40%" class="TableRow" valign="top">DESCRIPTION:
+Each PerformedClinicalInterpretation always specializes one PerformedObservationResult. Each PerformedObservationResult might be specialized by one PerformedClinicalInterpretation.
+
+DEFINITION:
+
+EXAMPLE(S):
+
+OTHER NAME(S):
+
+NOTE(S):
+</td>
+				</tr>
+				<tr>
+					<td width="30%" class="TableRow" valign="top"><a href="EA385.htm">PerformedLesionDescription</a></td>
+					<td width="10%" class="TableRow" valign="top">Class</td>
+					<td width="10%" class="TableRow" valign="top">Generalization</td>
+					<td width="10%" class="TableRow" valign="top">From</td>
+					<td width="40%" class="TableRow" valign="top">DESCRIPTION:
+Each PerformedLesionDescription always specializes one PerformedObservationResult. Each PerformedObservationResult might be specialized by one PerformedLesionDescription.
+
+DEFINITION:
+
+EXAMPLE(S):
+
+OTHER NAME(S):
+
+NOTE(S):
+</td>
+				</tr>
+				<tr>
+					<td width="30%" class="TableRow" valign="top"><a href="../EA1/EA33.htm">AdverseEventOutcomeResult</a></td>
+					<td width="10%" class="TableRow" valign="top">Class</td>
+					<td width="10%" class="TableRow" valign="top">Generalization</td>
+					<td width="10%" class="TableRow" valign="top">From</td>
+					<td width="40%" class="TableRow" valign="top">DESCRIPTION:
+Each AdverseEventOutcomeResult always specializes one PerformedObservationResult. Each PerformedObservationResult might be specialized by one AdverseEventOutcomeResult.
+
+DEFINITION:
+
+EXAMPLE(S):
+
+OTHER NAME(S):
+
+NOTE(S):
+</td>
+				</tr>
+
+			</table>
+		</div>
+	</div>
+<div class="pageFooter"></div>
+ 
+</body>
+</html>

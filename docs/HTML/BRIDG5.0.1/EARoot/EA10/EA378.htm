@@ -1,0 +1,774 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>Study Conduct Sub-Domain::PerformedDiagnosis</title>
+<link href="../../css/ea.css" rel="stylesheet" type="text/css" />
+<script>
+function initPage(src) {	
+	if(parent==this&&(this.location+"").indexOf('EARoot')!=-1)
+		document.location=(this.location+"").substring(0,(this.location+"").indexOf('EARoot'))+"index"+(this.location+"").substring((this.location+"").lastIndexOf('.'))+"?goto="+((this.location+"").substring((this.location+"").indexOf('EARoot')+7,(this.location+"").lastIndexOf('.')).replace(/\//g,':').replace(/EA/g,""));
+	else
+		parent.initPage(src);
+}
+
+function nameClassifier(name, separator)
+{
+  var str = name;
+  var classifierName;
+  var node = document.getElementById('name_classifier');
+  if(node != null)
+  {
+    classifierName = node.innerHTML;
+  }
+  if(classifierName != "")
+  {
+   str += separator + classifierName;
+  }
+  
+  return str;
+}
+</script>
+</head>
+<body onload="initPage(this);" class="Content">
+<div class="pageHeader"></div>
+<div class="PageBody">
+	<div id="name_classifier" style="display: none;"></div>
+	<span class="ObjectTitle"><script type="text/javascript">document.write(nameClassifier("PerformedDiagnosis", " : "))</script>  : Public   Class</span>
+	<table border="0" cellpadding="0" cellspacing="0" class="ObjectDetails">
+		<tr>
+			<td width="15%" class="ObjectDetailsTopic">Created:</td>
+			<td width="85%" class="ObjectDetailsValue">11/30/2007 1:59:40 PM</td>
+		</tr>
+		<tr>
+			<td class="ObjectDetailsTopic">Modified:</td>
+			<td class="ObjectDetailsValue">8/26/2017 2:57:11 AM</td>
+		</tr>
+		<tr style="height: 10px"><td colspan="2"></td></tr>
+		<tr>
+			<td class="ObjectDetailsTopic"><img src="../../images/plus03.gif" align="absmiddle" id="proj" onclick="parent.toggleData(this.id)" />Project:</td>
+			<td class="ObjectDetailsValue"></td>
+		</tr>
+		<tr id="proj00" style="display: none;">
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Author:</td>
+			<td class="ObjectDetailsValue">BRIDG SCC</td>
+		</tr>
+		<tr id="proj01" style="display: none;">
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Version:</td>
+			<td class="ObjectDetailsValue">1.0</td>
+		</tr>
+		<tr id="proj02" style="display: none;">
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Phase:</td>
+			<td class="ObjectDetailsValue">1.0</td>
+		</tr>
+		<tr id="proj03" style="display: none;">
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Status:</td>
+			<td class="ObjectDetailsValue"><none></td>
+		</tr>
+		<tr id="proj04" style="display: none;">
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Complexity:</td>
+			<td class="ObjectDetailsValue">Easy</td>
+		</tr>
+		<tr id="proj05" style="display: none;">
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Difficulty:</td>
+			<td class="ObjectDetailsValue"></td>
+		</tr>
+		<tr id="proj06" style="display: none;">
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Priority:</td>
+			<td class="ObjectDetailsValue"></td>
+		</tr>
+		<tr id="proj05" style="display: none;">
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Multiplicity:</td>
+			<td class="ObjectDetailsValue"></td>
+		</tr>
+		<tr>
+			<td class="ObjectDetailsTopic"><img src="../../images/plus03.gif" align="absmiddle" id="adv" onclick="parent.toggleData(this.id)" />Advanced:</td>
+			<td class="ObjectDetailsValue"></td>
+		</tr>
+		<tr id="adv00" style="display: none;">
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">UUID:</td>
+			<td class="ObjectDetailsValue">{14259E0C-A906-4c99-93A9-0382F97128F5}</td>
+		</tr>
+		<tr id="adv01" style="display: none;">
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Appears In:</td>
+			<td class="ObjectDetailsValue"><a href="../EA1.htm">UML-Based Comprehensive BRIDG Model Diagram</a>, <a href="EA356.htm">View SC: Study Conduct</a>, <a href="../EA11/EA440.htm">Oncology View</a>, <a href="../EA11/EA454.htm">SDTM 3.1.3 View</a>, <a href="../EA11/EA458.htm">SDTM Disease Response (RS) Domain View</a>, <a href="../EA11/EA448.htm">Participant Registration</a>, <a href="../EA11/EA462.htm">SEER View</a></td>
+		</tr>
+	</table>
+	<div class="ObjectDetailsNotes">DEFINITION:&lt;br/&gt;The identification of a disease or illness by examining the signs and symptoms.&lt;br/&gt;&lt;br/&gt;EXAMPLE(S):&lt;br/&gt;&lt;br/&gt;OTHER NAME(S):&lt;br/&gt;&lt;br/&gt;NOTE(S):&lt;br/&gt;</div>
+
+	<div class="TableGroup" id="TableGroup">
+		<ul class="ItemTitle">
+			<li onClick="parent.toggleItem('Attributes');" id="AttributesTitle">Attributes</li>
+			<li onClick="parent.toggleItem('AssociationsTo');" id="AssociationsToTitle">Associations To</li>
+			<li onClick="parent.toggleItem('AssociationsFrom');" id="AssociationsFromTitle">Associations From</li>
+			<li onClick="parent.toggleItem('TaggedVal');" id="TaggedValTitle">Tagged Values</li>
+			<li onClick="parent.toggleItem('Links');" id="LinksTitle">Other Links</li>
+		</ul>
+<div class="ItemBody" id="AttributesTable">
+	<table border="0" cellspacing="0" cellpadding="0" class="Table">
+		<tr>
+			<td width="100%" class="TableHeading">Attribute</td>
+		</tr>
+						<tr>
+				<td width="100%" class="TableRow">
+					<i>Public CD</i><br /><strong>&nbsp;&nbsp;diseaseStatusCode</strong>
+				</td>
+			</tr>
+			<tr>
+				<td class="TableRowBottomDashed"  colspan="1">										
+					<a href="#" onclick="parent.toggleData('DetailsImageAttributes2526')" style="text-decoration: none; color: #000000;"><img src="../../images/plus03.gif" align="absmiddle" id="DetailsImageAttributes2526" border="0" />Details:</a>
+					<table border="0" cellspacing="0" cellpadding="0" class="Table" style="padding: 4px 18px;">
+					
+						<tr id="DetailsImageAttributes2526_00" style="display: none;">
+							<td width="75"><i>Alias:</i></td>
+							<td></td>
+						</tr>
+						<tr id="DetailsImageAttributes2526_01" style="display: none;">
+							<td width="75"><i>Initial:</i></td>
+							<td></td>
+						</tr>
+						<tr id="DetailsImageAttributes2526_02" style="display: none;">
+							<td width="75"><i>Stereotype: </i></td>
+							<td></td>
+						</tr>
+						<tr id="DetailsImageAttributes2526_03" style="display: none;">
+							<td width="75"><i>Ordered: </i></td>
+							<td></td>
+						</tr>
+						<tr id="DetailsImageAttributes2526_04" style="display: none;">
+							<td width="75"><i>Range: </i></td>
+							<td>Range:0 to 1</td>
+						</tr>
+						<tr id="DetailsImageAttributes2526_05" style="display: none;">
+							<td width="75"><i>Transient: </i></td>
+							<td>False</td>
+						</tr>
+						<tr id="DetailsImageAttributes2526_06" style="display: none;">
+							<td width="75"><i>Derived: </i></td>
+							<td>False</td>
+						</tr>
+							<tr id="DetailsImageAttributes2526_07" style="display: none;">
+							<td width="75"><i>IsID: </i></td>
+						<td>False</td>
+						</tr>
+					</table>
+					
+					Map:CTOM=Diagnosis.diseaseSatusCode<br>Map:CTRv1.0=PerformedDiagnosis.diseaseStatusCode<br>Map:HCTv1.0=CDE 3009333:Disease, Disorder or Finding.Specify the status of this system:<br>Map:HCTv1.0=CDE 2971700:Disease Response.Specify the disease status:<br>Map:HCTv1.0=CDE 3073181:Disease Response.What is the status of Acute Lymphoblastic Leukemia ?<br>Map:HCTv1.0=CDE 3008778:Disease Response.Specify the best response of autonomic neuropathy:<br>Map:HCTv1.0=CDE 2688824:Disease Response.At the time of transplantation, what was the status of the JMML?<br>Map:HCTv1.0=CDE 2688964:Disease Response.What was the status of the other malignancy at the time of transplantation?<br>Map:HCTv1.0=CDE 3124457:Disease Response.Specify the disease status:_<br>Map:HCTv1.0=CDE 3072091:Disease Response.What is the disease status of AML prior to the prep regimen?<br>Map:HCTv1.0=CDE 2980437:Disease Response.What was testicular neoplasm the best response type?<br>Map:HCTv1.0=CDE 2677309:Involvement and Extent of Disease.Specify other main cause of death:<br>Map:HCTv1.0=CDE 58250//:Therapy Results.Did the patient achieve a complete response according to clinical/ hematologic criteria<br>Map:HCTv1.0=CDE 2970628:Involvement and Extent of Disease.What was the breast carcinoma status?<br>Map:HCTv1.0=CDE 3045394:Disease Response.What was the best bone response?<br>Map:HCTv1.0=CDE 2677716:Involvement and Extent of Disease.Main cause of death: Other,specify<br>Map:HCTv1.0=CDE 2680980:Outcome of Therapy.Maximum grade of Acute Graft Versus Host Disease after this DCI?<br>Map:HCTv1.0=CDE 3009221:Disease Response.Specify the best renal response:<br>Map:HCTv1.0=CDE 2936606:Disease, Disorder or Finding.What is the disease status?<br>Map:HCTv1.0=CDE 3008835:Disease, Disorder or Finding.Specify the status of peripheral neuropathy:<br>Map:HCTv1.0=CDE 3045387:Disease Response.What was the best non-bone response?<br>Map:HCTv1.0=CDE 3029363:Disease Response.What is the Chronic Lymphocytic Leukemia best response type?<br>Map:HCTv1.0=CDE 2685079:Disease Response.What was the status of the hodgkin lymphoma at the time of transplantation?<br>Map:HCTv1.0=CDE 2685098:Disease Response.What was the status of the other acute leukemia at the time of transplantation?<br>Map:HCTv1.0=CDE 3008113:Disease Response.Specify the best cardiac response:<br>Map:HCTv1.0=CDE 2675153:Chronic Myelogenous Leukemia (CML): Part 1 of 2.If the CML was in hematologic complete remission, what was the disease status before treatment?<br>Map:HCTv1.0=CDE 2003853:Quality of Life.Performance Status (Karnofsky)<br>Map:HCTv1.0=CDE 2962154:Disease, Disorder or Finding.What was the CNS disease status?<br>Map:HCTv1.0=CDE 2965947:Disease, Disorder or Finding.What is the status of the original disease?_<br>Map:HCTv1.0=CDE 3008833:Disease Response.Specify the best response of peripheral neuropathy:<br>Map:HCTv1.0=CDE 3009297:Disease Response.Specify other system best response:<br>Map:HCTv1.0=CDE 2688889:Disease Response.What was the status of the other leukemia at the time of transplantation?<br>Map:HCTv1.0=CDE 3130146:Disease Response.What was the chronic lymphocytic leukemia status?<br>Map:HCTv1.0=CDE 2947820:Disease, Disorder or Finding.What was the plasma cell disorder disease status?<br>Map:HCTv1.0=CDE 2950554:Disease Response.What was the best response to HSCT?<br>Map:HCTv1.0=CDE 3008793:Disease, Disorder or Finding.Specify the status of autonomic neuropathy:<br>Map:HCTv1.0=CDE 2970355:Disease Response.What was breast cancer best response?<br>Map:HCTv1.0=CDE 2939779:Disease, Disorder or Finding.What was the status of the myelofibrosis?<br>Map:HCTv1.0=CDE 2686057:Myelodysplastic or Myeloproliferative Disease Classification at Diagnosis.If the MDS/MPS/CMML was treated with chemotherapy, what was the disease status at the time of transplantation?<br>Map:HCTv1.0=CDE 2954551:Disease Response.What was the best response of the CNS neoplasm?<br>Map:HCTv1.0=CDE 3057354:Disease, Disorder or Finding.Specify current neurologic status:<br>Map:HCTv1.0=CDE 2685083:Disease Response.What was the status of the non-hodgkin's lymphoma at the time of transplantation?<br>Map:HCTv1.0=CDE 3124484:Disease Response.What was the status of myelodysplastic/myeloproliferative disease?<br>Map:HCTv1.0=CDE 2936640:Disease Response.What was the best response of myelodysplastic/myeloproliferative disease to HSCT?<br>Map:HCTv1.0=CDE 2770281:Disease Response.What is the status of the original disease?<br>Map:HCTv1.0=CDE 2984453:Disease Response.What was the testicular germ cell cancer best response?<br>Map:HCTv1.0=CDE 2685094:Disease Response.What was the status of the acute lymphoblastic leukemia (ALL) at the time of transplantation?<br>Map:HCTv1.0=CDE 3008178:Disease Response.Specify the best hepatic response:<br>Map:HCTv1.0=CDE 2685090:Disease Response.What was the status of the acute myelogenous leukemia (AML) or acute nonlymphocytic leukemia (ANLL) at the time of transplantation?<br>Map:HCTv1.0=CDE 2950694:Disease Response.What was the best response of the lymphoma to HSCT ?<br>Map:HCTv1.0=CDE 2180158:Quality of Life.Performance Status (Lansky)<br>Map:HCTv1.0=CDE 2750703:Disease Response.Best response to line of therapy:<br>Map:HCTv1.0=CDE 2674599:Disease Response.What was the status of MDS/MPS/CMML at transplantation?<br>Map:HCTv1.0=CDE 3009205:Disease Response.Specify the best hematologic response:<br>Map:HCTv1.0=CDE 2939802:Disease, Disorder or Finding.What was the status of the chronic myelogenous leukemia?<br>Map:HCTv1.0=CDE 3076261:Disease Response.What was the disease status?<br>Map:HCTv1.0=CDE 2688951:Disease Response.What was the status of the breast cancer at the time of transplantation?<br>Map:HCTv1.0=CDE 2691339:Disease Response.What was the plasma cell disorder status at transplantation?<br>Map:HCTv1.0=CDE 2939328:Disease Response.Specify cytogenetic remission:<br>Map:HCTv1.0=CDE 2676471:Chronic Myelogenous Leukemia (CML): Part 1 of 2.What was the phase of the CML at the time of transplantation?<br>Map:HCTv1.0=CDE 2770757:Disease Response.What was the recipient's disease status?<br>Map:HCTv1.0=CDE 2986871:Disease, Disorder or Finding.What was the disease status?_<br>Map:HCTv1.0=CDE 2957272:Disease, Disorder or Finding.What was the status of lymphoma?<br>Map:LSDAMv2.2.3Plus=PerformedDiagnosis.diseaseStatusCode<br>Map:LSDAMv2.2.3Plus=PerformedPathologicalStaging.lymphNodeStage<br>Map:LSDAMv2.2.3Plus=PerformedPathologicalStaging.distantMetastasisStage<br>Map:SEER 2015=SECTION V STAGE OF DISEASE AT DIAGNOSIS - PATHOLOGIC N<br>Map:SEER 2015=SECTION VI COLLABORATIVE STAGE DATA COLLECTION SYSTEM - CS METS AT DX-BRAIN<br>Map:SEER 2015=SECTION VI COLLABORATIVE STAGE DATA COLLECTION SYSTEM - CS METS AT DX-BONE<br>Map:SEER 2015=SECTION VI COLLABORATIVE STAGE DATA COLLECTION SYSTEM - CS METS AT DX<br>Map:SEER 2015=SECTION VI COLLABORATIVE STAGE DATA COLLECTION SYSTEM - CS METS AT DX-LIVER<br>Map:SEER 2015=SECTION VI COLLABORATIVE STAGE DATA COLLECTION SYSTEM - CS LYMPH NODES<br>Map:SEER 2015=SECTION VI COLLABORATIVE STAGE DATA COLLECTION SYSTEM - CS EXTENSION<br>Map:SEER 2015=SECTION V STAGE OF DISEASE AT DIAGNOSIS - AJCC EDITION NUMBER<br>Map:SEER 2015=SECTION V STAGE OF DISEASE AT DIAGNOSIS - PATHOLOGIC M<br>Map:SEER 2015=SECTION V STAGE OF DISEASE AT DIAGNOSIS - PATHOLOGIC T<br>Map:SEER 2015=SECTION V STAGE OF DISEASE AT DIAGNOSIS - CLINICAL STAGE GROUP<br>Map:SEER 2015=SECTION V STAGE OF DISEASE AT DIAGNOSIS - CLINICAL M<br>Map:SEER 2015=SECTION V STAGE OF DISEASE AT DIAGNOSIS - CLINICAL N<br>Map:SEER 2015=SECTION V STAGE OF DISEASE AT DIAGNOSIS - CLINICAL T<br>Map:SEER 2015=SECTION VI COLLABORATIVE STAGE DATA COLLECTION SYSTEM - CS METS AT DX-CS METS AT DX-LUNG<br>Map:SEER 2015=SECTION V STAGE OF DISEASE AT DIAGNOSIS - PATHOLOGIC STAGE GROUP<br>
+						<div class="ObjectDetailsNotes"><table>
+	<tr>
+		<td valign="top">
+			<i>Notes: </i><span style="margin-left: .4cm;"> </span>
+		</td>
+		<td>
+			DEFINITION:&lt;br/&gt;A coded value specifying the amount of disease present in a subject.&lt;br/&gt;&lt;br/&gt;EXAMPLE(S):&lt;br/&gt;metastatic and disease-free (cancer-specific examples)&lt;br/&gt;&lt;br/&gt;OTHER NAME(S):&lt;br/&gt;&lt;br/&gt;NOTE(S):&lt;br/&gt;
+		</td>
+	</tr>
+</table></div>
+
+						
+				</td>
+			</tr>			<tr>
+				<td width="100%" class="TableRow">
+					<i>Public CD</i><br /><strong>&nbsp;&nbsp;diseaseStatusMissingReasonCode</strong>
+				</td>
+			</tr>
+			<tr>
+				<td class="TableRowBottomDashed"  colspan="1">										
+					<a href="#" onclick="parent.toggleData('DetailsImageAttributes2527')" style="text-decoration: none; color: #000000;"><img src="../../images/plus03.gif" align="absmiddle" id="DetailsImageAttributes2527" border="0" />Details:</a>
+					<table border="0" cellspacing="0" cellpadding="0" class="Table" style="padding: 4px 18px;">
+					
+						<tr id="DetailsImageAttributes2527_00" style="display: none;">
+							<td width="75"><i>Alias:</i></td>
+							<td></td>
+						</tr>
+						<tr id="DetailsImageAttributes2527_01" style="display: none;">
+							<td width="75"><i>Initial:</i></td>
+							<td></td>
+						</tr>
+						<tr id="DetailsImageAttributes2527_02" style="display: none;">
+							<td width="75"><i>Stereotype: </i></td>
+							<td></td>
+						</tr>
+						<tr id="DetailsImageAttributes2527_03" style="display: none;">
+							<td width="75"><i>Ordered: </i></td>
+							<td></td>
+						</tr>
+						<tr id="DetailsImageAttributes2527_04" style="display: none;">
+							<td width="75"><i>Range: </i></td>
+							<td>Range:0 to 1</td>
+						</tr>
+						<tr id="DetailsImageAttributes2527_05" style="display: none;">
+							<td width="75"><i>Transient: </i></td>
+							<td>False</td>
+						</tr>
+						<tr id="DetailsImageAttributes2527_06" style="display: none;">
+							<td width="75"><i>Derived: </i></td>
+							<td>False</td>
+						</tr>
+							<tr id="DetailsImageAttributes2527_07" style="display: none;">
+							<td width="75"><i>IsID: </i></td>
+						<td>False</td>
+						</tr>
+					</table>
+					
+					Map:HCTv1.0=CDE 2740336:Occurrences.If necessary, please validate the clinical and or hematologic CR date response:<br>Map:HCTv1.0=CDE 2974029:Disease Response.Specify reason disease status was unevaluable:<br>
+						<div class="ObjectDetailsNotes"><table>
+	<tr>
+		<td valign="top">
+			<i>Notes: </i><span style="margin-left: .4cm;"> </span>
+		</td>
+		<td>
+			DEFINITION:&lt;br/&gt;A coded value specifying why a disease status is missing.&lt;br/&gt;&lt;br/&gt;EXAMPLE(S):&lt;br/&gt;&quot;the sample was damaged&quot; is a reason code within the &quot;unevaluable&quot; classification.&lt;br/&gt;&lt;br/&gt;OTHER NAME(S):&lt;br/&gt;&lt;br/&gt;NOTE(S):&lt;br/&gt;The distinctions between unevaluable,&#160; missing reason and not assessed, will be made in the hierarchy of the reason codes and need not be made as distinct attributes, since they are mutually exclusive.&lt;br/&gt;&lt;br/&gt;This value should only be populated if PerformedDiagnosis.diseaseStatusCode is null.&lt;br/&gt;
+		</td>
+	</tr>
+</table></div>
+
+						
+				</td>
+			</tr>			<tr>
+				<td width="100%" class="TableRow">
+					<i>Public CD</i><br /><strong>&nbsp;&nbsp;clinicalStageDescriptorCode</strong>
+				</td>
+			</tr>
+			<tr>
+				<td class="TableRowBottomDashed"  colspan="1">										
+					<a href="#" onclick="parent.toggleData('DetailsImageAttributes2528')" style="text-decoration: none; color: #000000;"><img src="../../images/plus03.gif" align="absmiddle" id="DetailsImageAttributes2528" border="0" />Details:</a>
+					<table border="0" cellspacing="0" cellpadding="0" class="Table" style="padding: 4px 18px;">
+					
+						<tr id="DetailsImageAttributes2528_00" style="display: none;">
+							<td width="75"><i>Alias:</i></td>
+							<td></td>
+						</tr>
+						<tr id="DetailsImageAttributes2528_01" style="display: none;">
+							<td width="75"><i>Initial:</i></td>
+							<td></td>
+						</tr>
+						<tr id="DetailsImageAttributes2528_02" style="display: none;">
+							<td width="75"><i>Stereotype: </i></td>
+							<td></td>
+						</tr>
+						<tr id="DetailsImageAttributes2528_03" style="display: none;">
+							<td width="75"><i>Ordered: </i></td>
+							<td></td>
+						</tr>
+						<tr id="DetailsImageAttributes2528_04" style="display: none;">
+							<td width="75"><i>Range: </i></td>
+							<td>Range:0 to 1</td>
+						</tr>
+						<tr id="DetailsImageAttributes2528_05" style="display: none;">
+							<td width="75"><i>Transient: </i></td>
+							<td>False</td>
+						</tr>
+						<tr id="DetailsImageAttributes2528_06" style="display: none;">
+							<td width="75"><i>Derived: </i></td>
+							<td>False</td>
+						</tr>
+							<tr id="DetailsImageAttributes2528_07" style="display: none;">
+							<td width="75"><i>IsID: </i></td>
+						<td>False</td>
+						</tr>
+					</table>
+					
+					Map:SEER 2015=SECTION V STAGE OF DISEASE AT DIAGNOSIS - CLINICAL STAGE (PREFIX/SUFFIX) DESCRIPTOR<br>
+						<div class="ObjectDetailsNotes"><table>
+	<tr>
+		<td valign="top">
+			<i>Notes: </i><span style="margin-left: .4cm;"> </span>
+		</td>
+		<td>
+			DEFINITION:&lt;br/&gt;A coded value specifying the prefix or suffix, used in conjunction with AJCC clinical TNM designations, that denotes special circumstances that may affect the staging and analysis of the data and is based on the clinical T, N, and M values prior to treatment.&lt;br/&gt;&lt;br/&gt;EXAMPLE(S):&lt;br/&gt;For the U.S. National Cancer Institute (NCI) Surveillance, Epidemiology, and End Results (SEER) program:&lt;br/&gt;0 = None&lt;br/&gt;1 = E (Extranodal, lymphomas only)&lt;br/&gt;2 = S (Spleen, lymphomas only)&lt;br/&gt;3 = M (Multiple primary tumors in a single site)&lt;br/&gt;5 = E &amp; S (Extranodal and spleen, lymphomas only)&lt;br/&gt;9 = Unknown, not stated in patient record&lt;br/&gt;&lt;br/&gt;OTHER NAME(S):&lt;br/&gt;&lt;br/&gt;NOTE(S):&lt;br/&gt;The descriptors are adjuncts to and do not change the stage group (which is captured in diseaseStatusCode).&lt;br/&gt;
+		</td>
+	</tr>
+</table></div>
+
+						
+				</td>
+			</tr>			<tr>
+				<td width="100%" class="TableRow">
+					<i>Public CD</i><br /><strong>&nbsp;&nbsp;pathologicStageDescriptorCode</strong>
+				</td>
+			</tr>
+			<tr>
+				<td class="TableRowBottomDashed"  colspan="1">										
+					<a href="#" onclick="parent.toggleData('DetailsImageAttributes2529')" style="text-decoration: none; color: #000000;"><img src="../../images/plus03.gif" align="absmiddle" id="DetailsImageAttributes2529" border="0" />Details:</a>
+					<table border="0" cellspacing="0" cellpadding="0" class="Table" style="padding: 4px 18px;">
+					
+						<tr id="DetailsImageAttributes2529_00" style="display: none;">
+							<td width="75"><i>Alias:</i></td>
+							<td></td>
+						</tr>
+						<tr id="DetailsImageAttributes2529_01" style="display: none;">
+							<td width="75"><i>Initial:</i></td>
+							<td></td>
+						</tr>
+						<tr id="DetailsImageAttributes2529_02" style="display: none;">
+							<td width="75"><i>Stereotype: </i></td>
+							<td></td>
+						</tr>
+						<tr id="DetailsImageAttributes2529_03" style="display: none;">
+							<td width="75"><i>Ordered: </i></td>
+							<td></td>
+						</tr>
+						<tr id="DetailsImageAttributes2529_04" style="display: none;">
+							<td width="75"><i>Range: </i></td>
+							<td>Range:0 to 1</td>
+						</tr>
+						<tr id="DetailsImageAttributes2529_05" style="display: none;">
+							<td width="75"><i>Transient: </i></td>
+							<td>False</td>
+						</tr>
+						<tr id="DetailsImageAttributes2529_06" style="display: none;">
+							<td width="75"><i>Derived: </i></td>
+							<td>False</td>
+						</tr>
+							<tr id="DetailsImageAttributes2529_07" style="display: none;">
+							<td width="75"><i>IsID: </i></td>
+						<td>False</td>
+						</tr>
+					</table>
+					
+					Map:SEER 2015=SECTION V STAGE OF DISEASE AT DIAGNOSIS - PATHOLOGIC STAGE (PREFIX/SUFFIX) DESCRIPTOR<br>
+						<div class="ObjectDetailsNotes"><table>
+	<tr>
+		<td valign="top">
+			<i>Notes: </i><span style="margin-left: .4cm;"> </span>
+		</td>
+		<td>
+			DEFINITION:&lt;br/&gt;A coded value specifying the prefix or suffix, used in conjunction with AJCC clinical TNM designations, that denotes special circumstances that may affect the staging and analysis of the data and is based on the pathologic T, N, and M values after completion of surgical treatment.&lt;br/&gt;&lt;br/&gt;EXAMPLE(S):&lt;br/&gt;For the U.S. National Cancer Institute (NCI) Surveillance, Epidemiology, and End Results (SEER) program:&lt;br/&gt;0 = None&lt;br/&gt;1 = E (Extranodal, lymphomas only)&lt;br/&gt;2 = S (Spleen, lymphomas only)&lt;br/&gt;3 = M (Multiple primary tumors in a single site)&lt;br/&gt;4 = Y (Classification during or after initial multimodality therapy)&#8212;pathologic staging only&lt;br/&gt;5 = E &amp; S (Extranodal and spleen, lymphomas only)&lt;br/&gt;6 = M &amp; Y (Multiple primary tumors and initial multimodality therapy)&lt;br/&gt;9 = Unknown, not stated in patient record&lt;br/&gt;&lt;br/&gt;OTHER NAME(S):&lt;br/&gt;&lt;br/&gt;NOTE(S):&lt;br/&gt;The descriptors are adjuncts to and do not change the stage group.&lt;br/&gt;
+		</td>
+	</tr>
+</table></div>
+
+						
+				</td>
+			</tr>			<tr>
+				<td width="100%" class="TableRow">
+					<i>Public CD</i><br /><strong>&nbsp;&nbsp;bodySystemCode</strong>
+				</td>
+			</tr>
+			<tr>
+				<td class="TableRowBottomDashed"  colspan="1">										
+					<a href="#" onclick="parent.toggleData('DetailsImageAttributes2530')" style="text-decoration: none; color: #000000;"><img src="../../images/plus03.gif" align="absmiddle" id="DetailsImageAttributes2530" border="0" />Details:</a>
+					<table border="0" cellspacing="0" cellpadding="0" class="Table" style="padding: 4px 18px;">
+					
+						<tr id="DetailsImageAttributes2530_00" style="display: none;">
+							<td width="75"><i>Alias:</i></td>
+							<td></td>
+						</tr>
+						<tr id="DetailsImageAttributes2530_01" style="display: none;">
+							<td width="75"><i>Initial:</i></td>
+							<td></td>
+						</tr>
+						<tr id="DetailsImageAttributes2530_02" style="display: none;">
+							<td width="75"><i>Stereotype: </i></td>
+							<td></td>
+						</tr>
+						<tr id="DetailsImageAttributes2530_03" style="display: none;">
+							<td width="75"><i>Ordered: </i></td>
+							<td></td>
+						</tr>
+						<tr id="DetailsImageAttributes2530_04" style="display: none;">
+							<td width="75"><i>Range: </i></td>
+							<td>Range:0 to 1</td>
+						</tr>
+						<tr id="DetailsImageAttributes2530_05" style="display: none;">
+							<td width="75"><i>Transient: </i></td>
+							<td>False</td>
+						</tr>
+						<tr id="DetailsImageAttributes2530_06" style="display: none;">
+							<td width="75"><i>Derived: </i></td>
+							<td>False</td>
+						</tr>
+							<tr id="DetailsImageAttributes2530_07" style="display: none;">
+							<td width="75"><i>IsID: </i></td>
+						<td>False</td>
+						</tr>
+					</table>
+					
+					Map:HCTv1.0=CDE 3082348:Involvement and Extent of Disease.What was the site of extranodal involvement?<br>Map:SEER 2015=SECTION IV DESCRIPTION OF THIS NEOPLASM - PRIMARY SITE<br>
+						<div class="ObjectDetailsNotes"><table>
+	<tr>
+		<td valign="top">
+			<i>Notes: </i><span style="margin-left: .4cm;"> </span>
+		</td>
+		<td>
+			DEFINITION:&lt;br/&gt;A coded value specifying the anatomical structure that consists of organs and organ subclasses responsible for certain body functions. &lt;br/&gt;&lt;br/&gt;EXAMPLE(S):&lt;br/&gt;gastrointestinal system, urinary system, hematopoietic system&lt;br/&gt;&lt;br/&gt;OTHER NAME(S):&lt;br/&gt;&lt;br/&gt;NOTE(S):&lt;br/&gt;
+		</td>
+	</tr>
+</table></div>
+
+						
+				</td>
+			</tr>			<tr>
+				<td width="100%" class="TableRow">
+					<i>Public BL</i><br /><strong>&nbsp;&nbsp;recurrenceIndicator</strong>
+				</td>
+			</tr>
+			<tr>
+				<td class="TableRowBottomDashed"  colspan="1">										
+					<a href="#" onclick="parent.toggleData('DetailsImageAttributes2531')" style="text-decoration: none; color: #000000;"><img src="../../images/plus03.gif" align="absmiddle" id="DetailsImageAttributes2531" border="0" />Details:</a>
+					<table border="0" cellspacing="0" cellpadding="0" class="Table" style="padding: 4px 18px;">
+					
+						<tr id="DetailsImageAttributes2531_00" style="display: none;">
+							<td width="75"><i>Alias:</i></td>
+							<td></td>
+						</tr>
+						<tr id="DetailsImageAttributes2531_01" style="display: none;">
+							<td width="75"><i>Initial:</i></td>
+							<td></td>
+						</tr>
+						<tr id="DetailsImageAttributes2531_02" style="display: none;">
+							<td width="75"><i>Stereotype: </i></td>
+							<td></td>
+						</tr>
+						<tr id="DetailsImageAttributes2531_03" style="display: none;">
+							<td width="75"><i>Ordered: </i></td>
+							<td></td>
+						</tr>
+						<tr id="DetailsImageAttributes2531_04" style="display: none;">
+							<td width="75"><i>Range: </i></td>
+							<td>Range:0 to 1</td>
+						</tr>
+						<tr id="DetailsImageAttributes2531_05" style="display: none;">
+							<td width="75"><i>Transient: </i></td>
+							<td>False</td>
+						</tr>
+						<tr id="DetailsImageAttributes2531_06" style="display: none;">
+							<td width="75"><i>Derived: </i></td>
+							<td>False</td>
+						</tr>
+							<tr id="DetailsImageAttributes2531_07" style="display: none;">
+							<td width="75"><i>IsID: </i></td>
+						<td>False</td>
+						</tr>
+					</table>
+					
+					Map:CTOM=Diagnosis.recurrenceIndicator<br>Map:CTRv1.0=PerformedDiagnosis.recurrenceIndicator<br>Map:LSDAMv2.2.3Plus=PerformedDiagnosis.recurrenceIndicator<br>
+						<div class="ObjectDetailsNotes"><table>
+	<tr>
+		<td valign="top">
+			<i>Notes: </i><span style="margin-left: .4cm;"> </span>
+		</td>
+		<td>
+			DEFINITION:&lt;br/&gt;Specifies whether this is a reappearance of the existing disease.&lt;br/&gt;&lt;br/&gt;EXAMPLE(S):&lt;br/&gt;&lt;br/&gt;OTHER NAME(S):&lt;br/&gt;&lt;br/&gt;NOTE(S):&lt;br/&gt;
+		</td>
+	</tr>
+</table></div>
+
+						
+				</td>
+			</tr>			<tr>
+				<td width="100%" class="TableRow">
+					<i>Public BL</i><br /><strong>&nbsp;&nbsp;acceptedIndicator</strong>
+				</td>
+			</tr>
+			<tr>
+				<td class="TableRowBottomDashed"  colspan="1">										
+					<a href="#" onclick="parent.toggleData('DetailsImageAttributes2532')" style="text-decoration: none; color: #000000;"><img src="../../images/plus03.gif" align="absmiddle" id="DetailsImageAttributes2532" border="0" />Details:</a>
+					<table border="0" cellspacing="0" cellpadding="0" class="Table" style="padding: 4px 18px;">
+					
+						<tr id="DetailsImageAttributes2532_00" style="display: none;">
+							<td width="75"><i>Alias:</i></td>
+							<td></td>
+						</tr>
+						<tr id="DetailsImageAttributes2532_01" style="display: none;">
+							<td width="75"><i>Initial:</i></td>
+							<td></td>
+						</tr>
+						<tr id="DetailsImageAttributes2532_02" style="display: none;">
+							<td width="75"><i>Stereotype: </i></td>
+							<td></td>
+						</tr>
+						<tr id="DetailsImageAttributes2532_03" style="display: none;">
+							<td width="75"><i>Ordered: </i></td>
+							<td></td>
+						</tr>
+						<tr id="DetailsImageAttributes2532_04" style="display: none;">
+							<td width="75"><i>Range: </i></td>
+							<td>Range:0 to 1</td>
+						</tr>
+						<tr id="DetailsImageAttributes2532_05" style="display: none;">
+							<td width="75"><i>Transient: </i></td>
+							<td>False</td>
+						</tr>
+						<tr id="DetailsImageAttributes2532_06" style="display: none;">
+							<td width="75"><i>Derived: </i></td>
+							<td>True</td>
+						</tr>
+							<tr id="DetailsImageAttributes2532_07" style="display: none;">
+							<td width="75"><i>IsID: </i></td>
+						<td>False</td>
+						</tr>
+					</table>
+					
+					Map:SDTM IGv3.1.3=RS.RSACPTFL<br>
+						<div class="ObjectDetailsNotes"><table>
+	<tr>
+		<td valign="top">
+			<i>Notes: </i><span style="margin-left: .4cm;"> </span>
+		</td>
+		<td>
+			DEFINITION:&lt;br/&gt;Specifies whether, when more than one independent assessor provides an evaluation, this disease assessment is considered the accepted one among the several assessments provided .&lt;br/&gt;&lt;br/&gt;EXAMPLE(S):&lt;br/&gt;&lt;br/&gt;OTHER NAME(S):&lt;br/&gt;&lt;br/&gt;NOTE(S):.&lt;br/&gt;This attribute is theoretically derived from an assessment activity that looks at all evaluations and identifies the accepted one.&lt;br/&gt;
+		</td>
+	</tr>
+</table></div>
+
+						
+				</td>
+			</tr>
+	</table>
+</div>
+		<div class="ItemBody" id="AssociationsToTable">
+			<table border="0" cellspacing="0" cellpadding="0" class="Table">
+				<tr>
+					<td width="40%" class="TableHeading">Element</td>
+					<td width="30%" class="TableHeading">Source Role</td>
+					<td width="30%" class="TableHeading">Target Role</td>
+				</tr>
+				<tr>
+					<td width="40%" class="TableRow" valign="top">
+						<a href="EA378.htm">PerformedDiagnosis</a><br />
+						Class &nbsp;
+					</td>
+					<td width="30%" class="TableRow" valign="top">
+						<strong>Name:</strong> convertedPerformedDiagnosis<br />
+						&nbsp;
+					</td>
+					<td width="30%" class="TableRow" valign="top">
+						<strong>Name:</strong> originalPerformedDiagnosis<br />
+						&nbsp;	
+					</td>
+				</tr>
+				<tr>
+					<td class="TableRowBottomDashed"  colspan="3">
+						<div class="DetailsDivParent"><img src="../../images/minus03.gif" align="absmiddle" id="DetailsImageLink2533" onclick="parent.toggleDiv('detailsDIVLink2533','DetailsImageLink2533')" />Details:
+							<div id="detailsDIVLink2533" class="DetailsDiv" >
+							<div class="ObjectDetailsNotes">DESCRIPTION:&lt;br/&gt;Each [converted] PerformedDiagnosis might be converted from one [original] PerformedDiagnosis.&#160; Each [original] PerformedDiagnosis might be converted into one or more [converted] PerformedDiagnosis.&#160; &lt;br/&gt;&lt;br/&gt;DEFINITION:&lt;br/&gt;&lt;br/&gt;EXAMPLE(S):&lt;br/&gt;&lt;br/&gt;OTHER NAME(S):&lt;br/&gt;&lt;br/&gt;NOTE(S):&lt;br/&gt;</div>
+
+							</div>
+						</div>
+					</td>
+				</tr>
+				<tr>
+					<td width="40%" class="TableRow" valign="top">
+						<a href="EA378.htm">PerformedDiagnosis</a><br />
+						Class &nbsp;
+					</td>
+					<td width="30%" class="TableRow" valign="top">
+						<strong>Name:</strong> transformingPerformedDiagnosis<br />
+						&nbsp;
+					</td>
+					<td width="30%" class="TableRow" valign="top">
+						<strong>Name:</strong> transformedPerformedDiagnosis<br />
+						&nbsp;	
+					</td>
+				</tr>
+				<tr>
+					<td class="TableRowBottomDashed"  colspan="3">
+						<div class="DetailsDivParent"><img src="../../images/minus03.gif" align="absmiddle" id="DetailsImageLink2534" onclick="parent.toggleDiv('detailsDIVLink2534','DetailsImageLink2534')" />Details:
+							<div id="detailsDIVLink2534" class="DetailsDiv" >
+							<div class="ObjectDetailsNotes">DESCRIPTION:&lt;br/&gt;Each PerformedDiagnosis might be transformed into one PerformedDiagnosis. Each PerformedDiagnosis might be transformed from one PerformedDiagnosis.&lt;br/&gt;&lt;br/&gt;DEFINITION:&lt;br/&gt;&lt;br/&gt;EXAMPLE(S):&lt;br/&gt;&lt;br/&gt;OTHER NAME(S):&lt;br/&gt;&lt;br/&gt;NOTE(S):&lt;br/&gt;&lt;br/&gt;</div>
+
+							</div>
+						</div>
+					</td>
+				</tr>
+
+			</table>
+		</div>
+		<div class="ItemBody" id="AssociationsFromTable">
+			<table border="0" cellspacing="0" cellpadding="0" class="Table">
+				<tr>
+					<td width="40%" class="TableHeading">Element</td>
+					<td width="30%" class="TableHeading">Source Role</td>
+					<td width="30%" class="TableHeading">Target Role</td>
+				</tr>
+				<tr>
+					<td width="40%" class="TableRow" valign="top">
+						<a href="EA378.htm">PerformedDiagnosis</a><br />
+						Class &nbsp;
+					</td>
+					<td width="30%" class="TableRow" valign="top">
+						<strong>Name:</strong> convertedPerformedDiagnosis<br />
+						&nbsp;
+					</td>
+					<td width="30%" class="TableRow" valign="top">
+						<strong>Name:</strong> originalPerformedDiagnosis<br />
+						&nbsp;	
+					</td>
+				</tr>
+				<tr>
+					<td class="TableRowBottomDashed"  colspan="3">
+						<div class="DetailsDivParent"><img src="../../images/minus03.gif" align="absmiddle" id="DetailsImageLink2535" onclick="parent.toggleDiv('detailsDIVLink2535','DetailsImageLink2535')" />Details:
+							<div id="detailsDIVLink2535" class="DetailsDiv" >
+							<div class="ObjectDetailsNotes">DESCRIPTION:&lt;br/&gt;Each [converted] PerformedDiagnosis might be converted from one [original] PerformedDiagnosis.&#160; Each [original] PerformedDiagnosis might be converted into one or more [converted] PerformedDiagnosis.&#160; &lt;br/&gt;&lt;br/&gt;DEFINITION:&lt;br/&gt;&lt;br/&gt;EXAMPLE(S):&lt;br/&gt;&lt;br/&gt;OTHER NAME(S):&lt;br/&gt;&lt;br/&gt;NOTE(S):&lt;br/&gt;</div>
+
+							</div>
+						</div>
+					</td>
+				</tr>
+				<tr>
+					<td width="40%" class="TableRow" valign="top">
+						<a href="EA379.htm">PerformedDiagnosisProcedureRelationship</a><br />
+						Class &nbsp;
+					</td>
+					<td width="30%" class="TableRow" valign="top">
+						<strong>Name:</strong> addressingPerformedDiagnosisProcedureRelationship<br />
+						&nbsp;
+					</td>
+					<td width="30%" class="TableRow" valign="top">
+						<strong>Name:</strong> addressedPerformedDiagnosis<br />
+						&nbsp;	
+					</td>
+				</tr>
+				<tr>
+					<td class="TableRowBottomDashed"  colspan="3">
+						<div class="DetailsDivParent"><img src="../../images/minus03.gif" align="absmiddle" id="DetailsImageLink2536" onclick="parent.toggleDiv('detailsDIVLink2536','DetailsImageLink2536')" />Details:
+							<div id="detailsDIVLink2536" class="DetailsDiv" >
+							<div class="ObjectDetailsNotes">DESCRIPTION:&lt;br/&gt;Each PerformedDiagnosisProcedureRelationship always addresses one PerformedDiagnosis.&#160; Each PerformedDiagnosis might be addressed by one or more PerformedDiagnosisProcedureRelationship.&lt;br/&gt;&lt;br/&gt;DEFINITION:&lt;br/&gt;&lt;br/&gt;EXAMPLE(S):&lt;br/&gt;&lt;br/&gt;OTHER NAME(S):&lt;br/&gt;&lt;br/&gt;NOTE(S):&lt;br/&gt;&lt;br/&gt;</div>
+
+							</div>
+						</div>
+					</td>
+				</tr>
+				<tr>
+					<td width="40%" class="TableRow" valign="top">
+						<a href="EA378.htm">PerformedDiagnosis</a><br />
+						Class &nbsp;
+					</td>
+					<td width="30%" class="TableRow" valign="top">
+						<strong>Name:</strong> transformingPerformedDiagnosis<br />
+						&nbsp;
+					</td>
+					<td width="30%" class="TableRow" valign="top">
+						<strong>Name:</strong> transformedPerformedDiagnosis<br />
+						&nbsp;	
+					</td>
+				</tr>
+				<tr>
+					<td class="TableRowBottomDashed"  colspan="3">
+						<div class="DetailsDivParent"><img src="../../images/minus03.gif" align="absmiddle" id="DetailsImageLink2537" onclick="parent.toggleDiv('detailsDIVLink2537','DetailsImageLink2537')" />Details:
+							<div id="detailsDIVLink2537" class="DetailsDiv" >
+							<div class="ObjectDetailsNotes">DESCRIPTION:&lt;br/&gt;Each PerformedDiagnosis might be transformed into one PerformedDiagnosis. Each PerformedDiagnosis might be transformed from one PerformedDiagnosis.&lt;br/&gt;&lt;br/&gt;DEFINITION:&lt;br/&gt;&lt;br/&gt;EXAMPLE(S):&lt;br/&gt;&lt;br/&gt;OTHER NAME(S):&lt;br/&gt;&lt;br/&gt;NOTE(S):&lt;br/&gt;&lt;br/&gt;</div>
+
+							</div>
+						</div>
+					</td>
+				</tr>
+
+			</table>
+		</div>
+<div class="ItemBody" id="TaggedValTable">
+	<table align="center" border="0" cellspacing="0" cellpadding="0" class="Table">
+		<tr>
+			<td width="50%" class="TableHeading">Tag</td>
+			<td width="50%" class="TableHeading">Value</td>
+		</tr>
+					<tr>
+				<td width="50%" class="TableRow" valign="top">Map:C3PRv2.9</td>
+				<td width="50%" class="TableRow" valign="top">DiseaseHistory</td>
+			</tr>	
+			<tr>
+				<td class="TableRowBottomDashed"  colspan="2">
+					<div class="DetailsDivParent"><img src="../../images/minus03.gif" align="absmiddle" id="DetailsImageScenario2538" onclick="parent.toggleDiv('detailsDIVScenario2538','DetailsImageScenario2538')" />Details:
+						<div id="detailsDIVScenario2538" class="DetailsDiv" >
+						&nbsp;
+						</div>
+					</div>
+				</td>
+			</tr>			<tr>
+				<td width="50%" class="TableRow" valign="top">Map:caAERSv2.2</td>
+				<td width="50%" class="TableRow" valign="top">DiseaseHistory</td>
+			</tr>	
+			<tr>
+				<td class="TableRowBottomDashed"  colspan="2">
+					<div class="DetailsDivParent"><img src="../../images/minus03.gif" align="absmiddle" id="DetailsImageScenario2539" onclick="parent.toggleDiv('detailsDIVScenario2539','DetailsImageScenario2539')" />Details:
+						<div id="detailsDIVScenario2539" class="DetailsDiv" >
+						&nbsp;
+						</div>
+					</div>
+				</td>
+			</tr>			<tr>
+				<td width="50%" class="TableRow" valign="top">Map:caAERSv2.2</td>
+				<td width="50%" class="TableRow" valign="top">StudyParticipantDiseaseHistory</td>
+			</tr>	
+			<tr>
+				<td class="TableRowBottomDashed"  colspan="2">
+					<div class="DetailsDivParent"><img src="../../images/minus03.gif" align="absmiddle" id="DetailsImageScenario2540" onclick="parent.toggleDiv('detailsDIVScenario2540','DetailsImageScenario2540')" />Details:
+						<div id="detailsDIVScenario2540" class="DetailsDiv" >
+						&nbsp;
+						</div>
+					</div>
+				</td>
+			</tr>			<tr>
+				<td width="50%" class="TableRow" valign="top">Map:CTRv1.0</td>
+				<td width="50%" class="TableRow" valign="top">PerformedDiagnosis</td>
+			</tr>	
+			<tr>
+				<td class="TableRowBottomDashed"  colspan="2">
+					<div class="DetailsDivParent"><img src="../../images/minus03.gif" align="absmiddle" id="DetailsImageScenario2541" onclick="parent.toggleDiv('detailsDIVScenario2541','DetailsImageScenario2541')" />Details:
+						<div id="detailsDIVScenario2541" class="DetailsDiv" >
+						&nbsp;
+						</div>
+					</div>
+				</td>
+			</tr>			<tr>
+				<td width="50%" class="TableRow" valign="top">Map:HCTv1.0</td>
+				<td width="50%" class="TableRow" valign="top">CDE 2962088:Involvement and Extent of Disease.Specify other co-existing phakomatosis:</td>
+			</tr>	
+			<tr>
+				<td class="TableRowBottomDashed"  colspan="2">
+					<div class="DetailsDivParent"><img src="../../images/minus03.gif" align="absmiddle" id="DetailsImageScenario2542" onclick="parent.toggleDiv('detailsDIVScenario2542','DetailsImageScenario2542')" />Details:
+						<div id="detailsDIVScenario2542" class="DetailsDiv" >
+						&nbsp;
+						</div>
+					</div>
+				</td>
+			</tr>			<tr>
+				<td width="50%" class="TableRow" valign="top">Map:LSDAMv2.2.3Plus</td>
+				<td width="50%" class="TableRow" valign="top">PerformedDiagnosis</td>
+			</tr>	
+			<tr>
+				<td class="TableRowBottomDashed"  colspan="2">
+					<div class="DetailsDivParent"><img src="../../images/minus03.gif" align="absmiddle" id="DetailsImageScenario2543" onclick="parent.toggleDiv('detailsDIVScenario2543','DetailsImageScenario2543')" />Details:
+						<div id="detailsDIVScenario2543" class="DetailsDiv" >
+						&nbsp;
+						</div>
+					</div>
+				</td>
+			</tr>
+	</table>
+</div>		<div class="ItemBody" id="LinksTable">
+			<table align="center" border="0" cellspacing="0" cellpadding="0" class="Table">
+				<tr>
+					<td width="30%" class="TableHeading">Object</td>
+					<td width="10%" class="TableHeading">Type</td>
+					<td width="10%" class="TableHeading">Connection</td>
+					<td width="10%" class="TableHeading">Direction</td>
+					<td width="40%" class="TableHeading">Notes</td>
+				</tr>
+				<tr>
+					<td width="30%" class="TableRow" valign="top"><a href="EA391.htm">PerformedObservationResult</a></td>
+					<td width="10%" class="TableRow" valign="top">Class</td>
+					<td width="10%" class="TableRow" valign="top">Generalization</td>
+					<td width="10%" class="TableRow" valign="top">To</td>
+					<td width="40%" class="TableRow" valign="top">DESCRIPTION:
+Each PerformedDiagnosis always specializes one PerformedObservationResult. Each PerformedObservationResult might be specialized by one PerformedDiagnosis.
+
+DEFINITION:
+
+EXAMPLE(S):
+
+OTHER NAME(S):
+
+NOTE(S):
+</td>
+				</tr>
+
+			</table>
+		</div>
+	</div>
+<div class="pageFooter"></div>
+ 
+</body>
+</html>
