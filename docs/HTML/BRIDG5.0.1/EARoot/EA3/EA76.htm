@@ -1,0 +1,1226 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>Common Sub-Domain::BiologicEntity</title>
+<link href="../../css/ea.css" rel="stylesheet" type="text/css" />
+<script>
+function initPage(src) {	
+	if(parent==this&&(this.location+"").indexOf('EARoot')!=-1)
+		document.location=(this.location+"").substring(0,(this.location+"").indexOf('EARoot'))+"index"+(this.location+"").substring((this.location+"").lastIndexOf('.'))+"?goto="+((this.location+"").substring((this.location+"").indexOf('EARoot')+7,(this.location+"").lastIndexOf('.')).replace(/\//g,':').replace(/EA/g,""));
+	else
+		parent.initPage(src);
+}
+
+function nameClassifier(name, separator)
+{
+  var str = name;
+  var classifierName;
+  var node = document.getElementById('name_classifier');
+  if(node != null)
+  {
+    classifierName = node.innerHTML;
+  }
+  if(classifierName != "")
+  {
+   str += separator + classifierName;
+  }
+  
+  return str;
+}
+</script>
+</head>
+<body onload="initPage(this);" class="Content">
+<div class="pageHeader"></div>
+<div class="PageBody">
+	<div id="name_classifier" style="display: none;"></div>
+	<span class="ObjectTitle"><script type="text/javascript">document.write(nameClassifier("BiologicEntity", " : "))</script>  : Public abstract  Class</span>
+	<table border="0" cellpadding="0" cellspacing="0" class="ObjectDetails">
+		<tr>
+			<td width="15%" class="ObjectDetailsTopic">Created:</td>
+			<td width="85%" class="ObjectDetailsValue">2/12/2008 9:49:10 AM</td>
+		</tr>
+		<tr>
+			<td class="ObjectDetailsTopic">Modified:</td>
+			<td class="ObjectDetailsValue">8/26/2017 2:00:31 AM</td>
+		</tr>
+		<tr style="height: 10px"><td colspan="2"></td></tr>
+		<tr>
+			<td class="ObjectDetailsTopic"><img src="../../images/plus03.gif" align="absmiddle" id="proj" onclick="parent.toggleData(this.id)" />Project:</td>
+			<td class="ObjectDetailsValue"></td>
+		</tr>
+		<tr id="proj00" style="display: none;">
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Author:</td>
+			<td class="ObjectDetailsValue">BRIDG SCC</td>
+		</tr>
+		<tr id="proj01" style="display: none;">
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Version:</td>
+			<td class="ObjectDetailsValue">1.0</td>
+		</tr>
+		<tr id="proj02" style="display: none;">
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Phase:</td>
+			<td class="ObjectDetailsValue">1.0</td>
+		</tr>
+		<tr id="proj03" style="display: none;">
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Status:</td>
+			<td class="ObjectDetailsValue"><none></td>
+		</tr>
+		<tr id="proj04" style="display: none;">
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Complexity:</td>
+			<td class="ObjectDetailsValue">Easy</td>
+		</tr>
+		<tr id="proj05" style="display: none;">
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Difficulty:</td>
+			<td class="ObjectDetailsValue"></td>
+		</tr>
+		<tr id="proj06" style="display: none;">
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Priority:</td>
+			<td class="ObjectDetailsValue"></td>
+		</tr>
+		<tr id="proj05" style="display: none;">
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Multiplicity:</td>
+			<td class="ObjectDetailsValue"></td>
+		</tr>
+		<tr>
+			<td class="ObjectDetailsTopic"><img src="../../images/plus03.gif" align="absmiddle" id="adv" onclick="parent.toggleData(this.id)" />Advanced:</td>
+			<td class="ObjectDetailsValue"></td>
+		</tr>
+		<tr id="adv00" style="display: none;">
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">UUID:</td>
+			<td class="ObjectDetailsValue">{DB27EC3F-835D-4919-BCB1-A423E6DA772B}</td>
+		</tr>
+		<tr id="adv01" style="display: none;">
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Appears In:</td>
+			<td class="ObjectDetailsValue"><a href="../EA1.htm">UML-Based Comprehensive BRIDG Model Diagram</a>, <a href="../EA2/EA45.htm">View BSP: Biospecimen</a>, <a href="../EA4/EA155.htm">View EX: Experiment</a>, <a href="../EA1/EA28.htm">View AE: Adverse Event</a>, <a href="EA60.htm">View CM: Common</a>, <a href="../EA5/EA170.htm">View IM: Imaging</a>, <a href="../EA11/EA466.htm">Subject and ExperimentalUnit Comparison</a>, <a href="../EA11/EA436.htm">BiologicEntity and Related Classes</a>, <a href="../EA11/EA450.htm">Performer</a>, <a href="../EA5/EA174.htm">DICOM SR TID 1500 BRIDG Class Diagram</a>, <a href="../EA11/EA454.htm">SDTM 3.1.3 View</a>, <a href="../EA11/EA438.htm">ClinicalTrials.gov</a>, <a href="../EA11/EA448.htm">Participant Registration</a>, <a href="../EA11/EA462.htm">SEER View</a></td>
+		</tr>
+	</table>
+	<div class="ObjectDetailsNotes">DEFINITION:&lt;br/&gt;Any individual living (or previously living) being.&lt;br/&gt;&lt;br/&gt;EXAMPLE(S):&lt;br/&gt;animal, human being&lt;br/&gt;&lt;br/&gt;OTHER NAME(S):&lt;br/&gt;organism&lt;br/&gt;&lt;br/&gt;NOTE(S):&lt;br/&gt;</div>
+
+	<div class="TableGroup" id="TableGroup">
+		<ul class="ItemTitle">
+			<li onClick="parent.toggleItem('Attributes');" id="AttributesTitle">Attributes</li>
+			<li onClick="parent.toggleItem('AssociationsTo');" id="AssociationsToTitle">Associations To</li>
+			<li onClick="parent.toggleItem('AssociationsFrom');" id="AssociationsFromTitle">Associations From</li>
+			<li onClick="parent.toggleItem('TaggedVal');" id="TaggedValTitle">Tagged Values</li>
+			<li onClick="parent.toggleItem('Constraints');" id="ConstraintsTitle">Constraints</li>
+			<li onClick="parent.toggleItem('Links');" id="LinksTitle">Other Links</li>
+		</ul>
+<div class="ItemBody" id="AttributesTable">
+	<table border="0" cellspacing="0" cellpadding="0" class="Table">
+		<tr>
+			<td width="100%" class="TableHeading">Attribute</td>
+		</tr>
+						<tr>
+				<td width="100%" class="TableRow">
+					<i>Public ID</i><br /><strong>&nbsp;&nbsp;identifier</strong>
+				</td>
+			</tr>
+			<tr>
+				<td class="TableRowBottomDashed"  colspan="1">										
+					<a href="#" onclick="parent.toggleData('DetailsImageAttributes226')" style="text-decoration: none; color: #000000;"><img src="../../images/plus03.gif" align="absmiddle" id="DetailsImageAttributes226" border="0" />Details:</a>
+					<table border="0" cellspacing="0" cellpadding="0" class="Table" style="padding: 4px 18px;">
+					
+						<tr id="DetailsImageAttributes226_00" style="display: none;">
+							<td width="75"><i>Alias:</i></td>
+							<td></td>
+						</tr>
+						<tr id="DetailsImageAttributes226_01" style="display: none;">
+							<td width="75"><i>Initial:</i></td>
+							<td></td>
+						</tr>
+						<tr id="DetailsImageAttributes226_02" style="display: none;">
+							<td width="75"><i>Stereotype: </i></td>
+							<td></td>
+						</tr>
+						<tr id="DetailsImageAttributes226_03" style="display: none;">
+							<td width="75"><i>Ordered: </i></td>
+							<td></td>
+						</tr>
+						<tr id="DetailsImageAttributes226_04" style="display: none;">
+							<td width="75"><i>Range: </i></td>
+							<td>Range:1. to 1</td>
+						</tr>
+						<tr id="DetailsImageAttributes226_05" style="display: none;">
+							<td width="75"><i>Transient: </i></td>
+							<td>False</td>
+						</tr>
+						<tr id="DetailsImageAttributes226_06" style="display: none;">
+							<td width="75"><i>Derived: </i></td>
+							<td>False</td>
+						</tr>
+							<tr id="DetailsImageAttributes226_07" style="display: none;">
+							<td width="75"><i>IsID: </i></td>
+						<td>False</td>
+						</tr>
+					</table>
+					
+					Map:AE=PersonIdentifier.identifier <br>Map:AE=PersonIdentifier.sponsoringOrganization <br>Map:AIM v4 rv48=Person.id<br>Map:C3PR=Participant.identifiers<br>Map:C3PR=ResearchStaff.nciIdentifier<br>Map:CTRPv1.0=IdentifiedBiologicEntity.identifier<br>Map:CTRPv3.8=IdentifiedEntity.assignedIdentifier<br>Map:CTRPv3.8=Person.identifier<br>Map:CTRv1.0=BiologicEntityIdentifier.identifier<br>Map:DICOM=Patient Module - Other Patient IDs Sequence > Patient ID (0010,0020)<br>Map:DICOM=Patient Module - Patient ID (0010,0020)<br>Map:DICOM=Patient Level Attributes for the Patient Root Query/Retrieve Information Model - Patient ID (0010,0020)<br>Map:DICOM=TID 1007 SubjectContext,Patient > Subject ID<br>Map:HCTv1.0=CDE 2958200:Individuals.IUBMID #<br>Map:HCTv1.0=MD Anderson Specific Content: Recipient.Recipient medical record number<br>Map:HCTv1.0=CDE 2527897:Recipient Identification.CIBMTR recipient ID (CRID)
+Universal Recipient ID<br>Map:HCTv1.0=CDE 2735593:Individuals.Non-NMDP donor ID:<br>Map:HCTv1.0=CDE 2729076:Specimen Characteristics.Research sample recipient ID:<br>Map:HCTv1.0=CDE 2220102:Individuals.Social Security Number<br>Map:HL7SD=Animal.id<br>Map:HL7SP=Animal.id<br>Map:ICSRr2=IdentifiedEntity3.id (in IndividualCaseSafetyReport)<br>Map:ICSRr2=IdentifiedEntity2.id (in IndividualCaseSafetyReport)<br>Map:ICSRr2=IdentifiedEntity.id (in IndividualCaseSafetyReport)<br>Map:LSDAMv2.2.3Plus=BiologicEntityIdentifier.identifier<br>Map:NCI CRF Standard=CDE 2822790v1.0:  Participant Prior Clinical Study Identifier<br>Map:NCI CRF Standard=CDE 2746468v1.0: Healthcare Facility Participant Identifier<br>Map:NCI CRF Standard=CDE 2465308v1.0:  Patient Multiple Clinical Trials Cooperative Group Identifier Number<br>Map:PSC=Participant.personId<br>Map:PSCv2.6=Subject.personId<br>
+						<div class="ObjectDetailsNotes"><table>
+	<tr>
+		<td valign="top">
+			<i>Notes: </i><span style="margin-left: .4cm;"> </span>
+		</td>
+		<td>
+			DEFINITION:&lt;br/&gt;A unique symbol that establishes identity of the biologic entity.&lt;br/&gt;&lt;br/&gt;EXAMPLE(S):&lt;br/&gt;medical record number&lt;br/&gt;&lt;br/&gt;OTHER NAME(S):&lt;br/&gt;&lt;br/&gt;NOTE(S):&lt;br/&gt;This is different from the SubjectIdentifier.identifier.&lt;br/&gt;
+		</td>
+	</tr>
+</table></div>
+
+						
+				</td>
+			</tr>			<tr>
+				<td width="100%" class="TableRow">
+					<i>Public CD</i><br /><strong>&nbsp;&nbsp;missingIdentifierReasonCode</strong>
+				</td>
+			</tr>
+			<tr>
+				<td class="TableRowBottomDashed"  colspan="1">										
+					<a href="#" onclick="parent.toggleData('DetailsImageAttributes227')" style="text-decoration: none; color: #000000;"><img src="../../images/plus03.gif" align="absmiddle" id="DetailsImageAttributes227" border="0" />Details:</a>
+					<table border="0" cellspacing="0" cellpadding="0" class="Table" style="padding: 4px 18px;">
+					
+						<tr id="DetailsImageAttributes227_00" style="display: none;">
+							<td width="75"><i>Alias:</i></td>
+							<td></td>
+						</tr>
+						<tr id="DetailsImageAttributes227_01" style="display: none;">
+							<td width="75"><i>Initial:</i></td>
+							<td></td>
+						</tr>
+						<tr id="DetailsImageAttributes227_02" style="display: none;">
+							<td width="75"><i>Stereotype: </i></td>
+							<td></td>
+						</tr>
+						<tr id="DetailsImageAttributes227_03" style="display: none;">
+							<td width="75"><i>Ordered: </i></td>
+							<td></td>
+						</tr>
+						<tr id="DetailsImageAttributes227_04" style="display: none;">
+							<td width="75"><i>Range: </i></td>
+							<td>Range:0 to 1</td>
+						</tr>
+						<tr id="DetailsImageAttributes227_05" style="display: none;">
+							<td width="75"><i>Transient: </i></td>
+							<td>False</td>
+						</tr>
+						<tr id="DetailsImageAttributes227_06" style="display: none;">
+							<td width="75"><i>Derived: </i></td>
+							<td>False</td>
+						</tr>
+							<tr id="DetailsImageAttributes227_07" style="display: none;">
+							<td width="75"><i>IsID: </i></td>
+						<td>False</td>
+						</tr>
+					</table>
+					
+					Map:HCTv1.0=CDE 3115786:Individuals.If necessary, please validate patient identifier response.<br>Map:HCTv1.0=CDE 3115593:Individuals.If necessary, please validate the Social Security number response:<br>
+						<div class="ObjectDetailsNotes"><table>
+	<tr>
+		<td valign="top">
+			<i>Notes: </i><span style="margin-left: .4cm;"> </span>
+		</td>
+		<td>
+			DEFINITION:&lt;br/&gt;A coded value specifying why the identifier was not provided.&lt;br/&gt;&lt;br/&gt;EXAMPLE(S):&lt;br/&gt;forgot to ask, subject refused&lt;br/&gt;&lt;br/&gt;OTHER NAME(S):&lt;br/&gt;&lt;br/&gt;NOTE(S):&lt;br/&gt;This value should only be populated if BiologicEntityIdentifier.identifier is null.&lt;br/&gt;
+		</td>
+	</tr>
+</table></div>
+
+						
+				</td>
+			</tr>			<tr>
+				<td width="100%" class="TableRow">
+					<i>Public DSET&lt;EN&gt;</i><br /><strong>&nbsp;&nbsp;name</strong>
+				</td>
+			</tr>
+			<tr>
+				<td class="TableRowBottomDashed"  colspan="1">										
+					<a href="#" onclick="parent.toggleData('DetailsImageAttributes228')" style="text-decoration: none; color: #000000;"><img src="../../images/plus03.gif" align="absmiddle" id="DetailsImageAttributes228" border="0" />Details:</a>
+					<table border="0" cellspacing="0" cellpadding="0" class="Table" style="padding: 4px 18px;">
+					
+						<tr id="DetailsImageAttributes228_00" style="display: none;">
+							<td width="75"><i>Alias:</i></td>
+							<td></td>
+						</tr>
+						<tr id="DetailsImageAttributes228_01" style="display: none;">
+							<td width="75"><i>Initial:</i></td>
+							<td></td>
+						</tr>
+						<tr id="DetailsImageAttributes228_02" style="display: none;">
+							<td width="75"><i>Stereotype: </i></td>
+							<td></td>
+						</tr>
+						<tr id="DetailsImageAttributes228_03" style="display: none;">
+							<td width="75"><i>Ordered: </i></td>
+							<td></td>
+						</tr>
+						<tr id="DetailsImageAttributes228_04" style="display: none;">
+							<td width="75"><i>Range: </i></td>
+							<td>Range:0 to *</td>
+						</tr>
+						<tr id="DetailsImageAttributes228_05" style="display: none;">
+							<td width="75"><i>Transient: </i></td>
+							<td>False</td>
+						</tr>
+						<tr id="DetailsImageAttributes228_06" style="display: none;">
+							<td width="75"><i>Derived: </i></td>
+							<td>False</td>
+						</tr>
+							<tr id="DetailsImageAttributes228_07" style="display: none;">
+							<td width="75"><i>IsID: </i></td>
+						<td>False</td>
+						</tr>
+					</table>
+					
+					Map:AE=Receiver.personName<br>Map:AE=Reporter.personName<br>Map:AE=ContactPerson.name<br>Map:AIM v4 rv48=Person.name<br>Map:C3PR=Person.maidenName<br>Map:C3PR=Person.firstName<br>Map:C3PR=Person.middleName<br>Map:C3PR=Person.lastName<br>Map:C3PRv2.9=Person.lastName<br>Map:C3PRv2.9=StudySubject.otherTreatingPhysician<br>Map:C3PRv2.9=Person.firstName<br>Map:C3PRv2.9=Person.maidenName<br>Map:C3PRv2.9=Person.middleName<br>Map:caAERSv2.2=Person.lastName<br>Map:caAERSv2.2=Recipient.name<br>Map:caAERSv2.2=Participant.maidenName<br>Map:caAERSv2.2=Person.maidenName<br>Map:caAERSv2.2=Person.firstName<br>Map:CTGOV=Facility Contact - Middle Initial<br>Map:CTGOV=Central Contact - First Name<br>Map:CTGOV=Overall Study Officials - Last Name<br>Map:CTGOV=Facility Contact - Last Name<br>Map:CTGOV=Responsible Party - Name/Official Title<br>Map:CTGOV=Investigators - First Name<br>Map:CTGOV=Central Contact - Middle Initial<br>Map:CTGOV=Investigators - Middle Initial<br>Map:CTGOV=Overall Study Officials - Middle Initial<br>Map:CTGOV=Facility Contact - First Name<br>Map:CTGOV=Overall Study Officials - First Name<br>Map:CTGOV=Investigators - Last Name<br>Map:CTGOV=Central Contact - Last Name<br>Map:CTOM=Participant.middleName<br>Map:CTOM=Participant.firstName<br>Map:CTOM=Person.lastName<br>Map:CTOM=Investigator.middleName<br>Map:CTOM=Investigator.firstName <br>Map:CTOM=Person.middleName<br>Map:CTOM=Investigator.lastName<br>Map:CTOM=Person.firstName<br>Map:CTOM=Participant.lastName<br>Map:CTR&Rr2=IEC Applicant Middle Name <br>Map:CTR&Rr2=Sponsor Contact Family Name<br>Map:CTR&Rr2=IEC Applicant Given Name <br>Map:CTR&Rr2=Investigator Given Name <br>Map:CTR&Rr2=Investigator Middle Name <br>Map:CTR&Rr2=Subcontractor Given Name <br>Map:CTR&Rr2=Legal Rep Middle Name<br>Map:CTR&Rr2=Investigator Family Name <br>Map:CTR&Rr2=Sponsor Contact Middle name <br>Map:CTR&Rr2=CTF Family Name <br>Map:CTR&Rr2=CTF Middle Name <br>Map:CTR&Rr2=Sponsor Contact Given name <br>Map:CTR&Rr2=Subcontractor Middle Name <br>Map:CTR&Rr2=CA Applicant Family Name <br>Map:CTR&Rr2=CA Applicant Given Name <br>Map:CTR&Rr2=Legal Rep Given Name <br>Map:CTR&Rr2=Network Family Name<br>Map:CTR&Rr2=Network Middle Name<br>Map:CTR&Rr2=Subcontractor Family Name <br>Map:CTR&Rr2=Legal Rep Family Name<br>Map:CTR&Rr2=Network Given Name<br>Map:CTR&Rr2=IEC Applicant Family Name <br>Map:CTR&Rr2=CTF Given Name <br>Map:CTR&Rr2=CA Applicant Middle Name <br>Map:CTRPv1.0=Person.name<br>Map:CTRPv3.8=Person.name<br>Map:CTRR=Responsible Contact Person<br>Map:CTRR=Principal Investigator<br>Map:CTRR=Secondary Sponsor<br>Map:CTRR=Site Representative/ Investigator<br>Map:CTRR=Coordinating investigator<br>Map:CTRR=Financial Sponsor<br>Map:CTRR=Sponsor<br>Map:CTRRr3=Person.name<br>Map:CTRv1.0=BiologicEntity.name<br>Map:DICOM=Patient Level Attributes for the Patient Root Query/Retrieve Information Model - Patient's Name (0010,0010)<br>Map:DICOM=Patient Module - Responsible Person (0010,2297)<br>Map:DICOM=Patient Module - Other Patient Names (0010,1001)<br>Map:DICOM=Clinical Trial Subject Module - Clinical Trial Sponsor Name (0012,0010)<br>Map:DICOM=Patient Module - Patient's Name (0010,0010)<br>Map:DICOM=Clinical Trial Context Module - Clinical Trial Sponsor Name (0012,0010)<br>Map:DICOM=TID 1007 SubjectContext,Patient > Subject Name<br>Map:DICOM=Patient Level Attributes for the Patient Root Query/Retrieve Information Model - Other Patient Names (0010,1001)<br>Map:HCTv1.0=CDE 3115634:UML DEFAULT CD.Mother's maiden name:<br>Map:HSDBv1.0=[Principal Investigator].First Name<br>Map:HSDBv1.0=[Principal Investigator] .Middle Name<br>Map:HSDBv1.0=[Study].Responsible Party<br>Map:HSDBv1.0=[Sponsor Contact].First Name<br>Map:HSDBv1.0=[Sponsor Contact].Last Name<br>Map:HSDBv1.0=[Principal Investigator] .Last Name<br>Map:HSDBv1.0=[Sponsor Contact].Middle Name<br>Map:ICSRr2=Animal.name (in IndividualCaseSafetyReport)<br>Map:ICSRr2=Person.name (in IndividualCaseSafetyReport)<br>Map:ICSRr2=ContactPerson.name (in E_Organization informational)<br>Map:ICSRr2=Person2.name (in IndividualCaseSafetyReport)<br>Map:ICSRr2=contactPerson.name (in R_Product)<br>Map:Lab=Investigator.name<br>Map:LabViewer2.2=Investigator.lastName<br>Map:LabViewer2.2=Investigator.middleName<br>Map:LabViewer2.2=Investigator.firstName<br>Map:LSDAMv2.2.3Plus=Person.name<br>Map:NCI CRF Standard=CDE 2006475v2.0: Individual Genealogy Suffix Code<br>Map:NCI CRF Standard=CDE 2006163v1.0: Responsible Person Name<br>Map:NCI CRF Standard=CDE 2179589v2.0:  Person Given/First Name<br>Map:NCI CRF Standard=CDE 2179591v2.0: Person Family/Last Name<br>Map:NCI CRF Standard=CDE 3008899v1.0: Reviewer Name<br>Map:NCI CRF Standard=CDE 2746480v1.0:  Specialist Physician Name<br>Map:NCI CRF Standard=CDE 2179590v2.0: Person Middle Name<br>Map:NCI CRF Standard=CDE 2452692v1.0: Clinical Research Associate Responsible Person Name<br>Map:NCI CRF Standard=CDE 62749v3.0: Treating Physician Name<br>Map:NCI CRF Standard=CDE 2740424v1.0: Treating Physician Or Participating Investigator Name<br>Map:NCI CRF Standard=CDE 2172v3.0: Protocol Registrar Name<br>Map:PSC=Participant.lastName<br>Map:PSC=Participant.firstName<br>Map:PSCv2.6=Subject.firstName<br>Map:PSCv2.6=Subject.lastName<br>Map:SDTM IGv3.1.1=DM.INVNAM<br>Map:SDTM IGv3.1.2=TS.TSVAL where TSPARMCD=SPONSOR<br>Map:SDTM IGv3.1.2=DM.INVNAM<br>Map:SDTM IGv3.1.3=TS.TSVAL WHERE TSPARMCD = "SPONSOR"<br>Map:SDTM IGv3.1.3=DM.INVNAM<br>Map:SEER 2015=SECTION III DEMOGRAPHIC INFORMATION - FIRST NAME<br>Map:SEER 2015=SECTION III DEMOGRAPHIC INFORMATION - LAST NAME<br>Map:Vendor1v1.1=BiologicEntity.name<br>Map:WHO=Contact for Public Queries - lastname<br>Map:WHO=Primary Sponsor<br>Map:WHO=Contact for Scientific Queries - middlename<br>Map:WHO=Secondary Sponsor(s)<br>Map:WHO=Contact for Scientific Queries - lastname<br>Map:WHO=Contact for Public Queries - middlename<br>Map:WHO=Contact for Scientific Queries - firstname<br>Map:WHO=Source(s) of Monetary or Material Support<br>Map:WHO=Contact for Public Queries - firstname<br>
+						<div class="ObjectDetailsNotes"><table>
+	<tr>
+		<td valign="top">
+			<i>Notes: </i><span style="margin-left: .4cm;"> </span>
+		</td>
+		<td>
+			DEFINITION:&lt;br/&gt;A non-unique textual identifier for the biologic entity.&lt;br/&gt;&lt;br/&gt;EXAMPLE(S):&lt;br/&gt;assumed name of &quot;Mark Twain&quot;, official registry name of &quot;Samuel Clemens&quot;, customary name of &quot;Sam Clemens&quot;&lt;br/&gt;&lt;br/&gt;OTHER NAME(S):&lt;br/&gt;&lt;br/&gt;NOTE(S):&lt;br/&gt;The EN.use attribute of the EN data type is used to distinguish the various types of names, such as official registry, customary, assumed.&lt;br/&gt;
+		</td>
+	</tr>
+</table></div>
+
+						
+				</td>
+			</tr>			<tr>
+				<td width="100%" class="TableRow">
+					<i>Public CD</i><br /><strong>&nbsp;&nbsp;sexGenotypeCode</strong>
+				</td>
+			</tr>
+			<tr>
+				<td class="TableRowBottomDashed"  colspan="1">										
+					<a href="#" onclick="parent.toggleData('DetailsImageAttributes229')" style="text-decoration: none; color: #000000;"><img src="../../images/plus03.gif" align="absmiddle" id="DetailsImageAttributes229" border="0" />Details:</a>
+					<table border="0" cellspacing="0" cellpadding="0" class="Table" style="padding: 4px 18px;">
+					
+						<tr id="DetailsImageAttributes229_00" style="display: none;">
+							<td width="75"><i>Alias:</i></td>
+							<td></td>
+						</tr>
+						<tr id="DetailsImageAttributes229_01" style="display: none;">
+							<td width="75"><i>Initial:</i></td>
+							<td></td>
+						</tr>
+						<tr id="DetailsImageAttributes229_02" style="display: none;">
+							<td width="75"><i>Stereotype: </i></td>
+							<td></td>
+						</tr>
+						<tr id="DetailsImageAttributes229_03" style="display: none;">
+							<td width="75"><i>Ordered: </i></td>
+							<td></td>
+						</tr>
+						<tr id="DetailsImageAttributes229_04" style="display: none;">
+							<td width="75"><i>Range: </i></td>
+							<td>Range:0 to 1</td>
+						</tr>
+						<tr id="DetailsImageAttributes229_05" style="display: none;">
+							<td width="75"><i>Transient: </i></td>
+							<td>False</td>
+						</tr>
+						<tr id="DetailsImageAttributes229_06" style="display: none;">
+							<td width="75"><i>Derived: </i></td>
+							<td>False</td>
+						</tr>
+							<tr id="DetailsImageAttributes229_07" style="display: none;">
+							<td width="75"><i>IsID: </i></td>
+						<td>False</td>
+						</tr>
+					</table>
+					
+					Map:LSDAMv2.2.3Plus=BiologicEntity.sexGenotypeCode<br>
+						<div class="ObjectDetailsNotes"><table>
+	<tr>
+		<td valign="top">
+			<i>Notes: </i><span style="margin-left: .4cm;"> </span>
+		</td>
+		<td>
+			DEFINITION:&lt;br/&gt;A coded value specifying the sex of a biologic entity based upon the characterization of the biologic entity&#39;s genes.&lt;br/&gt;&lt;br/&gt;EXAMPLE(S):&lt;br/&gt;For humans, the most common sex genotypes are XX and XY.&lt;br/&gt;&lt;br/&gt;OTHER NAME(S):&lt;br/&gt;&lt;br/&gt;NOTE(S):&lt;br/&gt;
+		</td>
+	</tr>
+</table></div>
+
+						
+				</td>
+			</tr>			<tr>
+				<td width="100%" class="TableRow">
+					<i>Public CD</i><br /><strong>&nbsp;&nbsp;administrativeGenderCode</strong>
+				</td>
+			</tr>
+			<tr>
+				<td class="TableRowBottomDashed"  colspan="1">										
+					<a href="#" onclick="parent.toggleData('DetailsImageAttributes230')" style="text-decoration: none; color: #000000;"><img src="../../images/plus03.gif" align="absmiddle" id="DetailsImageAttributes230" border="0" />Details:</a>
+					<table border="0" cellspacing="0" cellpadding="0" class="Table" style="padding: 4px 18px;">
+					
+						<tr id="DetailsImageAttributes230_00" style="display: none;">
+							<td width="75"><i>Alias:</i></td>
+							<td></td>
+						</tr>
+						<tr id="DetailsImageAttributes230_01" style="display: none;">
+							<td width="75"><i>Initial:</i></td>
+							<td></td>
+						</tr>
+						<tr id="DetailsImageAttributes230_02" style="display: none;">
+							<td width="75"><i>Stereotype: </i></td>
+							<td></td>
+						</tr>
+						<tr id="DetailsImageAttributes230_03" style="display: none;">
+							<td width="75"><i>Ordered: </i></td>
+							<td></td>
+						</tr>
+						<tr id="DetailsImageAttributes230_04" style="display: none;">
+							<td width="75"><i>Range: </i></td>
+							<td>Range:0 to 1</td>
+						</tr>
+						<tr id="DetailsImageAttributes230_05" style="display: none;">
+							<td width="75"><i>Transient: </i></td>
+							<td>False</td>
+						</tr>
+						<tr id="DetailsImageAttributes230_06" style="display: none;">
+							<td width="75"><i>Derived: </i></td>
+							<td>False</td>
+						</tr>
+							<tr id="DetailsImageAttributes230_07" style="display: none;">
+							<td width="75"><i>IsID: </i></td>
+						<td>False</td>
+						</tr>
+					</table>
+					
+					Map:AE=Organism.sex<br>Map:AIM v4 rv48=Person.sex<br>Map:C3PR=Participant.administrativeGenderCode<br>Map:C3PRv2.9=Participant.administrativeGenderCode<br>Map:caAERSv2.2=Participant.gender<br>Map:CDASHv1.1=DM.SEX<br>Map:CTOM=Participant.administrativeGenderCode<br>Map:CTOM=Investigator.administrativeGenderCode<br>Map:CTOM=Person.administrativeGenderCode<br>Map:CTRPv1.0=Person.sexCode<br>Map:CTRPv3.8=Person.sexCode<br>Map:CTRv1.0=BiologicEntity.administrativeGenderCode<br>Map:DICOM=Patient Module - Patient's Sex (0010,0040)<br>Map:DICOM=TID 1007 SubjectContext,Patient > Subject Sex<br>Map:DICOM=Patient Level Attributes for the Patient Root Query/Retrieve Information Model - Patient's Sex (0010,0040)<br>Map:HCTv1.0=CDE 2180389:Physical Description of Individuals.Donor Gender<br>Map:HCTv1.0=CDE 3171628:Physical Description of Individuals.Person Gender:<br>Map:HCTv1.0=CDE 2200604:Recipient Identification.Gender<br>Map:HL7SP=Animal.administrativeGenderCode<br>Map:ICSRr2=Person2.administrativeGenderCode (in IndividualCaseSafetyReport)<br>Map:ICSRr2=Animal.administrativeGenderCode (in IndividualCaseSafetyReport)<br>Map:LabViewer2.2=ParticipantSex.codeSystemVersion<br>Map:LabViewer2.2=ParticipantSex.code<br>Map:LabViewer2.2=ParticipantSex.displayName<br>Map:LabViewer2.2=ParticipantSex.codeSystemName<br>Map:LabViewer2.2=ParticipantSex.codeSystem<br>Map:LSDAMv2.2.3Plus=BiologicEntity.administrativeGenderCode<br>Map:NCI CRF Standard=CDE 2200604v3.0:  Person Gender Text Type<br>Map:PSC=Participant.gender<br>Map:PSCv2.6=Subject.gender<br>Map:SDTM IGv3.1.1=DM.SEX<br>Map:SDTM IGv3.1.2=DM.SEX<br>Map:SDTM IGv3.1.3=DM.SEX<br>Map:SEER 2015=SECTION III DEMOGRAPHIC INFORMATION - SEX<br>
+						<div class="ObjectDetailsNotes"><table>
+	<tr>
+		<td valign="top">
+			<i>Notes: </i><span style="margin-left: .4cm;"> </span>
+		</td>
+		<td>
+			DEFINITION:&lt;br/&gt;A coded value specifying the physical or societal properties by which male is distinguished from female.&lt;br/&gt;&lt;br/&gt;EXAMPLE(S):&lt;br/&gt;&lt;br/&gt;OTHER NAME(S):&lt;br/&gt;&lt;br/&gt;NOTE(S):&lt;br/&gt;For humans, identification of sex is usually based upon self-report and may come from a form, questionnaire, interview, etc.&lt;br/&gt;
+		</td>
+	</tr>
+</table></div>
+
+						
+				</td>
+			</tr>			<tr>
+				<td width="100%" class="TableRow">
+					<i>Public CD</i><br /><strong>&nbsp;&nbsp;birthCountryCode</strong>
+				</td>
+			</tr>
+			<tr>
+				<td class="TableRowBottomDashed"  colspan="1">										
+					<a href="#" onclick="parent.toggleData('DetailsImageAttributes231')" style="text-decoration: none; color: #000000;"><img src="../../images/plus03.gif" align="absmiddle" id="DetailsImageAttributes231" border="0" />Details:</a>
+					<table border="0" cellspacing="0" cellpadding="0" class="Table" style="padding: 4px 18px;">
+					
+						<tr id="DetailsImageAttributes231_00" style="display: none;">
+							<td width="75"><i>Alias:</i></td>
+							<td></td>
+						</tr>
+						<tr id="DetailsImageAttributes231_01" style="display: none;">
+							<td width="75"><i>Initial:</i></td>
+							<td></td>
+						</tr>
+						<tr id="DetailsImageAttributes231_02" style="display: none;">
+							<td width="75"><i>Stereotype: </i></td>
+							<td></td>
+						</tr>
+						<tr id="DetailsImageAttributes231_03" style="display: none;">
+							<td width="75"><i>Ordered: </i></td>
+							<td></td>
+						</tr>
+						<tr id="DetailsImageAttributes231_04" style="display: none;">
+							<td width="75"><i>Range: </i></td>
+							<td>Range:0 to 1</td>
+						</tr>
+						<tr id="DetailsImageAttributes231_05" style="display: none;">
+							<td width="75"><i>Transient: </i></td>
+							<td>False</td>
+						</tr>
+						<tr id="DetailsImageAttributes231_06" style="display: none;">
+							<td width="75"><i>Derived: </i></td>
+							<td>False</td>
+						</tr>
+							<tr id="DetailsImageAttributes231_07" style="display: none;">
+							<td width="75"><i>IsID: </i></td>
+						<td>False</td>
+						</tr>
+					</table>
+					
+					Map:AE=Organism.birthCountry<br>Map:CTRv1.0=BiologicEntity.birthCountryCode<br>Map:LSDAMv2.2.3Plus=BiologicEntity.birthCountryCode<br>Map:SEER 2015=SECTION III DEMOGRAPHIC INFORMATION - BIRTHPLACE – COUNTRY<br>
+						<div class="ObjectDetailsNotes"><table>
+	<tr>
+		<td valign="top">
+			<i>Notes: </i><span style="margin-left: .4cm;"> </span>
+		</td>
+		<td>
+			DEFINITION:&lt;br/&gt;A coded value specifying the name of the country in which the biologic entity is born.&lt;br/&gt;&lt;br/&gt;EXAMPLE(S):&lt;br/&gt;&lt;br/&gt;OTHER NAME(S):&lt;br/&gt;&lt;br/&gt;NOTE(S):&lt;br/&gt;
+		</td>
+	</tr>
+</table></div>
+
+						
+				</td>
+			</tr>			<tr>
+				<td width="100%" class="TableRow">
+					<i>Public INT.POS</i><br /><strong>&nbsp;&nbsp;birthOrder</strong>
+				</td>
+			</tr>
+			<tr>
+				<td class="TableRowBottomDashed"  colspan="1">										
+					<a href="#" onclick="parent.toggleData('DetailsImageAttributes232')" style="text-decoration: none; color: #000000;"><img src="../../images/plus03.gif" align="absmiddle" id="DetailsImageAttributes232" border="0" />Details:</a>
+					<table border="0" cellspacing="0" cellpadding="0" class="Table" style="padding: 4px 18px;">
+					
+						<tr id="DetailsImageAttributes232_00" style="display: none;">
+							<td width="75"><i>Alias:</i></td>
+							<td></td>
+						</tr>
+						<tr id="DetailsImageAttributes232_01" style="display: none;">
+							<td width="75"><i>Initial:</i></td>
+							<td></td>
+						</tr>
+						<tr id="DetailsImageAttributes232_02" style="display: none;">
+							<td width="75"><i>Stereotype: </i></td>
+							<td></td>
+						</tr>
+						<tr id="DetailsImageAttributes232_03" style="display: none;">
+							<td width="75"><i>Ordered: </i></td>
+							<td></td>
+						</tr>
+						<tr id="DetailsImageAttributes232_04" style="display: none;">
+							<td width="75"><i>Range: </i></td>
+							<td>Range:0 to 1</td>
+						</tr>
+						<tr id="DetailsImageAttributes232_05" style="display: none;">
+							<td width="75"><i>Transient: </i></td>
+							<td>False</td>
+						</tr>
+						<tr id="DetailsImageAttributes232_06" style="display: none;">
+							<td width="75"><i>Derived: </i></td>
+							<td>False</td>
+						</tr>
+							<tr id="DetailsImageAttributes232_07" style="display: none;">
+							<td width="75"><i>IsID: </i></td>
+						<td>False</td>
+						</tr>
+					</table>
+					
+					Map:AE=Organism.birthOrder<br>Map:CTRv1.0=BiologicEntity.birthOrder<br>Map:LSDAMv2.2.3Plus=BiologicEntity.birthOrder<br>
+						<div class="ObjectDetailsNotes"><table>
+	<tr>
+		<td valign="top">
+			<i>Notes: </i><span style="margin-left: .4cm;"> </span>
+		</td>
+		<td>
+			DEFINITION:&lt;br/&gt;Indicates the sequence of a biologic entity&#39;s birth in the family group. &lt;br/&gt;&lt;br/&gt;EXAMPLE(S):&lt;br/&gt;&lt;br/&gt;OTHER NAME(S):&lt;br/&gt;&lt;br/&gt;NOTE(S):&lt;br/&gt;
+		</td>
+	</tr>
+</table></div>
+
+						
+				</td>
+			</tr>			<tr>
+				<td width="100%" class="TableRow">
+					<i>Public TS.DATETIME</i><br /><strong>&nbsp;&nbsp;birthDate</strong>
+				</td>
+			</tr>
+			<tr>
+				<td class="TableRowBottomDashed"  colspan="1">										
+					<a href="#" onclick="parent.toggleData('DetailsImageAttributes233')" style="text-decoration: none; color: #000000;"><img src="../../images/plus03.gif" align="absmiddle" id="DetailsImageAttributes233" border="0" />Details:</a>
+					<table border="0" cellspacing="0" cellpadding="0" class="Table" style="padding: 4px 18px;">
+					
+						<tr id="DetailsImageAttributes233_00" style="display: none;">
+							<td width="75"><i>Alias:</i></td>
+							<td></td>
+						</tr>
+						<tr id="DetailsImageAttributes233_01" style="display: none;">
+							<td width="75"><i>Initial:</i></td>
+							<td></td>
+						</tr>
+						<tr id="DetailsImageAttributes233_02" style="display: none;">
+							<td width="75"><i>Stereotype: </i></td>
+							<td></td>
+						</tr>
+						<tr id="DetailsImageAttributes233_03" style="display: none;">
+							<td width="75"><i>Ordered: </i></td>
+							<td></td>
+						</tr>
+						<tr id="DetailsImageAttributes233_04" style="display: none;">
+							<td width="75"><i>Range: </i></td>
+							<td>Range:0 to 1</td>
+						</tr>
+						<tr id="DetailsImageAttributes233_05" style="display: none;">
+							<td width="75"><i>Transient: </i></td>
+							<td>False</td>
+						</tr>
+						<tr id="DetailsImageAttributes233_06" style="display: none;">
+							<td width="75"><i>Derived: </i></td>
+							<td>False</td>
+						</tr>
+							<tr id="DetailsImageAttributes233_07" style="display: none;">
+							<td width="75"><i>IsID: </i></td>
+						<td>False</td>
+						</tr>
+					</table>
+					
+					Map:AE=Organism.birthDate<br>Map:C3PR=Participant.birthDate<br>Map:C3PRv2.9=Participant.birthDate<br>Map:caAERSv2.2=Participant.birthDate<br>Map:CDASHv1.1=DM.BRTHTIM<br>Map:CDASHv1.1=DM.BRTHYR<br>Map:CDASHv1.1=DM.BRTHDAT<br>Map:CDASHv1.1=DM.BRTHMO<br>Map:CDASHv1.1=DM.BRTHDY<br>Map:CTOM=Investigator.birthDate<br>Map:CTOM=Participant.birthDate<br>Map:CTOM=Person.birthDate<br>Map:CTRPv3.8=Person.birthDate<br>Map:CTRv1.0=BiologicEntity.birthDate<br>Map:DICOM=Patient Module - Patient's Birth Date (0010,0030)<br>Map:DICOM=Patient Module - Patient's Birth Time (0010,0032)<br>Map:DICOM=TID 1007 SubjectContext,Patient > Subject Birth Date<br>Map:DICOM=Patient Level Attributes for the Patient Root Query/Retrieve Information Model - Patient's Birth Time (0010,0032)<br>Map:DICOM=Patient Level Attributes for the Patient Root Query/Retrieve Information Model - Patient's Birth Date (0010,0030)<br>Map:HCTv1.0=CDE 2180386:Individuals.Donor Birth Date<br>Map:HCTv1.0=CDE 3098934:Individuals.What is the reason for the mother's missing age?<br>Map:HCTv1.0=CDE 2866121:Recipient Identification.Patient Date of Birth<br>Map:HCTv1.0=CDE 2883970:Individuals.What is the transplant donor or infant date of birth?<br>Map:HL7SP=Animal.birthtime<br>Map:ICSRr2=Animal.birthTime (in IndividualCaseSafetyReport)<br>Map:ICSRr2=Person2.birthTime (in IndividualCaseSafetyReport)<br>Map:Lab=Investigator.dateOfBirth<br>Map:Lab=Participant.dateOfBirth<br>Map:Lab=Person.dateOfBirth<br>Map:LabViewer2.2=Participant.dateOfBirth<br>Map:LabViewer2.2=Person.dateOfBirth<br>Map:LSDAMv2.2.3Plus=BiologicEntity.birthDate<br>Map:NCI CRF Standard=CDE 793v5.1:  Person Birth Date<br>Map:PSC=Participant.birthDate<br>Map:PSCv2.6=Subject.dateOfBirth<br>Map:SDTM IGv3.1.1=DM.BRTHDTC<br>Map:SDTM IGv3.1.2=DM.BRTHDTC<br>Map:SDTM IGv3.1.3=DM.BRTHDTC<br>Map:SEER 2015=SECTION III DEMOGRAPHIC INFORMATION - DATE OF BIRTH FLAG<br>Map:SEER 2015=SECTION III DEMOGRAPHIC INFORMATION - DATE OF BIRTH<br>
+						<div class="ObjectDetailsNotes"><table>
+	<tr>
+		<td valign="top">
+			<i>Notes: </i><span style="margin-left: .4cm;"> </span>
+		</td>
+		<td>
+			DEFINITION:&lt;br/&gt;The date (and time) on which the biologic entity is born.&lt;br/&gt;&lt;br/&gt;EXAMPLE(S):&lt;br/&gt;&lt;br/&gt;OTHER NAME(S):&lt;br/&gt;&lt;br/&gt;NOTE(S):&lt;br/&gt;
+		</td>
+	</tr>
+</table></div>
+
+						
+				</td>
+			</tr>			<tr>
+				<td width="100%" class="TableRow">
+					<i>Public TS.DATETIME</i><br /><strong>&nbsp;&nbsp;deathDate</strong>
+				</td>
+			</tr>
+			<tr>
+				<td class="TableRowBottomDashed"  colspan="1">										
+					<a href="#" onclick="parent.toggleData('DetailsImageAttributes234')" style="text-decoration: none; color: #000000;"><img src="../../images/plus03.gif" align="absmiddle" id="DetailsImageAttributes234" border="0" />Details:</a>
+					<table border="0" cellspacing="0" cellpadding="0" class="Table" style="padding: 4px 18px;">
+					
+						<tr id="DetailsImageAttributes234_00" style="display: none;">
+							<td width="75"><i>Alias:</i></td>
+							<td></td>
+						</tr>
+						<tr id="DetailsImageAttributes234_01" style="display: none;">
+							<td width="75"><i>Initial:</i></td>
+							<td></td>
+						</tr>
+						<tr id="DetailsImageAttributes234_02" style="display: none;">
+							<td width="75"><i>Stereotype: </i></td>
+							<td></td>
+						</tr>
+						<tr id="DetailsImageAttributes234_03" style="display: none;">
+							<td width="75"><i>Ordered: </i></td>
+							<td></td>
+						</tr>
+						<tr id="DetailsImageAttributes234_04" style="display: none;">
+							<td width="75"><i>Range: </i></td>
+							<td>Range:0 to 1</td>
+						</tr>
+						<tr id="DetailsImageAttributes234_05" style="display: none;">
+							<td width="75"><i>Transient: </i></td>
+							<td>False</td>
+						</tr>
+						<tr id="DetailsImageAttributes234_06" style="display: none;">
+							<td width="75"><i>Derived: </i></td>
+							<td>False</td>
+						</tr>
+							<tr id="DetailsImageAttributes234_07" style="display: none;">
+							<td width="75"><i>IsID: </i></td>
+						<td>False</td>
+						</tr>
+					</table>
+					
+					Map:AE=Organism.deathDate<br>Map:CTOM=DeathSummary.deathDate<br>Map:CTRv1.0=BiologicEntity.deathDate<br>Map:HCTv1.0=CDE 2866512:Occurrences.Date of death:<br>Map:HL7SP=Animal.deceasedTime<br>Map:ICSRr2=Animal.deceasedTime (in IndividualCaseSafetyReport)<br>Map:ICSRr2=Person2.deceasedTime (in IndividualCaseSafetyReport)<br>Map:LSDAMv2.2.3Plus=BiologicEntity.deathDate<br>Map:SDTM IGv3.1.3=DM.DTHDTC<br>Map:SEER 2015=SECTION VIII FOLLOW UP INFORMATION - DATE OF LAST FOLLOW UP OR DEATH FLAG<br>Map:SEER 2015=SECTION VIII FOLLOW UP INFORMATION - DATE OF LAST FOLLOW UP OR OF DEATH<br>
+						<div class="ObjectDetailsNotes"><table>
+	<tr>
+		<td valign="top">
+			<i>Notes: </i><span style="margin-left: .4cm;"> </span>
+		</td>
+		<td>
+			DEFINITION:&lt;br/&gt;The date (and time) on which the biologic entity died.&lt;br/&gt;&lt;br/&gt;EXAMPLE(S):&lt;br/&gt;&lt;br/&gt;OTHER NAME(S):&lt;br/&gt;&lt;br/&gt;NOTE(S):&lt;br/&gt;This BRIDG SCC reserves the option of re-modeling this in future since death date itself might be better modeled as an observation result and this attribute might better be represented as an uncertaintyCode on that observation result.&lt;br/&gt;
+		</td>
+	</tr>
+</table></div>
+
+						
+				</td>
+			</tr>			<tr>
+				<td width="100%" class="TableRow">
+					<i>Public BL</i><br /><strong>&nbsp;&nbsp;deathDateEstimatedIndicator</strong>
+				</td>
+			</tr>
+			<tr>
+				<td class="TableRowBottomDashed"  colspan="1">										
+					<a href="#" onclick="parent.toggleData('DetailsImageAttributes235')" style="text-decoration: none; color: #000000;"><img src="../../images/plus03.gif" align="absmiddle" id="DetailsImageAttributes235" border="0" />Details:</a>
+					<table border="0" cellspacing="0" cellpadding="0" class="Table" style="padding: 4px 18px;">
+					
+						<tr id="DetailsImageAttributes235_00" style="display: none;">
+							<td width="75"><i>Alias:</i></td>
+							<td></td>
+						</tr>
+						<tr id="DetailsImageAttributes235_01" style="display: none;">
+							<td width="75"><i>Initial:</i></td>
+							<td></td>
+						</tr>
+						<tr id="DetailsImageAttributes235_02" style="display: none;">
+							<td width="75"><i>Stereotype: </i></td>
+							<td></td>
+						</tr>
+						<tr id="DetailsImageAttributes235_03" style="display: none;">
+							<td width="75"><i>Ordered: </i></td>
+							<td></td>
+						</tr>
+						<tr id="DetailsImageAttributes235_04" style="display: none;">
+							<td width="75"><i>Range: </i></td>
+							<td>Range:0 to 1</td>
+						</tr>
+						<tr id="DetailsImageAttributes235_05" style="display: none;">
+							<td width="75"><i>Transient: </i></td>
+							<td>False</td>
+						</tr>
+						<tr id="DetailsImageAttributes235_06" style="display: none;">
+							<td width="75"><i>Derived: </i></td>
+							<td>False</td>
+						</tr>
+							<tr id="DetailsImageAttributes235_07" style="display: none;">
+							<td width="75"><i>IsID: </i></td>
+						<td>False</td>
+						</tr>
+					</table>
+					
+					Map:HCTv1.0=CDE 2768794:Occurrences.If necessary, please validate the death date response<br>
+						<div class="ObjectDetailsNotes"><table>
+	<tr>
+		<td valign="top">
+			<i>Notes: </i><span style="margin-left: .4cm;"> </span>
+		</td>
+		<td>
+			DEFINITION:&lt;br/&gt;Specifies whether the death date is approximate.&lt;br/&gt;&lt;br/&gt;EXAMPLE(S):&lt;br/&gt;&lt;br/&gt;OTHER NAME(S):&lt;br/&gt;&lt;br/&gt;NOTE(S):&lt;br/&gt;This BRIDG SCC reserves the option of re-modeling this in future since death date itself might be better modeled as an observation result and this attribute might better be represented as an uncertaintyCode on that observation result.&lt;br/&gt;
+		</td>
+	</tr>
+</table></div>
+
+						
+				</td>
+			</tr>			<tr>
+				<td width="100%" class="TableRow">
+					<i>Public BL</i><br /><strong>&nbsp;&nbsp;deathIndicator</strong>
+				</td>
+			</tr>
+			<tr>
+				<td class="TableRowBottomDashed"  colspan="1">										
+					<a href="#" onclick="parent.toggleData('DetailsImageAttributes236')" style="text-decoration: none; color: #000000;"><img src="../../images/plus03.gif" align="absmiddle" id="DetailsImageAttributes236" border="0" />Details:</a>
+					<table border="0" cellspacing="0" cellpadding="0" class="Table" style="padding: 4px 18px;">
+					
+						<tr id="DetailsImageAttributes236_00" style="display: none;">
+							<td width="75"><i>Alias:</i></td>
+							<td></td>
+						</tr>
+						<tr id="DetailsImageAttributes236_01" style="display: none;">
+							<td width="75"><i>Initial:</i></td>
+							<td></td>
+						</tr>
+						<tr id="DetailsImageAttributes236_02" style="display: none;">
+							<td width="75"><i>Stereotype: </i></td>
+							<td></td>
+						</tr>
+						<tr id="DetailsImageAttributes236_03" style="display: none;">
+							<td width="75"><i>Ordered: </i></td>
+							<td></td>
+						</tr>
+						<tr id="DetailsImageAttributes236_04" style="display: none;">
+							<td width="75"><i>Range: </i></td>
+							<td>Range:0 to 1</td>
+						</tr>
+						<tr id="DetailsImageAttributes236_05" style="display: none;">
+							<td width="75"><i>Transient: </i></td>
+							<td>False</td>
+						</tr>
+						<tr id="DetailsImageAttributes236_06" style="display: none;">
+							<td width="75"><i>Derived: </i></td>
+							<td>False</td>
+						</tr>
+							<tr id="DetailsImageAttributes236_07" style="display: none;">
+							<td width="75"><i>IsID: </i></td>
+						<td>False</td>
+						</tr>
+					</table>
+					
+					Map:CTOM=DeathSummary.deathDate (when date is not known but death is known)<br>Map:CTRv1.0=BiologicEntity.deathIndicator<br>Map:ICSRr2=Animal.deceasedInd (in IndividualCaseSafetyReport)<br>Map:ICSRr2=Person2.deceasedInd (in IndividualCaseSafetyReport)<br>Map:LSDAMv2.2.3Plus=Person.deathIndicator<br>Map:SDTM IGv3.1.3=DM.DTHFL<br>Map:SEER 2015=SECTION VIII FOLLOW UP INFORMATION - VITAL STATUS<br>
+						<div class="ObjectDetailsNotes"><table>
+	<tr>
+		<td valign="top">
+			<i>Notes: </i><span style="margin-left: .4cm;"> </span>
+		</td>
+		<td>
+			DEFINITION:&lt;br/&gt;Specifies whether the biologic entity is dead.&lt;br/&gt;&lt;br/&gt;EXAMPLE(S):&lt;br/&gt;&lt;br/&gt;OTHER NAME(S):&lt;br/&gt;&lt;br/&gt;NOTE(S):&lt;br/&gt;This BRIDG SCC reserves the option of re-modeling this in future since death date itself might be better modeled as an observation result and this attribute might better be represented as an uncertaintyCode on that observation result.&lt;br/&gt;
+		</td>
+	</tr>
+</table></div>
+
+						
+				</td>
+			</tr>			<tr>
+				<td width="100%" class="TableRow">
+					<i>Public BL</i><br /><strong>&nbsp;&nbsp;actualIndicator</strong>
+				</td>
+			</tr>
+			<tr>
+				<td class="TableRowBottomDashed"  colspan="1">										
+					<a href="#" onclick="parent.toggleData('DetailsImageAttributes237')" style="text-decoration: none; color: #000000;"><img src="../../images/plus03.gif" align="absmiddle" id="DetailsImageAttributes237" border="0" />Details:</a>
+					<table border="0" cellspacing="0" cellpadding="0" class="Table" style="padding: 4px 18px;">
+					
+						<tr id="DetailsImageAttributes237_00" style="display: none;">
+							<td width="75"><i>Alias:</i></td>
+							<td></td>
+						</tr>
+						<tr id="DetailsImageAttributes237_01" style="display: none;">
+							<td width="75"><i>Initial:</i></td>
+							<td></td>
+						</tr>
+						<tr id="DetailsImageAttributes237_02" style="display: none;">
+							<td width="75"><i>Stereotype: </i></td>
+							<td></td>
+						</tr>
+						<tr id="DetailsImageAttributes237_03" style="display: none;">
+							<td width="75"><i>Ordered: </i></td>
+							<td></td>
+						</tr>
+						<tr id="DetailsImageAttributes237_04" style="display: none;">
+							<td width="75"><i>Range: </i></td>
+							<td>Range:1. to 1</td>
+						</tr>
+						<tr id="DetailsImageAttributes237_05" style="display: none;">
+							<td width="75"><i>Transient: </i></td>
+							<td>False</td>
+						</tr>
+						<tr id="DetailsImageAttributes237_06" style="display: none;">
+							<td width="75"><i>Derived: </i></td>
+							<td>False</td>
+						</tr>
+							<tr id="DetailsImageAttributes237_07" style="display: none;">
+							<td width="75"><i>IsID: </i></td>
+						<td>False</td>
+						</tr>
+					</table>
+					
+					Map:C3PR=StudySubject.actualSubjectIndicator<br>Map:CTRv1.0=BiologicEntity.actualIndicator<br>Map:HL7SD=PersonKind.determinerCode<br>Map:HL7SD=ExperimentalUnit>ExperimentalUnit2(choice box).determinerCode<br>Map:HL7SD=NonPersonLivingSubjectKind.determinerCode<br>Map:HL7SD=R_AssignedEntity(Universal)<br>Map:ICSRr2=Animal.determinerCode (in IndividualCaseSafetyReport)<br>Map:ICSRr2=Person2.determinerCode (in IndividualCaseSafetyReport)<br>Map:ICSRr2=Person.determinerCode (in IndividualCaseSafetyReport)<br>Map:LSDAMv2.2.3Plus=BiologicEntity.actualIndicator<br>
+						<div class="ObjectDetailsNotes"><table>
+	<tr>
+		<td valign="top">
+			<i>Notes: </i><span style="margin-left: .4cm;"> </span>
+		</td>
+		<td>
+			DEFINITION:&lt;br/&gt;Specifies whether the biologic entity is a particular instance (actual) vs. universal kind.&lt;br/&gt;&lt;br/&gt;EXAMPLE(S):&lt;br/&gt;To indicate a particular BiologicEntity, actualIndicator = &#39;true&quot;. To indicate a kind of BiologicEntity, actualIndicator = &quot;false&quot;.&lt;br/&gt;&lt;br/&gt;OTHER NAME(S):&lt;br/&gt;&lt;br/&gt;NOTE(S):&lt;br/&gt;
+		</td>
+	</tr>
+</table></div>
+
+						
+				</td>
+			</tr>
+	</table>
+</div>
+		<div class="ItemBody" id="AssociationsToTable">
+			<table border="0" cellspacing="0" cellpadding="0" class="Table">
+				<tr>
+					<td width="40%" class="TableHeading">Element</td>
+					<td width="30%" class="TableHeading">Source Role</td>
+					<td width="30%" class="TableHeading">Target Role</td>
+				</tr>
+				<tr>
+					<td width="40%" class="TableRow" valign="top">
+						<a href="EA77.htm">BiologicEntityClassification</a><br />
+						Class &nbsp;
+					</td>
+					<td width="30%" class="TableRow" valign="top">
+						<strong>Name:</strong> classifiedBiologicEntity<br />
+						&nbsp;
+					</td>
+					<td width="30%" class="TableRow" valign="top">
+						<strong>Name:</strong> classifyingBiologicEntityClassification<br />
+						&nbsp;	
+					</td>
+				</tr>
+				<tr>
+					<td class="TableRowBottomDashed"  colspan="3">
+						<div class="DetailsDivParent"><img src="../../images/minus03.gif" align="absmiddle" id="DetailsImageLink238" onclick="parent.toggleDiv('detailsDIVLink238','DetailsImageLink238')" />Details:
+							<div id="detailsDIVLink238" class="DetailsDiv" >
+							<div class="ObjectDetailsNotes">DESCRIPTION:&lt;br/&gt;Each BiologicEntity always is classified as one BiologicEntityClassification.&#160; Each BiologicEntityClassification might classify one or more BiologicEntity.&lt;br/&gt;&lt;br/&gt;DEFINITION:&lt;br/&gt;&lt;br/&gt;EXAMPLE(S):&lt;br/&gt;&lt;br/&gt;OTHER NAME(S):&lt;br/&gt;&lt;br/&gt;NOTE(S):&lt;br/&gt;</div>
+
+							</div>
+						</div>
+					</td>
+				</tr>
+				<tr>
+					<td width="40%" class="TableRow" valign="top">
+						<a href="EA113.htm">Organization</a><br />
+						Class &nbsp;
+					</td>
+					<td width="30%" class="TableRow" valign="top">
+						<strong>Name:</strong> caredForBiologicEntity<br />
+						&nbsp;
+					</td>
+					<td width="30%" class="TableRow" valign="top">
+						<strong>Name:</strong> responsibleOrganization<br />
+						&nbsp;	
+					</td>
+				</tr>
+				<tr>
+					<td class="TableRowBottomDashed"  colspan="3">
+						<div class="DetailsDivParent"><img src="../../images/minus03.gif" align="absmiddle" id="DetailsImageLink239" onclick="parent.toggleDiv('detailsDIVLink239','DetailsImageLink239')" />Details:
+							<div id="detailsDIVLink239" class="DetailsDiv" >
+							<div class="ObjectDetailsNotes">DESCRIPTION:&lt;br/&gt;Each BiologicEntity might have decisions made by one Organization.&#160; Each Organization might have decision making authority on behalf of one or more BiologicEntity.&lt;br/&gt;&lt;br/&gt;DEFINITION:&lt;br/&gt;The link between a person or animal and the organization who has decision making authority for them.&lt;br/&gt;&lt;br/&gt;EXAMPLE(S): &lt;br/&gt;In non-human primate research, such as at UC Davis Primate Center, the Center is responsible for the health and well-being of the primates, irrespective of the research.&lt;br/&gt;&lt;br/&gt;OTHER NAME(S):&lt;br/&gt;&lt;br/&gt;NOTE(S):&lt;br/&gt;</div>
+
+							</div>
+						</div>
+					</td>
+				</tr>
+
+			</table>
+		</div>
+		<div class="ItemBody" id="AssociationsFromTable">
+			<table border="0" cellspacing="0" cellpadding="0" class="Table">
+				<tr>
+					<td width="40%" class="TableHeading">Element</td>
+					<td width="30%" class="TableHeading">Source Role</td>
+					<td width="30%" class="TableHeading">Target Role</td>
+				</tr>
+				<tr>
+					<td width="40%" class="TableRow" valign="top">
+						<a href="EA78.htm">BiologicEntityGroup</a><br />
+						Class &nbsp;
+					</td>
+					<td width="30%" class="TableRow" valign="top">
+						<strong>Name:</strong> groupingBiologicEntityGroup<br />
+						&nbsp;
+					</td>
+					<td width="30%" class="TableRow" valign="top">
+						<strong>Name:</strong> groupedBiologicEntity<br />
+						&nbsp;	
+					</td>
+				</tr>
+				<tr>
+					<td class="TableRowBottomDashed"  colspan="3">
+						<div class="DetailsDivParent"><img src="../../images/minus03.gif" align="absmiddle" id="DetailsImageLink240" onclick="parent.toggleDiv('detailsDIVLink240','DetailsImageLink240')" />Details:
+							<div id="detailsDIVLink240" class="DetailsDiv" >
+							<div class="ObjectDetailsNotes">DESCRIPTION:&lt;br/&gt;Each BiologicEntityGroup always groups one or more BiologicEntity. Each BiologicEntity might be grouped by one or more BiologicEntityGroup. &lt;br/&gt;&lt;br/&gt;DEFINITION:&lt;br/&gt;&lt;br/&gt;EXAMPLE(S):&lt;br/&gt;&lt;br/&gt;OTHER NAME(S):&lt;br/&gt;&lt;br/&gt;NOTE(S):&lt;br/&gt;</div>
+
+							</div>
+						</div>
+					</td>
+				</tr>
+				<tr>
+					<td width="40%" class="TableRow" valign="top">
+						<a href="EA74.htm">AssociatedBiologicEntity</a><br />
+						Class &nbsp;
+					</td>
+					<td width="30%" class="TableRow" valign="top">
+						<strong>Name:</strong> scopedAssociatedBiologicEntity<br />
+						&nbsp;
+					</td>
+					<td width="30%" class="TableRow" valign="top">
+						<strong>Name:</strong> scopingBiologicEntity<br />
+						&nbsp;	
+					</td>
+				</tr>
+				<tr>
+					<td class="TableRowBottomDashed"  colspan="3">
+						<div class="DetailsDivParent"><img src="../../images/minus03.gif" align="absmiddle" id="DetailsImageLink241" onclick="parent.toggleDiv('detailsDIVLink241','DetailsImageLink241')" />Details:
+							<div id="detailsDIVLink241" class="DetailsDiv" >
+							<div class="ObjectDetailsNotes">DESCRIPTION:&lt;br/&gt;Each AssociatedBiologicEntity always is scoped by one BiologicEntity. Each BiologicEntity might scope one or more AssociatedBiologicEntity.&lt;br/&gt;&lt;br/&gt;DEFINITION:&lt;br/&gt;&lt;br/&gt;EXAMPLE(S):&lt;br/&gt;&lt;br/&gt;OTHER NAME(S):&lt;br/&gt;&lt;br/&gt;NOTE(S):&lt;br/&gt;&lt;br/&gt;</div>
+
+							</div>
+						</div>
+					</td>
+				</tr>
+				<tr>
+					<td width="40%" class="TableRow" valign="top">
+						<a href="EA79.htm">BiologicEntityPart</a><br />
+						Class &nbsp;
+					</td>
+					<td width="30%" class="TableRow" valign="top">
+						<strong>Name:</strong> containedBiologicEntityPart<br />
+						&nbsp;
+					</td>
+					<td width="30%" class="TableRow" valign="top">
+						<strong>Name:</strong> containingBiologicEntity<br />
+						&nbsp;	
+					</td>
+				</tr>
+				<tr>
+					<td class="TableRowBottomDashed"  colspan="3">
+						<div class="DetailsDivParent"><img src="../../images/minus03.gif" align="absmiddle" id="DetailsImageLink242" onclick="parent.toggleDiv('detailsDIVLink242','DetailsImageLink242')" />Details:
+							<div id="detailsDIVLink242" class="DetailsDiv" >
+							<div class="ObjectDetailsNotes">DESCRIPTION:&lt;br/&gt;Each BiologicEntityPart always is part of one BiologicEntity. Each BiologicEntity might have one or more BiologicEntityPart.&lt;br/&gt;&lt;br/&gt;DEFINITION:&lt;br/&gt;&lt;br/&gt;EXAMPLE(S):&lt;br/&gt;&lt;br/&gt;OTHER NAME(S):&lt;br/&gt;&lt;br/&gt;NOTE(S):&lt;br/&gt;&lt;br/&gt;</div>
+
+							</div>
+						</div>
+					</td>
+				</tr>
+				<tr>
+					<td width="40%" class="TableRow" valign="top">
+						<a href="EA98.htm">ExperimentalUnit</a><br />
+						Class &nbsp;
+					</td>
+					<td width="30%" class="TableRow" valign="top">
+						<strong>Name:</strong> performedExperimentalUnit<br />
+						&nbsp;
+					</td>
+					<td width="30%" class="TableRow" valign="top">
+						<strong>Name:</strong> performingBiologicEntity<br />
+						&nbsp;	
+					</td>
+				</tr>
+				<tr>
+					<td class="TableRowBottomDashed"  colspan="3">
+						<div class="DetailsDivParent"><img src="../../images/minus03.gif" align="absmiddle" id="DetailsImageLink243" onclick="parent.toggleDiv('detailsDIVLink243','DetailsImageLink243')" />Details:
+							<div id="detailsDIVLink243" class="DetailsDiv" >
+							<div class="ObjectDetailsNotes">DESCRIPTION:&lt;br/&gt;Each ExperimentalUnit might be a function performed by one BiologicEntity.&#160; Each BiologicEntity might function as one or more ExperimentalUnit.&lt;br/&gt;&lt;br/&gt;DEFINITION:&lt;br/&gt;&lt;br/&gt;EXAMPLE(S):&lt;br/&gt;&lt;br/&gt;OTHER NAME(S):&lt;br/&gt;&lt;br/&gt;NOTE(S):&lt;br/&gt;&lt;br/&gt;</div>
+
+							</div>
+						</div>
+					</td>
+				</tr>
+				<tr>
+					<td width="40%" class="TableRow" valign="top">
+						<a href="EA151.htm">Subject</a><br />
+						Class &nbsp;
+					</td>
+					<td width="30%" class="TableRow" valign="top">
+						<strong>Name:</strong> performedSubject<br />
+						&nbsp;
+					</td>
+					<td width="30%" class="TableRow" valign="top">
+						<strong>Name:</strong> performingBiologicEntity<br />
+						&nbsp;	
+					</td>
+				</tr>
+				<tr>
+					<td class="TableRowBottomDashed"  colspan="3">
+						<div class="DetailsDivParent"><img src="../../images/minus03.gif" align="absmiddle" id="DetailsImageLink244" onclick="parent.toggleDiv('detailsDIVLink244','DetailsImageLink244')" />Details:
+							<div id="detailsDIVLink244" class="DetailsDiv" >
+							<div class="ObjectDetailsNotes">DESCRIPTION:&lt;br/&gt;Each Subject might be a function performed by one BiologicEntity.&#160; Each BiologicEntity might function as one or more Subject.&lt;br/&gt;&lt;br/&gt;DEFINITION:&lt;br/&gt;&lt;br/&gt;EXAMPLE(S):&lt;br/&gt;&lt;br/&gt;OTHER NAME(S):&lt;br/&gt;&lt;br/&gt;NOTE(S):&lt;br/&gt;&lt;br/&gt;</div>
+
+							</div>
+						</div>
+					</td>
+				</tr>
+				<tr>
+					<td width="40%" class="TableRow" valign="top">
+						<a href="EA74.htm">AssociatedBiologicEntity</a><br />
+						Class &nbsp;
+					</td>
+					<td width="30%" class="TableRow" valign="top">
+						<strong>Name:</strong> performedAssociatedBiologicEntity<br />
+						&nbsp;
+					</td>
+					<td width="30%" class="TableRow" valign="top">
+						<strong>Name:</strong> performingBiologicEntity<br />
+						&nbsp;	
+					</td>
+				</tr>
+				<tr>
+					<td class="TableRowBottomDashed"  colspan="3">
+						<div class="DetailsDivParent"><img src="../../images/minus03.gif" align="absmiddle" id="DetailsImageLink245" onclick="parent.toggleDiv('detailsDIVLink245','DetailsImageLink245')" />Details:
+							<div id="detailsDIVLink245" class="DetailsDiv" >
+							<div class="ObjectDetailsNotes">DESCRIPTION:&lt;br/&gt;Each AssociatedBiologicEntity always is a function performed by one BiologicEntity. Each BiologicEntity might function as one or more AssociatedBiologicEntity.&lt;br/&gt;&lt;br/&gt;DEFINITION:&lt;br/&gt;&lt;br/&gt;EXAMPLE(S):&lt;br/&gt;&lt;br/&gt;OTHER NAME(S):&lt;br/&gt;&lt;br/&gt;NOTE(S):&lt;br/&gt;&lt;br/&gt;</div>
+
+							</div>
+						</div>
+					</td>
+				</tr>
+
+			</table>
+		</div>
+<div class="ItemBody" id="TaggedValTable">
+	<table align="center" border="0" cellspacing="0" cellpadding="0" class="Table">
+		<tr>
+			<td width="50%" class="TableHeading">Tag</td>
+			<td width="50%" class="TableHeading">Value</td>
+		</tr>
+					<tr>
+				<td width="50%" class="TableRow" valign="top">Map:AE</td>
+				<td width="50%" class="TableRow" valign="top">Organism</td>
+			</tr>	
+			<tr>
+				<td class="TableRowBottomDashed"  colspan="2">
+					<div class="DetailsDivParent"><img src="../../images/minus03.gif" align="absmiddle" id="DetailsImageScenario246" onclick="parent.toggleDiv('detailsDIVScenario246','DetailsImageScenario246')" />Details:
+						<div id="detailsDIVScenario246" class="DetailsDiv" >
+						&nbsp;
+						</div>
+					</div>
+				</td>
+			</tr>			<tr>
+				<td width="50%" class="TableRow" valign="top">Map:AIM v4 rv48</td>
+				<td width="50%" class="TableRow" valign="top">Person</td>
+			</tr>	
+			<tr>
+				<td class="TableRowBottomDashed"  colspan="2">
+					<div class="DetailsDivParent"><img src="../../images/minus03.gif" align="absmiddle" id="DetailsImageScenario247" onclick="parent.toggleDiv('detailsDIVScenario247','DetailsImageScenario247')" />Details:
+						<div id="detailsDIVScenario247" class="DetailsDiv" >
+						&nbsp;
+						</div>
+					</div>
+				</td>
+			</tr>			<tr>
+				<td width="50%" class="TableRow" valign="top">Map:CTRRr3</td>
+				<td width="50%" class="TableRow" valign="top">BiologicEntity</td>
+			</tr>	
+			<tr>
+				<td class="TableRowBottomDashed"  colspan="2">
+					<div class="DetailsDivParent"><img src="../../images/minus03.gif" align="absmiddle" id="DetailsImageScenario248" onclick="parent.toggleDiv('detailsDIVScenario248','DetailsImageScenario248')" />Details:
+						<div id="detailsDIVScenario248" class="DetailsDiv" >
+						&nbsp;
+						</div>
+					</div>
+				</td>
+			</tr>			<tr>
+				<td width="50%" class="TableRow" valign="top">Map:CTRv1.0</td>
+				<td width="50%" class="TableRow" valign="top">BiologicEntity</td>
+			</tr>	
+			<tr>
+				<td class="TableRowBottomDashed"  colspan="2">
+					<div class="DetailsDivParent"><img src="../../images/minus03.gif" align="absmiddle" id="DetailsImageScenario249" onclick="parent.toggleDiv('detailsDIVScenario249','DetailsImageScenario249')" />Details:
+						<div id="detailsDIVScenario249" class="DetailsDiv" >
+						&nbsp;
+						</div>
+					</div>
+				</td>
+			</tr>			<tr>
+				<td width="50%" class="TableRow" valign="top">Map:HL7SP</td>
+				<td width="50%" class="TableRow" valign="top">Access</td>
+			</tr>	
+			<tr>
+				<td class="TableRowBottomDashed"  colspan="2">
+					<div class="DetailsDivParent"><img src="../../images/minus03.gif" align="absmiddle" id="DetailsImageScenario250" onclick="parent.toggleDiv('detailsDIVScenario250','DetailsImageScenario250')" />Details:
+						<div id="detailsDIVScenario250" class="DetailsDiv" >
+						&nbsp;
+						</div>
+					</div>
+				</td>
+			</tr>			<tr>
+				<td width="50%" class="TableRow" valign="top">Map:LSDAMv2.2.3Plus</td>
+				<td width="50%" class="TableRow" valign="top">BiologicEntity</td>
+			</tr>	
+			<tr>
+				<td class="TableRowBottomDashed"  colspan="2">
+					<div class="DetailsDivParent"><img src="../../images/minus03.gif" align="absmiddle" id="DetailsImageScenario251" onclick="parent.toggleDiv('detailsDIVScenario251','DetailsImageScenario251')" />Details:
+						<div id="detailsDIVScenario251" class="DetailsDiv" >
+						&nbsp;
+						</div>
+					</div>
+				</td>
+			</tr>
+	</table>
+</div>		<div class="ItemBody" id="ConstraintsTable">
+			<table border="0" cellspacing="0" cellpadding="0" class="Table">
+			  	<tr>
+					<td width="80%" class="TableHeading">Constraint</td>
+					<td width="10%" class="TableHeading">Type</td>
+					<td width="10%" class="TableHeading">Status</td>
+				</tr>
+				<tr>
+					<td width="80%" class="TableRow">Attribute Set actualIndicator Qualifier</td>
+					<td width="10%" class="TableRow">Invariant</td>
+					<td width="10%" class="TableRow">Approved</td>
+				</tr>
+				<tr>
+					<td class="TableRowBottomDashed"  colspan="3">
+						<div class="DetailsDivParent"><img src="../../images/minus03.gif" align="absmiddle" id="DetailsImageConstraints252" onclick="parent.toggleDiv('detailsDIVConstraints252','DetailsImageConstraints252')" />Details:
+							<div id="detailsDIVConstraints252" class="DetailsDiv" >
+							<div class="ObjectDetailsNotes">name, birthDate, deathDate are valid only when actualIndicator = &quot;true&quot;.&lt;br/&gt;</div>
+
+							</div>
+						</div>
+					</td>
+				</tr>
+				<tr>
+					<td width="80%" class="TableRow">functions as StudySubject Qualifier</td>
+					<td width="10%" class="TableRow">Invariant</td>
+					<td width="10%" class="TableRow">Approved</td>
+				</tr>
+				<tr>
+					<td class="TableRowBottomDashed"  colspan="3">
+						<div class="DetailsDivParent"><img src="../../images/minus03.gif" align="absmiddle" id="DetailsImageConstraints253" onclick="parent.toggleDiv('detailsDIVConstraints253','DetailsImageConstraints253')" />Details:
+							<div id="detailsDIVConstraints253" class="DetailsDiv" >
+							<div class="ObjectDetailsNotes">A BiologicEntity cannot be a StudySubject of a study if it is part of a BiologicEntityGroup that is a StudySubject of the same Study.&lt;br/&gt;</div>
+
+							</div>
+						</div>
+					</td>
+				</tr>
+				<tr>
+					<td width="80%" class="TableRow">functions as PlannedStudySubject Qualifier</td>
+					<td width="10%" class="TableRow">Invariant</td>
+					<td width="10%" class="TableRow">Approved</td>
+				</tr>
+				<tr>
+					<td class="TableRowBottomDashed"  colspan="3">
+						<div class="DetailsDivParent"><img src="../../images/minus03.gif" align="absmiddle" id="DetailsImageConstraints254" onclick="parent.toggleDiv('detailsDIVConstraints254','DetailsImageConstraints254')" />Details:
+							<div id="detailsDIVConstraints254" class="DetailsDiv" >
+							<div class="ObjectDetailsNotes">A BiologicEntity cannot be a PlannedStudySubject of a study if it is part of a BiologicEntityGroup that is a PlannedStudySubject of the same Study.&lt;br/&gt;</div>
+
+							</div>
+						</div>
+					</td>
+				</tr>
+
+			</table>
+		</div>
+		<div class="ItemBody" id="LinksTable">
+			<table align="center" border="0" cellspacing="0" cellpadding="0" class="Table">
+				<tr>
+					<td width="30%" class="TableHeading">Object</td>
+					<td width="10%" class="TableHeading">Type</td>
+					<td width="10%" class="TableHeading">Connection</td>
+					<td width="10%" class="TableHeading">Direction</td>
+					<td width="40%" class="TableHeading">Notes</td>
+				</tr>
+				<tr>
+					<td width="30%" class="TableRow" valign="top"><a href="EA78.htm">BiologicEntityGroup</a></td>
+					<td width="10%" class="TableRow" valign="top">Class</td>
+					<td width="10%" class="TableRow" valign="top">Weak</td>
+					<td width="10%" class="TableRow" valign="top">From</td>
+					<td width="40%" class="TableRow" valign="top">DESCRIPTION:
+Each BiologicEntityGroup always groups one or more BiologicEntity. Each BiologicEntity might be grouped by one or more BiologicEntityGroup. 
+
+DEFINITION:
+
+EXAMPLE(S):
+
+OTHER NAME(S):
+
+NOTE(S):</td>
+				</tr>
+				<tr>
+					<td width="30%" class="TableRow" valign="top"><a href="EA73.htm">Animal</a></td>
+					<td width="10%" class="TableRow" valign="top">Class</td>
+					<td width="10%" class="TableRow" valign="top">Generalization</td>
+					<td width="10%" class="TableRow" valign="top">From</td>
+					<td width="40%" class="TableRow" valign="top">DESCRIPTION:
+Each Animal always specializes one BiologicEntity. Each BiologicEntity might be specialized by one Animal.
+
+DEFINITION:
+
+EXAMPLE(S):
+
+OTHER NAME(S):
+
+NOTE(S):
+</td>
+				</tr>
+				<tr>
+					<td width="30%" class="TableRow" valign="top"><a href="EA120.htm">Person</a></td>
+					<td width="10%" class="TableRow" valign="top">Class</td>
+					<td width="10%" class="TableRow" valign="top">Generalization</td>
+					<td width="10%" class="TableRow" valign="top">From</td>
+					<td width="40%" class="TableRow" valign="top">DESCRIPTION:
+Each Person always specializes one BiologicEntity. Each BiologicEntity might be specialized by one Person.:
+
+DEFINITION:
+
+EXAMPLE(S):
+
+OTHER NAME(S):
+
+NOTE(S):
+</td>
+				</tr>
+
+			</table>
+		</div>
+	</div>
+<div class="pageFooter"></div>
+ 
+</body>
+</html>
