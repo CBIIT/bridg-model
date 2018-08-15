@@ -1,0 +1,389 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>Study Conduct Sub-Domain::PerformedEncounter</title>
+<link href="../../css/ea.css" rel="stylesheet" type="text/css" />
+<script>
+function initPage(src) {	
+	if(parent==this&&(this.location+"").indexOf('EARoot')!=-1)
+		document.location=(this.location+"").substring(0,(this.location+"").indexOf('EARoot'))+"index"+(this.location+"").substring((this.location+"").lastIndexOf('.'))+"?goto="+((this.location+"").substring((this.location+"").indexOf('EARoot')+7,(this.location+"").lastIndexOf('.')).replace(/\//g,':').replace(/EA/g,""));
+	else
+		parent.initPage(src);
+}
+
+function nameClassifier(name, separator)
+{
+  var str = name;
+  var classifierName;
+  var node = document.getElementById('name_classifier');
+  if(node != null)
+  {
+    classifierName = node.innerHTML;
+  }
+  if(classifierName != "")
+  {
+   str += separator + classifierName;
+  }
+  
+  return str;
+}
+</script>
+</head>
+<body onload="initPage(this);" class="Content">
+<div class="pageHeader"></div>
+<div class="PageBody">
+	<div id="name_classifier" style="display: none;"></div>
+	<span class="ObjectTitle"><script type="text/javascript">document.write(nameClassifier("PerformedEncounter", " : "))</script>  : Public   Class</span>
+	<table border="0" cellpadding="0" cellspacing="0" class="ObjectDetails">
+		<tr>
+			<td width="15%" class="ObjectDetailsTopic">Created:</td>
+			<td width="85%" class="ObjectDetailsValue">3/12/2018 5:16:07 PM</td>
+		</tr>
+		<tr>
+			<td class="ObjectDetailsTopic">Modified:</td>
+			<td class="ObjectDetailsValue">8/12/2018 2:39:34 AM</td>
+		</tr>
+		<tr style="height: 10px"><td colspan="2"></td></tr>
+		<tr>
+			<td class="ObjectDetailsTopic"><img src="../../images/plus03.gif" align="absmiddle" id="proj" onclick="parent.toggleData(this.id)" />Project:</td>
+			<td class="ObjectDetailsValue"></td>
+		</tr>
+		<tr id="proj00" style="display: none;">
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Author:</td>
+			<td class="ObjectDetailsValue">BRIDG Modeling Team</td>
+		</tr>
+		<tr id="proj01" style="display: none;">
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Version:</td>
+			<td class="ObjectDetailsValue">1.0</td>
+		</tr>
+		<tr id="proj02" style="display: none;">
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Phase:</td>
+			<td class="ObjectDetailsValue">1.0</td>
+		</tr>
+		<tr id="proj03" style="display: none;">
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Status:</td>
+			<td class="ObjectDetailsValue"><none></td>
+		</tr>
+		<tr id="proj04" style="display: none;">
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Complexity:</td>
+			<td class="ObjectDetailsValue">Easy</td>
+		</tr>
+		<tr id="proj05" style="display: none;">
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Difficulty:</td>
+			<td class="ObjectDetailsValue"></td>
+		</tr>
+		<tr id="proj06" style="display: none;">
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Priority:</td>
+			<td class="ObjectDetailsValue"></td>
+		</tr>
+		<tr id="proj05" style="display: none;">
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Multiplicity:</td>
+			<td class="ObjectDetailsValue"></td>
+		</tr>
+		<tr>
+			<td class="ObjectDetailsTopic"><img src="../../images/plus03.gif" align="absmiddle" id="adv" onclick="parent.toggleData(this.id)" />Advanced:</td>
+			<td class="ObjectDetailsValue"></td>
+		</tr>
+		<tr id="adv00" style="display: none;">
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">UUID:</td>
+			<td class="ObjectDetailsValue">{CD036B89-01F9-4bec-9976-8C8FACFB0555}</td>
+		</tr>
+		<tr id="adv01" style="display: none;">
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Appears In:</td>
+			<td class="ObjectDetailsValue"><a href="../EA1.htm">UML-Based Comprehensive BRIDG Model Diagram</a>, <a href="../EA3/EA61.htm">View CM: Common</a>, <a href="EA361.htm">View SC: Study Conduct</a>, <a href="../EA12/EA565.htm">Anatomic Pathology Structured Report (APSR)</a></td>
+		</tr>
+	</table>
+	<div class="ObjectDetailsNotes">DEFINITION:&lt;br/&gt;Any physical or virtual contact between a patient (or trial subject) and healthcare provider at which an assessment or activity takes place. (from NCIt: Clinical Encounter, Code C142427)&lt;br/&gt;&lt;br/&gt;EXAMPLE(S):&#160;&#160;&#160;&lt;br/&gt;A physician visits a patient in a hospital ward to assess his condition.&lt;br/&gt;A study subject comes into the hospital for a routine test for the clinical trial she is on.&lt;br/&gt;A research nurse calls the parent of a child on a clinical trial to see if any side effects are occurring.&lt;br/&gt;&lt;br/&gt;OTHER NAME(S):&lt;br/&gt;Encounter&lt;br/&gt;Visit&lt;br/&gt;&lt;br/&gt;NOTE(S):&lt;br/&gt;</div>
+
+	<div class="TableGroup" id="TableGroup">
+		<ul class="ItemTitle">
+			<li onClick="parent.toggleItem('Attributes');" id="AttributesTitle">Attributes</li>
+			<li onClick="parent.toggleItem('AssociationsTo');" id="AssociationsToTitle">Associations To</li>
+			<li onClick="parent.toggleItem('AssociationsFrom');" id="AssociationsFromTitle">Associations From</li>
+			<li onClick="parent.toggleItem('TaggedVal');" id="TaggedValTitle">Tagged Values</li>
+			<li onClick="parent.toggleItem('Links');" id="LinksTitle">Other Links</li>
+		</ul>
+<div class="ItemBody" id="AttributesTable">
+	<table border="0" cellspacing="0" cellpadding="0" class="Table">
+		<tr>
+			<td width="100%" class="TableHeading">Attribute</td>
+		</tr>
+						<tr>
+				<td width="100%" class="TableRow">
+					<i>Public CD</i><br /><strong>&nbsp;&nbsp;classificationCode</strong>
+				</td>
+			</tr>
+			<tr>
+				<td class="TableRowBottomDashed"  colspan="1">										
+					<a href="#" onclick="parent.toggleData('DetailsImageAttributes2836')" style="text-decoration: none; color: #000000;"><img src="../../images/plus03.gif" align="absmiddle" id="DetailsImageAttributes2836" border="0" />Details:</a>
+					<table border="0" cellspacing="0" cellpadding="0" class="Table" style="padding: 4px 18px;">
+					
+						<tr id="DetailsImageAttributes2836_00" style="display: none;">
+							<td width="75"><i>Alias:</i></td>
+							<td></td>
+						</tr>
+						<tr id="DetailsImageAttributes2836_01" style="display: none;">
+							<td width="75"><i>Initial:</i></td>
+							<td></td>
+						</tr>
+						<tr id="DetailsImageAttributes2836_02" style="display: none;">
+							<td width="75"><i>Stereotype: </i></td>
+							<td></td>
+						</tr>
+						<tr id="DetailsImageAttributes2836_03" style="display: none;">
+							<td width="75"><i>Ordered: </i></td>
+							<td></td>
+						</tr>
+						<tr id="DetailsImageAttributes2836_04" style="display: none;">
+							<td width="75"><i>Range: </i></td>
+							<td>Range:0 to 1</td>
+						</tr>
+						<tr id="DetailsImageAttributes2836_05" style="display: none;">
+							<td width="75"><i>Transient: </i></td>
+							<td>False</td>
+						</tr>
+						<tr id="DetailsImageAttributes2836_06" style="display: none;">
+							<td width="75"><i>Derived: </i></td>
+							<td>False</td>
+						</tr>
+							<tr id="DetailsImageAttributes2836_07" style="display: none;">
+							<td width="75"><i>IsID: </i></td>
+						<td>False</td>
+						</tr>
+					</table>
+					
+					Map:CDMHv1.0=PerformedEncounter.classificationCode<br>
+						<div class="ObjectDetailsNotes"><table>
+	<tr>
+		<td valign="top">
+			<i>Notes: </i><span style="margin-left: .4cm;"> </span>
+		</td>
+		<td>
+			DEFINITION:&lt;br/&gt;A category describing the encounter as distinguished by any number of clinical aspects or purpose.&lt;br/&gt;&lt;br/&gt;EXAMPLE(S):&#160;&#160;&#160;&lt;br/&gt;For classifications using Diagnosis Related Group codes, &lt;br/&gt;MS-DRG = 007&lt;br/&gt;MDC = PRE&lt;br/&gt;TYPE = SURG&lt;br/&gt;MS-DRG Title = Lung transplant&lt;br/&gt;&lt;br/&gt;614 - 645&#160;&#160;MDC 10: ENDOCRINE, NUTRITIONAL &amp; METABOLIC DISEASES &amp; DISORDERS &lt;br/&gt;&lt;br/&gt;OTHER NAME(S):&lt;br/&gt;Diagnosis Related Group&lt;br/&gt;&lt;br/&gt;NOTE(S):&lt;br/&gt;
+		</td>
+	</tr>
+</table></div>
+
+						
+				</td>
+			</tr>
+	</table>
+</div>
+		<div class="ItemBody" id="AssociationsToTable">
+			<table border="0" cellspacing="0" cellpadding="0" class="Table">
+				<tr>
+					<td width="40%" class="TableHeading">Element</td>
+					<td width="30%" class="TableHeading">Source Role</td>
+					<td width="30%" class="TableHeading">Target Role</td>
+				</tr>
+				<tr>
+					<td width="40%" class="TableRow" valign="top">
+						<a href="../EA3/EA128.htm">Place</a><br />
+						Class &nbsp;
+					</td>
+					<td width="30%" class="TableRow" valign="top">
+						<strong>Name:</strong> departingFromPerformedEncounter<br />
+						&nbsp;
+					</td>
+					<td width="30%" class="TableRow" valign="top">
+						<strong>Name:</strong> departingToPlace<br />
+						&nbsp;	
+					</td>
+				</tr>
+				<tr>
+					<td class="TableRowBottomDashed"  colspan="3">
+						<div class="DetailsDivParent"><img src="../../images/minus03.gif" align="absmiddle" id="DetailsImageLink2837" onclick="parent.toggleDiv('detailsDIVLink2837','DetailsImageLink2837')" />Details:
+							<div id="detailsDIVLink2837" class="DetailsDiv" >
+							<div class="ObjectDetailsNotes">PerformedEncounter [departingFromPerformedEncounter] (0..*) have a subject departing to / be the location a subject departs to after (0..1) [departingToPlace] Place&lt;br/&gt;&lt;br/&gt;DESCRIPTION:&lt;br/&gt;Each PerformedEncounter might have a subject departing to one Place.&#160;&#160;Each Place might be the location a subject departs to after one or more PerformedEncounter.&lt;br/&gt;&lt;br/&gt;DEFINITION:&lt;br/&gt;Identifies the destination of a subject after an encounter.&lt;br/&gt;&lt;br/&gt;EXAMPLE(S):&lt;br/&gt;A patient may depart from a hospital to go to a nursing facility.&lt;br/&gt;A study subject may depart from the radiology department to the surgery ward.&lt;br/&gt;&lt;br/&gt;OTHER NAME(S):&lt;br/&gt;Departed To&lt;br/&gt;&lt;br/&gt;NOTE(S):&lt;br/&gt;</div>
+
+							</div>
+						</div>
+					</td>
+				</tr>
+				<tr>
+					<td width="40%" class="TableRow" valign="top">
+						<a href="../EA3/EA149.htm">ServiceDeliveryLocation</a><br />
+						Class &nbsp;
+					</td>
+					<td width="30%" class="TableRow" valign="top">
+						<strong>Name:</strong> locatedPerformedEncounter<br />
+						&nbsp;
+					</td>
+					<td width="30%" class="TableRow" valign="top">
+						<strong>Name:</strong> locatingServiceDeliveryLocation<br />
+						&nbsp;	
+					</td>
+				</tr>
+				<tr>
+					<td class="TableRowBottomDashed"  colspan="3">
+						<div class="DetailsDivParent"><img src="../../images/minus03.gif" align="absmiddle" id="DetailsImageLink2838" onclick="parent.toggleDiv('detailsDIVLink2838','DetailsImageLink2838')" />Details:
+							<div id="detailsDIVLink2838" class="DetailsDiv" >
+							<div class="ObjectDetailsNotes">Each PerformedEncounter might take place in one ServiceDeliveryLocation.&#160;&#160;Each ServiceDeliveryLocation might be the location for one or more PerformedEncounter.&lt;br/&gt;&lt;br/&gt;DEFINITION:&lt;br/&gt;&lt;br/&gt;EXAMPLE(S):&lt;br/&gt;&lt;br/&gt;OTHER NAME(S):&lt;br/&gt;&lt;br/&gt;NOTE(S):&lt;br/&gt;&lt;br/&gt;</div>
+
+							</div>
+						</div>
+					</td>
+				</tr>
+				<tr>
+					<td width="40%" class="TableRow" valign="top">
+						<a href="../EA3/EA128.htm">Place</a><br />
+						Class &nbsp;
+					</td>
+					<td width="30%" class="TableRow" valign="top">
+						<strong>Name:</strong> arrivingForPerformedEncounter<br />
+						&nbsp;
+					</td>
+					<td width="30%" class="TableRow" valign="top">
+						<strong>Name:</strong> arrivingFromPlace<br />
+						&nbsp;	
+					</td>
+				</tr>
+				<tr>
+					<td class="TableRowBottomDashed"  colspan="3">
+						<div class="DetailsDivParent"><img src="../../images/minus03.gif" align="absmiddle" id="DetailsImageLink2839" onclick="parent.toggleDiv('detailsDIVLink2839','DetailsImageLink2839')" />Details:
+							<div id="detailsDIVLink2839" class="DetailsDiv" >
+							<div class="ObjectDetailsNotes">DESCRIPTION:&lt;br/&gt;Each PerformedEncounter might have a subject arriving from one Place.&#160;&#160;Each Place might be the location a subject arrives from for one or more PerformedEncounter.&lt;br/&gt;&lt;br/&gt;DEFINITION:&lt;br/&gt;Identifies the origination point of a subject before an encounter.&lt;br/&gt;&lt;br/&gt;EXAMPLE(S):&lt;br/&gt;A patient may arrive at a hospital from a nursing facility.&lt;br/&gt;A study subject may arrive at the radiology department from the surgery ward.&lt;br/&gt;&lt;br/&gt;OTHER NAME(S):&lt;br/&gt;Arrived From&lt;br/&gt;&lt;br/&gt;NOTE(S):&lt;br/&gt;</div>
+
+							</div>
+						</div>
+					</td>
+				</tr>
+				<tr>
+					<td width="40%" class="TableRow" valign="top">
+						<a href="EA383.htm">PerformedEncounter</a><br />
+						Class &nbsp;
+					</td>
+					<td width="30%" class="TableRow" valign="top">
+						<strong>Name:</strong> currentPerformedEncounter<br />
+						&nbsp;
+					</td>
+					<td width="30%" class="TableRow" valign="top">
+						<strong>Name:</strong> previousPerformedEncounter<br />
+						&nbsp;	
+					</td>
+				</tr>
+				<tr>
+					<td class="TableRowBottomDashed"  colspan="3">
+						<div class="DetailsDivParent"><img src="../../images/minus03.gif" align="absmiddle" id="DetailsImageLink2840" onclick="parent.toggleDiv('detailsDIVLink2840','DetailsImageLink2840')" />Details:
+							<div id="detailsDIVLink2840" class="DetailsDiv" >
+							<div class="ObjectDetailsNotes">DESCRIPTION:&lt;br/&gt;Each [current] PerformedEncounter might be preceded by one [previous] PerformedEncounter. Each [previous] PerformedEncounter might be succeeded by one [current] PerformedEncounter.&lt;br/&gt;&lt;br/&gt;DEFINITION:&lt;br/&gt;&lt;br/&gt;EXAMPLE(S):&lt;br/&gt;&lt;br/&gt;OTHER NAME(S):&lt;br/&gt;&lt;br/&gt;NOTE(S):&lt;br/&gt;</div>
+
+							</div>
+						</div>
+					</td>
+				</tr>
+
+			</table>
+		</div>
+		<div class="ItemBody" id="AssociationsFromTable">
+			<table border="0" cellspacing="0" cellpadding="0" class="Table">
+				<tr>
+					<td width="40%" class="TableHeading">Element</td>
+					<td width="30%" class="TableHeading">Source Role</td>
+					<td width="30%" class="TableHeading">Target Role</td>
+				</tr>
+				<tr>
+					<td width="40%" class="TableRow" valign="top">
+						<a href="EA383.htm">PerformedEncounter</a><br />
+						Class &nbsp;
+					</td>
+					<td width="30%" class="TableRow" valign="top">
+						<strong>Name:</strong> currentPerformedEncounter<br />
+						&nbsp;
+					</td>
+					<td width="30%" class="TableRow" valign="top">
+						<strong>Name:</strong> previousPerformedEncounter<br />
+						&nbsp;	
+					</td>
+				</tr>
+				<tr>
+					<td class="TableRowBottomDashed"  colspan="3">
+						<div class="DetailsDivParent"><img src="../../images/minus03.gif" align="absmiddle" id="DetailsImageLink2841" onclick="parent.toggleDiv('detailsDIVLink2841','DetailsImageLink2841')" />Details:
+							<div id="detailsDIVLink2841" class="DetailsDiv" >
+							<div class="ObjectDetailsNotes">DESCRIPTION:&lt;br/&gt;Each [current] PerformedEncounter might be preceded by one [previous] PerformedEncounter. Each [previous] PerformedEncounter might be succeeded by one [current] PerformedEncounter.&lt;br/&gt;&lt;br/&gt;DEFINITION:&lt;br/&gt;&lt;br/&gt;EXAMPLE(S):&lt;br/&gt;&lt;br/&gt;OTHER NAME(S):&lt;br/&gt;&lt;br/&gt;NOTE(S):&lt;br/&gt;</div>
+
+							</div>
+						</div>
+					</td>
+				</tr>
+
+			</table>
+		</div>
+<div class="ItemBody" id="TaggedValTable">
+	<table align="center" border="0" cellspacing="0" cellpadding="0" class="Table">
+		<tr>
+			<td width="50%" class="TableHeading">Tag</td>
+			<td width="50%" class="TableHeading">Value</td>
+		</tr>
+					<tr>
+				<td width="50%" class="TableRow" valign="top">Map:APSRv2.1</td>
+				<td width="50%" class="TableRow" valign="top">Hdr: Encompassing Encounter - hl7:ClinicalDocument > hl7:componentOf > hl7:encompassingEncounter</td>
+			</tr>	
+			<tr>
+				<td class="TableRowBottomDashed"  colspan="2">
+					<div class="DetailsDivParent"><img src="../../images/minus03.gif" align="absmiddle" id="DetailsImageScenario2842" onclick="parent.toggleDiv('detailsDIVScenario2842','DetailsImageScenario2842')" />Details:
+						<div id="detailsDIVScenario2842" class="DetailsDiv" >
+						&nbsp;
+						</div>
+					</div>
+				</td>
+			</tr>			<tr>
+				<td width="50%" class="TableRow" valign="top">Map:CDISCLabv1.0.1</td>
+				<td width="50%" class="TableRow" valign="top">Visit</td>
+			</tr>	
+			<tr>
+				<td class="TableRowBottomDashed"  colspan="2">
+					<div class="DetailsDivParent"><img src="../../images/minus03.gif" align="absmiddle" id="DetailsImageScenario2843" onclick="parent.toggleDiv('detailsDIVScenario2843','DetailsImageScenario2843')" />Details:
+						<div id="detailsDIVScenario2843" class="DetailsDiv" >
+						&nbsp;
+						</div>
+					</div>
+				</td>
+			</tr>			<tr>
+				<td width="50%" class="TableRow" valign="top">Map:CDMHv1.0</td>
+				<td width="50%" class="TableRow" valign="top">PerformedEncounter</td>
+			</tr>	
+			<tr>
+				<td class="TableRowBottomDashed"  colspan="2">
+					<div class="DetailsDivParent"><img src="../../images/minus03.gif" align="absmiddle" id="DetailsImageScenario2844" onclick="parent.toggleDiv('detailsDIVScenario2844','DetailsImageScenario2844')" />Details:
+						<div id="detailsDIVScenario2844" class="DetailsDiv" >
+						&nbsp;
+						</div>
+					</div>
+				</td>
+			</tr>
+	</table>
+</div>		<div class="ItemBody" id="LinksTable">
+			<table align="center" border="0" cellspacing="0" cellpadding="0" class="Table">
+				<tr>
+					<td width="30%" class="TableHeading">Object</td>
+					<td width="10%" class="TableHeading">Type</td>
+					<td width="10%" class="TableHeading">Connection</td>
+					<td width="10%" class="TableHeading">Direction</td>
+					<td width="40%" class="TableHeading">Notes</td>
+				</tr>
+				<tr>
+					<td width="30%" class="TableRow" valign="top"><a href="EA375.htm">PerformedActivity</a></td>
+					<td width="10%" class="TableRow" valign="top">Class</td>
+					<td width="10%" class="TableRow" valign="top">Generalization</td>
+					<td width="10%" class="TableRow" valign="top">To</td>
+					<td width="40%" class="TableRow" valign="top">DESCRIPTION:
+Each PerformedEncounter always specializes one PerformedActivity. Each PerformedActivity might be specialized by one PerformedEncounter.
+
+DEFINITION:
+
+EXAMPLE(S):
+
+OTHER NAME(S):
+
+NOTE(S):</td>
+				</tr>
+
+			</table>
+		</div>
+	</div>
+<div class="pageFooter"></div>
+ 
+</body>
+</html>

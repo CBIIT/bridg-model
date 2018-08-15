@@ -1,0 +1,1093 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>Imaging Sub-Domain::MRImagingAcquisitionProtocolElement</title>
+<link href="../../css/ea.css" rel="stylesheet" type="text/css" />
+<script>
+function initPage(src) {	
+	if(parent==this&&(this.location+"").indexOf('EARoot')!=-1)
+		document.location=(this.location+"").substring(0,(this.location+"").indexOf('EARoot'))+"index"+(this.location+"").substring((this.location+"").lastIndexOf('.'))+"?goto="+((this.location+"").substring((this.location+"").indexOf('EARoot')+7,(this.location+"").lastIndexOf('.')).replace(/\//g,':').replace(/EA/g,""));
+	else
+		parent.initPage(src);
+}
+
+function nameClassifier(name, separator)
+{
+  var str = name;
+  var classifierName;
+  var node = document.getElementById('name_classifier');
+  if(node != null)
+  {
+    classifierName = node.innerHTML;
+  }
+  if(classifierName != "")
+  {
+   str += separator + classifierName;
+  }
+  
+  return str;
+}
+</script>
+</head>
+<body onload="initPage(this);" class="Content">
+<div class="pageHeader"></div>
+<div class="PageBody">
+	<div id="name_classifier" style="display: none;"></div>
+	<span class="ObjectTitle"><script type="text/javascript">document.write(nameClassifier("MRImagingAcquisitionProtocolElement", " : "))</script>  : Public   Class</span>
+	<table border="0" cellpadding="0" cellspacing="0" class="ObjectDetails">
+		<tr>
+			<td width="15%" class="ObjectDetailsTopic">Created:</td>
+			<td width="85%" class="ObjectDetailsValue">6/20/2016 10:27:07 AM</td>
+		</tr>
+		<tr>
+			<td class="ObjectDetailsTopic">Modified:</td>
+			<td class="ObjectDetailsValue">8/26/2017 2:17:58 AM</td>
+		</tr>
+		<tr style="height: 10px"><td colspan="2"></td></tr>
+		<tr>
+			<td class="ObjectDetailsTopic"><img src="../../images/plus03.gif" align="absmiddle" id="proj" onclick="parent.toggleData(this.id)" />Project:</td>
+			<td class="ObjectDetailsValue"></td>
+		</tr>
+		<tr id="proj00" style="display: none;">
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Author:</td>
+			<td class="ObjectDetailsValue">wverhoef</td>
+		</tr>
+		<tr id="proj01" style="display: none;">
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Version:</td>
+			<td class="ObjectDetailsValue">1.0</td>
+		</tr>
+		<tr id="proj02" style="display: none;">
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Phase:</td>
+			<td class="ObjectDetailsValue">1.0</td>
+		</tr>
+		<tr id="proj03" style="display: none;">
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Status:</td>
+			<td class="ObjectDetailsValue"><none></td>
+		</tr>
+		<tr id="proj04" style="display: none;">
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Complexity:</td>
+			<td class="ObjectDetailsValue">Easy</td>
+		</tr>
+		<tr id="proj05" style="display: none;">
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Difficulty:</td>
+			<td class="ObjectDetailsValue"></td>
+		</tr>
+		<tr id="proj06" style="display: none;">
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Priority:</td>
+			<td class="ObjectDetailsValue"></td>
+		</tr>
+		<tr id="proj05" style="display: none;">
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Multiplicity:</td>
+			<td class="ObjectDetailsValue"></td>
+		</tr>
+		<tr>
+			<td class="ObjectDetailsTopic"><img src="../../images/plus03.gif" align="absmiddle" id="adv" onclick="parent.toggleData(this.id)" />Advanced:</td>
+			<td class="ObjectDetailsValue"></td>
+		</tr>
+		<tr id="adv00" style="display: none;">
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">UUID:</td>
+			<td class="ObjectDetailsValue">{8C060954-EABE-46e0-BCDC-2D18A90F0D2D}</td>
+		</tr>
+		<tr id="adv01" style="display: none;">
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Appears In:</td>
+			<td class="ObjectDetailsValue"><a href="../EA1.htm">UML-Based Comprehensive BRIDG Model Diagram</a>, <a href="EA177.htm">View IM: Imaging</a>, <a href="EA179.htm">Imaging Acquisition</a>, <a href="../EA12/EA577.htm">Oncology & Imaging View</a></td>
+		</tr>
+	</table>
+	<div class="ObjectDetailsNotes">DEFINITION:&lt;br/&gt;A set of scanning parameter values necessary to perform a single MR scan in the acquisition protocol. [adapted from NEMA XR 25-2010, https://www.nema.org/Standards/Pages/Computed-Tomography-Dose-Check.aspx]&lt;br/&gt;&lt;br/&gt;EXAMPLE(S):&lt;br/&gt;&lt;br/&gt;OTHER NAME(S):&lt;br/&gt;&lt;br/&gt;NOTE(S):&lt;br/&gt;</div>
+
+	<div class="TableGroup" id="TableGroup">
+		<ul class="ItemTitle">
+			<li onClick="parent.toggleItem('Attributes');" id="AttributesTitle">Attributes</li>
+			<li onClick="parent.toggleItem('TaggedVal');" id="TaggedValTitle">Tagged Values</li>
+			<li onClick="parent.toggleItem('Links');" id="LinksTitle">Other Links</li>
+		</ul>
+<div class="ItemBody" id="AttributesTable">
+	<table border="0" cellspacing="0" cellpadding="0" class="Table">
+		<tr>
+			<td width="100%" class="TableHeading">Attribute</td>
+		</tr>
+						<tr>
+				<td width="100%" class="TableRow">
+					<i>Public CD</i><br /><strong>&nbsp;&nbsp;echoPulseSequenceCategoryCode</strong>
+				</td>
+			</tr>
+			<tr>
+				<td class="TableRowBottomDashed"  colspan="1">										
+					<a href="#" onclick="parent.toggleData('DetailsImageAttributes1529')" style="text-decoration: none; color: #000000;"><img src="../../images/plus03.gif" align="absmiddle" id="DetailsImageAttributes1529" border="0" />Details:</a>
+					<table border="0" cellspacing="0" cellpadding="0" class="Table" style="padding: 4px 18px;">
+					
+						<tr id="DetailsImageAttributes1529_00" style="display: none;">
+							<td width="75"><i>Alias:</i></td>
+							<td></td>
+						</tr>
+						<tr id="DetailsImageAttributes1529_01" style="display: none;">
+							<td width="75"><i>Initial:</i></td>
+							<td></td>
+						</tr>
+						<tr id="DetailsImageAttributes1529_02" style="display: none;">
+							<td width="75"><i>Stereotype: </i></td>
+							<td></td>
+						</tr>
+						<tr id="DetailsImageAttributes1529_03" style="display: none;">
+							<td width="75"><i>Ordered: </i></td>
+							<td></td>
+						</tr>
+						<tr id="DetailsImageAttributes1529_04" style="display: none;">
+							<td width="75"><i>Range: </i></td>
+							<td></td>
+						</tr>
+						<tr id="DetailsImageAttributes1529_05" style="display: none;">
+							<td width="75"><i>Transient: </i></td>
+							<td>False</td>
+						</tr>
+						<tr id="DetailsImageAttributes1529_06" style="display: none;">
+							<td width="75"><i>Derived: </i></td>
+							<td>False</td>
+						</tr>
+							<tr id="DetailsImageAttributes1529_07" style="display: none;">
+							<td width="75"><i>IsID: </i></td>
+						<td>False</td>
+						</tr>
+					</table>
+					
+					Map:DICOM=MR Pulse Sequence Module - Echo Pulse Sequence (0018,9008)<br>
+						<div class="ObjectDetailsNotes"><table>
+	<tr>
+		<td valign="top">
+			<i>Notes: </i><span style="margin-left: .4cm;"> </span>
+		</td>
+		<td>
+			DEFINITION:&lt;br/&gt;A coded value specifying an echo category of pulse sequences.&lt;br/&gt;&lt;br/&gt;EXAMPLE(S):&lt;br/&gt;SPIN, GRADIENT, BOTH&lt;br/&gt;&lt;br/&gt;OTHER NAME(S):&lt;br/&gt;&lt;br/&gt;NOTE(S):&lt;br/&gt;
+		</td>
+	</tr>
+</table></div>
+
+						
+				</td>
+			</tr>			<tr>
+				<td width="100%" class="TableRow">
+					<i>Public IVL&lt;PQ&gt;</i><br /><strong>&nbsp;&nbsp;diffusionBValue</strong>
+				</td>
+			</tr>
+			<tr>
+				<td class="TableRowBottomDashed"  colspan="1">										
+					<a href="#" onclick="parent.toggleData('DetailsImageAttributes1530')" style="text-decoration: none; color: #000000;"><img src="../../images/plus03.gif" align="absmiddle" id="DetailsImageAttributes1530" border="0" />Details:</a>
+					<table border="0" cellspacing="0" cellpadding="0" class="Table" style="padding: 4px 18px;">
+					
+						<tr id="DetailsImageAttributes1530_00" style="display: none;">
+							<td width="75"><i>Alias:</i></td>
+							<td></td>
+						</tr>
+						<tr id="DetailsImageAttributes1530_01" style="display: none;">
+							<td width="75"><i>Initial:</i></td>
+							<td></td>
+						</tr>
+						<tr id="DetailsImageAttributes1530_02" style="display: none;">
+							<td width="75"><i>Stereotype: </i></td>
+							<td></td>
+						</tr>
+						<tr id="DetailsImageAttributes1530_03" style="display: none;">
+							<td width="75"><i>Ordered: </i></td>
+							<td></td>
+						</tr>
+						<tr id="DetailsImageAttributes1530_04" style="display: none;">
+							<td width="75"><i>Range: </i></td>
+							<td></td>
+						</tr>
+						<tr id="DetailsImageAttributes1530_05" style="display: none;">
+							<td width="75"><i>Transient: </i></td>
+							<td>False</td>
+						</tr>
+						<tr id="DetailsImageAttributes1530_06" style="display: none;">
+							<td width="75"><i>Derived: </i></td>
+							<td>False</td>
+						</tr>
+							<tr id="DetailsImageAttributes1530_07" style="display: none;">
+							<td width="75"><i>IsID: </i></td>
+						<td>False</td>
+						</tr>
+					</table>
+					
+					Map:DICOM=MR Diffusion Macro - MR Diffusion Sequence > Diffusion b-value (0018,9087)<br>
+						<div class="ObjectDetailsNotes"><table>
+	<tr>
+		<td valign="top">
+			<i>Notes: </i><span style="margin-left: .4cm;"> </span>
+		</td>
+		<td>
+			DEFINITION:&lt;br/&gt;The factor by which the acquisition is sensitized to the Brownian motion of water molecules.&lt;br/&gt;&lt;br/&gt;EXAMPLE(S):&lt;br/&gt;&lt;br/&gt;OTHER NAME(S):&lt;br/&gt;diffusion sensitization factor&lt;br/&gt;&lt;br/&gt;NOTE(S):&lt;br/&gt;The units are of time/area, e.g. s/mm2.&lt;br/&gt;
+		</td>
+	</tr>
+</table></div>
+
+						
+				</td>
+			</tr>			<tr>
+				<td width="100%" class="TableRow">
+					<i>Public CD</i><br /><strong>&nbsp;&nbsp;diffusionDirectionalityCode</strong>
+				</td>
+			</tr>
+			<tr>
+				<td class="TableRowBottomDashed"  colspan="1">										
+					<a href="#" onclick="parent.toggleData('DetailsImageAttributes1531')" style="text-decoration: none; color: #000000;"><img src="../../images/plus03.gif" align="absmiddle" id="DetailsImageAttributes1531" border="0" />Details:</a>
+					<table border="0" cellspacing="0" cellpadding="0" class="Table" style="padding: 4px 18px;">
+					
+						<tr id="DetailsImageAttributes1531_00" style="display: none;">
+							<td width="75"><i>Alias:</i></td>
+							<td></td>
+						</tr>
+						<tr id="DetailsImageAttributes1531_01" style="display: none;">
+							<td width="75"><i>Initial:</i></td>
+							<td></td>
+						</tr>
+						<tr id="DetailsImageAttributes1531_02" style="display: none;">
+							<td width="75"><i>Stereotype: </i></td>
+							<td></td>
+						</tr>
+						<tr id="DetailsImageAttributes1531_03" style="display: none;">
+							<td width="75"><i>Ordered: </i></td>
+							<td></td>
+						</tr>
+						<tr id="DetailsImageAttributes1531_04" style="display: none;">
+							<td width="75"><i>Range: </i></td>
+							<td></td>
+						</tr>
+						<tr id="DetailsImageAttributes1531_05" style="display: none;">
+							<td width="75"><i>Transient: </i></td>
+							<td>False</td>
+						</tr>
+						<tr id="DetailsImageAttributes1531_06" style="display: none;">
+							<td width="75"><i>Derived: </i></td>
+							<td>False</td>
+						</tr>
+							<tr id="DetailsImageAttributes1531_07" style="display: none;">
+							<td width="75"><i>IsID: </i></td>
+						<td>False</td>
+						</tr>
+					</table>
+					
+					Map:DICOM=MR Diffusion Macro - MR Diffusion Sequence > Diffusion Directionality (0018,9075)<br>
+						<div class="ObjectDetailsNotes"><table>
+	<tr>
+		<td valign="top">
+			<i>Notes: </i><span style="margin-left: .4cm;"> </span>
+		</td>
+		<td>
+			DEFINITION:&lt;br/&gt;A coded value specifying whether diffusion conditions for the frame are directional, or isotropic with respect to direction.. &lt;br/&gt;&lt;br/&gt;EXAMPLE(S):&lt;br/&gt;DIRECTIONAL, BMATRIX, ISOTROPIC, NONE&lt;br/&gt;&lt;br/&gt;OTHER NAME(S):&lt;br/&gt;&lt;br/&gt;NOTE(S):&lt;br/&gt;
+		</td>
+	</tr>
+</table></div>
+
+						
+				</td>
+			</tr>			<tr>
+				<td width="100%" class="TableRow">
+					<i>Public PQ</i><br /><strong>&nbsp;&nbsp;magneticFieldStrength</strong>
+				</td>
+			</tr>
+			<tr>
+				<td class="TableRowBottomDashed"  colspan="1">										
+					<a href="#" onclick="parent.toggleData('DetailsImageAttributes1532')" style="text-decoration: none; color: #000000;"><img src="../../images/plus03.gif" align="absmiddle" id="DetailsImageAttributes1532" border="0" />Details:</a>
+					<table border="0" cellspacing="0" cellpadding="0" class="Table" style="padding: 4px 18px;">
+					
+						<tr id="DetailsImageAttributes1532_00" style="display: none;">
+							<td width="75"><i>Alias:</i></td>
+							<td></td>
+						</tr>
+						<tr id="DetailsImageAttributes1532_01" style="display: none;">
+							<td width="75"><i>Initial:</i></td>
+							<td></td>
+						</tr>
+						<tr id="DetailsImageAttributes1532_02" style="display: none;">
+							<td width="75"><i>Stereotype: </i></td>
+							<td></td>
+						</tr>
+						<tr id="DetailsImageAttributes1532_03" style="display: none;">
+							<td width="75"><i>Ordered: </i></td>
+							<td></td>
+						</tr>
+						<tr id="DetailsImageAttributes1532_04" style="display: none;">
+							<td width="75"><i>Range: </i></td>
+							<td></td>
+						</tr>
+						<tr id="DetailsImageAttributes1532_05" style="display: none;">
+							<td width="75"><i>Transient: </i></td>
+							<td>False</td>
+						</tr>
+						<tr id="DetailsImageAttributes1532_06" style="display: none;">
+							<td width="75"><i>Derived: </i></td>
+							<td>False</td>
+						</tr>
+							<tr id="DetailsImageAttributes1532_07" style="display: none;">
+							<td width="75"><i>IsID: </i></td>
+						<td>False</td>
+						</tr>
+					</table>
+					
+					Map:DICOM=MR Image and Spectroscopy Instance Macro - Magnetic Field Strength (0018,0087)<br>
+						<div class="ObjectDetailsNotes"><table>
+	<tr>
+		<td valign="top">
+			<i>Notes: </i><span style="margin-left: .4cm;"> </span>
+		</td>
+		<td>
+			DEFINITION:&lt;br/&gt;A vector quantity indicating the ability of a magnetic field to exert a force on moving electric charges. [The American Heritage® Science Dictionary]&lt;br/&gt;&lt;br/&gt;EXAMPLE(S):&lt;br/&gt;&lt;br/&gt;OTHER NAME(S):&lt;br/&gt;&lt;br/&gt;NOTE(S):&lt;br/&gt;The units are of magnetic flux density, e.g. tesla.&lt;br/&gt;
+		</td>
+	</tr>
+</table></div>
+
+						
+				</td>
+			</tr>			<tr>
+				<td width="100%" class="TableRow">
+					<i>Public CD</i><br /><strong>&nbsp;&nbsp;resonantNucleusCode</strong>
+				</td>
+			</tr>
+			<tr>
+				<td class="TableRowBottomDashed"  colspan="1">										
+					<a href="#" onclick="parent.toggleData('DetailsImageAttributes1533')" style="text-decoration: none; color: #000000;"><img src="../../images/plus03.gif" align="absmiddle" id="DetailsImageAttributes1533" border="0" />Details:</a>
+					<table border="0" cellspacing="0" cellpadding="0" class="Table" style="padding: 4px 18px;">
+					
+						<tr id="DetailsImageAttributes1533_00" style="display: none;">
+							<td width="75"><i>Alias:</i></td>
+							<td></td>
+						</tr>
+						<tr id="DetailsImageAttributes1533_01" style="display: none;">
+							<td width="75"><i>Initial:</i></td>
+							<td></td>
+						</tr>
+						<tr id="DetailsImageAttributes1533_02" style="display: none;">
+							<td width="75"><i>Stereotype: </i></td>
+							<td></td>
+						</tr>
+						<tr id="DetailsImageAttributes1533_03" style="display: none;">
+							<td width="75"><i>Ordered: </i></td>
+							<td></td>
+						</tr>
+						<tr id="DetailsImageAttributes1533_04" style="display: none;">
+							<td width="75"><i>Range: </i></td>
+							<td></td>
+						</tr>
+						<tr id="DetailsImageAttributes1533_05" style="display: none;">
+							<td width="75"><i>Transient: </i></td>
+							<td>False</td>
+						</tr>
+						<tr id="DetailsImageAttributes1533_06" style="display: none;">
+							<td width="75"><i>Derived: </i></td>
+							<td>False</td>
+						</tr>
+							<tr id="DetailsImageAttributes1533_07" style="display: none;">
+							<td width="75"><i>IsID: </i></td>
+						<td>False</td>
+						</tr>
+					</table>
+					
+					Map:DICOM=MR Image and Spectroscopy Instance Macro - Resonant Nucleus (0018,9100)<br>
+						<div class="ObjectDetailsNotes"><table>
+	<tr>
+		<td valign="top">
+			<i>Notes: </i><span style="margin-left: .4cm;"> </span>
+		</td>
+		<td>
+			DEFINITION:&lt;br/&gt;A coded value specifying the atomic nucleus that is the target of the acquisition.&lt;br/&gt;&lt;br/&gt;EXAMPLE(S):&lt;br/&gt;1H, 3HE, 7LI, 13C, 19F, 23NA, 31P, 129XE&lt;br/&gt;&lt;br/&gt;OTHER NAME(S):&lt;br/&gt;&lt;br/&gt;NOTE(S):&lt;br/&gt;
+		</td>
+	</tr>
+</table></div>
+
+						
+				</td>
+			</tr>			<tr>
+				<td width="100%" class="TableRow">
+					<i>Public CD</i><br /><strong>&nbsp;&nbsp;acquisitionContrastCode</strong>
+				</td>
+			</tr>
+			<tr>
+				<td class="TableRowBottomDashed"  colspan="1">										
+					<a href="#" onclick="parent.toggleData('DetailsImageAttributes1534')" style="text-decoration: none; color: #000000;"><img src="../../images/plus03.gif" align="absmiddle" id="DetailsImageAttributes1534" border="0" />Details:</a>
+					<table border="0" cellspacing="0" cellpadding="0" class="Table" style="padding: 4px 18px;">
+					
+						<tr id="DetailsImageAttributes1534_00" style="display: none;">
+							<td width="75"><i>Alias:</i></td>
+							<td></td>
+						</tr>
+						<tr id="DetailsImageAttributes1534_01" style="display: none;">
+							<td width="75"><i>Initial:</i></td>
+							<td></td>
+						</tr>
+						<tr id="DetailsImageAttributes1534_02" style="display: none;">
+							<td width="75"><i>Stereotype: </i></td>
+							<td></td>
+						</tr>
+						<tr id="DetailsImageAttributes1534_03" style="display: none;">
+							<td width="75"><i>Ordered: </i></td>
+							<td></td>
+						</tr>
+						<tr id="DetailsImageAttributes1534_04" style="display: none;">
+							<td width="75"><i>Range: </i></td>
+							<td></td>
+						</tr>
+						<tr id="DetailsImageAttributes1534_05" style="display: none;">
+							<td width="75"><i>Transient: </i></td>
+							<td>False</td>
+						</tr>
+						<tr id="DetailsImageAttributes1534_06" style="display: none;">
+							<td width="75"><i>Derived: </i></td>
+							<td>False</td>
+						</tr>
+							<tr id="DetailsImageAttributes1534_07" style="display: none;">
+							<td width="75"><i>IsID: </i></td>
+						<td>False</td>
+						</tr>
+					</table>
+					
+					Map:DICOM=MR Image Description Macro - Acquisition Contrast (0008,9209)<br>
+						<div class="ObjectDetailsNotes"><table>
+	<tr>
+		<td valign="top">
+			<i>Notes: </i><span style="margin-left: .4cm;"> </span>
+		</td>
+		<td>
+			DEFINITION:&lt;br/&gt;A coded value specifying the inherent (as opposed to exogenous)&#160;&#160;contrast in the acquisition.&lt;br/&gt;&lt;br/&gt;EXAMPLE(S):&lt;br/&gt;DIFFUSION&lt;br/&gt;FLOW_ENCODED - Flow Encoded contrast&lt;br/&gt;FLUID_ATTENUATED - Fluid Attenuated T2 weighted contrast&lt;br/&gt;PERFUSION - Perfusion weighted contrast&lt;br/&gt;PROTON_DENSITY - Proton Density weighted contrast&lt;br/&gt;STIR - Short Tau Inversion Recovery&lt;br/&gt;TAGGING - Superposition of thin saturation bands onto image&lt;br/&gt;T1 - T1 weighted contrast&lt;br/&gt;T2 - T2 weighted contrast&lt;br/&gt;T2_STAR - T2* weighted contrast&lt;br/&gt;TOF - Time Of Flight weighted contrast&lt;br/&gt;&lt;br/&gt;OTHER NAME(S):&lt;br/&gt;inherent contrast&lt;br/&gt;&lt;br/&gt;NOTE(S):&lt;br/&gt;
+		</td>
+	</tr>
+</table></div>
+
+						
+				</td>
+			</tr>			<tr>
+				<td width="100%" class="TableRow">
+					<i>Public BL</i><br /><strong>&nbsp;&nbsp;inversionRecoveryIndicator</strong>
+				</td>
+			</tr>
+			<tr>
+				<td class="TableRowBottomDashed"  colspan="1">										
+					<a href="#" onclick="parent.toggleData('DetailsImageAttributes1535')" style="text-decoration: none; color: #000000;"><img src="../../images/plus03.gif" align="absmiddle" id="DetailsImageAttributes1535" border="0" />Details:</a>
+					<table border="0" cellspacing="0" cellpadding="0" class="Table" style="padding: 4px 18px;">
+					
+						<tr id="DetailsImageAttributes1535_00" style="display: none;">
+							<td width="75"><i>Alias:</i></td>
+							<td></td>
+						</tr>
+						<tr id="DetailsImageAttributes1535_01" style="display: none;">
+							<td width="75"><i>Initial:</i></td>
+							<td></td>
+						</tr>
+						<tr id="DetailsImageAttributes1535_02" style="display: none;">
+							<td width="75"><i>Stereotype: </i></td>
+							<td></td>
+						</tr>
+						<tr id="DetailsImageAttributes1535_03" style="display: none;">
+							<td width="75"><i>Ordered: </i></td>
+							<td></td>
+						</tr>
+						<tr id="DetailsImageAttributes1535_04" style="display: none;">
+							<td width="75"><i>Range: </i></td>
+							<td></td>
+						</tr>
+						<tr id="DetailsImageAttributes1535_05" style="display: none;">
+							<td width="75"><i>Transient: </i></td>
+							<td>False</td>
+						</tr>
+						<tr id="DetailsImageAttributes1535_06" style="display: none;">
+							<td width="75"><i>Derived: </i></td>
+							<td>False</td>
+						</tr>
+							<tr id="DetailsImageAttributes1535_07" style="display: none;">
+							<td width="75"><i>IsID: </i></td>
+						<td>False</td>
+						</tr>
+					</table>
+					
+					Map:DICOM=MR Modifier Macro - MR Modifier Sequence > Inversion Recovery (0018,9009)<br>
+						<div class="ObjectDetailsNotes"><table>
+	<tr>
+		<td valign="top">
+			<i>Notes: </i><span style="margin-left: .4cm;"> </span>
+		</td>
+		<td>
+			DEFINITION:&lt;br/&gt;Specifies whether an inversion recovery preparatory sequence is used in the acquisition.&lt;br/&gt;&lt;br/&gt;EXAMPLE(S):&lt;br/&gt;&lt;br/&gt;OTHER NAME(S):&lt;br/&gt;&lt;br/&gt;NOTE(S):&lt;br/&gt;
+		</td>
+	</tr>
+</table></div>
+
+						
+				</td>
+			</tr>			<tr>
+				<td width="100%" class="TableRow">
+					<i>Public ST</i><br /><strong>&nbsp;&nbsp;pulseSequenceName</strong>
+				</td>
+			</tr>
+			<tr>
+				<td class="TableRowBottomDashed"  colspan="1">										
+					<a href="#" onclick="parent.toggleData('DetailsImageAttributes1536')" style="text-decoration: none; color: #000000;"><img src="../../images/plus03.gif" align="absmiddle" id="DetailsImageAttributes1536" border="0" />Details:</a>
+					<table border="0" cellspacing="0" cellpadding="0" class="Table" style="padding: 4px 18px;">
+					
+						<tr id="DetailsImageAttributes1536_00" style="display: none;">
+							<td width="75"><i>Alias:</i></td>
+							<td></td>
+						</tr>
+						<tr id="DetailsImageAttributes1536_01" style="display: none;">
+							<td width="75"><i>Initial:</i></td>
+							<td></td>
+						</tr>
+						<tr id="DetailsImageAttributes1536_02" style="display: none;">
+							<td width="75"><i>Stereotype: </i></td>
+							<td></td>
+						</tr>
+						<tr id="DetailsImageAttributes1536_03" style="display: none;">
+							<td width="75"><i>Ordered: </i></td>
+							<td></td>
+						</tr>
+						<tr id="DetailsImageAttributes1536_04" style="display: none;">
+							<td width="75"><i>Range: </i></td>
+							<td></td>
+						</tr>
+						<tr id="DetailsImageAttributes1536_05" style="display: none;">
+							<td width="75"><i>Transient: </i></td>
+							<td>False</td>
+						</tr>
+						<tr id="DetailsImageAttributes1536_06" style="display: none;">
+							<td width="75"><i>Derived: </i></td>
+							<td>False</td>
+						</tr>
+							<tr id="DetailsImageAttributes1536_07" style="display: none;">
+							<td width="75"><i>IsID: </i></td>
+						<td>False</td>
+						</tr>
+					</table>
+					
+					Map:DICOM=MR Pulse Sequence Module - Pulse Sequence Name (0018,9005)<br>
+						<div class="ObjectDetailsNotes"><table>
+	<tr>
+		<td valign="top">
+			<i>Notes: </i><span style="margin-left: .4cm;"> </span>
+		</td>
+		<td>
+			DEFINITION:&lt;br/&gt;Name of the pulse sequence that is used for the acquisition.&lt;br/&gt;&lt;br/&gt;EXAMPLE(S):&lt;br/&gt;&lt;br/&gt;OTHER NAME(S):&lt;br/&gt;&lt;br/&gt;NOTE(S):&lt;br/&gt;This is usually a vendor-specific name. &lt;br/&gt;
+		</td>
+	</tr>
+</table></div>
+
+						
+				</td>
+			</tr>			<tr>
+				<td width="100%" class="TableRow">
+					<i>Public BL</i><br /><strong>&nbsp;&nbsp;multipleSpinEchoIndicator</strong>
+				</td>
+			</tr>
+			<tr>
+				<td class="TableRowBottomDashed"  colspan="1">										
+					<a href="#" onclick="parent.toggleData('DetailsImageAttributes1537')" style="text-decoration: none; color: #000000;"><img src="../../images/plus03.gif" align="absmiddle" id="DetailsImageAttributes1537" border="0" />Details:</a>
+					<table border="0" cellspacing="0" cellpadding="0" class="Table" style="padding: 4px 18px;">
+					
+						<tr id="DetailsImageAttributes1537_00" style="display: none;">
+							<td width="75"><i>Alias:</i></td>
+							<td></td>
+						</tr>
+						<tr id="DetailsImageAttributes1537_01" style="display: none;">
+							<td width="75"><i>Initial:</i></td>
+							<td></td>
+						</tr>
+						<tr id="DetailsImageAttributes1537_02" style="display: none;">
+							<td width="75"><i>Stereotype: </i></td>
+							<td></td>
+						</tr>
+						<tr id="DetailsImageAttributes1537_03" style="display: none;">
+							<td width="75"><i>Ordered: </i></td>
+							<td></td>
+						</tr>
+						<tr id="DetailsImageAttributes1537_04" style="display: none;">
+							<td width="75"><i>Range: </i></td>
+							<td></td>
+						</tr>
+						<tr id="DetailsImageAttributes1537_05" style="display: none;">
+							<td width="75"><i>Transient: </i></td>
+							<td>False</td>
+						</tr>
+						<tr id="DetailsImageAttributes1537_06" style="display: none;">
+							<td width="75"><i>Derived: </i></td>
+							<td>False</td>
+						</tr>
+							<tr id="DetailsImageAttributes1537_07" style="display: none;">
+							<td width="75"><i>IsID: </i></td>
+						<td>False</td>
+						</tr>
+					</table>
+					
+					Map:DICOM=MR Pulse Sequence Module - Multiple Spin Echo (0018,9011)<br>
+						<div class="ObjectDetailsNotes"><table>
+	<tr>
+		<td valign="top">
+			<i>Notes: </i><span style="margin-left: .4cm;"> </span>
+		</td>
+		<td>
+			DEFINITION:&lt;br/&gt;Specifies whether different lines in k-space are collected for a single frame.&lt;br/&gt;&lt;br/&gt;EXAMPLE(S):&lt;br/&gt;&lt;br/&gt;OTHER NAME(S):&lt;br/&gt;&lt;br/&gt;NOTE(S):&lt;br/&gt;
+		</td>
+	</tr>
+</table></div>
+
+						
+				</td>
+			</tr>			<tr>
+				<td width="100%" class="TableRow">
+					<i>Public BL</i><br /><strong>&nbsp;&nbsp;phaseContrastIndicator</strong>
+				</td>
+			</tr>
+			<tr>
+				<td class="TableRowBottomDashed"  colspan="1">										
+					<a href="#" onclick="parent.toggleData('DetailsImageAttributes1538')" style="text-decoration: none; color: #000000;"><img src="../../images/plus03.gif" align="absmiddle" id="DetailsImageAttributes1538" border="0" />Details:</a>
+					<table border="0" cellspacing="0" cellpadding="0" class="Table" style="padding: 4px 18px;">
+					
+						<tr id="DetailsImageAttributes1538_00" style="display: none;">
+							<td width="75"><i>Alias:</i></td>
+							<td></td>
+						</tr>
+						<tr id="DetailsImageAttributes1538_01" style="display: none;">
+							<td width="75"><i>Initial:</i></td>
+							<td></td>
+						</tr>
+						<tr id="DetailsImageAttributes1538_02" style="display: none;">
+							<td width="75"><i>Stereotype: </i></td>
+							<td></td>
+						</tr>
+						<tr id="DetailsImageAttributes1538_03" style="display: none;">
+							<td width="75"><i>Ordered: </i></td>
+							<td></td>
+						</tr>
+						<tr id="DetailsImageAttributes1538_04" style="display: none;">
+							<td width="75"><i>Range: </i></td>
+							<td></td>
+						</tr>
+						<tr id="DetailsImageAttributes1538_05" style="display: none;">
+							<td width="75"><i>Transient: </i></td>
+							<td>False</td>
+						</tr>
+						<tr id="DetailsImageAttributes1538_06" style="display: none;">
+							<td width="75"><i>Derived: </i></td>
+							<td>False</td>
+						</tr>
+							<tr id="DetailsImageAttributes1538_07" style="display: none;">
+							<td width="75"><i>IsID: </i></td>
+						<td>False</td>
+						</tr>
+					</table>
+					
+					Map:DICOM=MR Pulse Sequence Module - Phase Contrast (0018,9014)<br>
+						<div class="ObjectDetailsNotes"><table>
+	<tr>
+		<td valign="top">
+			<i>Notes: </i><span style="margin-left: .4cm;"> </span>
+		</td>
+		<td>
+			DEFINITION:&lt;br/&gt;Specifies whether this is a pulse sequence in which the flowing spins are velocity encoded in phase. &lt;br/&gt;&lt;br/&gt;EXAMPLE(S):&lt;br/&gt;&lt;br/&gt;OTHER NAME(S):&lt;br/&gt;&lt;br/&gt;NOTE(S):&lt;br/&gt;
+		</td>
+	</tr>
+</table></div>
+
+						
+				</td>
+			</tr>			<tr>
+				<td width="100%" class="TableRow">
+					<i>Public BL</i><br /><strong>&nbsp;&nbsp;timeOfFlightContrastIndicator</strong>
+				</td>
+			</tr>
+			<tr>
+				<td class="TableRowBottomDashed"  colspan="1">										
+					<a href="#" onclick="parent.toggleData('DetailsImageAttributes1539')" style="text-decoration: none; color: #000000;"><img src="../../images/plus03.gif" align="absmiddle" id="DetailsImageAttributes1539" border="0" />Details:</a>
+					<table border="0" cellspacing="0" cellpadding="0" class="Table" style="padding: 4px 18px;">
+					
+						<tr id="DetailsImageAttributes1539_00" style="display: none;">
+							<td width="75"><i>Alias:</i></td>
+							<td></td>
+						</tr>
+						<tr id="DetailsImageAttributes1539_01" style="display: none;">
+							<td width="75"><i>Initial:</i></td>
+							<td></td>
+						</tr>
+						<tr id="DetailsImageAttributes1539_02" style="display: none;">
+							<td width="75"><i>Stereotype: </i></td>
+							<td></td>
+						</tr>
+						<tr id="DetailsImageAttributes1539_03" style="display: none;">
+							<td width="75"><i>Ordered: </i></td>
+							<td></td>
+						</tr>
+						<tr id="DetailsImageAttributes1539_04" style="display: none;">
+							<td width="75"><i>Range: </i></td>
+							<td></td>
+						</tr>
+						<tr id="DetailsImageAttributes1539_05" style="display: none;">
+							<td width="75"><i>Transient: </i></td>
+							<td>False</td>
+						</tr>
+						<tr id="DetailsImageAttributes1539_06" style="display: none;">
+							<td width="75"><i>Derived: </i></td>
+							<td>False</td>
+						</tr>
+							<tr id="DetailsImageAttributes1539_07" style="display: none;">
+							<td width="75"><i>IsID: </i></td>
+						<td>False</td>
+						</tr>
+					</table>
+					
+					Map:DICOM=MR Pulse Sequence Module - Time of Flight Contrast (0018,9015)<br>
+						<div class="ObjectDetailsNotes"><table>
+	<tr>
+		<td valign="top">
+			<i>Notes: </i><span style="margin-left: .4cm;"> </span>
+		</td>
+		<td>
+			DEFINITION:&lt;br/&gt;Specifies whether contrast is created by the inflow of blood in the saturated plane. &lt;br/&gt;&lt;br/&gt;EXAMPLE(S):&lt;br/&gt;&lt;br/&gt;OTHER NAME(S):&lt;br/&gt;&lt;br/&gt;NOTE(S):&lt;br/&gt;
+		</td>
+	</tr>
+</table></div>
+
+						
+				</td>
+			</tr>			<tr>
+				<td width="100%" class="TableRow">
+					<i>Public CD</i><br /><strong>&nbsp;&nbsp;arterialSpinLabelingContrastCode</strong>
+				</td>
+			</tr>
+			<tr>
+				<td class="TableRowBottomDashed"  colspan="1">										
+					<a href="#" onclick="parent.toggleData('DetailsImageAttributes1540')" style="text-decoration: none; color: #000000;"><img src="../../images/plus03.gif" align="absmiddle" id="DetailsImageAttributes1540" border="0" />Details:</a>
+					<table border="0" cellspacing="0" cellpadding="0" class="Table" style="padding: 4px 18px;">
+					
+						<tr id="DetailsImageAttributes1540_00" style="display: none;">
+							<td width="75"><i>Alias:</i></td>
+							<td></td>
+						</tr>
+						<tr id="DetailsImageAttributes1540_01" style="display: none;">
+							<td width="75"><i>Initial:</i></td>
+							<td></td>
+						</tr>
+						<tr id="DetailsImageAttributes1540_02" style="display: none;">
+							<td width="75"><i>Stereotype: </i></td>
+							<td></td>
+						</tr>
+						<tr id="DetailsImageAttributes1540_03" style="display: none;">
+							<td width="75"><i>Ordered: </i></td>
+							<td></td>
+						</tr>
+						<tr id="DetailsImageAttributes1540_04" style="display: none;">
+							<td width="75"><i>Range: </i></td>
+							<td></td>
+						</tr>
+						<tr id="DetailsImageAttributes1540_05" style="display: none;">
+							<td width="75"><i>Transient: </i></td>
+							<td>False</td>
+						</tr>
+						<tr id="DetailsImageAttributes1540_06" style="display: none;">
+							<td width="75"><i>Derived: </i></td>
+							<td>False</td>
+						</tr>
+							<tr id="DetailsImageAttributes1540_07" style="display: none;">
+							<td width="75"><i>IsID: </i></td>
+						<td>False</td>
+						</tr>
+					</table>
+					
+					Map:DICOM=MR Pulse Sequence Module - Arterial Spin Labeling Contrast (0018,9250)<br>
+						<div class="ObjectDetailsNotes"><table>
+	<tr>
+		<td valign="top">
+			<i>Notes: </i><span style="margin-left: .4cm;"> </span>
+		</td>
+		<td>
+			DEFINITION:&lt;br/&gt;A coded value specifying how arterial water is used as a diffusable tracer. &lt;br/&gt;&lt;br/&gt;EXAMPLE(S):&lt;br/&gt;CONTINUOUS - a single long low powered RF pulse &lt;br/&gt;PSEUDOCONTINUOUS - multiple short low powered RF pulses &lt;br/&gt;PULSED - a single short high powered RF pulse &lt;br/&gt;&lt;br/&gt;OTHER NAME(S):&lt;br/&gt;&lt;br/&gt;NOTE(S):&lt;br/&gt;
+		</td>
+	</tr>
+</table></div>
+
+						
+				</td>
+			</tr>			<tr>
+				<td width="100%" class="TableRow">
+					<i>Public CD</i><br /><strong>&nbsp;&nbsp;steadyStatePulseSequenceCode</strong>
+				</td>
+			</tr>
+			<tr>
+				<td class="TableRowBottomDashed"  colspan="1">										
+					<a href="#" onclick="parent.toggleData('DetailsImageAttributes1541')" style="text-decoration: none; color: #000000;"><img src="../../images/plus03.gif" align="absmiddle" id="DetailsImageAttributes1541" border="0" />Details:</a>
+					<table border="0" cellspacing="0" cellpadding="0" class="Table" style="padding: 4px 18px;">
+					
+						<tr id="DetailsImageAttributes1541_00" style="display: none;">
+							<td width="75"><i>Alias:</i></td>
+							<td></td>
+						</tr>
+						<tr id="DetailsImageAttributes1541_01" style="display: none;">
+							<td width="75"><i>Initial:</i></td>
+							<td></td>
+						</tr>
+						<tr id="DetailsImageAttributes1541_02" style="display: none;">
+							<td width="75"><i>Stereotype: </i></td>
+							<td></td>
+						</tr>
+						<tr id="DetailsImageAttributes1541_03" style="display: none;">
+							<td width="75"><i>Ordered: </i></td>
+							<td></td>
+						</tr>
+						<tr id="DetailsImageAttributes1541_04" style="display: none;">
+							<td width="75"><i>Range: </i></td>
+							<td></td>
+						</tr>
+						<tr id="DetailsImageAttributes1541_05" style="display: none;">
+							<td width="75"><i>Transient: </i></td>
+							<td>False</td>
+						</tr>
+						<tr id="DetailsImageAttributes1541_06" style="display: none;">
+							<td width="75"><i>Derived: </i></td>
+							<td>False</td>
+						</tr>
+							<tr id="DetailsImageAttributes1541_07" style="display: none;">
+							<td width="75"><i>IsID: </i></td>
+						<td>False</td>
+						</tr>
+					</table>
+					
+					Map:DICOM=MR Pulse Sequence Module - Steady State Pulse Sequence (0018,9017)<br>
+						<div class="ObjectDetailsNotes"><table>
+	<tr>
+		<td valign="top">
+			<i>Notes: </i><span style="margin-left: .4cm;"> </span>
+		</td>
+		<td>
+			DEFINITION:&lt;br/&gt;A coded value specifying how residual transverse magnetization is maintained during the acquisition.&lt;br/&gt;&lt;br/&gt;EXAMPLE(S):&lt;br/&gt;FREE_PRECESSION, TRANSVERSE, TIME_REVERSED, LONGITUDINAL, NONE&lt;br/&gt;&lt;br/&gt;OTHER NAME(S):&lt;br/&gt;&lt;br/&gt;NOTE(S):&lt;br/&gt;
+		</td>
+	</tr>
+</table></div>
+
+						
+				</td>
+			</tr>			<tr>
+				<td width="100%" class="TableRow">
+					<i>Public BL</i><br /><strong>&nbsp;&nbsp;echoPlanarPulseSequenceIndicator</strong>
+				</td>
+			</tr>
+			<tr>
+				<td class="TableRowBottomDashed"  colspan="1">										
+					<a href="#" onclick="parent.toggleData('DetailsImageAttributes1542')" style="text-decoration: none; color: #000000;"><img src="../../images/plus03.gif" align="absmiddle" id="DetailsImageAttributes1542" border="0" />Details:</a>
+					<table border="0" cellspacing="0" cellpadding="0" class="Table" style="padding: 4px 18px;">
+					
+						<tr id="DetailsImageAttributes1542_00" style="display: none;">
+							<td width="75"><i>Alias:</i></td>
+							<td></td>
+						</tr>
+						<tr id="DetailsImageAttributes1542_01" style="display: none;">
+							<td width="75"><i>Initial:</i></td>
+							<td></td>
+						</tr>
+						<tr id="DetailsImageAttributes1542_02" style="display: none;">
+							<td width="75"><i>Stereotype: </i></td>
+							<td></td>
+						</tr>
+						<tr id="DetailsImageAttributes1542_03" style="display: none;">
+							<td width="75"><i>Ordered: </i></td>
+							<td></td>
+						</tr>
+						<tr id="DetailsImageAttributes1542_04" style="display: none;">
+							<td width="75"><i>Range: </i></td>
+							<td></td>
+						</tr>
+						<tr id="DetailsImageAttributes1542_05" style="display: none;">
+							<td width="75"><i>Transient: </i></td>
+							<td>False</td>
+						</tr>
+						<tr id="DetailsImageAttributes1542_06" style="display: none;">
+							<td width="75"><i>Derived: </i></td>
+							<td>False</td>
+						</tr>
+							<tr id="DetailsImageAttributes1542_07" style="display: none;">
+							<td width="75"><i>IsID: </i></td>
+						<td>False</td>
+						</tr>
+					</table>
+					
+					Map:DICOM=MR Pulse Sequence Module - Echo Planar Pulse Sequence (0018,9018)<br>
+						<div class="ObjectDetailsNotes"><table>
+	<tr>
+		<td valign="top">
+			<i>Notes: </i><span style="margin-left: .4cm;"> </span>
+		</td>
+		<td>
+			DEFINITION:&lt;br/&gt;Specifies whether multiple echos of different phase steps are acquired using rephasing gradients instead of repeated 180-degree pulses. &lt;br/&gt;&lt;br/&gt;EXAMPLE(S):&lt;br/&gt;&lt;br/&gt;OTHER NAME(S):&lt;br/&gt;&lt;br/&gt;NOTE(S):&lt;br/&gt;
+		</td>
+	</tr>
+</table></div>
+
+						
+				</td>
+			</tr>			<tr>
+				<td width="100%" class="TableRow">
+					<i>Public BL</i><br /><strong>&nbsp;&nbsp;saturationRecoveryIndicator</strong>
+				</td>
+			</tr>
+			<tr>
+				<td class="TableRowBottomDashed"  colspan="1">										
+					<a href="#" onclick="parent.toggleData('DetailsImageAttributes1543')" style="text-decoration: none; color: #000000;"><img src="../../images/plus03.gif" align="absmiddle" id="DetailsImageAttributes1543" border="0" />Details:</a>
+					<table border="0" cellspacing="0" cellpadding="0" class="Table" style="padding: 4px 18px;">
+					
+						<tr id="DetailsImageAttributes1543_00" style="display: none;">
+							<td width="75"><i>Alias:</i></td>
+							<td></td>
+						</tr>
+						<tr id="DetailsImageAttributes1543_01" style="display: none;">
+							<td width="75"><i>Initial:</i></td>
+							<td></td>
+						</tr>
+						<tr id="DetailsImageAttributes1543_02" style="display: none;">
+							<td width="75"><i>Stereotype: </i></td>
+							<td></td>
+						</tr>
+						<tr id="DetailsImageAttributes1543_03" style="display: none;">
+							<td width="75"><i>Ordered: </i></td>
+							<td></td>
+						</tr>
+						<tr id="DetailsImageAttributes1543_04" style="display: none;">
+							<td width="75"><i>Range: </i></td>
+							<td></td>
+						</tr>
+						<tr id="DetailsImageAttributes1543_05" style="display: none;">
+							<td width="75"><i>Transient: </i></td>
+							<td>False</td>
+						</tr>
+						<tr id="DetailsImageAttributes1543_06" style="display: none;">
+							<td width="75"><i>Derived: </i></td>
+							<td>False</td>
+						</tr>
+							<tr id="DetailsImageAttributes1543_07" style="display: none;">
+							<td width="75"><i>IsID: </i></td>
+						<td>False</td>
+						</tr>
+					</table>
+					
+					Map:DICOM=MR Pulse Sequence Module - Saturation Recovery (0018,9024)<br>
+						<div class="ObjectDetailsNotes"><table>
+	<tr>
+		<td valign="top">
+			<i>Notes: </i><span style="margin-left: .4cm;"> </span>
+		</td>
+		<td>
+			DEFINITION:&lt;br/&gt;Specifies whether a saturation recovery pulse sequence is used. &lt;br/&gt;&lt;br/&gt;EXAMPLE(S):&lt;br/&gt;&lt;br/&gt;OTHER NAME(S):&lt;br/&gt;&lt;br/&gt;NOTE(S):&lt;br/&gt;
+		</td>
+	</tr>
+</table></div>
+
+						
+				</td>
+			</tr>			<tr>
+				<td width="100%" class="TableRow">
+					<i>Public CD</i><br /><strong>&nbsp;&nbsp;spectrallySelectedSuppressionCode</strong>
+				</td>
+			</tr>
+			<tr>
+				<td class="TableRowBottomDashed"  colspan="1">										
+					<a href="#" onclick="parent.toggleData('DetailsImageAttributes1544')" style="text-decoration: none; color: #000000;"><img src="../../images/plus03.gif" align="absmiddle" id="DetailsImageAttributes1544" border="0" />Details:</a>
+					<table border="0" cellspacing="0" cellpadding="0" class="Table" style="padding: 4px 18px;">
+					
+						<tr id="DetailsImageAttributes1544_00" style="display: none;">
+							<td width="75"><i>Alias:</i></td>
+							<td></td>
+						</tr>
+						<tr id="DetailsImageAttributes1544_01" style="display: none;">
+							<td width="75"><i>Initial:</i></td>
+							<td></td>
+						</tr>
+						<tr id="DetailsImageAttributes1544_02" style="display: none;">
+							<td width="75"><i>Stereotype: </i></td>
+							<td></td>
+						</tr>
+						<tr id="DetailsImageAttributes1544_03" style="display: none;">
+							<td width="75"><i>Ordered: </i></td>
+							<td></td>
+						</tr>
+						<tr id="DetailsImageAttributes1544_04" style="display: none;">
+							<td width="75"><i>Range: </i></td>
+							<td></td>
+						</tr>
+						<tr id="DetailsImageAttributes1544_05" style="display: none;">
+							<td width="75"><i>Transient: </i></td>
+							<td>False</td>
+						</tr>
+						<tr id="DetailsImageAttributes1544_06" style="display: none;">
+							<td width="75"><i>Derived: </i></td>
+							<td>False</td>
+						</tr>
+							<tr id="DetailsImageAttributes1544_07" style="display: none;">
+							<td width="75"><i>IsID: </i></td>
+						<td>False</td>
+						</tr>
+					</table>
+					
+					Map:DICOM=MR Pulse Sequence Module - Spectrally Selected Suppression (0018,9025)<br>
+						<div class="ObjectDetailsNotes"><table>
+	<tr>
+		<td valign="top">
+			<i>Notes: </i><span style="margin-left: .4cm;"> </span>
+		</td>
+		<td>
+			DEFINITION:&lt;br/&gt;A coded value specifying the type of substance-specific signal suppression is&#160;&#160;used. &lt;br/&gt;&lt;br/&gt;EXAMPLE(S):&lt;br/&gt;FAT, WATER, FAT_AND_WATER, SILICON_GEL, NONE&lt;br/&gt;&lt;br/&gt;OTHER NAME(S):&lt;br/&gt;&lt;br/&gt;NOTE(S):&lt;br/&gt;
+		</td>
+	</tr>
+</table></div>
+
+						
+				</td>
+			</tr>
+	</table>
+</div>
+<div class="ItemBody" id="TaggedValTable">
+	<table align="center" border="0" cellspacing="0" cellpadding="0" class="Table">
+		<tr>
+			<td width="50%" class="TableHeading">Tag</td>
+			<td width="50%" class="TableHeading">Value</td>
+		</tr>
+					<tr>
+				<td width="50%" class="TableRow" valign="top">Map:DICOM</td>
+				<td width="50%" class="TableRow" valign="top">MR Modifier Macro - MR Modifier Sequence (0018,9115)</td>
+			</tr>	
+			<tr>
+				<td class="TableRowBottomDashed"  colspan="2">
+					<div class="DetailsDivParent"><img src="../../images/minus03.gif" align="absmiddle" id="DetailsImageScenario1545" onclick="parent.toggleDiv('detailsDIVScenario1545','DetailsImageScenario1545')" />Details:
+						<div id="detailsDIVScenario1545" class="DetailsDiv" >
+						&nbsp;
+						</div>
+					</div>
+				</td>
+			</tr>
+	</table>
+</div>		<div class="ItemBody" id="LinksTable">
+			<table align="center" border="0" cellspacing="0" cellpadding="0" class="Table">
+				<tr>
+					<td width="30%" class="TableHeading">Object</td>
+					<td width="10%" class="TableHeading">Type</td>
+					<td width="10%" class="TableHeading">Connection</td>
+					<td width="10%" class="TableHeading">Direction</td>
+					<td width="40%" class="TableHeading">Notes</td>
+				</tr>
+				<tr>
+					<td width="30%" class="TableRow" valign="top"><a href="EA198.htm">ImagingAcquisitionProtocolElement</a></td>
+					<td width="10%" class="TableRow" valign="top">Class</td>
+					<td width="10%" class="TableRow" valign="top">Generalization</td>
+					<td width="10%" class="TableRow" valign="top">To</td>
+					<td width="40%" class="TableRow" valign="top">DESCRIPTION:
+Each MRImagingAcquisitionProtocolElement always specializes one ImagingAcquisitionProtocolElement. Each ImagingAcquisitionProtocolElement might be specialized by one MRImagingAcquisitionProtocolElement.
+
+DEFINITION:
+
+EXAMPLE(S):
+
+OTHER NAME(S):
+
+NOTE(S):</td>
+				</tr>
+
+			</table>
+		</div>
+	</div>
+<div class="pageFooter"></div>
+ 
+</body>
+</html>

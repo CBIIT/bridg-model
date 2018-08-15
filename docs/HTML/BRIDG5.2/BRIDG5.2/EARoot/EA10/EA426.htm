@@ -1,0 +1,1151 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>Study Conduct Sub-Domain::StudySite</title>
+<link href="../../css/ea.css" rel="stylesheet" type="text/css" />
+<script>
+function initPage(src) {	
+	if(parent==this&&(this.location+"").indexOf('EARoot')!=-1)
+		document.location=(this.location+"").substring(0,(this.location+"").indexOf('EARoot'))+"index"+(this.location+"").substring((this.location+"").lastIndexOf('.'))+"?goto="+((this.location+"").substring((this.location+"").indexOf('EARoot')+7,(this.location+"").lastIndexOf('.')).replace(/\//g,':').replace(/EA/g,""));
+	else
+		parent.initPage(src);
+}
+
+function nameClassifier(name, separator)
+{
+  var str = name;
+  var classifierName;
+  var node = document.getElementById('name_classifier');
+  if(node != null)
+  {
+    classifierName = node.innerHTML;
+  }
+  if(classifierName != "")
+  {
+   str += separator + classifierName;
+  }
+  
+  return str;
+}
+</script>
+</head>
+<body onload="initPage(this);" class="Content">
+<div class="pageHeader"></div>
+<div class="PageBody">
+	<div id="name_classifier" style="display: none;"></div>
+	<span class="ObjectTitle"><script type="text/javascript">document.write(nameClassifier("StudySite", " : "))</script>  : Public   Class</span>
+	<table border="0" cellpadding="0" cellspacing="0" class="ObjectDetails">
+		<tr>
+			<td width="15%" class="ObjectDetailsTopic">Created:</td>
+			<td width="85%" class="ObjectDetailsValue">1/5/2005 10:35:40 PM</td>
+		</tr>
+		<tr>
+			<td class="ObjectDetailsTopic">Modified:</td>
+			<td class="ObjectDetailsValue">1/12/2018 9:33:36 AM</td>
+		</tr>
+		<tr style="height: 10px"><td colspan="2"></td></tr>
+		<tr>
+			<td class="ObjectDetailsTopic"><img src="../../images/plus03.gif" align="absmiddle" id="proj" onclick="parent.toggleData(this.id)" />Project:</td>
+			<td class="ObjectDetailsValue"></td>
+		</tr>
+		<tr id="proj00" style="display: none;">
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Author:</td>
+			<td class="ObjectDetailsValue">BRIDG SCC</td>
+		</tr>
+		<tr id="proj01" style="display: none;">
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Version:</td>
+			<td class="ObjectDetailsValue">1.0</td>
+		</tr>
+		<tr id="proj02" style="display: none;">
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Phase:</td>
+			<td class="ObjectDetailsValue">1.0</td>
+		</tr>
+		<tr id="proj03" style="display: none;">
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Status:</td>
+			<td class="ObjectDetailsValue"><none></td>
+		</tr>
+		<tr id="proj04" style="display: none;">
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Complexity:</td>
+			<td class="ObjectDetailsValue">Easy</td>
+		</tr>
+		<tr id="proj05" style="display: none;">
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Difficulty:</td>
+			<td class="ObjectDetailsValue"></td>
+		</tr>
+		<tr id="proj06" style="display: none;">
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Priority:</td>
+			<td class="ObjectDetailsValue"></td>
+		</tr>
+		<tr id="proj05" style="display: none;">
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Multiplicity:</td>
+			<td class="ObjectDetailsValue"></td>
+		</tr>
+		<tr>
+			<td class="ObjectDetailsTopic"><img src="../../images/plus03.gif" align="absmiddle" id="adv" onclick="parent.toggleData(this.id)" />Advanced:</td>
+			<td class="ObjectDetailsValue"></td>
+		</tr>
+		<tr id="adv00" style="display: none;">
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">UUID:</td>
+			<td class="ObjectDetailsValue">{67703B94-C0DB-4831-B480-B8C3A3ADFB2E}</td>
+		</tr>
+		<tr id="adv01" style="display: none;">
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Appears In:</td>
+			<td class="ObjectDetailsValue"><a href="../EA1.htm">UML-Based Comprehensive BRIDG Model Diagram</a>, <a href="../EA3/EA61.htm">View CM: Common</a>, <a href="../EA7/EA245.htm">View PR: Protocol Representation</a>, <a href="../EA7/EA247.htm">Study Versioning View</a>, <a href="EA361.htm">View SC: Study Conduct</a>, <a href="../EA5/EA177.htm">View IM: Imaging</a>, <a href="../EA12/EA579.htm">Organization</a>, <a href="../EA12/EA581.htm">Organization-Related Classes - no attributes</a>, <a href="../EA12/EA593.htm">StudySite and StudySubject</a>, <a href="../EA12/EA585.htm">Performer</a>, <a href="../EA12/EA577.htm">Oncology & Imaging View</a>, <a href="../EA11/EA441.htm">SDTM 3.1.3 View</a>, <a href="../EA12/EA569.htm">ClinicalTrials.gov</a>, <a href="../EA12/EA583.htm">Participant Registration</a>, <a href="../EA12/EA571.htm">Lab-Related Classes</a>, <a href="../EA11/EA439.htm">CDISC Lab Data Model v1.0.1</a></td>
+		</tr>
+	</table>
+	<div class="ObjectDetailsNotes">DEFINITION:&lt;br/&gt;A facility in which study activities are conducted. &lt;br/&gt;&lt;br/&gt;EXAMPLE(S):&lt;br/&gt;The site where the study subject encounter occurs, or the site of the Investigator.&lt;br/&gt;&lt;br/&gt;OTHER NAME(S):&lt;br/&gt;&lt;br/&gt;NOTE(S):&lt;br/&gt;</div>
+
+	<div class="TableGroup" id="TableGroup">
+		<ul class="ItemTitle">
+			<li onClick="parent.toggleItem('Attributes');" id="AttributesTitle">Attributes</li>
+			<li onClick="parent.toggleItem('AssociationsTo');" id="AssociationsToTitle">Associations To</li>
+			<li onClick="parent.toggleItem('AssociationsFrom');" id="AssociationsFromTitle">Associations From</li>
+			<li onClick="parent.toggleItem('TaggedVal');" id="TaggedValTitle">Tagged Values</li>
+			<li onClick="parent.toggleItem('Constraints');" id="ConstraintsTitle">Constraints</li>
+		</ul>
+<div class="ItemBody" id="AttributesTable">
+	<table border="0" cellspacing="0" cellpadding="0" class="Table">
+		<tr>
+			<td width="100%" class="TableHeading">Attribute</td>
+		</tr>
+						<tr>
+				<td width="100%" class="TableRow">
+					<i>Public DSET&lt;ID&gt;</i><br /><strong>&nbsp;&nbsp;identifier</strong>
+				</td>
+			</tr>
+			<tr>
+				<td class="TableRowBottomDashed"  colspan="1">										
+					<a href="#" onclick="parent.toggleData('DetailsImageAttributes3368')" style="text-decoration: none; color: #000000;"><img src="../../images/plus03.gif" align="absmiddle" id="DetailsImageAttributes3368" border="0" />Details:</a>
+					<table border="0" cellspacing="0" cellpadding="0" class="Table" style="padding: 4px 18px;">
+					
+						<tr id="DetailsImageAttributes3368_00" style="display: none;">
+							<td width="75"><i>Alias:</i></td>
+							<td></td>
+						</tr>
+						<tr id="DetailsImageAttributes3368_01" style="display: none;">
+							<td width="75"><i>Initial:</i></td>
+							<td></td>
+						</tr>
+						<tr id="DetailsImageAttributes3368_02" style="display: none;">
+							<td width="75"><i>Stereotype: </i></td>
+							<td></td>
+						</tr>
+						<tr id="DetailsImageAttributes3368_03" style="display: none;">
+							<td width="75"><i>Ordered: </i></td>
+							<td></td>
+						</tr>
+						<tr id="DetailsImageAttributes3368_04" style="display: none;">
+							<td width="75"><i>Range: </i></td>
+							<td>Range:0 to *</td>
+						</tr>
+						<tr id="DetailsImageAttributes3368_05" style="display: none;">
+							<td width="75"><i>Transient: </i></td>
+							<td>False</td>
+						</tr>
+						<tr id="DetailsImageAttributes3368_06" style="display: none;">
+							<td width="75"><i>Derived: </i></td>
+							<td>False</td>
+						</tr>
+							<tr id="DetailsImageAttributes3368_07" style="display: none;">
+							<td width="75"><i>IsID: </i></td>
+						<td>False</td>
+						</tr>
+					</table>
+					
+					Map:CDASHv1.1=DM.SITEID<br>Map:CDISCLabv1.0.1=Site.Site ID or Number<br>Map:CTRPv3.8=StudySite.localStudyProtocolIdentifier<br>Map:CTRv1.0=StudySite.identifier<br>Map:DICOM=Clinical Trial Subject Module - Clinical Trial Site ID (0012,0030)<br>Map:DICOM=Clinical Trial Context Module - Clinical Trial Site ID (0012,0030)<br>Map:HL7SP=StudySite.id<br>Map:SDTM IGv3.1.1=DM.SITEID<br>Map:SDTM IGv3.1.2=DM.SITEID<br>Map:SDTM IGv3.1.3=DM.SITEID<br>
+						<div class="ObjectDetailsNotes"><table>
+	<tr>
+		<td valign="top">
+			<i>Notes: </i><span style="margin-left: .4cm;"> </span>
+		</td>
+		<td>
+			DEFINITION:&lt;br/&gt;A unique symbol that establishes identity of the study site.&lt;br/&gt;&lt;br/&gt;EXAMPLE(S):&lt;br/&gt;&lt;br/&gt;OTHER NAME(S):&lt;br/&gt;&lt;br/&gt;NOTE(S):&lt;br/&gt;
+		</td>
+	</tr>
+</table></div>
+
+						
+				</td>
+			</tr>			<tr>
+				<td width="100%" class="TableRow">
+					<i>Public BL</i><br /><strong>&nbsp;&nbsp;leadIndicator</strong>
+				</td>
+			</tr>
+			<tr>
+				<td class="TableRowBottomDashed"  colspan="1">										
+					<a href="#" onclick="parent.toggleData('DetailsImageAttributes3369')" style="text-decoration: none; color: #000000;"><img src="../../images/plus03.gif" align="absmiddle" id="DetailsImageAttributes3369" border="0" />Details:</a>
+					<table border="0" cellspacing="0" cellpadding="0" class="Table" style="padding: 4px 18px;">
+					
+						<tr id="DetailsImageAttributes3369_00" style="display: none;">
+							<td width="75"><i>Alias:</i></td>
+							<td></td>
+						</tr>
+						<tr id="DetailsImageAttributes3369_01" style="display: none;">
+							<td width="75"><i>Initial:</i></td>
+							<td></td>
+						</tr>
+						<tr id="DetailsImageAttributes3369_02" style="display: none;">
+							<td width="75"><i>Stereotype: </i></td>
+							<td></td>
+						</tr>
+						<tr id="DetailsImageAttributes3369_03" style="display: none;">
+							<td width="75"><i>Ordered: </i></td>
+							<td></td>
+						</tr>
+						<tr id="DetailsImageAttributes3369_04" style="display: none;">
+							<td width="75"><i>Range: </i></td>
+							<td>Range:0 to 1</td>
+						</tr>
+						<tr id="DetailsImageAttributes3369_05" style="display: none;">
+							<td width="75"><i>Transient: </i></td>
+							<td>False</td>
+						</tr>
+						<tr id="DetailsImageAttributes3369_06" style="display: none;">
+							<td width="75"><i>Derived: </i></td>
+							<td>False</td>
+						</tr>
+							<tr id="DetailsImageAttributes3369_07" style="display: none;">
+							<td width="75"><i>IsID: </i></td>
+						<td>False</td>
+						</tr>
+					</table>
+					
+					Map:C3PR=StudySite.roleCode<br>Map:CTOM=StudySite.roleCode<br>Map:CTRv1.0=StudySite.leadIndicator<br>
+						<div class="ObjectDetailsNotes"><table>
+	<tr>
+		<td valign="top">
+			<i>Notes: </i><span style="margin-left: .4cm;"> </span>
+		</td>
+		<td>
+			DEFINITION:&lt;br/&gt;Specifies whether this is the principal administrative organization responsible for the study. &lt;br/&gt;&lt;br/&gt;EXAMPLE(S):&lt;br/&gt;&lt;br/&gt;OTHER NAME(S):&lt;br/&gt;&lt;br/&gt;NOTE(S):&lt;br/&gt;Exception: A multi-site study with no single assigned coordination center; in this case, every participating organization can be named as lead organization.&lt;br/&gt;
+		</td>
+	</tr>
+</table></div>
+
+						
+				</td>
+			</tr>			<tr>
+				<td width="100%" class="TableRow">
+					<i>Public URG&lt;INT.NONNEG&gt;</i><br /><strong>&nbsp;&nbsp;targetAccrualNumberRange</strong>
+				</td>
+			</tr>
+			<tr>
+				<td class="TableRowBottomDashed"  colspan="1">										
+					<a href="#" onclick="parent.toggleData('DetailsImageAttributes3370')" style="text-decoration: none; color: #000000;"><img src="../../images/plus03.gif" align="absmiddle" id="DetailsImageAttributes3370" border="0" />Details:</a>
+					<table border="0" cellspacing="0" cellpadding="0" class="Table" style="padding: 4px 18px;">
+					
+						<tr id="DetailsImageAttributes3370_00" style="display: none;">
+							<td width="75"><i>Alias:</i></td>
+							<td></td>
+						</tr>
+						<tr id="DetailsImageAttributes3370_01" style="display: none;">
+							<td width="75"><i>Initial:</i></td>
+							<td></td>
+						</tr>
+						<tr id="DetailsImageAttributes3370_02" style="display: none;">
+							<td width="75"><i>Stereotype: </i></td>
+							<td></td>
+						</tr>
+						<tr id="DetailsImageAttributes3370_03" style="display: none;">
+							<td width="75"><i>Ordered: </i></td>
+							<td></td>
+						</tr>
+						<tr id="DetailsImageAttributes3370_04" style="display: none;">
+							<td width="75"><i>Range: </i></td>
+							<td>Range:0 to 1</td>
+						</tr>
+						<tr id="DetailsImageAttributes3370_05" style="display: none;">
+							<td width="75"><i>Transient: </i></td>
+							<td>False</td>
+						</tr>
+						<tr id="DetailsImageAttributes3370_06" style="display: none;">
+							<td width="75"><i>Derived: </i></td>
+							<td>False</td>
+						</tr>
+							<tr id="DetailsImageAttributes3370_07" style="display: none;">
+							<td width="75"><i>IsID: </i></td>
+						<td>False</td>
+						</tr>
+					</table>
+					
+					Map:C3PR=StudySite.targetAccrualNumber<br>Map:C3PRv2.9=StudySite.targetAccrualNumber<br>Map:CTOM=StudySite.targetAccrualNumber<br>Map:CTR&Rr2=Population planned numbers in EEA<br>Map:CTR&Rr2=Population planned numbers in MS<br>Map:CTRPv1.0=StudyParticipation.targetAccrualNumber<br>Map:CTRPv3.8=StudySite.targetAccrualNumber<br>Map:CTRRr3=StudySite.targetAccrualNumberRange<br>Map:CTRv1.0=StudySite.targetAccrualNumberRange<br>
+						<div class="ObjectDetailsNotes"><table>
+	<tr>
+		<td valign="top">
+			<i>Notes: </i><span style="margin-left: .4cm;"> </span>
+		</td>
+		<td>
+			DEFINITION:&lt;br/&gt;An integer falling within minimum and maximum bounds that specifies how many experimental units are needed for enrollment at this site.&lt;br/&gt;&lt;br/&gt;EXAMPLE(S):&lt;br/&gt;The Mill Valley Clinic study site has determined their site accrual target for study XYZ to be 15 accruals.&lt;br/&gt;&lt;br/&gt;OTHER NAME(S):&lt;br/&gt;&lt;br/&gt;NOTE(S):&lt;br/&gt;
+		</td>
+	</tr>
+</table></div>
+
+						
+				</td>
+			</tr>			<tr>
+				<td width="100%" class="TableRow">
+					<i>Public PQ.TIME</i><br /><strong>&nbsp;&nbsp;plannedDuration</strong>
+				</td>
+			</tr>
+			<tr>
+				<td class="TableRowBottomDashed"  colspan="1">										
+					<a href="#" onclick="parent.toggleData('DetailsImageAttributes3371')" style="text-decoration: none; color: #000000;"><img src="../../images/plus03.gif" align="absmiddle" id="DetailsImageAttributes3371" border="0" />Details:</a>
+					<table border="0" cellspacing="0" cellpadding="0" class="Table" style="padding: 4px 18px;">
+					
+						<tr id="DetailsImageAttributes3371_00" style="display: none;">
+							<td width="75"><i>Alias:</i></td>
+							<td></td>
+						</tr>
+						<tr id="DetailsImageAttributes3371_01" style="display: none;">
+							<td width="75"><i>Initial:</i></td>
+							<td></td>
+						</tr>
+						<tr id="DetailsImageAttributes3371_02" style="display: none;">
+							<td width="75"><i>Stereotype: </i></td>
+							<td></td>
+						</tr>
+						<tr id="DetailsImageAttributes3371_03" style="display: none;">
+							<td width="75"><i>Ordered: </i></td>
+							<td></td>
+						</tr>
+						<tr id="DetailsImageAttributes3371_04" style="display: none;">
+							<td width="75"><i>Range: </i></td>
+							<td>Range:0 to 1</td>
+						</tr>
+						<tr id="DetailsImageAttributes3371_05" style="display: none;">
+							<td width="75"><i>Transient: </i></td>
+							<td>False</td>
+						</tr>
+						<tr id="DetailsImageAttributes3371_06" style="display: none;">
+							<td width="75"><i>Derived: </i></td>
+							<td>False</td>
+						</tr>
+							<tr id="DetailsImageAttributes3371_07" style="display: none;">
+							<td width="75"><i>IsID: </i></td>
+						<td>False</td>
+						</tr>
+					</table>
+					
+					Map:CTR&Rr2=Estimated trial duration in MS years<br>Map:CTR&Rr2=Estimated trial duration in MS days<br>Map:CTR&Rr2=Estimated trial duration worldwide years<br>Map:CTR&Rr2=Estimated trial duration in MS months<br>Map:CTR&Rr2=Estimated trial duration worldwide months<br>Map:CTR&Rr2=Estimated trial duration worldwide days<br>Map:CTRRr3=Study.duration<br>Map:CTRv1.0=StudySite.plannedDuration<br>
+						<div class="ObjectDetailsNotes"><table>
+	<tr>
+		<td valign="top">
+			<i>Notes: </i><span style="margin-left: .4cm;"> </span>
+		</td>
+		<td>
+			DEFINITION:&lt;br/&gt;The intended period of time for the study site&#39;s participation in the study.&lt;br/&gt;&lt;br/&gt;EXAMPLE(S):&lt;br/&gt;&lt;br/&gt;OTHER NAME(S):&lt;br/&gt;&lt;br/&gt;NOTE(S):&lt;br/&gt;
+		</td>
+	</tr>
+</table></div>
+
+						
+				</td>
+			</tr>			<tr>
+				<td width="100%" class="TableRow">
+					<i>Public IVL&lt;TS.DATETIME&gt;</i><br /><strong>&nbsp;&nbsp;dateRange</strong>
+				</td>
+			</tr>
+			<tr>
+				<td class="TableRowBottomDashed"  colspan="1">										
+					<a href="#" onclick="parent.toggleData('DetailsImageAttributes3372')" style="text-decoration: none; color: #000000;"><img src="../../images/plus03.gif" align="absmiddle" id="DetailsImageAttributes3372" border="0" />Details:</a>
+					<table border="0" cellspacing="0" cellpadding="0" class="Table" style="padding: 4px 18px;">
+					
+						<tr id="DetailsImageAttributes3372_00" style="display: none;">
+							<td width="75"><i>Alias:</i></td>
+							<td></td>
+						</tr>
+						<tr id="DetailsImageAttributes3372_01" style="display: none;">
+							<td width="75"><i>Initial:</i></td>
+							<td></td>
+						</tr>
+						<tr id="DetailsImageAttributes3372_02" style="display: none;">
+							<td width="75"><i>Stereotype: </i></td>
+							<td></td>
+						</tr>
+						<tr id="DetailsImageAttributes3372_03" style="display: none;">
+							<td width="75"><i>Ordered: </i></td>
+							<td></td>
+						</tr>
+						<tr id="DetailsImageAttributes3372_04" style="display: none;">
+							<td width="75"><i>Range: </i></td>
+							<td>Range:0 to 1</td>
+						</tr>
+						<tr id="DetailsImageAttributes3372_05" style="display: none;">
+							<td width="75"><i>Transient: </i></td>
+							<td>False</td>
+						</tr>
+						<tr id="DetailsImageAttributes3372_06" style="display: none;">
+							<td width="75"><i>Derived: </i></td>
+							<td>False</td>
+						</tr>
+							<tr id="DetailsImageAttributes3372_07" style="display: none;">
+							<td width="75"><i>IsID: </i></td>
+						<td>False</td>
+						</tr>
+					</table>
+					
+					Map:C3PR=StudySite.endDate<br>Map:C3PR=StudySite.startDate<br>Map:CTGOV=StudySite.startDate<br>Map:CTOM=StudySite.stopDate<br>Map:CTRPv1.0=StudyParticipation.dateRange<br>Map:CTRv1.0=StudySite.dateRange<br>
+						<div class="ObjectDetailsNotes"><table>
+	<tr>
+		<td valign="top">
+			<i>Notes: </i><span style="margin-left: .4cm;"> </span>
+		</td>
+		<td>
+			DEFINITION:&lt;br/&gt;The date and time span specifying when the site&#39;s participation in the study begins and ends.&lt;br/&gt;&lt;br/&gt;EXAMPLE(S):&lt;br/&gt;&lt;br/&gt;OTHER NAME(S):&lt;br/&gt;&lt;br/&gt;NOTE(S):&lt;br/&gt;
+		</td>
+	</tr>
+</table></div>
+
+						
+				</td>
+			</tr>			<tr>
+				<td width="100%" class="TableRow">
+					<i>Public CD</i><br /><strong>&nbsp;&nbsp;statusCode</strong>
+				</td>
+			</tr>
+			<tr>
+				<td class="TableRowBottomDashed"  colspan="1">										
+					<a href="#" onclick="parent.toggleData('DetailsImageAttributes3373')" style="text-decoration: none; color: #000000;"><img src="../../images/plus03.gif" align="absmiddle" id="DetailsImageAttributes3373" border="0" />Details:</a>
+					<table border="0" cellspacing="0" cellpadding="0" class="Table" style="padding: 4px 18px;">
+					
+						<tr id="DetailsImageAttributes3373_00" style="display: none;">
+							<td width="75"><i>Alias:</i></td>
+							<td></td>
+						</tr>
+						<tr id="DetailsImageAttributes3373_01" style="display: none;">
+							<td width="75"><i>Initial:</i></td>
+							<td></td>
+						</tr>
+						<tr id="DetailsImageAttributes3373_02" style="display: none;">
+							<td width="75"><i>Stereotype: </i></td>
+							<td></td>
+						</tr>
+						<tr id="DetailsImageAttributes3373_03" style="display: none;">
+							<td width="75"><i>Ordered: </i></td>
+							<td></td>
+						</tr>
+						<tr id="DetailsImageAttributes3373_04" style="display: none;">
+							<td width="75"><i>Range: </i></td>
+							<td>Range:0 to 1</td>
+						</tr>
+						<tr id="DetailsImageAttributes3373_05" style="display: none;">
+							<td width="75"><i>Transient: </i></td>
+							<td>False</td>
+						</tr>
+						<tr id="DetailsImageAttributes3373_06" style="display: none;">
+							<td width="75"><i>Derived: </i></td>
+							<td>False</td>
+						</tr>
+							<tr id="DetailsImageAttributes3373_07" style="display: none;">
+							<td width="75"><i>IsID: </i></td>
+						<td>False</td>
+						</tr>
+					</table>
+					
+					Map:C3PRv2.9=SiteStatusHistory.siteStudyStatus<br>Map:caAERSv2.2=StudySite.statusCode<br>Map:CTOM=StudySite.statusCode<br>Map:CTRPv1.0=StudyParticipation.statusCode<br>Map:CTRPv3.8=FunctionalRole.statusCode<br>Map:CTRPv3.8=StudySite.(StudySiteOverallStatus)<br>Map:CTRPv3.8=StudySiteOverallStatus.statusCode<br>Map:CTRv1.0=StudySite.statusCode<br>
+						<div class="ObjectDetailsNotes"><table>
+	<tr>
+		<td valign="top">
+			<i>Notes: </i><span style="margin-left: .4cm;"> </span>
+		</td>
+		<td>
+			DEFINITION:&lt;br/&gt;A coded value specifying the phase in the lifecycle of the study site.&lt;br/&gt;&lt;br/&gt;EXAMPLE(S):&lt;br/&gt;In Review, Approved, Active, Closed to Accrual, Closed to Accrual and Intervention, Temporary Closed to Accrual, Temporary Closed to Accrual and Intervention, Disapproved, Withdrawn, Administratively complete.&lt;br/&gt;&lt;br/&gt;OTHER NAME(S):&lt;br/&gt;&lt;br/&gt;NOTE(S):&lt;br/&gt;
+		</td>
+	</tr>
+</table></div>
+
+						
+				</td>
+			</tr>			<tr>
+				<td width="100%" class="TableRow">
+					<i>Public TS.DATETIME</i><br /><strong>&nbsp;&nbsp;statusDate</strong>
+				</td>
+			</tr>
+			<tr>
+				<td class="TableRowBottomDashed"  colspan="1">										
+					<a href="#" onclick="parent.toggleData('DetailsImageAttributes3374')" style="text-decoration: none; color: #000000;"><img src="../../images/plus03.gif" align="absmiddle" id="DetailsImageAttributes3374" border="0" />Details:</a>
+					<table border="0" cellspacing="0" cellpadding="0" class="Table" style="padding: 4px 18px;">
+					
+						<tr id="DetailsImageAttributes3374_00" style="display: none;">
+							<td width="75"><i>Alias:</i></td>
+							<td></td>
+						</tr>
+						<tr id="DetailsImageAttributes3374_01" style="display: none;">
+							<td width="75"><i>Initial:</i></td>
+							<td></td>
+						</tr>
+						<tr id="DetailsImageAttributes3374_02" style="display: none;">
+							<td width="75"><i>Stereotype: </i></td>
+							<td></td>
+						</tr>
+						<tr id="DetailsImageAttributes3374_03" style="display: none;">
+							<td width="75"><i>Ordered: </i></td>
+							<td></td>
+						</tr>
+						<tr id="DetailsImageAttributes3374_04" style="display: none;">
+							<td width="75"><i>Range: </i></td>
+							<td>Range:0 to 1</td>
+						</tr>
+						<tr id="DetailsImageAttributes3374_05" style="display: none;">
+							<td width="75"><i>Transient: </i></td>
+							<td>False</td>
+						</tr>
+						<tr id="DetailsImageAttributes3374_06" style="display: none;">
+							<td width="75"><i>Derived: </i></td>
+							<td>False</td>
+						</tr>
+							<tr id="DetailsImageAttributes3374_07" style="display: none;">
+							<td width="75"><i>IsID: </i></td>
+						<td>False</td>
+						</tr>
+					</table>
+					
+					Map:C3PRv2.9=SiteStatusHistory.startDate<br>Map:CTOM=StudySite.irbApprovalDate<br>Map:CTRPv1.0=StudyParticipation.statusDateRange<br>Map:CTRPv3.8=StudySiteOverallStatus.statusDate<br>Map:CTRPv3.8=StudySite.accrualDateRange<br>Map:CTRPv3.8=FunctionalRole.statusDateRange<br>Map:CTRv1.0=StudySite.statusDate<br>
+						<div class="ObjectDetailsNotes"><table>
+	<tr>
+		<td valign="top">
+			<i>Notes: </i><span style="margin-left: .4cm;"> </span>
+		</td>
+		<td>
+			DEFINITION:&lt;br/&gt;The date (and time) on which the status is assigned to the study site.&lt;br/&gt;&lt;br/&gt;EXAMPLE(S):&lt;br/&gt;&lt;br/&gt;OTHER NAME(S):&lt;br/&gt;&lt;br/&gt;NOTE(S):&lt;br/&gt;
+		</td>
+	</tr>
+</table></div>
+
+						
+				</td>
+			</tr>
+	</table>
+</div>
+		<div class="ItemBody" id="AssociationsToTable">
+			<table border="0" cellspacing="0" cellpadding="0" class="Table">
+				<tr>
+					<td width="40%" class="TableHeading">Element</td>
+					<td width="30%" class="TableHeading">Source Role</td>
+					<td width="30%" class="TableHeading">Target Role</td>
+				</tr>
+				<tr>
+					<td width="40%" class="TableRow" valign="top">
+						<a href="EA417.htm">StudyConduct</a><br />
+						Class &nbsp;
+					</td>
+					<td width="30%" class="TableRow" valign="top">
+						<strong>Name:</strong> executingStudySite<br />
+						&nbsp;
+					</td>
+					<td width="30%" class="TableRow" valign="top">
+						<strong>Name:</strong> executedStudyConduct<br />
+						&nbsp;	
+					</td>
+				</tr>
+				<tr>
+					<td class="TableRowBottomDashed"  colspan="3">
+						<div class="DetailsDivParent"><img src="../../images/minus03.gif" align="absmiddle" id="DetailsImageLink3375" onclick="parent.toggleDiv('detailsDIVLink3375','DetailsImageLink3375')" />Details:
+							<div id="detailsDIVLink3375" class="DetailsDiv" >
+							<div class="ObjectDetailsNotes">DESCRIPTION:&lt;br/&gt;Each StudySite might execute one StudyConduct.&#160;&#160;Each StudyConduct might be executed at one or more StudySite.&lt;br/&gt;&lt;br/&gt;DEFINITION:&lt;br/&gt;&lt;br/&gt;EXAMPLE(S):&lt;br/&gt;&lt;br/&gt;OTHER NAME(S):&lt;br/&gt;&lt;br/&gt;NOTE(S):&lt;br/&gt;</div>
+
+							</div>
+						</div>
+					</td>
+				</tr>
+				<tr>
+					<td width="40%" class="TableRow" valign="top">
+						<a href="../EA3/EA118.htm">Organization</a><br />
+						Class &nbsp;
+					</td>
+					<td width="30%" class="TableRow" valign="top">
+						<strong>Name:</strong> performedStudySite<br />
+						&nbsp;
+					</td>
+					<td width="30%" class="TableRow" valign="top">
+						<strong>Name:</strong> performingOrganization<br />
+						&nbsp;	
+					</td>
+				</tr>
+				<tr>
+					<td class="TableRowBottomDashed"  colspan="3">
+						<div class="DetailsDivParent"><img src="../../images/minus03.gif" align="absmiddle" id="DetailsImageLink3376" onclick="parent.toggleDiv('detailsDIVLink3376','DetailsImageLink3376')" />Details:
+							<div id="detailsDIVLink3376" class="DetailsDiv" >
+							<div class="ObjectDetailsNotes">DESCRIPTION:&lt;br/&gt;Each StudySite might be a function performed by one Organization.&#160;&#160;Each Organization might function as one or more StudySite.&lt;br/&gt;&lt;br/&gt;DEFINITION:&lt;br/&gt;&lt;br/&gt;EXAMPLE(S):&lt;br/&gt;&lt;br/&gt;OTHER NAME(S):&lt;br/&gt;&lt;br/&gt;NOTE(S):&lt;br/&gt;&lt;br/&gt;</div>
+
+							</div>
+						</div>
+					</td>
+				</tr>
+				<tr>
+					<td width="40%" class="TableRow" valign="top">
+						<a href="../EA3/EA155.htm">StudyCountry</a><br />
+						Class &nbsp;
+					</td>
+					<td width="30%" class="TableRow" valign="top">
+						<strong>Name:</strong> managedStudySite<br />
+						&nbsp;
+					</td>
+					<td width="30%" class="TableRow" valign="top">
+						<strong>Name:</strong> managingStudyCountry<br />
+						&nbsp;	
+					</td>
+				</tr>
+				<tr>
+					<td class="TableRowBottomDashed"  colspan="3">
+						<div class="DetailsDivParent"><img src="../../images/minus03.gif" align="absmiddle" id="DetailsImageLink3377" onclick="parent.toggleDiv('detailsDIVLink3377','DetailsImageLink3377')" />Details:
+							<div id="detailsDIVLink3377" class="DetailsDiv" >
+							<div class="ObjectDetailsNotes">DESCRIPTION:&lt;br/&gt;Each StudySite might be managed by one StudyCountry.&#160;&#160;Each StudyCountry might manage one or more StudySite.&lt;br/&gt;&lt;br/&gt;DEFINITION:&lt;br/&gt;&lt;br/&gt;EXAMPLE(S):&lt;br/&gt;&lt;br/&gt;OTHER NAME(S):&lt;br/&gt;&lt;br/&gt;NOTE(S):&lt;br/&gt;</div>
+
+							</div>
+						</div>
+					</td>
+				</tr>
+				<tr>
+					<td width="40%" class="TableRow" valign="top">
+						<a href="../EA3/EA104.htm">HealthcareFacility</a><br />
+						Class &nbsp;
+					</td>
+					<td width="30%" class="TableRow" valign="top">
+						<strong>Name:</strong> performedStudySite<br />
+						&nbsp;
+					</td>
+					<td width="30%" class="TableRow" valign="top">
+						<strong>Name:</strong> performingHealthcareFacility<br />
+						&nbsp;	
+					</td>
+				</tr>
+				<tr>
+					<td class="TableRowBottomDashed"  colspan="3">
+						<div class="DetailsDivParent"><img src="../../images/minus03.gif" align="absmiddle" id="DetailsImageLink3378" onclick="parent.toggleDiv('detailsDIVLink3378','DetailsImageLink3378')" />Details:
+							<div id="detailsDIVLink3378" class="DetailsDiv" >
+							<div class="ObjectDetailsNotes">DESCRIPTION:&lt;br/&gt;Each StudySite might be a function performed by one HealthcareFacility.&#160;&#160;Each HealthcareFacility might function as one or more StudySite.&lt;br/&gt;&lt;br/&gt;DEFINITION:&lt;br/&gt;&lt;br/&gt;EXAMPLE(S):&lt;br/&gt;&lt;br/&gt;OTHER NAME(S):&lt;br/&gt;&lt;br/&gt;NOTE(S):&lt;br/&gt;&lt;br/&gt;</div>
+
+							</div>
+						</div>
+					</td>
+				</tr>
+
+			</table>
+		</div>
+		<div class="ItemBody" id="AssociationsFromTable">
+			<table border="0" cellspacing="0" cellpadding="0" class="Table">
+				<tr>
+					<td width="40%" class="TableHeading">Element</td>
+					<td width="30%" class="TableHeading">Source Role</td>
+					<td width="30%" class="TableHeading">Target Role</td>
+				</tr>
+				<tr>
+					<td width="40%" class="TableRow" valign="top">
+						<a href="EA432.htm">StudySiteRelationship</a><br />
+						Class &nbsp;
+					</td>
+					<td width="30%" class="TableRow" valign="top">
+						<strong>Name:</strong> sourceStudySiteRelationship<br />
+						&nbsp;
+					</td>
+					<td width="30%" class="TableRow" valign="top">
+						<strong>Name:</strong> targetStudySite<br />
+						&nbsp;	
+					</td>
+				</tr>
+				<tr>
+					<td class="TableRowBottomDashed"  colspan="3">
+						<div class="DetailsDivParent"><img src="../../images/minus03.gif" align="absmiddle" id="DetailsImageLink3379" onclick="parent.toggleDiv('detailsDIVLink3379','DetailsImageLink3379')" />Details:
+							<div id="detailsDIVLink3379" class="DetailsDiv" >
+							<div class="ObjectDetailsNotes">DESCRIPTION:&lt;br/&gt;Each StudySiteRelationship always has as target one StudySite.&#160;&#160;Each StudySite might be the target for one or more StudySiteRelationship.&lt;br/&gt;&lt;br/&gt;DEFINITION:&lt;br/&gt;&lt;br/&gt;EXAMPLE(S):&lt;br/&gt;&lt;br/&gt;OTHER NAME(S):&lt;br/&gt;&lt;br/&gt;NOTE(S):&lt;br/&gt;</div>
+
+							</div>
+						</div>
+					</td>
+				</tr>
+				<tr>
+					<td width="40%" class="TableRow" valign="top">
+						<a href="EA429.htm">StudySitePersonnel</a><br />
+						Class &nbsp;
+					</td>
+					<td width="30%" class="TableRow" valign="top">
+						<strong>Name:</strong> performingStudySitePersonnel<br />
+						&nbsp;
+					</td>
+					<td width="30%" class="TableRow" valign="top">
+						<strong>Name:</strong> performedStudySite<br />
+						&nbsp;	
+					</td>
+				</tr>
+				<tr>
+					<td class="TableRowBottomDashed"  colspan="3">
+						<div class="DetailsDivParent"><img src="../../images/minus03.gif" align="absmiddle" id="DetailsImageLink3380" onclick="parent.toggleDiv('detailsDIVLink3380','DetailsImageLink3380')" />Details:
+							<div id="detailsDIVLink3380" class="DetailsDiv" >
+							<div class="ObjectDetailsNotes">DESCRIPTION:&lt;br/&gt;Each StudySitePersonnel might perform a role for one StudySite.&#160;&#160;Each StudySite might have a role performed by one or more StudySitePersonnel.&lt;br/&gt;&lt;br/&gt;DEFINITION:&lt;br/&gt;&lt;br/&gt;EXAMPLE(S):&lt;br/&gt;&lt;br/&gt;OTHER NAME(S):&lt;br/&gt;&lt;br/&gt;NOTE(S):&lt;br/&gt;&lt;br/&gt;</div>
+
+							</div>
+						</div>
+					</td>
+				</tr>
+				<tr>
+					<td width="40%" class="TableRow" valign="top">
+						<a href="EA430.htm">StudySiteProtocolVersionRelationship</a><br />
+						Class &nbsp;
+					</td>
+					<td width="30%" class="TableRow" valign="top">
+						<strong>Name:</strong> executedStudySiteProtocolVersionRelationship<br />
+						&nbsp;
+					</td>
+					<td width="30%" class="TableRow" valign="top">
+						<strong>Name:</strong> executingStudySite<br />
+						&nbsp;	
+					</td>
+				</tr>
+				<tr>
+					<td class="TableRowBottomDashed"  colspan="3">
+						<div class="DetailsDivParent"><img src="../../images/minus03.gif" align="absmiddle" id="DetailsImageLink3381" onclick="parent.toggleDiv('detailsDIVLink3381','DetailsImageLink3381')" />Details:
+							<div id="detailsDIVLink3381" class="DetailsDiv" >
+							<div class="ObjectDetailsNotes">DESCRIPTION:&lt;br/&gt;Each StudySiteProtocolVersionRelationship always is executed at one StudySite. Each StudySite might execute one or more StudySiteProtocolVersionRelationship.&lt;br/&gt;&lt;br/&gt;DEFINITION:&lt;br/&gt;&lt;br/&gt;EXAMPLE(S):&lt;br/&gt;&lt;br/&gt;OTHER NAME(S):&lt;br/&gt;&lt;br/&gt;NOTE(S):&lt;br/&gt;&lt;br/&gt;</div>
+
+							</div>
+						</div>
+					</td>
+				</tr>
+				<tr>
+					<td width="40%" class="TableRow" valign="top">
+						<a href="EA434.htm">StudySiteResource</a><br />
+						Class &nbsp;
+					</td>
+					<td width="30%" class="TableRow" valign="top">
+						<strong>Name:</strong> usedStudySiteResource<br />
+						&nbsp;
+					</td>
+					<td width="30%" class="TableRow" valign="top">
+						<strong>Name:</strong> usingStudySite<br />
+						&nbsp;	
+					</td>
+				</tr>
+				<tr>
+					<td class="TableRowBottomDashed"  colspan="3">
+						<div class="DetailsDivParent"><img src="../../images/minus03.gif" align="absmiddle" id="DetailsImageLink3382" onclick="parent.toggleDiv('detailsDIVLink3382','DetailsImageLink3382')" />Details:
+							<div id="detailsDIVLink3382" class="DetailsDiv" >
+							<div class="ObjectDetailsNotes">DESCRIPTION:&lt;br/&gt;Each StudySiteResource always is used at one StudySite. Each StudySite might use one or more StudySiteResource.&lt;br/&gt;&lt;br/&gt;DEFINITION:&lt;br/&gt;Indicates resources intended to be or actually consumed by a particular study site.&lt;br/&gt;&lt;br/&gt;EXAMPLE(S):&lt;br/&gt;&lt;br/&gt;OTHER NAME(S):&lt;br/&gt;&lt;br/&gt;NOTE(S):&lt;br/&gt;</div>
+
+							</div>
+						</div>
+					</td>
+				</tr>
+				<tr>
+					<td width="40%" class="TableRow" valign="top">
+						<a href="../EA3/EA71.htm">Activity</a><br />
+						Class &nbsp;
+					</td>
+					<td width="30%" class="TableRow" valign="top">
+						<strong>Name:</strong> hasContextActivity<br />
+						&nbsp;
+					</td>
+					<td width="30%" class="TableRow" valign="top">
+						<strong>Name:</strong> contextForStudySite<br />
+						&nbsp;	
+					</td>
+				</tr>
+				<tr>
+					<td class="TableRowBottomDashed"  colspan="3">
+						<div class="DetailsDivParent"><img src="../../images/minus03.gif" align="absmiddle" id="DetailsImageLink3383" onclick="parent.toggleDiv('detailsDIVLink3383','DetailsImageLink3383')" />Details:
+							<div id="detailsDIVLink3383" class="DetailsDiv" >
+							<div class="ObjectDetailsNotes">DESCRIPTION:&lt;br/&gt;Each Activity might have as context one StudySite. Each StudySite might be the context for one or more Activity.&lt;br/&gt;&lt;br/&gt;DEFINITION:&lt;br/&gt;&lt;br/&gt;EXAMPLE(S):&lt;br/&gt;&lt;br/&gt;OTHER NAME(S):&lt;br/&gt;&lt;br/&gt;NOTE(S):&lt;br/&gt;</div>
+
+							</div>
+						</div>
+					</td>
+				</tr>
+				<tr>
+					<td width="40%" class="TableRow" valign="top">
+						<a href="../EA3/EA123.htm">OversightCommittee</a><br />
+						Class &nbsp;
+					</td>
+					<td width="30%" class="TableRow" valign="top">
+						<strong>Name:</strong> overseeingOversightCommittee<br />
+						&nbsp;
+					</td>
+					<td width="30%" class="TableRow" valign="top">
+						<strong>Name:</strong> overseenStudySite<br />
+						&nbsp;	
+					</td>
+				</tr>
+				<tr>
+					<td class="TableRowBottomDashed"  colspan="3">
+						<div class="DetailsDivParent"><img src="../../images/minus03.gif" align="absmiddle" id="DetailsImageLink3384" onclick="parent.toggleDiv('detailsDIVLink3384','DetailsImageLink3384')" />Details:
+							<div id="detailsDIVLink3384" class="DetailsDiv" >
+							<div class="ObjectDetailsNotes">DESCRIPTION:&lt;br/&gt;Each OversightCommittee might oversee one or more StudySite. Each StudySite might be overseen by one or more OversightCommittee.&lt;br/&gt;&lt;br/&gt;DEFINITION:&lt;br/&gt;&lt;br/&gt;EXAMPLE(S):&lt;br/&gt;&lt;br/&gt;OTHER NAME(S):&lt;br/&gt;&lt;br/&gt;NOTE(S):&lt;br/&gt;&lt;br/&gt;</div>
+
+							</div>
+						</div>
+					</td>
+				</tr>
+				<tr>
+					<td width="40%" class="TableRow" valign="top">
+						<a href="EA431.htm">StudySiteRecruitmentStatus</a><br />
+						Class &nbsp;
+					</td>
+					<td width="30%" class="TableRow" valign="top">
+						<strong>Name:</strong> describingStudySiteRecruitmentStatus<br />
+						&nbsp;
+					</td>
+					<td width="30%" class="TableRow" valign="top">
+						<strong>Name:</strong> describedStudySite<br />
+						&nbsp;	
+					</td>
+				</tr>
+				<tr>
+					<td class="TableRowBottomDashed"  colspan="3">
+						<div class="DetailsDivParent"><img src="../../images/minus03.gif" align="absmiddle" id="DetailsImageLink3385" onclick="parent.toggleDiv('detailsDIVLink3385','DetailsImageLink3385')" />Details:
+							<div id="detailsDIVLink3385" class="DetailsDiv" >
+							<div class="ObjectDetailsNotes">DESCRIPTION:&lt;br/&gt;Each StudySiteRecruitmentStatus always describes one StudySite. Each StudySite might be described by one or more StudySiteRecruitmentStatus.&lt;br/&gt;&lt;br/&gt;DEFINITION:&lt;br/&gt;Indicates the point-in-time recruitment status of a study from the perspective of the study site.&lt;br/&gt;&lt;br/&gt;EXAMPLE(S):&lt;br/&gt;&lt;br/&gt;OTHER NAME(S):&lt;br/&gt;&lt;br/&gt;NOTE(S):&lt;br/&gt;</div>
+
+							</div>
+						</div>
+					</td>
+				</tr>
+				<tr>
+					<td width="40%" class="TableRow" valign="top">
+						<a href="EA432.htm">StudySiteRelationship</a><br />
+						Class &nbsp;
+					</td>
+					<td width="30%" class="TableRow" valign="top">
+						<strong>Name:</strong> targetStudySiteRelationship<br />
+						&nbsp;
+					</td>
+					<td width="30%" class="TableRow" valign="top">
+						<strong>Name:</strong> sourceStudySite<br />
+						&nbsp;	
+					</td>
+				</tr>
+				<tr>
+					<td class="TableRowBottomDashed"  colspan="3">
+						<div class="DetailsDivParent"><img src="../../images/minus03.gif" align="absmiddle" id="DetailsImageLink3386" onclick="parent.toggleDiv('detailsDIVLink3386','DetailsImageLink3386')" />Details:
+							<div id="detailsDIVLink3386" class="DetailsDiv" >
+							<div class="ObjectDetailsNotes">DESCRIPTION:&lt;br/&gt;Each StudySiteRelationship always has as source one StudySite.&#160;&#160;Each StudySite might be the source for one or more StudySiteRelationship.&lt;br/&gt;&lt;br/&gt;DEFINITION:&lt;br/&gt;&lt;br/&gt;EXAMPLE(S):&lt;br/&gt;&lt;br/&gt;OTHER NAME(S):&lt;br/&gt;&lt;br/&gt;NOTE(S):&lt;br/&gt;</div>
+
+							</div>
+						</div>
+					</td>
+				</tr>
+
+			</table>
+		</div>
+<div class="ItemBody" id="TaggedValTable">
+	<table align="center" border="0" cellspacing="0" cellpadding="0" class="Table">
+		<tr>
+			<td width="50%" class="TableHeading">Tag</td>
+			<td width="50%" class="TableHeading">Value</td>
+		</tr>
+					<tr>
+				<td width="50%" class="TableRow" valign="top">Map:C3PRv2.9</td>
+				<td width="50%" class="TableRow" valign="top">StudyOrganization</td>
+			</tr>	
+			<tr>
+				<td class="TableRowBottomDashed"  colspan="2">
+					<div class="DetailsDivParent"><img src="../../images/minus03.gif" align="absmiddle" id="DetailsImageScenario3387" onclick="parent.toggleDiv('detailsDIVScenario3387','DetailsImageScenario3387')" />Details:
+						<div id="detailsDIVScenario3387" class="DetailsDiv" >
+						&nbsp;
+						</div>
+					</div>
+				</td>
+			</tr>			<tr>
+				<td width="50%" class="TableRow" valign="top">Map:C3PRv2.9</td>
+				<td width="50%" class="TableRow" valign="top">StudySite</td>
+			</tr>	
+			<tr>
+				<td class="TableRowBottomDashed"  colspan="2">
+					<div class="DetailsDivParent"><img src="../../images/minus03.gif" align="absmiddle" id="DetailsImageScenario3388" onclick="parent.toggleDiv('detailsDIVScenario3388','DetailsImageScenario3388')" />Details:
+						<div id="detailsDIVScenario3388" class="DetailsDiv" >
+						&nbsp;
+						</div>
+					</div>
+				</td>
+			</tr>			<tr>
+				<td width="50%" class="TableRow" valign="top">Map:caAERSv2.2</td>
+				<td width="50%" class="TableRow" valign="top">StudyOrganization</td>
+			</tr>	
+			<tr>
+				<td class="TableRowBottomDashed"  colspan="2">
+					<div class="DetailsDivParent"><img src="../../images/minus03.gif" align="absmiddle" id="DetailsImageScenario3389" onclick="parent.toggleDiv('detailsDIVScenario3389','DetailsImageScenario3389')" />Details:
+						<div id="detailsDIVScenario3389" class="DetailsDiv" >
+						&nbsp;
+						</div>
+					</div>
+				</td>
+			</tr>			<tr>
+				<td width="50%" class="TableRow" valign="top">Map:caAERSv2.2</td>
+				<td width="50%" class="TableRow" valign="top">StudySite</td>
+			</tr>	
+			<tr>
+				<td class="TableRowBottomDashed"  colspan="2">
+					<div class="DetailsDivParent"><img src="../../images/minus03.gif" align="absmiddle" id="DetailsImageScenario3390" onclick="parent.toggleDiv('detailsDIVScenario3390','DetailsImageScenario3390')" />Details:
+						<div id="detailsDIVScenario3390" class="DetailsDiv" >
+						&nbsp;
+						</div>
+					</div>
+				</td>
+			</tr>			<tr>
+				<td width="50%" class="TableRow" valign="top">Map:CDISCLabv1.0.1</td>
+				<td width="50%" class="TableRow" valign="top">Site</td>
+			</tr>	
+			<tr>
+				<td class="TableRowBottomDashed"  colspan="2">
+					<div class="DetailsDivParent"><img src="../../images/minus03.gif" align="absmiddle" id="DetailsImageScenario3391" onclick="parent.toggleDiv('detailsDIVScenario3391','DetailsImageScenario3391')" />Details:
+						<div id="detailsDIVScenario3391" class="DetailsDiv" >
+						&nbsp;
+						</div>
+					</div>
+				</td>
+			</tr>			<tr>
+				<td width="50%" class="TableRow" valign="top">Map:CTGOV</td>
+				<td width="50%" class="TableRow" valign="top">Facility</td>
+			</tr>	
+			<tr>
+				<td class="TableRowBottomDashed"  colspan="2">
+					<div class="DetailsDivParent"><img src="../../images/minus03.gif" align="absmiddle" id="DetailsImageScenario3392" onclick="parent.toggleDiv('detailsDIVScenario3392','DetailsImageScenario3392')" />Details:
+						<div id="detailsDIVScenario3392" class="DetailsDiv" >
+						&nbsp;
+						</div>
+					</div>
+				</td>
+			</tr>			<tr>
+				<td width="50%" class="TableRow" valign="top">Map:CTRPv1.0</td>
+				<td width="50%" class="TableRow" valign="top">StudyParticipation</td>
+			</tr>	
+			<tr>
+				<td class="TableRowBottomDashed"  colspan="2">
+					<div class="DetailsDivParent"><img src="../../images/minus03.gif" align="absmiddle" id="DetailsImageScenario3393" onclick="parent.toggleDiv('detailsDIVScenario3393','DetailsImageScenario3393')" />Details:
+						<div id="detailsDIVScenario3393" class="DetailsDiv" >
+						&nbsp;
+						</div>
+					</div>
+				</td>
+			</tr>			<tr>
+				<td width="50%" class="TableRow" valign="top">Map:CTRPv3.8</td>
+				<td width="50%" class="TableRow" valign="top">OrganizationFunctionalRole.functionCode</td>
+			</tr>	
+			<tr>
+				<td class="TableRowBottomDashed"  colspan="2">
+					<div class="DetailsDivParent"><img src="../../images/minus03.gif" align="absmiddle" id="DetailsImageScenario3394" onclick="parent.toggleDiv('detailsDIVScenario3394','DetailsImageScenario3394')" />Details:
+						<div id="detailsDIVScenario3394" class="DetailsDiv" >
+						&nbsp;
+						</div>
+					</div>
+				</td>
+			</tr>			<tr>
+				<td width="50%" class="TableRow" valign="top">Map:CTRPv3.8</td>
+				<td width="50%" class="TableRow" valign="top">StudySite</td>
+			</tr>	
+			<tr>
+				<td class="TableRowBottomDashed"  colspan="2">
+					<div class="DetailsDivParent"><img src="../../images/minus03.gif" align="absmiddle" id="DetailsImageScenario3395" onclick="parent.toggleDiv('detailsDIVScenario3395','DetailsImageScenario3395')" />Details:
+						<div id="detailsDIVScenario3395" class="DetailsDiv" >
+						&nbsp;
+						</div>
+					</div>
+				</td>
+			</tr>			<tr>
+				<td width="50%" class="TableRow" valign="top">Map:CTRPv3.8</td>
+				<td width="50%" class="TableRow" valign="top">StudySiteOverallStatus</td>
+			</tr>	
+			<tr>
+				<td class="TableRowBottomDashed"  colspan="2">
+					<div class="DetailsDivParent"><img src="../../images/minus03.gif" align="absmiddle" id="DetailsImageScenario3396" onclick="parent.toggleDiv('detailsDIVScenario3396','DetailsImageScenario3396')" />Details:
+						<div id="detailsDIVScenario3396" class="DetailsDiv" >
+						&nbsp;
+						</div>
+					</div>
+				</td>
+			</tr>			<tr>
+				<td width="50%" class="TableRow" valign="top">Map:CTRRr3</td>
+				<td width="50%" class="TableRow" valign="top">StudySite</td>
+			</tr>	
+			<tr>
+				<td class="TableRowBottomDashed"  colspan="2">
+					<div class="DetailsDivParent"><img src="../../images/minus03.gif" align="absmiddle" id="DetailsImageScenario3397" onclick="parent.toggleDiv('detailsDIVScenario3397','DetailsImageScenario3397')" />Details:
+						<div id="detailsDIVScenario3397" class="DetailsDiv" >
+						&nbsp;
+						</div>
+					</div>
+				</td>
+			</tr>			<tr>
+				<td width="50%" class="TableRow" valign="top">Map:CTRv1.0</td>
+				<td width="50%" class="TableRow" valign="top">StudySite</td>
+			</tr>	
+			<tr>
+				<td class="TableRowBottomDashed"  colspan="2">
+					<div class="DetailsDivParent"><img src="../../images/minus03.gif" align="absmiddle" id="DetailsImageScenario3398" onclick="parent.toggleDiv('detailsDIVScenario3398','DetailsImageScenario3398')" />Details:
+						<div id="detailsDIVScenario3398" class="DetailsDiv" >
+						&nbsp;
+						</div>
+					</div>
+				</td>
+			</tr>			<tr>
+				<td width="50%" class="TableRow" valign="top">Map:DICOM</td>
+				<td width="50%" class="TableRow" valign="top">Clinical Trial Context Module</td>
+			</tr>	
+			<tr>
+				<td class="TableRowBottomDashed"  colspan="2">
+					<div class="DetailsDivParent"><img src="../../images/minus03.gif" align="absmiddle" id="DetailsImageScenario3399" onclick="parent.toggleDiv('detailsDIVScenario3399','DetailsImageScenario3399')" />Details:
+						<div id="detailsDIVScenario3399" class="DetailsDiv" >
+						&nbsp;
+						</div>
+					</div>
+				</td>
+			</tr>			<tr>
+				<td width="50%" class="TableRow" valign="top">Map:HL7SP</td>
+				<td width="50%" class="TableRow" valign="top">SubjectProtectionApproval</td>
+			</tr>	
+			<tr>
+				<td class="TableRowBottomDashed"  colspan="2">
+					<div class="DetailsDivParent"><img src="../../images/minus03.gif" align="absmiddle" id="DetailsImageScenario3400" onclick="parent.toggleDiv('detailsDIVScenario3400','DetailsImageScenario3400')" />Details:
+						<div id="detailsDIVScenario3400" class="DetailsDiv" >
+						&nbsp;
+						</div>
+					</div>
+				</td>
+			</tr>			<tr>
+				<td width="50%" class="TableRow" valign="top">Map:HL7SP</td>
+				<td width="50%" class="TableRow" valign="top">StudySite</td>
+			</tr>	
+			<tr>
+				<td class="TableRowBottomDashed"  colspan="2">
+					<div class="DetailsDivParent"><img src="../../images/minus03.gif" align="absmiddle" id="DetailsImageScenario3401" onclick="parent.toggleDiv('detailsDIVScenario3401','DetailsImageScenario3401')" />Details:
+						<div id="detailsDIVScenario3401" class="DetailsDiv" >
+						&nbsp;
+						</div>
+					</div>
+				</td>
+			</tr>			<tr>
+				<td width="50%" class="TableRow" valign="top">Map:HL7SP</td>
+				<td width="50%" class="TableRow" valign="top">Study.performer1</td>
+			</tr>	
+			<tr>
+				<td class="TableRowBottomDashed"  colspan="2">
+					<div class="DetailsDivParent"><img src="../../images/minus03.gif" align="absmiddle" id="DetailsImageScenario3402" onclick="parent.toggleDiv('detailsDIVScenario3402','DetailsImageScenario3402')" />Details:
+						<div id="detailsDIVScenario3402" class="DetailsDiv" >
+						&nbsp;
+						</div>
+					</div>
+				</td>
+			</tr>			<tr>
+				<td width="50%" class="TableRow" valign="top">Map:HSDBv1.0</td>
+				<td width="50%" class="TableRow" valign="top">[Lead Organization].Organization Type</td>
+			</tr>	
+			<tr>
+				<td class="TableRowBottomDashed"  colspan="2">
+					<div class="DetailsDivParent"><img src="../../images/minus03.gif" align="absmiddle" id="DetailsImageScenario3403" onclick="parent.toggleDiv('detailsDIVScenario3403','DetailsImageScenario3403')" />Details:
+						<div id="detailsDIVScenario3403" class="DetailsDiv" >
+						&nbsp;
+						</div>
+					</div>
+				</td>
+			</tr>			<tr>
+				<td width="50%" class="TableRow" valign="top">Map:LabViewer2.2</td>
+				<td width="50%" class="TableRow" valign="top">StudySite</td>
+			</tr>	
+			<tr>
+				<td class="TableRowBottomDashed"  colspan="2">
+					<div class="DetailsDivParent"><img src="../../images/minus03.gif" align="absmiddle" id="DetailsImageScenario3404" onclick="parent.toggleDiv('detailsDIVScenario3404','DetailsImageScenario3404')" />Details:
+						<div id="detailsDIVScenario3404" class="DetailsDiv" >
+						&nbsp;
+						</div>
+					</div>
+				</td>
+			</tr>			<tr>
+				<td width="50%" class="TableRow" valign="top">Map:PSC</td>
+				<td width="50%" class="TableRow" valign="top">StudySite</td>
+			</tr>	
+			<tr>
+				<td class="TableRowBottomDashed"  colspan="2">
+					<div class="DetailsDivParent"><img src="../../images/minus03.gif" align="absmiddle" id="DetailsImageScenario3405" onclick="parent.toggleDiv('detailsDIVScenario3405','DetailsImageScenario3405')" />Details:
+						<div id="detailsDIVScenario3405" class="DetailsDiv" >
+						&nbsp;
+						</div>
+					</div>
+				</td>
+			</tr>			<tr>
+				<td width="50%" class="TableRow" valign="top">Map:PSCv2.6</td>
+				<td width="50%" class="TableRow" valign="top">StudySite</td>
+			</tr>	
+			<tr>
+				<td class="TableRowBottomDashed"  colspan="2">
+					<div class="DetailsDivParent"><img src="../../images/minus03.gif" align="absmiddle" id="DetailsImageScenario3406" onclick="parent.toggleDiv('detailsDIVScenario3406','DetailsImageScenario3406')" />Details:
+						<div id="detailsDIVScenario3406" class="DetailsDiv" >
+						&nbsp;
+						</div>
+					</div>
+				</td>
+			</tr>
+	</table>
+</div>		<div class="ItemBody" id="ConstraintsTable">
+			<table border="0" cellspacing="0" cellpadding="0" class="Table">
+			  	<tr>
+					<td width="80%" class="TableHeading">Constraint</td>
+					<td width="10%" class="TableHeading">Type</td>
+					<td width="10%" class="TableHeading">Status</td>
+				</tr>
+				<tr>
+					<td width="80%" class="TableRow">be a function performed by Exclusive Or</td>
+					<td width="10%" class="TableRow">Invariant</td>
+					<td width="10%" class="TableRow">Approved</td>
+				</tr>
+				<tr>
+					<td class="TableRowBottomDashed"  colspan="3">
+						<div class="DetailsDivParent"><img src="../../images/minus03.gif" align="absmiddle" id="DetailsImageConstraints3407" onclick="parent.toggleDiv('detailsDIVConstraints3407','DetailsImageConstraints3407')" />Details:
+							<div id="detailsDIVConstraints3407" class="DetailsDiv" >
+							<div class="ObjectDetailsNotes">A StudySite is a function performed by one and only one of the following: HealthcareFacility or Organization (serving as a StudySite but is not a HealthcareFacility).&lt;br/&gt;</div>
+
+							</div>
+						</div>
+					</td>
+				</tr>
+				<tr>
+					<td width="80%" class="TableRow">execute Mandatory Qualifier</td>
+					<td width="10%" class="TableRow">Invariant</td>
+					<td width="10%" class="TableRow">Approved</td>
+				</tr>
+				<tr>
+					<td class="TableRowBottomDashed"  colspan="3">
+						<div class="DetailsDivParent"><img src="../../images/minus03.gif" align="absmiddle" id="DetailsImageConstraints3408" onclick="parent.toggleDiv('detailsDIVConstraints3408','DetailsImageConstraints3408')" />Details:
+							<div id="detailsDIVConstraints3408" class="DetailsDiv" >
+							<div class="ObjectDetailsNotes">At least one of the following must be known for a StudySite: StudySiteProtocolVersionRelationship, StudyConduct.&lt;br/&gt;</div>
+
+							</div>
+						</div>
+					</td>
+				</tr>
+				<tr>
+					<td width="80%" class="TableRow">be overseen by actualIndicator Qualifier</td>
+					<td width="10%" class="TableRow">Invariant</td>
+					<td width="10%" class="TableRow">Approved</td>
+				</tr>
+				<tr>
+					<td class="TableRowBottomDashed"  colspan="3">
+						<div class="DetailsDivParent"><img src="../../images/minus03.gif" align="absmiddle" id="DetailsImageConstraints3409" onclick="parent.toggleDiv('detailsDIVConstraints3409','DetailsImageConstraints3409')" />Details:
+							<div id="detailsDIVConstraints3409" class="DetailsDiv" >
+							<div class="ObjectDetailsNotes">Only Organization (via OversightCommittee) with actualIndicator = &quot;true&quot; is valid.&lt;br/&gt;</div>
+
+							</div>
+						</div>
+					</td>
+				</tr>
+				<tr>
+					<td width="80%" class="TableRow">be a function performed by actualIndicator Qualifier</td>
+					<td width="10%" class="TableRow">Invariant</td>
+					<td width="10%" class="TableRow">Approved</td>
+				</tr>
+				<tr>
+					<td class="TableRowBottomDashed"  colspan="3">
+						<div class="DetailsDivParent"><img src="../../images/minus03.gif" align="absmiddle" id="DetailsImageConstraints3410" onclick="parent.toggleDiv('detailsDIVConstraints3410','DetailsImageConstraints3410')" />Details:
+							<div id="detailsDIVConstraints3410" class="DetailsDiv" >
+							<div class="ObjectDetailsNotes">Only Organization (via HealthcareFacility or direct association) with actualIndicator = &quot;true&quot; is valid.&lt;br/&gt;</div>
+
+							</div>
+						</div>
+					</td>
+				</tr>
+
+			</table>
+		</div>
+	</div>
+<div class="pageFooter"></div>
+ 
+</body>
+</html>
