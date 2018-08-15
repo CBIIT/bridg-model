@@ -1,0 +1,381 @@
+<?xml version="1.0" encoding="iso-8859-1"?><!DOCTYPE html
+  PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+      <title>POOO_RM000002US - Hierarchical Message Description</title>
+      <meta name="Entry" content="Provider Details Query Response" />
+      <meta name="Identifier" content="POOO_RM000002US" /><style type="text/css">table {empty-cells: show}</style><script language="JavaScript1.2" type="text/javascript">
+
+var isNew=0;
+var isNS4=0;
+var isIE4=0;
+
+var brow=((navigator.appName) + (parseInt(navigator.appVersion)));
+
+//alert(brow);
+if (parseInt(navigator.appVersion)&gt;=5)
+{
+	isNew=1
+}
+else
+{
+	if(brow=="Netscape4")
+	{
+		isNS4=1;
+		document.captureEvents(Event.ONMOUSEOVER);
+	}
+	else
+	{
+		if(brow=="Microsoft Internet Explorer4")
+		{
+			isIE4=1;
+		}
+	}
+		
+}
+
+// thats ok
+
+
+if(isNS4||isIE4||isNew)
+{
+	docObj=(isNS4) ? 'document' : 'document.all';
+	
+	styleObj=(isNS4) ? ' ' : '.style';
+}
+
+function checkDOM(elementName)
+{
+	if(isNS4||isIE4||isNew)
+	{
+		dom=eval(docObj + '.' + elementName + styleObj);
+		//alert('This browser uses the ' + dom + 'Document Object Model.');
+		dom.left =0;
+		dom.top =0;
+	}
+}
+
+function popUp(evt,currElem)
+{
+
+	if((isNS4 &amp;&amp; currElem !=0) || (isIE4 &amp;&amp; currElem !=0))
+	{
+		dom =eval(docObj +'.' +currElem+styleObj);
+		state=dom.visibility;
+		if ((state == "visible") || (state=="show"))
+		{
+			dom.visibility="hidden";
+		}
+		else
+		{
+			if(isNS4)
+			{
+				topVal=eval(evt.pageY);
+				leftVal=eval(evt.pageX);
+				/*if(((document.body.scrollLeft+document.body.clientWidth)-leftVal)&lt; 150)
+				{
+					leftVal=(document.body.clientWidth+document.body.scrollLeft-151);
+				}
+				if(((document.body.scrollTop+document.body.clientHeight)-topVal)&lt; 30)
+				{
+					topVal=(document.body.clientHeight+document.body.scrollTop-80);
+				}*/
+
+			}
+			if(isIE4)
+			{
+				topVal=eval(event.clientY)  + document.body.scrollTop+20;
+				leftVal=eval(event.clientX) + document.body.scrollLeft;
+				
+				if(((document.body.scrollLeft+document.body.clientWidth)-leftVal)&lt; 150)
+				{
+					leftVal=(document.body.clientWidth+document.body.scrollLeft-151);
+				}
+				if(((document.body.scrollTop+document.body.clientHeight)-topVal)&lt; 30)
+				{
+					topVal=(document.body.clientHeight+document.body.scrollTop-80);
+				}
+			}
+			if(leftVal &lt; 2)
+			{
+				leftVal=2;
+			}
+			dom.top=topVal;
+			dom.left=leftVal;
+			dom.visibility="visible";
+		}
+	}
+}
+</script><style type="text/css">
+#ds
+{
+	position: absolute;
+	visibility: hidden;
+	z-index: 100;
+	top: 10px;
+	left: 10px;
+}
+#cwe
+{
+	position: absolute;
+	visibility: hidden;
+	z-index: 100;
+	top: 10px;
+	left: 10px;
+}
+
+#cne
+{
+	position: absolute;
+	visibility: hidden;
+	z-index: 100;
+	top: 10px;
+	left: 10px;
+}
+
+.hypertext
+{
+position: absolute;
+	background-color: white;
+	layer-background-colour: cornflowerblue;
+	padding: 3px;
+	border: 3px solid blue;
+	width: 150px;
+	font:normal 10pt/13pt helvetica, sans-serif;
+	text-align: left;
+	color: blue;
+
+	
+}
+td {font-family: verdana,arial; text-align: left; font-size: 8pt;border-style:solid;border-width=1pt;}
+				</style></head>
+   <body onload="checkDOM('ds')"><span id="ds" class="hypertext">No Current Link To Vocabulary</span><span id="cwe" class="hypertext">Coded With Extensions</span><span id="cne" class="hypertext">Coded No Extensions</span><table border="3" frame="vsides" rules="cols" cellpadding="2" cellspacing="0"
+             style="border-width: 2px;border-style: solid">
+         <tr valign="top">
+            <td height="35"><b><font size="+1">POOO_RM000002US</font><br />Administrative Activity</b></td>
+            <td height="35" class="lightBoundary"><br /><a href="POOO_RM000002US.xls">(Link to Excel View)</a><br />Derived from RMIM: <a href="_.html">_</a></td>
+         </tr>
+         <tr>
+            <td height="3" colspan="10" style="font-size=4pt;"> </td>
+         </tr>
+         <tr class="hmd" valign="top">
+            <td bgcolor="lightblue"><b><a name="ActEvent">ActEvent</a></b></td>
+            <td>
+               <div style="height: 100%; width: 100%;">
+                  <p><b><i>Design Comments: </i></b>PerformedAdministrativeActivity PerformedExperimentalUnitAllocation PerformedStudyAdministrativeActivity PerformedStudySubjectMilestone
+                     -inherit from PerformedActivity and add these attributes and associations
+                  </p>
+                  <p><b><i>Mapping: </i></b>PerformedAdministrativeActivity
+                  </p>
+                  <p><b><i>Mapping: </i></b>PerformedExperimentalUnitAllocation
+                  </p>
+                  <p><b><i>Mapping: </i></b>PerformedStudyAdministrativeActivity
+                  </p>
+                  <p><b><i>Mapping: </i></b>PerformedStudySubjectMilestone
+                  </p>
+               </div>
+            </td>
+         </tr>
+         <tr valign="top" class="ConfomanceR">
+            <td><b>classCode</b><font color="green"> [1..1]</font> (M)<br /><span style="margin-left:20pt"></span><a href="../../../infrastructure/rim/rim.html#Act-cls">Act</a> (<a href="../../../infrastructure/datatypes_r2/datatypes_r2.html#dt-CS">CS</a>) {CNE:C:<a href="../../../infrastructure/vocabulary/ActClass.html"><b>ActClass</b></a>:<a href="../../../infrastructure/vocabulary/ActClass.html#ACT"><b>ACT</b></a>, fixed value= "ACT"}
+            </td>
+            <td>
+               <div style="height: 100%; width: 100%;"></div>
+            </td>
+         </tr>
+         <tr valign="top" class="ConfomanceR">
+            <td><b>moodCode</b><font color="green"> [1..1]</font> (M)<br /><span style="margin-left:20pt"></span><a href="../../../infrastructure/rim/rim.html#Act-cls">Act</a> (<a href="../../../infrastructure/datatypes_r2/datatypes_r2.html#dt-CS">CS</a>) {CNE:C:<a href="../../../infrastructure/vocabulary/ActMood.html"><b>ActMood</b></a>:<a href="../../../infrastructure/vocabulary/ActMood.html#EVN"><b>EVN</b></a>, fixed value= "EVN"}
+            </td>
+            <td>
+               <div style="height: 100%; width: 100%;"></div>
+            </td>
+         </tr>
+         <tr valign="top" class="Confomance">
+            <td bgcolor="lightgrey">subject1<font color="green"> [0..1]</font><font color="gray"> (<a href="#Subject">Subject</a>)</font></td>
+            <td>
+               <div style="height: 100%; width: 100%;">
+                  <p><b><i>Mapping: </i></b>PerformedAdministrativeActivity.performingStudySite[StudySite](R_StudySiteUniversal)
+                  </p>
+                  <p><b><i>Mapping: </i></b>StudySite(R_StudySiteUniversal).performedPerformedAdministrativeActivity[PerformedAdministrativeActivity]
+                  </p>
+               </div>
+            </td>
+         </tr>
+         <tr valign="top" class="Confomance">
+            <td bgcolor="lightgrey">subject2<font color="green"> [0..*]</font><font color="gray"> (<a href="#Subject2">Subject2</a>)</font></td>
+            <td>
+               <div style="height: 100%; width: 100%;">
+                  <p><b><i>Mapping: </i></b>PerformedExperimentalUnitAllocation.assignedArm[Arm]
+                  </p>
+                  <p><b><i>Mapping: </i></b>Arm.assigningPerformedExperimentalUnitAllocation[PerformedExperimentalUnitAllocation]
+                  </p>
+               </div>
+            </td>
+         </tr>
+         <tr valign="top" class="Confomance">
+            <td bgcolor="lightgrey">reference<font color="green"> [0..*]</font><font color="gray"> (<a href="#Reference">Reference</a>)</font></td>
+            <td>
+               <div style="height: 100%; width: 100%;">
+                  <p><b><i>Mapping: </i></b>DocumentVersion(A_DocumentUniversal).usingPerformedStudySubjectMilestone[PerformedStudySubjectMilestone]
+                  </p>
+                  <p><b><i>Mapping: </i></b>PerformedStudySubjectMilestone.usedDocumentVersion[DocumentVersion](A_DocumentUniversal)
+                  </p>
+               </div>
+            </td>
+         </tr>
+         <tr valign="top" class="Confomance">
+            <td bgcolor="lightgrey">component<font color="green"> [0..1]</font><font color="gray"> (<a href="#Component3">Component3</a>)</font></td>
+            <td>
+               <div style="height: 100%; width: 100%;"></div>
+            </td>
+         </tr>
+         <tr>
+            <td height="3" colspan="10" style="font-size=4pt;"> </td>
+         </tr>
+         <tr class="hmd" valign="top">
+            <td bgcolor="lightblue"><b><a name="Subject">Subject</a></b></td>
+            <td>
+               <div style="height: 100%; width: 100%;">
+                  <p><b><i>Mapping: </i></b>PerformedAdministrativeActivity.performingStudySite[StudySite](R_StudySiteUniversal)
+                  </p>
+                  <p><b><i>Mapping: </i></b>StudySite(R_StudySiteUniversal).performedPerformedAdministrativeActivity[PerformedAdministrativeActivity]
+                  </p>
+               </div>
+            </td>
+         </tr>
+         <tr valign="top" class="ConfomanceR">
+            <td><b>typeCode</b><font color="green"> [1..1]</font> (M)<br /><span style="margin-left:20pt"></span><a href="../../../infrastructure/rim/rim.html#Participation-cls">Participation</a> (<a href="../../../infrastructure/datatypes_r2/datatypes_r2.html#dt-CS">CS</a>) {CNE:C:<a href="../../../infrastructure/vocabulary/ParticipationType.html"><b>ParticipationType</b></a>:<a href="../../../infrastructure/vocabulary/ParticipationType.html#SBJ"><b>SBJ</b></a>, fixed value= "SBJ"}
+            </td>
+            <td>
+               <div style="height: 100%; width: 100%;"></div>
+            </td>
+         </tr>
+         <tr valign="top" class="Confomance">
+            <td bgcolor="lightgrey">siteClinicalTrialEvent<font color="green"> [1..1]</font><font color="gray"> (<a href="../../ct/editable/COCT_MT000009US-NoEdit.html">R_StudySiteUniversal</a>)</font></td>
+            <td>
+               <div style="height: 100%; width: 100%;"></div>
+            </td>
+         </tr>
+         <tr>
+            <td height="3" colspan="10" style="font-size=4pt;"> </td>
+         </tr>
+         <tr class="hmd" valign="top">
+            <td bgcolor="lightblue"><b><a name="Subject2">Subject2</a></b></td>
+            <td>
+               <div style="height: 100%; width: 100%;">
+                  <p><b><i>Mapping: </i></b>PerformedExperimentalUnitAllocation.assignedArm[Arm]
+                  </p>
+                  <p><b><i>Mapping: </i></b>Arm.assigningPerformedExperimentalUnitAllocation[PerformedExperimentalUnitAllocation]
+                  </p>
+               </div>
+            </td>
+         </tr>
+         <tr valign="top" class="ConfomanceR">
+            <td><b>typeCode</b><font color="green"> [1..1]</font> (M)<br /><span style="margin-left:20pt"></span><a href="../../../infrastructure/rim/rim.html#ActRelationship-cls">ActRelationship</a> (<a href="../../../infrastructure/datatypes_r2/datatypes_r2.html#dt-CS">CS</a>) {CNE:C:<a href="../../../infrastructure/vocabulary/ActRelationshipType.html"><b>ActRelationshipType</b></a>:<a href="../../../infrastructure/vocabulary/ActRelationshipType.html#SUBJ"><b>SUBJ</b></a>, fixed value= "SUBJ"}
+            </td>
+            <td>
+               <div style="height: 100%; width: 100%;"></div>
+            </td>
+         </tr>
+         <tr valign="top" class="Confomance">
+            <td bgcolor="lightgrey">armClusterIntent<font color="green"> [1..1]</font><font color="gray"> (<a href="../../ct/editable/COCT_MT000018US-NoEdit.html">A_StudyArmUniversal</a>)</font></td>
+            <td>
+               <div style="height: 100%; width: 100%;"></div>
+            </td>
+         </tr>
+         <tr>
+            <td height="3" colspan="10" style="font-size=4pt;"> </td>
+         </tr>
+         <tr class="hmd" valign="top">
+            <td bgcolor="lightblue"><b><a name="Reference">Reference</a></b></td>
+            <td>
+               <div style="height: 100%; width: 100%;">
+                  <p><b><i>Mapping: </i></b>DocumentVersion(A_DocumentUniversal).usingPerformedStudySubjectMilestone[PerformedStudySubjectMilestone]
+                  </p>
+                  <p><b><i>Mapping: </i></b>PerformedStudySubjectMilestone.usedDocumentVersion[DocumentVersion](A_DocumentUniversal)
+                  </p>
+               </div>
+            </td>
+         </tr>
+         <tr valign="top" class="ConfomanceR">
+            <td><b>typeCode</b><font color="green"> [1..1]</font> (M)<br /><span style="margin-left:20pt"></span><a href="../../../infrastructure/rim/rim.html#ActRelationship-cls">ActRelationship</a> (<a href="../../../infrastructure/datatypes_r2/datatypes_r2.html#dt-CS">CS</a>) {CNE:C:<a href="../../../infrastructure/vocabulary/ActRelationshipType.html"><b>ActRelationshipType</b></a>:<a href="../../../infrastructure/vocabulary/ActRelationshipType.html#REFR"><b>REFR</b></a>, fixed value= "REFR"}
+            </td>
+            <td>
+               <div style="height: 100%; width: 100%;"></div>
+            </td>
+         </tr>
+         <tr valign="top" class="Confomance">
+            <td bgcolor="lightgrey">documentEvent<font color="green"> [1..1]</font><font color="gray"> (<a href="../../cd/editable/POCD_MT000001US-NoEdit.html">A_DocumentUniversal</a>)</font></td>
+            <td>
+               <div style="height: 100%; width: 100%;"></div>
+            </td>
+         </tr>
+         <tr>
+            <td height="3" colspan="10" style="font-size=4pt;"> </td>
+         </tr>
+         <tr class="hmd" valign="top">
+            <td bgcolor="lightblue"><b><a name="Component3">Component3</a></b></td>
+            <td>
+               <div style="height: 100%; width: 100%;"></div>
+            </td>
+         </tr>
+         <tr valign="top" class="ConfomanceR">
+            <td><b>typeCode</b><font color="green"> [1..1]</font> (M)<br /><span style="margin-left:20pt"></span><a href="../../../infrastructure/rim/rim.html#ActRelationship-cls">ActRelationship</a> (<a href="../../../infrastructure/datatypes_r2/datatypes_r2.html#dt-CS">CS</a>) {CNE:C:<a href="../../../infrastructure/vocabulary/ActRelationshipType.html"><b>ActRelationshipType</b></a>:<a href="../../../infrastructure/vocabulary/ActRelationshipType.html#COMP"><b>COMP</b></a>, fixed value= "COMP"}
+            </td>
+            <td>
+               <div style="height: 100%; width: 100%;"></div>
+            </td>
+         </tr>
+         <tr valign="top" class="Confomance">
+            <td bgcolor="lightgrey">substitutionEvent<font color="green"> [1..1]</font><font color="gray"> (<a href="#SubstitutionEvent">SubstitutionEvent</a>)</font></td>
+            <td>
+               <div style="height: 100%; width: 100%;"></div>
+            </td>
+         </tr>
+         <tr>
+            <td height="3" colspan="10" style="font-size=4pt;"> </td>
+         </tr>
+         <tr class="hmd" valign="top">
+            <td bgcolor="lightblue"><b><a name="SubstitutionEvent">SubstitutionEvent</a></b></td>
+            <td>
+               <div style="height: 100%; width: 100%;"></div>
+            </td>
+         </tr>
+         <tr valign="top" class="ConfomanceR">
+            <td><b>classCode</b><font color="green"> [1..1]</font> (M)<br /><span style="margin-left:20pt"></span><a href="../../../infrastructure/rim/rim.html#Act-cls">Act</a> (<a href="../../../infrastructure/datatypes_r2/datatypes_r2.html#dt-CS">CS</a>) {CNE:C:<a href="../../../infrastructure/vocabulary/ActClass.html"><b>ActClass</b></a>:<a href="../../../infrastructure/vocabulary/ActClass.html#SUBST"><b>SUBST</b></a>, fixed value= "SUBST"}
+            </td>
+            <td>
+               <div style="height: 100%; width: 100%;"></div>
+            </td>
+         </tr>
+         <tr valign="top" class="ConfomanceR">
+            <td><b>moodCode</b><font color="green"> [1..1]</font> (M)<br /><span style="margin-left:20pt"></span><a href="../../../infrastructure/rim/rim.html#Act-cls">Act</a> (<a href="../../../infrastructure/datatypes_r2/datatypes_r2.html#dt-CS">CS</a>) {CNE:C:<a href="../../../infrastructure/vocabulary/ActMood.html"><b>ActMood</b></a>:<a href="../../../infrastructure/vocabulary/ActMood.html#EVN"><b>EVN</b></a>, fixed value= "EVN"}
+            </td>
+            <td>
+               <div style="height: 100%; width: 100%;"></div>
+            </td>
+         </tr>
+         <tr valign="top" class="Confomance">
+            <td>code<font color="green"> [0..1]</font><br /><span style="margin-left:20pt"></span><a href="../../../infrastructure/rim/rim.html#Act-cls">Act</a> (<a href="../../../infrastructure/datatypes_r2/datatypes_r2.html#dt-CD">CD</a>) {CWE:D:<b>AdministrativeActivityVarianceType</b>}
+            </td>
+            <td>
+               <div style="height: 100%; width: 100%;">
+                  <p><b><i>Mapping: </i></b>PerformedAdministrativeActivity.varianceTypeCode
+                  </p>
+               </div>
+            </td>
+         </tr>
+         <tr valign="top" class="Confomance">
+            <td>reasonCode<font color="green"> [0..*]</font><br /><span style="margin-left:20pt"></span><a href="../../../infrastructure/rim/rim.html#Act-cls">Act</a> (<a href="../../../infrastructure/datatypes_r2/datatypes_r2.html#dt-DSET">DSET</a>&lt;<a href="../../../infrastructure/datatypes_r2/datatypes_r2.html#dt-CD">CD</a>&gt;) {CWE:D:<b>AdministrativeActivityVarianceReason</b>}
+            </td>
+            <td>
+               <div style="height: 100%; width: 100%;">
+                  <p><b><i>Mapping: </i></b>PerformedAdministrativeActivity.varianceReasonCode
+                  </p>
+               </div>
+            </td>
+         </tr>
+      </table>
+   </body>
+</html>

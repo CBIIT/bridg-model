@@ -1,0 +1,605 @@
+<?xml version="1.0" encoding="iso-8859-1"?><!DOCTYPE html
+  PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+      <title>COCT_MT000032US - Hierarchical Message Description</title>
+      <meta name="Entry" content="Provider Details Query Response" />
+      <meta name="Identifier" content="COCT_MT000032US" /><style type="text/css">table {empty-cells: show}</style><script language="JavaScript1.2" type="text/javascript">
+
+var isNew=0;
+var isNS4=0;
+var isIE4=0;
+
+var brow=((navigator.appName) + (parseInt(navigator.appVersion)));
+
+//alert(brow);
+if (parseInt(navigator.appVersion)&gt;=5)
+{
+	isNew=1
+}
+else
+{
+	if(brow=="Netscape4")
+	{
+		isNS4=1;
+		document.captureEvents(Event.ONMOUSEOVER);
+	}
+	else
+	{
+		if(brow=="Microsoft Internet Explorer4")
+		{
+			isIE4=1;
+		}
+	}
+		
+}
+
+// thats ok
+
+
+if(isNS4||isIE4||isNew)
+{
+	docObj=(isNS4) ? 'document' : 'document.all';
+	
+	styleObj=(isNS4) ? ' ' : '.style';
+}
+
+function checkDOM(elementName)
+{
+	if(isNS4||isIE4||isNew)
+	{
+		dom=eval(docObj + '.' + elementName + styleObj);
+		//alert('This browser uses the ' + dom + 'Document Object Model.');
+		dom.left =0;
+		dom.top =0;
+	}
+}
+
+function popUp(evt,currElem)
+{
+
+	if((isNS4 &amp;&amp; currElem !=0) || (isIE4 &amp;&amp; currElem !=0))
+	{
+		dom =eval(docObj +'.' +currElem+styleObj);
+		state=dom.visibility;
+		if ((state == "visible") || (state=="show"))
+		{
+			dom.visibility="hidden";
+		}
+		else
+		{
+			if(isNS4)
+			{
+				topVal=eval(evt.pageY);
+				leftVal=eval(evt.pageX);
+				/*if(((document.body.scrollLeft+document.body.clientWidth)-leftVal)&lt; 150)
+				{
+					leftVal=(document.body.clientWidth+document.body.scrollLeft-151);
+				}
+				if(((document.body.scrollTop+document.body.clientHeight)-topVal)&lt; 30)
+				{
+					topVal=(document.body.clientHeight+document.body.scrollTop-80);
+				}*/
+
+			}
+			if(isIE4)
+			{
+				topVal=eval(event.clientY)  + document.body.scrollTop+20;
+				leftVal=eval(event.clientX) + document.body.scrollLeft;
+				
+				if(((document.body.scrollLeft+document.body.clientWidth)-leftVal)&lt; 150)
+				{
+					leftVal=(document.body.clientWidth+document.body.scrollLeft-151);
+				}
+				if(((document.body.scrollTop+document.body.clientHeight)-topVal)&lt; 30)
+				{
+					topVal=(document.body.clientHeight+document.body.scrollTop-80);
+				}
+			}
+			if(leftVal &lt; 2)
+			{
+				leftVal=2;
+			}
+			dom.top=topVal;
+			dom.left=leftVal;
+			dom.visibility="visible";
+		}
+	}
+}
+</script><style type="text/css">
+#ds
+{
+	position: absolute;
+	visibility: hidden;
+	z-index: 100;
+	top: 10px;
+	left: 10px;
+}
+#cwe
+{
+	position: absolute;
+	visibility: hidden;
+	z-index: 100;
+	top: 10px;
+	left: 10px;
+}
+
+#cne
+{
+	position: absolute;
+	visibility: hidden;
+	z-index: 100;
+	top: 10px;
+	left: 10px;
+}
+
+.hypertext
+{
+position: absolute;
+	background-color: white;
+	layer-background-colour: cornflowerblue;
+	padding: 3px;
+	border: 3px solid blue;
+	width: 150px;
+	font:normal 10pt/13pt helvetica, sans-serif;
+	text-align: left;
+	color: blue;
+
+	
+}
+td {font-family: verdana,arial; text-align: left; font-size: 8pt;border-style:solid;border-width=1pt;}
+				</style></head>
+   <body onload="checkDOM('ds')"><span id="ds" class="hypertext">No Current Link To Vocabulary</span><span id="cwe" class="hypertext">Coded With Extensions</span><span id="cne" class="hypertext">Coded No Extensions</span><table border="3" frame="vsides" rules="cols" cellpadding="2" cellspacing="0"
+             style="border-width: 2px;border-style: solid">
+         <tr valign="top">
+            <td height="35"><b><font size="+1">COCT_MT000032US</font><br /></b></td>
+            <td height="35" class="lightBoundary"><br />Derived from RMIM: <a href="_.html">_</a> and HMD: <a href="_-NoEdit.html">_</a></td>
+         </tr>
+         <tr>
+            <td height="3" colspan="10" style="font-size=4pt;"> </td>
+         </tr>
+         <tr class="hmd" valign="top">
+            <td bgcolor="lightblue"><b><a name="DocumentAuthor">DocumentAuthor</a></b></td>
+            <td>
+               <div style="height: 100%; width: 100%;">
+                  <p><b><i>Design Comments: </i></b>DocumentAuthor
+                  </p>
+               </div>
+            </td>
+         </tr>
+         <tr valign="top" class="Confomance">
+            <td bgcolor="lightgrey">choice of <font color="gray"><a href="#ResearchStaff">ResearchStaff</a></font></td>
+            <td>
+               <div style="height: 100%; width: 100%;">
+                  <p><b><i>Design Comments: </i></b>ResearchStaff
+                  </p>
+                  <p><b><i>Mapping: </i></b>ResearchStaff
+                  </p>
+                  <p><b><i>Mapping: </i></b>ResearchStaff.performingPerson[Person]
+                  </p>
+                  <p><b><i>Mapping: </i></b>Person.performedResearchStaff[ResearchStaff]
+                  </p>
+               </div>
+            </td>
+         </tr>
+         <tr valign="top" class="Confomance">
+            <td bgcolor="lightgrey">          or <font color="gray"><a href="../../ct/editable/COCT_MT090100US-NoEdit.html">R_AssignedPersonUniversal</a></font></td>
+            <td>
+               <div style="height: 100%; width: 100%;"></div>
+            </td>
+         </tr>
+         <tr valign="top" class="Confomance">
+            <td bgcolor="lightgrey">          or <font color="gray"><a href="../../ct/editable/COCT_MT550000US-NoEdit.html">R_InvestigativeSubjectUniversal</a></font></td>
+            <td>
+               <div style="height: 100%; width: 100%;"></div>
+            </td>
+         </tr>
+         <tr valign="top" class="Confomance">
+            <td bgcolor="lightgrey">          or <font color="gray"><a href="../../ct/editable/COCT_RM910000US-NoEdit.html">R_RelatedPartyUniversal</a></font></td>
+            <td>
+               <div style="height: 100%; width: 100%;"></div>
+            </td>
+         </tr>
+         <tr>
+            <td height="3" colspan="10" style="font-size=4pt;"> </td>
+         </tr>
+         <tr class="hmd" valign="top">
+            <td bgcolor="lightblue"><b><a name="ResearchStaff">ResearchStaff</a></b></td>
+            <td>
+               <div style="height: 100%; width: 100%;">
+                  <p><b><i>Design Comments: </i></b>ResearchStaff
+                  </p>
+                  <p><b><i>Mapping: </i></b>ResearchStaff
+                  </p>
+                  <p><b><i>Mapping: </i></b>ResearchStaff.performingPerson[Person]
+                  </p>
+                  <p><b><i>Mapping: </i></b>Person.performedResearchStaff[ResearchStaff]
+                  </p>
+               </div>
+            </td>
+         </tr>
+         <tr valign="top" class="ConfomanceR">
+            <td><b>classCode</b><font color="green"> [1..1]</font> (M)<br /><span style="margin-left:20pt"></span><a href="../../../infrastructure/rim/rim.html#Role-cls">Role</a> (<a href="../../../infrastructure/datatypes_r2/datatypes_r2.html#dt-CS">CS</a>) {CNE:C:<a href="../../../infrastructure/vocabulary/RoleClass.html"><b>RoleClass</b></a>:<a href="../../../infrastructure/vocabulary/RoleClass.html#CRINV"><b>CRINV</b></a>, fixed value= "CRINV"}
+            </td>
+            <td>
+               <div style="height: 100%; width: 100%;"></div>
+            </td>
+         </tr>
+         <tr valign="top" class="Confomance">
+            <td>id<font color="green"> [0..1]</font><br /><span style="margin-left:20pt"></span><a href="../../../infrastructure/rim/rim.html#Role-cls">Role</a> (<a href="../../../infrastructure/datatypes_r2/datatypes_r2.html#dt-II">II</a>)
+            </td>
+            <td>
+               <div style="height: 100%; width: 100%;">
+                  <p><b><i>Mapping: </i></b>ResearchStaff.identifier
+                  </p>
+               </div>
+            </td>
+         </tr>
+         <tr valign="top" class="Confomance">
+            <td>code<font color="green"> [0..1]</font><br /><span style="margin-left:20pt"></span><a href="../../../infrastructure/rim/rim.html#Role-cls">Role</a> (<a href="../../../infrastructure/datatypes_r2/datatypes_r2.html#dt-CD">CD</a>) {CWE:D:<a href="../../../infrastructure/vocabulary/voc_ConceptDomains.html#RoleCode"><b>RoleCode</b></a>}
+            </td>
+            <td>
+               <div style="height: 100%; width: 100%;">
+                  <p><b><i>Mapping: </i></b>ResearchStaff.jobTitle (originalText)
+                  </p>
+               </div>
+            </td>
+         </tr>
+         <tr valign="top" class="Confomance">
+            <td>addr<font color="green"> [0..1]</font><br /><span style="margin-left:20pt"></span><a href="../../../infrastructure/rim/rim.html#Role-cls">Role</a> (<a href="../../../infrastructure/datatypes_r2/datatypes_r2.html#dt-AD">AD</a>)
+            </td>
+            <td>
+               <div style="height: 100%; width: 100%;">
+                  <p><b><i>Mapping: </i></b>ResearchStaff.postalAddress
+                  </p>
+               </div>
+            </td>
+         </tr>
+         <tr valign="top" class="Confomance">
+            <td>telecom<font color="green"> [0..*]</font><br /><span style="margin-left:20pt"></span><a href="../../../infrastructure/rim/rim.html#Role-cls">Role</a> (<a href="../../../infrastructure/datatypes_r2/datatypes_r2.html#dt-BAG">BAG</a>&lt;<a href="../../../infrastructure/datatypes_r2/datatypes_r2.html#dt-TEL">TEL</a>&gt;)
+            </td>
+            <td>
+               <div style="height: 100%; width: 100%;">
+                  <p><b><i>Mapping: </i></b>ResearchStaff.telecomAddress
+                  </p>
+               </div>
+            </td>
+         </tr>
+         <tr valign="top" class="Confomance">
+            <td>effectiveTime<font color="green"> [0..1]</font><br /><span style="margin-left:20pt"></span><a href="../../../infrastructure/rim/rim.html#Role-cls">Role</a> (<a href="../../../infrastructure/datatypes_r2/datatypes_r2.html#dt-IVL">IVL</a>&lt;<a href="../../../infrastructure/datatypes_r2/datatypes_r2.html#dt-TS.DATETIME">TS.DATETIME</a>&gt;)
+            </td>
+            <td>
+               <div style="height: 100%; width: 100%;">
+                  <p><b><i>Mapping: </i></b>ResearchStaff.effectiveDateRange
+                  </p>
+               </div>
+            </td>
+         </tr>
+         <tr valign="top" class="Confomance">
+            <td bgcolor="lightgrey">investigatorPerson<font color="green"> [0..1]</font><font color="gray"> (<a href="../../ct/editable/COCT_MT030200US-NoEdit.html">E_PersonUniversal</a>)</font></td>
+            <td>
+               <div style="height: 100%; width: 100%;"></div>
+            </td>
+         </tr>
+         <tr valign="top" class="Confomance">
+            <td bgcolor="lightgrey">directAuthorityOver<font color="green"> [0..*]</font><font color="gray"> (<a href="#DirectAuthorityOver3">DirectAuthorityOver3</a>)</font></td>
+            <td>
+               <div style="height: 100%; width: 100%;">
+                  <p><b><i>Mapping: </i></b>AdministrativeMemberCRA.performingResearchStaff[ResearchStaff]
+                  </p>
+                  <p><b><i>Mapping: </i></b>AdministrativeMemberPI.performingResearchStaff[ResearchStaff]
+                  </p>
+                  <p><b><i>Mapping: </i></b>ResearchStaff.performedAdministrativeMemberCRA[AdministrativeMemberCRA]
+                  </p>
+                  <p><b><i>Mapping: </i></b>ResearchStaff.performedAdministrativeMemberPI[AdministrativeMemberPI]
+                  </p>
+               </div>
+            </td>
+         </tr>
+         <tr valign="top" class="Confomance">
+            <td bgcolor="lightgrey">indirectAuthority<font color="green"> [0..*]</font><font color="gray"> (<a href="#IndirectAuthorithyOver4">IndirectAuthorithyOver4</a>)</font></td>
+            <td>
+               <div style="height: 100%; width: 100%;">
+                  <p><b><i>Mapping: </i></b>ResearchStaff.staffedResearchOrganization[ResearchOrganization]
+                  </p>
+                  <p><b><i>Mapping: </i></b>ResearchOrganization.staffingResearchStaff[ResearchStaff]
+                  </p>
+               </div>
+            </td>
+         </tr>
+         <tr>
+            <td height="3" colspan="10" style="font-size=4pt;"> </td>
+         </tr>
+         <tr class="hmd" valign="top">
+            <td bgcolor="lightblue"><b><a name="DirectAuthorityOver3">DirectAuthorityOver3</a></b></td>
+            <td>
+               <div style="height: 100%; width: 100%;">
+                  <p><b><i>Mapping: </i></b>AdministrativeMemberCRA.performingResearchStaff[ResearchStaff]
+                  </p>
+                  <p><b><i>Mapping: </i></b>AdministrativeMemberPI.performingResearchStaff[ResearchStaff]
+                  </p>
+                  <p><b><i>Mapping: </i></b>ResearchStaff.performedAdministrativeMemberCRA[AdministrativeMemberCRA]
+                  </p>
+                  <p><b><i>Mapping: </i></b>ResearchStaff.performedAdministrativeMemberPI[AdministrativeMemberPI]
+                  </p>
+               </div>
+            </td>
+         </tr>
+         <tr valign="top" class="ConfomanceR">
+            <td><b>typeCode</b><font color="green"> [1..1]</font> (M)<br /><span style="margin-left:20pt"></span><a href="../../../infrastructure/rim/rim.html#RoleLink-cls">RoleLink</a> (<a href="../../../infrastructure/datatypes_r2/datatypes_r2.html#dt-CS">CS</a>) {CNE:C:<a href="../../../infrastructure/vocabulary/RoleLinkType.html"><b>RoleLinkType</b></a>:<a href="../../../infrastructure/vocabulary/RoleLinkType.html#DIRAUTH"><b>DIRAUTH</b></a>, fixed value= "DIRAUTH"}
+            </td>
+            <td>
+               <div style="height: 100%; width: 100%;"></div>
+            </td>
+         </tr>
+         <tr valign="top" class="Confomance">
+            <td bgcolor="lightgrey">researchStaff<font color="green"> [1..1]</font><font color="gray"> (<a href="#ResearchStaff">ResearchStaff</a>)</font></td>
+            <td>
+               <div style="height: 100%; width: 100%;"></div>
+            </td>
+         </tr>
+         <tr valign="top" class="Confomance">
+            <td bgcolor="lightgrey">administrativeMember<font color="green"> [1..1]</font><font color="gray"> (<a href="#AdministrativeMember">AdministrativeMember</a>)</font></td>
+            <td>
+               <div style="height: 100%; width: 100%;">
+                  <p><b><i>Design Comments: </i></b>AdministrativeMemberCRA AdministrativeMemberPI
+                  </p>
+                  <p><b><i>Mapping: </i></b>AdministrativeMemberCRA
+                  </p>
+                  <p><b><i>Mapping: </i></b>AdministrativeMemberPI
+                  </p>
+                  <p><b><i>Mapping: </i></b>AdministrativeMemberCRA.staffedCooperativeGroupMember[CooperativeGroupMember](Organization3)
+                  </p>
+                  <p><b><i>Mapping: </i></b>AdministrativeMemberPI.staffedCooperativeGroupMember[CooperativeGroupMember](Organization3)
+                  </p>
+                  <p><b><i>Mapping: </i></b>CooperativeGroupMember(Organization3).staffingAdministrativeMemberCRA[AdministrativeMemberCRA]
+                  </p>
+                  <p><b><i>Mapping: </i></b>CooperativeGroupMember(Organization3).staffingAdministrativeMemberPI[AdministrativeMemberPI]
+                  </p>
+               </div>
+            </td>
+         </tr>
+         <tr>
+            <td height="3" colspan="10" style="font-size=4pt;"> </td>
+         </tr>
+         <tr class="hmd" valign="top">
+            <td bgcolor="lightblue"><b><a name="AdministrativeMember">AdministrativeMember</a></b></td>
+            <td>
+               <div style="height: 100%; width: 100%;">
+                  <p><b><i>Design Comments: </i></b>AdministrativeMemberCRA AdministrativeMemberPI
+                  </p>
+                  <p><b><i>Mapping: </i></b>AdministrativeMemberCRA
+                  </p>
+                  <p><b><i>Mapping: </i></b>AdministrativeMemberPI
+                  </p>
+                  <p><b><i>Mapping: </i></b>AdministrativeMemberCRA.staffedCooperativeGroupMember[CooperativeGroupMember](Organization3)
+                  </p>
+                  <p><b><i>Mapping: </i></b>AdministrativeMemberPI.staffedCooperativeGroupMember[CooperativeGroupMember](Organization3)
+                  </p>
+                  <p><b><i>Mapping: </i></b>CooperativeGroupMember(Organization3).staffingAdministrativeMemberCRA[AdministrativeMemberCRA]
+                  </p>
+                  <p><b><i>Mapping: </i></b>CooperativeGroupMember(Organization3).staffingAdministrativeMemberPI[AdministrativeMemberPI]
+                  </p>
+               </div>
+            </td>
+         </tr>
+         <tr valign="top" class="ConfomanceR">
+            <td><b>classCode</b><font color="green"> [1..1]</font> (M)<br /><span style="margin-left:20pt"></span><a href="../../../infrastructure/rim/rim.html#Role-cls">Role</a> (<a href="../../../infrastructure/datatypes_r2/datatypes_r2.html#dt-CS">CS</a>) {CNE:C:<a href="../../../infrastructure/vocabulary/RoleClass.html"><b>RoleClass</b></a>:<a href="../../../infrastructure/vocabulary/RoleClass.html#ASSIGNED"><b>ASSIGNED</b></a>, fixed value= "ASSIGNED"}
+            </td>
+            <td>
+               <div style="height: 100%; width: 100%;"></div>
+            </td>
+         </tr>
+         <tr valign="top" class="ConfomanceR">
+            <td><b>code</b><font color="green"> [1..1]</font> (M)<br /><span style="margin-left:20pt"></span><a href="../../../infrastructure/rim/rim.html#Role-cls">Role</a> (<a href="../../../infrastructure/datatypes_r2/datatypes_r2.html#dt-CD">CD</a>) {CWE:D:<b>AdministrativeMemberType</b>}
+            </td>
+            <td>
+               <div style="height: 100%; width: 100%;">
+                  <p><b><i>UsageNotes: </i></b>Must be a code that indicates either CRA or PI
+                  </p>
+               </div>
+            </td>
+         </tr>
+         <tr valign="top" class="Confomance">
+            <td bgcolor="lightgrey">representedOrganization<font color="green"> [0..1]</font><font color="gray"> (<a href="#Organization3">Organization3</a>)</font></td>
+            <td>
+               <div style="height: 100%; width: 100%;">
+                  <p><b><i>Design Comments: </i></b>CooperativeGroupMember
+                  </p>
+                  <p><b><i>Mapping: </i></b>CooperativeGroupMember
+                  </p>
+               </div>
+            </td>
+         </tr>
+         <tr valign="top" class="Confomance">
+            <td bgcolor="lightgrey">directAuthority<font color="green"> [0..*]</font><font color="gray"> (<a href="#DirectAuthorityOver3">DirectAuthorityOver3</a>)</font></td>
+            <td>
+               <div style="height: 100%; width: 100%;"></div>
+            </td>
+         </tr>
+         <tr>
+            <td height="3" colspan="10" style="font-size=4pt;"> </td>
+         </tr>
+         <tr class="hmd" valign="top">
+            <td bgcolor="lightblue"><b><a name="Organization3">Organization3</a></b></td>
+            <td>
+               <div style="height: 100%; width: 100%;">
+                  <p><b><i>Design Comments: </i></b>CooperativeGroupMember
+                  </p>
+                  <p><b><i>Mapping: </i></b>CooperativeGroupMember
+                  </p>
+               </div>
+            </td>
+         </tr>
+         <tr valign="top" class="ConfomanceR">
+            <td><b>classCode</b><font color="green"> [1..1]</font> (M)<br /><span style="margin-left:20pt"></span><a href="../../../infrastructure/rim/rim.html#Organization-cls">Organization</a> (<a href="../../../infrastructure/datatypes_r2/datatypes_r2.html#dt-CS">CS</a>) {CNE:C:<a href="../../../infrastructure/vocabulary/EntityClass.html"><b>EntityClass</b></a>:<a href="../../../infrastructure/vocabulary/EntityClass.html#ORG"><b>ORG</b></a>, fixed value= "ORG"}
+            </td>
+            <td>
+               <div style="height: 100%; width: 100%;"></div>
+            </td>
+         </tr>
+         <tr valign="top" class="ConfomanceR">
+            <td><b>determinerCode</b><font color="green"> [1..1]</font> (M)<br /><span style="margin-left:20pt"></span><a href="../../../infrastructure/rim/rim.html#Organization-cls">Organization</a> (<a href="../../../infrastructure/datatypes_r2/datatypes_r2.html#dt-CS">CS</a>) {CNE:C:<a href="../../../infrastructure/vocabulary/EntityDeterminer.html"><b>EntityDeterminer</b></a>:<a href="../../../infrastructure/vocabulary/EntityDeterminer.html#INSTANCE"><b>INSTANCE</b></a>, fixed value= "INSTANCE"}
+            </td>
+            <td>
+               <div style="height: 100%; width: 100%;"></div>
+            </td>
+         </tr>
+         <tr valign="top" class="Confomance">
+            <td bgcolor="lightgrey">asMember<font color="green"> [0..*]</font><font color="gray"> (<a href="#Member2">Member2</a>)</font></td>
+            <td>
+               <div style="height: 100%; width: 100%;">
+                  <p><b><i>Mapping: </i></b>CooperativeGroup.groupedCooperativeGroupMember[CooperativeGroupMember]
+                  </p>
+                  <p><b><i>Mapping: </i></b>CooperativeGroupMember.groupingCooperativeGroup[CooperativeGroup]
+                  </p>
+               </div>
+            </td>
+         </tr>
+         <tr>
+            <td height="3" colspan="10" style="font-size=4pt;"> </td>
+         </tr>
+         <tr class="hmd" valign="top">
+            <td bgcolor="lightblue"><b><a name="Member2">Member2</a></b></td>
+            <td>
+               <div style="height: 100%; width: 100%;">
+                  <p><b><i>Mapping: </i></b>CooperativeGroup.groupedCooperativeGroupMember[CooperativeGroupMember]
+                  </p>
+                  <p><b><i>Mapping: </i></b>CooperativeGroupMember.groupingCooperativeGroup[CooperativeGroup]
+                  </p>
+               </div>
+            </td>
+         </tr>
+         <tr valign="top" class="ConfomanceR">
+            <td><b>classCode</b><font color="green"> [1..1]</font> (M)<br /><span style="margin-left:20pt"></span><a href="../../../infrastructure/rim/rim.html#Role-cls">Role</a> (<a href="../../../infrastructure/datatypes_r2/datatypes_r2.html#dt-CS">CS</a>) {CNE:C:<a href="../../../infrastructure/vocabulary/RoleClass.html"><b>RoleClass</b></a>:<a href="../../../infrastructure/vocabulary/RoleClass.html#MBR"><b>MBR</b></a>, fixed value= "MBR"}
+            </td>
+            <td>
+               <div style="height: 100%; width: 100%;"></div>
+            </td>
+         </tr>
+         <tr valign="top" class="Confomance">
+            <td bgcolor="lightgrey">memberOrganization<font color="green"> [0..1]</font><font color="gray"> (<a href="#Organization3">Organization3</a>)</font></td>
+            <td>
+               <div style="height: 100%; width: 100%;"></div>
+            </td>
+         </tr>
+         <tr valign="top" class="Confomance">
+            <td bgcolor="lightgrey">groupOrganization<font color="green"> [0..1]</font><font color="gray"> (<a href="#Organization2">Organization2</a>)</font></td>
+            <td>
+               <div style="height: 100%; width: 100%;">
+                  <p><b><i>Design Comments: </i></b>CooperativeGroup
+                  </p>
+                  <p><b><i>Mapping: </i></b>CooperativeGroup
+                  </p>
+               </div>
+            </td>
+         </tr>
+         <tr>
+            <td height="3" colspan="10" style="font-size=4pt;"> </td>
+         </tr>
+         <tr class="hmd" valign="top">
+            <td bgcolor="lightblue"><b><a name="Organization2">Organization2</a></b></td>
+            <td>
+               <div style="height: 100%; width: 100%;">
+                  <p><b><i>Design Comments: </i></b>CooperativeGroup
+                  </p>
+                  <p><b><i>Mapping: </i></b>CooperativeGroup
+                  </p>
+               </div>
+            </td>
+         </tr>
+         <tr valign="top" class="ConfomanceR">
+            <td><b>classCode</b><font color="green"> [1..1]</font> (M)<br /><span style="margin-left:20pt"></span><a href="../../../infrastructure/rim/rim.html#Organization-cls">Organization</a> (<a href="../../../infrastructure/datatypes_r2/datatypes_r2.html#dt-CS">CS</a>) {CNE:C:<a href="../../../infrastructure/vocabulary/EntityClass.html"><b>EntityClass</b></a>:<a href="../../../infrastructure/vocabulary/EntityClass.html#ORG"><b>ORG</b></a>, fixed value= "ORG"}
+            </td>
+            <td>
+               <div style="height: 100%; width: 100%;"></div>
+            </td>
+         </tr>
+         <tr valign="top" class="ConfomanceR">
+            <td><b>determinerCode</b><font color="green"> [1..1]</font> (M)<br /><span style="margin-left:20pt"></span><a href="../../../infrastructure/rim/rim.html#Organization-cls">Organization</a> (<a href="../../../infrastructure/datatypes_r2/datatypes_r2.html#dt-CS">CS</a>) {CNE:C:<a href="../../../infrastructure/vocabulary/EntityDeterminer.html"><b>EntityDeterminer</b></a>:<a href="../../../infrastructure/vocabulary/EntityDeterminer.html#INSTANCE"><b>INSTANCE</b></a>, fixed value= "INSTANCE"}
+            </td>
+            <td>
+               <div style="height: 100%; width: 100%;"></div>
+            </td>
+         </tr>
+         <tr valign="top" class="Confomance">
+            <td bgcolor="lightgrey">asLicensedEntity<font color="green"> [0..*]</font><font color="gray"> (<a href="#LicensedEntity4">LicensedEntity4</a>)</font></td>
+            <td>
+               <div style="height: 100%; width: 100%;">
+                  <p><b><i>Mapping: </i></b>CooperativeGroup.credentialingOrganization[Organization](E_OrganizationUniversal)
+                  </p>
+                  <p><b><i>Mapping: </i></b>Organization(E_OrganizationUniversal).credentialedCooperativeGroup[CooperativeGroup]
+                  </p>
+               </div>
+            </td>
+         </tr>
+         <tr valign="top" class="Confomance">
+            <td bgcolor="lightgrey">member<font color="green"> [0..*]</font><font color="gray"> (<a href="#Member2">Member2</a>)</font></td>
+            <td>
+               <div style="height: 100%; width: 100%;"></div>
+            </td>
+         </tr>
+         <tr>
+            <td height="3" colspan="10" style="font-size=4pt;"> </td>
+         </tr>
+         <tr class="hmd" valign="top">
+            <td bgcolor="lightblue"><b><a name="LicensedEntity4">LicensedEntity4</a></b></td>
+            <td>
+               <div style="height: 100%; width: 100%;">
+                  <p><b><i>Mapping: </i></b>CooperativeGroup.credentialingOrganization[Organization](E_OrganizationUniversal)
+                  </p>
+                  <p><b><i>Mapping: </i></b>Organization(E_OrganizationUniversal).credentialedCooperativeGroup[CooperativeGroup]
+                  </p>
+               </div>
+            </td>
+         </tr>
+         <tr valign="top" class="ConfomanceR">
+            <td><b>classCode</b><font color="green"> [1..1]</font> (M)<br /><span style="margin-left:20pt"></span><a href="../../../infrastructure/rim/rim.html#LicensedEntity-cls">LicensedEntity</a> (<a href="../../../infrastructure/datatypes_r2/datatypes_r2.html#dt-CS">CS</a>) {CNE:C:<a href="../../../infrastructure/vocabulary/RoleClass.html"><b>RoleClass</b></a>:<a href="../../../infrastructure/vocabulary/RoleClass.html#LIC"><b>LIC</b></a>, fixed value= "LIC"}
+            </td>
+            <td>
+               <div style="height: 100%; width: 100%;"></div>
+            </td>
+         </tr>
+         <tr valign="top" class="Confomance">
+            <td bgcolor="lightgrey">subjectOrganization<font color="green"> [0..1]</font><font color="gray"> (<a href="#Organization2">Organization2</a>)</font></td>
+            <td>
+               <div style="height: 100%; width: 100%;"></div>
+            </td>
+         </tr>
+         <tr valign="top" class="Confomance">
+            <td bgcolor="lightgrey">issuingOrganization<font color="green"> [0..1]</font><font color="gray"> (<a href="../../ct/editable/COCT_MT150000US-NoEdit.html">E_OrganizationUniversal</a>)</font></td>
+            <td>
+               <div style="height: 100%; width: 100%;"></div>
+            </td>
+         </tr>
+         <tr>
+            <td height="3" colspan="10" style="font-size=4pt;"> </td>
+         </tr>
+         <tr class="hmd" valign="top">
+            <td bgcolor="lightblue"><b><a name="IndirectAuthorithyOver4">IndirectAuthorithyOver4</a></b></td>
+            <td>
+               <div style="height: 100%; width: 100%;">
+                  <p><b><i>Mapping: </i></b>ResearchStaff.staffedResearchOrganization[ResearchOrganization]
+                  </p>
+                  <p><b><i>Mapping: </i></b>ResearchOrganization.staffingResearchStaff[ResearchStaff]
+                  </p>
+               </div>
+            </td>
+         </tr>
+         <tr valign="top" class="ConfomanceR">
+            <td><b>typeCode</b><font color="green"> [1..1]</font> (M)<br /><span style="margin-left:20pt"></span><a href="../../../infrastructure/rim/rim.html#RoleLink-cls">RoleLink</a> (<a href="../../../infrastructure/datatypes_r2/datatypes_r2.html#dt-CS">CS</a>) {CNE:C:<a href="../../../infrastructure/vocabulary/RoleLinkType.html"><b>RoleLinkType</b></a>:<a href="../../../infrastructure/vocabulary/RoleLinkType.html#INDAUTH"><b>INDAUTH</b></a>, fixed value= "INDAUTH"}
+            </td>
+            <td>
+               <div style="height: 100%; width: 100%;"></div>
+            </td>
+         </tr>
+         <tr valign="top" class="Confomance">
+            <td bgcolor="lightgrey">clinicalResearchSponsor<font color="green"> [1..1]</font><font color="gray"> (<a href="#ClinicalResearchSponsor2">ClinicalResearchSponsor2</a>)</font></td>
+            <td>
+               <div style="height: 100%; width: 100%;"></div>
+            </td>
+         </tr>
+      </table>
+   </body>
+</html>

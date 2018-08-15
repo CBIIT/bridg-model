@@ -1,0 +1,620 @@
+<?xml version="1.0" encoding="iso-8859-1"?><!DOCTYPE html
+  PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+      <title>COCT_MT090100US - Hierarchical Message Description</title>
+      <meta name="Entry" content="Provider Details Query Response" />
+      <meta name="Identifier" content="COCT_MT090100US" /><style type="text/css">table {empty-cells: show}</style><script language="JavaScript1.2" type="text/javascript">
+
+var isNew=0;
+var isNS4=0;
+var isIE4=0;
+
+var brow=((navigator.appName) + (parseInt(navigator.appVersion)));
+
+//alert(brow);
+if (parseInt(navigator.appVersion)&gt;=5)
+{
+	isNew=1
+}
+else
+{
+	if(brow=="Netscape4")
+	{
+		isNS4=1;
+		document.captureEvents(Event.ONMOUSEOVER);
+	}
+	else
+	{
+		if(brow=="Microsoft Internet Explorer4")
+		{
+			isIE4=1;
+		}
+	}
+		
+}
+
+// thats ok
+
+
+if(isNS4||isIE4||isNew)
+{
+	docObj=(isNS4) ? 'document' : 'document.all';
+	
+	styleObj=(isNS4) ? ' ' : '.style';
+}
+
+function checkDOM(elementName)
+{
+	if(isNS4||isIE4||isNew)
+	{
+		dom=eval(docObj + '.' + elementName + styleObj);
+		//alert('This browser uses the ' + dom + 'Document Object Model.');
+		dom.left =0;
+		dom.top =0;
+	}
+}
+
+function popUp(evt,currElem)
+{
+
+	if((isNS4 &amp;&amp; currElem !=0) || (isIE4 &amp;&amp; currElem !=0))
+	{
+		dom =eval(docObj +'.' +currElem+styleObj);
+		state=dom.visibility;
+		if ((state == "visible") || (state=="show"))
+		{
+			dom.visibility="hidden";
+		}
+		else
+		{
+			if(isNS4)
+			{
+				topVal=eval(evt.pageY);
+				leftVal=eval(evt.pageX);
+				/*if(((document.body.scrollLeft+document.body.clientWidth)-leftVal)&lt; 150)
+				{
+					leftVal=(document.body.clientWidth+document.body.scrollLeft-151);
+				}
+				if(((document.body.scrollTop+document.body.clientHeight)-topVal)&lt; 30)
+				{
+					topVal=(document.body.clientHeight+document.body.scrollTop-80);
+				}*/
+
+			}
+			if(isIE4)
+			{
+				topVal=eval(event.clientY)  + document.body.scrollTop+20;
+				leftVal=eval(event.clientX) + document.body.scrollLeft;
+				
+				if(((document.body.scrollLeft+document.body.clientWidth)-leftVal)&lt; 150)
+				{
+					leftVal=(document.body.clientWidth+document.body.scrollLeft-151);
+				}
+				if(((document.body.scrollTop+document.body.clientHeight)-topVal)&lt; 30)
+				{
+					topVal=(document.body.clientHeight+document.body.scrollTop-80);
+				}
+			}
+			if(leftVal &lt; 2)
+			{
+				leftVal=2;
+			}
+			dom.top=topVal;
+			dom.left=leftVal;
+			dom.visibility="visible";
+		}
+	}
+}
+</script><style type="text/css">
+#ds
+{
+	position: absolute;
+	visibility: hidden;
+	z-index: 100;
+	top: 10px;
+	left: 10px;
+}
+#cwe
+{
+	position: absolute;
+	visibility: hidden;
+	z-index: 100;
+	top: 10px;
+	left: 10px;
+}
+
+#cne
+{
+	position: absolute;
+	visibility: hidden;
+	z-index: 100;
+	top: 10px;
+	left: 10px;
+}
+
+.hypertext
+{
+position: absolute;
+	background-color: white;
+	layer-background-colour: cornflowerblue;
+	padding: 3px;
+	border: 3px solid blue;
+	width: 150px;
+	font:normal 10pt/13pt helvetica, sans-serif;
+	text-align: left;
+	color: blue;
+
+	
+}
+td {font-family: verdana,arial; text-align: left; font-size: 8pt;border-style:solid;border-width=1pt;}
+				</style></head>
+   <body onload="checkDOM('ds')"><span id="ds" class="hypertext">No Current Link To Vocabulary</span><span id="cwe" class="hypertext">Coded With Extensions</span><span id="cne" class="hypertext">Coded No Extensions</span><table border="3" frame="vsides" rules="cols" cellpadding="2" cellspacing="0"
+             style="border-width: 2px;border-style: solid">
+         <tr valign="top">
+            <td height="35"><b><font size="+1">COCT_MT090100US</font><br /></b></td>
+            <td height="35" class="lightBoundary"><br />Derived from RMIM: <a href="_.html">_</a> and HMD: <a href="_-NoEdit.html">_</a></td>
+         </tr>
+         <tr>
+            <td height="3" colspan="10" style="font-size=4pt;"> </td>
+         </tr>
+         <tr class="hmd" valign="top">
+            <td bgcolor="lightblue"><b><a name="AssignedEntity">AssignedEntity</a></b></td>
+            <td>
+               <div style="height: 100%; width: 100%;">
+                  <p><b><i>Design Comments: </i></b>HealthcareProvider
+                  </p>
+                  <p><b><i>Mapping: </i></b>HealthcareProvider
+                  </p>
+                  <p><b><i>Mapping: </i></b>HealthcareProvider.performingPerson[Person]
+                  </p>
+                  <p><b><i>Mapping: </i></b>Person.performedHealthcareProvider[HealthcareProvider]
+                  </p>
+                  <p><b><i>Mapping: </i></b>HealthcareProvider.employingOrganization[Organization](E_OrganizationUniversal)
+                  </p>
+                  <p><b><i>Mapping: </i></b>Organization(E_OrganizationUniversal).employedHealthcareProvider[HealthcareProvider]
+                  </p>
+               </div>
+            </td>
+         </tr>
+         <tr valign="top" class="ConfomanceR">
+            <td><b>classCode</b><font color="green"> [1..1]</font> (M)<br /><span style="margin-left:20pt"></span><a href="../../../infrastructure/rim/rim.html#Role-cls">Role</a> (<a href="../../../infrastructure/datatypes_r2/datatypes_r2.html#dt-CS">CS</a>) {CNE:C:<a href="../../../infrastructure/vocabulary/RoleClass.html"><b>RoleClass</b></a>:<a href="../../../infrastructure/vocabulary/RoleClass.html#ASSIGNED"><b>ASSIGNED</b></a>, fixed value= "ASSIGNED"}
+            </td>
+            <td>
+               <div style="height: 100%; width: 100%;"></div>
+            </td>
+         </tr>
+         <tr valign="top" class="Confomance">
+            <td>id<font color="green"> [0..1]</font><br /><span style="margin-left:20pt"></span><a href="../../../infrastructure/rim/rim.html#Role-cls">Role</a> (<a href="../../../infrastructure/datatypes_r2/datatypes_r2.html#dt-II">II</a>)
+            </td>
+            <td>
+               <div style="height: 100%; width: 100%;">
+                  <p><b><i>Mapping: </i></b>HealthcareProvider.identifier
+                  </p>
+               </div>
+            </td>
+         </tr>
+         <tr valign="top" class="Confomance">
+            <td>addr<font color="green"> [0..1]</font><br /><span style="margin-left:20pt"></span><a href="../../../infrastructure/rim/rim.html#Role-cls">Role</a> (<a href="../../../infrastructure/datatypes_r2/datatypes_r2.html#dt-AD">AD</a>)
+            </td>
+            <td>
+               <div style="height: 100%; width: 100%;">
+                  <p><b><i>Mapping: </i></b>HealthcareProvider.postalAddress
+                  </p>
+               </div>
+            </td>
+         </tr>
+         <tr valign="top" class="Confomance">
+            <td>telecom<font color="green"> [0..*]</font><br /><span style="margin-left:20pt"></span><a href="../../../infrastructure/rim/rim.html#Role-cls">Role</a> (<a href="../../../infrastructure/datatypes_r2/datatypes_r2.html#dt-BAG">BAG</a>&lt;<a href="../../../infrastructure/datatypes_r2/datatypes_r2.html#dt-TEL">TEL</a>&gt;)
+            </td>
+            <td>
+               <div style="height: 100%; width: 100%;">
+                  <p><b><i>Mapping: </i></b>HealthcareProvider.telecomAddress
+                  </p>
+               </div>
+            </td>
+         </tr>
+         <tr valign="top" class="Confomance">
+            <td>effectiveTime<font color="green"> [0..1]</font><br /><span style="margin-left:20pt"></span><a href="../../../infrastructure/rim/rim.html#Role-cls">Role</a> (<a href="../../../infrastructure/datatypes_r2/datatypes_r2.html#dt-IVL">IVL</a>&lt;<a href="../../../infrastructure/datatypes_r2/datatypes_r2.html#dt-TS.DATETIME">TS.DATETIME</a>&gt;)
+            </td>
+            <td>
+               <div style="height: 100%; width: 100%;">
+                  <p><b><i>Mapping: </i></b>HealthcareProvider.effectiveDateRange
+                  </p>
+               </div>
+            </td>
+         </tr>
+         <tr valign="top" class="Confomance">
+            <td bgcolor="lightgrey">assignedPerson<font color="green"> [1..1]</font><font color="gray"> (<a href="#Person">Person</a>)</font></td>
+            <td>
+               <div style="height: 100%; width: 100%;">
+                  <p><b><i>Design Comments: </i></b>Person
+                  </p>
+                  <p><b><i>Mapping: </i></b>Person
+                  </p>
+               </div>
+            </td>
+         </tr>
+         <tr valign="top" class="Confomance">
+            <td bgcolor="lightgrey">representedOrganization<font color="green"> [0..1]</font><font color="gray"> (<a href="../../ct/editable/COCT_MT150000US-NoEdit.html">E_OrganizationUniversal</a>)</font></td>
+            <td>
+               <div style="height: 100%; width: 100%;"></div>
+            </td>
+         </tr>
+         <tr valign="top" class="Confomance">
+            <td bgcolor="lightgrey">partOf<font color="green"> [0..*]</font><font color="gray"> (<a href="#Part">Part</a>)</font></td>
+            <td>
+               <div style="height: 100%; width: 100%;">
+                  <p><b><i>Design Comments: </i></b>HealthcareProviderGroupMember
+                  </p>
+                  <p><b><i>Mapping: </i></b>HealthcareProviderGroupMember
+                  </p>
+                  <p><b><i>Mapping: </i></b>HealthcareProvider(AssignedEntity).performedHealthcareProviderGroupMember[HealthcareProviderGroupMember]
+                  </p>
+                  <p><b><i>Mapping: </i></b>HealthcareProviderGroup(HealthCareProvider2).groupedHealthcareProviderGroupMember[HealthcareProviderGroupMember]
+                  </p>
+                  <p><b><i>Mapping: </i></b>HealthcareProviderGroupMember.groupingHealthcareProviderGroup[HealthcareProviderGroup](HealthCareProvider2)
+                  </p>
+                  <p><b><i>Mapping: </i></b>HealthcareProviderGroupMember.performingHealthcareProvider[HealthcareProvider](AssignedEntity)
+                  </p>
+               </div>
+            </td>
+         </tr>
+         <tr>
+            <td height="3" colspan="10" style="font-size=4pt;"> </td>
+         </tr>
+         <tr class="hmd" valign="top">
+            <td bgcolor="lightblue"><b><a name="Person">Person</a></b></td>
+            <td>
+               <div style="height: 100%; width: 100%;">
+                  <p><b><i>Design Comments: </i></b>Person
+                  </p>
+                  <p><b><i>Mapping: </i></b>Person
+                  </p>
+               </div>
+            </td>
+         </tr>
+         <tr valign="top" class="ConfomanceR">
+            <td><b>classCode</b><font color="green"> [1..1]</font> (M)<br /><span style="margin-left:20pt"></span><a href="../../../infrastructure/rim/rim.html#Person-cls">Person</a> (<a href="../../../infrastructure/datatypes_r2/datatypes_r2.html#dt-CS">CS</a>) {CNE:C:<a href="../../../infrastructure/vocabulary/EntityClass.html"><b>EntityClass</b></a>:<a href="../../../infrastructure/vocabulary/EntityClass.html#PSN"><b>PSN</b></a>, fixed value= "PSN"}
+            </td>
+            <td>
+               <div style="height: 100%; width: 100%;"></div>
+            </td>
+         </tr>
+         <tr valign="top" class="ConfomanceR">
+            <td><b>determinerCode</b><font color="green"> [1..1]</font> (M)<br /><span style="margin-left:20pt"></span><a href="../../../infrastructure/rim/rim.html#Person-cls">Person</a> (<a href="../../../infrastructure/datatypes_r2/datatypes_r2.html#dt-CS">CS</a>) {CNE:V:<a href="../../../infrastructure/vocabulary/vs_EntityDeterminer.html#EntityDeterminer"><b>EntityDeterminer</b></a>}
+            </td>
+            <td>
+               <div style="height: 100%; width: 100%;">
+                  <p><b><i>UsageNotes: </i></b>If true = INSTANCE, if false = KIND
+                  </p>
+                  <p><b><i>Mapping: </i></b>BiologicEntity.actualIndicator (true if INSTANCE)
+                  </p>
+               </div>
+            </td>
+         </tr>
+         <tr valign="top" class="Confomance">
+            <td>name<font color="green"> [0..*]</font><br /><span style="margin-left:20pt"></span><a href="../../../infrastructure/rim/rim.html#Person-cls">Person</a> (<a href="../../../infrastructure/datatypes_r2/datatypes_r2.html#dt-DSET">DSET</a>&lt;<a href="../../../infrastructure/datatypes_r2/datatypes_r2.html#dt-EN">EN</a>&gt;)
+            </td>
+            <td>
+               <div style="height: 100%; width: 100%;">
+                  <p><b><i>UsageNotes: </i></b>Maps to BiologicEntity.name when at least one of the name part qualifiers is not "IN" (Initial). Maps to Person.initials when
+                     all name part qualifiers are "IN". (Can only have 1 set of initials)
+                  </p>
+                  <p><b><i>Mapping: </i></b>BiologicEntity.name
+                  </p>
+                  <p><b><i>Mapping: </i></b>Person.initials
+                  </p>
+               </div>
+            </td>
+         </tr>
+         <tr valign="top" class="Confomance">
+            <td>telecom<font color="green"> [0..*]</font><br /><span style="margin-left:20pt"></span><a href="../../../infrastructure/rim/rim.html#Person-cls">Person</a> (<a href="../../../infrastructure/datatypes_r2/datatypes_r2.html#dt-BAG">BAG</a>&lt;<a href="../../../infrastructure/datatypes_r2/datatypes_r2.html#dt-TEL">TEL</a>&gt;)
+            </td>
+            <td>
+               <div style="height: 100%; width: 100%;">
+                  <p><b><i>Mapping: </i></b>Person.telecomAddress
+                  </p>
+               </div>
+            </td>
+         </tr>
+         <tr valign="top" class="Confomance">
+            <td>administrativeGenderCode<font color="green"> [0..1]</font><br /><span style="margin-left:20pt"></span><a href="../../../infrastructure/rim/rim.html#Person-cls">Person</a> (<a href="../../../infrastructure/datatypes_r2/datatypes_r2.html#dt-CD">CD</a>) {CWE:D:<a href="../../../infrastructure/vocabulary/voc_ConceptDomains.html#AdministrativeGender"><b>AdministrativeGender</b></a>}
+            </td>
+            <td>
+               <div style="height: 100%; width: 100%;">
+                  <p><b><i>Mapping: </i></b>BiologicEntity.administrativeGenderCode
+                  </p>
+               </div>
+            </td>
+         </tr>
+         <tr valign="top" class="Confomance">
+            <td>birthTime<font color="green"> [0..1]</font><br /><span style="margin-left:20pt"></span><a href="../../../infrastructure/rim/rim.html#Person-cls">Person</a> (<a href="../../../infrastructure/datatypes_r2/datatypes_r2.html#dt-TS.DATETIME">TS.DATETIME</a>)
+            </td>
+            <td>
+               <div style="height: 100%; width: 100%;">
+                  <p><b><i>Mapping: </i></b>BiologicEntity.birthDate
+                  </p>
+               </div>
+            </td>
+         </tr>
+         <tr valign="top" class="Confomance">
+            <td>deceasedInd<font color="green"> [0..1]</font><br /><span style="margin-left:20pt"></span><a href="../../../infrastructure/rim/rim.html#Person-cls">Person</a> (<a href="../../../infrastructure/datatypes_r2/datatypes_r2.html#dt-BL">BL</a>)
+            </td>
+            <td>
+               <div style="height: 100%; width: 100%;">
+                  <p><b><i>Mapping: </i></b>BiologicEntity.deathIndicator
+                  </p>
+               </div>
+            </td>
+         </tr>
+         <tr valign="top" class="Confomance">
+            <td>deceasedTime<font color="green"> [0..1]</font><br /><span style="margin-left:20pt"></span><a href="../../../infrastructure/rim/rim.html#Person-cls">Person</a> (<a href="../../../infrastructure/datatypes_r2/datatypes_r2.html#dt-TS.DATETIME">TS.DATETIME</a>)
+            </td>
+            <td>
+               <div style="height: 100%; width: 100%;">
+                  <p><b><i>Mapping: </i></b>BiologicEntity.deathDate
+                  </p>
+               </div>
+            </td>
+         </tr>
+         <tr valign="top" class="Confomance">
+            <td>multipleBirthOrderNumber<font color="green"> [0..1]</font><br /><span style="margin-left:20pt"></span><a href="../../../infrastructure/rim/rim.html#Person-cls">Person</a> (<a href="../../../infrastructure/datatypes_r2/datatypes_r2.html#dt-INT.POS">INT.POS</a>)
+            </td>
+            <td>
+               <div style="height: 100%; width: 100%;">
+                  <p><b><i>Mapping: </i></b>BiologicEntity.birthOrder
+                  </p>
+               </div>
+            </td>
+         </tr>
+         <tr valign="top" class="Confomance">
+            <td>addr<font color="green"> [0..1]</font><br /><span style="margin-left:20pt"></span><a href="../../../infrastructure/rim/rim.html#Person-cls">Person</a> (<a href="../../../infrastructure/datatypes_r2/datatypes_r2.html#dt-AD">AD</a>)
+            </td>
+            <td>
+               <div style="height: 100%; width: 100%;">
+                  <p><b><i>UsageNotes: </i></b>Note this can be postal *or* physical address
+                  </p>
+                  <p><b><i>Mapping: </i></b>Person.postalAddress
+                  </p>
+               </div>
+            </td>
+         </tr>
+         <tr valign="top" class="Confomance">
+            <td>maritalStatusCode<font color="green"> [0..1]</font><br /><span style="margin-left:20pt"></span><a href="../../../infrastructure/rim/rim.html#Person-cls">Person</a> (<a href="../../../infrastructure/datatypes_r2/datatypes_r2.html#dt-CD">CD</a>) {CNE:D:<a href="../../../infrastructure/vocabulary/voc_ConceptDomains.html#MaritalStatus"><b>MaritalStatus</b></a>}
+            </td>
+            <td>
+               <div style="height: 100%; width: 100%;">
+                  <p><b><i>Mapping: </i></b>Person.maritalStatusCode
+                  </p>
+               </div>
+            </td>
+         </tr>
+         <tr valign="top" class="Confomance">
+            <td>educationLevelCode<font color="green"> [0..1]</font><br /><span style="margin-left:20pt"></span><a href="../../../infrastructure/rim/rim.html#Person-cls">Person</a> (<a href="../../../infrastructure/datatypes_r2/datatypes_r2.html#dt-CD">CD</a>) {CNE:D:<a href="../../../infrastructure/vocabulary/voc_ConceptDomains.html#EducationLevel"><b>EducationLevel</b></a>}
+            </td>
+            <td>
+               <div style="height: 100%; width: 100%;">
+                  <p><b><i>Mapping: </i></b>Person.educationLevelCode
+                  </p>
+               </div>
+            </td>
+         </tr>
+         <tr valign="top" class="Confomance">
+            <td>raceCode<font color="green"> [0..*]</font><br /><span style="margin-left:20pt"></span><a href="../../../infrastructure/rim/rim.html#Person-cls">Person</a> (<a href="../../../infrastructure/datatypes_r2/datatypes_r2.html#dt-DSET">DSET</a>&lt;<a href="../../../infrastructure/datatypes_r2/datatypes_r2.html#dt-CD">CD</a>&gt;) {CNE:D:<a href="../../../infrastructure/vocabulary/voc_ConceptDomains.html#Race"><b>Race</b></a>}
+            </td>
+            <td>
+               <div style="height: 100%; width: 100%;">
+                  <p><b><i>Mapping: </i></b>Person.raceCode
+                  </p>
+               </div>
+            </td>
+         </tr>
+         <tr valign="top" class="Confomance">
+            <td>ethnicGroupCode<font color="green"> [0..*]</font><br /><span style="margin-left:20pt"></span><a href="../../../infrastructure/rim/rim.html#Person-cls">Person</a> (<a href="../../../infrastructure/datatypes_r2/datatypes_r2.html#dt-DSET">DSET</a>&lt;<a href="../../../infrastructure/datatypes_r2/datatypes_r2.html#dt-CD">CD</a>&gt;) {CNE:D:<a href="../../../infrastructure/vocabulary/voc_ConceptDomains.html#Ethnicity"><b>Ethnicity</b></a>}
+            </td>
+            <td>
+               <div style="height: 100%; width: 100%;">
+                  <p><b><i>Mapping: </i></b>Person.ethnicGroupCode
+                  </p>
+               </div>
+            </td>
+         </tr>
+         <tr valign="top" class="Confomance">
+            <td bgcolor="lightgrey">asEmployee<font color="green"> [0..*]</font><font color="gray"> (<a href="#Employee">Employee</a>)</font></td>
+            <td>
+               <div style="height: 100%; width: 100%;"></div>
+            </td>
+         </tr>
+         <tr>
+            <td height="3" colspan="10" style="font-size=4pt;"> </td>
+         </tr>
+         <tr class="hmd" valign="top">
+            <td bgcolor="lightblue"><b><a name="Employee">Employee</a></b></td>
+            <td>
+               <div style="height: 100%; width: 100%;"></div>
+            </td>
+         </tr>
+         <tr valign="top" class="ConfomanceR">
+            <td><b>classCode</b><font color="green"> [1..1]</font> (M)<br /><span style="margin-left:20pt"></span><a href="../../../infrastructure/rim/rim.html#Employee-cls">Employee</a> (<a href="../../../infrastructure/datatypes_r2/datatypes_r2.html#dt-CS">CS</a>) {CNE:C:<a href="../../../infrastructure/vocabulary/RoleClass.html"><b>RoleClass</b></a>:<a href="../../../infrastructure/vocabulary/RoleClass.html#EMP"><b>EMP</b></a>, fixed value= "EMP"}
+            </td>
+            <td>
+               <div style="height: 100%; width: 100%;"></div>
+            </td>
+         </tr>
+         <tr valign="top" class="Confomance">
+            <td>code<font color="green"> [0..1]</font><br /><span style="margin-left:20pt"></span><a href="../../../infrastructure/rim/rim.html#Employee-cls">Employee</a> (<a href="../../../infrastructure/datatypes_r2/datatypes_r2.html#dt-CD">CD</a>) {CNE:D:<a href="../../../infrastructure/vocabulary/voc_ConceptDomains.html#EmployeeOccupationCode"><b>EmployeeOccupationCode</b></a>}
+            </td>
+            <td>
+               <div style="height: 100%; width: 100%;">
+                  <p><b><i>Mapping: </i></b>Person.primaryOccupationCode
+                  </p>
+               </div>
+            </td>
+         </tr>
+         <tr valign="top" class="Confomance">
+            <td>effectiveTime<font color="green"> [0..1]</font><br /><span style="margin-left:20pt"></span><a href="../../../infrastructure/rim/rim.html#Employee-cls">Employee</a> (<a href="../../../infrastructure/datatypes_r2/datatypes_r2.html#dt-IVL">IVL</a>&lt;<a href="../../../infrastructure/datatypes_r2/datatypes_r2.html#dt-TS.DATE">TS.DATE</a>&gt;)
+            </td>
+            <td>
+               <div style="height: 100%; width: 100%;">
+                  <p><b><i>Mapping: </i></b>Person.occupationDateRange
+                  </p>
+               </div>
+            </td>
+         </tr>
+         <tr valign="top" class="ConfomanceR">
+            <td><b>priorityNumber</b><font color="green"> [1..1]</font> (M)<br /><span style="margin-left:20pt"></span><a href="../../../infrastructure/rim/rim.html#Employee-cls">Employee</a> (<a href="../../../infrastructure/datatypes_r2/datatypes_r2.html#dt-INT.POS">INT.POS</a>){fixed value= "1"}
+            </td>
+            <td>
+               <div style="height: 100%; width: 100%;"></div>
+            </td>
+         </tr>
+         <tr>
+            <td height="3" colspan="10" style="font-size=4pt;"> </td>
+         </tr>
+         <tr class="hmd" valign="top">
+            <td bgcolor="lightblue"><b><a name="Part">Part</a></b></td>
+            <td>
+               <div style="height: 100%; width: 100%;">
+                  <p><b><i>Design Comments: </i></b>HealthcareProviderGroupMember
+                  </p>
+                  <p><b><i>Mapping: </i></b>HealthcareProviderGroupMember
+                  </p>
+                  <p><b><i>Mapping: </i></b>HealthcareProvider(AssignedEntity).performedHealthcareProviderGroupMember[HealthcareProviderGroupMember]
+                  </p>
+                  <p><b><i>Mapping: </i></b>HealthcareProviderGroup(HealthCareProvider2).groupedHealthcareProviderGroupMember[HealthcareProviderGroupMember]
+                  </p>
+                  <p><b><i>Mapping: </i></b>HealthcareProviderGroupMember.groupingHealthcareProviderGroup[HealthcareProviderGroup](HealthCareProvider2)
+                  </p>
+                  <p><b><i>Mapping: </i></b>HealthcareProviderGroupMember.performingHealthcareProvider[HealthcareProvider](AssignedEntity)
+                  </p>
+               </div>
+            </td>
+         </tr>
+         <tr valign="top" class="ConfomanceR">
+            <td><b>typeCode</b><font color="green"> [1..1]</font> (M)<br /><span style="margin-left:20pt"></span><a href="../../../infrastructure/rim/rim.html#RoleLink-cls">RoleLink</a> (<a href="../../../infrastructure/datatypes_r2/datatypes_r2.html#dt-CS">CS</a>) {CNE:C:<a href="../../../infrastructure/vocabulary/RoleLinkType.html"><b>RoleLinkType</b></a>:<a href="../../../infrastructure/vocabulary/RoleLinkType.html#PART"><b>PART</b></a>, fixed value= "PART"}
+            </td>
+            <td>
+               <div style="height: 100%; width: 100%;"></div>
+            </td>
+         </tr>
+         <tr valign="top" class="Confomance">
+            <td>effectiveTime<font color="green"> [0..1]</font><br /><span style="margin-left:20pt"></span><a href="../../../infrastructure/rim/rim.html#RoleLink-cls">RoleLink</a> (<a href="../../../infrastructure/datatypes_r2/datatypes_r2.html#dt-IVL">IVL</a>&lt;<a href="../../../infrastructure/datatypes_r2/datatypes_r2.html#dt-TS.DATETIME">TS.DATETIME</a>&gt;)
+            </td>
+            <td>
+               <div style="height: 100%; width: 100%;">
+                  <p><b><i>Mapping: </i></b>HealthcareProviderGroupMember.effectiveDateRange
+                  </p>
+               </div>
+            </td>
+         </tr>
+         <tr valign="top" class="Confomance">
+            <td bgcolor="lightgrey">healthCareProvider<font color="green"> [1..1]</font><font color="gray"> (<a href="#HealthCareProvider2">HealthCareProvider2</a>)</font></td>
+            <td>
+               <div style="height: 100%; width: 100%;">
+                  <p><b><i>Design Comments: </i></b>HealthcareProviderGroup
+                  </p>
+                  <p><b><i>Mapping: </i></b>HealthcareProviderGroup
+                  </p>
+                  <p><b><i>Mapping: </i></b>HealthcareProviderGroup.performingOrganization[Organization](E_OrganizationUniversal)
+                  </p>
+                  <p><b><i>Mapping: </i></b>Organization(E_OrganizationUniversal).performedHealthcareProviderGroup[HealthcareProviderGroup]
+                  </p>
+               </div>
+            </td>
+         </tr>
+         <tr valign="top" class="Confomance">
+            <td bgcolor="lightgrey">assignedEntity<font color="green"> [1..1]</font><font color="gray"> (<a href="#AssignedEntity">AssignedEntity</a>)</font></td>
+            <td>
+               <div style="height: 100%; width: 100%;"></div>
+            </td>
+         </tr>
+         <tr>
+            <td height="3" colspan="10" style="font-size=4pt;"> </td>
+         </tr>
+         <tr class="hmd" valign="top">
+            <td bgcolor="lightblue"><b><a name="HealthCareProvider2">HealthCareProvider2</a></b></td>
+            <td>
+               <div style="height: 100%; width: 100%;">
+                  <p><b><i>Design Comments: </i></b>HealthcareProviderGroup
+                  </p>
+                  <p><b><i>Mapping: </i></b>HealthcareProviderGroup
+                  </p>
+                  <p><b><i>Mapping: </i></b>HealthcareProviderGroup.performingOrganization[Organization](E_OrganizationUniversal)
+                  </p>
+                  <p><b><i>Mapping: </i></b>Organization(E_OrganizationUniversal).performedHealthcareProviderGroup[HealthcareProviderGroup]
+                  </p>
+               </div>
+            </td>
+         </tr>
+         <tr valign="top" class="ConfomanceR">
+            <td><b>classCode</b><font color="green"> [1..1]</font> (M)<br /><span style="margin-left:20pt"></span><a href="../../../infrastructure/rim/rim.html#LicensedEntity-cls">LicensedEntity</a> (<a href="../../../infrastructure/datatypes_r2/datatypes_r2.html#dt-CS">CS</a>) {CNE:C:<a href="../../../infrastructure/vocabulary/RoleClass.html"><b>RoleClass</b></a>:<a href="../../../infrastructure/vocabulary/RoleClass.html#PROV"><b>PROV</b></a>, fixed value= "PROV"}
+            </td>
+            <td>
+               <div style="height: 100%; width: 100%;"></div>
+            </td>
+         </tr>
+         <tr valign="top" class="Confomance">
+            <td>effectiveTime<font color="green"> [0..1]</font><br /><span style="margin-left:20pt"></span><a href="../../../infrastructure/rim/rim.html#LicensedEntity-cls">LicensedEntity</a> (<a href="../../../infrastructure/datatypes_r2/datatypes_r2.html#dt-IVL">IVL</a>&lt;<a href="../../../infrastructure/datatypes_r2/datatypes_r2.html#dt-TS.DATETIME">TS.DATETIME</a>&gt;)
+            </td>
+            <td>
+               <div style="height: 100%; width: 100%;">
+                  <p><b><i>Mapping: </i></b>HealthcareProviderGroup.effectiveDateRange
+                  </p>
+               </div>
+            </td>
+         </tr>
+         <tr valign="top" class="ConfomanceR">
+            <td bgcolor="lightgrey"><b>healthCareOrganization<font color="green"> [1..1]</font><font color="gray"> (<a href="../../ct/editable/COCT_MT150000US-NoEdit.html">E_OrganizationUniversal</a>)</font></b></td>
+            <td>
+               <div style="height: 100%; width: 100%;"></div>
+            </td>
+         </tr>
+         <tr valign="top" class="Confomance">
+            <td bgcolor="lightgrey">part<font color="green"> [0..*]</font><font color="gray"> (<a href="#Part">Part</a>)</font></td>
+            <td>
+               <div style="height: 100%; width: 100%;"></div>
+            </td>
+         </tr>
+         <tr valign="top" class="ConfomanceR">
+            <td bgcolor="lightgrey"><b>directAuthority<font color="green"> [1..1]</font><font color="gray"> (<a href="#DirectAuthorityOver">DirectAuthorityOver</a>)</font></b></td>
+            <td>
+               <div style="height: 100%; width: 100%;">
+                  <p><b><i>Mapping: </i></b>HealthcareFacility(R_ServiceDeliveryLocationUniversal).usedHealthcareProviderGroup[HealthcareProviderGroup]
+                  </p>
+                  <p><b><i>Mapping: </i></b>HealthcareProviderGroup.usingHealthcareFacility[HealthcareFacility](R_ServiceDeliveryLocationUniversal)
+                  </p>
+               </div>
+            </td>
+         </tr>
+         <tr>
+            <td height="3" colspan="10" style="font-size=4pt;"> </td>
+         </tr>
+         <tr class="hmd" valign="top">
+            <td bgcolor="lightblue"><b><a name="DirectAuthorityOver">DirectAuthorityOver</a></b></td>
+            <td>
+               <div style="height: 100%; width: 100%;">
+                  <p><b><i>Mapping: </i></b>HealthcareFacility(R_ServiceDeliveryLocationUniversal).usedHealthcareProviderGroup[HealthcareProviderGroup]
+                  </p>
+                  <p><b><i>Mapping: </i></b>HealthcareProviderGroup.usingHealthcareFacility[HealthcareFacility](R_ServiceDeliveryLocationUniversal)
+                  </p>
+               </div>
+            </td>
+         </tr>
+         <tr valign="top" class="ConfomanceR">
+            <td><b>typeCode</b><font color="green"> [1..1]</font> (M)<br /><span style="margin-left:20pt"></span><a href="../../../infrastructure/rim/rim.html#RoleLink-cls">RoleLink</a> (<a href="../../../infrastructure/datatypes_r2/datatypes_r2.html#dt-CS">CS</a>) {CNE:C:<a href="../../../infrastructure/vocabulary/RoleLinkType.html"><b>RoleLinkType</b></a>:<a href="../../../infrastructure/vocabulary/RoleLinkType.html#DIRAUTH"><b>DIRAUTH</b></a>, fixed value= "DIRAUTH"}
+            </td>
+            <td>
+               <div style="height: 100%; width: 100%;"></div>
+            </td>
+         </tr>
+         <tr valign="top" class="ConfomanceR">
+            <td bgcolor="lightgrey"><b>dedicatedServiceDeliveryLocation<font color="green"> [1..1]</font><font color="gray"> (<a href="../../ct/editable/COCT_MT240000US-NoEdit.html">R_ServiceDeliveryLocationUniversal</a>)</font></b></td>
+            <td>
+               <div style="height: 100%; width: 100%;"></div>
+            </td>
+         </tr>
+      </table>
+   </body>
+</html>

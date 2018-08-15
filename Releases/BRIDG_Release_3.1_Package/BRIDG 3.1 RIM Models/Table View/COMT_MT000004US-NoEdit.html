@@ -1,0 +1,651 @@
+<?xml version="1.0" encoding="iso-8859-1"?><!DOCTYPE html
+  PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+      <title>COMT_MT000004US - Hierarchical Message Description</title>
+      <meta name="Entry" content="Provider Details Query Response" />
+      <meta name="Identifier" content="COMT_MT000004US" /><style type="text/css">table {empty-cells: show}</style><script language="JavaScript1.2" type="text/javascript">
+
+var isNew=0;
+var isNS4=0;
+var isIE4=0;
+
+var brow=((navigator.appName) + (parseInt(navigator.appVersion)));
+
+//alert(brow);
+if (parseInt(navigator.appVersion)&gt;=5)
+{
+	isNew=1
+}
+else
+{
+	if(brow=="Netscape4")
+	{
+		isNS4=1;
+		document.captureEvents(Event.ONMOUSEOVER);
+	}
+	else
+	{
+		if(brow=="Microsoft Internet Explorer4")
+		{
+			isIE4=1;
+		}
+	}
+		
+}
+
+// thats ok
+
+
+if(isNS4||isIE4||isNew)
+{
+	docObj=(isNS4) ? 'document' : 'document.all';
+	
+	styleObj=(isNS4) ? ' ' : '.style';
+}
+
+function checkDOM(elementName)
+{
+	if(isNS4||isIE4||isNew)
+	{
+		dom=eval(docObj + '.' + elementName + styleObj);
+		//alert('This browser uses the ' + dom + 'Document Object Model.');
+		dom.left =0;
+		dom.top =0;
+	}
+}
+
+function popUp(evt,currElem)
+{
+
+	if((isNS4 &amp;&amp; currElem !=0) || (isIE4 &amp;&amp; currElem !=0))
+	{
+		dom =eval(docObj +'.' +currElem+styleObj);
+		state=dom.visibility;
+		if ((state == "visible") || (state=="show"))
+		{
+			dom.visibility="hidden";
+		}
+		else
+		{
+			if(isNS4)
+			{
+				topVal=eval(evt.pageY);
+				leftVal=eval(evt.pageX);
+				/*if(((document.body.scrollLeft+document.body.clientWidth)-leftVal)&lt; 150)
+				{
+					leftVal=(document.body.clientWidth+document.body.scrollLeft-151);
+				}
+				if(((document.body.scrollTop+document.body.clientHeight)-topVal)&lt; 30)
+				{
+					topVal=(document.body.clientHeight+document.body.scrollTop-80);
+				}*/
+
+			}
+			if(isIE4)
+			{
+				topVal=eval(event.clientY)  + document.body.scrollTop+20;
+				leftVal=eval(event.clientX) + document.body.scrollLeft;
+				
+				if(((document.body.scrollLeft+document.body.clientWidth)-leftVal)&lt; 150)
+				{
+					leftVal=(document.body.clientWidth+document.body.scrollLeft-151);
+				}
+				if(((document.body.scrollTop+document.body.clientHeight)-topVal)&lt; 30)
+				{
+					topVal=(document.body.clientHeight+document.body.scrollTop-80);
+				}
+			}
+			if(leftVal &lt; 2)
+			{
+				leftVal=2;
+			}
+			dom.top=topVal;
+			dom.left=leftVal;
+			dom.visibility="visible";
+		}
+	}
+}
+</script><style type="text/css">
+#ds
+{
+	position: absolute;
+	visibility: hidden;
+	z-index: 100;
+	top: 10px;
+	left: 10px;
+}
+#cwe
+{
+	position: absolute;
+	visibility: hidden;
+	z-index: 100;
+	top: 10px;
+	left: 10px;
+}
+
+#cne
+{
+	position: absolute;
+	visibility: hidden;
+	z-index: 100;
+	top: 10px;
+	left: 10px;
+}
+
+.hypertext
+{
+position: absolute;
+	background-color: white;
+	layer-background-colour: cornflowerblue;
+	padding: 3px;
+	border: 3px solid blue;
+	width: 150px;
+	font:normal 10pt/13pt helvetica, sans-serif;
+	text-align: left;
+	color: blue;
+
+	
+}
+td {font-family: verdana,arial; text-align: left; font-size: 8pt;border-style:solid;border-width=1pt;}
+				</style></head>
+   <body onload="checkDOM('ds')"><span id="ds" class="hypertext">No Current Link To Vocabulary</span><span id="cwe" class="hypertext">Coded With Extensions</span><span id="cne" class="hypertext">Coded No Extensions</span><table border="3" frame="vsides" rules="cols" cellpadding="2" cellspacing="0"
+             style="border-width: 2px;border-style: solid">
+         <tr valign="top">
+            <td height="35"><b><font size="+1">COMT_MT000004US</font><br />Performed Activity Base</b></td>
+            <td height="35" class="lightBoundary"><br />Derived from RMIM: <a href="_.html">_</a> and HMD: <a href="_-NoEdit.html">_</a></td>
+         </tr>
+         <tr>
+            <td height="3" colspan="10" style="font-size=4pt;"> </td>
+         </tr>
+         <tr class="hmd" valign="top">
+            <td bgcolor="lightblue"><b><a name="ActEvent">ActEvent</a></b><br /><span style="margin-left:5pt">[Constraint: "
+                  <p>effectiveTime, reasonCode, actionNegationInd, statusCodes and statusDateRange are only permitted for PerformedActivity and
+                     PerformedProductTransport
+                  </p>"]</span><br /><span style="margin-left:5pt">[Constraint: "
+                  <p>Origin and destination are only permitted for and must be specified for PerformedProductTransport</p>"]</span></td>
+            <td>
+               <div style="height: 100%; width: 100%;">
+                  <p><b><i>Design Comments: </i></b>Activity PerformedActivity PerformedProductTransport
+                  </p>
+                  <p><b><i>Mapping: </i></b>Activity
+                  </p>
+                  <p><b><i>Mapping: </i></b>PerformedActivity
+                  </p>
+                  <p><b><i>Mapping: </i></b>PerformedProductTransport
+                  </p>
+               </div>
+            </td>
+         </tr>
+         <tr valign="top" class="ConfomanceR">
+            <td><b>classCode</b><font color="green"> [1..1]</font> (M)<br /><span style="margin-left:20pt"></span><a href="../../../infrastructure/rim/rim.html#Act-cls">Act</a> (<a href="../../../infrastructure/datatypes_r2/datatypes_r2.html#dt-CS">CS</a>) {CNE:C:<a href="../../../infrastructure/vocabulary/ActClass.html"><b>ActClass</b></a>:<a href="../../../infrastructure/vocabulary/ActClass.html#ACT"><b>ACT</b></a>, fixed value= "ACT"}
+            </td>
+            <td>
+               <div style="height: 100%; width: 100%;"></div>
+            </td>
+         </tr>
+         <tr valign="top" class="ConfomanceR">
+            <td><b>moodCode</b><font color="green"> [1..1]</font> (M)<br /><span style="margin-left:20pt"></span><a href="../../../infrastructure/rim/rim.html#Act-cls">Act</a> (<a href="../../../infrastructure/datatypes_r2/datatypes_r2.html#dt-CS">CS</a>) {CNE:C:<a href="../../../infrastructure/vocabulary/ActMood.html"><b>ActMood</b></a>:<a href="../../../infrastructure/vocabulary/ActMood.html#EVN"><b>EVN</b></a>, fixed value= "EVN"}
+            </td>
+            <td>
+               <div style="height: 100%; width: 100%;"></div>
+            </td>
+         </tr>
+         <tr valign="top" class="Confomance">
+            <td>id<font color="green"> [0..1]</font><br /><span style="margin-left:20pt"></span><a href="../../../infrastructure/rim/rim.html#Act-cls">Act</a> (<a href="../../../infrastructure/datatypes_r2/datatypes_r2.html#dt-II">II</a>)
+            </td>
+            <td>
+               <div style="height: 100%; width: 100%;">
+                  <p><b><i>Mapping: </i></b>Activity.identifier
+                  </p>
+               </div>
+            </td>
+         </tr>
+         <tr valign="top" class="Confomance">
+            <td>actionNegationInd<font color="green"> [0..1]</font><br /><span style="margin-left:20pt"></span><a href="../../../infrastructure/rim/rim.html#Act-cls">Act</a> (<a href="../../../infrastructure/datatypes_r2/datatypes_r2.html#dt-BL">BL</a>){default= "false"}
+            </td>
+            <td>
+               <div style="height: 100%; width: 100%;">
+                  <p><b><i>Design Comments: </i></b>This works provided that "missed" is the only reason for capturing an event that did not occur.
+                  </p>
+                  <p><b><i>Mapping: </i></b>PerformedActivity.negationIndicator
+                  </p>
+               </div>
+            </td>
+         </tr>
+         <tr valign="top" class="Confomance">
+            <td>statusCode<font color="green"> [0..1]</font><br /><span style="margin-left:20pt"></span><a href="../../../infrastructure/rim/rim.html#Act-cls">Act</a> (<a href="../../../infrastructure/datatypes_r2/datatypes_r2.html#dt-HXIT">HXIT</a>&lt;<a href="../../../infrastructure/datatypes_r2/datatypes_r2.html#dt-CS">CS</a>&gt;) {CNE:V:<a href="../../../infrastructure/vocabulary/vs_ActStatus.html#ActStatus"><b>ActStatus</b></a>}
+            </td>
+            <td>
+               <div style="height: 100%; width: 100%;">
+                  <p><b><i>Mapping: </i></b>PerformedActivity.statusCode
+                  </p>
+                  <p><b><i>Mapping: </i></b>PerformedActivity.statusDate (validTime)
+                  </p>
+               </div>
+            </td>
+         </tr>
+         <tr valign="top" class="Confomance">
+            <td>effectiveTime<font color="green"> [0..1]</font><br /><span style="margin-left:20pt"></span><a href="../../../infrastructure/rim/rim.html#Act-cls">Act</a> (<a href="../../../infrastructure/datatypes_r2/datatypes_r2.html#dt-IVL">IVL</a>&lt;<a href="../../../infrastructure/datatypes_r2/datatypes_r2.html#dt-TS.DATETIME">TS.DATETIME</a>&gt;)
+            </td>
+            <td>
+               <div style="height: 100%; width: 100%;">
+                  <p><b><i>UsageNotes: </i></b>actualDateRange only go here when there's no focalDateRange and duration, otherwise they go on performer.time
+                  </p>
+                  <p><b><i>Open Issues: </i></b>Again, definitions aren't clear and would be good to collapse dateRange and duration into a single attribute so it's clear
+                     what can be expressed and what can't. I.e. If you've got a start and an end, you can't send a distinct duration different
+                     from "End - Start".
+                  </p>
+                  <p><b><i>Mapping: </i></b>PerformedActivity.dateRange
+                  </p>
+               </div>
+            </td>
+         </tr>
+         <tr valign="top" class="Confomance">
+            <td>reasonCode<font color="green"> [0..*]</font><br /><span style="margin-left:20pt"></span><a href="../../../infrastructure/rim/rim.html#Act-cls">Act</a> (<a href="../../../infrastructure/datatypes_r2/datatypes_r2.html#dt-DSET">DSET</a>&lt;<a href="../../../infrastructure/datatypes_r2/datatypes_r2.html#dt-CD">CD</a>&gt;) {CWE:D:<a href="../../../infrastructure/vocabulary/voc_ConceptDomains.html#NonPerformanceReasonCode"><b>NonPerformanceReasonCode</b></a>}
+            </td>
+            <td>
+               <div style="height: 100%; width: 100%;">
+                  <p><b><i>Open Issues: </i></b>Do we want to assert "context specific" reason code domains (i.e. different concept domains for Observation.reasonCode vs.
+                     Procedure.reasonCode, etc.)?
+                  </p>
+                  <p><b><i>Mapping: </i></b>PerformedActivity.negationReason (always populate original text)
+                  </p>
+               </div>
+            </td>
+         </tr>
+         <tr valign="top" class="Confomance">
+            <td bgcolor="lightgrey">subject<font color="green"> [0..*]</font><font color="gray"> (<a href="#Subject">Subject</a>)</font></td>
+            <td>
+               <div style="height: 100%; width: 100%;">
+                  <p><b><i>Mapping: </i></b>Activity.involvedSubject[Subject] (R_InvestigativeSubjectUniversal)
+                  </p>
+                  <p><b><i>Mapping: </i></b>Activity.involvedExperimentalUnit[ExperimentalUnit] (R_ExperimentalUnitUniversal)
+                  </p>
+                  <p><b><i>Mapping: </i></b>Subject(R_InvestigativeSubjectUniversal).involvingActivity[Activity]
+                  </p>
+                  <p><b><i>Mapping: </i></b>ExperimentalUnit(R_ExperimentalUnitUniversal).involvingActivity[Activity]
+                  </p>
+               </div>
+            </td>
+         </tr>
+         <tr valign="top" class="Confomance">
+            <td bgcolor="lightgrey">performer<font color="green"> [0..*]</font><font color="gray"> (<a href="#Performer">Performer</a>)</font></td>
+            <td>
+               <div style="height: 100%; width: 100%;">
+                  <p><b><i>Mapping: </i></b>Activity.performingPerformer[Performer]
+                  </p>
+                  <p><b><i>Mapping: </i></b>Performer.performedActivity[Activity]
+                  </p>
+               </div>
+            </td>
+         </tr>
+         <tr valign="top" class="Confomance">
+            <td bgcolor="lightgrey">origin<font color="green"> [0..1]</font><font color="gray"> (<a href="#Origin">Origin</a>)</font></td>
+            <td>
+               <div style="height: 100%; width: 100%;">
+                  <p><b><i>Mapping: </i></b>ServiceDeliveryLocation(R_ServiceDeliveryLocationContact).originatedPerformedProductTransport[PerformedProductTransport]
+                  </p>
+                  <p><b><i>Mapping: </i></b>PerformedProductTransport.originServiceDeliveryLocation[ServiceDeliveryLocation](R_ServiceDeliveryLocationContact)
+                  </p>
+               </div>
+            </td>
+         </tr>
+         <tr valign="top" class="Confomance">
+            <td bgcolor="lightgrey">destination<font color="green"> [0..1]</font><font color="gray"> (<a href="#Destination">Destination</a>)</font></td>
+            <td>
+               <div style="height: 100%; width: 100%;">
+                  <p><b><i>Mapping: </i></b>ServiceDeliveryLocation(R_ServiceDeliveryLocationContact).destinedPerformedProductTransport[PerformedProductTransport]
+                  </p>
+                  <p><b><i>Mapping: </i></b>PerformedProductTransport.destinationServiceDeliveryLocation[ServiceDeliveryLocation](R_ServiceDeliveryLocationContact)
+                  </p>
+               </div>
+            </td>
+         </tr>
+         <tr valign="top" class="Confomance">
+            <td bgcolor="lightgrey">location<font color="green"> [0..1]</font><font color="gray"> (<a href="#Location">Location</a>)</font></td>
+            <td>
+               <div style="height: 100%; width: 100%;">
+                  <p><b><i>Mapping: </i></b>PerformedActivity.locatingPlace[Place]
+                  </p>
+                  <p><b><i>Mapping: </i></b>Place.locatedPerformedActivity[PerformedActivity]
+                  </p>
+               </div>
+            </td>
+         </tr>
+         <tr valign="top" class="Confomance">
+            <td bgcolor="lightgrey">inFulfillmentOf<font color="green"> [0..1]</font><font color="gray"> (<a href="#InFulfillmentOf">InFulfillmentOf</a>)</font></td>
+            <td>
+               <div style="height: 100%; width: 100%;"></div>
+            </td>
+         </tr>
+         <tr valign="top" class="Confomance">
+            <td bgcolor="lightgrey">subjectOf1<font color="green"> [0..1]</font><font color="gray"> (<a href="#Subject4">Subject4</a>)</font></td>
+            <td>
+               <div style="height: 100%; width: 100%;"></div>
+            </td>
+         </tr>
+         <tr valign="top" class="Confomance">
+            <td bgcolor="lightgrey">subjectOf2<font color="green"> [0..*]</font><font color="gray"> (<a href="#Subject2">Subject2</a>)</font></td>
+            <td>
+               <div style="height: 100%; width: 100%;">
+                  <p><b><i>Mapping: </i></b>PerformedActivity.commentingPerformedObservation[PerformedObservation](A_PerformedObservationUniversal)
+                  </p>
+                  <p><b><i>Mapping: </i></b>PerformedObservation(A_PerformedObservationUniversal).commentedPerformedActivity[PerformedActivity]
+                  </p>
+               </div>
+            </td>
+         </tr>
+         <tr>
+            <td height="3" colspan="10" style="font-size=4pt;"> </td>
+         </tr>
+         <tr class="hmd" valign="top">
+            <td bgcolor="lightblue"><b><a name="Subject">Subject</a></b></td>
+            <td>
+               <div style="height: 100%; width: 100%;">
+                  <p><b><i>Mapping: </i></b>Activity.involvedSubject[Subject] (R_InvestigativeSubjectUniversal)
+                  </p>
+                  <p><b><i>Mapping: </i></b>Activity.involvedExperimentalUnit[ExperimentalUnit] (R_ExperimentalUnitUniversal)
+                  </p>
+                  <p><b><i>Mapping: </i></b>Subject(R_InvestigativeSubjectUniversal).involvingActivity[Activity]
+                  </p>
+                  <p><b><i>Mapping: </i></b>ExperimentalUnit(R_ExperimentalUnitUniversal).involvingActivity[Activity]
+                  </p>
+               </div>
+            </td>
+         </tr>
+         <tr valign="top" class="ConfomanceR">
+            <td><b>typeCode</b><font color="green"> [1..1]</font> (M)<br /><span style="margin-left:20pt"></span><a href="../../../infrastructure/rim/rim.html#Participation-cls">Participation</a> (<a href="../../../infrastructure/datatypes_r2/datatypes_r2.html#dt-CS">CS</a>) {CNE:C:<a href="../../../infrastructure/vocabulary/ParticipationType.html"><b>ParticipationType</b></a>:<a href="../../../infrastructure/vocabulary/ParticipationType.html#SBJ"><b>SBJ</b></a>, fixed value= "SBJ"}
+            </td>
+            <td>
+               <div style="height: 100%; width: 100%;"></div>
+            </td>
+         </tr>
+         <tr valign="top" class="Confomance">
+            <td bgcolor="lightgrey"><i>recordTargets<font color="green"> [1..1]</font><font color="gray"> (<a href="#RecordTargets">RecordTargets</a>)</font></i></td>
+            <td>
+               <div style="height: 100%; width: 100%;"></div>
+            </td>
+         </tr>
+         <tr>
+            <td height="3" colspan="10" style="font-size=4pt;"> </td>
+         </tr>
+         <tr class="hmd" valign="top">
+            <td bgcolor="lightblue"><b><a name="RecordTargets">RecordTargets</a></b></td>
+            <td>
+               <div style="height: 100%; width: 100%;"></div>
+            </td>
+         </tr>
+         <tr valign="top" class="Confomance">
+            <td bgcolor="lightgrey">choice of <font color="gray"><a href="../../ct/editable/COCT_MT550000US-NoEdit.html">R_InvestigativeSubjectUniversal</a></font></td>
+            <td>
+               <div style="height: 100%; width: 100%;"></div>
+            </td>
+         </tr>
+         <tr valign="top" class="Confomance">
+            <td bgcolor="lightgrey">          or <font color="gray"><a href="../../ct/editable/COCT_MT000026US-NoEdit.html">R_ExperimentalUnitUniversal</a></font></td>
+            <td>
+               <div style="height: 100%; width: 100%;"></div>
+            </td>
+         </tr>
+         <tr>
+            <td height="3" colspan="10" style="font-size=4pt;"> </td>
+         </tr>
+         <tr class="hmd" valign="top">
+            <td bgcolor="lightblue"><b><a name="Performer">Performer</a></b></td>
+            <td>
+               <div style="height: 100%; width: 100%;">
+                  <p><b><i>Mapping: </i></b>Activity.performingPerformer[Performer]
+                  </p>
+                  <p><b><i>Mapping: </i></b>Performer.performedActivity[Activity]
+                  </p>
+               </div>
+            </td>
+         </tr>
+         <tr valign="top" class="ConfomanceR">
+            <td><b>typeCode</b><font color="green"> [1..1]</font> (M)<br /><span style="margin-left:20pt"></span><a href="../../../infrastructure/rim/rim.html#Participation-cls">Participation</a> (<a href="../../../infrastructure/datatypes_r2/datatypes_r2.html#dt-CS">CS</a>) {CNE:C:<a href="../../../infrastructure/vocabulary/ParticipationType.html"><b>ParticipationType</b></a>:<a href="../../../infrastructure/vocabulary/ParticipationType.html#PRF"><b>PRF</b></a>, fixed value= "PRF"}
+            </td>
+            <td>
+               <div style="height: 100%; width: 100%;"></div>
+            </td>
+         </tr>
+         <tr valign="top" class="Confomance">
+            <td bgcolor="lightgrey">assignedEntity<font color="green"> [1..1]</font><font color="gray"> (<a href="../../ct/editable/COCT_MT000024US-NoEdit.html">R_PerformerUniversal</a>)</font></td>
+            <td>
+               <div style="height: 100%; width: 100%;"></div>
+            </td>
+         </tr>
+         <tr>
+            <td height="3" colspan="10" style="font-size=4pt;"> </td>
+         </tr>
+         <tr class="hmd" valign="top">
+            <td bgcolor="lightblue"><b><a name="Origin">Origin</a></b></td>
+            <td>
+               <div style="height: 100%; width: 100%;">
+                  <p><b><i>Mapping: </i></b>ServiceDeliveryLocation(R_ServiceDeliveryLocationContact).originatedPerformedProductTransport[PerformedProductTransport]
+                  </p>
+                  <p><b><i>Mapping: </i></b>PerformedProductTransport.originServiceDeliveryLocation[ServiceDeliveryLocation](R_ServiceDeliveryLocationContact)
+                  </p>
+               </div>
+            </td>
+         </tr>
+         <tr valign="top" class="ConfomanceR">
+            <td><b>typeCode</b><font color="green"> [1..1]</font> (M)<br /><span style="margin-left:20pt"></span><a href="../../../infrastructure/rim/rim.html#Participation-cls">Participation</a> (<a href="../../../infrastructure/datatypes_r2/datatypes_r2.html#dt-CS">CS</a>) {CNE:C:<a href="../../../infrastructure/vocabulary/ParticipationType.html"><b>ParticipationType</b></a>:<a href="../../../infrastructure/vocabulary/ParticipationType.html#ORG"><b>ORG</b></a>, fixed value= "ORG"}
+            </td>
+            <td>
+               <div style="height: 100%; width: 100%;"></div>
+            </td>
+         </tr>
+         <tr valign="top" class="Confomance">
+            <td bgcolor="lightgrey">serviceDeliveryLocation2<font color="green"> [1..1]</font><font color="gray"> (<a href="../../ct/editable/COCT_MT240003US-NoEdit.html">R_ServiceDeliveryLocationContact</a>)</font></td>
+            <td>
+               <div style="height: 100%; width: 100%;"></div>
+            </td>
+         </tr>
+         <tr>
+            <td height="3" colspan="10" style="font-size=4pt;"> </td>
+         </tr>
+         <tr class="hmd" valign="top">
+            <td bgcolor="lightblue"><b><a name="Destination">Destination</a></b></td>
+            <td>
+               <div style="height: 100%; width: 100%;">
+                  <p><b><i>Mapping: </i></b>ServiceDeliveryLocation(R_ServiceDeliveryLocationContact).destinedPerformedProductTransport[PerformedProductTransport]
+                  </p>
+                  <p><b><i>Mapping: </i></b>PerformedProductTransport.destinationServiceDeliveryLocation[ServiceDeliveryLocation](R_ServiceDeliveryLocationContact)
+                  </p>
+               </div>
+            </td>
+         </tr>
+         <tr valign="top" class="ConfomanceR">
+            <td><b>typeCode</b><font color="green"> [1..1]</font> (M)<br /><span style="margin-left:20pt"></span><a href="../../../infrastructure/rim/rim.html#Participation-cls">Participation</a> (<a href="../../../infrastructure/datatypes_r2/datatypes_r2.html#dt-CS">CS</a>) {CNE:C:<a href="../../../infrastructure/vocabulary/ParticipationType.html"><b>ParticipationType</b></a>:<a href="../../../infrastructure/vocabulary/ParticipationType.html#DST"><b>DST</b></a>, fixed value= "DST"}
+            </td>
+            <td>
+               <div style="height: 100%; width: 100%;"></div>
+            </td>
+         </tr>
+         <tr valign="top" class="Confomance">
+            <td bgcolor="lightgrey">serviceDeliveryLocation2<font color="green"> [1..1]</font><font color="gray"> (<a href="../../ct/editable/COCT_MT240003US-NoEdit.html">R_ServiceDeliveryLocationContact</a>)</font></td>
+            <td>
+               <div style="height: 100%; width: 100%;"></div>
+            </td>
+         </tr>
+         <tr>
+            <td height="3" colspan="10" style="font-size=4pt;"> </td>
+         </tr>
+         <tr class="hmd" valign="top">
+            <td bgcolor="lightblue"><b><a name="Location">Location</a></b></td>
+            <td>
+               <div style="height: 100%; width: 100%;">
+                  <p><b><i>Mapping: </i></b>PerformedActivity.locatingPlace[Place]
+                  </p>
+                  <p><b><i>Mapping: </i></b>Place.locatedPerformedActivity[PerformedActivity]
+                  </p>
+               </div>
+            </td>
+         </tr>
+         <tr valign="top" class="ConfomanceR">
+            <td><b>typeCode</b><font color="green"> [1..1]</font> (M)<br /><span style="margin-left:20pt"></span><a href="../../../infrastructure/rim/rim.html#Participation-cls">Participation</a> (<a href="../../../infrastructure/datatypes_r2/datatypes_r2.html#dt-CS">CS</a>) {CNE:C:<a href="../../../infrastructure/vocabulary/ParticipationType.html"><b>ParticipationType</b></a>:<a href="../../../infrastructure/vocabulary/ParticipationType.html#LOC"><b>LOC</b></a>, fixed value= "LOC"}
+            </td>
+            <td>
+               <div style="height: 100%; width: 100%;"></div>
+            </td>
+         </tr>
+         <tr valign="top" class="Confomance">
+            <td bgcolor="lightgrey">dedicatedServiceDeliveryLocation<font color="green"> [1..1]</font><font color="gray"> (<a href="../../ct/editable/COCT_MT240000US-NoEdit.html">R_ServiceDeliveryLocationUniversal</a>)</font></td>
+            <td>
+               <div style="height: 100%; width: 100%;"></div>
+            </td>
+         </tr>
+         <tr>
+            <td height="3" colspan="10" style="font-size=4pt;"> </td>
+         </tr>
+         <tr class="hmd" valign="top">
+            <td bgcolor="lightblue"><b><a name="InFulfillmentOf">InFulfillmentOf</a></b></td>
+            <td>
+               <div style="height: 100%; width: 100%;"></div>
+            </td>
+         </tr>
+         <tr valign="top" class="ConfomanceR">
+            <td><b>typeCode</b><font color="green"> [1..1]</font> (M)<br /><span style="margin-left:20pt"></span><a href="../../../infrastructure/rim/rim.html#ActRelationship-cls">ActRelationship</a> (<a href="../../../infrastructure/datatypes_r2/datatypes_r2.html#dt-CS">CS</a>) {CNE:C:<a href="../../../infrastructure/vocabulary/ActRelationshipType.html"><b>ActRelationshipType</b></a>:<a href="../../../infrastructure/vocabulary/ActRelationshipType.html#FLFS"><b>FLFS</b></a>, fixed value= "FLFS"}
+            </td>
+            <td>
+               <div style="height: 100%; width: 100%;"></div>
+            </td>
+         </tr>
+         <tr valign="top" class="Confomance">
+            <td bgcolor="lightgrey">actIntent<font color="green"> [1..1]</font><font color="gray"> (<a href="#ActIntent">ActIntent</a>)</font></td>
+            <td>
+               <div style="height: 100%; width: 100%;"></div>
+            </td>
+         </tr>
+         <tr>
+            <td height="3" colspan="10" style="font-size=4pt;"> </td>
+         </tr>
+         <tr class="hmd" valign="top">
+            <td bgcolor="lightblue"><b><a name="ActIntent">ActIntent</a></b></td>
+            <td>
+               <div style="height: 100%; width: 100%;"></div>
+            </td>
+         </tr>
+         <tr valign="top" class="ConfomanceR">
+            <td><b>classCode</b><font color="green"> [1..1]</font> (M)<br /><span style="margin-left:20pt"></span><a href="../../../infrastructure/rim/rim.html#Act-cls">Act</a> (<a href="../../../infrastructure/datatypes_r2/datatypes_r2.html#dt-CS">CS</a>) {CNE:C:<a href="../../../infrastructure/vocabulary/ActClass.html"><b>ActClass</b></a>:<a href="../../../infrastructure/vocabulary/ActClass.html#ACT"><b>ACT</b></a>, fixed value= "ACT"}
+            </td>
+            <td>
+               <div style="height: 100%; width: 100%;"></div>
+            </td>
+         </tr>
+         <tr valign="top" class="ConfomanceR">
+            <td><b>moodCode</b><font color="green"> [1..1]</font> (M)<br /><span style="margin-left:20pt"></span><a href="../../../infrastructure/rim/rim.html#Act-cls">Act</a> (<a href="../../../infrastructure/datatypes_r2/datatypes_r2.html#dt-CS">CS</a>) {CNE:C:<a href="../../../infrastructure/vocabulary/ActMood.html"><b>ActMood</b></a>:<a href="../../../infrastructure/vocabulary/ActMood.html#INT"><b>INT</b></a>, fixed value= "INT"}
+            </td>
+            <td>
+               <div style="height: 100%; width: 100%;"></div>
+            </td>
+         </tr>
+         <tr valign="top" class="ConfomanceR">
+            <td><b>reasonCode</b><font color="green"> [1..*]</font> (M)<br /><span style="margin-left:20pt"></span><a href="../../../infrastructure/rim/rim.html#Act-cls">Act</a> (<a href="../../../infrastructure/datatypes_r2/datatypes_r2.html#dt-DSET">DSET</a>&lt;<a href="../../../infrastructure/datatypes_r2/datatypes_r2.html#dt-CD">CD</a>&gt;) {CWE:D:<b>ClinicalTrialActivityReason</b>}
+            </td>
+            <td>
+               <div style="height: 100%; width: 100%;">
+                  <p><b><i>Rationale: </i></b>We capture reason here because ObservationEvent.reasonCode sometimes needs to be the reason for not doing the event.
+                  </p>
+                  <p><b><i>Open Issues: </i></b>Do we want to assert "context specific" reason code domains (i.e. different concept domains for Observation.reasonCode vs.
+                     Procedure.reasonCode, etc.)?
+                  </p>
+                  <p><b><i>Mapping: </i></b>Activity.reasonCode
+                  </p>
+               </div>
+            </td>
+         </tr>
+         <tr>
+            <td height="3" colspan="10" style="font-size=4pt;"> </td>
+         </tr>
+         <tr class="hmd" valign="top">
+            <td bgcolor="lightblue"><b><a name="Subject4">Subject4</a></b></td>
+            <td>
+               <div style="height: 100%; width: 100%;"></div>
+            </td>
+         </tr>
+         <tr valign="top" class="ConfomanceR">
+            <td><b>typeCode</b><font color="green"> [1..1]</font> (M)<br /><span style="margin-left:20pt"></span><a href="../../../infrastructure/rim/rim.html#ActRelationship-cls">ActRelationship</a> (<a href="../../../infrastructure/datatypes_r2/datatypes_r2.html#dt-CS">CS</a>) {CNE:C:<a href="../../../infrastructure/vocabulary/ActRelationshipType.html"><b>ActRelationshipType</b></a>:<a href="../../../infrastructure/vocabulary/ActRelationshipType.html#SUBJ"><b>SUBJ</b></a>, fixed value= "SUBJ"}
+            </td>
+            <td>
+               <div style="height: 100%; width: 100%;"></div>
+            </td>
+         </tr>
+         <tr valign="top" class="Confomance">
+            <td bgcolor="lightgrey">annotation<font color="green"> [1..1]</font><font color="gray"> (<a href="#Annotation">Annotation</a>)</font></td>
+            <td>
+               <div style="height: 100%; width: 100%;"></div>
+            </td>
+         </tr>
+         <tr>
+            <td height="3" colspan="10" style="font-size=4pt;"> </td>
+         </tr>
+         <tr class="hmd" valign="top">
+            <td bgcolor="lightblue"><b><a name="Annotation">Annotation</a></b></td>
+            <td>
+               <div style="height: 100%; width: 100%;"></div>
+            </td>
+         </tr>
+         <tr valign="top" class="ConfomanceR">
+            <td><b>classCode</b><font color="green"> [1..1]</font> (M)<br /><span style="margin-left:20pt"></span><a href="../../../infrastructure/rim/rim.html#Observation-cls">Observation</a> (<a href="../../../infrastructure/datatypes_r2/datatypes_r2.html#dt-CS">CS</a>) {CNE:C:<a href="../../../infrastructure/vocabulary/ActClass.html"><b>ActClass</b></a>:<a href="../../../infrastructure/vocabulary/ActClass.html#OBS"><b>OBS</b></a>, fixed value= "OBS"}
+            </td>
+            <td>
+               <div style="height: 100%; width: 100%;"></div>
+            </td>
+         </tr>
+         <tr valign="top" class="ConfomanceR">
+            <td><b>moodCode</b><font color="green"> [1..1]</font> (M)<br /><span style="margin-left:20pt"></span><a href="../../../infrastructure/rim/rim.html#Observation-cls">Observation</a> (<a href="../../../infrastructure/datatypes_r2/datatypes_r2.html#dt-CS">CS</a>) {CNE:C:<a href="../../../infrastructure/vocabulary/ActMood.html"><b>ActMood</b></a>:<a href="../../../infrastructure/vocabulary/ActMood.html#EVN"><b>EVN</b></a>, fixed value= "EVN"}
+            </td>
+            <td>
+               <div style="height: 100%; width: 100%;"></div>
+            </td>
+         </tr>
+         <tr valign="top" class="ConfomanceR">
+            <td><b>code</b><font color="green"> [1..1]</font> (M)<br /><span style="margin-left:20pt"></span><a href="../../../infrastructure/rim/rim.html#Observation-cls">Observation</a> (<a href="../../../infrastructure/datatypes_r2/datatypes_r2.html#dt-CV">CV</a>) {CWE:C:<a href="../../../infrastructure/vocabulary/ActCode.html"><b>ActCode</b></a>:<a href="../../../infrastructure/vocabulary/ActCode.html#ANNGEN"><b>ANNGEN</b></a>, fixed value= "ANNGEN"}
+            </td>
+            <td>
+               <div style="height: 100%; width: 100%;"></div>
+            </td>
+         </tr>
+         <tr valign="top" class="ConfomanceR">
+            <td><b>value</b><font color="green"> [1..1]</font> (M)<br /><span style="margin-left:20pt"></span><a href="../../../infrastructure/rim/rim.html#Observation-cls">Observation</a> (<a href="../../../infrastructure/datatypes_r2/datatypes_r2.html#dt-ST">ST</a>)
+            </td>
+            <td>
+               <div style="height: 100%; width: 100%;">
+                  <p><b><i>Mapping: </i></b>Activity.comment
+                  </p>
+               </div>
+            </td>
+         </tr>
+         <tr>
+            <td height="3" colspan="10" style="font-size=4pt;"> </td>
+         </tr>
+         <tr class="hmd" valign="top">
+            <td bgcolor="lightblue"><b><a name="Subject2">Subject2</a></b></td>
+            <td>
+               <div style="height: 100%; width: 100%;">
+                  <p><b><i>Mapping: </i></b>PerformedActivity.commentingPerformedObservation[PerformedObservation](A_PerformedObservationUniversal)
+                  </p>
+                  <p><b><i>Mapping: </i></b>PerformedObservation(A_PerformedObservationUniversal).commentedPerformedActivity[PerformedActivity]
+                  </p>
+               </div>
+            </td>
+         </tr>
+         <tr valign="top" class="ConfomanceR">
+            <td><b>typeCode</b><font color="green"> [1..1]</font> (M)<br /><span style="margin-left:20pt"></span><a href="../../../infrastructure/rim/rim.html#ActRelationship-cls">ActRelationship</a> (<a href="../../../infrastructure/datatypes_r2/datatypes_r2.html#dt-CS">CS</a>) {CNE:C:<a href="../../../infrastructure/vocabulary/ActRelationshipType.html"><b>ActRelationshipType</b></a>:<a href="../../../infrastructure/vocabulary/ActRelationshipType.html#SUBJ"><b>SUBJ</b></a>, fixed value= "SUBJ"}
+            </td>
+            <td>
+               <div style="height: 100%; width: 100%;"></div>
+            </td>
+         </tr>
+         <tr valign="top" class="Confomance">
+            <td bgcolor="lightgrey">observationEvent<font color="green"> [1..1]</font><font color="gray"> (<a href="../../ob/editable/POOB_RM410000US-NoEdit.html">A_PerformedObservationUniversal</a>)</font></td>
+            <td>
+               <div style="height: 100%; width: 100%;"></div>
+            </td>
+         </tr>
+      </table>
+   </body>
+</html>
