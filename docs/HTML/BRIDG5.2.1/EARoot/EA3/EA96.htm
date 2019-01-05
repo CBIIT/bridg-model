@@ -761,30 +761,6 @@ function nameClassifier(name, separator)
 				</tr>
 				<tr>
 					<td width="40%" class="TableRow" valign="top">
-						<a href="EA94.htm">Document</a><br />
-						Class &nbsp;
-					</td>
-					<td width="30%" class="TableRow" valign="top">
-						<strong>Name:</strong> versioningDocumentVersion<br />
-						&nbsp;
-					</td>
-					<td width="30%" class="TableRow" valign="top">
-						<strong>Name:</strong> versionedDocument<br />
-						&nbsp;	
-					</td>
-				</tr>
-				<tr>
-					<td class="TableRowBottomDashed"  colspan="3">
-						<div class="DetailsDivParent"><img src="../../images/minus03.gif" align="absmiddle" id="DetailsImageLink486" onclick="parent.toggleDiv('detailsDIVLink486','DetailsImageLink486')" />Details:
-							<div id="detailsDIVLink486" class="DetailsDiv" >
-							<div class="ObjectDetailsNotes">DESCRIPTION:&lt;br/&gt;Each DocumentVersion always is a version of one Document. Each Document might have as a version one or more DocumentVersion.&lt;br/&gt;&lt;br/&gt;DEFINITION:&lt;br/&gt;&lt;br/&gt;EXAMPLE(S):&lt;br/&gt;&lt;br/&gt;OTHER NAME(S):&lt;br/&gt;&lt;br/&gt;NOTE(S):&lt;br/&gt;&lt;br/&gt;</div>
-
-							</div>
-						</div>
-					</td>
-				</tr>
-				<tr>
-					<td width="40%" class="TableRow" valign="top">
 						<a href="EA133.htm">ProcessProtocol</a><br />
 						Class &nbsp;
 					</td>
@@ -799,9 +775,33 @@ function nameClassifier(name, separator)
 				</tr>
 				<tr>
 					<td class="TableRowBottomDashed"  colspan="3">
+						<div class="DetailsDivParent"><img src="../../images/minus03.gif" align="absmiddle" id="DetailsImageLink486" onclick="parent.toggleDiv('detailsDIVLink486','DetailsImageLink486')" />Details:
+							<div id="detailsDIVLink486" class="DetailsDiv" >
+							<div class="ObjectDetailsNotes">DESCRIPTION:&lt;br/&gt;Each DocumentVersion might contain one ProcessProtocol. Each ProcessProtocol might be the contents of one DocumentVersion.&lt;br/&gt;&lt;br/&gt;DEFINITION:&lt;br/&gt;&lt;br/&gt;EXAMPLE(S):&lt;br/&gt;&lt;br/&gt;OTHER NAME(S):&lt;br/&gt;&lt;br/&gt;NOTE(S):&lt;br/&gt;</div>
+
+							</div>
+						</div>
+					</td>
+				</tr>
+				<tr>
+					<td width="40%" class="TableRow" valign="top">
+						<a href="EA94.htm">Document</a><br />
+						Class &nbsp;
+					</td>
+					<td width="30%" class="TableRow" valign="top">
+						<strong>Name:</strong> versioningDocumentVersion<br />
+						&nbsp;
+					</td>
+					<td width="30%" class="TableRow" valign="top">
+						<strong>Name:</strong> versionedDocument<br />
+						&nbsp;	
+					</td>
+				</tr>
+				<tr>
+					<td class="TableRowBottomDashed"  colspan="3">
 						<div class="DetailsDivParent"><img src="../../images/minus03.gif" align="absmiddle" id="DetailsImageLink487" onclick="parent.toggleDiv('detailsDIVLink487','DetailsImageLink487')" />Details:
 							<div id="detailsDIVLink487" class="DetailsDiv" >
-							<div class="ObjectDetailsNotes">DESCRIPTION:&lt;br/&gt;Each DocumentVersion might contain one ProcessProtocol. Each ProcessProtocol might be the contents of one DocumentVersion.&lt;br/&gt;&lt;br/&gt;DEFINITION:&lt;br/&gt;&lt;br/&gt;EXAMPLE(S):&lt;br/&gt;&lt;br/&gt;OTHER NAME(S):&lt;br/&gt;&lt;br/&gt;NOTE(S):&lt;br/&gt;</div>
+							<div class="ObjectDetailsNotes">DESCRIPTION:&lt;br/&gt;Each DocumentVersion always is a version of one Document. Each Document might have as a version one or more DocumentVersion.&lt;br/&gt;&lt;br/&gt;DEFINITION:&lt;br/&gt;&lt;br/&gt;EXAMPLE(S):&lt;br/&gt;&lt;br/&gt;OTHER NAME(S):&lt;br/&gt;&lt;br/&gt;NOTE(S):&lt;br/&gt;&lt;br/&gt;</div>
 
 							</div>
 						</div>
@@ -843,15 +843,15 @@ function nameClassifier(name, separator)
 				</tr>
 				<tr>
 					<td width="40%" class="TableRow" valign="top">
-						<a href="../EA8/EA342.htm">«DEPRECATED» SubmissionUnit</a><br />
+						<a href="../EA7/EA279.htm">DefinedNotification</a><br />
 						Class &nbsp;
 					</td>
 					<td width="30%" class="TableRow" valign="top">
-						<strong>Name:</strong> includingSubmissionUnit<br />
+						<strong>Name:</strong> attachingDefinedNotification<br />
 						&nbsp;
 					</td>
 					<td width="30%" class="TableRow" valign="top">
-						<strong>Name:</strong> includedDocumentVersion<br />
+						<strong>Name:</strong> attachedDocumentVersion<br />
 						&nbsp;	
 					</td>
 				</tr>
@@ -859,7 +859,7 @@ function nameClassifier(name, separator)
 					<td class="TableRowBottomDashed"  colspan="3">
 						<div class="DetailsDivParent"><img src="../../images/minus03.gif" align="absmiddle" id="DetailsImageLink489" onclick="parent.toggleDiv('detailsDIVLink489','DetailsImageLink489')" />Details:
 							<div id="detailsDIVLink489" class="DetailsDiv" >
-							<div class="ObjectDetailsNotes">DESCRIPTION:&lt;br/&gt;Each SubmissionUnit always includes one or more DocumentVersion.&#160;&#160;Each DocumentVersion might be included in one or more SubmissionUnit.&lt;br/&gt;&lt;br/&gt;DEFINITION:&lt;br/&gt;&lt;br/&gt;EXAMPLE(S):&lt;br/&gt;&lt;br/&gt;OTHER NAME(S):&lt;br/&gt;&lt;br/&gt;NOTE(S):&lt;br/&gt;&lt;br/&gt;</div>
+							<div class="ObjectDetailsNotes">DESCRIPTION:&lt;br/&gt;Each DefinedNotification might have as an attachment one or more DocumentVersion. Each DocumentVersion might be an attachment on one or more DefinedNotification.&lt;br/&gt;&lt;br/&gt;DEFINITION:&lt;br/&gt;&lt;br/&gt;EXAMPLE(S):&lt;br/&gt;&lt;br/&gt;OTHER NAME(S):&lt;br/&gt;&lt;br/&gt;NOTE(S):&lt;br/&gt;&lt;br/&gt;</div>
 
 							</div>
 						</div>
@@ -867,15 +867,15 @@ function nameClassifier(name, separator)
 				</tr>
 				<tr>
 					<td width="40%" class="TableRow" valign="top">
-						<a href="EA97.htm">DocumentVersionRelationship</a><br />
+						<a href="EA99.htm">DocumentVersionWorkflowStatus</a><br />
 						Class &nbsp;
 					</td>
 					<td width="30%" class="TableRow" valign="top">
-						<strong>Name:</strong> targetDocumentVersionRelationship<br />
+						<strong>Name:</strong> describingDocumentVersionWorkflowStatus<br />
 						&nbsp;
 					</td>
 					<td width="30%" class="TableRow" valign="top">
-						<strong>Name:</strong> sourceDocumentVersion<br />
+						<strong>Name:</strong> describedDocumentVersion<br />
 						&nbsp;	
 					</td>
 				</tr>
@@ -883,7 +883,7 @@ function nameClassifier(name, separator)
 					<td class="TableRowBottomDashed"  colspan="3">
 						<div class="DetailsDivParent"><img src="../../images/minus03.gif" align="absmiddle" id="DetailsImageLink490" onclick="parent.toggleDiv('detailsDIVLink490','DetailsImageLink490')" />Details:
 							<div id="detailsDIVLink490" class="DetailsDiv" >
-							<div class="ObjectDetailsNotes">DESCRIPTION:&lt;br/&gt;Each DocumentVersionRelationship always has as source one DocumentVersion.&#160;&#160;Each DocumentVersion might be the source for one or more DocumentVersionRelationship.&lt;br/&gt;&lt;br/&gt;DEFINITION:&lt;br/&gt;&lt;br/&gt;EXAMPLE(S):&lt;br/&gt;&lt;br/&gt;OTHER NAME(S):&lt;br/&gt;&lt;br/&gt;NOTE(S):&lt;br/&gt;&lt;br/&gt;</div>
+							<div class="ObjectDetailsNotes">DESCRIPTION:&lt;br/&gt;Each DocumentVersionWorkflowStatus always describes one DocumentVersion.&#160;&#160;Each DocumentVersion might be described by one or more DocumentVersionWorkflowStatus.&lt;br/&gt;&lt;br/&gt;DEFINITION:&lt;br/&gt;&lt;br/&gt;EXAMPLE(S):&lt;br/&gt;&lt;br/&gt;OTHER NAME(S):&lt;br/&gt;&lt;br/&gt;NOTE(S):&lt;br/&gt;&lt;br/&gt;</div>
 
 							</div>
 						</div>
@@ -891,15 +891,15 @@ function nameClassifier(name, separator)
 				</tr>
 				<tr>
 					<td width="40%" class="TableRow" valign="top">
-						<a href="../EA10/EA376.htm">PerformedActivityRelationship</a><br />
+						<a href="EA95.htm">DocumentAuthor</a><br />
 						Class &nbsp;
 					</td>
 					<td width="30%" class="TableRow" valign="top">
-						<strong>Name:</strong> sourcePerformedActivityRelationship<br />
+						<strong>Name:</strong> authoringDocumentAuthor<br />
 						&nbsp;
 					</td>
 					<td width="30%" class="TableRow" valign="top">
-						<strong>Name:</strong> targetDocumentVersion<br />
+						<strong>Name:</strong> authoredDocumentVersion<br />
 						&nbsp;	
 					</td>
 				</tr>
@@ -907,7 +907,7 @@ function nameClassifier(name, separator)
 					<td class="TableRowBottomDashed"  colspan="3">
 						<div class="DetailsDivParent"><img src="../../images/minus03.gif" align="absmiddle" id="DetailsImageLink491" onclick="parent.toggleDiv('detailsDIVLink491','DetailsImageLink491')" />Details:
 							<div id="detailsDIVLink491" class="DetailsDiv" >
-							<div class="ObjectDetailsNotes">DESCRIPTION:&lt;br/&gt;Each PerformedActivityRelationship always has as target one DocumentVersion.&#160;&#160;Each DocumentVersion might be the target for one or more PerformedActivityRelationship.&lt;br/&gt;&lt;br/&gt;DEFINITION:&lt;br/&gt;&lt;br/&gt;EXAMPLE(S):&lt;br/&gt;&lt;br/&gt;OTHER NAME(S):&lt;br/&gt;&lt;br/&gt;NOTE(S):&lt;br/&gt;&lt;br/&gt;</div>
+							<div class="ObjectDetailsNotes">DESCRIPTION:&lt;br/&gt;Each DocumentAuthor always authors one DocumentVersion. Each DocumentVersion always is authored by one or more DocumentAuthor.&lt;br/&gt;&lt;br/&gt;DEFINITION:&lt;br/&gt;&lt;br/&gt;EXAMPLE(S):&lt;br/&gt;&lt;br/&gt;OTHER NAME(S):&lt;br/&gt;&lt;br/&gt;NOTE(S):&lt;br/&gt;&lt;br/&gt;</div>
 
 							</div>
 						</div>
@@ -939,54 +939,6 @@ function nameClassifier(name, separator)
 				</tr>
 				<tr>
 					<td width="40%" class="TableRow" valign="top">
-						<a href="../EA10/EA405.htm">PerformedSubjectMilestone</a><br />
-						Class &nbsp;
-					</td>
-					<td width="30%" class="TableRow" valign="top">
-						<strong>Name:</strong> usingPerformedStudySubjectMilestone<br />
-						&nbsp;
-					</td>
-					<td width="30%" class="TableRow" valign="top">
-						<strong>Name:</strong> usedDocumentVersion<br />
-						&nbsp;	
-					</td>
-				</tr>
-				<tr>
-					<td class="TableRowBottomDashed"  colspan="3">
-						<div class="DetailsDivParent"><img src="../../images/minus03.gif" align="absmiddle" id="DetailsImageLink493" onclick="parent.toggleDiv('detailsDIVLink493','DetailsImageLink493')" />Details:
-							<div id="detailsDIVLink493" class="DetailsDiv" >
-							<div class="ObjectDetailsNotes">DESCRIPTION:&lt;br/&gt;Each PerformedSubjectMilestone might use one DocumentVersion. Each DocumentVersion might be used for one or more PerformedSubjectMilestone.&lt;br/&gt;&lt;br/&gt;DEFINITION:&lt;br/&gt;&lt;br/&gt;EXAMPLE(S):&lt;br/&gt;&lt;br/&gt;OTHER NAME(S):&lt;br/&gt;&lt;br/&gt;NOTE(S):&lt;br/&gt;</div>
-
-							</div>
-						</div>
-					</td>
-				</tr>
-				<tr>
-					<td width="40%" class="TableRow" valign="top">
-						<a href="EA99.htm">DocumentVersionWorkflowStatus</a><br />
-						Class &nbsp;
-					</td>
-					<td width="30%" class="TableRow" valign="top">
-						<strong>Name:</strong> describingDocumentVersionWorkflowStatus<br />
-						&nbsp;
-					</td>
-					<td width="30%" class="TableRow" valign="top">
-						<strong>Name:</strong> describedDocumentVersion<br />
-						&nbsp;	
-					</td>
-				</tr>
-				<tr>
-					<td class="TableRowBottomDashed"  colspan="3">
-						<div class="DetailsDivParent"><img src="../../images/minus03.gif" align="absmiddle" id="DetailsImageLink494" onclick="parent.toggleDiv('detailsDIVLink494','DetailsImageLink494')" />Details:
-							<div id="detailsDIVLink494" class="DetailsDiv" >
-							<div class="ObjectDetailsNotes">DESCRIPTION:&lt;br/&gt;Each DocumentVersionWorkflowStatus always describes one DocumentVersion.&#160;&#160;Each DocumentVersion might be described by one or more DocumentVersionWorkflowStatus.&lt;br/&gt;&lt;br/&gt;DEFINITION:&lt;br/&gt;&lt;br/&gt;EXAMPLE(S):&lt;br/&gt;&lt;br/&gt;OTHER NAME(S):&lt;br/&gt;&lt;br/&gt;NOTE(S):&lt;br/&gt;&lt;br/&gt;</div>
-
-							</div>
-						</div>
-					</td>
-				</tr>
-				<tr>
-					<td width="40%" class="TableRow" valign="top">
 						<a href="EA98.htm">DocumentVersionRepresentation</a><br />
 						Class &nbsp;
 					</td>
@@ -1001,8 +953,8 @@ function nameClassifier(name, separator)
 				</tr>
 				<tr>
 					<td class="TableRowBottomDashed"  colspan="3">
-						<div class="DetailsDivParent"><img src="../../images/minus03.gif" align="absmiddle" id="DetailsImageLink495" onclick="parent.toggleDiv('detailsDIVLink495','DetailsImageLink495')" />Details:
-							<div id="detailsDIVLink495" class="DetailsDiv" >
+						<div class="DetailsDivParent"><img src="../../images/minus03.gif" align="absmiddle" id="DetailsImageLink493" onclick="parent.toggleDiv('detailsDIVLink493','DetailsImageLink493')" />Details:
+							<div id="detailsDIVLink493" class="DetailsDiv" >
 							<div class="ObjectDetailsNotes">DESCRIPTION:&lt;br/&gt;Each DocumentVersionRepresentation always represents one DocumentVersion.&#160;&#160;Each DocumentVersion always is represented as one or more DocumentVersionRepresentation.&#160;&#160;&lt;br/&gt;&lt;br/&gt;DEFINITION:&lt;br/&gt;&lt;br/&gt;EXAMPLE(S):&lt;br/&gt;&lt;br/&gt;OTHER NAME(S):&lt;br/&gt;&lt;br/&gt;NOTE(S):&lt;br/&gt;</div>
 
 							</div>
@@ -1011,23 +963,23 @@ function nameClassifier(name, separator)
 				</tr>
 				<tr>
 					<td width="40%" class="TableRow" valign="top">
-						<a href="EA95.htm">DocumentAuthor</a><br />
+						<a href="EA97.htm">DocumentVersionRelationship</a><br />
 						Class &nbsp;
 					</td>
 					<td width="30%" class="TableRow" valign="top">
-						<strong>Name:</strong> authoringDocumentAuthor<br />
+						<strong>Name:</strong> targetDocumentVersionRelationship<br />
 						&nbsp;
 					</td>
 					<td width="30%" class="TableRow" valign="top">
-						<strong>Name:</strong> authoredDocumentVersion<br />
+						<strong>Name:</strong> sourceDocumentVersion<br />
 						&nbsp;	
 					</td>
 				</tr>
 				<tr>
 					<td class="TableRowBottomDashed"  colspan="3">
-						<div class="DetailsDivParent"><img src="../../images/minus03.gif" align="absmiddle" id="DetailsImageLink496" onclick="parent.toggleDiv('detailsDIVLink496','DetailsImageLink496')" />Details:
-							<div id="detailsDIVLink496" class="DetailsDiv" >
-							<div class="ObjectDetailsNotes">DESCRIPTION:&lt;br/&gt;Each DocumentAuthor always authors one DocumentVersion. Each DocumentVersion always is authored by one or more DocumentAuthor.&lt;br/&gt;&lt;br/&gt;DEFINITION:&lt;br/&gt;&lt;br/&gt;EXAMPLE(S):&lt;br/&gt;&lt;br/&gt;OTHER NAME(S):&lt;br/&gt;&lt;br/&gt;NOTE(S):&lt;br/&gt;&lt;br/&gt;</div>
+						<div class="DetailsDivParent"><img src="../../images/minus03.gif" align="absmiddle" id="DetailsImageLink494" onclick="parent.toggleDiv('detailsDIVLink494','DetailsImageLink494')" />Details:
+							<div id="detailsDIVLink494" class="DetailsDiv" >
+							<div class="ObjectDetailsNotes">DESCRIPTION:&lt;br/&gt;Each DocumentVersionRelationship always has as source one DocumentVersion.&#160;&#160;Each DocumentVersion might be the source for one or more DocumentVersionRelationship.&lt;br/&gt;&lt;br/&gt;DEFINITION:&lt;br/&gt;&lt;br/&gt;EXAMPLE(S):&lt;br/&gt;&lt;br/&gt;OTHER NAME(S):&lt;br/&gt;&lt;br/&gt;NOTE(S):&lt;br/&gt;&lt;br/&gt;</div>
 
 							</div>
 						</div>
@@ -1035,15 +987,63 @@ function nameClassifier(name, separator)
 				</tr>
 				<tr>
 					<td width="40%" class="TableRow" valign="top">
-						<a href="../EA7/EA279.htm">DefinedNotification</a><br />
+						<a href="../EA10/EA405.htm">PerformedSubjectMilestone</a><br />
 						Class &nbsp;
 					</td>
 					<td width="30%" class="TableRow" valign="top">
-						<strong>Name:</strong> attachingDefinedNotification<br />
+						<strong>Name:</strong> usingPerformedStudySubjectMilestone<br />
 						&nbsp;
 					</td>
 					<td width="30%" class="TableRow" valign="top">
-						<strong>Name:</strong> attachedDocumentVersion<br />
+						<strong>Name:</strong> usedDocumentVersion<br />
+						&nbsp;	
+					</td>
+				</tr>
+				<tr>
+					<td class="TableRowBottomDashed"  colspan="3">
+						<div class="DetailsDivParent"><img src="../../images/minus03.gif" align="absmiddle" id="DetailsImageLink495" onclick="parent.toggleDiv('detailsDIVLink495','DetailsImageLink495')" />Details:
+							<div id="detailsDIVLink495" class="DetailsDiv" >
+							<div class="ObjectDetailsNotes">DESCRIPTION:&lt;br/&gt;Each PerformedSubjectMilestone might use one DocumentVersion. Each DocumentVersion might be used for one or more PerformedSubjectMilestone.&lt;br/&gt;&lt;br/&gt;DEFINITION:&lt;br/&gt;&lt;br/&gt;EXAMPLE(S):&lt;br/&gt;&lt;br/&gt;OTHER NAME(S):&lt;br/&gt;&lt;br/&gt;NOTE(S):&lt;br/&gt;</div>
+
+							</div>
+						</div>
+					</td>
+				</tr>
+				<tr>
+					<td width="40%" class="TableRow" valign="top">
+						<a href="../EA10/EA376.htm">PerformedActivityRelationship</a><br />
+						Class &nbsp;
+					</td>
+					<td width="30%" class="TableRow" valign="top">
+						<strong>Name:</strong> sourcePerformedActivityRelationship<br />
+						&nbsp;
+					</td>
+					<td width="30%" class="TableRow" valign="top">
+						<strong>Name:</strong> targetDocumentVersion<br />
+						&nbsp;	
+					</td>
+				</tr>
+				<tr>
+					<td class="TableRowBottomDashed"  colspan="3">
+						<div class="DetailsDivParent"><img src="../../images/minus03.gif" align="absmiddle" id="DetailsImageLink496" onclick="parent.toggleDiv('detailsDIVLink496','DetailsImageLink496')" />Details:
+							<div id="detailsDIVLink496" class="DetailsDiv" >
+							<div class="ObjectDetailsNotes">DESCRIPTION:&lt;br/&gt;Each PerformedActivityRelationship always has as target one DocumentVersion.&#160;&#160;Each DocumentVersion might be the target for one or more PerformedActivityRelationship.&lt;br/&gt;&lt;br/&gt;DEFINITION:&lt;br/&gt;&lt;br/&gt;EXAMPLE(S):&lt;br/&gt;&lt;br/&gt;OTHER NAME(S):&lt;br/&gt;&lt;br/&gt;NOTE(S):&lt;br/&gt;&lt;br/&gt;</div>
+
+							</div>
+						</div>
+					</td>
+				</tr>
+				<tr>
+					<td width="40%" class="TableRow" valign="top">
+						<a href="../EA8/EA342.htm">«DEPRECATED» SubmissionUnit</a><br />
+						Class &nbsp;
+					</td>
+					<td width="30%" class="TableRow" valign="top">
+						<strong>Name:</strong> includingSubmissionUnit<br />
+						&nbsp;
+					</td>
+					<td width="30%" class="TableRow" valign="top">
+						<strong>Name:</strong> includedDocumentVersion<br />
 						&nbsp;	
 					</td>
 				</tr>
@@ -1051,7 +1051,7 @@ function nameClassifier(name, separator)
 					<td class="TableRowBottomDashed"  colspan="3">
 						<div class="DetailsDivParent"><img src="../../images/minus03.gif" align="absmiddle" id="DetailsImageLink497" onclick="parent.toggleDiv('detailsDIVLink497','DetailsImageLink497')" />Details:
 							<div id="detailsDIVLink497" class="DetailsDiv" >
-							<div class="ObjectDetailsNotes">DESCRIPTION:&lt;br/&gt;Each DefinedNotification might have as an attachment one or more DocumentVersion. Each DocumentVersion might be an attachment on one or more DefinedNotification.&lt;br/&gt;&lt;br/&gt;DEFINITION:&lt;br/&gt;&lt;br/&gt;EXAMPLE(S):&lt;br/&gt;&lt;br/&gt;OTHER NAME(S):&lt;br/&gt;&lt;br/&gt;NOTE(S):&lt;br/&gt;&lt;br/&gt;</div>
+							<div class="ObjectDetailsNotes">DESCRIPTION:&lt;br/&gt;Each SubmissionUnit always includes one or more DocumentVersion.&#160;&#160;Each DocumentVersion might be included in one or more SubmissionUnit.&lt;br/&gt;&lt;br/&gt;DEFINITION:&lt;br/&gt;&lt;br/&gt;EXAMPLE(S):&lt;br/&gt;&lt;br/&gt;OTHER NAME(S):&lt;br/&gt;&lt;br/&gt;NOTE(S):&lt;br/&gt;&lt;br/&gt;</div>
 
 							</div>
 						</div>
@@ -1235,63 +1235,12 @@ function nameClassifier(name, separator)
 					<td width="40%" class="TableHeading">Notes</td>
 				</tr>
 				<tr>
-					<td width="30%" class="TableRow" valign="top"><a href="EA143.htm">ReportVersion</a></td>
-					<td width="10%" class="TableRow" valign="top">Class</td>
-					<td width="10%" class="TableRow" valign="top">Generalization</td>
-					<td width="10%" class="TableRow" valign="top">From</td>
-					<td width="40%" class="TableRow" valign="top">DESCRIPTION:
-Each ReportVersion always specializes one DocumentVersion. Each DocumentVersion might be specialized by one ReportVersion.
-
-DEFINITION:
-
-EXAMPLE(S):
-
-OTHER NAME(S):
-
-NOTE(S):
-</td>
-				</tr>
-				<tr>
-					<td width="30%" class="TableRow" valign="top"><a href="../EA7/EA258.htm">AmendmentChangeSummaryVersion</a></td>
-					<td width="10%" class="TableRow" valign="top">Class</td>
-					<td width="10%" class="TableRow" valign="top">Generalization</td>
-					<td width="10%" class="TableRow" valign="top">From</td>
-					<td width="40%" class="TableRow" valign="top">DESCRIPTION:
-Each AmendmentChangeSummaryVersion always specializes one DocumentVersion. Each DocumentVersion might be specialized by one AmendmentChangeSummaryVersion.
-
-DEFINITION:
-
-EXAMPLE(S):
-
-OTHER NAME(S):
-
-NOTE(S):
-</td>
-				</tr>
-				<tr>
 					<td width="30%" class="TableRow" valign="top"><a href="../EA10/EA435.htm">StudySubjectExperienceDocumentVersion</a></td>
 					<td width="10%" class="TableRow" valign="top">Class</td>
 					<td width="10%" class="TableRow" valign="top">Generalization</td>
 					<td width="10%" class="TableRow" valign="top">From</td>
 					<td width="40%" class="TableRow" valign="top">DESCRIPTION:
 Each StudySubjectExperienceDocumentVersion always specializes one DocumentVersion. Each DocumentVersion might be specialized by one StudySubjectExperienceDocumentVersion.
-
-DEFINITION:
-
-EXAMPLE(S):
-
-OTHER NAME(S):
-
-NOTE(S):
-</td>
-				</tr>
-				<tr>
-					<td width="30%" class="TableRow" valign="top"><a href="../EA9/EA348.htm">DataMonitoringCommitteeCharterVersion</a></td>
-					<td width="10%" class="TableRow" valign="top">Class</td>
-					<td width="10%" class="TableRow" valign="top">Generalization</td>
-					<td width="10%" class="TableRow" valign="top">From</td>
-					<td width="40%" class="TableRow" valign="top">DESCRIPTION:
-Each DataMonitoringCommitteeCharterVersion always specializes one DocumentVersion. Each DocumentVersion might be specialized by one DataMonitoringCommitteeCharterVersion.
 
 DEFINITION:
 
@@ -1326,6 +1275,57 @@ NOTE(S):
 					<td width="10%" class="TableRow" valign="top">From</td>
 					<td width="40%" class="TableRow" valign="top">DESCRIPTION:
 Each StudyProtocolDocumentVersion always specializes one DocumentVersion. Each DocumentVersion might be specialized by one StudyProtocolDocumentVersion.
+
+DEFINITION:
+
+EXAMPLE(S):
+
+OTHER NAME(S):
+
+NOTE(S):
+</td>
+				</tr>
+				<tr>
+					<td width="30%" class="TableRow" valign="top"><a href="../EA7/EA258.htm">AmendmentChangeSummaryVersion</a></td>
+					<td width="10%" class="TableRow" valign="top">Class</td>
+					<td width="10%" class="TableRow" valign="top">Generalization</td>
+					<td width="10%" class="TableRow" valign="top">From</td>
+					<td width="40%" class="TableRow" valign="top">DESCRIPTION:
+Each AmendmentChangeSummaryVersion always specializes one DocumentVersion. Each DocumentVersion might be specialized by one AmendmentChangeSummaryVersion.
+
+DEFINITION:
+
+EXAMPLE(S):
+
+OTHER NAME(S):
+
+NOTE(S):
+</td>
+				</tr>
+				<tr>
+					<td width="30%" class="TableRow" valign="top"><a href="EA143.htm">ReportVersion</a></td>
+					<td width="10%" class="TableRow" valign="top">Class</td>
+					<td width="10%" class="TableRow" valign="top">Generalization</td>
+					<td width="10%" class="TableRow" valign="top">From</td>
+					<td width="40%" class="TableRow" valign="top">DESCRIPTION:
+Each ReportVersion always specializes one DocumentVersion. Each DocumentVersion might be specialized by one ReportVersion.
+
+DEFINITION:
+
+EXAMPLE(S):
+
+OTHER NAME(S):
+
+NOTE(S):
+</td>
+				</tr>
+				<tr>
+					<td width="30%" class="TableRow" valign="top"><a href="../EA9/EA348.htm">DataMonitoringCommitteeCharterVersion</a></td>
+					<td width="10%" class="TableRow" valign="top">Class</td>
+					<td width="10%" class="TableRow" valign="top">Generalization</td>
+					<td width="10%" class="TableRow" valign="top">From</td>
+					<td width="40%" class="TableRow" valign="top">DESCRIPTION:
+Each DataMonitoringCommitteeCharterVersion always specializes one DocumentVersion. Each DocumentVersion might be specialized by one DataMonitoringCommitteeCharterVersion.
 
 DEFINITION:
 

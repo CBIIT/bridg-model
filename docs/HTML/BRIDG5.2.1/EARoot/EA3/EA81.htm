@@ -699,15 +699,15 @@ function nameClassifier(name, separator)
 				</tr>
 				<tr>
 					<td width="40%" class="TableRow" valign="top">
-						<a href="../EA6/EA219.htm">Chromosome</a><br />
+						<a href="EA79.htm">Biologic</a><br />
 						Class &nbsp;
 					</td>
 					<td width="30%" class="TableRow" valign="top">
-						<strong>Name:</strong> containedChromosome<br />
+						<strong>Name:</strong> classifiedBiologic<br />
 						&nbsp;
 					</td>
 					<td width="30%" class="TableRow" valign="top">
-						<strong>Name:</strong> containingBiologicEntityClassification<br />
+						<strong>Name:</strong> classifyingBiologicEntityClassification<br />
 						&nbsp;	
 					</td>
 				</tr>
@@ -715,7 +715,7 @@ function nameClassifier(name, separator)
 					<td class="TableRowBottomDashed"  colspan="3">
 						<div class="DetailsDivParent"><img src="../../images/minus03.gif" align="absmiddle" id="DetailsImageLink300" onclick="parent.toggleDiv('detailsDIVLink300','DetailsImageLink300')" />Details:
 							<div id="detailsDIVLink300" class="DetailsDiv" >
-							<div class="ObjectDetailsNotes">DESCRIPTION:&lt;br/&gt;Each Chromosome always is part of one BiologicEntityClassification. Each BiologicEntityClassification might contain one or more Chromosome.&lt;br/&gt;&lt;br/&gt;DEFINITION:&lt;br/&gt;&lt;br/&gt;EXAMPLE(S):&lt;br/&gt;&lt;br/&gt;OTHER NAME(S):&lt;br/&gt;&lt;br/&gt;NOTE(S):&lt;br/&gt;</div>
+							<div class="ObjectDetailsNotes">DESCRIPTION:&lt;br/&gt;Each Biologic might be classified as one BiologicEntityClassification.&#160;&#160;Each BiologicEntityClassification might classify one or more Biologic.&lt;br/&gt;&lt;br/&gt;DEFINITION:&lt;br/&gt;&lt;br/&gt;EXAMPLE(S):&lt;br/&gt;&lt;br/&gt;OTHER NAME(S):&lt;br/&gt;&lt;br/&gt;NOTE(S):&lt;br/&gt;</div>
 
 							</div>
 						</div>
@@ -771,30 +771,6 @@ function nameClassifier(name, separator)
 				</tr>
 				<tr>
 					<td width="40%" class="TableRow" valign="top">
-						<a href="EA79.htm">Biologic</a><br />
-						Class &nbsp;
-					</td>
-					<td width="30%" class="TableRow" valign="top">
-						<strong>Name:</strong> classifiedBiologic<br />
-						&nbsp;
-					</td>
-					<td width="30%" class="TableRow" valign="top">
-						<strong>Name:</strong> classifyingBiologicEntityClassification<br />
-						&nbsp;	
-					</td>
-				</tr>
-				<tr>
-					<td class="TableRowBottomDashed"  colspan="3">
-						<div class="DetailsDivParent"><img src="../../images/minus03.gif" align="absmiddle" id="DetailsImageLink303" onclick="parent.toggleDiv('detailsDIVLink303','DetailsImageLink303')" />Details:
-							<div id="detailsDIVLink303" class="DetailsDiv" >
-							<div class="ObjectDetailsNotes">DESCRIPTION:&lt;br/&gt;Each Biologic might be classified as one BiologicEntityClassification.&#160;&#160;Each BiologicEntityClassification might classify one or more Biologic.&lt;br/&gt;&lt;br/&gt;DEFINITION:&lt;br/&gt;&lt;br/&gt;EXAMPLE(S):&lt;br/&gt;&lt;br/&gt;OTHER NAME(S):&lt;br/&gt;&lt;br/&gt;NOTE(S):&lt;br/&gt;</div>
-
-							</div>
-						</div>
-					</td>
-				</tr>
-				<tr>
-					<td width="40%" class="TableRow" valign="top">
 						<a href="../EA6/EA231.htm">MolecularSequence</a><br />
 						Class &nbsp;
 					</td>
@@ -809,8 +785,8 @@ function nameClassifier(name, separator)
 				</tr>
 				<tr>
 					<td class="TableRowBottomDashed"  colspan="3">
-						<div class="DetailsDivParent"><img src="../../images/minus03.gif" align="absmiddle" id="DetailsImageLink304" onclick="parent.toggleDiv('detailsDIVLink304','DetailsImageLink304')" />Details:
-							<div id="detailsDIVLink304" class="DetailsDiv" >
+						<div class="DetailsDivParent"><img src="../../images/minus03.gif" align="absmiddle" id="DetailsImageLink303" onclick="parent.toggleDiv('detailsDIVLink303','DetailsImageLink303')" />Details:
+							<div id="detailsDIVLink303" class="DetailsDiv" >
 							<div class="ObjectDetailsNotes">DESCRIPTION:&lt;br/&gt;Each MolecularSequence always is included in one BiologicEntityClassification. Each BiologicEntityClassification might include one or more MolecularSequence.&lt;br/&gt;&lt;br/&gt;DEFINITION:&lt;br/&gt;&lt;br/&gt;EXAMPLE(S):&lt;br/&gt;&lt;br/&gt;OTHER NAME(S):&lt;br/&gt;&lt;br/&gt;NOTE(S):&lt;br/&gt;</div>
 
 							</div>
@@ -833,9 +809,33 @@ function nameClassifier(name, separator)
 				</tr>
 				<tr>
 					<td class="TableRowBottomDashed"  colspan="3">
+						<div class="DetailsDivParent"><img src="../../images/minus03.gif" align="absmiddle" id="DetailsImageLink304" onclick="parent.toggleDiv('detailsDIVLink304','DetailsImageLink304')" />Details:
+							<div id="detailsDIVLink304" class="DetailsDiv" >
+							<div class="ObjectDetailsNotes">DESCRIPTION:&lt;br/&gt;Each BiologicEntity always is classified as one BiologicEntityClassification.&#160;&#160;Each BiologicEntityClassification might classify one or more BiologicEntity.&lt;br/&gt;&lt;br/&gt;DEFINITION:&lt;br/&gt;&lt;br/&gt;EXAMPLE(S):&lt;br/&gt;&lt;br/&gt;OTHER NAME(S):&lt;br/&gt;&lt;br/&gt;NOTE(S):&lt;br/&gt;</div>
+
+							</div>
+						</div>
+					</td>
+				</tr>
+				<tr>
+					<td width="40%" class="TableRow" valign="top">
+						<a href="../EA6/EA219.htm">Chromosome</a><br />
+						Class &nbsp;
+					</td>
+					<td width="30%" class="TableRow" valign="top">
+						<strong>Name:</strong> containedChromosome<br />
+						&nbsp;
+					</td>
+					<td width="30%" class="TableRow" valign="top">
+						<strong>Name:</strong> containingBiologicEntityClassification<br />
+						&nbsp;	
+					</td>
+				</tr>
+				<tr>
+					<td class="TableRowBottomDashed"  colspan="3">
 						<div class="DetailsDivParent"><img src="../../images/minus03.gif" align="absmiddle" id="DetailsImageLink305" onclick="parent.toggleDiv('detailsDIVLink305','DetailsImageLink305')" />Details:
 							<div id="detailsDIVLink305" class="DetailsDiv" >
-							<div class="ObjectDetailsNotes">DESCRIPTION:&lt;br/&gt;Each BiologicEntity always is classified as one BiologicEntityClassification.&#160;&#160;Each BiologicEntityClassification might classify one or more BiologicEntity.&lt;br/&gt;&lt;br/&gt;DEFINITION:&lt;br/&gt;&lt;br/&gt;EXAMPLE(S):&lt;br/&gt;&lt;br/&gt;OTHER NAME(S):&lt;br/&gt;&lt;br/&gt;NOTE(S):&lt;br/&gt;</div>
+							<div class="ObjectDetailsNotes">DESCRIPTION:&lt;br/&gt;Each Chromosome always is part of one BiologicEntityClassification. Each BiologicEntityClassification might contain one or more Chromosome.&lt;br/&gt;&lt;br/&gt;DEFINITION:&lt;br/&gt;&lt;br/&gt;EXAMPLE(S):&lt;br/&gt;&lt;br/&gt;OTHER NAME(S):&lt;br/&gt;&lt;br/&gt;NOTE(S):&lt;br/&gt;</div>
 
 							</div>
 						</div>

@@ -146,30 +146,6 @@ function nameClassifier(name, separator)
 				</tr>
 				<tr>
 					<td width="40%" class="TableRow" valign="top">
-						<a href="EA93.htm">Distributor</a><br />
-						Class &nbsp;
-					</td>
-					<td width="30%" class="TableRow" valign="top">
-						<strong>Name:</strong> representingDistributor<br />
-						&nbsp;
-					</td>
-					<td width="30%" class="TableRow" valign="top">
-						<strong>Name:</strong> representedProcessor<br />
-						&nbsp;	
-					</td>
-				</tr>
-				<tr>
-					<td class="TableRowBottomDashed"  colspan="3">
-						<div class="DetailsDivParent"><img src="../../images/minus03.gif" align="absmiddle" id="DetailsImageLink1088" onclick="parent.toggleDiv('detailsDIVLink1088','DetailsImageLink1088')" />Details:
-							<div id="detailsDIVLink1088" class="DetailsDiv" >
-							<div class="ObjectDetailsNotes">DESCRIPTION:&lt;br/&gt;Each Distributor always functions as an outlet for one or more Processor. Each Processor might have as an outlet one or more Distributor.&lt;br/&gt;&lt;br/&gt;DEFINITION:&lt;br/&gt;&lt;br/&gt;EXAMPLE(S):&lt;br/&gt;&lt;br/&gt;OTHER NAME(S):&lt;br/&gt;&lt;br/&gt;NOTE(S):&lt;br/&gt;&lt;br/&gt;</div>
-
-							</div>
-						</div>
-					</td>
-				</tr>
-				<tr>
-					<td width="40%" class="TableRow" valign="top">
 						<a href="EA130.htm">ProcessedProduct</a><br />
 						Class &nbsp;
 					</td>
@@ -184,8 +160,8 @@ function nameClassifier(name, separator)
 				</tr>
 				<tr>
 					<td class="TableRowBottomDashed"  colspan="3">
-						<div class="DetailsDivParent"><img src="../../images/minus03.gif" align="absmiddle" id="DetailsImageLink1089" onclick="parent.toggleDiv('detailsDIVLink1089','DetailsImageLink1089')" />Details:
-							<div id="detailsDIVLink1089" class="DetailsDiv" >
+						<div class="DetailsDivParent"><img src="../../images/minus03.gif" align="absmiddle" id="DetailsImageLink1088" onclick="parent.toggleDiv('detailsDIVLink1088','DetailsImageLink1088')" />Details:
+							<div id="detailsDIVLink1088" class="DetailsDiv" >
 							<div class="ObjectDetailsNotes">DESCRIPTION:&lt;br/&gt;Each ProcessedProduct always is produced by one Processor. Each Processor always produces one or more ProcessedProduct.&lt;br/&gt;&lt;br/&gt;DEFINITION:&lt;br/&gt;&lt;br/&gt;EXAMPLE(S):&lt;br/&gt;&lt;br/&gt;OTHER NAME(S):&lt;br/&gt;&lt;br/&gt;NOTE(S):&lt;br/&gt;&lt;br/&gt;</div>
 
 							</div>
@@ -208,9 +184,33 @@ function nameClassifier(name, separator)
 				</tr>
 				<tr>
 					<td class="TableRowBottomDashed"  colspan="3">
+						<div class="DetailsDivParent"><img src="../../images/minus03.gif" align="absmiddle" id="DetailsImageLink1089" onclick="parent.toggleDiv('detailsDIVLink1089','DetailsImageLink1089')" />Details:
+							<div id="detailsDIVLink1089" class="DetailsDiv" >
+							<div class="ObjectDetailsNotes">DESCRIPTION:&lt;br/&gt;Each ProcessingSite always manufactures for one or more Processor. Each Processor might manufacture at one or more ProcessingSite.&lt;br/&gt;&lt;br/&gt;DEFINITION:&lt;br/&gt;&lt;br/&gt;EXAMPLE(S):&lt;br/&gt;&lt;br/&gt;OTHER NAME(S):&lt;br/&gt;&lt;br/&gt;NOTE(S):&lt;br/&gt;&lt;br/&gt;</div>
+
+							</div>
+						</div>
+					</td>
+				</tr>
+				<tr>
+					<td width="40%" class="TableRow" valign="top">
+						<a href="EA93.htm">Distributor</a><br />
+						Class &nbsp;
+					</td>
+					<td width="30%" class="TableRow" valign="top">
+						<strong>Name:</strong> representingDistributor<br />
+						&nbsp;
+					</td>
+					<td width="30%" class="TableRow" valign="top">
+						<strong>Name:</strong> representedProcessor<br />
+						&nbsp;	
+					</td>
+				</tr>
+				<tr>
+					<td class="TableRowBottomDashed"  colspan="3">
 						<div class="DetailsDivParent"><img src="../../images/minus03.gif" align="absmiddle" id="DetailsImageLink1090" onclick="parent.toggleDiv('detailsDIVLink1090','DetailsImageLink1090')" />Details:
 							<div id="detailsDIVLink1090" class="DetailsDiv" >
-							<div class="ObjectDetailsNotes">DESCRIPTION:&lt;br/&gt;Each ProcessingSite always manufactures for one or more Processor. Each Processor might manufacture at one or more ProcessingSite.&lt;br/&gt;&lt;br/&gt;DEFINITION:&lt;br/&gt;&lt;br/&gt;EXAMPLE(S):&lt;br/&gt;&lt;br/&gt;OTHER NAME(S):&lt;br/&gt;&lt;br/&gt;NOTE(S):&lt;br/&gt;&lt;br/&gt;</div>
+							<div class="ObjectDetailsNotes">DESCRIPTION:&lt;br/&gt;Each Distributor always functions as an outlet for one or more Processor. Each Processor might have as an outlet one or more Distributor.&lt;br/&gt;&lt;br/&gt;DEFINITION:&lt;br/&gt;&lt;br/&gt;EXAMPLE(S):&lt;br/&gt;&lt;br/&gt;OTHER NAME(S):&lt;br/&gt;&lt;br/&gt;NOTE(S):&lt;br/&gt;&lt;br/&gt;</div>
 
 							</div>
 						</div>
@@ -273,12 +273,12 @@ function nameClassifier(name, separator)
 					<td width="40%" class="TableHeading">Notes</td>
 				</tr>
 				<tr>
-					<td width="30%" class="TableRow" valign="top"><a href="EA110.htm">Manufacturer</a></td>
+					<td width="30%" class="TableRow" valign="top"><a href="EA144.htm">Reprocessor</a></td>
 					<td width="10%" class="TableRow" valign="top">Class</td>
 					<td width="10%" class="TableRow" valign="top">Generalization</td>
 					<td width="10%" class="TableRow" valign="top">From</td>
 					<td width="40%" class="TableRow" valign="top">DESCRIPTION:
-Each Manufacturer always specializes one Processor. Each Processor might be specialized by one Manufacturer.
+Each Reprocessor always specializes one Processor. Each Processor might be specialized by one Reprocessor.
 
 DEFINITION:
 
@@ -290,12 +290,12 @@ NOTE(S):
 </td>
 				</tr>
 				<tr>
-					<td width="30%" class="TableRow" valign="top"><a href="EA144.htm">Reprocessor</a></td>
+					<td width="30%" class="TableRow" valign="top"><a href="EA110.htm">Manufacturer</a></td>
 					<td width="10%" class="TableRow" valign="top">Class</td>
 					<td width="10%" class="TableRow" valign="top">Generalization</td>
 					<td width="10%" class="TableRow" valign="top">From</td>
 					<td width="40%" class="TableRow" valign="top">DESCRIPTION:
-Each Reprocessor always specializes one Processor. Each Processor might be specialized by one Reprocessor.
+Each Manufacturer always specializes one Processor. Each Processor might be specialized by one Manufacturer.
 
 DEFINITION:
 

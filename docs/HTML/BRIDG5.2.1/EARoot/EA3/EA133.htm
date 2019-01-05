@@ -178,15 +178,15 @@ function nameClassifier(name, separator)
 				</tr>
 				<tr>
 					<td width="40%" class="TableRow" valign="top">
-						<a href="EA129.htm">PointOfContact</a><br />
+						<a href="EA118.htm">Organization</a><br />
 						Class &nbsp;
 					</td>
 					<td width="30%" class="TableRow" valign="top">
-						<strong>Name:</strong> supportingPointOfContact<br />
+						<strong>Name:</strong> followingOrganization<br />
 						&nbsp;
 					</td>
 					<td width="30%" class="TableRow" valign="top">
-						<strong>Name:</strong> supportedProtocol<br />
+						<strong>Name:</strong> followedProtocol<br />
 						&nbsp;	
 					</td>
 				</tr>
@@ -194,7 +194,7 @@ function nameClassifier(name, separator)
 					<td class="TableRowBottomDashed"  colspan="3">
 						<div class="DetailsDivParent"><img src="../../images/minus03.gif" align="absmiddle" id="DetailsImageLink1095" onclick="parent.toggleDiv('detailsDIVLink1095','DetailsImageLink1095')" />Details:
 							<div id="detailsDIVLink1095" class="DetailsDiv" >
-							<div class="ObjectDetailsNotes">DESCRIPTION:&lt;br/&gt;Each PointOfContact might support one or more ProcessProtocol.&#160;&#160;Each ProcessProtocol might be supported by one or more PointOfContact.&lt;br/&gt;&lt;br/&gt;DEFINITION:&lt;br/&gt;&lt;br/&gt;EXAMPLE(S):&lt;br/&gt;&lt;br/&gt;OTHER NAME(S):&lt;br/&gt;&lt;br/&gt;NOTE(S):&lt;br/&gt;</div>
+							<div class="ObjectDetailsNotes">DESCRIPTION:&lt;br/&gt;Each Organization might follow one or more ProcessProtocol.&#160;&#160;Each ProcessProtocol might be followed by one or more Organization.&lt;br/&gt;&lt;br/&gt;DEFINITION:&lt;br/&gt;&lt;br/&gt;EXAMPLE(S):&lt;br/&gt;An imaging center may follow a given image acquisition protocol&lt;br/&gt;&lt;br/&gt;OTHER NAME(S):&lt;br/&gt;&lt;br/&gt;NOTE(S):&lt;br/&gt;</div>
 
 							</div>
 						</div>
@@ -226,15 +226,15 @@ function nameClassifier(name, separator)
 				</tr>
 				<tr>
 					<td width="40%" class="TableRow" valign="top">
-						<a href="EA118.htm">Organization</a><br />
+						<a href="EA129.htm">PointOfContact</a><br />
 						Class &nbsp;
 					</td>
 					<td width="30%" class="TableRow" valign="top">
-						<strong>Name:</strong> followingOrganization<br />
+						<strong>Name:</strong> supportingPointOfContact<br />
 						&nbsp;
 					</td>
 					<td width="30%" class="TableRow" valign="top">
-						<strong>Name:</strong> followedProtocol<br />
+						<strong>Name:</strong> supportedProtocol<br />
 						&nbsp;	
 					</td>
 				</tr>
@@ -242,7 +242,7 @@ function nameClassifier(name, separator)
 					<td class="TableRowBottomDashed"  colspan="3">
 						<div class="DetailsDivParent"><img src="../../images/minus03.gif" align="absmiddle" id="DetailsImageLink1097" onclick="parent.toggleDiv('detailsDIVLink1097','DetailsImageLink1097')" />Details:
 							<div id="detailsDIVLink1097" class="DetailsDiv" >
-							<div class="ObjectDetailsNotes">DESCRIPTION:&lt;br/&gt;Each Organization might follow one or more ProcessProtocol.&#160;&#160;Each ProcessProtocol might be followed by one or more Organization.&lt;br/&gt;&lt;br/&gt;DEFINITION:&lt;br/&gt;&lt;br/&gt;EXAMPLE(S):&lt;br/&gt;An imaging center may follow a given image acquisition protocol&lt;br/&gt;&lt;br/&gt;OTHER NAME(S):&lt;br/&gt;&lt;br/&gt;NOTE(S):&lt;br/&gt;</div>
+							<div class="ObjectDetailsNotes">DESCRIPTION:&lt;br/&gt;Each PointOfContact might support one or more ProcessProtocol.&#160;&#160;Each ProcessProtocol might be supported by one or more PointOfContact.&lt;br/&gt;&lt;br/&gt;DEFINITION:&lt;br/&gt;&lt;br/&gt;EXAMPLE(S):&lt;br/&gt;&lt;br/&gt;OTHER NAME(S):&lt;br/&gt;&lt;br/&gt;NOTE(S):&lt;br/&gt;</div>
 
 							</div>
 						</div>
@@ -281,28 +281,12 @@ function nameClassifier(name, separator)
 					<td width="40%" class="TableHeading">Notes</td>
 				</tr>
 				<tr>
-					<td width="30%" class="TableRow" valign="top"><a href="../EA7/EA261.htm">DefinedActivity</a></td>
-					<td width="10%" class="TableRow" valign="top">Class</td>
-					<td width="10%" class="TableRow" valign="top">Generalization</td>
-					<td width="10%" class="TableRow" valign="top">To</td>
-					<td width="40%" class="TableRow" valign="top">DESCRIPTION:
-Each ProcessProtocol always specializes one DefinedActivity. Each DefinedActivity might be specialized by one ProcessProtocol.
-
-DEFINITION:
-
-EXAMPLE(S):
-
-OTHER NAME(S):
-
-NOTE(S):</td>
-				</tr>
-				<tr>
-					<td width="30%" class="TableRow" valign="top"><a href="../EA2/EA57.htm">SpecimenCollectionProtocol</a></td>
+					<td width="30%" class="TableRow" valign="top"><a href="../EA5/EA199.htm">ImagingProcessProtocol</a></td>
 					<td width="10%" class="TableRow" valign="top">Class</td>
 					<td width="10%" class="TableRow" valign="top">Generalization</td>
 					<td width="10%" class="TableRow" valign="top">From</td>
 					<td width="40%" class="TableRow" valign="top">DESCRIPTION:
-Each SpecimenCollectionProtocol always specializes one ProcessProtocol. Each ProcessProtocol might be specialized by one SpecimenCollectionProtocol.
+Each ImagingProcessProtocol always specializes one ProcessProtocol. Each ProcessProtocol might be specialized by one ImagingProcessProtocol.
 
 DEFINITION:
 
@@ -329,12 +313,28 @@ OTHER NAME(S):
 NOTE(S): </td>
 				</tr>
 				<tr>
-					<td width="30%" class="TableRow" valign="top"><a href="../EA5/EA199.htm">ImagingProcessProtocol</a></td>
+					<td width="30%" class="TableRow" valign="top"><a href="../EA2/EA57.htm">SpecimenCollectionProtocol</a></td>
 					<td width="10%" class="TableRow" valign="top">Class</td>
 					<td width="10%" class="TableRow" valign="top">Generalization</td>
 					<td width="10%" class="TableRow" valign="top">From</td>
 					<td width="40%" class="TableRow" valign="top">DESCRIPTION:
-Each ImagingProcessProtocol always specializes one ProcessProtocol. Each ProcessProtocol might be specialized by one ImagingProcessProtocol.
+Each SpecimenCollectionProtocol always specializes one ProcessProtocol. Each ProcessProtocol might be specialized by one SpecimenCollectionProtocol.
+
+DEFINITION:
+
+EXAMPLE(S):
+
+OTHER NAME(S):
+
+NOTE(S):</td>
+				</tr>
+				<tr>
+					<td width="30%" class="TableRow" valign="top"><a href="../EA7/EA261.htm">DefinedActivity</a></td>
+					<td width="10%" class="TableRow" valign="top">Class</td>
+					<td width="10%" class="TableRow" valign="top">Generalization</td>
+					<td width="10%" class="TableRow" valign="top">To</td>
+					<td width="40%" class="TableRow" valign="top">DESCRIPTION:
+Each ProcessProtocol always specializes one DefinedActivity. Each DefinedActivity might be specialized by one ProcessProtocol.
 
 DEFINITION:
 

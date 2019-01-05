@@ -469,15 +469,15 @@ function nameClassifier(name, separator)
 				</tr>
 				<tr>
 					<td width="40%" class="TableRow" valign="top">
-						<a href="../EA3/EA102.htm">ExperimentalUnit</a><br />
+						<a href="../EA10/EA385.htm">PerformedExperimentalUnitAllocation</a><br />
 						Class &nbsp;
 					</td>
 					<td width="30%" class="TableRow" valign="top">
-						<strong>Name:</strong> experiencingExperimentalUnit<br />
+						<strong>Name:</strong> assigningPerformedExperimentalUnitAllocation<br />
 						&nbsp;
 					</td>
 					<td width="30%" class="TableRow" valign="top">
-						<strong>Name:</strong> experiencedArm<br />
+						<strong>Name:</strong> assignedArm<br />
 						&nbsp;	
 					</td>
 				</tr>
@@ -485,7 +485,7 @@ function nameClassifier(name, separator)
 					<td class="TableRowBottomDashed"  colspan="3">
 						<div class="DetailsDivParent"><img src="../../images/minus03.gif" align="absmiddle" id="DetailsImageLink1736" onclick="parent.toggleDiv('detailsDIVLink1736','DetailsImageLink1736')" />Details:
 							<div id="detailsDIVLink1736" class="DetailsDiv" >
-							<div class="ObjectDetailsNotes">DESCRIPTION:&#160;&#160;&lt;br/&gt;Each ExperimentalUnit might actually have experienced one Arm.&#160;&#160;Each Arm might actually have been experienced by one or more ExperimentalUnit.&lt;br/&gt;&lt;br/&gt;DEFINITION:&#160;&#160;&lt;br/&gt;The association between a ExperimentalUnit and an Arm that identifies the treatment plan actually received by the experimental unit as determined retrospectively regardless of what treatment plan was in fact assigned to the experimental unit.&lt;br/&gt;&lt;br/&gt;EXAMPLE(S):&#160;&#160;&lt;br/&gt;For an A/B cross-over study the arms may be &#8220;A-B&#8221; and &#8220;B-A&#8221;; if John Doe was assigned Arm &#8220;A-B&#8221;, but actually experienced Arm &#8220;B-A&#8221;, this association would link his role of ExperimentalUnit to the Arm he really participated in.&lt;br/&gt;&lt;br/&gt;OTHER NAME(S):&#160;&#160;&lt;br/&gt;Actual Arm&lt;br/&gt;&lt;br/&gt;NOTE(S):&#160;&#160;In most trials one would expect that the Arm linked to the ExperimentalUnit will be the same as the Arm.name that was assigned in the PerformedExperimentalUnitAllocation for that ExperimentalUnit.&#160;&#160;However, if what actually happened is different than what was assigned but is actually a valid arm in the trial arms table, i.e. the experimental unit was assigned A-B but actually received B-A, this association shows the connection to the treatment plan that actually was followed. Or alternatively, if CDISC&#8217;s SDTM DM.ACTARMCD = &quot;UNPLAN&#8221; (meaning &quot;Unplanned Treatment&quot;), then the treatment that occurred doesn&#8217;t match any arm in trial arms table and this association would not be used.&#160;&#160;Rather the ExperimentalUnit.unplannedTreatmentIndicator would be &#8220;true&#8221;. &lt;br/&gt;Note that this association has a retrospective nature &#8211; i.e. you might not know what treatment an experimental unit was actually on until after all treatments have been completed and the blind, if any, has been broken.&#160;&#160;This is typically the case for studies in which there may be more than one randomization.&lt;br/&gt;</div>
+							<div class="ObjectDetailsNotes">DESCRIPTION:&lt;br/&gt;Each PerformedExperimentalUnitAllocation might assign an experimental unit to one Arm. Each Arm might be assigned an experimental unit by one or more PerformedExperimentalUnitAllocation.&lt;br/&gt;&lt;br/&gt;DEFINITION:&lt;br/&gt;&lt;br/&gt;EXAMPLE(S):&lt;br/&gt;&lt;br/&gt;OTHER NAME(S):&lt;br/&gt;&lt;br/&gt;NOTE(S):&lt;br/&gt;</div>
 
 							</div>
 						</div>
@@ -517,15 +517,15 @@ function nameClassifier(name, separator)
 				</tr>
 				<tr>
 					<td width="40%" class="TableRow" valign="top">
-						<a href="../EA10/EA385.htm">PerformedExperimentalUnitAllocation</a><br />
+						<a href="../EA3/EA102.htm">ExperimentalUnit</a><br />
 						Class &nbsp;
 					</td>
 					<td width="30%" class="TableRow" valign="top">
-						<strong>Name:</strong> assigningPerformedExperimentalUnitAllocation<br />
+						<strong>Name:</strong> experiencingExperimentalUnit<br />
 						&nbsp;
 					</td>
 					<td width="30%" class="TableRow" valign="top">
-						<strong>Name:</strong> assignedArm<br />
+						<strong>Name:</strong> experiencedArm<br />
 						&nbsp;	
 					</td>
 				</tr>
@@ -533,7 +533,7 @@ function nameClassifier(name, separator)
 					<td class="TableRowBottomDashed"  colspan="3">
 						<div class="DetailsDivParent"><img src="../../images/minus03.gif" align="absmiddle" id="DetailsImageLink1738" onclick="parent.toggleDiv('detailsDIVLink1738','DetailsImageLink1738')" />Details:
 							<div id="detailsDIVLink1738" class="DetailsDiv" >
-							<div class="ObjectDetailsNotes">DESCRIPTION:&lt;br/&gt;Each PerformedExperimentalUnitAllocation might assign an experimental unit to one Arm. Each Arm might be assigned an experimental unit by one or more PerformedExperimentalUnitAllocation.&lt;br/&gt;&lt;br/&gt;DEFINITION:&lt;br/&gt;&lt;br/&gt;EXAMPLE(S):&lt;br/&gt;&lt;br/&gt;OTHER NAME(S):&lt;br/&gt;&lt;br/&gt;NOTE(S):&lt;br/&gt;</div>
+							<div class="ObjectDetailsNotes">DESCRIPTION:&#160;&#160;&lt;br/&gt;Each ExperimentalUnit might actually have experienced one Arm.&#160;&#160;Each Arm might actually have been experienced by one or more ExperimentalUnit.&lt;br/&gt;&lt;br/&gt;DEFINITION:&#160;&#160;&lt;br/&gt;The association between a ExperimentalUnit and an Arm that identifies the treatment plan actually received by the experimental unit as determined retrospectively regardless of what treatment plan was in fact assigned to the experimental unit.&lt;br/&gt;&lt;br/&gt;EXAMPLE(S):&#160;&#160;&lt;br/&gt;For an A/B cross-over study the arms may be &#8220;A-B&#8221; and &#8220;B-A&#8221;; if John Doe was assigned Arm &#8220;A-B&#8221;, but actually experienced Arm &#8220;B-A&#8221;, this association would link his role of ExperimentalUnit to the Arm he really participated in.&lt;br/&gt;&lt;br/&gt;OTHER NAME(S):&#160;&#160;&lt;br/&gt;Actual Arm&lt;br/&gt;&lt;br/&gt;NOTE(S):&#160;&#160;In most trials one would expect that the Arm linked to the ExperimentalUnit will be the same as the Arm.name that was assigned in the PerformedExperimentalUnitAllocation for that ExperimentalUnit.&#160;&#160;However, if what actually happened is different than what was assigned but is actually a valid arm in the trial arms table, i.e. the experimental unit was assigned A-B but actually received B-A, this association shows the connection to the treatment plan that actually was followed. Or alternatively, if CDISC&#8217;s SDTM DM.ACTARMCD = &quot;UNPLAN&#8221; (meaning &quot;Unplanned Treatment&quot;), then the treatment that occurred doesn&#8217;t match any arm in trial arms table and this association would not be used.&#160;&#160;Rather the ExperimentalUnit.unplannedTreatmentIndicator would be &#8220;true&#8221;. &lt;br/&gt;Note that this association has a retrospective nature &#8211; i.e. you might not know what treatment an experimental unit was actually on until after all treatments have been completed and the blind, if any, has been broken.&#160;&#160;This is typically the case for studies in which there may be more than one randomization.&lt;br/&gt;</div>
 
 							</div>
 						</div>
