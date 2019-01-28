@@ -1,0 +1,5 @@
+tocTab[tocTab.length] = new Array("0.11:1", "", "CDISC Lab Data Model v1.0.1", "EARoot/EA11/EA439.htm", "175.png", "1502", "0", "", "Logical diagram0","{C82C9FB4-35BE-482f-9E39-7027A2503999}");
+tocTab[tocTab.length] = new Array("0.11:2", "", "SDTM 3.1.3 View", "EARoot/EA11/EA441.htm", "175.png", "1489", "0", "", "Logical diagram0","{0E70E3C6-E75B-4e52-902A-94FE84080BF7}");
+tocTab[tocTab.length] = new Array("0.11:3", "", "SDTM Exposure (EX) Domain View", "EARoot/EA11/EA443.htm", "175.png", "1492", "0", "", "Logical diagram0","{4DBE629C-C77E-4255-9B58-5B2DCEA506E0}");
+tocTab[tocTab.length] = new Array("0.11:4", "", "SDTM Disease Response (RS) Domain View", "EARoot/EA11/EA445.htm", "175.png", "1491", "0", "", "Logical diagram0","{449A9735-0DF9-42c4-B69B-D4A1B5718351}");
+tocTab[tocTab.length] = new Array("0.11:5", "", "SDTM Vital Signs (VS) View", "EARoot/EA11/EA447.htm", "175.png", "1490", "0", "", "Logical diagram0","{9C2167CF-AE89-4ccf-BF6F-44D7260B2830}");

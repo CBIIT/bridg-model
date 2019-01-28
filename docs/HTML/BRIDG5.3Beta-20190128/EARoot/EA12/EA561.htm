@@ -1,0 +1,111 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>Canine Data Commons Starter Model</title>
+<link href="../../css/ea.css" rel="stylesheet" type="text/css" />
+<script>
+function initPage(src) {	
+	if(parent==this&&(this.location+"").indexOf('EARoot')!=-1)
+		document.location=(this.location+"").substring(0,(this.location+"").indexOf('EARoot'))+"index"+(this.location+"").substring((this.location+"").lastIndexOf('.'))+"?goto="+((this.location+"").substring((this.location+"").indexOf('EARoot')+7,(this.location+"").lastIndexOf('.')).replace(/\//g,':').replace(/EA/g,""));
+	else
+		parent.initPage(src);
+}
+
+function nameClassifier(name, separator)
+{
+  var str = name;
+  var classifierName;
+  var node = document.getElementById('name_classifier');
+  if(node != null)
+  {
+    classifierName = node.innerHTML;
+  }
+  if(classifierName != "")
+  {
+   str += separator + classifierName;
+  }
+  
+  return str;
+}
+</script>
+</head>
+<body onload="initPage(this);" class="Content">
+<div class="PageBody">
+	
+<img src="EA562.png" usemap="#EA562" border="0" />
+
+<MAP NAME="EA562">
+<area shape="rect" coords="453,94,577,155" href="EA629.htm" target="_self">
+<area shape="rect" coords="1213,62,1363,106" href="EA631.htm" target="_self">
+<area shape="rect" coords="377,765,509,826" href="EA632.htm" target="_self">
+<area shape="rect" coords="1686,289,2004,452" href="EA625.htm" target="_self">
+<area shape="rect" coords="1819,580,1979,694" href="../EA10/EA438.htm" target="_self">
+<area shape="rect" coords="1345,941,1515,1019" href="EA616.htm" target="_self">
+<area shape="rect" coords="1820,820,1972,898" href="EA617.htm" target="_self">
+<area shape="rect" coords="926,874,1114,952" href="EA618.htm" target="_self">
+<area shape="rect" coords="875,716,1162,830" href="../EA10/EA404.htm" target="_self">
+<area shape="rect" coords="926,618,1162,688" href="../EA10/EA405.htm" target="_self">
+<area shape="rect" coords="950,517,1162,590" href="../EA10/EA377.htm" target="_self">
+<area shape="rect" coords="10,468,110,580" href="EA619.htm" target="_self">
+<area shape="rect" coords="395,415,535,510" href="EA620.htm" target="_self">
+<area shape="rect" coords="375,10,751,37" href="EA621.htm" target="_self">
+<area shape="rect" coords="814,13,1118,114" href="../EA7/EA259.htm" target="_self">
+<area shape="rect" coords="22,326,201,404" href="EA622.htm" target="_self">
+<area shape="rect" coords="15,937,514,987" href="EA623.htm" target="_self">
+<area shape="rect" coords="1296,736,1493,915" href="../EA10/EA388.htm" target="_self">
+<area shape="rect" coords="1078,221,1263,273" href="../EA7/EA328.htm" target="_self">
+<area shape="rect" coords="1402,51,1635,360" href="../EA10/EA406.htm" target="_self">
+<area shape="rect" coords="1319,395,1509,439" href="../EA10/EA397.htm" target="_self">
+<area shape="rect" coords="1549,752,1782,918" href="../EA10/EA380.htm" target="_self">
+<area shape="rect" coords="1518,516,1706,708" href="../EA10/EA395.htm" target="_self">
+<area shape="rect" coords="1178,518,1429,710" href="../EA10/EA394.htm" target="_self">
+<area shape="rect" coords="1108,392,1278,442" href="../EA10/EA375.htm" target="_self">
+<area shape="rect" coords="678,133,930,247" href="../EA3/EA124.htm" target="_self">
+<area shape="rect" coords="287,174,401,220" href="../EA3/EA127.htm" target="_self">
+<area shape="rect" coords="556,832,737,920" href="../EA3/EA157.htm" target="_self">
+<area shape="rect" coords="589,723,704,793" href="../EA3/EA158.htm" target="_self">
+<area shape="rect" coords="615,270,829,371" href="../EA3/EA102.htm" target="_self">
+<area shape="rect" coords="564,453,726,567" href="../EA3/EA82.htm" target="_self">
+<area shape="rect" coords="51,127,238,306" href="../EA3/EA81.htm" target="_self">
+<area shape="rect" coords="136,427,347,619" href="../EA3/EA80.htm" target="_self">
+<area shape="rect" coords="131,656,371,726" href="../EA3/EA76.htm" target="_self">
+<area shape="rect" coords="888,401,1056,471" href="../EA3/EA71.htm" target="_self">
+</MAP>
+
+	<div class="ObjectTitle">Canine Data Commons Starter Model : Class diagram</div>
+	<table border="0" cellpadding="0" cellspacing="0" class="ObjectDetails">
+		<tr>
+			<td width="15%" class="ObjectDetailsTopic">Created:</td>
+			<td width="85%" class="ObjectDetailsValue">1/25/2019 2:30:00 PM</td>
+		</tr>
+		<tr>
+			<td width="15%" class="ObjectDetailsTopic">Modified:</td>
+			<td width="85%" class="ObjectDetailsValue">1/28/2019 12:28:14 PM</td>
+		</tr>
+		<tr style="padding-top: 10px;">
+			<td width="15%" class="ObjectDetailsTopic"><img src="../../images/plus03.gif" align="absmiddle" id="proj" onclick="parent.toggleData(this.id)" />Project:</td>
+			<td width="85%" class="ObjectDetailsValue"></td>			
+		</tr>
+		<tr id="proj00" style="display: none;">
+			<td width="15%" class="ObjectDetailsTopic" style="padding-left: 18px;">Author:</td>
+			<td width="85%" class="ObjectDetailsValue">wverhoef</td>
+		</tr>
+		<tr id="proj01" style="display: none;">
+			<td width="15%" class="ObjectDetailsTopic" style="padding-left: 18px;">Version:</td>
+			<td width="85%" class="ObjectDetailsValue">1.0</td>
+		</tr>
+		<tr>
+			<td width="15%" class="ObjectDetailsTopic"><img src="../../images/plus03.gif" align="absmiddle" id="adv" onclick="parent.toggleData(this.id)" />Advanced:</td>
+			<td width="85%" class="ObjectDetailsValue"></td>			
+		</tr>
+		<tr id="adv00" style="display: none;">
+			<td width="15%" class="ObjectDetailsTopic" style="padding-left: 18px;">ID:</td>
+			<td width="85%" class="ObjectDetailsValue">{0F920DD8-08CE-4b32-A6C0-6E8C225948C1}</td>
+		</tr>
+	</table>
+	
+</div>
+ 
+</body>
+</html>
