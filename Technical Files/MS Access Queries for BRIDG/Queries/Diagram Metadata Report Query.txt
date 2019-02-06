@@ -1,0 +1,78 @@
+HOW TO GENERATE THE DIAGRAM METADATA REPORTS
+
+1) Run the following query first, then run the second query once for each diagram name returned in this first query (or maybe run the second query once without specifying the diagram name in the query and then exporting the result to Excel, formatting it and copying it over and over and editing the copies to make individual diagram-specific spreadsheets):
+
+SELECT t_diagram.name as [DIAGRAM NAME]
+FROM t_diagram
+WHERE t_diagram.Stereotype = 'BRIDG Home Page View';
+
+
+2) Edit the diagram name 'SEER View' (in quotes) in both parts of the query THEN SAVE before running: 
+(WARNING:  IF YOU DON"T SAVE FIRST, IT EXPORTS QUERY RESULTS WITH PREVIOUSLY SAVED DIAGRAM NAME EVEN IF IT DISPLAYS ROWS WITH EDITED DIAGRAM NAME.
+APPARENTLY EXPORT WORKS OFF WHAT YOU SAVED, NOT WHAT IS DISPLAYED.)
+
+SELECT 
+t_diagram.name AS [DIAGRAM NAME], 
+t_object.name AS [CLASS NAME], 
+t_attribute.name AS [ATTRIBUTE NAME], 
+t_attribute.type AS [DATA TYPE],
+t_attribute.lowerbound+'..'+t_attribute.upperbound AS [CARDINALITY],
+t_attribute.Notes AS [DESCRIPTION]
+FROM ((t_diagramobjects 
+INNER JOIN t_object ON t_object.Object_ID = t_diagramobjects.Object_ID) 
+INNER JOIN t_diagram ON t_diagram.Diagram_ID = t_diagramobjects.Diagram_ID) 
+INNER JOIN t_attribute ON t_attribute.Object_ID = t_object.Object_ID
+WHERE t_diagram.name = 'SEER View'
+AND t_object.Object_Type = 'Class'
+AND ( 
+      ( 
+	    (INSTR(t_diagram.StyleEx,MID(t_object.ea_guid,2,6)) = 0)
+	AND (INSTR(t_diagramobjects.ObjectStyle,'AttPro=0;AttPri=0;AttPub=0;AttPkg=0') = 0)
+	AND (INSTR(t_diagramobjects.ObjectStyle,'AttCustom=0') = 0)
+	AND "COMMENT:  this set brings back attributes for classes where nothing is hidden."
+	  )
+   OR ( 
+	    (INSTR(t_diagramobjects.ObjectStyle,'AttPro=0;AttPri=0;AttPub=0;AttPkg=0') > 0)     
+	AND (INSTR(t_diagram.StyleEx,MID('S_'+t_object.ea_guid,2,6)) > 0)
+	AND (INSTR(t_diagram.StyleEx,MID(t_attribute.ea_guid,2,6)) = 0) 
+	AND "COMMENT:  this set evaluates to false so that it excludes attributes for classes where all attributes are hidden."
+	  )    
+   OR ( 
+        (INSTR(t_diagram.StyleEx,MID(t_attribute.ea_guid,2,6)) = 0)      
+    AND (INSTR(t_diagram.StyleEx,MID(t_object.ea_guid,2,6)) > 0)
+	AND (INSTR(t_diagramobjects.ObjectStyle,'AttCustom=0') > 0)
+	AND "COMMENT:  this set shows unhidden attributes - if AttCustom=0 and attribute is NOT IN StyleEx then show the attribute."
+	  )
+   OR ( 
+        (INSTR(t_diagram.StyleEx,MID(t_attribute.ea_guid,2,6)) > 0)      
+    AND (INSTR(t_diagram.StyleEx,MID(t_object.ea_guid,2,6)) > 0)
+	AND (INSTR(t_diagramobjects.ObjectStyle,'AttCustom=1') > 0)
+	AND "COMMENT:  this set shows unhidden attributes - if AttCustom=1 and attribute IS IN StyleEx then show the attribute."
+	  )
+	) 
+UNION ALL
+SELECT 
+t_diagram.name AS [DIAGRAM NAME], 
+t_object.name AS [CLASS NAME], 
+'' AS [ATTRIBUTE NAME], 
+'' AS [DATA TYPE],
+'' AS [CARDINALITY], 
+t_object.Note AS [DESCRIPTION]
+FROM ((t_diagramobjects 
+INNER JOIN t_object ON t_object.Object_ID = t_diagramobjects.Object_ID) 
+INNER JOIN t_diagram ON t_diagram.Diagram_ID = t_diagramobjects.Diagram_ID) 
+WHERE t_diagram.name = 'SEER View'
+AND t_object.Object_Type = 'Class'
+ORDER BY 1, 2, 3;
+
+3) Export the report to Excel using the following naming convention:  BRIDG<version#>-<YYYYMMDD>-<DiagramNameNoSpacesNoSpecialChars>.xlsx
+e.g. BRIDG5.3Beta-20190204-BRIDGBackBone.xlsx  (replace "&" with "and", keep "." as is)
+- Format it by adding a title row as "BRIDG <Diagram Name> Metadata Report, generated on <Mon. Day, Year>" in Bold font, size 16
+- Add another row for the BRIDG URL:  "BRIDGmodel.nci.nih.gov" in Bold font, size 14
+- (leaving out any further header info for now since it may change each time the model is published; keeping it simple)
+- Bold the column heading row
+- Widen columns so all data shows except in the DESCRIPTION column which needs to be widened AND have word wrap turned on
+- Align data at top of all cells
+- Freeze the top 3 rows (title, URL, headings)
+- Then upload the file to GitHub in a version-specific folder:  bridg-model / Documents / Diagram Metadata Reports / BRIDG5.3Beta-20190205 (for example)
+- CONSIDER ADDITIONAL FORMATTING NEXT TIME:  1) setting a fill color for the column heading cells; 2) turning on the cell borders to display
