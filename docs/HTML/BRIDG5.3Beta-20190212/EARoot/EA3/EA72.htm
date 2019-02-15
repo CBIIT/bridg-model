@@ -91,7 +91,7 @@ function nameClassifier(name, separator)
 		</tr>
 		<tr id="adv01" style="display: none;">
 			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Appears In:</td>
-			<td class="ObjectDetailsValue"><a href="../EA1.htm">UML-Based Comprehensive BRIDG Model Diagram</a>, <a href="../EA4/EA163.htm">View EX: Experiment</a>, <a href="../EA1/EA29.htm">View AE: Adverse Event</a>, <a href="EA61.htm">View CM: Common</a>, <a href="EA63.htm">BRIDG BackBone</a>, <a href="../EA7/EA249.htm">View PR: Protocol Representation</a>, <a href="../EA7/EA251.htm">Study Versioning View</a>, <a href="../EA10/EA366.htm">View SC: Study Conduct</a>, <a href="../EA5/EA178.htm">View IM: Imaging</a>, <a href="../EA12/EA571.htm">Activities</a>, <a href="../EA12/EA573.htm">Adverse Events</a>, <a href="../EA12/EA587.htm">Observations and Results</a>, <a href="../EA12/EA599.htm">Performer</a>, <a href="../EA5/EA182.htm">DICOM SR TID 1500 BRIDG Class Diagram</a>, <a href="../EA12/EA591.htm">Oncology & Imaging View</a>, <a href="../EA12/EA589.htm">Oncology View</a>, <a href="../EA11/EA446.htm">SDTM 3.1.3 View</a>, <a href="../EA11/EA452.htm">SDTM Vital Signs (VS) View</a>, <a href="../EA11/EA450.htm">SDTM Disease Response (RS) Domain View</a>, <a href="../EA11/EA448.htm">SDTM Exposure (EX) Domain View</a>, <a href="../EA12/EA597.htm">Participant Registration</a>, <a href="../EA12/EA603.htm">SEER View</a>, <a href="../EA12/EA585.htm">Lab-Related Classes</a>, <a href="../EA11/EA444.htm">CDISC Lab Data Model v1.0.1</a>, <a href="../EA12/EA575.htm">Anatomic Pathology Structured Report (APSR)</a>, <a href="../EA12/EA581.htm">CDMH View</a>, <a href="../EA12/EA579.htm">Animal View</a></td>
+			<td class="ObjectDetailsValue"><a href="../EA1.htm">UML-Based Comprehensive BRIDG Model Diagram</a>, <a href="../EA4/EA163.htm">View EX: Experiment</a>, <a href="../EA1/EA29.htm">View AE: Adverse Event</a>, <a href="EA61.htm">View CM: Common</a>, <a href="EA63.htm">BRIDG BackBone</a>, <a href="../EA7/EA249.htm">View PR: Protocol Representation</a>, <a href="../EA7/EA251.htm">Study Versioning View</a>, <a href="../EA10/EA366.htm">View SC: Study Conduct</a>, <a href="../EA5/EA178.htm">View IM: Imaging</a>, <a href="../EA12/EA571.htm">Activities</a>, <a href="../EA12/EA573.htm">Adverse Events</a>, <a href="../EA12/EA587.htm">Observations and Results</a>, <a href="../EA12/EA599.htm">Performer</a>, <a href="../EA5/EA182.htm">DICOM SR TID 1500 BRIDG Class Diagram</a>, <a href="../EA12/EA591.htm">Oncology & Imaging View</a>, <a href="../EA12/EA589.htm">Oncology View</a>, <a href="../EA11/EA446.htm">SDTM 3.1.3 View</a>, <a href="../EA11/EA452.htm">SDTM Vital Signs (VS) View</a>, <a href="../EA11/EA450.htm">SDTM Disease Response (RS) Domain View</a>, <a href="../EA11/EA448.htm">SDTM Exposure (EX) Domain View</a>, <a href="../EA12/EA597.htm">Participant Registration</a>, <a href="../EA12/EA603.htm">SEER View</a>, <a href="../EA12/EA585.htm">Lab-Related Classes</a>, <a href="../EA11/EA444.htm">CDISC Lab Data Model v1.0.1</a>, <a href="../EA12/EA575.htm">Anatomic Pathology Structured Report (APSR)</a>, <a href="../EA12/EA581.htm">CDMH View</a>, <a href="../EA12/EA577.htm">Animal View</a></td>
 		</tr>
 	</table>
 	<div class="ObjectDetailsNotes">DEFINITION:&lt;br/&gt;Any action that can, in the context of a study, experiment, post-marketing investigation, or disease registry, be defined, planned, scheduled or performed. &lt;br/&gt; &lt;br/&gt;EXAMPLE(S):&lt;br/&gt;Administrative activities such as subject registration or informed consent&lt;br/&gt;Clinical activities such as surgical procedure, laboratory test, administration of a drug&lt;br/&gt; &lt;br/&gt;OTHER NAME(S):&lt;br/&gt; &lt;br/&gt;NOTE(S):&lt;br/&gt;</div>
@@ -320,15 +320,15 @@ function nameClassifier(name, separator)
 				</tr>
 				<tr>
 					<td width="40%" class="TableRow" valign="top">
-						<a href="EA103.htm">ExperimentalUnit</a><br />
+						<a href="../EA10/EA431.htm">StudySite</a><br />
 						Class &nbsp;
 					</td>
 					<td width="30%" class="TableRow" valign="top">
-						<strong>Name:</strong> involvingActivity<br />
+						<strong>Name:</strong> hasContextActivity<br />
 						&nbsp;
 					</td>
 					<td width="30%" class="TableRow" valign="top">
-						<strong>Name:</strong> involvedExperimentalUnit<br />
+						<strong>Name:</strong> contextForStudySite<br />
 						&nbsp;	
 					</td>
 				</tr>
@@ -336,7 +336,7 @@ function nameClassifier(name, separator)
 					<td class="TableRowBottomDashed"  colspan="3">
 						<div class="DetailsDivParent"><img src="../../images/minus03.gif" align="absmiddle" id="DetailsImageLink184" onclick="parent.toggleDiv('detailsDIVLink184','DetailsImageLink184')" />Details:
 							<div id="detailsDIVLink184" class="DetailsDiv" >
-							<div class="ObjectDetailsNotes">DESCRIPTION:&lt;br/&gt;Each Activity might be participated in by one ExperimentalUnit. Each ExperimentalUnit might participate in one or more Activity.&lt;br/&gt;&lt;br/&gt;DEFINITION:&lt;br/&gt;&lt;br/&gt;EXAMPLE(S):&lt;br/&gt;&lt;br/&gt;OTHER NAME(S):&lt;br/&gt;&lt;br/&gt;NOTE(S):&lt;br/&gt;&lt;br/&gt;</div>
+							<div class="ObjectDetailsNotes">DESCRIPTION:&lt;br/&gt;Each Activity might have as context one StudySite. Each StudySite might be the context for one or more Activity.&lt;br/&gt;&lt;br/&gt;DEFINITION:&lt;br/&gt;&lt;br/&gt;EXAMPLE(S):&lt;br/&gt;&lt;br/&gt;OTHER NAME(S):&lt;br/&gt;&lt;br/&gt;NOTE(S):&lt;br/&gt;</div>
 
 							</div>
 						</div>
@@ -368,6 +368,30 @@ function nameClassifier(name, separator)
 				</tr>
 				<tr>
 					<td width="40%" class="TableRow" valign="top">
+						<a href="EA103.htm">ExperimentalUnit</a><br />
+						Class &nbsp;
+					</td>
+					<td width="30%" class="TableRow" valign="top">
+						<strong>Name:</strong> involvingActivity<br />
+						&nbsp;
+					</td>
+					<td width="30%" class="TableRow" valign="top">
+						<strong>Name:</strong> involvedExperimentalUnit<br />
+						&nbsp;	
+					</td>
+				</tr>
+				<tr>
+					<td class="TableRowBottomDashed"  colspan="3">
+						<div class="DetailsDivParent"><img src="../../images/minus03.gif" align="absmiddle" id="DetailsImageLink186" onclick="parent.toggleDiv('detailsDIVLink186','DetailsImageLink186')" />Details:
+							<div id="detailsDIVLink186" class="DetailsDiv" >
+							<div class="ObjectDetailsNotes">DESCRIPTION:&lt;br/&gt;Each Activity might be participated in by one ExperimentalUnit. Each ExperimentalUnit might participate in one or more Activity.&lt;br/&gt;&lt;br/&gt;DEFINITION:&lt;br/&gt;&lt;br/&gt;EXAMPLE(S):&lt;br/&gt;&lt;br/&gt;OTHER NAME(S):&lt;br/&gt;&lt;br/&gt;NOTE(S):&lt;br/&gt;&lt;br/&gt;</div>
+
+							</div>
+						</div>
+					</td>
+				</tr>
+				<tr>
+					<td width="40%" class="TableRow" valign="top">
 						<a href="EA156.htm">StudyCountry</a><br />
 						Class &nbsp;
 					</td>
@@ -382,33 +406,9 @@ function nameClassifier(name, separator)
 				</tr>
 				<tr>
 					<td class="TableRowBottomDashed"  colspan="3">
-						<div class="DetailsDivParent"><img src="../../images/minus03.gif" align="absmiddle" id="DetailsImageLink186" onclick="parent.toggleDiv('detailsDIVLink186','DetailsImageLink186')" />Details:
-							<div id="detailsDIVLink186" class="DetailsDiv" >
-							<div class="ObjectDetailsNotes">DESCRIPTION:&lt;br/&gt;Each Activity might have as context one StudyCountry. Each StudyCountry might be the context for one or more Activity.&lt;br/&gt;&lt;br/&gt;DEFINITION:&lt;br/&gt;&lt;br/&gt;EXAMPLE(S):&lt;br/&gt;&lt;br/&gt;OTHER NAME(S):&lt;br/&gt;&lt;br/&gt;NOTE(S):&lt;br/&gt;</div>
-
-							</div>
-						</div>
-					</td>
-				</tr>
-				<tr>
-					<td width="40%" class="TableRow" valign="top">
-						<a href="../EA10/EA431.htm">StudySite</a><br />
-						Class &nbsp;
-					</td>
-					<td width="30%" class="TableRow" valign="top">
-						<strong>Name:</strong> hasContextActivity<br />
-						&nbsp;
-					</td>
-					<td width="30%" class="TableRow" valign="top">
-						<strong>Name:</strong> contextForStudySite<br />
-						&nbsp;	
-					</td>
-				</tr>
-				<tr>
-					<td class="TableRowBottomDashed"  colspan="3">
 						<div class="DetailsDivParent"><img src="../../images/minus03.gif" align="absmiddle" id="DetailsImageLink187" onclick="parent.toggleDiv('detailsDIVLink187','DetailsImageLink187')" />Details:
 							<div id="detailsDIVLink187" class="DetailsDiv" >
-							<div class="ObjectDetailsNotes">DESCRIPTION:&lt;br/&gt;Each Activity might have as context one StudySite. Each StudySite might be the context for one or more Activity.&lt;br/&gt;&lt;br/&gt;DEFINITION:&lt;br/&gt;&lt;br/&gt;EXAMPLE(S):&lt;br/&gt;&lt;br/&gt;OTHER NAME(S):&lt;br/&gt;&lt;br/&gt;NOTE(S):&lt;br/&gt;</div>
+							<div class="ObjectDetailsNotes">DESCRIPTION:&lt;br/&gt;Each Activity might have as context one StudyCountry. Each StudyCountry might be the context for one or more Activity.&lt;br/&gt;&lt;br/&gt;DEFINITION:&lt;br/&gt;&lt;br/&gt;EXAMPLE(S):&lt;br/&gt;&lt;br/&gt;OTHER NAME(S):&lt;br/&gt;&lt;br/&gt;NOTE(S):&lt;br/&gt;</div>
 
 							</div>
 						</div>
@@ -426,30 +426,6 @@ function nameClassifier(name, separator)
 				</tr>
 				<tr>
 					<td width="40%" class="TableRow" valign="top">
-						<a href="EA125.htm">Performer</a><br />
-						Class &nbsp;
-					</td>
-					<td width="30%" class="TableRow" valign="top">
-						<strong>Name:</strong> performingPerformer<br />
-						&nbsp;
-					</td>
-					<td width="30%" class="TableRow" valign="top">
-						<strong>Name:</strong> performedActivity<br />
-						&nbsp;	
-					</td>
-				</tr>
-				<tr>
-					<td class="TableRowBottomDashed"  colspan="3">
-						<div class="DetailsDivParent"><img src="../../images/minus03.gif" align="absmiddle" id="DetailsImageLink188" onclick="parent.toggleDiv('detailsDIVLink188','DetailsImageLink188')" />Details:
-							<div id="detailsDIVLink188" class="DetailsDiv" >
-							<div class="ObjectDetailsNotes">DESCRIPTION:&lt;br/&gt;Each Performer always performs one Activity.&#160;&#160;Each Activity might be performed by one or more Performer.&lt;br/&gt;&lt;br/&gt;DEFINITION:&lt;br/&gt;&lt;br/&gt;EXAMPLE(S):&lt;br/&gt;&lt;br/&gt;OTHER NAME(S):&lt;br/&gt;&lt;br/&gt;NOTE(S):&lt;br/&gt;</div>
-
-							</div>
-						</div>
-					</td>
-				</tr>
-				<tr>
-					<td width="40%" class="TableRow" valign="top">
 						<a href="../EA4/EA171.htm">ExperimentalActivityItem</a><br />
 						Class &nbsp;
 					</td>
@@ -464,9 +440,33 @@ function nameClassifier(name, separator)
 				</tr>
 				<tr>
 					<td class="TableRowBottomDashed"  colspan="3">
+						<div class="DetailsDivParent"><img src="../../images/minus03.gif" align="absmiddle" id="DetailsImageLink188" onclick="parent.toggleDiv('detailsDIVLink188','DetailsImageLink188')" />Details:
+							<div id="detailsDIVLink188" class="DetailsDiv" >
+							<div class="ObjectDetailsNotes">DESCRIPTION:&lt;br/&gt;Each ExperimentalActivityItem always is used in one Activity.&#160;&#160;Each Activity might use one or more ExperimentalActivityItem.&lt;br/&gt;&lt;br/&gt;DEFINITION:&lt;br/&gt;&lt;br/&gt;EXAMPLE(S):&lt;br/&gt;&lt;br/&gt;OTHER NAME(S):&lt;br/&gt;&lt;br/&gt;NOTES:&lt;br/&gt;The documented use cases from life sciences are limited to procedure and observations.&#160;&#160;Use cases for other kinds of activities in life sciences are needed to support this relationship at Activity level. In the next release, this relationship will have to be re-assessed. &lt;br/&gt;</div>
+
+							</div>
+						</div>
+					</td>
+				</tr>
+				<tr>
+					<td width="40%" class="TableRow" valign="top">
+						<a href="EA125.htm">Performer</a><br />
+						Class &nbsp;
+					</td>
+					<td width="30%" class="TableRow" valign="top">
+						<strong>Name:</strong> performingPerformer<br />
+						&nbsp;
+					</td>
+					<td width="30%" class="TableRow" valign="top">
+						<strong>Name:</strong> performedActivity<br />
+						&nbsp;	
+					</td>
+				</tr>
+				<tr>
+					<td class="TableRowBottomDashed"  colspan="3">
 						<div class="DetailsDivParent"><img src="../../images/minus03.gif" align="absmiddle" id="DetailsImageLink189" onclick="parent.toggleDiv('detailsDIVLink189','DetailsImageLink189')" />Details:
 							<div id="detailsDIVLink189" class="DetailsDiv" >
-							<div class="ObjectDetailsNotes">DESCRIPTION:&lt;br/&gt;Each ExperimentalActivityItem always is used in one Activity.&#160;&#160;Each Activity might use one or more ExperimentalActivityItem.&lt;br/&gt;&lt;br/&gt;DEFINITION:&lt;br/&gt;&lt;br/&gt;EXAMPLE(S):&lt;br/&gt;&lt;br/&gt;OTHER NAME(S):&lt;br/&gt;&lt;br/&gt;NOTES:&lt;br/&gt;The documented use cases from life sciences are limited to procedure and observations.&#160;&#160;Use cases for other kinds of activities in life sciences are needed to support this relationship at Activity level. In the next release, this relationship will have to be re-assessed. &lt;br/&gt;</div>
+							<div class="ObjectDetailsNotes">DESCRIPTION:&lt;br/&gt;Each Performer always performs one Activity.&#160;&#160;Each Activity might be performed by one or more Performer.&lt;br/&gt;&lt;br/&gt;DEFINITION:&lt;br/&gt;&lt;br/&gt;EXAMPLE(S):&lt;br/&gt;&lt;br/&gt;OTHER NAME(S):&lt;br/&gt;&lt;br/&gt;NOTE(S):&lt;br/&gt;</div>
 
 							</div>
 						</div>
@@ -614,6 +614,23 @@ function nameClassifier(name, separator)
 					<td width="40%" class="TableHeading">Notes</td>
 				</tr>
 				<tr>
+					<td width="30%" class="TableRow" valign="top"><a href="../EA7/EA266.htm">DefinedActivity</a></td>
+					<td width="10%" class="TableRow" valign="top">Class</td>
+					<td width="10%" class="TableRow" valign="top">Generalization</td>
+					<td width="10%" class="TableRow" valign="top">From</td>
+					<td width="40%" class="TableRow" valign="top">DESCRIPTION:
+Each DefinedActivity always specializes one Activity. Each Activity might be specialized by one DefinedActivity.
+
+DEFINITION:
+
+EXAMPLE(S):
+
+OTHER NAME(S):
+
+NOTE(S):
+</td>
+				</tr>
+				<tr>
 					<td width="30%" class="TableRow" valign="top"><a href="../EA10/EA418.htm">ScheduledActivity</a></td>
 					<td width="10%" class="TableRow" valign="top">Class</td>
 					<td width="10%" class="TableRow" valign="top">Generalization</td>
@@ -637,23 +654,6 @@ NOTE(S):
 					<td width="10%" class="TableRow" valign="top">From</td>
 					<td width="40%" class="TableRow" valign="top">DESCRIPTION:
 Each PlannedActivity always specializes one Activity. Each Activity might be specialized by one PlannedActivity.
-
-DEFINITION:
-
-EXAMPLE(S):
-
-OTHER NAME(S):
-
-NOTE(S):
-</td>
-				</tr>
-				<tr>
-					<td width="30%" class="TableRow" valign="top"><a href="../EA7/EA266.htm">DefinedActivity</a></td>
-					<td width="10%" class="TableRow" valign="top">Class</td>
-					<td width="10%" class="TableRow" valign="top">Generalization</td>
-					<td width="10%" class="TableRow" valign="top">From</td>
-					<td width="40%" class="TableRow" valign="top">DESCRIPTION:
-Each DefinedActivity always specializes one Activity. Each Activity might be specialized by one DefinedActivity.
 
 DEFINITION:
 

@@ -91,7 +91,7 @@ function nameClassifier(name, separator)
 		</tr>
 		<tr id="adv01" style="display: none;">
 			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Appears In:</td>
-			<td class="ObjectDetailsValue"><a href="../EA1.htm">UML-Based Comprehensive BRIDG Model Diagram</a>, <a href="../EA2/EA46.htm">View BSP: Biospecimen</a>, <a href="EA366.htm">View SC: Study Conduct</a>, <a href="../EA5/EA178.htm">View IM: Imaging</a>, <a href="../EA12/EA599.htm">Performer</a>, <a href="../EA12/EA591.htm">Oncology & Imaging View</a>, <a href="../EA12/EA597.htm">Participant Registration</a>, <a href="../EA12/EA585.htm">Lab-Related Classes</a>, <a href="../EA12/EA581.htm">CDMH View</a>, <a href="../EA12/EA579.htm">Animal View</a></td>
+			<td class="ObjectDetailsValue"><a href="../EA1.htm">UML-Based Comprehensive BRIDG Model Diagram</a>, <a href="../EA2/EA46.htm">View BSP: Biospecimen</a>, <a href="EA366.htm">View SC: Study Conduct</a>, <a href="../EA5/EA178.htm">View IM: Imaging</a>, <a href="../EA12/EA599.htm">Performer</a>, <a href="../EA12/EA591.htm">Oncology & Imaging View</a>, <a href="../EA12/EA597.htm">Participant Registration</a>, <a href="../EA12/EA585.htm">Lab-Related Classes</a>, <a href="../EA12/EA581.htm">CDMH View</a>, <a href="../EA12/EA577.htm">Animal View</a></td>
 		</tr>
 	</table>
 	<div class="ObjectDetailsNotes">DEFINITION:&lt;br/&gt;The completed action within the context of a given study or experiment that is not directly related to the overarching hypothesis evaluation or testing, but is nonetheless essential to the efficient and/or effective coordination and execution of the study or experiment.&lt;br/&gt;&lt;br/&gt;EXAMPLE(S):&lt;br/&gt;assignment to a treatment arm, registration to a study, start of on-study period, end of on-study period, obtain informed consent, verify eligibility criteria, enroll, randomize, complete study visits, exit study, break treatment blind, protocol violation, premature withdrawal, etc.&lt;br/&gt;&lt;br/&gt;OTHER NAME(S):&lt;br/&gt;&lt;br/&gt;NOTE(S):&lt;br/&gt;</div>
@@ -330,63 +330,12 @@ function nameClassifier(name, separator)
 					<td width="40%" class="TableHeading">Notes</td>
 				</tr>
 				<tr>
-					<td width="30%" class="TableRow" valign="top"><a href="EA408.htm">PerformedStudyAgentTransfer</a></td>
-					<td width="10%" class="TableRow" valign="top">Class</td>
-					<td width="10%" class="TableRow" valign="top">Generalization</td>
-					<td width="10%" class="TableRow" valign="top">From</td>
-					<td width="40%" class="TableRow" valign="top">DESCRIPTION:
-Each PerformedStudyAgentTransfer always specializes one PerformedAdministrativeActivity. Each PerformedAdministrativeActivity might be specialized by one PerformedStudyAgentTransfer.
-
-DEFINITION:
-
-EXAMPLE(S):
-
-OTHER NAME(S):
-
-NOTE(S):
-</td>
-				</tr>
-				<tr>
 					<td width="30%" class="TableRow" valign="top"><a href="EA404.htm">PerformedProgressCount</a></td>
 					<td width="10%" class="TableRow" valign="top">Class</td>
 					<td width="10%" class="TableRow" valign="top">Generalization</td>
 					<td width="10%" class="TableRow" valign="top">From</td>
 					<td width="40%" class="TableRow" valign="top">DESCRIPTION:
 Each PerformedProgressCount always specializes one PerformedAdministrativeActivity. Each PerformedAdministrativeActivity might be specialized by one PerformedProgressCount.
-
-DEFINITION:
-
-EXAMPLE(S):
-
-OTHER NAME(S):
-
-NOTE(S):
-</td>
-				</tr>
-				<tr>
-					<td width="30%" class="TableRow" valign="top"><a href="EA390.htm">PerformedExperimentalUnitAllocation</a></td>
-					<td width="10%" class="TableRow" valign="top">Class</td>
-					<td width="10%" class="TableRow" valign="top">Generalization</td>
-					<td width="10%" class="TableRow" valign="top">From</td>
-					<td width="40%" class="TableRow" valign="top">DESCRIPTION:
-Each PerformedExperimentalUnitAllocation always specializes one PerformedAdministrativeActivity. Each PerformedAdministrativeActivity might be specialized by one PerformedExperimentalUnitAllocation.
-
-DEFINITION:
-
-EXAMPLE(S):
-
-OTHER NAME(S):
-
-NOTE(S):
-</td>
-				</tr>
-				<tr>
-					<td width="30%" class="TableRow" valign="top"><a href="EA398.htm">PerformedNotification</a></td>
-					<td width="10%" class="TableRow" valign="top">Class</td>
-					<td width="10%" class="TableRow" valign="top">Generalization</td>
-					<td width="10%" class="TableRow" valign="top">From</td>
-					<td width="40%" class="TableRow" valign="top">DESCRIPTION:
-Each PerformedNotification always specializes one PerformedAdministrativeActivity. Each PerformedAdministrativeActivity might be specialized by one PerformedNotification.
 
 DEFINITION:
 
@@ -415,12 +364,12 @@ NOTE(S):
 </td>
 				</tr>
 				<tr>
-					<td width="30%" class="TableRow" valign="top"><a href="../EA2/EA54.htm">PerformedSpecimenMove</a></td>
+					<td width="30%" class="TableRow" valign="top"><a href="EA380.htm">PerformedActivity</a></td>
 					<td width="10%" class="TableRow" valign="top">Class</td>
 					<td width="10%" class="TableRow" valign="top">Generalization</td>
-					<td width="10%" class="TableRow" valign="top">From</td>
+					<td width="10%" class="TableRow" valign="top">To</td>
 					<td width="40%" class="TableRow" valign="top">DESCRIPTION:
-Each PerformedSpecimenMove always specializes one PerformedAdministrativeActivity. Each PerformedAdminisrativeActivity might be specialized by one PerformedSpecimenMove.
+Each PerformedAdministrativeActivity always specializes one PerformedActivity. Each PerformedActivity might be specialized by one PerformedAdministrativeActivity.
 
 DEFINITION:
 
@@ -429,6 +378,57 @@ EXAMPLE(S):
 OTHER NAME(S):
 
 NOTE(S):</td>
+				</tr>
+				<tr>
+					<td width="30%" class="TableRow" valign="top"><a href="EA408.htm">PerformedStudyAgentTransfer</a></td>
+					<td width="10%" class="TableRow" valign="top">Class</td>
+					<td width="10%" class="TableRow" valign="top">Generalization</td>
+					<td width="10%" class="TableRow" valign="top">From</td>
+					<td width="40%" class="TableRow" valign="top">DESCRIPTION:
+Each PerformedStudyAgentTransfer always specializes one PerformedAdministrativeActivity. Each PerformedAdministrativeActivity might be specialized by one PerformedStudyAgentTransfer.
+
+DEFINITION:
+
+EXAMPLE(S):
+
+OTHER NAME(S):
+
+NOTE(S):
+</td>
+				</tr>
+				<tr>
+					<td width="30%" class="TableRow" valign="top"><a href="EA398.htm">PerformedNotification</a></td>
+					<td width="10%" class="TableRow" valign="top">Class</td>
+					<td width="10%" class="TableRow" valign="top">Generalization</td>
+					<td width="10%" class="TableRow" valign="top">From</td>
+					<td width="40%" class="TableRow" valign="top">DESCRIPTION:
+Each PerformedNotification always specializes one PerformedAdministrativeActivity. Each PerformedAdministrativeActivity might be specialized by one PerformedNotification.
+
+DEFINITION:
+
+EXAMPLE(S):
+
+OTHER NAME(S):
+
+NOTE(S):
+</td>
+				</tr>
+				<tr>
+					<td width="30%" class="TableRow" valign="top"><a href="EA390.htm">PerformedExperimentalUnitAllocation</a></td>
+					<td width="10%" class="TableRow" valign="top">Class</td>
+					<td width="10%" class="TableRow" valign="top">Generalization</td>
+					<td width="10%" class="TableRow" valign="top">From</td>
+					<td width="40%" class="TableRow" valign="top">DESCRIPTION:
+Each PerformedExperimentalUnitAllocation always specializes one PerformedAdministrativeActivity. Each PerformedAdministrativeActivity might be specialized by one PerformedExperimentalUnitAllocation.
+
+DEFINITION:
+
+EXAMPLE(S):
+
+OTHER NAME(S):
+
+NOTE(S):
+</td>
 				</tr>
 				<tr>
 					<td width="30%" class="TableRow" valign="top"><a href="EA410.htm">PerformedSubjectMilestone</a></td>
@@ -437,22 +437,6 @@ NOTE(S):</td>
 					<td width="10%" class="TableRow" valign="top">From</td>
 					<td width="40%" class="TableRow" valign="top">DESCRIPTION:
 Each PerformedSubjectMilestone always specializes one PerformedAdministrativeActivity. Each PerformedAdministrativeActivity might be specialized by one PerformedSubjectMilestone.
-
-DEFINITION:
-
-EXAMPLE(S):
-
-OTHER NAME(S):
-
-NOTE(S):</td>
-				</tr>
-				<tr>
-					<td width="30%" class="TableRow" valign="top"><a href="EA380.htm">PerformedActivity</a></td>
-					<td width="10%" class="TableRow" valign="top">Class</td>
-					<td width="10%" class="TableRow" valign="top">Generalization</td>
-					<td width="10%" class="TableRow" valign="top">To</td>
-					<td width="40%" class="TableRow" valign="top">DESCRIPTION:
-Each PerformedAdministrativeActivity always specializes one PerformedActivity. Each PerformedActivity might be specialized by one PerformedAdministrativeActivity.
 
 DEFINITION:
 
@@ -478,6 +462,22 @@ OTHER NAME(S):
 
 NOTE(S):
 </td>
+				</tr>
+				<tr>
+					<td width="30%" class="TableRow" valign="top"><a href="../EA2/EA54.htm">PerformedSpecimenMove</a></td>
+					<td width="10%" class="TableRow" valign="top">Class</td>
+					<td width="10%" class="TableRow" valign="top">Generalization</td>
+					<td width="10%" class="TableRow" valign="top">From</td>
+					<td width="40%" class="TableRow" valign="top">DESCRIPTION:
+Each PerformedSpecimenMove always specializes one PerformedAdministrativeActivity. Each PerformedAdminisrativeActivity might be specialized by one PerformedSpecimenMove.
+
+DEFINITION:
+
+EXAMPLE(S):
+
+OTHER NAME(S):
+
+NOTE(S):</td>
 				</tr>
 
 			</table>

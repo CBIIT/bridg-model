@@ -91,7 +91,7 @@ function nameClassifier(name, separator)
 		</tr>
 		<tr id="adv01" style="display: none;">
 			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Appears In:</td>
-			<td class="ObjectDetailsValue"><a href="../EA1.htm">UML-Based Comprehensive BRIDG Model Diagram</a>, <a href="../EA6/EA213.htm">View MB: Molecular Biology</a>, <a href="../EA9/EA349.htm">View SA: Statistical Analysis</a>, <a href="../EA1/EA29.htm">View AE: Adverse Event</a>, <a href="../EA3/EA63.htm">BRIDG BackBone</a>, <a href="EA249.htm">View PR: Protocol Representation</a>, <a href="EA251.htm">Study Versioning View</a>, <a href="../EA8/EA335.htm">View RG: Regulatory</a>, <a href="../EA10/EA366.htm">View SC: Study Conduct</a>, <a href="../EA5/EA178.htm">View IM: Imaging</a>, <a href="../EA12/EA571.htm">Activities</a>, <a href="../EA12/EA611.htm">StudySite and StudySubject</a>, <a href="../EA12/EA591.htm">Oncology & Imaging View</a>, <a href="../EA11/EA446.htm">SDTM 3.1.3 View</a>, <a href="../EA11/EA452.htm">SDTM Vital Signs (VS) View</a>, <a href="../EA11/EA450.htm">SDTM Disease Response (RS) Domain View</a>, <a href="../EA11/EA448.htm">SDTM Exposure (EX) Domain View</a>, <a href="../EA12/EA583.htm">ClinicalTrials.gov</a>, <a href="../EA12/EA597.htm">Participant Registration</a>, <a href="../EA12/EA585.htm">Lab-Related Classes</a>, <a href="../EA11/EA444.htm">CDISC Lab Data Model v1.0.1</a>, <a href="../EA12/EA607.htm">Study,  Organization,  Location,  StudySite,  StudySubject & Personnel</a>, <a href="../EA12/EA609.htm">StudyProtocolVersion</a>, <a href="../EA12/EA579.htm">Animal View</a></td>
+			<td class="ObjectDetailsValue"><a href="../EA1.htm">UML-Based Comprehensive BRIDG Model Diagram</a>, <a href="../EA6/EA213.htm">View MB: Molecular Biology</a>, <a href="../EA9/EA349.htm">View SA: Statistical Analysis</a>, <a href="../EA1/EA29.htm">View AE: Adverse Event</a>, <a href="../EA3/EA63.htm">BRIDG BackBone</a>, <a href="EA249.htm">View PR: Protocol Representation</a>, <a href="EA251.htm">Study Versioning View</a>, <a href="../EA8/EA335.htm">View RG: Regulatory</a>, <a href="../EA10/EA366.htm">View SC: Study Conduct</a>, <a href="../EA5/EA178.htm">View IM: Imaging</a>, <a href="../EA12/EA571.htm">Activities</a>, <a href="../EA12/EA611.htm">StudySite and StudySubject</a>, <a href="../EA12/EA591.htm">Oncology & Imaging View</a>, <a href="../EA11/EA446.htm">SDTM 3.1.3 View</a>, <a href="../EA11/EA452.htm">SDTM Vital Signs (VS) View</a>, <a href="../EA11/EA450.htm">SDTM Disease Response (RS) Domain View</a>, <a href="../EA11/EA448.htm">SDTM Exposure (EX) Domain View</a>, <a href="../EA12/EA583.htm">ClinicalTrials.gov</a>, <a href="../EA12/EA597.htm">Participant Registration</a>, <a href="../EA12/EA585.htm">Lab-Related Classes</a>, <a href="../EA11/EA444.htm">CDISC Lab Data Model v1.0.1</a>, <a href="../EA12/EA607.htm">Study,  Organization,  Location,  StudySite,  StudySubject & Personnel</a>, <a href="../EA12/EA609.htm">StudyProtocolVersion</a>, <a href="../EA12/EA577.htm">Animal View</a></td>
 		</tr>
 	</table>
 	<div class="ObjectDetailsNotes">DEFINITION:&lt;br/&gt;A variant or snapshot of the study protocol at a particular point in time. &lt;br/&gt;&lt;br/&gt;EXAMPLE(S):&lt;br/&gt;&lt;br/&gt;OTHER NAME(S):&lt;br/&gt;&lt;br/&gt;NOTE(S):&lt;br/&gt;A change in virtually any aspect of a study protocol can trigger the creation of a new study protocol version.&#160;&#160;The kinds of changes that can trigger creation of a new study protocol version include (but are not limited to) changes to the design, statistical considerations, activities to test a particular hypothesis or answer a particular question that is the basis of the study, characteristics, specifications, objective(s), background, pre-study/study/post-study portions of the plan (including the design, methodology, statistical considerations, organization), supporting documents such as informed consent documents, case report forms (CRFs), regulatory and approval documentation, correlative studies, etc.&lt;br/&gt;&lt;br/&gt;The complete notion of the study protocol is represented in BRIDG by the classes StudyProtocol, StudyProtocolVersion, StudyProtocolDocument, StudyProtocolDocumentVersion and all their associations.&lt;br/&gt;- The StudyProtocol class represents the content of the study protocol which includes characteristics and plan of the study which can be distilled into or abstracted from a version of the study protocol document and can exist even before the information is put into document form.&lt;br/&gt;- The StudyProtocolVersion class represents the details of the study protocol that may change over time.&lt;br/&gt;- The StudyProtocolDocument class represents the document form of the study protocol and is a grouping of the various study protocol document versions.&lt;br/&gt;- The StudyProtocolDocumentVersion class represents the document form of the study protocol version and is the details of the study protocol document that may change over time.&lt;br/&gt;&lt;br/&gt;</div>
@@ -1838,15 +1838,15 @@ function nameClassifier(name, separator)
 				</tr>
 				<tr>
 					<td width="40%" class="TableRow" valign="top">
-						<a href="../EA10/EA435.htm">StudySiteProtocolVersionRelationship</a><br />
+						<a href="../EA10/EA430.htm">StudyResource</a><br />
 						Class &nbsp;
 					</td>
 					<td width="30%" class="TableRow" valign="top">
-						<strong>Name:</strong> executingStudySiteProtocolVersionRelationship<br />
+						<strong>Name:</strong> usedStudyResource<br />
 						&nbsp;
 					</td>
 					<td width="30%" class="TableRow" valign="top">
-						<strong>Name:</strong> executedStudyProtocolVersion<br />
+						<strong>Name:</strong> usingStudyProtocolVersion<br />
 						&nbsp;	
 					</td>
 				</tr>
@@ -1854,31 +1854,7 @@ function nameClassifier(name, separator)
 					<td class="TableRowBottomDashed"  colspan="3">
 						<div class="DetailsDivParent"><img src="../../images/minus03.gif" align="absmiddle" id="DetailsImageLink2416" onclick="parent.toggleDiv('detailsDIVLink2416','DetailsImageLink2416')" />Details:
 							<div id="detailsDIVLink2416" class="DetailsDiv" >
-							<div class="ObjectDetailsNotes">DESCRIPTION:&lt;br/&gt;Each StudySiteProtocolVersionRelationship always executes one StudyProtocolVersion. Each StudyProtocolVersion might be executed at one or more StudySiteProtocolVersionRelationship.&lt;br/&gt;&lt;br/&gt;DEFINITION:&lt;br/&gt;&lt;br/&gt;EXAMPLE(S):&lt;br/&gt;&lt;br/&gt;OTHER NAME(S):&lt;br/&gt;&lt;br/&gt;NOTE(S):&lt;br/&gt;&lt;br/&gt;</div>
-
-							</div>
-						</div>
-					</td>
-				</tr>
-				<tr>
-					<td width="40%" class="TableRow" valign="top">
-						<a href="../EA10/EA426.htm">StudyOversightAuthority</a><br />
-						Class &nbsp;
-					</td>
-					<td width="30%" class="TableRow" valign="top">
-						<strong>Name:</strong> overseeingStudyOversightAuthority<br />
-						&nbsp;
-					</td>
-					<td width="30%" class="TableRow" valign="top">
-						<strong>Name:</strong> overseenStudyProtocolVersion<br />
-						&nbsp;	
-					</td>
-				</tr>
-				<tr>
-					<td class="TableRowBottomDashed"  colspan="3">
-						<div class="DetailsDivParent"><img src="../../images/minus03.gif" align="absmiddle" id="DetailsImageLink2417" onclick="parent.toggleDiv('detailsDIVLink2417','DetailsImageLink2417')" />Details:
-							<div id="detailsDIVLink2417" class="DetailsDiv" >
-							<div class="ObjectDetailsNotes">DESCRIPTION:&lt;br/&gt;Each StudyOversightAuthority might oversee one StudyProtocolVersion. Each StudyProtocolVersion might be overseen by one or more StudyOversightAuthority.&lt;br/&gt;&lt;br/&gt;DEFINITION:&lt;br/&gt;&lt;br/&gt;EXAMPLE(S):&lt;br/&gt;&lt;br/&gt;OTHER NAME(S):&lt;br/&gt;&lt;br/&gt;NOTE(S):&lt;br/&gt;&lt;br/&gt;</div>
+							<div class="ObjectDetailsNotes">DESCRIPTION:&lt;br/&gt;Each StudyResource might be used for one StudyProtocolVersion.&#160;&#160;Each StudyProtocolVersion might use one or more StudyResource.&lt;br/&gt;&lt;br/&gt;DEFINITION:&lt;br/&gt;&lt;br/&gt;EXAMPLE(S):&lt;br/&gt;&lt;br/&gt;OTHER NAME(S):&lt;br/&gt;&lt;br/&gt;NOTE(S):&lt;br/&gt;&lt;br/&gt;</div>
 
 							</div>
 						</div>
@@ -1900,177 +1876,9 @@ function nameClassifier(name, separator)
 				</tr>
 				<tr>
 					<td class="TableRowBottomDashed"  colspan="3">
-						<div class="DetailsDivParent"><img src="../../images/minus03.gif" align="absmiddle" id="DetailsImageLink2418" onclick="parent.toggleDiv('detailsDIVLink2418','DetailsImageLink2418')" />Details:
-							<div id="detailsDIVLink2418" class="DetailsDiv" >
+						<div class="DetailsDivParent"><img src="../../images/minus03.gif" align="absmiddle" id="DetailsImageLink2417" onclick="parent.toggleDiv('detailsDIVLink2417','DetailsImageLink2417')" />Details:
+							<div id="detailsDIVLink2417" class="DetailsDiv" >
 							<div class="ObjectDetailsNotes">DESCRIPTION:&lt;br/&gt;Each StudyAgent always is evaluated by one StudyProtocolVersion.&#160;&#160;Each StudyProtocolVersion might be evaluating one or more StudyAgent.&lt;br/&gt;&lt;br/&gt;DEFINITION:&lt;br/&gt;&lt;br/&gt;EXAMPLE(S):&lt;br/&gt;&lt;br/&gt;OTHER NAME(S):&lt;br/&gt;&lt;br/&gt;NOTE(S):&lt;br/&gt;&lt;br/&gt;</div>
-
-							</div>
-						</div>
-					</td>
-				</tr>
-				<tr>
-					<td width="40%" class="TableRow" valign="top">
-						<a href="EA334.htm">StudyReference</a><br />
-						Class &nbsp;
-					</td>
-					<td width="30%" class="TableRow" valign="top">
-						<strong>Name:</strong> referencingStudyReference<br />
-						&nbsp;
-					</td>
-					<td width="30%" class="TableRow" valign="top">
-						<strong>Name:</strong> referencedStudyProtocolVersion<br />
-						&nbsp;	
-					</td>
-				</tr>
-				<tr>
-					<td class="TableRowBottomDashed"  colspan="3">
-						<div class="DetailsDivParent"><img src="../../images/minus03.gif" align="absmiddle" id="DetailsImageLink2419" onclick="parent.toggleDiv('detailsDIVLink2419','DetailsImageLink2419')" />Details:
-							<div id="detailsDIVLink2419" class="DetailsDiv" >
-							<div class="ObjectDetailsNotes">DESCRIPTION:&lt;br/&gt;Each StudyReference always is referenced by one or more StudyProtocolVersion. Each StudyProtocolVersion might refer to one or more StudyReference.&lt;br/&gt;&lt;br/&gt;DEFINITION:&lt;br/&gt;&lt;br/&gt;EXAMPLE(S):&lt;br/&gt;&lt;br/&gt;OTHER NAME(S):&lt;br/&gt;&lt;br/&gt;NOTE(S):&lt;br/&gt;&lt;br/&gt;</div>
-
-							</div>
-						</div>
-					</td>
-				</tr>
-				<tr>
-					<td width="40%" class="TableRow" valign="top">
-						<a href="EA322.htm">StratumGroup</a><br />
-						Class &nbsp;
-					</td>
-					<td width="30%" class="TableRow" valign="top">
-						<strong>Name:</strong> describedStratumGroup<br />
-						&nbsp;
-					</td>
-					<td width="30%" class="TableRow" valign="top">
-						<strong>Name:</strong> describingStudyProtocolVersion<br />
-						&nbsp;	
-					</td>
-				</tr>
-				<tr>
-					<td class="TableRowBottomDashed"  colspan="3">
-						<div class="DetailsDivParent"><img src="../../images/minus03.gif" align="absmiddle" id="DetailsImageLink2420" onclick="parent.toggleDiv('detailsDIVLink2420','DetailsImageLink2420')" />Details:
-							<div id="detailsDIVLink2420" class="DetailsDiv" >
-							<div class="ObjectDetailsNotes">DESCRIPTION:&lt;br/&gt;Each StratumGroup always is defined by one StudyProtocolVersion. Each StudyProtocolVersion might define one or more StratumGroup.&lt;br/&gt;&lt;br/&gt;DEFINITION:&lt;br/&gt;&lt;br/&gt;EXAMPLE(S):&lt;br/&gt;&lt;br/&gt;OTHER NAME(S):&lt;br/&gt;&lt;br/&gt;NOTE(S):&lt;br/&gt;&lt;br/&gt;</div>
-
-							</div>
-						</div>
-					</td>
-				</tr>
-				<tr>
-					<td width="40%" class="TableRow" valign="top">
-						<a href="EA323.htm">StudyActivity</a><br />
-						Class &nbsp;
-					</td>
-					<td width="30%" class="TableRow" valign="top">
-						<strong>Name:</strong> usedStudyActivity<br />
-						&nbsp;
-					</td>
-					<td width="30%" class="TableRow" valign="top">
-						<strong>Name:</strong> usingStudyProtocolVersion<br />
-						&nbsp;	
-					</td>
-				</tr>
-				<tr>
-					<td class="TableRowBottomDashed"  colspan="3">
-						<div class="DetailsDivParent"><img src="../../images/minus03.gif" align="absmiddle" id="DetailsImageLink2421" onclick="parent.toggleDiv('detailsDIVLink2421','DetailsImageLink2421')" />Details:
-							<div id="detailsDIVLink2421" class="DetailsDiv" >
-							<div class="ObjectDetailsNotes">DESCRIPTION:&lt;br/&gt;Each StudyActivity might be used by one StudyProtocolVersion.&#160;&#160;Each StudyProtocolVersion might use one or more StudyActivity.&lt;br/&gt;&lt;br/&gt;DEFINITION:&lt;br/&gt;&lt;br/&gt;EXAMPLE(S):&lt;br/&gt;&lt;br/&gt;OTHER NAME(S):&lt;br/&gt;&lt;br/&gt;NOTE(S):&lt;br/&gt;</div>
-
-							</div>
-						</div>
-					</td>
-				</tr>
-				<tr>
-					<td width="40%" class="TableRow" valign="top">
-						<a href="../EA10/EA427.htm">StudyPersonnel</a><br />
-						Class &nbsp;
-					</td>
-					<td width="30%" class="TableRow" valign="top">
-						<strong>Name:</strong> performedStudyPersonnel<br />
-						&nbsp;
-					</td>
-					<td width="30%" class="TableRow" valign="top">
-						<strong>Name:</strong> performingStudyProtocolVersion<br />
-						&nbsp;	
-					</td>
-				</tr>
-				<tr>
-					<td class="TableRowBottomDashed"  colspan="3">
-						<div class="DetailsDivParent"><img src="../../images/minus03.gif" align="absmiddle" id="DetailsImageLink2422" onclick="parent.toggleDiv('detailsDIVLink2422','DetailsImageLink2422')" />Details:
-							<div id="detailsDIVLink2422" class="DetailsDiv" >
-							<div class="ObjectDetailsNotes">DESCRIPTION:&lt;br/&gt;Each StudyPersonnel might perform a role for one StudyProtocolVersion.&#160;&#160;Each StudyProtocolVersion might have a role performed by one or more StudyPersonnel.&lt;br/&gt;&lt;br/&gt;DEFINITION:&lt;br/&gt;&lt;br/&gt;EXAMPLE(S):&lt;br/&gt;&lt;br/&gt;OTHER NAME(S):&lt;br/&gt;&lt;br/&gt;NOTE(S):&lt;br/&gt;&lt;br/&gt;</div>
-
-							</div>
-						</div>
-					</td>
-				</tr>
-				<tr>
-					<td width="40%" class="TableRow" valign="top">
-						<a href="EA264.htm">Arm</a><br />
-						Class &nbsp;
-					</td>
-					<td width="30%" class="TableRow" valign="top">
-						<strong>Name:</strong> subdividingArm<br />
-						&nbsp;
-					</td>
-					<td width="30%" class="TableRow" valign="top">
-						<strong>Name:</strong> subdividedStudyProtocolVersion<br />
-						&nbsp;	
-					</td>
-				</tr>
-				<tr>
-					<td class="TableRowBottomDashed"  colspan="3">
-						<div class="DetailsDivParent"><img src="../../images/minus03.gif" align="absmiddle" id="DetailsImageLink2423" onclick="parent.toggleDiv('detailsDIVLink2423','DetailsImageLink2423')" />Details:
-							<div id="detailsDIVLink2423" class="DetailsDiv" >
-							<div class="ObjectDetailsNotes">DESCRIPTION:&lt;br/&gt;Each Arm always is a division of one StudyProtocolVersion. Each StudyProtocolVersion might be divided into one or more Arm.&lt;br/&gt;&lt;br/&gt;DEFINITION:&lt;br/&gt;&lt;br/&gt;EXAMPLE(S):&lt;br/&gt;&lt;br/&gt;OTHER NAME(S):&lt;br/&gt;&lt;br/&gt;NOTE(S):&lt;br/&gt;&lt;br/&gt;</div>
-
-							</div>
-						</div>
-					</td>
-				</tr>
-				<tr>
-					<td width="40%" class="TableRow" valign="top">
-						<a href="EA327.htm">StudyObjective</a><br />
-						Class &nbsp;
-					</td>
-					<td width="30%" class="TableRow" valign="top">
-						<strong>Name:</strong> involvedStudyObjective<br />
-						&nbsp;
-					</td>
-					<td width="30%" class="TableRow" valign="top">
-						<strong>Name:</strong> involvingStudyProtocolVersion<br />
-						&nbsp;	
-					</td>
-				</tr>
-				<tr>
-					<td class="TableRowBottomDashed"  colspan="3">
-						<div class="DetailsDivParent"><img src="../../images/minus03.gif" align="absmiddle" id="DetailsImageLink2424" onclick="parent.toggleDiv('detailsDIVLink2424','DetailsImageLink2424')" />Details:
-							<div id="detailsDIVLink2424" class="DetailsDiv" >
-							<div class="ObjectDetailsNotes">DESCRIPTION:&lt;br/&gt;Each StudyObjective always is an aim of one StudyProtocolVersion.&#160;&#160;Each StudyProtocolVersion might aim to achieve one or more StudyObjective.&lt;br/&gt;&lt;br/&gt;DEFINITION:&lt;br/&gt;&lt;br/&gt;EXAMPLE(S):&lt;br/&gt;&lt;br/&gt;OTHER NAME(S):&lt;br/&gt;&lt;br/&gt;NOTE(S):&lt;br/&gt;&lt;br/&gt;</div>
-
-							</div>
-						</div>
-					</td>
-				</tr>
-				<tr>
-					<td width="40%" class="TableRow" valign="top">
-						<a href="EA331.htm">StudyProtocolDocumentVersion</a><br />
-						Class &nbsp;
-					</td>
-					<td width="30%" class="TableRow" valign="top">
-						<strong>Name:</strong> containingStudyProtocolDocumentVersion<br />
-						&nbsp;
-					</td>
-					<td width="30%" class="TableRow" valign="top">
-						<strong>Name:</strong> containedStudyProtocolVersion<br />
-						&nbsp;	
-					</td>
-				</tr>
-				<tr>
-					<td class="TableRowBottomDashed"  colspan="3">
-						<div class="DetailsDivParent"><img src="../../images/minus03.gif" align="absmiddle" id="DetailsImageLink2425" onclick="parent.toggleDiv('detailsDIVLink2425','DetailsImageLink2425')" />Details:
-							<div id="detailsDIVLink2425" class="DetailsDiv" >
-							<div class="ObjectDetailsNotes">DESCRIPTION:&lt;br/&gt;Each StudyProtocolDocumentVersion always contains one StudyProtocolVersion. Each StudyProtocolVersion might be the contents of one StudyProtocolDocumentVersion.&lt;br/&gt;&lt;br/&gt;DEFINITION:&lt;br/&gt;&lt;br/&gt;EXAMPLE(S):&lt;br/&gt;&lt;br/&gt;OTHER NAME(S):&lt;br/&gt;&lt;br/&gt;NOTE(S):&lt;br/&gt;&lt;br/&gt;</div>
 
 							</div>
 						</div>
@@ -2092,8 +1900,8 @@ function nameClassifier(name, separator)
 				</tr>
 				<tr>
 					<td class="TableRowBottomDashed"  colspan="3">
-						<div class="DetailsDivParent"><img src="../../images/minus03.gif" align="absmiddle" id="DetailsImageLink2426" onclick="parent.toggleDiv('detailsDIVLink2426','DetailsImageLink2426')" />Details:
-							<div id="detailsDIVLink2426" class="DetailsDiv" >
+						<div class="DetailsDivParent"><img src="../../images/minus03.gif" align="absmiddle" id="DetailsImageLink2418" onclick="parent.toggleDiv('detailsDIVLink2418','DetailsImageLink2418')" />Details:
+							<div id="detailsDIVLink2418" class="DetailsDiv" >
 							<div class="ObjectDetailsNotes">DESCRIPTION:&lt;br/&gt;Each Epoch always is a division of one StudyProtocolVersion. Each StudyProtocolVersion might be divided into one or more Epoch.&lt;br/&gt;&lt;br/&gt;DEFINITION:&lt;br/&gt;&lt;br/&gt;EXAMPLE(S):&lt;br/&gt;&lt;br/&gt;OTHER NAME(S):&lt;br/&gt;&lt;br/&gt;NOTE(S):&lt;br/&gt;&lt;br/&gt;</div>
 
 							</div>
@@ -2102,23 +1910,23 @@ function nameClassifier(name, separator)
 				</tr>
 				<tr>
 					<td width="40%" class="TableRow" valign="top">
-						<a href="../EA9/EA360.htm">StatisticalAnalysisPlanVersion</a><br />
+						<a href="../EA10/EA426.htm">StudyOversightAuthority</a><br />
 						Class &nbsp;
 					</td>
 					<td width="30%" class="TableRow" valign="top">
-						<strong>Name:</strong> addressingStatisticalAnalysisPlanVersion<br />
+						<strong>Name:</strong> overseeingStudyOversightAuthority<br />
 						&nbsp;
 					</td>
 					<td width="30%" class="TableRow" valign="top">
-						<strong>Name:</strong> addressedStudyProtocolVersion<br />
+						<strong>Name:</strong> overseenStudyProtocolVersion<br />
 						&nbsp;	
 					</td>
 				</tr>
 				<tr>
 					<td class="TableRowBottomDashed"  colspan="3">
-						<div class="DetailsDivParent"><img src="../../images/minus03.gif" align="absmiddle" id="DetailsImageLink2427" onclick="parent.toggleDiv('detailsDIVLink2427','DetailsImageLink2427')" />Details:
-							<div id="detailsDIVLink2427" class="DetailsDiv" >
-							<div class="ObjectDetailsNotes">DESCRIPTION:&lt;br/&gt;Each StatisticalAnalysisPlanVersion always addresses the statistical needs of one or more StudyProtocolVersion. Each StudyProtocolVersion might have statistical needs addressed by one or more StatisticalAnalysisPlanVersion.&lt;br/&gt;&lt;br/&gt;DEFINITION:&lt;br/&gt;Identifies the version of the study protocol that is the basis for a statistical analysis plan version.&lt;br/&gt;&lt;br/&gt;EXAMPLE(S):&lt;br/&gt;&lt;br/&gt;OTHER NAME(S):&lt;br/&gt;&lt;br/&gt;NOTE(S):&lt;br/&gt;</div>
+						<div class="DetailsDivParent"><img src="../../images/minus03.gif" align="absmiddle" id="DetailsImageLink2419" onclick="parent.toggleDiv('detailsDIVLink2419','DetailsImageLink2419')" />Details:
+							<div id="detailsDIVLink2419" class="DetailsDiv" >
+							<div class="ObjectDetailsNotes">DESCRIPTION:&lt;br/&gt;Each StudyOversightAuthority might oversee one StudyProtocolVersion. Each StudyProtocolVersion might be overseen by one or more StudyOversightAuthority.&lt;br/&gt;&lt;br/&gt;DEFINITION:&lt;br/&gt;&lt;br/&gt;EXAMPLE(S):&lt;br/&gt;&lt;br/&gt;OTHER NAME(S):&lt;br/&gt;&lt;br/&gt;NOTE(S):&lt;br/&gt;&lt;br/&gt;</div>
 
 							</div>
 						</div>
@@ -2126,23 +1934,23 @@ function nameClassifier(name, separator)
 				</tr>
 				<tr>
 					<td width="40%" class="TableRow" valign="top">
-						<a href="EA319.htm">PlannedStudySubject</a><br />
+						<a href="../EA10/EA427.htm">StudyPersonnel</a><br />
 						Class &nbsp;
 					</td>
 					<td width="30%" class="TableRow" valign="top">
-						<strong>Name:</strong> intendedPlannedStudySubject<br />
+						<strong>Name:</strong> performedStudyPersonnel<br />
 						&nbsp;
 					</td>
 					<td width="30%" class="TableRow" valign="top">
-						<strong>Name:</strong> plannedForStudyProtocolVersion<br />
+						<strong>Name:</strong> performingStudyProtocolVersion<br />
 						&nbsp;	
 					</td>
 				</tr>
 				<tr>
 					<td class="TableRowBottomDashed"  colspan="3">
-						<div class="DetailsDivParent"><img src="../../images/minus03.gif" align="absmiddle" id="DetailsImageLink2428" onclick="parent.toggleDiv('detailsDIVLink2428','DetailsImageLink2428')" />Details:
-							<div id="detailsDIVLink2428" class="DetailsDiv" >
-							<div class="ObjectDetailsNotes">DESCRIPTION:&lt;br/&gt;Each PlannedStudySubject always participates in one StudyProtocolVersion. Each StudyProtocolVersion always is participated in by one or more PlannedStudySubject.&lt;br/&gt;&lt;br/&gt;DEFINITION:&lt;br/&gt;Indicates the types of StudySubjects intended to participate in the StudyProtocolVersion.&lt;br/&gt;&lt;br/&gt;EXAMPLE(S):&lt;br/&gt;&lt;br/&gt;OTHER NAME(S):&lt;br/&gt;&lt;br/&gt;NOTE(S):&lt;br/&gt;ActualIndicator should be set to &#39;false&#39; for the Entity that is the subject&lt;br/&gt;</div>
+						<div class="DetailsDivParent"><img src="../../images/minus03.gif" align="absmiddle" id="DetailsImageLink2420" onclick="parent.toggleDiv('detailsDIVLink2420','DetailsImageLink2420')" />Details:
+							<div id="detailsDIVLink2420" class="DetailsDiv" >
+							<div class="ObjectDetailsNotes">DESCRIPTION:&lt;br/&gt;Each StudyPersonnel might perform a role for one StudyProtocolVersion.&#160;&#160;Each StudyProtocolVersion might have a role performed by one or more StudyPersonnel.&lt;br/&gt;&lt;br/&gt;DEFINITION:&lt;br/&gt;&lt;br/&gt;EXAMPLE(S):&lt;br/&gt;&lt;br/&gt;OTHER NAME(S):&lt;br/&gt;&lt;br/&gt;NOTE(S):&lt;br/&gt;&lt;br/&gt;</div>
 
 							</div>
 						</div>
@@ -2150,23 +1958,23 @@ function nameClassifier(name, separator)
 				</tr>
 				<tr>
 					<td width="40%" class="TableRow" valign="top">
-						<a href="EA318.htm">PlannedStudySite</a><br />
+						<a href="../EA10/EA435.htm">StudySiteProtocolVersionRelationship</a><br />
 						Class &nbsp;
 					</td>
 					<td width="30%" class="TableRow" valign="top">
-						<strong>Name:</strong> executingPlannedStudySite<br />
+						<strong>Name:</strong> executingStudySiteProtocolVersionRelationship<br />
 						&nbsp;
 					</td>
 					<td width="30%" class="TableRow" valign="top">
-						<strong>Name:</strong> executesStudyProtocolVersion<br />
+						<strong>Name:</strong> executedStudyProtocolVersion<br />
 						&nbsp;	
 					</td>
 				</tr>
 				<tr>
 					<td class="TableRowBottomDashed"  colspan="3">
-						<div class="DetailsDivParent"><img src="../../images/minus03.gif" align="absmiddle" id="DetailsImageLink2429" onclick="parent.toggleDiv('detailsDIVLink2429','DetailsImageLink2429')" />Details:
-							<div id="detailsDIVLink2429" class="DetailsDiv" >
-							<div class="ObjectDetailsNotes">DESCRIPTION:&lt;br/&gt;Each PlannedStudySite always plans to execute one StudyProtocolVersion.&#160;&#160;Each StudyProtocolVersion might be planned to be executed at one or more PlannedStudySite.&lt;br/&gt;&lt;br/&gt;DEFINITION:&lt;br/&gt;&lt;br/&gt;EXAMPLE(S):&lt;br/&gt;&lt;br/&gt;OTHER NAME(S):&lt;br/&gt;&lt;br/&gt;NOTE(S):&lt;br/&gt;&lt;br/&gt;</div>
+						<div class="DetailsDivParent"><img src="../../images/minus03.gif" align="absmiddle" id="DetailsImageLink2421" onclick="parent.toggleDiv('detailsDIVLink2421','DetailsImageLink2421')" />Details:
+							<div id="detailsDIVLink2421" class="DetailsDiv" >
+							<div class="ObjectDetailsNotes">DESCRIPTION:&lt;br/&gt;Each StudySiteProtocolVersionRelationship always executes one StudyProtocolVersion. Each StudyProtocolVersion might be executed at one or more StudySiteProtocolVersionRelationship.&lt;br/&gt;&lt;br/&gt;DEFINITION:&lt;br/&gt;&lt;br/&gt;EXAMPLE(S):&lt;br/&gt;&lt;br/&gt;OTHER NAME(S):&lt;br/&gt;&lt;br/&gt;NOTE(S):&lt;br/&gt;&lt;br/&gt;</div>
 
 							</div>
 						</div>
@@ -2174,23 +1982,23 @@ function nameClassifier(name, separator)
 				</tr>
 				<tr>
 					<td width="40%" class="TableRow" valign="top">
-						<a href="EA326.htm">StudyLegalSponsor</a><br />
+						<a href="EA264.htm">Arm</a><br />
 						Class &nbsp;
 					</td>
 					<td width="30%" class="TableRow" valign="top">
-						<strong>Name:</strong> sponsoringStudyLegalSponsor<br />
+						<strong>Name:</strong> subdividingArm<br />
 						&nbsp;
 					</td>
 					<td width="30%" class="TableRow" valign="top">
-						<strong>Name:</strong> sponsoredStudyProtocolVersion<br />
+						<strong>Name:</strong> subdividedStudyProtocolVersion<br />
 						&nbsp;	
 					</td>
 				</tr>
 				<tr>
 					<td class="TableRowBottomDashed"  colspan="3">
-						<div class="DetailsDivParent"><img src="../../images/minus03.gif" align="absmiddle" id="DetailsImageLink2430" onclick="parent.toggleDiv('detailsDIVLink2430','DetailsImageLink2430')" />Details:
-							<div id="detailsDIVLink2430" class="DetailsDiv" >
-							<div class="ObjectDetailsNotes">DESCRIPTION:&lt;br/&gt;Each StudyLegalSponsor always is responsible for one StudyProtocolVersion.&#160;&#160;Each StudyProtocolVersion might be the responsibility of one or more StudyLegalSponsor.&lt;br/&gt;&lt;br/&gt;DEFINITION:&lt;br/&gt;&lt;br/&gt;EXAMPLE(S):&lt;br/&gt;&lt;br/&gt;OTHER NAME(S):&lt;br/&gt;&lt;br/&gt;NOTE(S):&lt;br/&gt;&lt;br/&gt;</div>
+						<div class="DetailsDivParent"><img src="../../images/minus03.gif" align="absmiddle" id="DetailsImageLink2422" onclick="parent.toggleDiv('detailsDIVLink2422','DetailsImageLink2422')" />Details:
+							<div id="detailsDIVLink2422" class="DetailsDiv" >
+							<div class="ObjectDetailsNotes">DESCRIPTION:&lt;br/&gt;Each Arm always is a division of one StudyProtocolVersion. Each StudyProtocolVersion might be divided into one or more Arm.&lt;br/&gt;&lt;br/&gt;DEFINITION:&lt;br/&gt;&lt;br/&gt;EXAMPLE(S):&lt;br/&gt;&lt;br/&gt;OTHER NAME(S):&lt;br/&gt;&lt;br/&gt;NOTE(S):&lt;br/&gt;&lt;br/&gt;</div>
 
 							</div>
 						</div>
@@ -2198,11 +2006,35 @@ function nameClassifier(name, separator)
 				</tr>
 				<tr>
 					<td width="40%" class="TableRow" valign="top">
-						<a href="../EA10/EA430.htm">StudyResource</a><br />
+						<a href="EA331.htm">StudyProtocolDocumentVersion</a><br />
 						Class &nbsp;
 					</td>
 					<td width="30%" class="TableRow" valign="top">
-						<strong>Name:</strong> usedStudyResource<br />
+						<strong>Name:</strong> containingStudyProtocolDocumentVersion<br />
+						&nbsp;
+					</td>
+					<td width="30%" class="TableRow" valign="top">
+						<strong>Name:</strong> containedStudyProtocolVersion<br />
+						&nbsp;	
+					</td>
+				</tr>
+				<tr>
+					<td class="TableRowBottomDashed"  colspan="3">
+						<div class="DetailsDivParent"><img src="../../images/minus03.gif" align="absmiddle" id="DetailsImageLink2423" onclick="parent.toggleDiv('detailsDIVLink2423','DetailsImageLink2423')" />Details:
+							<div id="detailsDIVLink2423" class="DetailsDiv" >
+							<div class="ObjectDetailsNotes">DESCRIPTION:&lt;br/&gt;Each StudyProtocolDocumentVersion always contains one StudyProtocolVersion. Each StudyProtocolVersion might be the contents of one StudyProtocolDocumentVersion.&lt;br/&gt;&lt;br/&gt;DEFINITION:&lt;br/&gt;&lt;br/&gt;EXAMPLE(S):&lt;br/&gt;&lt;br/&gt;OTHER NAME(S):&lt;br/&gt;&lt;br/&gt;NOTE(S):&lt;br/&gt;&lt;br/&gt;</div>
+
+							</div>
+						</div>
+					</td>
+				</tr>
+				<tr>
+					<td width="40%" class="TableRow" valign="top">
+						<a href="EA323.htm">StudyActivity</a><br />
+						Class &nbsp;
+					</td>
+					<td width="30%" class="TableRow" valign="top">
+						<strong>Name:</strong> usedStudyActivity<br />
 						&nbsp;
 					</td>
 					<td width="30%" class="TableRow" valign="top">
@@ -2212,9 +2044,33 @@ function nameClassifier(name, separator)
 				</tr>
 				<tr>
 					<td class="TableRowBottomDashed"  colspan="3">
-						<div class="DetailsDivParent"><img src="../../images/minus03.gif" align="absmiddle" id="DetailsImageLink2431" onclick="parent.toggleDiv('detailsDIVLink2431','DetailsImageLink2431')" />Details:
-							<div id="detailsDIVLink2431" class="DetailsDiv" >
-							<div class="ObjectDetailsNotes">DESCRIPTION:&lt;br/&gt;Each StudyResource might be used for one StudyProtocolVersion.&#160;&#160;Each StudyProtocolVersion might use one or more StudyResource.&lt;br/&gt;&lt;br/&gt;DEFINITION:&lt;br/&gt;&lt;br/&gt;EXAMPLE(S):&lt;br/&gt;&lt;br/&gt;OTHER NAME(S):&lt;br/&gt;&lt;br/&gt;NOTE(S):&lt;br/&gt;&lt;br/&gt;</div>
+						<div class="DetailsDivParent"><img src="../../images/minus03.gif" align="absmiddle" id="DetailsImageLink2424" onclick="parent.toggleDiv('detailsDIVLink2424','DetailsImageLink2424')" />Details:
+							<div id="detailsDIVLink2424" class="DetailsDiv" >
+							<div class="ObjectDetailsNotes">DESCRIPTION:&lt;br/&gt;Each StudyActivity might be used by one StudyProtocolVersion.&#160;&#160;Each StudyProtocolVersion might use one or more StudyActivity.&lt;br/&gt;&lt;br/&gt;DEFINITION:&lt;br/&gt;&lt;br/&gt;EXAMPLE(S):&lt;br/&gt;&lt;br/&gt;OTHER NAME(S):&lt;br/&gt;&lt;br/&gt;NOTE(S):&lt;br/&gt;</div>
+
+							</div>
+						</div>
+					</td>
+				</tr>
+				<tr>
+					<td width="40%" class="TableRow" valign="top">
+						<a href="../EA6/EA247.htm">StudiedMolecularBiomarkerGroup</a><br />
+						Class &nbsp;
+					</td>
+					<td width="30%" class="TableRow" valign="top">
+						<strong>Name:</strong> studiedStudiedMolecularBiomarkerGroup<br />
+						&nbsp;
+					</td>
+					<td width="30%" class="TableRow" valign="top">
+						<strong>Name:</strong> studyingStudyProtocolVersion<br />
+						&nbsp;	
+					</td>
+				</tr>
+				<tr>
+					<td class="TableRowBottomDashed"  colspan="3">
+						<div class="DetailsDivParent"><img src="../../images/minus03.gif" align="absmiddle" id="DetailsImageLink2425" onclick="parent.toggleDiv('detailsDIVLink2425','DetailsImageLink2425')" />Details:
+							<div id="detailsDIVLink2425" class="DetailsDiv" >
+							<div class="ObjectDetailsNotes">DESCRIPTION:&lt;br/&gt;Each StudiedMolecularBiomarkerGroup always is studied by one StudyProtocolVersion. Each StudyProtocolVersion might be studying one or more StudiedMolecularBiomarkerGroup.&lt;br/&gt;&lt;br/&gt;DEFINITION:&lt;br/&gt;&lt;br/&gt;EXAMPLE(S):&lt;br/&gt;&lt;br/&gt;OTHER NAME(S):&lt;br/&gt;&lt;br/&gt;NOTE(S):&lt;br/&gt;</div>
 
 							</div>
 						</div>
@@ -2236,9 +2092,81 @@ function nameClassifier(name, separator)
 				</tr>
 				<tr>
 					<td class="TableRowBottomDashed"  colspan="3">
-						<div class="DetailsDivParent"><img src="../../images/minus03.gif" align="absmiddle" id="DetailsImageLink2432" onclick="parent.toggleDiv('detailsDIVLink2432','DetailsImageLink2432')" />Details:
-							<div id="detailsDIVLink2432" class="DetailsDiv" >
+						<div class="DetailsDivParent"><img src="../../images/minus03.gif" align="absmiddle" id="DetailsImageLink2426" onclick="parent.toggleDiv('detailsDIVLink2426','DetailsImageLink2426')" />Details:
+							<div id="detailsDIVLink2426" class="DetailsDiv" >
 							<div class="ObjectDetailsNotes">DESCRIPTION:&lt;br/&gt;Each StudyCondition always is the focus of one StudyProtocolVersion. Each StudyProtocolVersion might focus on one or more StudyCondition.&lt;br/&gt;&lt;br/&gt;DEFINITION:&lt;br/&gt;&lt;br/&gt;EXAMPLE(S):&lt;br/&gt;&lt;br/&gt;OTHER NAME(S):&lt;br/&gt;&lt;br/&gt;NOTE(S):&lt;br/&gt;&lt;br/&gt;</div>
+
+							</div>
+						</div>
+					</td>
+				</tr>
+				<tr>
+					<td width="40%" class="TableRow" valign="top">
+						<a href="EA318.htm">PlannedStudySite</a><br />
+						Class &nbsp;
+					</td>
+					<td width="30%" class="TableRow" valign="top">
+						<strong>Name:</strong> executingPlannedStudySite<br />
+						&nbsp;
+					</td>
+					<td width="30%" class="TableRow" valign="top">
+						<strong>Name:</strong> executesStudyProtocolVersion<br />
+						&nbsp;	
+					</td>
+				</tr>
+				<tr>
+					<td class="TableRowBottomDashed"  colspan="3">
+						<div class="DetailsDivParent"><img src="../../images/minus03.gif" align="absmiddle" id="DetailsImageLink2427" onclick="parent.toggleDiv('detailsDIVLink2427','DetailsImageLink2427')" />Details:
+							<div id="detailsDIVLink2427" class="DetailsDiv" >
+							<div class="ObjectDetailsNotes">DESCRIPTION:&lt;br/&gt;Each PlannedStudySite always plans to execute one StudyProtocolVersion.&#160;&#160;Each StudyProtocolVersion might be planned to be executed at one or more PlannedStudySite.&lt;br/&gt;&lt;br/&gt;DEFINITION:&lt;br/&gt;&lt;br/&gt;EXAMPLE(S):&lt;br/&gt;&lt;br/&gt;OTHER NAME(S):&lt;br/&gt;&lt;br/&gt;NOTE(S):&lt;br/&gt;&lt;br/&gt;</div>
+
+							</div>
+						</div>
+					</td>
+				</tr>
+				<tr>
+					<td width="40%" class="TableRow" valign="top">
+						<a href="EA334.htm">StudyReference</a><br />
+						Class &nbsp;
+					</td>
+					<td width="30%" class="TableRow" valign="top">
+						<strong>Name:</strong> referencingStudyReference<br />
+						&nbsp;
+					</td>
+					<td width="30%" class="TableRow" valign="top">
+						<strong>Name:</strong> referencedStudyProtocolVersion<br />
+						&nbsp;	
+					</td>
+				</tr>
+				<tr>
+					<td class="TableRowBottomDashed"  colspan="3">
+						<div class="DetailsDivParent"><img src="../../images/minus03.gif" align="absmiddle" id="DetailsImageLink2428" onclick="parent.toggleDiv('detailsDIVLink2428','DetailsImageLink2428')" />Details:
+							<div id="detailsDIVLink2428" class="DetailsDiv" >
+							<div class="ObjectDetailsNotes">DESCRIPTION:&lt;br/&gt;Each StudyReference always is referenced by one or more StudyProtocolVersion. Each StudyProtocolVersion might refer to one or more StudyReference.&lt;br/&gt;&lt;br/&gt;DEFINITION:&lt;br/&gt;&lt;br/&gt;EXAMPLE(S):&lt;br/&gt;&lt;br/&gt;OTHER NAME(S):&lt;br/&gt;&lt;br/&gt;NOTE(S):&lt;br/&gt;&lt;br/&gt;</div>
+
+							</div>
+						</div>
+					</td>
+				</tr>
+				<tr>
+					<td width="40%" class="TableRow" valign="top">
+						<a href="EA319.htm">PlannedStudySubject</a><br />
+						Class &nbsp;
+					</td>
+					<td width="30%" class="TableRow" valign="top">
+						<strong>Name:</strong> intendedPlannedStudySubject<br />
+						&nbsp;
+					</td>
+					<td width="30%" class="TableRow" valign="top">
+						<strong>Name:</strong> plannedForStudyProtocolVersion<br />
+						&nbsp;	
+					</td>
+				</tr>
+				<tr>
+					<td class="TableRowBottomDashed"  colspan="3">
+						<div class="DetailsDivParent"><img src="../../images/minus03.gif" align="absmiddle" id="DetailsImageLink2429" onclick="parent.toggleDiv('detailsDIVLink2429','DetailsImageLink2429')" />Details:
+							<div id="detailsDIVLink2429" class="DetailsDiv" >
+							<div class="ObjectDetailsNotes">DESCRIPTION:&lt;br/&gt;Each PlannedStudySubject always participates in one StudyProtocolVersion. Each StudyProtocolVersion always is participated in by one or more PlannedStudySubject.&lt;br/&gt;&lt;br/&gt;DEFINITION:&lt;br/&gt;Indicates the types of StudySubjects intended to participate in the StudyProtocolVersion.&lt;br/&gt;&lt;br/&gt;EXAMPLE(S):&lt;br/&gt;&lt;br/&gt;OTHER NAME(S):&lt;br/&gt;&lt;br/&gt;NOTE(S):&lt;br/&gt;ActualIndicator should be set to &#39;false&#39; for the Entity that is the subject&lt;br/&gt;</div>
 
 							</div>
 						</div>
@@ -2260,9 +2188,81 @@ function nameClassifier(name, separator)
 				</tr>
 				<tr>
 					<td class="TableRowBottomDashed"  colspan="3">
+						<div class="DetailsDivParent"><img src="../../images/minus03.gif" align="absmiddle" id="DetailsImageLink2430" onclick="parent.toggleDiv('detailsDIVLink2430','DetailsImageLink2430')" />Details:
+							<div id="detailsDIVLink2430" class="DetailsDiv" >
+							<div class="ObjectDetailsNotes">DESCRIPTION:&lt;br/&gt;Each PerformedActivity might execute under one StudyProtocolVersion.&#160;&#160;Each StudyProtocolVersion might be executed by one or more PerformedActivity.&lt;br/&gt;&lt;br/&gt;DEFINITION:&lt;br/&gt;&lt;br/&gt;EXAMPLE(S):&lt;br/&gt;&lt;br/&gt;OTHER NAME(S):&lt;br/&gt;&lt;br/&gt;NOTE(S):&lt;br/&gt;&lt;br/&gt;</div>
+
+							</div>
+						</div>
+					</td>
+				</tr>
+				<tr>
+					<td width="40%" class="TableRow" valign="top">
+						<a href="EA326.htm">StudyLegalSponsor</a><br />
+						Class &nbsp;
+					</td>
+					<td width="30%" class="TableRow" valign="top">
+						<strong>Name:</strong> sponsoringStudyLegalSponsor<br />
+						&nbsp;
+					</td>
+					<td width="30%" class="TableRow" valign="top">
+						<strong>Name:</strong> sponsoredStudyProtocolVersion<br />
+						&nbsp;	
+					</td>
+				</tr>
+				<tr>
+					<td class="TableRowBottomDashed"  colspan="3">
+						<div class="DetailsDivParent"><img src="../../images/minus03.gif" align="absmiddle" id="DetailsImageLink2431" onclick="parent.toggleDiv('detailsDIVLink2431','DetailsImageLink2431')" />Details:
+							<div id="detailsDIVLink2431" class="DetailsDiv" >
+							<div class="ObjectDetailsNotes">DESCRIPTION:&lt;br/&gt;Each StudyLegalSponsor always is responsible for one StudyProtocolVersion.&#160;&#160;Each StudyProtocolVersion might be the responsibility of one or more StudyLegalSponsor.&lt;br/&gt;&lt;br/&gt;DEFINITION:&lt;br/&gt;&lt;br/&gt;EXAMPLE(S):&lt;br/&gt;&lt;br/&gt;OTHER NAME(S):&lt;br/&gt;&lt;br/&gt;NOTE(S):&lt;br/&gt;&lt;br/&gt;</div>
+
+							</div>
+						</div>
+					</td>
+				</tr>
+				<tr>
+					<td width="40%" class="TableRow" valign="top">
+						<a href="EA322.htm">StratumGroup</a><br />
+						Class &nbsp;
+					</td>
+					<td width="30%" class="TableRow" valign="top">
+						<strong>Name:</strong> describedStratumGroup<br />
+						&nbsp;
+					</td>
+					<td width="30%" class="TableRow" valign="top">
+						<strong>Name:</strong> describingStudyProtocolVersion<br />
+						&nbsp;	
+					</td>
+				</tr>
+				<tr>
+					<td class="TableRowBottomDashed"  colspan="3">
+						<div class="DetailsDivParent"><img src="../../images/minus03.gif" align="absmiddle" id="DetailsImageLink2432" onclick="parent.toggleDiv('detailsDIVLink2432','DetailsImageLink2432')" />Details:
+							<div id="detailsDIVLink2432" class="DetailsDiv" >
+							<div class="ObjectDetailsNotes">DESCRIPTION:&lt;br/&gt;Each StratumGroup always is defined by one StudyProtocolVersion. Each StudyProtocolVersion might define one or more StratumGroup.&lt;br/&gt;&lt;br/&gt;DEFINITION:&lt;br/&gt;&lt;br/&gt;EXAMPLE(S):&lt;br/&gt;&lt;br/&gt;OTHER NAME(S):&lt;br/&gt;&lt;br/&gt;NOTE(S):&lt;br/&gt;&lt;br/&gt;</div>
+
+							</div>
+						</div>
+					</td>
+				</tr>
+				<tr>
+					<td width="40%" class="TableRow" valign="top">
+						<a href="EA327.htm">StudyObjective</a><br />
+						Class &nbsp;
+					</td>
+					<td width="30%" class="TableRow" valign="top">
+						<strong>Name:</strong> involvedStudyObjective<br />
+						&nbsp;
+					</td>
+					<td width="30%" class="TableRow" valign="top">
+						<strong>Name:</strong> involvingStudyProtocolVersion<br />
+						&nbsp;	
+					</td>
+				</tr>
+				<tr>
+					<td class="TableRowBottomDashed"  colspan="3">
 						<div class="DetailsDivParent"><img src="../../images/minus03.gif" align="absmiddle" id="DetailsImageLink2433" onclick="parent.toggleDiv('detailsDIVLink2433','DetailsImageLink2433')" />Details:
 							<div id="detailsDIVLink2433" class="DetailsDiv" >
-							<div class="ObjectDetailsNotes">DESCRIPTION:&lt;br/&gt;Each PerformedActivity might execute under one StudyProtocolVersion.&#160;&#160;Each StudyProtocolVersion might be executed by one or more PerformedActivity.&lt;br/&gt;&lt;br/&gt;DEFINITION:&lt;br/&gt;&lt;br/&gt;EXAMPLE(S):&lt;br/&gt;&lt;br/&gt;OTHER NAME(S):&lt;br/&gt;&lt;br/&gt;NOTE(S):&lt;br/&gt;&lt;br/&gt;</div>
+							<div class="ObjectDetailsNotes">DESCRIPTION:&lt;br/&gt;Each StudyObjective always is an aim of one StudyProtocolVersion.&#160;&#160;Each StudyProtocolVersion might aim to achieve one or more StudyObjective.&lt;br/&gt;&lt;br/&gt;DEFINITION:&lt;br/&gt;&lt;br/&gt;EXAMPLE(S):&lt;br/&gt;&lt;br/&gt;OTHER NAME(S):&lt;br/&gt;&lt;br/&gt;NOTE(S):&lt;br/&gt;&lt;br/&gt;</div>
 
 							</div>
 						</div>
@@ -2294,15 +2294,15 @@ function nameClassifier(name, separator)
 				</tr>
 				<tr>
 					<td width="40%" class="TableRow" valign="top">
-						<a href="../EA6/EA247.htm">StudiedMolecularBiomarkerGroup</a><br />
+						<a href="../EA9/EA360.htm">StatisticalAnalysisPlanVersion</a><br />
 						Class &nbsp;
 					</td>
 					<td width="30%" class="TableRow" valign="top">
-						<strong>Name:</strong> studiedStudiedMolecularBiomarkerGroup<br />
+						<strong>Name:</strong> addressingStatisticalAnalysisPlanVersion<br />
 						&nbsp;
 					</td>
 					<td width="30%" class="TableRow" valign="top">
-						<strong>Name:</strong> studyingStudyProtocolVersion<br />
+						<strong>Name:</strong> addressedStudyProtocolVersion<br />
 						&nbsp;	
 					</td>
 				</tr>
@@ -2310,7 +2310,7 @@ function nameClassifier(name, separator)
 					<td class="TableRowBottomDashed"  colspan="3">
 						<div class="DetailsDivParent"><img src="../../images/minus03.gif" align="absmiddle" id="DetailsImageLink2435" onclick="parent.toggleDiv('detailsDIVLink2435','DetailsImageLink2435')" />Details:
 							<div id="detailsDIVLink2435" class="DetailsDiv" >
-							<div class="ObjectDetailsNotes">DESCRIPTION:&lt;br/&gt;Each StudiedMolecularBiomarkerGroup always is studied by one StudyProtocolVersion. Each StudyProtocolVersion might be studying one or more StudiedMolecularBiomarkerGroup.&lt;br/&gt;&lt;br/&gt;DEFINITION:&lt;br/&gt;&lt;br/&gt;EXAMPLE(S):&lt;br/&gt;&lt;br/&gt;OTHER NAME(S):&lt;br/&gt;&lt;br/&gt;NOTE(S):&lt;br/&gt;</div>
+							<div class="ObjectDetailsNotes">DESCRIPTION:&lt;br/&gt;Each StatisticalAnalysisPlanVersion always addresses the statistical needs of one or more StudyProtocolVersion. Each StudyProtocolVersion might have statistical needs addressed by one or more StatisticalAnalysisPlanVersion.&lt;br/&gt;&lt;br/&gt;DEFINITION:&lt;br/&gt;Identifies the version of the study protocol that is the basis for a statistical analysis plan version.&lt;br/&gt;&lt;br/&gt;EXAMPLE(S):&lt;br/&gt;&lt;br/&gt;OTHER NAME(S):&lt;br/&gt;&lt;br/&gt;NOTE(S):&lt;br/&gt;</div>
 
 							</div>
 						</div>
@@ -2590,12 +2590,12 @@ function nameClassifier(name, separator)
 					<td width="40%" class="TableHeading">Notes</td>
 				</tr>
 				<tr>
-					<td width="30%" class="TableRow" valign="top"><a href="EA301.htm">InterventionalStudyProtocolVersion</a></td>
+					<td width="30%" class="TableRow" valign="top"><a href="EA302.htm">ObservationalStudyProtocolVersion</a></td>
 					<td width="10%" class="TableRow" valign="top">Class</td>
 					<td width="10%" class="TableRow" valign="top">Generalization</td>
 					<td width="10%" class="TableRow" valign="top">From</td>
 					<td width="40%" class="TableRow" valign="top">DESCRIPTION:
-Each InterventionalStudyProtocolVersion always specializes one StudyProtocolVersion. Each StudyProtocolVersion might be specialized by one InterventionalStudyProtocolVersion.
+Each ObservationalStudyProtocolVersion always specializes one StudyProtocolVersion. Each StudyProtocolVersion might be specialized by one ObservationalStudyProtocolVersion.
 
 DEFINITION:
 
@@ -2607,12 +2607,12 @@ NOTE(S):
 </td>
 				</tr>
 				<tr>
-					<td width="30%" class="TableRow" valign="top"><a href="EA302.htm">ObservationalStudyProtocolVersion</a></td>
+					<td width="30%" class="TableRow" valign="top"><a href="EA301.htm">InterventionalStudyProtocolVersion</a></td>
 					<td width="10%" class="TableRow" valign="top">Class</td>
 					<td width="10%" class="TableRow" valign="top">Generalization</td>
 					<td width="10%" class="TableRow" valign="top">From</td>
 					<td width="40%" class="TableRow" valign="top">DESCRIPTION:
-Each ObservationalStudyProtocolVersion always specializes one StudyProtocolVersion. Each StudyProtocolVersion might be specialized by one ObservationalStudyProtocolVersion.
+Each InterventionalStudyProtocolVersion always specializes one StudyProtocolVersion. Each StudyProtocolVersion might be specialized by one InterventionalStudyProtocolVersion.
 
 DEFINITION:
 

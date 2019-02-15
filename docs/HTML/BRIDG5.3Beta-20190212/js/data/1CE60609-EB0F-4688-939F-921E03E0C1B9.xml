@@ -1,8 +1,8 @@
 tocTab[tocTab.length] = new Array("0.12:1", "", "Activities", "EARoot/EA12/EA571.htm", "175.png", "1448", "0", "", "Logical diagram0","{BD127BFB-C32F-419d-BBA4-3F9D09004DCF}");
 tocTab[tocTab.length] = new Array("0.12:2", "", "Adverse Events", "EARoot/EA12/EA573.htm", "175.png", "1449", "0", "", "Logical diagram0","{0EF029C8-A343-452a-A796-58EF3A9C7D27}");
 tocTab[tocTab.length] = new Array("0.12:3", "", "Anatomic Pathology Structured Report (APSR)", "EARoot/EA12/EA575.htm", "175.png", "1503", "0", "", "Logical diagram0","{28299278-424E-48f1-8480-2A753E62F0AB}");
-tocTab[tocTab.length] = new Array("0.12:4", "", "BiologicEntity and Related Classes", "EARoot/EA12/EA577.htm", "175.png", "1447", "0", "", "Logical diagram0","{4CD3763D-6DAE-41df-949F-9DCC2A448883}");
-tocTab[tocTab.length] = new Array("0.12:5", "", "Animal View", "EARoot/EA12/EA579.htm", "175.png", "1509", "0", "", "Logical diagram0","{0F920DD8-08CE-4b32-A6C0-6E8C225948C1}");
+tocTab[tocTab.length] = new Array("0.12:4", "", "Animal View", "EARoot/EA12/EA577.htm", "175.png", "1509", "0", "", "Logical diagram0","{0F920DD8-08CE-4b32-A6C0-6E8C225948C1}");
+tocTab[tocTab.length] = new Array("0.12:5", "", "BiologicEntity and Related Classes", "EARoot/EA12/EA579.htm", "175.png", "1447", "0", "", "Logical diagram0","{4CD3763D-6DAE-41df-949F-9DCC2A448883}");
 tocTab[tocTab.length] = new Array("0.12:6", "", "CDMH View", "EARoot/EA12/EA581.htm", "175.png", "1508", "0", "", "Logical diagram0","{424A2EE7-DC8F-4150-9FC3-213C61EA3C21}");
 tocTab[tocTab.length] = new Array("0.12:7", "", "ClinicalTrials.gov", "EARoot/EA12/EA583.htm", "175.png", "1493", "0", "", "Logical diagram0","{1340599A-4ABE-4d85-8CD9-417A1AB312F9}");
 tocTab[tocTab.length] = new Array("0.12:8", "", "Lab-Related Classes", "EARoot/EA12/EA585.htm", "175.png", "1499", "0", "", "Logical diagram0","{DED5DFB3-1E30-4dc9-A314-5B97A6CF5E41}");

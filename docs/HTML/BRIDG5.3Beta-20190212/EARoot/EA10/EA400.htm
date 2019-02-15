@@ -91,7 +91,7 @@ function nameClassifier(name, separator)
 		</tr>
 		<tr id="adv01" style="display: none;">
 			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Appears In:</td>
-			<td class="ObjectDetailsValue"><a href="../EA1.htm">UML-Based Comprehensive BRIDG Model Diagram</a>, <a href="../EA4/EA163.htm">View EX: Experiment</a>, <a href="../EA6/EA213.htm">View MB: Molecular Biology</a>, <a href="../EA1/EA29.htm">View AE: Adverse Event</a>, <a href="../EA3/EA61.htm">View CM: Common</a>, <a href="EA366.htm">View SC: Study Conduct</a>, <a href="../EA5/EA178.htm">View IM: Imaging</a>, <a href="../EA12/EA573.htm">Adverse Events</a>, <a href="../EA12/EA587.htm">Observations and Results</a>, <a href="../EA5/EA182.htm">DICOM SR TID 1500 BRIDG Class Diagram</a>, <a href="../EA12/EA591.htm">Oncology & Imaging View</a>, <a href="../EA12/EA589.htm">Oncology View</a>, <a href="../EA11/EA446.htm">SDTM 3.1.3 View</a>, <a href="../EA11/EA452.htm">SDTM Vital Signs (VS) View</a>, <a href="../EA11/EA450.htm">SDTM Disease Response (RS) Domain View</a>, <a href="../EA12/EA597.htm">Participant Registration</a>, <a href="../EA12/EA603.htm">SEER View</a>, <a href="../EA12/EA585.htm">Lab-Related Classes</a>, <a href="../EA11/EA444.htm">CDISC Lab Data Model v1.0.1</a>, <a href="../EA12/EA575.htm">Anatomic Pathology Structured Report (APSR)</a>, <a href="../EA12/EA581.htm">CDMH View</a>, <a href="../EA12/EA579.htm">Animal View</a></td>
+			<td class="ObjectDetailsValue"><a href="../EA1.htm">UML-Based Comprehensive BRIDG Model Diagram</a>, <a href="../EA4/EA163.htm">View EX: Experiment</a>, <a href="../EA6/EA213.htm">View MB: Molecular Biology</a>, <a href="../EA1/EA29.htm">View AE: Adverse Event</a>, <a href="../EA3/EA61.htm">View CM: Common</a>, <a href="EA366.htm">View SC: Study Conduct</a>, <a href="../EA5/EA178.htm">View IM: Imaging</a>, <a href="../EA12/EA573.htm">Adverse Events</a>, <a href="../EA12/EA587.htm">Observations and Results</a>, <a href="../EA5/EA182.htm">DICOM SR TID 1500 BRIDG Class Diagram</a>, <a href="../EA12/EA591.htm">Oncology & Imaging View</a>, <a href="../EA12/EA589.htm">Oncology View</a>, <a href="../EA11/EA446.htm">SDTM 3.1.3 View</a>, <a href="../EA11/EA452.htm">SDTM Vital Signs (VS) View</a>, <a href="../EA11/EA450.htm">SDTM Disease Response (RS) Domain View</a>, <a href="../EA12/EA597.htm">Participant Registration</a>, <a href="../EA12/EA603.htm">SEER View</a>, <a href="../EA12/EA585.htm">Lab-Related Classes</a>, <a href="../EA11/EA444.htm">CDISC Lab Data Model v1.0.1</a>, <a href="../EA12/EA575.htm">Anatomic Pathology Structured Report (APSR)</a>, <a href="../EA12/EA581.htm">CDMH View</a>, <a href="../EA12/EA577.htm">Animal View</a></td>
 		</tr>
 	</table>
 	<div class="ObjectDetailsNotes">DEFINITION:&lt;br/&gt;The data or finding obtained by observing, monitoring, measuring or otherwise qualitatively or quantitatively recording one or more aspects of a subject, experimental unit, system, or process. &lt;br/&gt;&lt;br/&gt;EXAMPLE(S):&lt;br/&gt;A blood chemistry result&lt;br/&gt;A diagnosis of breast cancer&lt;br/&gt;A pregnancy test result&lt;br/&gt;A blood pressure measurement&lt;br/&gt;Identification of nausea as an adverse event&lt;br/&gt;The conclusion of an adverse event outcome assessment&lt;br/&gt;The finding from an experiment&lt;br/&gt;The data used as input to an experiment&lt;br/&gt;Data produced by computation&lt;br/&gt;An image annotation&lt;br/&gt;The reformatting, transformation, semantic/syntactic normalization or downloading of data from public resources&lt;br/&gt;A cell count&lt;br/&gt;Neoplastic cellularity&lt;br/&gt;&lt;br/&gt;OTHER NAME(S):&lt;br/&gt;Data&lt;br/&gt;Data Acquisition Result&lt;br/&gt;Finding&lt;br/&gt;&lt;br/&gt;NOTE(S):&lt;br/&gt;</div>
@@ -760,15 +760,15 @@ function nameClassifier(name, separator)
 				</tr>
 				<tr>
 					<td width="40%" class="TableRow" valign="top">
-						<a href="EA399.htm">PerformedObservation</a><br />
+						<a href="EA380.htm">PerformedActivity</a><br />
 						Class &nbsp;
 					</td>
 					<td width="30%" class="TableRow" valign="top">
-						<strong>Name:</strong> resultedPerformedObservationResult<br />
+						<strong>Name:</strong> endEvaluatedPerformedObservationResult<br />
 						&nbsp;
 					</td>
 					<td width="30%" class="TableRow" valign="top">
-						<strong>Name:</strong> producingPerformedObservation<br />
+						<strong>Name:</strong> endRelatedPerformedActivity<br />
 						&nbsp;	
 					</td>
 				</tr>
@@ -776,7 +776,7 @@ function nameClassifier(name, separator)
 					<td class="TableRowBottomDashed"  colspan="3">
 						<div class="DetailsDivParent"><img src="../../images/minus03.gif" align="absmiddle" id="DetailsImageLink3015" onclick="parent.toggleDiv('detailsDIVLink3015','DetailsImageLink3015')" />Details:
 							<div id="detailsDIVLink3015" class="DetailsDiv" >
-							<div class="ObjectDetailsNotes">DESCRIPTION:&lt;br/&gt;Each PerformedObservationResult always is a result of one PerformedObservation.&#160;&#160;Each PerformedObservation might result in one or more PerformedObservationResult.&lt;br/&gt;&lt;br/&gt;DEFINITION:&lt;br/&gt;&lt;br/&gt;EXAMPLE(S):&lt;br/&gt;&lt;br/&gt;OTHER NAME(S):&lt;br/&gt;&lt;br/&gt;NOTE(S):&lt;br/&gt;&lt;br/&gt;</div>
+							<div class="ObjectDetailsNotes">DESCRIPTION:&lt;br/&gt;Each PerformedObservationResult might have end evaluated in relation to one PerformedActivity. Each PerformedActivity might be the timpoint for evaluating end of one or more PerformedObservationResult.&lt;br/&gt;&lt;br/&gt;DEFINITION:&lt;br/&gt;&lt;br/&gt;EXAMPLE(S):&lt;br/&gt;In CDISC SDTM, AEENTPT indicates a study event that may be a reference event for the end of an adverse event, CEENTPT indicates a study event that may be a reference event for the end of a clinical event (PerformedObservationResult) and MHENTPT indicates a study event that may be a reference event for the end of a medical condition (PerformedMedicalConditionResult).&lt;br/&gt;&lt;br/&gt;OTHER NAME(S):&lt;br/&gt;&lt;br/&gt;NOTE(S):&lt;br/&gt;As per CDISC, any given observation result can have its start evaluated in relation to a performed activities. Likewise it can also have its end evaluated in relation to a performed activity.&#160;&#160;The two performed activities need not necessarily be the same in both cases, thus there are two distinct associations between PerformeObservationResult and PerformedActivity for evaluating start and end of the result.&lt;br/&gt;&lt;br/&gt;</div>
 
 							</div>
 						</div>
@@ -808,6 +808,30 @@ function nameClassifier(name, separator)
 				</tr>
 				<tr>
 					<td width="40%" class="TableRow" valign="top">
+						<a href="EA399.htm">PerformedObservation</a><br />
+						Class &nbsp;
+					</td>
+					<td width="30%" class="TableRow" valign="top">
+						<strong>Name:</strong> resultedPerformedObservationResult<br />
+						&nbsp;
+					</td>
+					<td width="30%" class="TableRow" valign="top">
+						<strong>Name:</strong> producingPerformedObservation<br />
+						&nbsp;	
+					</td>
+				</tr>
+				<tr>
+					<td class="TableRowBottomDashed"  colspan="3">
+						<div class="DetailsDivParent"><img src="../../images/minus03.gif" align="absmiddle" id="DetailsImageLink3017" onclick="parent.toggleDiv('detailsDIVLink3017','DetailsImageLink3017')" />Details:
+							<div id="detailsDIVLink3017" class="DetailsDiv" >
+							<div class="ObjectDetailsNotes">DESCRIPTION:&lt;br/&gt;Each PerformedObservationResult always is a result of one PerformedObservation.&#160;&#160;Each PerformedObservation might result in one or more PerformedObservationResult.&lt;br/&gt;&lt;br/&gt;DEFINITION:&lt;br/&gt;&lt;br/&gt;EXAMPLE(S):&lt;br/&gt;&lt;br/&gt;OTHER NAME(S):&lt;br/&gt;&lt;br/&gt;NOTE(S):&lt;br/&gt;&lt;br/&gt;</div>
+
+							</div>
+						</div>
+					</td>
+				</tr>
+				<tr>
+					<td width="40%" class="TableRow" valign="top">
 						<a href="EA400.htm">PerformedObservationResult</a><br />
 						Class &nbsp;
 					</td>
@@ -822,33 +846,9 @@ function nameClassifier(name, separator)
 				</tr>
 				<tr>
 					<td class="TableRowBottomDashed"  colspan="3">
-						<div class="DetailsDivParent"><img src="../../images/minus03.gif" align="absmiddle" id="DetailsImageLink3017" onclick="parent.toggleDiv('detailsDIVLink3017','DetailsImageLink3017')" />Details:
-							<div id="detailsDIVLink3017" class="DetailsDiv" >
-							<div class="ObjectDetailsNotes">DESCRIPTION:&lt;br/&gt;Each PerformedObservationResult might be inferred from one PerformedObservationResult. Each PerformedObservationResult might infer one or more PerformedObservationResult.&lt;br/&gt;&lt;br/&gt;DEFINITION:&lt;br/&gt;&lt;br/&gt;EXAMPLE(S):&lt;br/&gt;&lt;br/&gt;OTHER NAME(S):&lt;br/&gt;&lt;br/&gt;NOTE(S):&lt;br/&gt;&lt;br/&gt;</div>
-
-							</div>
-						</div>
-					</td>
-				</tr>
-				<tr>
-					<td width="40%" class="TableRow" valign="top">
-						<a href="EA380.htm">PerformedActivity</a><br />
-						Class &nbsp;
-					</td>
-					<td width="30%" class="TableRow" valign="top">
-						<strong>Name:</strong> endEvaluatedPerformedObservationResult<br />
-						&nbsp;
-					</td>
-					<td width="30%" class="TableRow" valign="top">
-						<strong>Name:</strong> endRelatedPerformedActivity<br />
-						&nbsp;	
-					</td>
-				</tr>
-				<tr>
-					<td class="TableRowBottomDashed"  colspan="3">
 						<div class="DetailsDivParent"><img src="../../images/minus03.gif" align="absmiddle" id="DetailsImageLink3018" onclick="parent.toggleDiv('detailsDIVLink3018','DetailsImageLink3018')" />Details:
 							<div id="detailsDIVLink3018" class="DetailsDiv" >
-							<div class="ObjectDetailsNotes">DESCRIPTION:&lt;br/&gt;Each PerformedObservationResult might have end evaluated in relation to one PerformedActivity. Each PerformedActivity might be the timpoint for evaluating end of one or more PerformedObservationResult.&lt;br/&gt;&lt;br/&gt;DEFINITION:&lt;br/&gt;&lt;br/&gt;EXAMPLE(S):&lt;br/&gt;In CDISC SDTM, AEENTPT indicates a study event that may be a reference event for the end of an adverse event, CEENTPT indicates a study event that may be a reference event for the end of a clinical event (PerformedObservationResult) and MHENTPT indicates a study event that may be a reference event for the end of a medical condition (PerformedMedicalConditionResult).&lt;br/&gt;&lt;br/&gt;OTHER NAME(S):&lt;br/&gt;&lt;br/&gt;NOTE(S):&lt;br/&gt;As per CDISC, any given observation result can have its start evaluated in relation to a performed activities. Likewise it can also have its end evaluated in relation to a performed activity.&#160;&#160;The two performed activities need not necessarily be the same in both cases, thus there are two distinct associations between PerformeObservationResult and PerformedActivity for evaluating start and end of the result.&lt;br/&gt;&lt;br/&gt;</div>
+							<div class="ObjectDetailsNotes">DESCRIPTION:&lt;br/&gt;Each PerformedObservationResult might be inferred from one PerformedObservationResult. Each PerformedObservationResult might infer one or more PerformedObservationResult.&lt;br/&gt;&lt;br/&gt;DEFINITION:&lt;br/&gt;&lt;br/&gt;EXAMPLE(S):&lt;br/&gt;&lt;br/&gt;OTHER NAME(S):&lt;br/&gt;&lt;br/&gt;NOTE(S):&lt;br/&gt;&lt;br/&gt;</div>
 
 							</div>
 						</div>
@@ -890,54 +890,6 @@ function nameClassifier(name, separator)
 				</tr>
 				<tr>
 					<td width="40%" class="TableRow" valign="top">
-						<a href="../EA3/EA97.htm">DocumentVersion</a><br />
-						Class &nbsp;
-					</td>
-					<td width="30%" class="TableRow" valign="top">
-						<strong>Name:</strong> containingDocumentVersion<br />
-						&nbsp;
-					</td>
-					<td width="30%" class="TableRow" valign="top">
-						<strong>Name:</strong> containedPerformedObservationResult<br />
-						&nbsp;	
-					</td>
-				</tr>
-				<tr>
-					<td class="TableRowBottomDashed"  colspan="3">
-						<div class="DetailsDivParent"><img src="../../images/minus03.gif" align="absmiddle" id="DetailsImageLink3020" onclick="parent.toggleDiv('detailsDIVLink3020','DetailsImageLink3020')" />Details:
-							<div id="detailsDIVLink3020" class="DetailsDiv" >
-							<div class="ObjectDetailsNotes">DESCRIPTION:&lt;br/&gt;Each DocumentVersion might contain one or more PerformedObservationResult.&#160;&#160;Each PerformedObservationResult might be the contents for one or more DocumentVersion.&lt;br/&gt;&lt;br/&gt;DEFINITION:&lt;br/&gt;&lt;br/&gt;EXAMPLE(S):&lt;br/&gt;A finding might be published in a scientific journal.&lt;br/&gt;&lt;br/&gt;A data set produced by a computational process might be circulated as a document.&lt;br/&gt;&lt;br/&gt;OTHER NAME(S):&lt;br/&gt;&lt;br/&gt;NOTE(S):&lt;br/&gt;</div>
-
-							</div>
-						</div>
-					</td>
-				</tr>
-				<tr>
-					<td width="40%" class="TableRow" valign="top">
-						<a href="EA417.htm">ResultClassification</a><br />
-						Class &nbsp;
-					</td>
-					<td width="30%" class="TableRow" valign="top">
-						<strong>Name:</strong> classifyingResultClassification<br />
-						&nbsp;
-					</td>
-					<td width="30%" class="TableRow" valign="top">
-						<strong>Name:</strong> classifiedPerformedObservationResult<br />
-						&nbsp;	
-					</td>
-				</tr>
-				<tr>
-					<td class="TableRowBottomDashed"  colspan="3">
-						<div class="DetailsDivParent"><img src="../../images/minus03.gif" align="absmiddle" id="DetailsImageLink3021" onclick="parent.toggleDiv('detailsDIVLink3021','DetailsImageLink3021')" />Details:
-							<div id="detailsDIVLink3021" class="DetailsDiv" >
-							<div class="ObjectDetailsNotes">DESCRIPTION:&lt;br/&gt;Each ResultClassification always classifies one PerformedObservationResult.&#160;&#160;Each PerformedObservationResult might be classified by one or more ResultClassification.&lt;br/&gt;&lt;br/&gt;DEFINITION:&lt;br/&gt;&lt;br/&gt;EXAMPLE(S):&lt;br/&gt;&lt;br/&gt;OTHER NAME(S):&lt;br/&gt;&lt;br/&gt;NOTE(S):&lt;br/&gt;</div>
-
-							</div>
-						</div>
-					</td>
-				</tr>
-				<tr>
-					<td width="40%" class="TableRow" valign="top">
 						<a href="../EA1/EA38.htm">EvaluatedResultRelationship</a><br />
 						Class &nbsp;
 					</td>
@@ -952,9 +904,129 @@ function nameClassifier(name, separator)
 				</tr>
 				<tr>
 					<td class="TableRowBottomDashed"  colspan="3">
+						<div class="DetailsDivParent"><img src="../../images/minus03.gif" align="absmiddle" id="DetailsImageLink3020" onclick="parent.toggleDiv('detailsDIVLink3020','DetailsImageLink3020')" />Details:
+							<div id="detailsDIVLink3020" class="DetailsDiv" >
+							<div class="ObjectDetailsNotes">DESCRIPTION:&lt;br/&gt;Each EvaluatedResultRelationship always evaluates one PerformedObservationResult. Each PerformedObservationResult might be evaluated by one or more EvaluatedResultRelationship.&lt;br/&gt;&lt;br/&gt;DEFINITION:&lt;br/&gt;&lt;br/&gt;EXAMPLE(S):&lt;br/&gt;&lt;br/&gt;OTHER NAME(S):&lt;br/&gt;&lt;br/&gt;NOTE(S):&lt;br/&gt;&lt;br/&gt;</div>
+
+							</div>
+						</div>
+					</td>
+				</tr>
+				<tr>
+					<td width="40%" class="TableRow" valign="top">
+						<a href="EA402.htm">PerformedProcedure</a><br />
+						Class &nbsp;
+					</td>
+					<td width="30%" class="TableRow" valign="top">
+						<strong>Name:</strong> recordedPerformedProcedure<br />
+						&nbsp;
+					</td>
+					<td width="30%" class="TableRow" valign="top">
+						<strong>Name:</strong> triggeringPerformedObservationResult<br />
+						&nbsp;	
+					</td>
+				</tr>
+				<tr>
+					<td class="TableRowBottomDashed"  colspan="3">
+						<div class="DetailsDivParent"><img src="../../images/minus03.gif" align="absmiddle" id="DetailsImageLink3021" onclick="parent.toggleDiv('detailsDIVLink3021','DetailsImageLink3021')" />Details:
+							<div id="detailsDIVLink3021" class="DetailsDiv" >
+							<div class="ObjectDetailsNotes">DESCRIPTION:&lt;br/&gt;Each PerformedProcedure might be recorded as a result of one PerformedObservationResult. Each PerformedObservationResult might result in recording one or more PerformedProcedure.&lt;br/&gt;&lt;br/&gt;DEFINITION:&lt;br/&gt;&lt;br/&gt;EXAMPLE(S):&lt;br/&gt;&lt;br/&gt;OTHER NAME(S):&lt;br/&gt;&lt;br/&gt;NOTE(S):&lt;br/&gt;&lt;br/&gt;</div>
+
+							</div>
+						</div>
+					</td>
+				</tr>
+				<tr>
+					<td width="40%" class="TableRow" valign="top">
+						<a href="EA374.htm">AssessedResultRelationship</a><br />
+						Class &nbsp;
+					</td>
+					<td width="30%" class="TableRow" valign="top">
+						<strong>Name:</strong> assessingAssessedResultRelationship<br />
+						&nbsp;
+					</td>
+					<td width="30%" class="TableRow" valign="top">
+						<strong>Name:</strong> assessedPerformedObservationResult<br />
+						&nbsp;	
+					</td>
+				</tr>
+				<tr>
+					<td class="TableRowBottomDashed"  colspan="3">
 						<div class="DetailsDivParent"><img src="../../images/minus03.gif" align="absmiddle" id="DetailsImageLink3022" onclick="parent.toggleDiv('detailsDIVLink3022','DetailsImageLink3022')" />Details:
 							<div id="detailsDIVLink3022" class="DetailsDiv" >
-							<div class="ObjectDetailsNotes">DESCRIPTION:&lt;br/&gt;Each EvaluatedResultRelationship always evaluates one PerformedObservationResult. Each PerformedObservationResult might be evaluated by one or more EvaluatedResultRelationship.&lt;br/&gt;&lt;br/&gt;DEFINITION:&lt;br/&gt;&lt;br/&gt;EXAMPLE(S):&lt;br/&gt;&lt;br/&gt;OTHER NAME(S):&lt;br/&gt;&lt;br/&gt;NOTE(S):&lt;br/&gt;&lt;br/&gt;</div>
+							<div class="ObjectDetailsNotes">DESCRIPTION:&lt;br/&gt;Each AssessedResultRelationship always has as subject one PerformedObservationResult. Each PerformedObservationResult might be the subject of one or more AssessedResultRelationship.&lt;br/&gt;&lt;br/&gt;DEFINITION:&lt;br/&gt;&lt;br/&gt;EXAMPLE(S):&lt;br/&gt;&lt;br/&gt;OTHER NAME(S):&lt;br/&gt;&lt;br/&gt;NOTE(S):&lt;br/&gt;&lt;br/&gt;</div>
+
+							</div>
+						</div>
+					</td>
+				</tr>
+				<tr>
+					<td width="40%" class="TableRow" valign="top">
+						<a href="../EA3/EA144.htm">ReportVersion</a><br />
+						Class &nbsp;
+					</td>
+					<td width="30%" class="TableRow" valign="top">
+						<strong>Name:</strong> describingReportVersion<br />
+						&nbsp;
+					</td>
+					<td width="30%" class="TableRow" valign="top">
+						<strong>Name:</strong> describedPerformedObservationResult<br />
+						&nbsp;	
+					</td>
+				</tr>
+				<tr>
+					<td class="TableRowBottomDashed"  colspan="3">
+						<div class="DetailsDivParent"><img src="../../images/minus03.gif" align="absmiddle" id="DetailsImageLink3023" onclick="parent.toggleDiv('detailsDIVLink3023','DetailsImageLink3023')" />Details:
+							<div id="detailsDIVLink3023" class="DetailsDiv" >
+							<div class="ObjectDetailsNotes">DESCRIPTION:&lt;br/&gt;Each ReportVersion might describe one or more PerformedObservationResult.&#160;&#160;Each PerformedObservationResult might be described by one or more ReportVersion.&lt;br/&gt;&lt;br/&gt;DEFINITION:&lt;br/&gt;&lt;br/&gt;EXAMPLE(S):&lt;br/&gt;surgical pathology report describes observations about a specimen collection group&lt;br/&gt;&lt;br/&gt;OTHER NAME(S):&lt;br/&gt;&lt;br/&gt;NOTE(S):&lt;br/&gt;</div>
+
+							</div>
+						</div>
+					</td>
+				</tr>
+				<tr>
+					<td width="40%" class="TableRow" valign="top">
+						<a href="EA399.htm">PerformedObservation</a><br />
+						Class &nbsp;
+					</td>
+					<td width="30%" class="TableRow" valign="top">
+						<strong>Name:</strong> recordedPerformedObservation<br />
+						&nbsp;
+					</td>
+					<td width="30%" class="TableRow" valign="top">
+						<strong>Name:</strong> triggeringPerformedObservationResult<br />
+						&nbsp;	
+					</td>
+				</tr>
+				<tr>
+					<td class="TableRowBottomDashed"  colspan="3">
+						<div class="DetailsDivParent"><img src="../../images/minus03.gif" align="absmiddle" id="DetailsImageLink3024" onclick="parent.toggleDiv('detailsDIVLink3024','DetailsImageLink3024')" />Details:
+							<div id="detailsDIVLink3024" class="DetailsDiv" >
+							<div class="ObjectDetailsNotes">DESCRIPTION:&lt;br/&gt;Each PerformedObservation might be recorded as a result of one PerformedObservationResult. Each PerformedObservationResult might result in recording one or more PerformedObservation.&lt;br/&gt;&lt;br/&gt;DEFINITION:&lt;br/&gt;&lt;br/&gt;EXAMPLE(S):&lt;br/&gt;&lt;br/&gt;OTHER NAME(S):&lt;br/&gt;&lt;br/&gt;NOTE(S):&lt;br/&gt;</div>
+
+							</div>
+						</div>
+					</td>
+				</tr>
+				<tr>
+					<td width="40%" class="TableRow" valign="top">
+						<a href="../EA3/EA97.htm">DocumentVersion</a><br />
+						Class &nbsp;
+					</td>
+					<td width="30%" class="TableRow" valign="top">
+						<strong>Name:</strong> containingDocumentVersion<br />
+						&nbsp;
+					</td>
+					<td width="30%" class="TableRow" valign="top">
+						<strong>Name:</strong> containedPerformedObservationResult<br />
+						&nbsp;	
+					</td>
+				</tr>
+				<tr>
+					<td class="TableRowBottomDashed"  colspan="3">
+						<div class="DetailsDivParent"><img src="../../images/minus03.gif" align="absmiddle" id="DetailsImageLink3025" onclick="parent.toggleDiv('detailsDIVLink3025','DetailsImageLink3025')" />Details:
+							<div id="detailsDIVLink3025" class="DetailsDiv" >
+							<div class="ObjectDetailsNotes">DESCRIPTION:&lt;br/&gt;Each DocumentVersion might contain one or more PerformedObservationResult.&#160;&#160;Each PerformedObservationResult might be the contents for one or more DocumentVersion.&lt;br/&gt;&lt;br/&gt;DEFINITION:&lt;br/&gt;&lt;br/&gt;EXAMPLE(S):&lt;br/&gt;A finding might be published in a scientific journal.&lt;br/&gt;&lt;br/&gt;A data set produced by a computational process might be circulated as a document.&lt;br/&gt;&lt;br/&gt;OTHER NAME(S):&lt;br/&gt;&lt;br/&gt;NOTE(S):&lt;br/&gt;</div>
 
 							</div>
 						</div>
@@ -976,9 +1048,33 @@ function nameClassifier(name, separator)
 				</tr>
 				<tr>
 					<td class="TableRowBottomDashed"  colspan="3">
-						<div class="DetailsDivParent"><img src="../../images/minus03.gif" align="absmiddle" id="DetailsImageLink3023" onclick="parent.toggleDiv('detailsDIVLink3023','DetailsImageLink3023')" />Details:
-							<div id="detailsDIVLink3023" class="DetailsDiv" >
+						<div class="DetailsDivParent"><img src="../../images/minus03.gif" align="absmiddle" id="DetailsImageLink3026" onclick="parent.toggleDiv('detailsDIVLink3026','DetailsImageLink3026')" />Details:
+							<div id="detailsDIVLink3026" class="DetailsDiv" >
 							<div class="ObjectDetailsNotes">DESCRIPTION:&lt;br/&gt;Each PerformedObservationResult might be inferred from one PerformedObservationResult. Each PerformedObservationResult might infer one or more PerformedObservationResult.&lt;br/&gt;&lt;br/&gt;DEFINITION:&lt;br/&gt;&lt;br/&gt;EXAMPLE(S):&lt;br/&gt;&lt;br/&gt;OTHER NAME(S):&lt;br/&gt;&lt;br/&gt;NOTE(S):&lt;br/&gt;&lt;br/&gt;</div>
+
+							</div>
+						</div>
+					</td>
+				</tr>
+				<tr>
+					<td width="40%" class="TableRow" valign="top">
+						<a href="EA443.htm">TargetAnatomicSite</a><br />
+						Class &nbsp;
+					</td>
+					<td width="30%" class="TableRow" valign="top">
+						<strong>Name:</strong> describingTargetAnatomicSite<br />
+						&nbsp;
+					</td>
+					<td width="30%" class="TableRow" valign="top">
+						<strong>Name:</strong> describedPerformedObservationResult<br />
+						&nbsp;	
+					</td>
+				</tr>
+				<tr>
+					<td class="TableRowBottomDashed"  colspan="3">
+						<div class="DetailsDivParent"><img src="../../images/minus03.gif" align="absmiddle" id="DetailsImageLink3027" onclick="parent.toggleDiv('detailsDIVLink3027','DetailsImageLink3027')" />Details:
+							<div id="detailsDIVLink3027" class="DetailsDiv" >
+							<div class="ObjectDetailsNotes">DESCRIPTION:&lt;br/&gt;Each TargetAnatomicSite always describes one PerformedObservationResult. Each PerformedObservationResult might be described by one or more TargetAnatomicSite.&lt;br/&gt;&lt;br/&gt;DEFINITION:&lt;br/&gt;Indicates result being described by a particular site.&lt;br/&gt;&lt;br/&gt;EXAMPLE(S):&lt;br/&gt;&lt;br/&gt;OTHER NAME(S):&lt;br/&gt;&lt;br/&gt;NOTE(S):&lt;br/&gt;</div>
 
 							</div>
 						</div>
@@ -1000,8 +1096,8 @@ function nameClassifier(name, separator)
 				</tr>
 				<tr>
 					<td class="TableRowBottomDashed"  colspan="3">
-						<div class="DetailsDivParent"><img src="../../images/minus03.gif" align="absmiddle" id="DetailsImageLink3024" onclick="parent.toggleDiv('detailsDIVLink3024','DetailsImageLink3024')" />Details:
-							<div id="detailsDIVLink3024" class="DetailsDiv" >
+						<div class="DetailsDivParent"><img src="../../images/minus03.gif" align="absmiddle" id="DetailsImageLink3028" onclick="parent.toggleDiv('detailsDIVLink3028','DetailsImageLink3028')" />Details:
+							<div id="detailsDIVLink3028" class="DetailsDiv" >
 							<div class="ObjectDetailsNotes">DESCRIPTION:&lt;br/&gt;Each PointOfContact might support one or more PerformedObservationResult.&#160;&#160;Each PerformedObservationResult might be supported by one or more PointOfContact.&lt;br/&gt;&lt;br/&gt;DEFINITION:&lt;br/&gt;&lt;br/&gt;EXAMPLE(S):&lt;br/&gt;&lt;br/&gt;OTHER NAME(S):&lt;br/&gt;&lt;br/&gt;NOTE(S):&lt;br/&gt;</div>
 
 							</div>
@@ -1024,8 +1120,8 @@ function nameClassifier(name, separator)
 				</tr>
 				<tr>
 					<td class="TableRowBottomDashed"  colspan="3">
-						<div class="DetailsDivParent"><img src="../../images/minus03.gif" align="absmiddle" id="DetailsImageLink3025" onclick="parent.toggleDiv('detailsDIVLink3025','DetailsImageLink3025')" />Details:
-							<div id="detailsDIVLink3025" class="DetailsDiv" >
+						<div class="DetailsDivParent"><img src="../../images/minus03.gif" align="absmiddle" id="DetailsImageLink3029" onclick="parent.toggleDiv('detailsDIVLink3029','DetailsImageLink3029')" />Details:
+							<div id="detailsDIVLink3029" class="DetailsDiv" >
 							<div class="ObjectDetailsNotes">DESCRIPTION:&lt;br/&gt;Each ObservationResultActionTakenRelationship always is triggered by one PerformedObservationResult. Each PerformedObservationResult might trigger one or more ObservationResultActionTakenRelationship.&lt;br/&gt;&lt;br/&gt;DEFINITION:&lt;br/&gt;Indicates the ObservationResult that causes the initiation of a PerformedActivity&lt;br/&gt;&lt;br/&gt;EXAMPLE(S):&lt;br/&gt;&lt;br/&gt;OTHER NAME(S):&lt;br/&gt;&lt;br/&gt;NOTE(S):&lt;br/&gt;</div>
 
 							</div>
@@ -1034,23 +1130,23 @@ function nameClassifier(name, separator)
 				</tr>
 				<tr>
 					<td width="40%" class="TableRow" valign="top">
-						<a href="../EA3/EA144.htm">ReportVersion</a><br />
+						<a href="EA417.htm">ResultClassification</a><br />
 						Class &nbsp;
 					</td>
 					<td width="30%" class="TableRow" valign="top">
-						<strong>Name:</strong> describingReportVersion<br />
+						<strong>Name:</strong> classifyingResultClassification<br />
 						&nbsp;
 					</td>
 					<td width="30%" class="TableRow" valign="top">
-						<strong>Name:</strong> describedPerformedObservationResult<br />
+						<strong>Name:</strong> classifiedPerformedObservationResult<br />
 						&nbsp;	
 					</td>
 				</tr>
 				<tr>
 					<td class="TableRowBottomDashed"  colspan="3">
-						<div class="DetailsDivParent"><img src="../../images/minus03.gif" align="absmiddle" id="DetailsImageLink3026" onclick="parent.toggleDiv('detailsDIVLink3026','DetailsImageLink3026')" />Details:
-							<div id="detailsDIVLink3026" class="DetailsDiv" >
-							<div class="ObjectDetailsNotes">DESCRIPTION:&lt;br/&gt;Each ReportVersion might describe one or more PerformedObservationResult.&#160;&#160;Each PerformedObservationResult might be described by one or more ReportVersion.&lt;br/&gt;&lt;br/&gt;DEFINITION:&lt;br/&gt;&lt;br/&gt;EXAMPLE(S):&lt;br/&gt;surgical pathology report describes observations about a specimen collection group&lt;br/&gt;&lt;br/&gt;OTHER NAME(S):&lt;br/&gt;&lt;br/&gt;NOTE(S):&lt;br/&gt;</div>
+						<div class="DetailsDivParent"><img src="../../images/minus03.gif" align="absmiddle" id="DetailsImageLink3030" onclick="parent.toggleDiv('detailsDIVLink3030','DetailsImageLink3030')" />Details:
+							<div id="detailsDIVLink3030" class="DetailsDiv" >
+							<div class="ObjectDetailsNotes">DESCRIPTION:&lt;br/&gt;Each ResultClassification always classifies one PerformedObservationResult.&#160;&#160;Each PerformedObservationResult might be classified by one or more ResultClassification.&lt;br/&gt;&lt;br/&gt;DEFINITION:&lt;br/&gt;&lt;br/&gt;EXAMPLE(S):&lt;br/&gt;&lt;br/&gt;OTHER NAME(S):&lt;br/&gt;&lt;br/&gt;NOTE(S):&lt;br/&gt;</div>
 
 							</div>
 						</div>
@@ -1072,105 +1168,9 @@ function nameClassifier(name, separator)
 				</tr>
 				<tr>
 					<td class="TableRowBottomDashed"  colspan="3">
-						<div class="DetailsDivParent"><img src="../../images/minus03.gif" align="absmiddle" id="DetailsImageLink3027" onclick="parent.toggleDiv('detailsDIVLink3027','DetailsImageLink3027')" />Details:
-							<div id="detailsDIVLink3027" class="DetailsDiv" >
-							<div class="ObjectDetailsNotes">DESCRIPTION:&lt;br/&gt;Each Biomarker might be based on one or more PerformedObservationResult.&#160;&#160;Each PerformedObservationResult might be the basis of one or more Biomarker.&lt;br/&gt;&lt;br/&gt;DEFINITION:&lt;br/&gt;&lt;br/&gt;EXAMPLE(S):&lt;br/&gt;An image annotation might be the basis for a biomarker.&lt;br/&gt;&lt;br/&gt;OTHER NAME(S):&lt;br/&gt;&lt;br/&gt;NOTE(S):&lt;br/&gt;</div>
-
-							</div>
-						</div>
-					</td>
-				</tr>
-				<tr>
-					<td width="40%" class="TableRow" valign="top">
-						<a href="EA374.htm">AssessedResultRelationship</a><br />
-						Class &nbsp;
-					</td>
-					<td width="30%" class="TableRow" valign="top">
-						<strong>Name:</strong> assessingAssessedResultRelationship<br />
-						&nbsp;
-					</td>
-					<td width="30%" class="TableRow" valign="top">
-						<strong>Name:</strong> assessedPerformedObservationResult<br />
-						&nbsp;	
-					</td>
-				</tr>
-				<tr>
-					<td class="TableRowBottomDashed"  colspan="3">
-						<div class="DetailsDivParent"><img src="../../images/minus03.gif" align="absmiddle" id="DetailsImageLink3028" onclick="parent.toggleDiv('detailsDIVLink3028','DetailsImageLink3028')" />Details:
-							<div id="detailsDIVLink3028" class="DetailsDiv" >
-							<div class="ObjectDetailsNotes">DESCRIPTION:&lt;br/&gt;Each AssessedResultRelationship always has as subject one PerformedObservationResult. Each PerformedObservationResult might be the subject of one or more AssessedResultRelationship.&lt;br/&gt;&lt;br/&gt;DEFINITION:&lt;br/&gt;&lt;br/&gt;EXAMPLE(S):&lt;br/&gt;&lt;br/&gt;OTHER NAME(S):&lt;br/&gt;&lt;br/&gt;NOTE(S):&lt;br/&gt;&lt;br/&gt;</div>
-
-							</div>
-						</div>
-					</td>
-				</tr>
-				<tr>
-					<td width="40%" class="TableRow" valign="top">
-						<a href="EA443.htm">TargetAnatomicSite</a><br />
-						Class &nbsp;
-					</td>
-					<td width="30%" class="TableRow" valign="top">
-						<strong>Name:</strong> describingTargetAnatomicSite<br />
-						&nbsp;
-					</td>
-					<td width="30%" class="TableRow" valign="top">
-						<strong>Name:</strong> describedPerformedObservationResult<br />
-						&nbsp;	
-					</td>
-				</tr>
-				<tr>
-					<td class="TableRowBottomDashed"  colspan="3">
-						<div class="DetailsDivParent"><img src="../../images/minus03.gif" align="absmiddle" id="DetailsImageLink3029" onclick="parent.toggleDiv('detailsDIVLink3029','DetailsImageLink3029')" />Details:
-							<div id="detailsDIVLink3029" class="DetailsDiv" >
-							<div class="ObjectDetailsNotes">DESCRIPTION:&lt;br/&gt;Each TargetAnatomicSite always describes one PerformedObservationResult. Each PerformedObservationResult might be described by one or more TargetAnatomicSite.&lt;br/&gt;&lt;br/&gt;DEFINITION:&lt;br/&gt;Indicates result being described by a particular site.&lt;br/&gt;&lt;br/&gt;EXAMPLE(S):&lt;br/&gt;&lt;br/&gt;OTHER NAME(S):&lt;br/&gt;&lt;br/&gt;NOTE(S):&lt;br/&gt;</div>
-
-							</div>
-						</div>
-					</td>
-				</tr>
-				<tr>
-					<td width="40%" class="TableRow" valign="top">
-						<a href="EA399.htm">PerformedObservation</a><br />
-						Class &nbsp;
-					</td>
-					<td width="30%" class="TableRow" valign="top">
-						<strong>Name:</strong> recordedPerformedObservation<br />
-						&nbsp;
-					</td>
-					<td width="30%" class="TableRow" valign="top">
-						<strong>Name:</strong> triggeringPerformedObservationResult<br />
-						&nbsp;	
-					</td>
-				</tr>
-				<tr>
-					<td class="TableRowBottomDashed"  colspan="3">
-						<div class="DetailsDivParent"><img src="../../images/minus03.gif" align="absmiddle" id="DetailsImageLink3030" onclick="parent.toggleDiv('detailsDIVLink3030','DetailsImageLink3030')" />Details:
-							<div id="detailsDIVLink3030" class="DetailsDiv" >
-							<div class="ObjectDetailsNotes">DESCRIPTION:&lt;br/&gt;Each PerformedObservation might be recorded as a result of one PerformedObservationResult. Each PerformedObservationResult might result in recording one or more PerformedObservation.&lt;br/&gt;&lt;br/&gt;DEFINITION:&lt;br/&gt;&lt;br/&gt;EXAMPLE(S):&lt;br/&gt;&lt;br/&gt;OTHER NAME(S):&lt;br/&gt;&lt;br/&gt;NOTE(S):&lt;br/&gt;</div>
-
-							</div>
-						</div>
-					</td>
-				</tr>
-				<tr>
-					<td width="40%" class="TableRow" valign="top">
-						<a href="EA402.htm">PerformedProcedure</a><br />
-						Class &nbsp;
-					</td>
-					<td width="30%" class="TableRow" valign="top">
-						<strong>Name:</strong> recordedPerformedProcedure<br />
-						&nbsp;
-					</td>
-					<td width="30%" class="TableRow" valign="top">
-						<strong>Name:</strong> triggeringPerformedObservationResult<br />
-						&nbsp;	
-					</td>
-				</tr>
-				<tr>
-					<td class="TableRowBottomDashed"  colspan="3">
 						<div class="DetailsDivParent"><img src="../../images/minus03.gif" align="absmiddle" id="DetailsImageLink3031" onclick="parent.toggleDiv('detailsDIVLink3031','DetailsImageLink3031')" />Details:
 							<div id="detailsDIVLink3031" class="DetailsDiv" >
-							<div class="ObjectDetailsNotes">DESCRIPTION:&lt;br/&gt;Each PerformedProcedure might be recorded as a result of one PerformedObservationResult. Each PerformedObservationResult might result in recording one or more PerformedProcedure.&lt;br/&gt;&lt;br/&gt;DEFINITION:&lt;br/&gt;&lt;br/&gt;EXAMPLE(S):&lt;br/&gt;&lt;br/&gt;OTHER NAME(S):&lt;br/&gt;&lt;br/&gt;NOTE(S):&lt;br/&gt;&lt;br/&gt;</div>
+							<div class="ObjectDetailsNotes">DESCRIPTION:&lt;br/&gt;Each Biomarker might be based on one or more PerformedObservationResult.&#160;&#160;Each PerformedObservationResult might be the basis of one or more Biomarker.&lt;br/&gt;&lt;br/&gt;DEFINITION:&lt;br/&gt;&lt;br/&gt;EXAMPLE(S):&lt;br/&gt;An image annotation might be the basis for a biomarker.&lt;br/&gt;&lt;br/&gt;OTHER NAME(S):&lt;br/&gt;&lt;br/&gt;NOTE(S):&lt;br/&gt;</div>
 
 							</div>
 						</div>
@@ -1401,190 +1401,6 @@ function nameClassifier(name, separator)
 					<td width="40%" class="TableHeading">Notes</td>
 				</tr>
 				<tr>
-					<td width="30%" class="TableRow" valign="top"><a href="../EA1/EA34.htm">AdverseEventOutcomeResult</a></td>
-					<td width="10%" class="TableRow" valign="top">Class</td>
-					<td width="10%" class="TableRow" valign="top">Generalization</td>
-					<td width="10%" class="TableRow" valign="top">From</td>
-					<td width="40%" class="TableRow" valign="top">DESCRIPTION:
-Each AdverseEventOutcomeResult always specializes one PerformedObservationResult. Each PerformedObservationResult might be specialized by one AdverseEventOutcomeResult.
-
-DEFINITION:
-
-EXAMPLE(S):
-
-OTHER NAME(S):
-
-NOTE(S):
-</td>
-				</tr>
-				<tr>
-					<td width="30%" class="TableRow" valign="top"><a href="EA401.htm">PerformedPatientNote</a></td>
-					<td width="10%" class="TableRow" valign="top">Class</td>
-					<td width="10%" class="TableRow" valign="top">Generalization</td>
-					<td width="10%" class="TableRow" valign="top">From</td>
-					<td width="40%" class="TableRow" valign="top">DESCRIPTION:
-Each PerformedPatientNote always specializes one PerformedObservationResult. Each PerformedObservationResult might be specialized by one PerformedPatientNote.
-
-DEFINITION:
-
-EXAMPLE(S):
-
-OTHER NAME(S):
-
-NOTE(S):</td>
-				</tr>
-				<tr>
-					<td width="30%" class="TableRow" valign="top"><a href="EA385.htm">PerformedDiagnosis</a></td>
-					<td width="10%" class="TableRow" valign="top">Class</td>
-					<td width="10%" class="TableRow" valign="top">Generalization</td>
-					<td width="10%" class="TableRow" valign="top">From</td>
-					<td width="40%" class="TableRow" valign="top">DESCRIPTION:
-Each PerformedDiagnosis always specializes one PerformedObservationResult. Each PerformedObservationResult might be specialized by one PerformedDiagnosis.
-
-DEFINITION:
-
-EXAMPLE(S):
-
-OTHER NAME(S):
-
-NOTE(S):
-</td>
-				</tr>
-				<tr>
-					<td width="30%" class="TableRow" valign="top"><a href="../EA1/EA43.htm">PerformedProductProblemDiscovery</a></td>
-					<td width="10%" class="TableRow" valign="top">Class</td>
-					<td width="10%" class="TableRow" valign="top">Generalization</td>
-					<td width="10%" class="TableRow" valign="top">From</td>
-					<td width="40%" class="TableRow" valign="top">DESCRIPTION:
-Each PerformedProductProblemDiscovery always specializes one PerformedObservationResult. Each PerformedObservationResult might be specialized by one PerformedProductProblemDiscovery.
-
-DEFINITION:
-
-EXAMPLE(S):
-
-OTHER NAME(S):
-
-NOTE(S):
-</td>
-				</tr>
-				<tr>
-					<td width="30%" class="TableRow" valign="top"><a href="EA396.htm">PerformedMedicalConditionResult</a></td>
-					<td width="10%" class="TableRow" valign="top">Class</td>
-					<td width="10%" class="TableRow" valign="top">Generalization</td>
-					<td width="10%" class="TableRow" valign="top">From</td>
-					<td width="40%" class="TableRow" valign="top">DESCRIPTION:
-Each PerformedMedicalConditionResult always specializes one PerformedObservationResult. Each PerformedObservationResult might be specialized by one PerformedMedicalConditionResult.
-
-DEFINITION:
-
-EXAMPLE(S):
-
-OTHER NAME(S):
-
-NOTE(S):
-</td>
-				</tr>
-				<tr>
-					<td width="30%" class="TableRow" valign="top"><a href="../EA6/EA243.htm">PerformedGeneticObservationResult</a></td>
-					<td width="10%" class="TableRow" valign="top">Class</td>
-					<td width="10%" class="TableRow" valign="top">Generalization</td>
-					<td width="10%" class="TableRow" valign="top">From</td>
-					<td width="40%" class="TableRow" valign="top">DESCRIPTION:
-Each PerformedGeneticObservationResult always specializes one PerformedObservationResult. Each PerformedObservationResult might be specialized by one PerformedGeneticObservationResult.
-
-DEFINITION:
-
-EXAMPLE(S):
-
-OTHER NAME(S):
-
-NOTE(S):</td>
-				</tr>
-				<tr>
-					<td width="30%" class="TableRow" valign="top"><a href="EA384.htm">PerformedClinicalResult</a></td>
-					<td width="10%" class="TableRow" valign="top">Class</td>
-					<td width="10%" class="TableRow" valign="top">Generalization</td>
-					<td width="10%" class="TableRow" valign="top">From</td>
-					<td width="40%" class="TableRow" valign="top">DESCRIPTION:
-Each PerformedClinicalResult always specializes one PerformedObservationResult. Each PerformedObservationResult might be specialized by one PerformedClinicalResult.
-
-DEFINITION:
-
-EXAMPLE(S):
-
-OTHER NAME(S):
-
-NOTE(S):
-</td>
-				</tr>
-				<tr>
-					<td width="30%" class="TableRow" valign="top"><a href="EA391.htm">PerformedHistopathologyResult</a></td>
-					<td width="10%" class="TableRow" valign="top">Class</td>
-					<td width="10%" class="TableRow" valign="top">Generalization</td>
-					<td width="10%" class="TableRow" valign="top">From</td>
-					<td width="40%" class="TableRow" valign="top">DESCRIPTION:
-Each PerformedHistopathology always specializes one PerformedObservationResult. Each PerformedObservationResult might be specialized by one PerformedHistopathology.
-
-DEFINITION:
-
-EXAMPLE(S):
-
-OTHER NAME(S):
-
-NOTE(S):
-</td>
-				</tr>
-				<tr>
-					<td width="30%" class="TableRow" valign="top"><a href="../EA1/EA32.htm">AdverseEvent</a></td>
-					<td width="10%" class="TableRow" valign="top">Class</td>
-					<td width="10%" class="TableRow" valign="top">Generalization</td>
-					<td width="10%" class="TableRow" valign="top">From</td>
-					<td width="40%" class="TableRow" valign="top">DESCRIPTION:
-Each AdverseEvent always specializes one PerformedObservationResult. Each PerformedObservationResult might be specialized by one AdverseEvent.
-
-DEFINITION:
-
-EXAMPLE(S):
-
-OTHER NAME(S):
-
-NOTE(S):
-</td>
-				</tr>
-				<tr>
-					<td width="30%" class="TableRow" valign="top"><a href="../EA6/EA236.htm">MolecularSequenceAnnotation</a></td>
-					<td width="10%" class="TableRow" valign="top">Class</td>
-					<td width="10%" class="TableRow" valign="top">Generalization</td>
-					<td width="10%" class="TableRow" valign="top">From</td>
-					<td width="40%" class="TableRow" valign="top">DESCRIPTION:
-Each MolecularSequenceAnnotation always specializes one PerformedObservationResult. Each PerformedObservationResult might be specialized by one MolecularSequenceAnnotation.
-
-DEFINITION:
-
-EXAMPLE(S):
-
-OTHER NAME(S):
-
-NOTE(S):</td>
-				</tr>
-				<tr>
-					<td width="30%" class="TableRow" valign="top"><a href="EA383.htm">PerformedClinicalInterpretation</a></td>
-					<td width="10%" class="TableRow" valign="top">Class</td>
-					<td width="10%" class="TableRow" valign="top">Generalization</td>
-					<td width="10%" class="TableRow" valign="top">From</td>
-					<td width="40%" class="TableRow" valign="top">DESCRIPTION:
-Each PerformedClinicalInterpretation always specializes one PerformedObservationResult. Each PerformedObservationResult might be specialized by one PerformedClinicalInterpretation.
-
-DEFINITION:
-
-EXAMPLE(S):
-
-OTHER NAME(S):
-
-NOTE(S):
-</td>
-				</tr>
-				<tr>
 					<td width="30%" class="TableRow" valign="top"><a href="../EA1/EA42.htm">PerformedProductInvestigationResult</a></td>
 					<td width="10%" class="TableRow" valign="top">Class</td>
 					<td width="10%" class="TableRow" valign="top">Generalization</td>
@@ -1618,6 +1434,56 @@ OTHER NAME(S):
 NOTE(S):</td>
 				</tr>
 				<tr>
+					<td width="30%" class="TableRow" valign="top"><a href="EA385.htm">PerformedDiagnosis</a></td>
+					<td width="10%" class="TableRow" valign="top">Class</td>
+					<td width="10%" class="TableRow" valign="top">Generalization</td>
+					<td width="10%" class="TableRow" valign="top">From</td>
+					<td width="40%" class="TableRow" valign="top">DESCRIPTION:
+Each PerformedDiagnosis always specializes one PerformedObservationResult. Each PerformedObservationResult might be specialized by one PerformedDiagnosis.
+
+DEFINITION:
+
+EXAMPLE(S):
+
+OTHER NAME(S):
+
+NOTE(S):
+</td>
+				</tr>
+				<tr>
+					<td width="30%" class="TableRow" valign="top"><a href="EA401.htm">PerformedPatientNote</a></td>
+					<td width="10%" class="TableRow" valign="top">Class</td>
+					<td width="10%" class="TableRow" valign="top">Generalization</td>
+					<td width="10%" class="TableRow" valign="top">From</td>
+					<td width="40%" class="TableRow" valign="top">DESCRIPTION:
+Each PerformedPatientNote always specializes one PerformedObservationResult. Each PerformedObservationResult might be specialized by one PerformedPatientNote.
+
+DEFINITION:
+
+EXAMPLE(S):
+
+OTHER NAME(S):
+
+NOTE(S):</td>
+				</tr>
+				<tr>
+					<td width="30%" class="TableRow" valign="top"><a href="../EA1/EA32.htm">AdverseEvent</a></td>
+					<td width="10%" class="TableRow" valign="top">Class</td>
+					<td width="10%" class="TableRow" valign="top">Generalization</td>
+					<td width="10%" class="TableRow" valign="top">From</td>
+					<td width="40%" class="TableRow" valign="top">DESCRIPTION:
+Each AdverseEvent always specializes one PerformedObservationResult. Each PerformedObservationResult might be specialized by one AdverseEvent.
+
+DEFINITION:
+
+EXAMPLE(S):
+
+OTHER NAME(S):
+
+NOTE(S):
+</td>
+				</tr>
+				<tr>
 					<td width="30%" class="TableRow" valign="top"><a href="EA405.htm">PerformedProtocolDeviation</a></td>
 					<td width="10%" class="TableRow" valign="top">Class</td>
 					<td width="10%" class="TableRow" valign="top">Generalization</td>
@@ -1635,12 +1501,146 @@ NOTE(S):
 </td>
 				</tr>
 				<tr>
+					<td width="30%" class="TableRow" valign="top"><a href="../EA1/EA43.htm">PerformedProductProblemDiscovery</a></td>
+					<td width="10%" class="TableRow" valign="top">Class</td>
+					<td width="10%" class="TableRow" valign="top">Generalization</td>
+					<td width="10%" class="TableRow" valign="top">From</td>
+					<td width="40%" class="TableRow" valign="top">DESCRIPTION:
+Each PerformedProductProblemDiscovery always specializes one PerformedObservationResult. Each PerformedObservationResult might be specialized by one PerformedProductProblemDiscovery.
+
+DEFINITION:
+
+EXAMPLE(S):
+
+OTHER NAME(S):
+
+NOTE(S):
+</td>
+				</tr>
+				<tr>
+					<td width="30%" class="TableRow" valign="top"><a href="EA383.htm">PerformedClinicalInterpretation</a></td>
+					<td width="10%" class="TableRow" valign="top">Class</td>
+					<td width="10%" class="TableRow" valign="top">Generalization</td>
+					<td width="10%" class="TableRow" valign="top">From</td>
+					<td width="40%" class="TableRow" valign="top">DESCRIPTION:
+Each PerformedClinicalInterpretation always specializes one PerformedObservationResult. Each PerformedObservationResult might be specialized by one PerformedClinicalInterpretation.
+
+DEFINITION:
+
+EXAMPLE(S):
+
+OTHER NAME(S):
+
+NOTE(S):
+</td>
+				</tr>
+				<tr>
+					<td width="30%" class="TableRow" valign="top"><a href="../EA6/EA243.htm">PerformedGeneticObservationResult</a></td>
+					<td width="10%" class="TableRow" valign="top">Class</td>
+					<td width="10%" class="TableRow" valign="top">Generalization</td>
+					<td width="10%" class="TableRow" valign="top">From</td>
+					<td width="40%" class="TableRow" valign="top">DESCRIPTION:
+Each PerformedGeneticObservationResult always specializes one PerformedObservationResult. Each PerformedObservationResult might be specialized by one PerformedGeneticObservationResult.
+
+DEFINITION:
+
+EXAMPLE(S):
+
+OTHER NAME(S):
+
+NOTE(S):</td>
+				</tr>
+				<tr>
+					<td width="30%" class="TableRow" valign="top"><a href="../EA1/EA34.htm">AdverseEventOutcomeResult</a></td>
+					<td width="10%" class="TableRow" valign="top">Class</td>
+					<td width="10%" class="TableRow" valign="top">Generalization</td>
+					<td width="10%" class="TableRow" valign="top">From</td>
+					<td width="40%" class="TableRow" valign="top">DESCRIPTION:
+Each AdverseEventOutcomeResult always specializes one PerformedObservationResult. Each PerformedObservationResult might be specialized by one AdverseEventOutcomeResult.
+
+DEFINITION:
+
+EXAMPLE(S):
+
+OTHER NAME(S):
+
+NOTE(S):
+</td>
+				</tr>
+				<tr>
+					<td width="30%" class="TableRow" valign="top"><a href="../EA6/EA236.htm">MolecularSequenceAnnotation</a></td>
+					<td width="10%" class="TableRow" valign="top">Class</td>
+					<td width="10%" class="TableRow" valign="top">Generalization</td>
+					<td width="10%" class="TableRow" valign="top">From</td>
+					<td width="40%" class="TableRow" valign="top">DESCRIPTION:
+Each MolecularSequenceAnnotation always specializes one PerformedObservationResult. Each PerformedObservationResult might be specialized by one MolecularSequenceAnnotation.
+
+DEFINITION:
+
+EXAMPLE(S):
+
+OTHER NAME(S):
+
+NOTE(S):</td>
+				</tr>
+				<tr>
+					<td width="30%" class="TableRow" valign="top"><a href="EA396.htm">PerformedMedicalConditionResult</a></td>
+					<td width="10%" class="TableRow" valign="top">Class</td>
+					<td width="10%" class="TableRow" valign="top">Generalization</td>
+					<td width="10%" class="TableRow" valign="top">From</td>
+					<td width="40%" class="TableRow" valign="top">DESCRIPTION:
+Each PerformedMedicalConditionResult always specializes one PerformedObservationResult. Each PerformedObservationResult might be specialized by one PerformedMedicalConditionResult.
+
+DEFINITION:
+
+EXAMPLE(S):
+
+OTHER NAME(S):
+
+NOTE(S):
+</td>
+				</tr>
+				<tr>
+					<td width="30%" class="TableRow" valign="top"><a href="EA391.htm">PerformedHistopathologyResult</a></td>
+					<td width="10%" class="TableRow" valign="top">Class</td>
+					<td width="10%" class="TableRow" valign="top">Generalization</td>
+					<td width="10%" class="TableRow" valign="top">From</td>
+					<td width="40%" class="TableRow" valign="top">DESCRIPTION:
+Each PerformedHistopathology always specializes one PerformedObservationResult. Each PerformedObservationResult might be specialized by one PerformedHistopathology.
+
+DEFINITION:
+
+EXAMPLE(S):
+
+OTHER NAME(S):
+
+NOTE(S):
+</td>
+				</tr>
+				<tr>
 					<td width="30%" class="TableRow" valign="top"><a href="EA393.htm">PerformedLesionDescription</a></td>
 					<td width="10%" class="TableRow" valign="top">Class</td>
 					<td width="10%" class="TableRow" valign="top">Generalization</td>
 					<td width="10%" class="TableRow" valign="top">From</td>
 					<td width="40%" class="TableRow" valign="top">DESCRIPTION:
 Each PerformedLesionDescription always specializes one PerformedObservationResult. Each PerformedObservationResult might be specialized by one PerformedLesionDescription.
+
+DEFINITION:
+
+EXAMPLE(S):
+
+OTHER NAME(S):
+
+NOTE(S):
+</td>
+				</tr>
+				<tr>
+					<td width="30%" class="TableRow" valign="top"><a href="EA384.htm">PerformedClinicalResult</a></td>
+					<td width="10%" class="TableRow" valign="top">Class</td>
+					<td width="10%" class="TableRow" valign="top">Generalization</td>
+					<td width="10%" class="TableRow" valign="top">From</td>
+					<td width="40%" class="TableRow" valign="top">DESCRIPTION:
+Each PerformedClinicalResult always specializes one PerformedObservationResult. Each PerformedObservationResult might be specialized by one PerformedClinicalResult.
 
 DEFINITION:
 

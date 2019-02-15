@@ -91,7 +91,7 @@ function nameClassifier(name, separator)
 		</tr>
 		<tr id="adv01" style="display: none;">
 			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Appears In:</td>
-			<td class="ObjectDetailsValue"><a href="../EA1.htm">UML-Based Comprehensive BRIDG Model Diagram</a>, <a href="../EA4/EA163.htm">View EX: Experiment</a>, <a href="EA61.htm">View CM: Common</a>, <a href="../EA12/EA613.htm">Subject and ExperimentalUnit Comparison</a>, <a href="../EA12/EA577.htm">BiologicEntity and Related Classes</a>, <a href="../EA12/EA579.htm">Animal View</a></td>
+			<td class="ObjectDetailsValue"><a href="../EA1.htm">UML-Based Comprehensive BRIDG Model Diagram</a>, <a href="../EA4/EA163.htm">View EX: Experiment</a>, <a href="EA61.htm">View CM: Common</a>, <a href="../EA12/EA613.htm">Subject and ExperimentalUnit Comparison</a>, <a href="../EA12/EA579.htm">BiologicEntity and Related Classes</a>, <a href="../EA12/EA577.htm">Animal View</a></td>
 		</tr>
 	</table>
 	<div class="ObjectDetailsNotes">DEFINITION:&lt;br/&gt;A collection of biologic entities.&lt;br/&gt;&lt;br/&gt;EXAMPLE(S):&lt;br/&gt;flock of ducks, litter of mice, herd of cows, human cohort, bacterial colony&lt;br/&gt;&lt;br/&gt;OTHER NAME(S):&lt;br/&gt;&lt;br/&gt;NOTE(S):&lt;br/&gt;</div>
@@ -470,54 +470,6 @@ function nameClassifier(name, separator)
 				</tr>
 				<tr>
 					<td width="40%" class="TableRow" valign="top">
-						<a href="EA159.htm">Subject</a><br />
-						Class &nbsp;
-					</td>
-					<td width="30%" class="TableRow" valign="top">
-						<strong>Name:</strong> performedSubject<br />
-						&nbsp;
-					</td>
-					<td width="30%" class="TableRow" valign="top">
-						<strong>Name:</strong> performingBiologicEntityGroup<br />
-						&nbsp;	
-					</td>
-				</tr>
-				<tr>
-					<td class="TableRowBottomDashed"  colspan="3">
-						<div class="DetailsDivParent"><img src="../../images/minus03.gif" align="absmiddle" id="DetailsImageLink314" onclick="parent.toggleDiv('detailsDIVLink314','DetailsImageLink314')" />Details:
-							<div id="detailsDIVLink314" class="DetailsDiv" >
-							<div class="ObjectDetailsNotes">DESCRIPTION:&lt;br/&gt;Each Subject might be a function performed by one BiologicEntityGroup. Each BiologicEntityGroup might function as one or more Subject.&lt;br/&gt;&lt;br/&gt;DEFINITION:&lt;br/&gt;Indicates that a particular group of biologic entities is the subject of a particular activity.&lt;br/&gt;&lt;br/&gt;EXAMPLE(S):&lt;br/&gt;&lt;br/&gt;OTHER NAME(S):&lt;br/&gt;&lt;br/&gt;NOTE(S):&lt;br/&gt;Used when the activity is done to the group as a whole rather than individuals.&#160;&#160;E.g. drugs in shared feed, spraying, group therapy, etc.&lt;br/&gt;</div>
-
-							</div>
-						</div>
-					</td>
-				</tr>
-				<tr>
-					<td width="40%" class="TableRow" valign="top">
-						<a href="../EA4/EA171.htm">ExperimentalActivityItem</a><br />
-						Class &nbsp;
-					</td>
-					<td width="30%" class="TableRow" valign="top">
-						<strong>Name:</strong> playedExperimentalActivityItem<br />
-						&nbsp;
-					</td>
-					<td width="30%" class="TableRow" valign="top">
-						<strong>Name:</strong> playingBiologicEntityGroup<br />
-						&nbsp;	
-					</td>
-				</tr>
-				<tr>
-					<td class="TableRowBottomDashed"  colspan="3">
-						<div class="DetailsDivParent"><img src="../../images/minus03.gif" align="absmiddle" id="DetailsImageLink315" onclick="parent.toggleDiv('detailsDIVLink315','DetailsImageLink315')" />Details:
-							<div id="detailsDIVLink315" class="DetailsDiv" >
-							<div class="ObjectDetailsNotes">DESCRIPTION:&lt;br/&gt;Each ExperimentalActivityItem might be played by one BiologicEntityGroup.&#160;&#160;Each BiologicEntityGroup might play one or more ExperimentalActivityItem. &lt;br/&gt;&lt;br/&gt;DEFINITION:&lt;br/&gt;&lt;br/&gt;EXAMPLE(S):&lt;br/&gt;&lt;br/&gt;OTHER NAME(S):&lt;br/&gt;&lt;br/&gt;NOTE(S):&lt;br/&gt;</div>
-
-							</div>
-						</div>
-					</td>
-				</tr>
-				<tr>
-					<td width="40%" class="TableRow" valign="top">
 						<a href="EA83.htm">BiologicEntityGroup</a><br />
 						Class &nbsp;
 					</td>
@@ -532,9 +484,33 @@ function nameClassifier(name, separator)
 				</tr>
 				<tr>
 					<td class="TableRowBottomDashed"  colspan="3">
-						<div class="DetailsDivParent"><img src="../../images/minus03.gif" align="absmiddle" id="DetailsImageLink316" onclick="parent.toggleDiv('detailsDIVLink316','DetailsImageLink316')" />Details:
-							<div id="detailsDIVLink316" class="DetailsDiv" >
+						<div class="DetailsDivParent"><img src="../../images/minus03.gif" align="absmiddle" id="DetailsImageLink314" onclick="parent.toggleDiv('detailsDIVLink314','DetailsImageLink314')" />Details:
+							<div id="detailsDIVLink314" class="DetailsDiv" >
 							<div class="ObjectDetailsNotes">DESCRIPTION:&lt;br/&gt;Each BiologicEntityGroup might contain one or more BiologicEntityGroup. Each BiologicEntityGroup might be contained in one BiologicEntityGroup.&lt;br/&gt;&lt;br/&gt;DEFINITION:&lt;br/&gt;Indicates that one biologic entity group is composed of other groups.&lt;br/&gt;&lt;br/&gt;EXAMPLE(S):&lt;br/&gt;&lt;br/&gt;OTHER NAME(S):&lt;br/&gt;&lt;br/&gt;NOTE(S):&lt;br/&gt;Allows scenarios such as barn with stalls with crates of chickens - different therapies or observations might be made at different levels of grouping.&lt;br/&gt;</div>
+
+							</div>
+						</div>
+					</td>
+				</tr>
+				<tr>
+					<td width="40%" class="TableRow" valign="top">
+						<a href="EA159.htm">Subject</a><br />
+						Class &nbsp;
+					</td>
+					<td width="30%" class="TableRow" valign="top">
+						<strong>Name:</strong> performedSubject<br />
+						&nbsp;
+					</td>
+					<td width="30%" class="TableRow" valign="top">
+						<strong>Name:</strong> performingBiologicEntityGroup<br />
+						&nbsp;	
+					</td>
+				</tr>
+				<tr>
+					<td class="TableRowBottomDashed"  colspan="3">
+						<div class="DetailsDivParent"><img src="../../images/minus03.gif" align="absmiddle" id="DetailsImageLink315" onclick="parent.toggleDiv('detailsDIVLink315','DetailsImageLink315')" />Details:
+							<div id="detailsDIVLink315" class="DetailsDiv" >
+							<div class="ObjectDetailsNotes">DESCRIPTION:&lt;br/&gt;Each Subject might be a function performed by one BiologicEntityGroup. Each BiologicEntityGroup might function as one or more Subject.&lt;br/&gt;&lt;br/&gt;DEFINITION:&lt;br/&gt;Indicates that a particular group of biologic entities is the subject of a particular activity.&lt;br/&gt;&lt;br/&gt;EXAMPLE(S):&lt;br/&gt;&lt;br/&gt;OTHER NAME(S):&lt;br/&gt;&lt;br/&gt;NOTE(S):&lt;br/&gt;Used when the activity is done to the group as a whole rather than individuals.&#160;&#160;E.g. drugs in shared feed, spraying, group therapy, etc.&lt;br/&gt;</div>
 
 							</div>
 						</div>
@@ -556,9 +532,33 @@ function nameClassifier(name, separator)
 				</tr>
 				<tr>
 					<td class="TableRowBottomDashed"  colspan="3">
+						<div class="DetailsDivParent"><img src="../../images/minus03.gif" align="absmiddle" id="DetailsImageLink316" onclick="parent.toggleDiv('detailsDIVLink316','DetailsImageLink316')" />Details:
+							<div id="detailsDIVLink316" class="DetailsDiv" >
+							<div class="ObjectDetailsNotes">DESCRIPTION:&lt;br/&gt;Each ExperimentalUnit might be a function performed by one BiologicEntityGroup.&#160;&#160;Each BiologicEntityGroup might function as one or more ExperimentalUnit.&lt;br/&gt;&lt;br/&gt;DEFINITION:&lt;br/&gt;&lt;br/&gt;EXAMPLE(S):&lt;br/&gt;&lt;br/&gt;OTHER NAME(S):&lt;br/&gt;&lt;br/&gt;NOTE(S):&lt;br/&gt;&lt;br/&gt;</div>
+
+							</div>
+						</div>
+					</td>
+				</tr>
+				<tr>
+					<td width="40%" class="TableRow" valign="top">
+						<a href="../EA4/EA171.htm">ExperimentalActivityItem</a><br />
+						Class &nbsp;
+					</td>
+					<td width="30%" class="TableRow" valign="top">
+						<strong>Name:</strong> playedExperimentalActivityItem<br />
+						&nbsp;
+					</td>
+					<td width="30%" class="TableRow" valign="top">
+						<strong>Name:</strong> playingBiologicEntityGroup<br />
+						&nbsp;	
+					</td>
+				</tr>
+				<tr>
+					<td class="TableRowBottomDashed"  colspan="3">
 						<div class="DetailsDivParent"><img src="../../images/minus03.gif" align="absmiddle" id="DetailsImageLink317" onclick="parent.toggleDiv('detailsDIVLink317','DetailsImageLink317')" />Details:
 							<div id="detailsDIVLink317" class="DetailsDiv" >
-							<div class="ObjectDetailsNotes">DESCRIPTION:&lt;br/&gt;Each ExperimentalUnit might be a function performed by one BiologicEntityGroup.&#160;&#160;Each BiologicEntityGroup might function as one or more ExperimentalUnit.&lt;br/&gt;&lt;br/&gt;DEFINITION:&lt;br/&gt;&lt;br/&gt;EXAMPLE(S):&lt;br/&gt;&lt;br/&gt;OTHER NAME(S):&lt;br/&gt;&lt;br/&gt;NOTE(S):&lt;br/&gt;&lt;br/&gt;</div>
+							<div class="ObjectDetailsNotes">DESCRIPTION:&lt;br/&gt;Each ExperimentalActivityItem might be played by one BiologicEntityGroup.&#160;&#160;Each BiologicEntityGroup might play one or more ExperimentalActivityItem. &lt;br/&gt;&lt;br/&gt;DEFINITION:&lt;br/&gt;&lt;br/&gt;EXAMPLE(S):&lt;br/&gt;&lt;br/&gt;OTHER NAME(S):&lt;br/&gt;&lt;br/&gt;NOTE(S):&lt;br/&gt;</div>
 
 							</div>
 						</div>

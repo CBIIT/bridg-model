@@ -91,7 +91,7 @@ function nameClassifier(name, separator)
 		</tr>
 		<tr id="adv01" style="display: none;">
 			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Appears In:</td>
-			<td class="ObjectDetailsValue"><a href="../EA1.htm">UML-Based Comprehensive BRIDG Model Diagram</a>, <a href="../EA3/EA61.htm">View CM: Common</a>, <a href="EA249.htm">View PR: Protocol Representation</a>, <a href="EA251.htm">Study Versioning View</a>, <a href="../EA10/EA366.htm">View SC: Study Conduct</a>, <a href="../EA11/EA446.htm">SDTM 3.1.3 View</a>, <a href="../EA12/EA583.htm">ClinicalTrials.gov</a>, <a href="../EA12/EA609.htm">StudyProtocolVersion</a>, <a href="../EA12/EA579.htm">Animal View</a></td>
+			<td class="ObjectDetailsValue"><a href="../EA1.htm">UML-Based Comprehensive BRIDG Model Diagram</a>, <a href="../EA3/EA61.htm">View CM: Common</a>, <a href="EA249.htm">View PR: Protocol Representation</a>, <a href="EA251.htm">Study Versioning View</a>, <a href="../EA10/EA366.htm">View SC: Study Conduct</a>, <a href="../EA11/EA446.htm">SDTM 3.1.3 View</a>, <a href="../EA12/EA583.htm">ClinicalTrials.gov</a>, <a href="../EA12/EA609.htm">StudyProtocolVersion</a>, <a href="../EA12/EA577.htm">Animal View</a></td>
 		</tr>
 	</table>
 	<div class="ObjectDetailsNotes">DEFINITION:&lt;br/&gt;A path through the study which describes what activities the study subject or experimental unit will be involved in as they pass through the study.&lt;br/&gt;&lt;br/&gt;EXAMPLE(S):&lt;br/&gt;A study could have 2 arms named IV-Oral and Oral-IV.&#160;&#160;The name IV-Oral reflects a path that passes through IV treatment, then Oral treatment.&lt;br/&gt;&lt;br/&gt;OTHER NAME(S):&lt;br/&gt;Group [CTRR Observational Studies]&lt;br/&gt;&lt;br/&gt;NOTE(S):&lt;br/&gt;An Arm is typically equivalent to a treatment group in a parallel design study. Generally, each subject is assigned to an arm, and the design of the study is reflected in the number and composition of the individual arms. This intended path through which the subject progresses in a study is composed of time point events (study cell) for each epoch of the study. Each time point event, in turn, has a pattern of child time points through which the subject would pass. This planned path thus describes how subjects assigned to the arm will be treated.&lt;br/&gt;</div>
@@ -493,30 +493,6 @@ function nameClassifier(name, separator)
 				</tr>
 				<tr>
 					<td width="40%" class="TableRow" valign="top">
-						<a href="../EA3/EA103.htm">ExperimentalUnit</a><br />
-						Class &nbsp;
-					</td>
-					<td width="30%" class="TableRow" valign="top">
-						<strong>Name:</strong> performingExperimentalUnit<br />
-						&nbsp;
-					</td>
-					<td width="30%" class="TableRow" valign="top">
-						<strong>Name:</strong> performedArm<br />
-						&nbsp;	
-					</td>
-				</tr>
-				<tr>
-					<td class="TableRowBottomDashed"  colspan="3">
-						<div class="DetailsDivParent"><img src="../../images/minus03.gif" align="absmiddle" id="DetailsImageLink1737" onclick="parent.toggleDiv('detailsDIVLink1737','DetailsImageLink1737')" />Details:
-							<div id="detailsDIVLink1737" class="DetailsDiv" >
-							<div class="ObjectDetailsNotes">DESCRIPTION:&lt;br/&gt;Each ExperimentalUnit might have performed one Arm. Each Arm might have been performed by one ExperimentalUnit.&lt;br/&gt;&lt;br/&gt;DEFINITION:&lt;br/&gt;Indicates that an ExperimentalUnit was, at the end of their participation in a study, assigned to a particular arm based on their actual path through the study.&lt;br/&gt;&lt;br/&gt;EXAMPLE(S):&lt;br/&gt;&lt;br/&gt;OTHER NAME(S):&lt;br/&gt;&lt;br/&gt;NOTE(S): &lt;br/&gt;This is derivable if the set of performed activities the ExperimentalUnit participated in are available.&lt;br/&gt;</div>
-
-							</div>
-						</div>
-					</td>
-				</tr>
-				<tr>
-					<td width="40%" class="TableRow" valign="top">
 						<a href="../EA10/EA390.htm">PerformedExperimentalUnitAllocation</a><br />
 						Class &nbsp;
 					</td>
@@ -531,9 +507,33 @@ function nameClassifier(name, separator)
 				</tr>
 				<tr>
 					<td class="TableRowBottomDashed"  colspan="3">
+						<div class="DetailsDivParent"><img src="../../images/minus03.gif" align="absmiddle" id="DetailsImageLink1737" onclick="parent.toggleDiv('detailsDIVLink1737','DetailsImageLink1737')" />Details:
+							<div id="detailsDIVLink1737" class="DetailsDiv" >
+							<div class="ObjectDetailsNotes">DESCRIPTION:&lt;br/&gt;Each PerformedExperimentalUnitAllocation might assign an experimental unit to one Arm. Each Arm might be assigned an experimental unit by one or more PerformedExperimentalUnitAllocation.&lt;br/&gt;&lt;br/&gt;DEFINITION:&lt;br/&gt;&lt;br/&gt;EXAMPLE(S):&lt;br/&gt;&lt;br/&gt;OTHER NAME(S):&lt;br/&gt;&lt;br/&gt;NOTE(S):&lt;br/&gt;</div>
+
+							</div>
+						</div>
+					</td>
+				</tr>
+				<tr>
+					<td width="40%" class="TableRow" valign="top">
+						<a href="../EA3/EA103.htm">ExperimentalUnit</a><br />
+						Class &nbsp;
+					</td>
+					<td width="30%" class="TableRow" valign="top">
+						<strong>Name:</strong> performingExperimentalUnit<br />
+						&nbsp;
+					</td>
+					<td width="30%" class="TableRow" valign="top">
+						<strong>Name:</strong> performedArm<br />
+						&nbsp;	
+					</td>
+				</tr>
+				<tr>
+					<td class="TableRowBottomDashed"  colspan="3">
 						<div class="DetailsDivParent"><img src="../../images/minus03.gif" align="absmiddle" id="DetailsImageLink1738" onclick="parent.toggleDiv('detailsDIVLink1738','DetailsImageLink1738')" />Details:
 							<div id="detailsDIVLink1738" class="DetailsDiv" >
-							<div class="ObjectDetailsNotes">DESCRIPTION:&lt;br/&gt;Each PerformedExperimentalUnitAllocation might assign an experimental unit to one Arm. Each Arm might be assigned an experimental unit by one or more PerformedExperimentalUnitAllocation.&lt;br/&gt;&lt;br/&gt;DEFINITION:&lt;br/&gt;&lt;br/&gt;EXAMPLE(S):&lt;br/&gt;&lt;br/&gt;OTHER NAME(S):&lt;br/&gt;&lt;br/&gt;NOTE(S):&lt;br/&gt;</div>
+							<div class="ObjectDetailsNotes">DESCRIPTION:&lt;br/&gt;Each ExperimentalUnit might have performed one Arm. Each Arm might have been performed by one ExperimentalUnit.&lt;br/&gt;&lt;br/&gt;DEFINITION:&lt;br/&gt;Indicates that an ExperimentalUnit was, at the end of their participation in a study, assigned to a particular arm based on their actual path through the study.&lt;br/&gt;&lt;br/&gt;EXAMPLE(S):&lt;br/&gt;&lt;br/&gt;OTHER NAME(S):&lt;br/&gt;&lt;br/&gt;NOTE(S): &lt;br/&gt;This is derivable if the set of performed activities the ExperimentalUnit participated in are available.&lt;br/&gt;</div>
 
 							</div>
 						</div>
