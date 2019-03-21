@@ -1,0 +1,145 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>CDISC Lab Data Model v1.0.1</title>
+<link href="../../css/ea.css" rel="stylesheet" type="text/css" />
+<script>
+function initPage(src) {	
+	if(parent==this&&(this.location+"").indexOf('EARoot')!=-1)
+		document.location=(this.location+"").substring(0,(this.location+"").indexOf('EARoot'))+"index"+(this.location+"").substring((this.location+"").lastIndexOf('.'))+"?goto="+((this.location+"").substring((this.location+"").indexOf('EARoot')+7,(this.location+"").lastIndexOf('.')).replace(/\//g,':').replace(/EA/g,""));
+	else
+		parent.initPage(src);
+}
+
+function nameClassifier(name, separator)
+{
+  var str = name;
+  var classifierName;
+  var node = document.getElementById('name_classifier');
+  if(node != null)
+  {
+    classifierName = node.innerHTML;
+  }
+  if(classifierName != "")
+  {
+   str += separator + classifierName;
+  }
+  
+  return str;
+}
+</script>
+</head>
+<body onload="initPage(this);" class="Content">
+<div class="PageBody">
+	
+<img src="EA445.png" usemap="#EA445" border="0" />
+
+<MAP NAME="EA445">
+<area shape="rect" coords="230,78,402,157" href="EA510.htm" target="_self">
+<area shape="rect" coords="1403,548,1643,615" href="EA476.htm" target="_self">
+<area shape="rect" coords="1964,830,2141,859" href="EA477.htm" target="_self">
+<area shape="rect" coords="1608,1059,1759,1081" href="EA478.htm" target="_self">
+<area shape="rect" coords="1801,593,1879,617" href="EA479.htm" target="_self">
+<area shape="rect" coords="2188,974,2337,1040" href="../EA10/EA374.htm" target="_self">
+<area shape="rect" coords="2252,28,2469,256" href="EA572.htm" target="_self">
+<area shape="rect" coords="1987,96,2170,180" href="EA496.htm" target="_self">
+<area shape="rect" coords="1067,530,1243,559" href="EA480.htm" target="_self">
+<area shape="rect" coords="1138,400,1261,429" href="EA491.htm" target="_self">
+<area shape="rect" coords="528,1103,768,1123" href="EA489.htm" target="_self">
+<area shape="rect" coords="16,578,256,626" href="EA466.htm" target="_self">
+<area shape="rect" coords="35,417,199,446" href="EA483.htm" target="_self">
+<area shape="rect" coords="460,209,673,238" href="EA481.htm" target="_self">
+<area shape="rect" coords="861,125,1021,154" href="EA458.htm" target="_self">
+<area shape="rect" coords="2018,452,2107,500" href="EA459.htm" target="_self">
+<area shape="rect" coords="345,480,561,528" href="EA461.htm" target="_self">
+<area shape="rect" coords="786,875,964,923" href="EA462.htm" target="_self">
+<area shape="rect" coords="1365,1263,1790,1311" href="EA460.htm" target="_self">
+<area shape="rect" coords="1902,688,2188,793" href="EA463.htm" target="_self">
+<area shape="rect" coords="1902,868,2162,897" href="EA472.htm" target="_self">
+<area shape="rect" coords="1587,1132,1827,1152" href="EA465.htm" target="_self">
+<area shape="rect" coords="2174,1202,2460,1250" href="EA457.htm" target="_self">
+<area shape="rect" coords="1477,820,1626,847" href="EA467.htm" target="_self">
+<area shape="rect" coords="1394,784,1602,813" href="EA468.htm" target="_self">
+<area shape="rect" coords="1297,649,1632,754" href="EA494.htm" target="_self">
+<area shape="rect" coords="10,935,285,983" href="EA482.htm" target="_self">
+<area shape="rect" coords="1234,934,1499,1001" href="EA473.htm" target="_self">
+<area shape="rect" coords="1239,880,1437,928" href="EA469.htm" target="_self">
+<area shape="rect" coords="31,1120,287,1168" href="EA490.htm" target="_self">
+<area shape="rect" coords="1747,464,1857,512" href="EA470.htm" target="_self">
+<area shape="rect" coords="493,705,696,848" href="EA471.htm" target="_self">
+<area shape="rect" coords="509,621,695,669" href="EA464.htm" target="_self">
+<area shape="rect" coords="11,340,186,388" href="EA492.htm" target="_self">
+<area shape="rect" coords="12,285,151,333" href="EA498.htm" target="_self">
+<area shape="rect" coords="13,225,170,273" href="EA484.htm" target="_self">
+<area shape="rect" coords="13,182,160,205" href="EA485.htm" target="_self">
+<area shape="rect" coords="698,299,876,325" href="EA486.htm" target="_self">
+<area shape="rect" coords="697,261,916,290" href="EA487.htm" target="_self">
+<area shape="rect" coords="473,331,705,383" href="../EA10/EA427.htm" target="_self">
+<area shape="rect" coords="2303,1107,2510,1173" href="../EA10/EA383.htm" target="_self">
+<area shape="rect" coords="1474,432,1711,524" href="../EA7/EA304.htm" target="_self">
+<area shape="rect" coords="1111,567,1321,644" href="../EA7/EA320.htm" target="_self">
+<area shape="rect" coords="573,441,706,526" href="../EA10/EA424.htm" target="_self">
+<area shape="rect" coords="2137,419,2346,498" href="../EA7/EA332.htm" target="_self">
+<area shape="rect" coords="1885,263,2057,339" href="../EA7/EA331.htm" target="_self">
+<area shape="rect" coords="374,4,834,54" href="EA488.htm" target="_self">
+<area shape="rect" coords="1079,90,1871,141" href="../EA10/EA431.htm" target="_self">
+<area shape="rect" coords="963,374,1129,420" href="../EA7/EA323.htm" target="_self">
+<area shape="rect" coords="1295,318,1479,386" href="../EA7/EA333.htm" target="_self">
+<area shape="rect" coords="1934,590,2177,668" href="../EA3/EA97.htm" target="_self">
+<area shape="rect" coords="1802,375,1953,439" href="../EA3/EA95.htm" target="_self">
+<area shape="rect" coords="678,1003,897,1073" href="../EA2/EA56.htm" target="_self">
+<area shape="rect" coords="982,819,1202,883" href="../EA2/EA55.htm" target="_self">
+<area shape="rect" coords="1507,860,1680,926" href="../EA3/EA113.htm" target="_self">
+<area shape="rect" coords="322,1087,480,1157" href="../EA10/EA377.htm" target="_self">
+<area shape="rect" coords="316,882,661,950" href="../EA3/EA119.htm" target="_self">
+<area shape="rect" coords="140,470,321,558" href="../EA3/EA128.htm" target="_self">
+<area shape="rect" coords="230,188,441,264" href="../EA3/EA81.htm" target="_self">
+<area shape="rect" coords="712,166,851,237" href="../EA3/EA159.htm" target="_self">
+<area shape="rect" coords="1838,1191,1996,1266" href="../EA10/EA413.htm" target="_self">
+<area shape="rect" coords="1841,1025,2063,1100" href="../EA10/EA384.htm" target="_self">
+<area shape="rect" coords="2213,716,2407,817" href="../EA10/EA400.htm" target="_self">
+<area shape="rect" coords="1767,926,1904,985" href="../EA10/EA399.htm" target="_self">
+<area shape="rect" coords="1059,1026,1238,1073" href="../EA10/EA405.htm" target="_self">
+<area shape="rect" coords="1677,640,1897,785" href="../EA10/EA380.htm" target="_self">
+<area shape="rect" coords="1166,442,1391,530" href="../EA7/EA303.htm" target="_self">
+<area shape="rect" coords="909,689,1118,790" href="../EA7/EA266.htm" target="_self">
+<area shape="rect" coords="943,234,1617,301" href="../EA3/EA72.htm" target="_self">
+</MAP>
+
+	<div class="ObjectTitle">CDISC Lab Data Model v1.0.1 : Class diagram</div>
+	<table border="0" cellpadding="0" cellspacing="0" class="ObjectDetails">
+		<tr>
+			<td width="15%" class="ObjectDetailsTopic">Created:</td>
+			<td width="85%" class="ObjectDetailsValue">3/19/2018 12:00:00 AM</td>
+		</tr>
+		<tr>
+			<td width="15%" class="ObjectDetailsTopic">Modified:</td>
+			<td width="85%" class="ObjectDetailsValue">3/21/2019 9:08:45 AM</td>
+		</tr>
+		<tr style="padding-top: 10px;">
+			<td width="15%" class="ObjectDetailsTopic"><img src="../../images/plus03.gif" align="absmiddle" id="proj" onclick="parent.toggleData(this.id)" />Project:</td>
+			<td width="85%" class="ObjectDetailsValue"></td>			
+		</tr>
+		<tr id="proj00" style="display: none;">
+			<td width="15%" class="ObjectDetailsTopic" style="padding-left: 18px;">Author:</td>
+			<td width="85%" class="ObjectDetailsValue">BRIDG Modeling Team</td>
+		</tr>
+		<tr id="proj01" style="display: none;">
+			<td width="15%" class="ObjectDetailsTopic" style="padding-left: 18px;">Version:</td>
+			<td width="85%" class="ObjectDetailsValue">5.3</td>
+		</tr>
+		<tr>
+			<td width="15%" class="ObjectDetailsTopic"><img src="../../images/plus03.gif" align="absmiddle" id="adv" onclick="parent.toggleData(this.id)" />Advanced:</td>
+			<td width="85%" class="ObjectDetailsValue"></td>			
+		</tr>
+		<tr id="adv00" style="display: none;">
+			<td width="15%" class="ObjectDetailsTopic" style="padding-left: 18px;">ID:</td>
+			<td width="85%" class="ObjectDetailsValue">{C82C9FB4-35BE-482f-9E39-7027A2503999}</td>
+		</tr>
+	</table>
+	
+</div>
+ 
+</body>
+</html>

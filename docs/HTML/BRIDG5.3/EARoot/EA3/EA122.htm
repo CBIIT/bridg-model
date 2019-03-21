@@ -1,0 +1,963 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>Common Sub-Domain::OrganizationStaffRole</title>
+<link href="../../css/ea.css" rel="stylesheet" type="text/css" />
+<script>
+function initPage(src) {	
+	if(parent==this&&(this.location+"").indexOf('EARoot')!=-1)
+		document.location=(this.location+"").substring(0,(this.location+"").indexOf('EARoot'))+"index"+(this.location+"").substring((this.location+"").lastIndexOf('.'))+"?goto="+((this.location+"").substring((this.location+"").indexOf('EARoot')+7,(this.location+"").lastIndexOf('.')).replace(/\//g,':').replace(/EA/g,""));
+	else
+		parent.initPage(src);
+}
+
+function nameClassifier(name, separator)
+{
+  var str = name;
+  var classifierName;
+  var node = document.getElementById('name_classifier');
+  if(node != null)
+  {
+    classifierName = node.innerHTML;
+  }
+  if(classifierName != "")
+  {
+   str += separator + classifierName;
+  }
+  
+  return str;
+}
+</script>
+</head>
+<body onload="initPage(this);" class="Content">
+<div class="pageHeader"></div>
+<div class="PageBody">
+	<div id="name_classifier" style="display: none;"></div>
+	<span class="ObjectTitle"><script type="text/javascript">document.write(nameClassifier("OrganizationStaffRole", " : "))</script>  : Public   Class</span>
+	<table border="0" cellpadding="0" cellspacing="0" class="ObjectDetails">
+		<tr>
+			<td width="15%" class="ObjectDetailsTopic">Created:</td>
+			<td width="85%" class="ObjectDetailsValue">6/14/2016 5:16:33 PM</td>
+		</tr>
+		<tr>
+			<td class="ObjectDetailsTopic">Modified:</td>
+			<td class="ObjectDetailsValue">2/27/2019 12:55:30 AM</td>
+		</tr>
+		<tr style="height: 10px"><td colspan="2"></td></tr>
+		<tr>
+			<td class="ObjectDetailsTopic"><img src="../../images/plus03.gif" align="absmiddle" id="proj" onclick="parent.toggleData(this.id)" />Project:</td>
+			<td class="ObjectDetailsValue"></td>
+		</tr>
+		<tr id="proj00" style="display: none;">
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Author:</td>
+			<td class="ObjectDetailsValue">jevans</td>
+		</tr>
+		<tr id="proj01" style="display: none;">
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Version:</td>
+			<td class="ObjectDetailsValue">1.0</td>
+		</tr>
+		<tr id="proj02" style="display: none;">
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Phase:</td>
+			<td class="ObjectDetailsValue">1.0</td>
+		</tr>
+		<tr id="proj03" style="display: none;">
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Status:</td>
+			<td class="ObjectDetailsValue"><none></td>
+		</tr>
+		<tr id="proj04" style="display: none;">
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Complexity:</td>
+			<td class="ObjectDetailsValue">Easy</td>
+		</tr>
+		<tr id="proj05" style="display: none;">
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Difficulty:</td>
+			<td class="ObjectDetailsValue"></td>
+		</tr>
+		<tr id="proj06" style="display: none;">
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Priority:</td>
+			<td class="ObjectDetailsValue"></td>
+		</tr>
+		<tr id="proj05" style="display: none;">
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Multiplicity:</td>
+			<td class="ObjectDetailsValue"></td>
+		</tr>
+		<tr>
+			<td class="ObjectDetailsTopic"><img src="../../images/plus03.gif" align="absmiddle" id="adv" onclick="parent.toggleData(this.id)" />Advanced:</td>
+			<td class="ObjectDetailsValue"></td>
+		</tr>
+		<tr id="adv00" style="display: none;">
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">UUID:</td>
+			<td class="ObjectDetailsValue">{A6DAEA46-FFFF-497a-AFBD-5A577FCC0104}</td>
+		</tr>
+		<tr id="adv01" style="display: none;">
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Appears In:</td>
+			<td class="ObjectDetailsValue"><a href="../EA1.htm">UML-Based Comprehensive BRIDG Model Diagram</a>, <a href="EA61.htm">View CM: Common</a>, <a href="../EA11/EA446.htm">SDTM 3.2 View</a>, <a href="../EA12/EA604.htm">Participant Registration</a>, <a href="../EA12/EA580.htm">Anatomic Pathology Structured Report (APSR)</a></td>
+		</tr>
+	</table>
+	<div class="ObjectDetailsNotes">DEFINITION:&lt;br/&gt;A function performed by an individual on behalf of an organization who is employing them. &lt;br/&gt;&lt;br/&gt;EXAMPLE(S):&lt;br/&gt;Grants Manager, Project Assistant, Visit Report Reviewer &lt;br/&gt;&lt;br/&gt;OTHER NAME(S):&lt;br/&gt;&lt;br/&gt;NOTE(S):&lt;br/&gt;Note that a function is not the same as a job title; a person may perform multiple different roles simultaneously and the function may not have an obvious relation to their job title.&lt;br/&gt;</div>
+
+	<div class="TableGroup" id="TableGroup">
+		<ul class="ItemTitle">
+			<li onClick="parent.toggleItem('Attributes');" id="AttributesTitle">Attributes</li>
+			<li onClick="parent.toggleItem('AssociationsTo');" id="AssociationsToTitle">Associations To</li>
+			<li onClick="parent.toggleItem('AssociationsFrom');" id="AssociationsFromTitle">Associations From</li>
+			<li onClick="parent.toggleItem('TaggedVal');" id="TaggedValTitle">Tagged Values</li>
+			<li onClick="parent.toggleItem('Links');" id="LinksTitle">Other Links</li>
+		</ul>
+<div class="ItemBody" id="AttributesTable">
+	<table border="0" cellspacing="0" cellpadding="0" class="Table">
+		<tr>
+			<td width="100%" class="TableHeading">Attribute</td>
+		</tr>
+						<tr>
+				<td width="100%" class="TableRow">
+					<i>Public BL</i><br /><strong>&nbsp;&nbsp;confidentialIndicator</strong>
+				</td>
+			</tr>
+			<tr>
+				<td class="TableRowBottomDashed"  colspan="1">										
+					<a href="#" onclick="parent.toggleData('DetailsImageAttributes834')" style="text-decoration: none; color: #000000;"><img src="../../images/plus03.gif" align="absmiddle" id="DetailsImageAttributes834" border="0" />Details:</a>
+					<table border="0" cellspacing="0" cellpadding="0" class="Table" style="padding: 4px 18px;">
+					
+						<tr id="DetailsImageAttributes834_00" style="display: none;">
+							<td width="75"><i>Alias:</i></td>
+							<td></td>
+						</tr>
+						<tr id="DetailsImageAttributes834_01" style="display: none;">
+							<td width="75"><i>Initial:</i></td>
+							<td></td>
+						</tr>
+						<tr id="DetailsImageAttributes834_02" style="display: none;">
+							<td width="75"><i>Stereotype: </i></td>
+							<td></td>
+						</tr>
+						<tr id="DetailsImageAttributes834_03" style="display: none;">
+							<td width="75"><i>Ordered: </i></td>
+							<td></td>
+						</tr>
+						<tr id="DetailsImageAttributes834_04" style="display: none;">
+							<td width="75"><i>Range: </i></td>
+							<td></td>
+						</tr>
+						<tr id="DetailsImageAttributes834_05" style="display: none;">
+							<td width="75"><i>Transient: </i></td>
+							<td>False</td>
+						</tr>
+						<tr id="DetailsImageAttributes834_06" style="display: none;">
+							<td width="75"><i>Derived: </i></td>
+							<td>False</td>
+						</tr>
+							<tr id="DetailsImageAttributes834_07" style="display: none;">
+							<td width="75"><i>IsID: </i></td>
+						<td>False</td>
+						</tr>
+					</table>
+					
+					Map:Vendor1v1.1=StaffMember.isConfidential<br>
+						<div class="ObjectDetailsNotes"><table>
+	<tr>
+		<td valign="top">
+			<i>Notes: </i><span style="margin-left: .4cm;"> </span>
+		</td>
+		<td>
+			DEFINITION:&lt;br/&gt;Specifies whether the staff role is considered sensitive information.&lt;br/&gt;&lt;br/&gt;EXAMPLE(S):&lt;br/&gt;&lt;br/&gt;OTHER NAME(S):&lt;br/&gt;&lt;br/&gt;NOTE(S):&lt;br/&gt;&lt;br/&gt;
+		</td>
+	</tr>
+</table></div>
+
+						
+				</td>
+			</tr>			<tr>
+				<td width="100%" class="TableRow">
+					<i>Public IVL&lt;TS.DATETIME&gt;</i><br /><strong>&nbsp;&nbsp;effectiveDateRange</strong>
+				</td>
+			</tr>
+			<tr>
+				<td class="TableRowBottomDashed"  colspan="1">										
+					<a href="#" onclick="parent.toggleData('DetailsImageAttributes835')" style="text-decoration: none; color: #000000;"><img src="../../images/plus03.gif" align="absmiddle" id="DetailsImageAttributes835" border="0" />Details:</a>
+					<table border="0" cellspacing="0" cellpadding="0" class="Table" style="padding: 4px 18px;">
+					
+						<tr id="DetailsImageAttributes835_00" style="display: none;">
+							<td width="75"><i>Alias:</i></td>
+							<td></td>
+						</tr>
+						<tr id="DetailsImageAttributes835_01" style="display: none;">
+							<td width="75"><i>Initial:</i></td>
+							<td></td>
+						</tr>
+						<tr id="DetailsImageAttributes835_02" style="display: none;">
+							<td width="75"><i>Stereotype: </i></td>
+							<td></td>
+						</tr>
+						<tr id="DetailsImageAttributes835_03" style="display: none;">
+							<td width="75"><i>Ordered: </i></td>
+							<td></td>
+						</tr>
+						<tr id="DetailsImageAttributes835_04" style="display: none;">
+							<td width="75"><i>Range: </i></td>
+							<td>Range:0 to 1</td>
+						</tr>
+						<tr id="DetailsImageAttributes835_05" style="display: none;">
+							<td width="75"><i>Transient: </i></td>
+							<td>False</td>
+						</tr>
+						<tr id="DetailsImageAttributes835_06" style="display: none;">
+							<td width="75"><i>Derived: </i></td>
+							<td>False</td>
+						</tr>
+							<tr id="DetailsImageAttributes835_07" style="display: none;">
+							<td width="75"><i>IsID: </i></td>
+						<td>False</td>
+						</tr>
+					</table>
+					
+					Map:CTRPv1.0=ClinicalResearchStaff.statusDateRange<br>Map:CTRPv1.0=ClinicalResearchStaff.statusCode<br>Map:CTRv1.0=ResearchStaff.effectiveDateRange<br>Map:Vendor1v1.1=StaffMember.effectiveDateRange<br>
+						<div class="ObjectDetailsNotes"><table>
+	<tr>
+		<td valign="top">
+			<i>Notes: </i><span style="margin-left: .4cm;"> </span>
+		</td>
+		<td>
+			DEFINITION:&lt;br/&gt;The date (and time) span for when the organization staff is active.&lt;br/&gt;&lt;br/&gt;EXAMPLE(S):&lt;br/&gt;&lt;br/&gt;OTHER NAME(S):&lt;br/&gt;&lt;br/&gt;NOTE(S):&lt;br/&gt;
+		</td>
+	</tr>
+</table></div>
+
+						
+				</td>
+			</tr>			<tr>
+				<td width="100%" class="TableRow">
+					<i>Public ID</i><br /><strong>&nbsp;&nbsp;identifier</strong>
+				</td>
+			</tr>
+			<tr>
+				<td class="TableRowBottomDashed"  colspan="1">										
+					<a href="#" onclick="parent.toggleData('DetailsImageAttributes836')" style="text-decoration: none; color: #000000;"><img src="../../images/plus03.gif" align="absmiddle" id="DetailsImageAttributes836" border="0" />Details:</a>
+					<table border="0" cellspacing="0" cellpadding="0" class="Table" style="padding: 4px 18px;">
+					
+						<tr id="DetailsImageAttributes836_00" style="display: none;">
+							<td width="75"><i>Alias:</i></td>
+							<td></td>
+						</tr>
+						<tr id="DetailsImageAttributes836_01" style="display: none;">
+							<td width="75"><i>Initial:</i></td>
+							<td></td>
+						</tr>
+						<tr id="DetailsImageAttributes836_02" style="display: none;">
+							<td width="75"><i>Stereotype: </i></td>
+							<td></td>
+						</tr>
+						<tr id="DetailsImageAttributes836_03" style="display: none;">
+							<td width="75"><i>Ordered: </i></td>
+							<td></td>
+						</tr>
+						<tr id="DetailsImageAttributes836_04" style="display: none;">
+							<td width="75"><i>Range: </i></td>
+							<td>Range:0 to 1</td>
+						</tr>
+						<tr id="DetailsImageAttributes836_05" style="display: none;">
+							<td width="75"><i>Transient: </i></td>
+							<td>False</td>
+						</tr>
+						<tr id="DetailsImageAttributes836_06" style="display: none;">
+							<td width="75"><i>Derived: </i></td>
+							<td>False</td>
+						</tr>
+							<tr id="DetailsImageAttributes836_07" style="display: none;">
+							<td width="75"><i>IsID: </i></td>
+						<td>False</td>
+						</tr>
+					</table>
+					
+					Map:APSRv2.1=Hdr: Participant - Specimen Collector - hl7:ClinicalDocument > hl7:participant (Specimen Collector) > hl7:associatedEntity > hl7:id<br>Map:APSRv2.1=hl7:assignedEntity - hl7:assignedEntity > hl7:id<br>Map:APSRv2.1=[Problem] hl7:organizer - [Problem] hl7:organizer > hl7:component [Any kind of AP observation] > hl7:observation > hl7:participant > hl7:participantRole > hl7:id<br>Map:APSRv2.1=Hdr: Information Recipient - hl7:ClinicalDocument > hl7:informationRecipient > hl7:intendedRecipient > hl7:id<br>Map:APSRv2.1=[Problem] hl7:organizer - [Problem] hl7:organizer > hl7:participant > hl7:participantRole > hl7:id<br>Map:C3PRv2.9=ResearchStaff.assignedIdentifier<br>Map:caAERSv2.2=ResearchStaff.nciIdentifier<br>Map:CTRv1.0=ResearchStaff.identifier<br>Map:Vendor1v1.1=StaffMember<br>
+						<div class="ObjectDetailsNotes"><table>
+	<tr>
+		<td valign="top">
+			<i>Notes: </i><span style="margin-left: .4cm;"> </span>
+		</td>
+		<td>
+			DEFINITION:&lt;br/&gt;A unique symbol that establishes identity of a staff member working in a particular role.&lt;br/&gt;&lt;br/&gt;EXAMPLE(S):&lt;br/&gt;&lt;br/&gt;OTHER NAME(S):&lt;br/&gt;&lt;br/&gt;NOTE(S):&lt;br/&gt;This identifier is valid as long as the staff works in the particular role.&lt;br/&gt;&lt;br/&gt;
+		</td>
+	</tr>
+</table></div>
+
+						
+				</td>
+			</tr>			<tr>
+				<td width="100%" class="TableRow">
+					<i>Public AD</i><br /><strong>&nbsp;&nbsp;postalAddress</strong>
+				</td>
+			</tr>
+			<tr>
+				<td class="TableRowBottomDashed"  colspan="1">										
+					<a href="#" onclick="parent.toggleData('DetailsImageAttributes837')" style="text-decoration: none; color: #000000;"><img src="../../images/plus03.gif" align="absmiddle" id="DetailsImageAttributes837" border="0" />Details:</a>
+					<table border="0" cellspacing="0" cellpadding="0" class="Table" style="padding: 4px 18px;">
+					
+						<tr id="DetailsImageAttributes837_00" style="display: none;">
+							<td width="75"><i>Alias:</i></td>
+							<td></td>
+						</tr>
+						<tr id="DetailsImageAttributes837_01" style="display: none;">
+							<td width="75"><i>Initial:</i></td>
+							<td></td>
+						</tr>
+						<tr id="DetailsImageAttributes837_02" style="display: none;">
+							<td width="75"><i>Stereotype: </i></td>
+							<td></td>
+						</tr>
+						<tr id="DetailsImageAttributes837_03" style="display: none;">
+							<td width="75"><i>Ordered: </i></td>
+							<td></td>
+						</tr>
+						<tr id="DetailsImageAttributes837_04" style="display: none;">
+							<td width="75"><i>Range: </i></td>
+							<td>Range:0 to 1</td>
+						</tr>
+						<tr id="DetailsImageAttributes837_05" style="display: none;">
+							<td width="75"><i>Transient: </i></td>
+							<td>False</td>
+						</tr>
+						<tr id="DetailsImageAttributes837_06" style="display: none;">
+							<td width="75"><i>Derived: </i></td>
+							<td>False</td>
+						</tr>
+							<tr id="DetailsImageAttributes837_07" style="display: none;">
+							<td width="75"><i>IsID: </i></td>
+						<td>False</td>
+						</tr>
+					</table>
+					
+					Map:APSRv2.1=[Problem] hl7:organizer - [Problem] hl7:organizer > hl7:participant > hl7:participantRole > hl7:addr<br>Map:APSRv2.1=[Problem] hl7:organizer - [Problem] hl7:organizer > hl7:component [Any kind of AP observation] > hl7:observation > hl7:participant > hl7:participantRole > hl7:addr<br>Map:APSRv2.1=hl7:author - hl7:author > hl7:assignedAuthor > hl7:addr<br>Map:APSRv2.1=Hdr: Information Recipient - hl7:ClinicalDocument > hl7:informationRecipient > hl7:intendedRecipient > hl7:addr<br>Map:APSRv2.1=Hdr: Participant - Specimen Collector - hl7:ClinicalDocument > hl7:participant (Specimen Collector) > hl7:associatedEntity > hl7:addr<br>Map:APSRv2.1=hl7:assignedEntity - hl7:assignedEntity > hl7:addr<br>Map:caAERSv2.2=Address.country> ResearchStaff<br>Map:caAERSv2.2=Address.state > ResearchStaff<br>Map:caAERSv2.2=Address.street > ResearchStaff<br>Map:caAERSv2.2=Address.zip > ResearchStaff<br>Map:caAERSv2.2=Address.city > ResearchStaff<br>Map:CTRPv1.0=ClinicalResearchStaff.postalAddress<br>Map:CTRv1.0=ResearchStaff.postalAddress<br>Map:ICSRr2=AssignedEntity.addr (in IndividualCaseSafetyReport)<br>Map:Vendor1v1.1=StaffMember.postalAddress<br>
+						<div class="ObjectDetailsNotes"><table>
+	<tr>
+		<td valign="top">
+			<i>Notes: </i><span style="margin-left: .4cm;"> </span>
+		</td>
+		<td>
+			DEFINITION:&lt;br/&gt;A contact point used to send physical forms of communication to the organization staff.&lt;br/&gt;&lt;br/&gt;EXAMPLE(S):&lt;br/&gt;&lt;br/&gt;OTHER NAME(S):&lt;br/&gt;&lt;br/&gt;NOTE(S):&lt;br/&gt;
+		</td>
+	</tr>
+</table></div>
+
+						
+				</td>
+			</tr>			<tr>
+				<td width="100%" class="TableRow">
+					<i>Public BL</i><br /><strong>&nbsp;&nbsp;primaryRoleIndicator</strong>
+				</td>
+			</tr>
+			<tr>
+				<td class="TableRowBottomDashed"  colspan="1">										
+					<a href="#" onclick="parent.toggleData('DetailsImageAttributes838')" style="text-decoration: none; color: #000000;"><img src="../../images/plus03.gif" align="absmiddle" id="DetailsImageAttributes838" border="0" />Details:</a>
+					<table border="0" cellspacing="0" cellpadding="0" class="Table" style="padding: 4px 18px;">
+					
+						<tr id="DetailsImageAttributes838_00" style="display: none;">
+							<td width="75"><i>Alias:</i></td>
+							<td></td>
+						</tr>
+						<tr id="DetailsImageAttributes838_01" style="display: none;">
+							<td width="75"><i>Initial:</i></td>
+							<td></td>
+						</tr>
+						<tr id="DetailsImageAttributes838_02" style="display: none;">
+							<td width="75"><i>Stereotype: </i></td>
+							<td></td>
+						</tr>
+						<tr id="DetailsImageAttributes838_03" style="display: none;">
+							<td width="75"><i>Ordered: </i></td>
+							<td></td>
+						</tr>
+						<tr id="DetailsImageAttributes838_04" style="display: none;">
+							<td width="75"><i>Range: </i></td>
+							<td></td>
+						</tr>
+						<tr id="DetailsImageAttributes838_05" style="display: none;">
+							<td width="75"><i>Transient: </i></td>
+							<td>False</td>
+						</tr>
+						<tr id="DetailsImageAttributes838_06" style="display: none;">
+							<td width="75"><i>Derived: </i></td>
+							<td>False</td>
+						</tr>
+							<tr id="DetailsImageAttributes838_07" style="display: none;">
+							<td width="75"><i>IsID: </i></td>
+						<td>False</td>
+						</tr>
+					</table>
+					
+					Map:Vendor1v1.1=StaffMember.isPrimaryRole<br>
+						<div class="ObjectDetailsNotes"><table>
+	<tr>
+		<td valign="top">
+			<i>Notes: </i><span style="margin-left: .4cm;"> </span>
+		</td>
+		<td>
+			DEFINITION:&lt;br/&gt;Specifies whether the role is the one that the organization staff usually plays.&lt;br/&gt;&lt;br/&gt;EXAMPLE(S):&lt;br/&gt;&lt;br/&gt;OTHER NAME(S):&lt;br/&gt;&lt;br/&gt;NOTE(S):&lt;br/&gt;
+		</td>
+	</tr>
+</table></div>
+
+						
+				</td>
+			</tr>			<tr>
+				<td width="100%" class="TableRow">
+					<i>Public CD</i><br /><strong>&nbsp;&nbsp;roleCode</strong>
+				</td>
+			</tr>
+			<tr>
+				<td class="TableRowBottomDashed"  colspan="1">										
+					<a href="#" onclick="parent.toggleData('DetailsImageAttributes839')" style="text-decoration: none; color: #000000;"><img src="../../images/plus03.gif" align="absmiddle" id="DetailsImageAttributes839" border="0" />Details:</a>
+					<table border="0" cellspacing="0" cellpadding="0" class="Table" style="padding: 4px 18px;">
+					
+						<tr id="DetailsImageAttributes839_00" style="display: none;">
+							<td width="75"><i>Alias:</i></td>
+							<td></td>
+						</tr>
+						<tr id="DetailsImageAttributes839_01" style="display: none;">
+							<td width="75"><i>Initial:</i></td>
+							<td></td>
+						</tr>
+						<tr id="DetailsImageAttributes839_02" style="display: none;">
+							<td width="75"><i>Stereotype: </i></td>
+							<td></td>
+						</tr>
+						<tr id="DetailsImageAttributes839_03" style="display: none;">
+							<td width="75"><i>Ordered: </i></td>
+							<td></td>
+						</tr>
+						<tr id="DetailsImageAttributes839_04" style="display: none;">
+							<td width="75"><i>Range: </i></td>
+							<td></td>
+						</tr>
+						<tr id="DetailsImageAttributes839_05" style="display: none;">
+							<td width="75"><i>Transient: </i></td>
+							<td>False</td>
+						</tr>
+						<tr id="DetailsImageAttributes839_06" style="display: none;">
+							<td width="75"><i>Derived: </i></td>
+							<td>False</td>
+						</tr>
+							<tr id="DetailsImageAttributes839_07" style="display: none;">
+							<td width="75"><i>IsID: </i></td>
+						<td>False</td>
+						</tr>
+					</table>
+					
+					fixed="Staff - 3rd Party"<br>Map:APSRv2.1=Hdr: Participant - Specimen Collector - hl7:ClinicalDocument > hl7:participant (Specimen Collector) > hl7:associatedEntity > @classCode<br>Map:APSRv2.1=hl7:assignedEntity - hl7:assignedEntity > hl7:code > @codeSystem<br>Map:APSRv2.1=[Problem] hl7:organizer - [Problem] hl7:organizer > hl7:participant > hl7:participantRole<br>Map:APSRv2.1=[Problem] hl7:organizer - [Problem] hl7:organizer > hl7:component [Any kind of AP observation] > hl7:observation > hl7:participant > hl7:participantRole<br>Map:ASPRv2.1=hl7:assignedEntity - hl7:assignedEntity > hl7:code<br>Map:CTGOV=Board Contact<br>Map:CTRPv1.0=OrganizationalContact.typeCode<br>Map:CTRPv3.8=OrganizationalContact.typeCode<br>Map:CTRRr3=OrganizationalContact.typeCode<br>Map:CTRv1.0=OrganizationalContact.typeCode<br>Map:Vendor1v1.1=StaffMember.roleCode<br>
+						<div class="ObjectDetailsNotes"><table>
+	<tr>
+		<td valign="top">
+			<i>Notes: </i><span style="margin-left: .4cm;"> </span>
+		</td>
+		<td>
+			DEFINITION:&lt;br/&gt;A coded value specifying the type of responsibility the organization staff performs in this context.&lt;br/&gt;&lt;br/&gt;EXAMPLE(S):&lt;br/&gt;Clinical Research Associate, Data Manager, Laboratory technician&lt;br/&gt;&lt;br/&gt;OTHER NAME(S):&lt;br/&gt;&lt;br/&gt;NOTE(S):&lt;br/&gt;&lt;br/&gt;&lt;br/&gt;&lt;br/&gt;
+		</td>
+	</tr>
+</table></div>
+
+						
+				</td>
+			</tr>			<tr>
+				<td width="100%" class="TableRow">
+					<i>Public BAG&lt;TEL&gt;</i><br /><strong>&nbsp;&nbsp;telecomAddress</strong>
+				</td>
+			</tr>
+			<tr>
+				<td class="TableRowBottomDashed"  colspan="1">										
+					<a href="#" onclick="parent.toggleData('DetailsImageAttributes840')" style="text-decoration: none; color: #000000;"><img src="../../images/plus03.gif" align="absmiddle" id="DetailsImageAttributes840" border="0" />Details:</a>
+					<table border="0" cellspacing="0" cellpadding="0" class="Table" style="padding: 4px 18px;">
+					
+						<tr id="DetailsImageAttributes840_00" style="display: none;">
+							<td width="75"><i>Alias:</i></td>
+							<td></td>
+						</tr>
+						<tr id="DetailsImageAttributes840_01" style="display: none;">
+							<td width="75"><i>Initial:</i></td>
+							<td></td>
+						</tr>
+						<tr id="DetailsImageAttributes840_02" style="display: none;">
+							<td width="75"><i>Stereotype: </i></td>
+							<td></td>
+						</tr>
+						<tr id="DetailsImageAttributes840_03" style="display: none;">
+							<td width="75"><i>Ordered: </i></td>
+							<td></td>
+						</tr>
+						<tr id="DetailsImageAttributes840_04" style="display: none;">
+							<td width="75"><i>Range: </i></td>
+							<td>Range:0 to *</td>
+						</tr>
+						<tr id="DetailsImageAttributes840_05" style="display: none;">
+							<td width="75"><i>Transient: </i></td>
+							<td>False</td>
+						</tr>
+						<tr id="DetailsImageAttributes840_06" style="display: none;">
+							<td width="75"><i>Derived: </i></td>
+							<td>False</td>
+						</tr>
+							<tr id="DetailsImageAttributes840_07" style="display: none;">
+							<td width="75"><i>IsID: </i></td>
+						<td>False</td>
+						</tr>
+					</table>
+					
+					Map:APSRv2.1=hl7:author - hl7:author > hl7:assignedAuthor > hl7:telecom<br>Map:APSRv2.1=Hdr: Information Recipient - hl7:ClinicalDocument > hl7:informationRecipient > hl7:intendedRecipient > hl7:telecom<br>Map:APSRv2.1=Hdr: Participant - Specimen Collector - hl7:ClinicalDocument > hl7:participant (Specimen Collector) > hl7:associatedEntity > hl7:telecom<br>Map:APSRv2.1=hl7:assignedEntity - hl7:assignedEntity > hl7:telelcom<br>Map:APSRv2.1=[Problem] hl7:organizer - [Problem] hl7:organizer > hl7:participant > hl7:participantRole > hl7:telecom<br>Map:APSRv2.1=[Problem] hl7:organizer - [Problem] hl7:organizer > hl7:component [Any kind of AP observation] > hl7:observation > hl7:participant > hl7:participantRole > hl7:telecom<br>Map:C3PRv2.9=SiteResearchStaff.phoneNumber<br>Map:caAERSv2.2=PersonContact.ReportPerson.Reporter.contactMechanisms<br>Map:caAERSv2.2=PersonContact.ReportPerson.Submitter.contactMechanisms<br>Map:caAERSv2.2=SiteResearchStaff.faxNumber<br>Map:caAERSv2.2=ContactMechanismBasedRecipient.address<br>Map:caAERSv2.2=SiteResearchStaff.emailAddress<br>Map:caAERSv2.2=ResearchStaff.faxNumber<br>Map:caAERSv2.2=ResearchStaff.phoneNumber<br>Map:CTRPv1.0=ClinicalResearchStaff.telecomAddress<br>Map:CTRv1.0=ResearchStaff.telecomAddress<br>Map:ICSRr2=AssignedEntity.telecom (in IndividualCaseSafetyReport)<br>Map:Vendor1v1.1=StaffMember.telecomAddress<br>
+						<div class="ObjectDetailsNotes"><table>
+	<tr>
+		<td valign="top">
+			<i>Notes: </i><span style="margin-left: .4cm;"> </span>
+		</td>
+		<td>
+			DEFINITION:&lt;br/&gt;A sequence of digits or characters used to identify a particular telephone, fax, or email of the organization staff.&lt;br/&gt;&lt;br/&gt;EXAMPLE(S):&lt;br/&gt;&lt;br/&gt;OTHER NAME(S):&lt;br/&gt;&lt;br/&gt;NOTE(S):&lt;br/&gt;The set of digits that serves as the address for a telephone device. Included in the phone number are country, city, and area codes needed to uniquely address the telephone. A URL or e-mail would be similarly described.&lt;br/&gt;
+		</td>
+	</tr>
+</table></div>
+
+						
+				</td>
+			</tr>			<tr>
+				<td width="100%" class="TableRow">
+					<i>Public ST</i><br /><strong>&nbsp;&nbsp;title</strong>
+				</td>
+			</tr>
+			<tr>
+				<td class="TableRowBottomDashed"  colspan="1">										
+					<a href="#" onclick="parent.toggleData('DetailsImageAttributes841')" style="text-decoration: none; color: #000000;"><img src="../../images/plus03.gif" align="absmiddle" id="DetailsImageAttributes841" border="0" />Details:</a>
+					<table border="0" cellspacing="0" cellpadding="0" class="Table" style="padding: 4px 18px;">
+					
+						<tr id="DetailsImageAttributes841_00" style="display: none;">
+							<td width="75"><i>Alias:</i></td>
+							<td></td>
+						</tr>
+						<tr id="DetailsImageAttributes841_01" style="display: none;">
+							<td width="75"><i>Initial:</i></td>
+							<td></td>
+						</tr>
+						<tr id="DetailsImageAttributes841_02" style="display: none;">
+							<td width="75"><i>Stereotype: </i></td>
+							<td></td>
+						</tr>
+						<tr id="DetailsImageAttributes841_03" style="display: none;">
+							<td width="75"><i>Ordered: </i></td>
+							<td></td>
+						</tr>
+						<tr id="DetailsImageAttributes841_04" style="display: none;">
+							<td width="75"><i>Range: </i></td>
+							<td>Range:0 to 1</td>
+						</tr>
+						<tr id="DetailsImageAttributes841_05" style="display: none;">
+							<td width="75"><i>Transient: </i></td>
+							<td>False</td>
+						</tr>
+						<tr id="DetailsImageAttributes841_06" style="display: none;">
+							<td width="75"><i>Derived: </i></td>
+							<td>False</td>
+						</tr>
+							<tr id="DetailsImageAttributes841_07" style="display: none;">
+							<td width="75"><i>IsID: </i></td>
+						<td>False</td>
+						</tr>
+					</table>
+					
+					Map:caAERSv2.2=Person.title<br>Map:CTRRr3=StudyColleague.officialTitle<br>Map:CTRv1.0=ResearchStaff.jobTitle<br>Map:SDTM IGv3.1.3=TU.TUEVAL<br>Map:SDTM IGv3.1.3=FA.FAEVAL<br>Map:SDTM IGv3.1.3=PE.PEEVAL<br>Map:SDTM IGv3.1.3=TR.TREVAL<br>Map:SDTM IGv3.1.3=EG.EGEVAL<br>Map:SDTM IGv3.1.3=RS.RSEVAL<br>Map:SDTM IGv3.2=RS.RSEVAL<br>Map:SDTM IGv3.2=QS.QSEVAL<br>Map:SDTM IGv3.2=PE.PEEVAL<br>Map:SDTM IGv3.2=FA.FAEVAL<br>Map:SDTM IGv3.2=TU.TUEVAL<br>Map:SDTM IGv3.2=TR.TREVAL<br>Map:SDTM IGv3.2=EG.EGEVAL<br>Map:Vendor1v1.1=StaffMember.title<br>
+						<div class="ObjectDetailsNotes"><table>
+	<tr>
+		<td valign="top">
+			<i>Notes: </i><span style="margin-left: .4cm;"> </span>
+		</td>
+		<td>
+			DEFINITION:&lt;br/&gt;A local text name for the organization staff in this context.&lt;br/&gt;&lt;br/&gt;EXAMPLE(S):&lt;br/&gt;Head of Cardiology, Department Chair (Cardiology)&lt;br/&gt;&lt;br/&gt;OTHER NAME(S):&lt;br/&gt;&lt;br/&gt;NOTE(S): This is distinct from the roleCode, which is a standardized way of representing the function of the organization staff in the context of the organization. This local name may vary greatly from organization to organization. This is typically what is printed on a business card.&lt;br/&gt;
+		</td>
+	</tr>
+</table></div>
+
+						
+				</td>
+			</tr>
+	</table>
+</div>
+		<div class="ItemBody" id="AssociationsToTable">
+			<table border="0" cellspacing="0" cellpadding="0" class="Table">
+				<tr>
+					<td width="40%" class="TableHeading">Element</td>
+					<td width="30%" class="TableHeading">Source Role</td>
+					<td width="30%" class="TableHeading">Target Role</td>
+				</tr>
+				<tr>
+					<td width="40%" class="TableRow" valign="top">
+						<a href="EA121.htm">OrganizationStaff</a><br />
+						Class &nbsp;
+					</td>
+					<td width="30%" class="TableRow" valign="top">
+						<strong>Name:</strong> performedOrganizationStaffRole<br />
+						&nbsp;
+					</td>
+					<td width="30%" class="TableRow" valign="top">
+						<strong>Name:</strong> performingOrganizationStaff<br />
+						&nbsp;	
+					</td>
+				</tr>
+				<tr>
+					<td class="TableRowBottomDashed"  colspan="3">
+						<div class="DetailsDivParent"><img src="../../images/minus03.gif" align="absmiddle" id="DetailsImageLink842" onclick="parent.toggleDiv('detailsDIVLink842','DetailsImageLink842')" />Details:
+							<div id="detailsDIVLink842" class="DetailsDiv" >
+							<div class="ObjectDetailsNotes">DESCRIPTION:&lt;br/&gt;Each OrganizationStaffRole always is a function performed by one OrganizationStaff. Each OrganizationStaff might function as one or more OrganizationStaffRole. &lt;br/&gt;&lt;br/&gt;DEFINITION:&lt;br/&gt;&lt;br/&gt;EXAMPLE(S):&lt;br/&gt;&lt;br/&gt;OTHER NAME(S):&lt;br/&gt;&lt;br/&gt;NOTE(S):&lt;br/&gt;&lt;br/&gt;</div>
+
+							</div>
+						</div>
+					</td>
+				</tr>
+
+			</table>
+		</div>
+		<div class="ItemBody" id="AssociationsFromTable">
+			<table border="0" cellspacing="0" cellpadding="0" class="Table">
+				<tr>
+					<td width="40%" class="TableHeading">Element</td>
+					<td width="30%" class="TableHeading">Source Role</td>
+					<td width="30%" class="TableHeading">Target Role</td>
+				</tr>
+				<tr>
+					<td width="40%" class="TableRow" valign="top">
+						<a href="EA152.htm">StaffInterest</a><br />
+						Class &nbsp;
+					</td>
+					<td width="30%" class="TableRow" valign="top">
+						<strong>Name:</strong> ofInterestStaffInterest<br />
+						&nbsp;
+					</td>
+					<td width="30%" class="TableRow" valign="top">
+						<strong>Name:</strong> interestedOrganizationStaffRole<br />
+						&nbsp;	
+					</td>
+				</tr>
+				<tr>
+					<td class="TableRowBottomDashed"  colspan="3">
+						<div class="DetailsDivParent"><img src="../../images/minus03.gif" align="absmiddle" id="DetailsImageLink843" onclick="parent.toggleDiv('detailsDIVLink843','DetailsImageLink843')" />Details:
+							<div id="detailsDIVLink843" class="DetailsDiv" >
+							<div class="ObjectDetailsNotes">DESCRIPTION:&lt;br/&gt;Each StaffInterest might be an interest of one OrganizationStaffRole.&#160;&#160;Each OrganizationStaffRole might have interest in one or more StaffInterest.&lt;br/&gt;&lt;br/&gt;DEFINITION:&lt;br/&gt;&lt;br/&gt;EXAMPLE(S):&lt;br/&gt;&lt;br/&gt;OTHER NAME(S):&lt;br/&gt;&lt;br/&gt;NOTE(S): &lt;br/&gt;</div>
+
+							</div>
+						</div>
+					</td>
+				</tr>
+				<tr>
+					<td width="40%" class="TableRow" valign="top">
+						<a href="EA142.htm">ReportReceiver</a><br />
+						Class &nbsp;
+					</td>
+					<td width="30%" class="TableRow" valign="top">
+						<strong>Name:</strong> performedReportReceiver<br />
+						&nbsp;
+					</td>
+					<td width="30%" class="TableRow" valign="top">
+						<strong>Name:</strong> performingOrganizationStaffRole<br />
+						&nbsp;	
+					</td>
+				</tr>
+				<tr>
+					<td class="TableRowBottomDashed"  colspan="3">
+						<div class="DetailsDivParent"><img src="../../images/minus03.gif" align="absmiddle" id="DetailsImageLink844" onclick="parent.toggleDiv('detailsDIVLink844','DetailsImageLink844')" />Details:
+							<div id="detailsDIVLink844" class="DetailsDiv" >
+							<div class="ObjectDetailsNotes">DESCRIPTION:&lt;br/&gt;Each ReportReceiver might be a function performed by one OrganizationStaffRole.&#160;&#160;Each OrganizationStaffRole might function as one or more ReportReceiver.&lt;br/&gt;&lt;br/&gt;DEFINITION:&lt;br/&gt;&lt;br/&gt;EXAMPLE(S):&lt;br/&gt;&lt;br/&gt;OTHER NAME(S):&lt;br/&gt;&lt;br/&gt;NOTE(S):&lt;br/&gt;&lt;br/&gt;</div>
+
+							</div>
+						</div>
+					</td>
+				</tr>
+				<tr>
+					<td width="40%" class="TableRow" valign="top">
+						<a href="EA125.htm">Performer</a><br />
+						Class &nbsp;
+					</td>
+					<td width="30%" class="TableRow" valign="top">
+						<strong>Name:</strong> performedPerformer<br />
+						&nbsp;
+					</td>
+					<td width="30%" class="TableRow" valign="top">
+						<strong>Name:</strong> performingOrganizationStaffRole<br />
+						&nbsp;	
+					</td>
+				</tr>
+				<tr>
+					<td class="TableRowBottomDashed"  colspan="3">
+						<div class="DetailsDivParent"><img src="../../images/minus03.gif" align="absmiddle" id="DetailsImageLink845" onclick="parent.toggleDiv('detailsDIVLink845','DetailsImageLink845')" />Details:
+							<div id="detailsDIVLink845" class="DetailsDiv" >
+							<div class="ObjectDetailsNotes">DESCRIPTION:&lt;br/&gt;Each Performer might be a function performed by one OrganizationStaffRole. Each OrganizationStaffRole might function as one or more Performer. &lt;br/&gt;&lt;br/&gt;DEFINITION:&lt;br/&gt;&lt;br/&gt;EXAMPLE(S):&lt;br/&gt;&lt;br/&gt;OTHER NAME(S):&lt;br/&gt;&lt;br/&gt;NOTE(S):&lt;br/&gt;</div>
+
+							</div>
+						</div>
+					</td>
+				</tr>
+
+			</table>
+		</div>
+<div class="ItemBody" id="TaggedValTable">
+	<table align="center" border="0" cellspacing="0" cellpadding="0" class="Table">
+		<tr>
+			<td width="50%" class="TableHeading">Tag</td>
+			<td width="50%" class="TableHeading">Value</td>
+		</tr>
+					<tr>
+				<td width="50%" class="TableRow" valign="top">Map:APSRv2.1</td>
+				<td width="50%" class="TableRow" valign="top">hl7:assignedEntity - hl7:assignedEntity<br /></td>
+			</tr>	
+			<tr>
+				<td class="TableRowBottomDashed"  colspan="2">
+					<div class="DetailsDivParent"><img src="../../images/minus03.gif" align="absmiddle" id="DetailsImageScenario846" onclick="parent.toggleDiv('detailsDIVScenario846','DetailsImageScenario846')" />Details:
+						<div id="detailsDIVScenario846" class="DetailsDiv" >
+						&nbsp;
+						</div>
+					</div>
+				</td>
+			</tr>			<tr>
+				<td width="50%" class="TableRow" valign="top">Map:APSRv2.1</td>
+				<td width="50%" class="TableRow" valign="top">Hdr: Authenticator - hl7:ClinicalDocument &gt; hl7:authenticator &gt; hl7:assignedEntity [see group]</td>
+			</tr>	
+			<tr>
+				<td class="TableRowBottomDashed"  colspan="2">
+					<div class="DetailsDivParent"><img src="../../images/minus03.gif" align="absmiddle" id="DetailsImageScenario847" onclick="parent.toggleDiv('detailsDIVScenario847','DetailsImageScenario847')" />Details:
+						<div id="detailsDIVScenario847" class="DetailsDiv" >
+						&nbsp;
+						</div>
+					</div>
+				</td>
+			</tr>			<tr>
+				<td width="50%" class="TableRow" valign="top">Map:APSRv2.1</td>
+				<td width="50%" class="TableRow" valign="top">Hdr: Data Enterer - hl7:ClinicalDocument &gt; hl7:dataEnterer &gt; hl7:assignedEntity [see group]</td>
+			</tr>	
+			<tr>
+				<td class="TableRowBottomDashed"  colspan="2">
+					<div class="DetailsDivParent"><img src="../../images/minus03.gif" align="absmiddle" id="DetailsImageScenario848" onclick="parent.toggleDiv('detailsDIVScenario848','DetailsImageScenario848')" />Details:
+						<div id="detailsDIVScenario848" class="DetailsDiv" >
+						&nbsp;
+						</div>
+					</div>
+				</td>
+			</tr>			<tr>
+				<td width="50%" class="TableRow" valign="top">Map:APSRv2.1</td>
+				<td width="50%" class="TableRow" valign="top">Hdr: Encompassing Encounter - hl7:ClinicalDocument &gt; hl7:componentOf &gt; hl7:encompassingEncounter &gt; hl7:responsibleParty &gt; hl7:assignedEntity [see group]</td>
+			</tr>	
+			<tr>
+				<td class="TableRowBottomDashed"  colspan="2">
+					<div class="DetailsDivParent"><img src="../../images/minus03.gif" align="absmiddle" id="DetailsImageScenario849" onclick="parent.toggleDiv('detailsDIVScenario849','DetailsImageScenario849')" />Details:
+						<div id="detailsDIVScenario849" class="DetailsDiv" >
+						&nbsp;
+						</div>
+					</div>
+				</td>
+			</tr>			<tr>
+				<td width="50%" class="TableRow" valign="top">Map:APSRv2.1</td>
+				<td width="50%" class="TableRow" valign="top">Hdr: Encompassing Encounter - hl7:ClinicalDocument &gt; hl7:componentOf &gt; hl7:encompassingEncounter &gt; hl7:encounterParticipant &gt; hl7:assignedEntity [see group]</td>
+			</tr>	
+			<tr>
+				<td class="TableRowBottomDashed"  colspan="2">
+					<div class="DetailsDivParent"><img src="../../images/minus03.gif" align="absmiddle" id="DetailsImageScenario850" onclick="parent.toggleDiv('detailsDIVScenario850','DetailsImageScenario850')" />Details:
+						<div id="detailsDIVScenario850" class="DetailsDiv" >
+						&nbsp;
+						</div>
+					</div>
+				</td>
+			</tr>			<tr>
+				<td width="50%" class="TableRow" valign="top">Map:APSRv2.1</td>
+				<td width="50%" class="TableRow" valign="top">Hdr: Informant - hl7:ClinicalDocument &gt; hl7:informant &gt; CHOICE OF ASSIGNED ENTITY OR RELATED ENTITY &gt; hl7:assignedEntity [see group]</td>
+			</tr>	
+			<tr>
+				<td class="TableRowBottomDashed"  colspan="2">
+					<div class="DetailsDivParent"><img src="../../images/minus03.gif" align="absmiddle" id="DetailsImageScenario851" onclick="parent.toggleDiv('detailsDIVScenario851','DetailsImageScenario851')" />Details:
+						<div id="detailsDIVScenario851" class="DetailsDiv" >
+						&nbsp;
+						</div>
+					</div>
+				</td>
+			</tr>			<tr>
+				<td width="50%" class="TableRow" valign="top">Map:APSRv2.1</td>
+				<td width="50%" class="TableRow" valign="top">Hdr: Information Recipient - hl7:ClinicalDocument &gt; hl7:informationRecipient &gt; hl7:intendedRecipient</td>
+			</tr>	
+			<tr>
+				<td class="TableRowBottomDashed"  colspan="2">
+					<div class="DetailsDivParent"><img src="../../images/minus03.gif" align="absmiddle" id="DetailsImageScenario852" onclick="parent.toggleDiv('detailsDIVScenario852','DetailsImageScenario852')" />Details:
+						<div id="detailsDIVScenario852" class="DetailsDiv" >
+						&nbsp;
+						</div>
+					</div>
+				</td>
+			</tr>			<tr>
+				<td width="50%" class="TableRow" valign="top">Map:APSRv2.1</td>
+				<td width="50%" class="TableRow" valign="top">Hdr: Legal Authenticator - hl7:ClinicalDocument &gt; hl7:legalAuthenticator &gt; hl7:assignedEntity [see group]</td>
+			</tr>	
+			<tr>
+				<td class="TableRowBottomDashed"  colspan="2">
+					<div class="DetailsDivParent"><img src="../../images/minus03.gif" align="absmiddle" id="DetailsImageScenario853" onclick="parent.toggleDiv('detailsDIVScenario853','DetailsImageScenario853')" />Details:
+						<div id="detailsDIVScenario853" class="DetailsDiv" >
+						&nbsp;
+						</div>
+					</div>
+				</td>
+			</tr>			<tr>
+				<td width="50%" class="TableRow" valign="top">Map:APSRv2.1</td>
+				<td width="50%" class="TableRow" valign="top">Hdr: Service Event - hl7:ClinicalDocument &gt; hl7:documentationOf &gt; hl7:serviceEvent &gt; hl7:performer &gt; hl7:assignedEntity [see group]<br /></td>
+			</tr>	
+			<tr>
+				<td class="TableRowBottomDashed"  colspan="2">
+					<div class="DetailsDivParent"><img src="../../images/minus03.gif" align="absmiddle" id="DetailsImageScenario854" onclick="parent.toggleDiv('detailsDIVScenario854','DetailsImageScenario854')" />Details:
+						<div id="detailsDIVScenario854" class="DetailsDiv" >
+						&nbsp;
+						</div>
+					</div>
+				</td>
+			</tr>			<tr>
+				<td width="50%" class="TableRow" valign="top">Map:APSRv2.1</td>
+				<td width="50%" class="TableRow" valign="top">[Problem] hl7:organizer - [Problem] hl7:organizer &gt; hl7:component [Lab Obs] &gt; hl7:observation &gt; hl7:performer &gt; hl7:assignedEntity [see group]</td>
+			</tr>	
+			<tr>
+				<td class="TableRowBottomDashed"  colspan="2">
+					<div class="DetailsDivParent"><img src="../../images/minus03.gif" align="absmiddle" id="DetailsImageScenario855" onclick="parent.toggleDiv('detailsDIVScenario855','DetailsImageScenario855')" />Details:
+						<div id="detailsDIVScenario855" class="DetailsDiv" >
+						&nbsp;
+						</div>
+					</div>
+				</td>
+			</tr>			<tr>
+				<td width="50%" class="TableRow" valign="top">Map:APSRv2.1</td>
+				<td width="50%" class="TableRow" valign="top">hl7:entryRelationship [CDA Supply Container] - hl7:entryRelationship [CDA Supply Container] &gt; hl7:supply &gt; hl7:performer &gt; hl7:assignedEntity [see group]</td>
+			</tr>	
+			<tr>
+				<td class="TableRowBottomDashed"  colspan="2">
+					<div class="DetailsDivParent"><img src="../../images/minus03.gif" align="absmiddle" id="DetailsImageScenario856" onclick="parent.toggleDiv('detailsDIVScenario856','DetailsImageScenario856')" />Details:
+						<div id="detailsDIVScenario856" class="DetailsDiv" >
+						&nbsp;
+						</div>
+					</div>
+				</td>
+			</tr>			<tr>
+				<td width="50%" class="TableRow" valign="top">Map:APSRv2.1</td>
+				<td width="50%" class="TableRow" valign="top">hl7:entryRelationship [CDA Supply Container] - hl7:entryRelationship [CDA Supply Container] &gt; hl7:supply &gt; hl7:informant &gt; CHOICE OF ASSIGNED ENTITY OR RELATED ENTITY &gt; hl7:assignedEntity [see group]</td>
+			</tr>	
+			<tr>
+				<td class="TableRowBottomDashed"  colspan="2">
+					<div class="DetailsDivParent"><img src="../../images/minus03.gif" align="absmiddle" id="DetailsImageScenario857" onclick="parent.toggleDiv('detailsDIVScenario857','DetailsImageScenario857')" />Details:
+						<div id="detailsDIVScenario857" class="DetailsDiv" >
+						&nbsp;
+						</div>
+					</div>
+				</td>
+			</tr>			<tr>
+				<td width="50%" class="TableRow" valign="top">Map:APSRv2.1</td>
+				<td width="50%" class="TableRow" valign="top">SB: Procedure Steps Section - hl7:ClinicalDocument &gt; hl7:component &gt; hl7:structuredBody &gt; hl7:component [Proc Steps] &gt; hl7:section &gt; hl7:entry &gt; hl7:procedure &gt; hl7:performer &gt; hl7:assignedEntity [see group]</td>
+			</tr>	
+			<tr>
+				<td class="TableRowBottomDashed"  colspan="2">
+					<div class="DetailsDivParent"><img src="../../images/minus03.gif" align="absmiddle" id="DetailsImageScenario858" onclick="parent.toggleDiv('detailsDIVScenario858','DetailsImageScenario858')" />Details:
+						<div id="detailsDIVScenario858" class="DetailsDiv" >
+						&nbsp;
+						</div>
+					</div>
+				</td>
+			</tr>			<tr>
+				<td width="50%" class="TableRow" valign="top">Map:APSRv2.1</td>
+				<td width="50%" class="TableRow" valign="top">[Problem] hl7:organizer - [Problem] hl7:organizer &gt; hl7:informant &gt; CHOICE OF ASSIGNED ENTITY OR RELATED ENTITY &gt; hl7:assignedEntity [see group]</td>
+			</tr>	
+			<tr>
+				<td class="TableRowBottomDashed"  colspan="2">
+					<div class="DetailsDivParent"><img src="../../images/minus03.gif" align="absmiddle" id="DetailsImageScenario859" onclick="parent.toggleDiv('detailsDIVScenario859','DetailsImageScenario859')" />Details:
+						<div id="detailsDIVScenario859" class="DetailsDiv" >
+						&nbsp;
+						</div>
+					</div>
+				</td>
+			</tr>			<tr>
+				<td width="50%" class="TableRow" valign="top">Map:APSRv2.1</td>
+				<td width="50%" class="TableRow" valign="top">[Problem] hl7:organizer - [Problem] hl7:organizer &gt; hl7:performer &gt; hl7:assignedEntity [see group]</td>
+			</tr>	
+			<tr>
+				<td class="TableRowBottomDashed"  colspan="2">
+					<div class="DetailsDivParent"><img src="../../images/minus03.gif" align="absmiddle" id="DetailsImageScenario860" onclick="parent.toggleDiv('detailsDIVScenario860','DetailsImageScenario860')" />Details:
+						<div id="detailsDIVScenario860" class="DetailsDiv" >
+						&nbsp;
+						</div>
+					</div>
+				</td>
+			</tr>			<tr>
+				<td width="50%" class="TableRow" valign="top">Map:APSRv2.1</td>
+				<td width="50%" class="TableRow" valign="top">[Problem] hl7:organizer - [Problem] hl7:organizer &gt; hl7:component [Any kind of AP observation] &gt; hl7:observation &gt; hl7:performer &gt; hl7:assignedEntity [see group]</td>
+			</tr>	
+			<tr>
+				<td class="TableRowBottomDashed"  colspan="2">
+					<div class="DetailsDivParent"><img src="../../images/minus03.gif" align="absmiddle" id="DetailsImageScenario861" onclick="parent.toggleDiv('detailsDIVScenario861','DetailsImageScenario861')" />Details:
+						<div id="detailsDIVScenario861" class="DetailsDiv" >
+						&nbsp;
+						</div>
+					</div>
+				</td>
+			</tr>			<tr>
+				<td width="50%" class="TableRow" valign="top">Map:APSRv2.1</td>
+				<td width="50%" class="TableRow" valign="top">[Problem] hl7:organizer - [Problem] hl7:organizer &gt; hl7:component [Any kind of AP observation] &gt; hl7:observation &gt; hl7:informant &gt; CHOICE OF ASSIGNED ENTITY OR RELATED ENTITY &gt; hl7:assignedEntity [see group]</td>
+			</tr>	
+			<tr>
+				<td class="TableRowBottomDashed"  colspan="2">
+					<div class="DetailsDivParent"><img src="../../images/minus03.gif" align="absmiddle" id="DetailsImageScenario862" onclick="parent.toggleDiv('detailsDIVScenario862','DetailsImageScenario862')" />Details:
+						<div id="detailsDIVScenario862" class="DetailsDiv" >
+						&nbsp;
+						</div>
+					</div>
+				</td>
+			</tr>			<tr>
+				<td width="50%" class="TableRow" valign="top">Map:APSRv2.1</td>
+				<td width="50%" class="TableRow" valign="top">Hdr: Participant - Specimen Collector - hl7:ClinicalDocument &gt; hl7:participant (Specimen Collector) &gt; hl7:associatedEntity</td>
+			</tr>	
+			<tr>
+				<td class="TableRowBottomDashed"  colspan="2">
+					<div class="DetailsDivParent"><img src="../../images/minus03.gif" align="absmiddle" id="DetailsImageScenario863" onclick="parent.toggleDiv('detailsDIVScenario863','DetailsImageScenario863')" />Details:
+						<div id="detailsDIVScenario863" class="DetailsDiv" >
+						&nbsp;
+						</div>
+					</div>
+				</td>
+			</tr>			<tr>
+				<td width="50%" class="TableRow" valign="top">Map:Vendor1v1.1</td>
+				<td width="50%" class="TableRow" valign="top">StaffMember</td>
+			</tr>	
+			<tr>
+				<td class="TableRowBottomDashed"  colspan="2">
+					<div class="DetailsDivParent"><img src="../../images/minus03.gif" align="absmiddle" id="DetailsImageScenario864" onclick="parent.toggleDiv('detailsDIVScenario864','DetailsImageScenario864')" />Details:
+						<div id="detailsDIVScenario864" class="DetailsDiv" >
+						&nbsp;
+						</div>
+					</div>
+				</td>
+			</tr>
+	</table>
+</div>		<div class="ItemBody" id="LinksTable">
+			<table align="center" border="0" cellspacing="0" cellpadding="0" class="Table">
+				<tr>
+					<td width="30%" class="TableHeading">Object</td>
+					<td width="10%" class="TableHeading">Type</td>
+					<td width="10%" class="TableHeading">Connection</td>
+					<td width="10%" class="TableHeading">Direction</td>
+					<td width="40%" class="TableHeading">Notes</td>
+				</tr>
+				<tr>
+					<td width="30%" class="TableRow" valign="top"><a href="EA148.htm">ResearchStaff</a></td>
+					<td width="10%" class="TableRow" valign="top">Class</td>
+					<td width="10%" class="TableRow" valign="top">Generalization</td>
+					<td width="10%" class="TableRow" valign="top">From</td>
+					<td width="40%" class="TableRow" valign="top">DESCRIPTION:
+Each ResearchStaff always specializes one OrganizationStaffRole. Each OrganizationStaffRole might be specialized by one ResearchStaff.
+
+DEFINITION:
+
+EXAMPLE(S):
+
+OTHER NAME(S):
+
+NOTE(S):</td>
+				</tr>
+
+			</table>
+		</div>
+	</div>
+<div class="pageFooter"></div>
+ 
+</body>
+</html>

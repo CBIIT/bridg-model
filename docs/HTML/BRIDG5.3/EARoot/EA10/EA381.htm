@@ -1,0 +1,743 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>Study Conduct Sub-Domain::PerformedActivityRelationship</title>
+<link href="../../css/ea.css" rel="stylesheet" type="text/css" />
+<script>
+function initPage(src) {	
+	if(parent==this&&(this.location+"").indexOf('EARoot')!=-1)
+		document.location=(this.location+"").substring(0,(this.location+"").indexOf('EARoot'))+"index"+(this.location+"").substring((this.location+"").lastIndexOf('.'))+"?goto="+((this.location+"").substring((this.location+"").indexOf('EARoot')+7,(this.location+"").lastIndexOf('.')).replace(/\//g,':').replace(/EA/g,""));
+	else
+		parent.initPage(src);
+}
+
+function nameClassifier(name, separator)
+{
+  var str = name;
+  var classifierName;
+  var node = document.getElementById('name_classifier');
+  if(node != null)
+  {
+    classifierName = node.innerHTML;
+  }
+  if(classifierName != "")
+  {
+   str += separator + classifierName;
+  }
+  
+  return str;
+}
+</script>
+</head>
+<body onload="initPage(this);" class="Content">
+<div class="pageHeader"></div>
+<div class="PageBody">
+	<div id="name_classifier" style="display: none;"></div>
+	<span class="ObjectTitle"><script type="text/javascript">document.write(nameClassifier("PerformedActivityRelationship", " : "))</script>  : Public   Class</span>
+	<table border="0" cellpadding="0" cellspacing="0" class="ObjectDetails">
+		<tr>
+			<td width="15%" class="ObjectDetailsTopic">Created:</td>
+			<td width="85%" class="ObjectDetailsValue">7/12/2012 2:32:49 PM</td>
+		</tr>
+		<tr>
+			<td class="ObjectDetailsTopic">Modified:</td>
+			<td class="ObjectDetailsValue">3/18/2019 11:23:42 PM</td>
+		</tr>
+		<tr style="height: 10px"><td colspan="2"></td></tr>
+		<tr>
+			<td class="ObjectDetailsTopic"><img src="../../images/plus03.gif" align="absmiddle" id="proj" onclick="parent.toggleData(this.id)" />Project:</td>
+			<td class="ObjectDetailsValue"></td>
+		</tr>
+		<tr id="proj00" style="display: none;">
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Author:</td>
+			<td class="ObjectDetailsValue">BRIDG SCC</td>
+		</tr>
+		<tr id="proj01" style="display: none;">
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Version:</td>
+			<td class="ObjectDetailsValue">1.0</td>
+		</tr>
+		<tr id="proj02" style="display: none;">
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Phase:</td>
+			<td class="ObjectDetailsValue">1.0</td>
+		</tr>
+		<tr id="proj03" style="display: none;">
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Status:</td>
+			<td class="ObjectDetailsValue"><none></td>
+		</tr>
+		<tr id="proj04" style="display: none;">
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Complexity:</td>
+			<td class="ObjectDetailsValue">Easy</td>
+		</tr>
+		<tr id="proj05" style="display: none;">
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Difficulty:</td>
+			<td class="ObjectDetailsValue"></td>
+		</tr>
+		<tr id="proj06" style="display: none;">
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Priority:</td>
+			<td class="ObjectDetailsValue"></td>
+		</tr>
+		<tr id="proj05" style="display: none;">
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Multiplicity:</td>
+			<td class="ObjectDetailsValue"></td>
+		</tr>
+		<tr>
+			<td class="ObjectDetailsTopic"><img src="../../images/plus03.gif" align="absmiddle" id="adv" onclick="parent.toggleData(this.id)" />Advanced:</td>
+			<td class="ObjectDetailsValue"></td>
+		</tr>
+		<tr id="adv00" style="display: none;">
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">UUID:</td>
+			<td class="ObjectDetailsValue">{20A5F35B-9A01-435e-93E3-DD6F8BC36030}</td>
+		</tr>
+		<tr id="adv01" style="display: none;">
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Appears In:</td>
+			<td class="ObjectDetailsValue"><a href="../EA1.htm">UML-Based Comprehensive BRIDG Model Diagram</a>, <a href="../EA3/EA61.htm">View CM: Common</a>, <a href="EA366.htm">View SC: Study Conduct</a>, <a href="../EA5/EA178.htm">View IM: Imaging</a>, <a href="../EA5/EA180.htm">Imaging Acquisition</a>, <a href="../EA5/EA182.htm">DICOM SR TID 1500 BRIDG Class Diagram</a>, <a href="../EA11/EA446.htm">SDTM 3.2 View</a>, <a href="../EA12/EA598.htm">Oncology & Imaging View</a>, <a href="../EA12/EA610.htm">SEER View</a>, <a href="../EA12/EA580.htm">Anatomic Pathology Structured Report (APSR)</a>, <a href="../EA12/EA586.htm">CDMH View</a>, <a href="../EA12/EA592.htm">NBIA View</a></td>
+		</tr>
+	</table>
+	<div class="ObjectDetailsNotes">DEFINITION:&lt;br/&gt;A reference from an activity to another activity or an external document. &lt;br/&gt;&lt;br/&gt;EXAMPLE(S):&lt;br/&gt;An unplanned substance administration occurs as part of a planned encounter.&lt;br/&gt;&lt;br/&gt;A planned substance administration occurs as part of an encounter that is different than the one in which it was originally planned.&lt;br/&gt;&lt;br/&gt;An unplanned encounter contains a number of activities.&lt;br/&gt;&lt;br/&gt;A reference from an observation to a concerning molecular pathology or genetic testing report&lt;br/&gt;&lt;br/&gt;OTHER NAME(S):&lt;br/&gt;&lt;br/&gt;NOTE(S):&lt;br/&gt;Using this association to represent composition is particularly relevant when one or both of the activities are not planned as the composition relationship can&#39;t be established using the normal PlannedCompositionRelationship or DefinedCompositionRelationship.&lt;br/&gt;</div>
+
+	<div class="TableGroup" id="TableGroup">
+		<ul class="ItemTitle">
+			<li onClick="parent.toggleItem('Attributes');" id="AttributesTitle">Attributes</li>
+			<li onClick="parent.toggleItem('AssociationsTo');" id="AssociationsToTitle">Associations To</li>
+			<li onClick="parent.toggleItem('TaggedVal');" id="TaggedValTitle">Tagged Values</li>
+			<li onClick="parent.toggleItem('Constraints');" id="ConstraintsTitle">Constraints</li>
+		</ul>
+<div class="ItemBody" id="AttributesTable">
+	<table border="0" cellspacing="0" cellpadding="0" class="Table">
+		<tr>
+			<td width="100%" class="TableHeading">Attribute</td>
+		</tr>
+						<tr>
+				<td width="100%" class="TableRow">
+					<i>Public BL</i><br /><strong>&nbsp;&nbsp;separableIndicator</strong>
+				</td>
+			</tr>
+			<tr>
+				<td class="TableRowBottomDashed"  colspan="1">										
+					<a href="#" onclick="parent.toggleData('DetailsImageAttributes2769')" style="text-decoration: none; color: #000000;"><img src="../../images/plus03.gif" align="absmiddle" id="DetailsImageAttributes2769" border="0" />Details:</a>
+					<table border="0" cellspacing="0" cellpadding="0" class="Table" style="padding: 4px 18px;">
+					
+						<tr id="DetailsImageAttributes2769_00" style="display: none;">
+							<td width="75"><i>Alias:</i></td>
+							<td></td>
+						</tr>
+						<tr id="DetailsImageAttributes2769_01" style="display: none;">
+							<td width="75"><i>Initial:</i></td>
+							<td></td>
+						</tr>
+						<tr id="DetailsImageAttributes2769_02" style="display: none;">
+							<td width="75"><i>Stereotype: </i></td>
+							<td></td>
+						</tr>
+						<tr id="DetailsImageAttributes2769_03" style="display: none;">
+							<td width="75"><i>Ordered: </i></td>
+							<td></td>
+						</tr>
+						<tr id="DetailsImageAttributes2769_04" style="display: none;">
+							<td width="75"><i>Range: </i></td>
+							<td>Range:0 to 1</td>
+						</tr>
+						<tr id="DetailsImageAttributes2769_05" style="display: none;">
+							<td width="75"><i>Transient: </i></td>
+							<td>False</td>
+						</tr>
+						<tr id="DetailsImageAttributes2769_06" style="display: none;">
+							<td width="75"><i>Derived: </i></td>
+							<td>False</td>
+						</tr>
+							<tr id="DetailsImageAttributes2769_07" style="display: none;">
+							<td width="75"><i>IsID: </i></td>
+						<td>False</td>
+						</tr>
+					</table>
+					
+					Map:APSRv2.1=[Problem] hl7:organizer - [Problem] hl7:organizer > hl7:component [Any kind of AP observation] > hl7:observation > hl7:reference > hl7:seperatableInd<br>Map:APSRv2.1=SB: Procedure Steps Section - hl7:ClinicalDocument > hl7:component > hl7:structuredBody > hl7:component [Proc Steps] > hl7:section > hl7:entry > hl7:procedure > hl7:reference > hl7:seperatableInd<br>
+						<div class="ObjectDetailsNotes"><table>
+	<tr>
+		<td valign="top">
+			<i>Notes: </i><span style="margin-left: .4cm;"> </span>
+		</td>
+		<td>
+			DEFINITION:&lt;br/&gt;Specifies whether the referencing activity is intended to be interpreted independently of the referenced item.&lt;br/&gt;&lt;br/&gt;EXAMPLE(S):&lt;br/&gt;&lt;br/&gt;OTHER NAME(S):&lt;br/&gt;&lt;br/&gt;NOTE(S):&lt;br/&gt;
+		</td>
+	</tr>
+</table></div>
+
+						
+				</td>
+			</tr>			<tr>
+				<td width="100%" class="TableRow">
+					<i>Public INT.NONNEG</i><br /><strong>&nbsp;&nbsp;sequenceNumber</strong>
+				</td>
+			</tr>
+			<tr>
+				<td class="TableRowBottomDashed"  colspan="1">										
+					<a href="#" onclick="parent.toggleData('DetailsImageAttributes2770')" style="text-decoration: none; color: #000000;"><img src="../../images/plus03.gif" align="absmiddle" id="DetailsImageAttributes2770" border="0" />Details:</a>
+					<table border="0" cellspacing="0" cellpadding="0" class="Table" style="padding: 4px 18px;">
+					
+						<tr id="DetailsImageAttributes2770_00" style="display: none;">
+							<td width="75"><i>Alias:</i></td>
+							<td></td>
+						</tr>
+						<tr id="DetailsImageAttributes2770_01" style="display: none;">
+							<td width="75"><i>Initial:</i></td>
+							<td></td>
+						</tr>
+						<tr id="DetailsImageAttributes2770_02" style="display: none;">
+							<td width="75"><i>Stereotype: </i></td>
+							<td></td>
+						</tr>
+						<tr id="DetailsImageAttributes2770_03" style="display: none;">
+							<td width="75"><i>Ordered: </i></td>
+							<td></td>
+						</tr>
+						<tr id="DetailsImageAttributes2770_04" style="display: none;">
+							<td width="75"><i>Range: </i></td>
+							<td>Range:0 to 1</td>
+						</tr>
+						<tr id="DetailsImageAttributes2770_05" style="display: none;">
+							<td width="75"><i>Transient: </i></td>
+							<td>False</td>
+						</tr>
+						<tr id="DetailsImageAttributes2770_06" style="display: none;">
+							<td width="75"><i>Derived: </i></td>
+							<td>False</td>
+						</tr>
+							<tr id="DetailsImageAttributes2770_07" style="display: none;">
+							<td width="75"><i>IsID: </i></td>
+						<td>False</td>
+						</tr>
+					</table>
+					
+					Map:APSRv2.1=[Problem] hl7:organizer - [Problem] hl7:organizer > hl7:component [Gen Cmt on Part Prob] > hl7:sequenceNumber<br>Map:APSRv2.1=[Problem] hl7:organizer - [Problem] hl7:organizer > hl7:component [Region of Interest] > hl7:sequenceNumber<br>Map:APSRv2.1=[Problem] hl7:organizer - [Problem] hl7:organizer > hl7:component [Embedded Image] > hl7:sequenceNumber<br>Map:APSRv2.1=[Problem] hl7:organizer - [Problem] hl7:organizer > hl7:component [Lab Obs] > hl7:sequenceNumber<br>Map:APSRv2.1=[Problem] hl7:organizer - [Problem] hl7:organizer > hl7:component [Any kind of AP observation] > hl7:sequenceNumber<br>
+						<div class="ObjectDetailsNotes"><table>
+	<tr>
+		<td valign="top">
+			<i>Notes: </i><span style="margin-left: .4cm;"> </span>
+		</td>
+		<td>
+			DEFINITION:&lt;br/&gt;An integer specifying the relative sequential or temporal ordering of this relationship among other similar relationships having the same source.&lt;br/&gt;&lt;br/&gt;EXAMPLE(S):&lt;br/&gt;In a problem set, this may incidate the relative order of a series of images and/or observations.&lt;br/&gt;&lt;br/&gt;OTHER NAME(S):&lt;br/&gt;&lt;br/&gt;NOTE(S):&lt;br/&gt;
+		</td>
+	</tr>
+</table></div>
+
+						
+				</td>
+			</tr>			<tr>
+				<td width="100%" class="TableRow">
+					<i>Public CD</i><br /><strong>&nbsp;&nbsp;typeCode</strong>
+				</td>
+			</tr>
+			<tr>
+				<td class="TableRowBottomDashed"  colspan="1">										
+					<a href="#" onclick="parent.toggleData('DetailsImageAttributes2771')" style="text-decoration: none; color: #000000;"><img src="../../images/plus03.gif" align="absmiddle" id="DetailsImageAttributes2771" border="0" />Details:</a>
+					<table border="0" cellspacing="0" cellpadding="0" class="Table" style="padding: 4px 18px;">
+					
+						<tr id="DetailsImageAttributes2771_00" style="display: none;">
+							<td width="75"><i>Alias:</i></td>
+							<td></td>
+						</tr>
+						<tr id="DetailsImageAttributes2771_01" style="display: none;">
+							<td width="75"><i>Initial:</i></td>
+							<td></td>
+						</tr>
+						<tr id="DetailsImageAttributes2771_02" style="display: none;">
+							<td width="75"><i>Stereotype: </i></td>
+							<td></td>
+						</tr>
+						<tr id="DetailsImageAttributes2771_03" style="display: none;">
+							<td width="75"><i>Ordered: </i></td>
+							<td></td>
+						</tr>
+						<tr id="DetailsImageAttributes2771_04" style="display: none;">
+							<td width="75"><i>Range: </i></td>
+							<td>Range:0 to 1</td>
+						</tr>
+						<tr id="DetailsImageAttributes2771_05" style="display: none;">
+							<td width="75"><i>Transient: </i></td>
+							<td>False</td>
+						</tr>
+						<tr id="DetailsImageAttributes2771_06" style="display: none;">
+							<td width="75"><i>Derived: </i></td>
+							<td>False</td>
+						</tr>
+							<tr id="DetailsImageAttributes2771_07" style="display: none;">
+							<td width="75"><i>IsID: </i></td>
+						<td>False</td>
+						</tr>
+					</table>
+					
+					Map:APSRv2.1=[Problem] hl7:organizer - [Problem] hl7:organizer > hl7:component [Lab Obs] > hl7:observation > hl7:entryRelationship [Reference] > @typeCode<br>Map:APSRv2.1=[Problem] hl7:organizer - [Problem] hl7:organizer > hl7:component [Any kind of AP observation] > hl7:observation > hl7:reference > @typeCode<br>Map:APSRv2.1=SB: Procedure Steps Section - hl7:ClinicalDocument > hl7:component > hl7:structuredBody > hl7:component [Proc Steps] > hl7:section > hl7:entry > hl7:procedure > hl7:reference > @typeCode<br>Map:APSRv2.1=SB: Procedure Steps Section - hl7:ClinicalDocument > hl7:component > hl7:structuredBody > hl7:component [Proc Steps] > hl7:section > hl7:entry > hl7:procedure > hl7:entryRelationship [Spec Proc Step] > @typeCode<br>Map:APSRv2.1=[IHE Prob Conc Entry] hl7:act - [IHE Prob Conc Entry] hl7:act > hl7:entryRelationship [problems of concern] > @type<br>
+						<div class="ObjectDetailsNotes"><table>
+	<tr>
+		<td valign="top">
+			<i>Notes: </i><span style="margin-left: .4cm;"> </span>
+		</td>
+		<td>
+			DEFINITION:&lt;br/&gt;A coded value specifying the kind of relationship between the activity and the referenced item.&lt;br/&gt;&lt;br/&gt;EXAMPLE(S):&lt;br/&gt;ELNK = EpisodeLink&lt;br/&gt;REFR = Refers to&lt;br/&gt;RPLC = replaces&lt;br/&gt;SPRT = has support&lt;br/&gt;SUBJ = has subject&lt;br/&gt;XCRPT = Excerpts&lt;br/&gt;&lt;br/&gt;OTHER NAME(S):&lt;br/&gt;&lt;br/&gt;NOTE(S):&lt;br/&gt;
+		</td>
+	</tr>
+</table></div>
+
+						
+				</td>
+			</tr>
+	</table>
+</div>
+		<div class="ItemBody" id="AssociationsToTable">
+			<table border="0" cellspacing="0" cellpadding="0" class="Table">
+				<tr>
+					<td width="40%" class="TableHeading">Element</td>
+					<td width="30%" class="TableHeading">Source Role</td>
+					<td width="30%" class="TableHeading">Target Role</td>
+				</tr>
+				<tr>
+					<td width="40%" class="TableRow" valign="top">
+						<a href="../EA3/EA97.htm">DocumentVersion</a><br />
+						Class &nbsp;
+					</td>
+					<td width="30%" class="TableRow" valign="top">
+						<strong>Name:</strong> sourcePerformedActivityRelationship<br />
+						&nbsp;
+					</td>
+					<td width="30%" class="TableRow" valign="top">
+						<strong>Name:</strong> targetDocumentVersion<br />
+						&nbsp;	
+					</td>
+				</tr>
+				<tr>
+					<td class="TableRowBottomDashed"  colspan="3">
+						<div class="DetailsDivParent"><img src="../../images/minus03.gif" align="absmiddle" id="DetailsImageLink2772" onclick="parent.toggleDiv('detailsDIVLink2772','DetailsImageLink2772')" />Details:
+							<div id="detailsDIVLink2772" class="DetailsDiv" >
+							<div class="ObjectDetailsNotes">DESCRIPTION:&lt;br/&gt;Each PerformedActivityRelationship always has as target one DocumentVersion.&#160;&#160;Each DocumentVersion might be the target for one or more PerformedActivityRelationship.&lt;br/&gt;&lt;br/&gt;DEFINITION:&lt;br/&gt;&lt;br/&gt;EXAMPLE(S):&lt;br/&gt;&lt;br/&gt;OTHER NAME(S):&lt;br/&gt;&lt;br/&gt;NOTE(S):&lt;br/&gt;&lt;br/&gt;</div>
+
+							</div>
+						</div>
+					</td>
+				</tr>
+				<tr>
+					<td width="40%" class="TableRow" valign="top">
+						<a href="EA380.htm">PerformedActivity</a><br />
+						Class &nbsp;
+					</td>
+					<td width="30%" class="TableRow" valign="top">
+						<strong>Name:</strong> sourcePerformedActivityRelationship<br />
+						&nbsp;
+					</td>
+					<td width="30%" class="TableRow" valign="top">
+						<strong>Name:</strong> targetPerformedActivity<br />
+						&nbsp;	
+					</td>
+				</tr>
+				<tr>
+					<td class="TableRowBottomDashed"  colspan="3">
+						<div class="DetailsDivParent"><img src="../../images/minus03.gif" align="absmiddle" id="DetailsImageLink2773" onclick="parent.toggleDiv('detailsDIVLink2773','DetailsImageLink2773')" />Details:
+							<div id="detailsDIVLink2773" class="DetailsDiv" >
+							<div class="ObjectDetailsNotes">DESCRIPTION:&lt;br/&gt;Each PerformedActivityRelationship always has as target one PerformedActivity.&#160;&#160;Each PerformedActivity might be the target for one or more PerformedActivityRelationship.&lt;br/&gt;&lt;br/&gt;DEFINITION:&lt;br/&gt;&lt;br/&gt;EXAMPLE(S):&lt;br/&gt;&lt;br/&gt;OTHER NAME(S):&lt;br/&gt;&lt;br/&gt;NOTE(S):&lt;br/&gt;&lt;br/&gt;</div>
+
+							</div>
+						</div>
+					</td>
+				</tr>
+				<tr>
+					<td width="40%" class="TableRow" valign="top">
+						<a href="EA380.htm">PerformedActivity</a><br />
+						Class &nbsp;
+					</td>
+					<td width="30%" class="TableRow" valign="top">
+						<strong>Name:</strong> targetPerformedActivityRelationship<br />
+						&nbsp;
+					</td>
+					<td width="30%" class="TableRow" valign="top">
+						<strong>Name:</strong> sourcePerformedActivity<br />
+						&nbsp;	
+					</td>
+				</tr>
+				<tr>
+					<td class="TableRowBottomDashed"  colspan="3">
+						<div class="DetailsDivParent"><img src="../../images/minus03.gif" align="absmiddle" id="DetailsImageLink2774" onclick="parent.toggleDiv('detailsDIVLink2774','DetailsImageLink2774')" />Details:
+							<div id="detailsDIVLink2774" class="DetailsDiv" >
+							<div class="ObjectDetailsNotes">DESCRIPTION:&lt;br/&gt;Each PerformedActivityRelationship always has as source one PerformedActivity.&#160;&#160;Each PerformedActivity might be the source for one or more PerformedActivityRelationship.&lt;br/&gt;&lt;br/&gt;DEFINITION:&lt;br/&gt;&lt;br/&gt;EXAMPLE(S):&lt;br/&gt;&lt;br/&gt;OTHER NAME(S):&lt;br/&gt;&lt;br/&gt;NOTE(S):&lt;br/&gt;&lt;br/&gt;</div>
+
+							</div>
+						</div>
+					</td>
+				</tr>
+
+			</table>
+		</div>
+<div class="ItemBody" id="TaggedValTable">
+	<table align="center" border="0" cellspacing="0" cellpadding="0" class="Table">
+		<tr>
+			<td width="50%" class="TableHeading">Tag</td>
+			<td width="50%" class="TableHeading">Value</td>
+		</tr>
+					<tr>
+				<td width="50%" class="TableRow" valign="top">Map:AIM v4 rv48</td>
+				<td width="50%" class="TableRow" valign="top">ImageAnnotation.imageAnnotationCollection(ImageAnnotationCollection)</td>
+			</tr>	
+			<tr>
+				<td class="TableRowBottomDashed"  colspan="2">
+					<div class="DetailsDivParent"><img src="../../images/minus03.gif" align="absmiddle" id="DetailsImageScenario2775" onclick="parent.toggleDiv('detailsDIVScenario2775','DetailsImageScenario2775')" />Details:
+						<div id="detailsDIVScenario2775" class="DetailsDiv" >
+						&nbsp;
+						</div>
+					</div>
+				</td>
+			</tr>			<tr>
+				<td width="50%" class="TableRow" valign="top">Map:APSRv2,1</td>
+				<td width="50%" class="TableRow" valign="top">[Problem] hl7:organizer - [Problem] hl7:organizer &gt; hl7:component [Lab Obs]</td>
+			</tr>	
+			<tr>
+				<td class="TableRowBottomDashed"  colspan="2">
+					<div class="DetailsDivParent"><img src="../../images/minus03.gif" align="absmiddle" id="DetailsImageScenario2776" onclick="parent.toggleDiv('detailsDIVScenario2776','DetailsImageScenario2776')" />Details:
+						<div id="detailsDIVScenario2776" class="DetailsDiv" >
+						&nbsp;
+						</div>
+					</div>
+				</td>
+			</tr>			<tr>
+				<td width="50%" class="TableRow" valign="top">Map:APSRv2.1</td>
+				<td width="50%" class="TableRow" valign="top">[Problem] hl7:organizer - [Problem] hl7:organizer &gt; hl7:component [Any kind of AP observation] &gt; hl7:observation &gt; hl7:entryRelationship [Embedded Image]</td>
+			</tr>	
+			<tr>
+				<td class="TableRowBottomDashed"  colspan="2">
+					<div class="DetailsDivParent"><img src="../../images/minus03.gif" align="absmiddle" id="DetailsImageScenario2777" onclick="parent.toggleDiv('detailsDIVScenario2777','DetailsImageScenario2777')" />Details:
+						<div id="detailsDIVScenario2777" class="DetailsDiv" >
+						&nbsp;
+						</div>
+					</div>
+				</td>
+			</tr>			<tr>
+				<td width="50%" class="TableRow" valign="top">Map:APSRv2.1</td>
+				<td width="50%" class="TableRow" valign="top">[IHE Prob Conc Entry] hl7:act - [IHE Prob Conc Entry] hl7:act &gt; hl7:entryRelationship [problems of concern]</td>
+			</tr>	
+			<tr>
+				<td class="TableRowBottomDashed"  colspan="2">
+					<div class="DetailsDivParent"><img src="../../images/minus03.gif" align="absmiddle" id="DetailsImageScenario2778" onclick="parent.toggleDiv('detailsDIVScenario2778','DetailsImageScenario2778')" />Details:
+						<div id="detailsDIVScenario2778" class="DetailsDiv" >
+						&nbsp;
+						</div>
+					</div>
+				</td>
+			</tr>			<tr>
+				<td width="50%" class="TableRow" valign="top">Map:APSRv2.1</td>
+				<td width="50%" class="TableRow" valign="top">SB: Procedure Steps Section - hl7:ClinicalDocument &gt; hl7:component &gt; hl7:structuredBody &gt; hl7:component [Proc Steps] &gt; hl7:section &gt; hl7:entry &gt; hl7:procedure &gt; hl7:entryRelationship [Spec Proc Step]</td>
+			</tr>	
+			<tr>
+				<td class="TableRowBottomDashed"  colspan="2">
+					<div class="DetailsDivParent"><img src="../../images/minus03.gif" align="absmiddle" id="DetailsImageScenario2779" onclick="parent.toggleDiv('detailsDIVScenario2779','DetailsImageScenario2779')" />Details:
+						<div id="detailsDIVScenario2779" class="DetailsDiv" >
+						&nbsp;
+						</div>
+					</div>
+				</td>
+			</tr>			<tr>
+				<td width="50%" class="TableRow" valign="top">Map:APSRv2.1</td>
+				<td width="50%" class="TableRow" valign="top">SB: Procedure Steps Section - hl7:ClinicalDocument &gt; hl7:component &gt; hl7:structuredBody &gt; hl7:component [Proc Steps] &gt; hl7:section &gt; hl7:entry &gt; hl7:procedure &gt; hl7:reference</td>
+			</tr>	
+			<tr>
+				<td class="TableRowBottomDashed"  colspan="2">
+					<div class="DetailsDivParent"><img src="../../images/minus03.gif" align="absmiddle" id="DetailsImageScenario2780" onclick="parent.toggleDiv('detailsDIVScenario2780','DetailsImageScenario2780')" />Details:
+						<div id="detailsDIVScenario2780" class="DetailsDiv" >
+						&nbsp;
+						</div>
+					</div>
+				</td>
+			</tr>			<tr>
+				<td width="50%" class="TableRow" valign="top">Map:APSRv2.1</td>
+				<td width="50%" class="TableRow" valign="top">[Problem] hl7:organizer - [Problem] hl7:organizer &gt; hl7:component [Any kind of AP observation] &gt; hl7:observation &gt; hl7:reference</td>
+			</tr>	
+			<tr>
+				<td class="TableRowBottomDashed"  colspan="2">
+					<div class="DetailsDivParent"><img src="../../images/minus03.gif" align="absmiddle" id="DetailsImageScenario2781" onclick="parent.toggleDiv('detailsDIVScenario2781','DetailsImageScenario2781')" />Details:
+						<div id="detailsDIVScenario2781" class="DetailsDiv" >
+						&nbsp;
+						</div>
+					</div>
+				</td>
+			</tr>			<tr>
+				<td width="50%" class="TableRow" valign="top">Map:APSRv2.1</td>
+				<td width="50%" class="TableRow" valign="top">[Problem] hl7:organizer - [Problem] hl7:organizer &gt; hl7:component [Lab Obs] &gt; hl7:observation &gt; hl7:entryRelationship [Reference]</td>
+			</tr>	
+			<tr>
+				<td class="TableRowBottomDashed"  colspan="2">
+					<div class="DetailsDivParent"><img src="../../images/minus03.gif" align="absmiddle" id="DetailsImageScenario2782" onclick="parent.toggleDiv('detailsDIVScenario2782','DetailsImageScenario2782')" />Details:
+						<div id="detailsDIVScenario2782" class="DetailsDiv" >
+						&nbsp;
+						</div>
+					</div>
+				</td>
+			</tr>			<tr>
+				<td width="50%" class="TableRow" valign="top">Map:APSRv2.1</td>
+				<td width="50%" class="TableRow" valign="top">[Problem] hl7:organizer - [Problem] hl7:organizer &gt; hl7:component [Embedded Image] &gt; hl7:observationMedia &gt; hl7:entryRelationship &gt; hl7:act &gt; hl7:text &gt; hl7:reference</td>
+			</tr>	
+			<tr>
+				<td class="TableRowBottomDashed"  colspan="2">
+					<div class="DetailsDivParent"><img src="../../images/minus03.gif" align="absmiddle" id="DetailsImageScenario2783" onclick="parent.toggleDiv('detailsDIVScenario2783','DetailsImageScenario2783')" />Details:
+						<div id="detailsDIVScenario2783" class="DetailsDiv" >
+						&nbsp;
+						</div>
+					</div>
+				</td>
+			</tr>			<tr>
+				<td width="50%" class="TableRow" valign="top">Map:APSRv2.1</td>
+				<td width="50%" class="TableRow" valign="top">[Problem] hl7:organizer - [Problem] hl7:organizer &gt; hl7:component [Region of Interest] &gt; hl7:regionOfInterest &gt; hl7:reference</td>
+			</tr>	
+			<tr>
+				<td class="TableRowBottomDashed"  colspan="2">
+					<div class="DetailsDivParent"><img src="../../images/minus03.gif" align="absmiddle" id="DetailsImageScenario2784" onclick="parent.toggleDiv('detailsDIVScenario2784','DetailsImageScenario2784')" />Details:
+						<div id="detailsDIVScenario2784" class="DetailsDiv" >
+						&nbsp;
+						</div>
+					</div>
+				</td>
+			</tr>			<tr>
+				<td width="50%" class="TableRow" valign="top">Map:APSRv2.1</td>
+				<td width="50%" class="TableRow" valign="top">[Problem] hl7:organizer - [Problem] hl7:organizer &gt; hl7:reference</td>
+			</tr>	
+			<tr>
+				<td class="TableRowBottomDashed"  colspan="2">
+					<div class="DetailsDivParent"><img src="../../images/minus03.gif" align="absmiddle" id="DetailsImageScenario2785" onclick="parent.toggleDiv('detailsDIVScenario2785','DetailsImageScenario2785')" />Details:
+						<div id="detailsDIVScenario2785" class="DetailsDiv" >
+						&nbsp;
+						</div>
+					</div>
+				</td>
+			</tr>			<tr>
+				<td width="50%" class="TableRow" valign="top">Map:APSRv2.1</td>
+				<td width="50%" class="TableRow" valign="top">[Problem] hl7:organizer - [Problem] hl7:organizer &gt; hl7:component [Problem reported]</td>
+			</tr>	
+			<tr>
+				<td class="TableRowBottomDashed"  colspan="2">
+					<div class="DetailsDivParent"><img src="../../images/minus03.gif" align="absmiddle" id="DetailsImageScenario2786" onclick="parent.toggleDiv('detailsDIVScenario2786','DetailsImageScenario2786')" />Details:
+						<div id="detailsDIVScenario2786" class="DetailsDiv" >
+						&nbsp;
+						</div>
+					</div>
+				</td>
+			</tr>			<tr>
+				<td width="50%" class="TableRow" valign="top">Map:APSRv2.1</td>
+				<td width="50%" class="TableRow" valign="top">[Problem] hl7:organizer - [Problem] hl7:organizer &gt; hl7:component [Any kind of AP observation] &gt; hl7:observation &gt; hl7:entryRelationship</td>
+			</tr>	
+			<tr>
+				<td class="TableRowBottomDashed"  colspan="2">
+					<div class="DetailsDivParent"><img src="../../images/minus03.gif" align="absmiddle" id="DetailsImageScenario2787" onclick="parent.toggleDiv('detailsDIVScenario2787','DetailsImageScenario2787')" />Details:
+						<div id="detailsDIVScenario2787" class="DetailsDiv" >
+						&nbsp;
+						</div>
+					</div>
+				</td>
+			</tr>			<tr>
+				<td width="50%" class="TableRow" valign="top">Map:APSRv2.1</td>
+				<td width="50%" class="TableRow" valign="top">SB: Procedure Steps Section - hl7:ClinicalDocument &gt; hl7:component &gt; hl7:structuredBody &gt; hl7:component [Proc Steps] &gt; hl7:section &gt; hl7:entry &gt; hl7:procedure &gt; hl7:entryRelationship [Specimen Received]</td>
+			</tr>	
+			<tr>
+				<td class="TableRowBottomDashed"  colspan="2">
+					<div class="DetailsDivParent"><img src="../../images/minus03.gif" align="absmiddle" id="DetailsImageScenario2788" onclick="parent.toggleDiv('detailsDIVScenario2788','DetailsImageScenario2788')" />Details:
+						<div id="detailsDIVScenario2788" class="DetailsDiv" >
+						&nbsp;
+						</div>
+					</div>
+				</td>
+			</tr>			<tr>
+				<td width="50%" class="TableRow" valign="top">Map:APSRv2.1</td>
+				<td width="50%" class="TableRow" valign="top">[Problem] hl7:organizer - [Problem] hl7:organizer &gt; hl7:component [Any kind of AP observation] &gt; hl7:observation &gt; hl7:entryRelationship [Reg of Interest]<br /></td>
+			</tr>	
+			<tr>
+				<td class="TableRowBottomDashed"  colspan="2">
+					<div class="DetailsDivParent"><img src="../../images/minus03.gif" align="absmiddle" id="DetailsImageScenario2789" onclick="parent.toggleDiv('detailsDIVScenario2789','DetailsImageScenario2789')" />Details:
+						<div id="detailsDIVScenario2789" class="DetailsDiv" >
+						&nbsp;
+						</div>
+					</div>
+				</td>
+			</tr>			<tr>
+				<td width="50%" class="TableRow" valign="top">Map:APSRv2.1</td>
+				<td width="50%" class="TableRow" valign="top">[Problem] hl7:organizer - [Problem] hl7:organizer &gt; hl7:component [Any kind of AP observation] &gt; hl7:observation &gt; hl7:entryRelationship [Annotation Cmt]</td>
+			</tr>	
+			<tr>
+				<td class="TableRowBottomDashed"  colspan="2">
+					<div class="DetailsDivParent"><img src="../../images/minus03.gif" align="absmiddle" id="DetailsImageScenario2790" onclick="parent.toggleDiv('detailsDIVScenario2790','DetailsImageScenario2790')" />Details:
+						<div id="detailsDIVScenario2790" class="DetailsDiv" >
+						&nbsp;
+						</div>
+					</div>
+				</td>
+			</tr>			<tr>
+				<td width="50%" class="TableRow" valign="top">Map:APSRv2.1</td>
+				<td width="50%" class="TableRow" valign="top">[Problem] hl7:organizer - [Problem] hl7:organizer &gt; hl7:component [Lab Obs] &gt; hl7:observation &gt; hl7:entryRelationship [Specimen Collection]</td>
+			</tr>	
+			<tr>
+				<td class="TableRowBottomDashed"  colspan="2">
+					<div class="DetailsDivParent"><img src="../../images/minus03.gif" align="absmiddle" id="DetailsImageScenario2791" onclick="parent.toggleDiv('detailsDIVScenario2791','DetailsImageScenario2791')" />Details:
+						<div id="detailsDIVScenario2791" class="DetailsDiv" >
+						&nbsp;
+						</div>
+					</div>
+				</td>
+			</tr>			<tr>
+				<td width="50%" class="TableRow" valign="top">Map:APSRv2.1</td>
+				<td width="50%" class="TableRow" valign="top">[Problem] hl7:organizer - [Problem] hl7:organizer &gt; hl7:component [Embedded Image]</td>
+			</tr>	
+			<tr>
+				<td class="TableRowBottomDashed"  colspan="2">
+					<div class="DetailsDivParent"><img src="../../images/minus03.gif" align="absmiddle" id="DetailsImageScenario2792" onclick="parent.toggleDiv('detailsDIVScenario2792','DetailsImageScenario2792')" />Details:
+						<div id="detailsDIVScenario2792" class="DetailsDiv" >
+						&nbsp;
+						</div>
+					</div>
+				</td>
+			</tr>			<tr>
+				<td width="50%" class="TableRow" valign="top">Map:APSRv2.1</td>
+				<td width="50%" class="TableRow" valign="top">[Problem] hl7:organizer - [Problem] hl7:organizer &gt; hl7:component [Region of Interest]</td>
+			</tr>	
+			<tr>
+				<td class="TableRowBottomDashed"  colspan="2">
+					<div class="DetailsDivParent"><img src="../../images/minus03.gif" align="absmiddle" id="DetailsImageScenario2793" onclick="parent.toggleDiv('detailsDIVScenario2793','DetailsImageScenario2793')" />Details:
+						<div id="detailsDIVScenario2793" class="DetailsDiv" >
+						&nbsp;
+						</div>
+					</div>
+				</td>
+			</tr>			<tr>
+				<td width="50%" class="TableRow" valign="top">Map:APSRv2.1</td>
+				<td width="50%" class="TableRow" valign="top">[Problem] hl7:organizer - [Problem] hl7:organizer &gt; hl7:component [Gen Cmt on Part Prob]</td>
+			</tr>	
+			<tr>
+				<td class="TableRowBottomDashed"  colspan="2">
+					<div class="DetailsDivParent"><img src="../../images/minus03.gif" align="absmiddle" id="DetailsImageScenario2794" onclick="parent.toggleDiv('detailsDIVScenario2794','DetailsImageScenario2794')" />Details:
+						<div id="detailsDIVScenario2794" class="DetailsDiv" >
+						&nbsp;
+						</div>
+					</div>
+				</td>
+			</tr>			<tr>
+				<td width="50%" class="TableRow" valign="top">Map:APSRv2.1</td>
+				<td width="50%" class="TableRow" valign="top">[Upd Info] hl7:organizer - [Upd Info] hl7:organizer &gt; hl7:component</td>
+			</tr>	
+			<tr>
+				<td class="TableRowBottomDashed"  colspan="2">
+					<div class="DetailsDivParent"><img src="../../images/minus03.gif" align="absmiddle" id="DetailsImageScenario2795" onclick="parent.toggleDiv('detailsDIVScenario2795','DetailsImageScenario2795')" />Details:
+						<div id="detailsDIVScenario2795" class="DetailsDiv" >
+						&nbsp;
+						</div>
+					</div>
+				</td>
+			</tr>			<tr>
+				<td width="50%" class="TableRow" valign="top">Map:APSRv2.1</td>
+				<td width="50%" class="TableRow" valign="top">Hdr: Encompassing Encounter - hl7:ClinicalDocument &gt; hl7:componentOf</td>
+			</tr>	
+			<tr>
+				<td class="TableRowBottomDashed"  colspan="2">
+					<div class="DetailsDivParent"><img src="../../images/minus03.gif" align="absmiddle" id="DetailsImageScenario2796" onclick="parent.toggleDiv('detailsDIVScenario2796','DetailsImageScenario2796')" />Details:
+						<div id="detailsDIVScenario2796" class="DetailsDiv" >
+						&nbsp;
+						</div>
+					</div>
+				</td>
+			</tr>			<tr>
+				<td width="50%" class="TableRow" valign="top">Map:APSRv2.1</td>
+				<td width="50%" class="TableRow" valign="top">hl7:entryRelationship [CDA Supply Container] - hl7:entryRelationship [CDA Supply Container]</td>
+			</tr>	
+			<tr>
+				<td class="TableRowBottomDashed"  colspan="2">
+					<div class="DetailsDivParent"><img src="../../images/minus03.gif" align="absmiddle" id="DetailsImageScenario2797" onclick="parent.toggleDiv('detailsDIVScenario2797','DetailsImageScenario2797')" />Details:
+						<div id="detailsDIVScenario2797" class="DetailsDiv" >
+						&nbsp;
+						</div>
+					</div>
+				</td>
+			</tr>			<tr>
+				<td width="50%" class="TableRow" valign="top">Map:APSRv2.1</td>
+				<td width="50%" class="TableRow" valign="top">SB: Diagnostic Conclusion Section - hl7:ClinicalDocument &gt; hl7:component &gt; hl7:structuredBody &gt; hl7:component [Diagnostic Conclusion] &gt; hl7:section &gt; hl7:entry [Update Information Organizer]</td>
+			</tr>	
+			<tr>
+				<td class="TableRowBottomDashed"  colspan="2">
+					<div class="DetailsDivParent"><img src="../../images/minus03.gif" align="absmiddle" id="DetailsImageScenario2798" onclick="parent.toggleDiv('detailsDIVScenario2798','DetailsImageScenario2798')" />Details:
+						<div id="detailsDIVScenario2798" class="DetailsDiv" >
+						&nbsp;
+						</div>
+					</div>
+				</td>
+			</tr>			<tr>
+				<td width="50%" class="TableRow" valign="top">Map:APSRv2.1</td>
+				<td width="50%" class="TableRow" valign="top">SB: Procedure Steps Section - hl7:ClinicalDocument &gt; hl7:component &gt; hl7:structuredBody &gt; hl7:component [Proc Steps] &gt; hl7:section &gt; hl7:entry &gt; hl7:procedure &gt; hl7:entryRelationship [CDA Supply Container] [see group]</td>
+			</tr>	
+			<tr>
+				<td class="TableRowBottomDashed"  colspan="2">
+					<div class="DetailsDivParent"><img src="../../images/minus03.gif" align="absmiddle" id="DetailsImageScenario2799" onclick="parent.toggleDiv('detailsDIVScenario2799','DetailsImageScenario2799')" />Details:
+						<div id="detailsDIVScenario2799" class="DetailsDiv" >
+						&nbsp;
+						</div>
+					</div>
+				</td>
+			</tr>			<tr>
+				<td width="50%" class="TableRow" valign="top">Map:APSRv2.1</td>
+				<td width="50%" class="TableRow" valign="top">[Problem] hl7:organizer - [Problem] hl7:organizer &gt; hl7:component [Any kind of AP observation]</td>
+			</tr>	
+			<tr>
+				<td class="TableRowBottomDashed"  colspan="2">
+					<div class="DetailsDivParent"><img src="../../images/minus03.gif" align="absmiddle" id="DetailsImageScenario2800" onclick="parent.toggleDiv('detailsDIVScenario2800','DetailsImageScenario2800')" />Details:
+						<div id="detailsDIVScenario2800" class="DetailsDiv" >
+						&nbsp;
+						</div>
+					</div>
+				</td>
+			</tr>			<tr>
+				<td width="50%" class="TableRow" valign="top">Map:CDMHv1.0</td>
+				<td width="50%" class="TableRow" valign="top">PerformedCompositionRelationship</td>
+			</tr>	
+			<tr>
+				<td class="TableRowBottomDashed"  colspan="2">
+					<div class="DetailsDivParent"><img src="../../images/minus03.gif" align="absmiddle" id="DetailsImageScenario2801" onclick="parent.toggleDiv('detailsDIVScenario2801','DetailsImageScenario2801')" />Details:
+						<div id="detailsDIVScenario2801" class="DetailsDiv" >
+						&nbsp;
+						</div>
+					</div>
+				</td>
+			</tr>			<tr>
+				<td width="50%" class="TableRow" valign="top">Map:CTRv1.0</td>
+				<td width="50%" class="TableRow" valign="top">PerformedActivity.contained(PerformedActivity)</td>
+			</tr>	
+			<tr>
+				<td class="TableRowBottomDashed"  colspan="2">
+					<div class="DetailsDivParent"><img src="../../images/minus03.gif" align="absmiddle" id="DetailsImageScenario2802" onclick="parent.toggleDiv('detailsDIVScenario2802','DetailsImageScenario2802')" />Details:
+						<div id="detailsDIVScenario2802" class="DetailsDiv" >
+						&nbsp;
+						</div>
+					</div>
+				</td>
+			</tr>
+	</table>
+</div>		<div class="ItemBody" id="ConstraintsTable">
+			<table border="0" cellspacing="0" cellpadding="0" class="Table">
+			  	<tr>
+					<td width="80%" class="TableHeading">Constraint</td>
+					<td width="10%" class="TableHeading">Type</td>
+					<td width="10%" class="TableHeading">Status</td>
+				</tr>
+				<tr>
+					<td width="80%" class="TableRow">Performed Activity Relationship Qualifier</td>
+					<td width="10%" class="TableRow">Invariant</td>
+					<td width="10%" class="TableRow">Approved</td>
+				</tr>
+				<tr>
+					<td class="TableRowBottomDashed"  colspan="3">
+						<div class="DetailsDivParent"><img src="../../images/minus03.gif" align="absmiddle" id="DetailsImageConstraints2803" onclick="parent.toggleDiv('detailsDIVConstraints2803','DetailsImageConstraints2803')" />Details:
+							<div id="detailsDIVConstraints2803" class="DetailsDiv" >
+							<div class="ObjectDetailsNotes">The PerformedActivityRelationship class may only be used when there is no Defined- or Planned- Relationship between the objects that the source and target relationship instantiate (directly or indirectly).&#160;&#160;I.e., if the relationship can reasonably be expressed in the defined or planned representation, it must be expressed there, not in the performed representation.&lt;br/&gt;</div>
+
+							</div>
+						</div>
+					</td>
+				</tr>
+
+			</table>
+		</div>
+	</div>
+<div class="pageFooter"></div>
+ 
+</body>
+</html>
