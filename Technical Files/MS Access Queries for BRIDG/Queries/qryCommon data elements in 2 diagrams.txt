@@ -1,0 +1,131 @@
+REVISED QUERY OF COMMON BRIDG ELEMENTS IN 2 DIAGRAMS:
+
+*** Make sure to replace each diagram name in 2 places, one for the first main unioned query that returns the class descriptions, and one for the second main unioned query that returns the attribute descriptions.
+
+====================================================================================================================================
+
+SELECT t_object.name AS [CLASS_NAME], '' AS [ATTRIBUTE_NAME], '' AS [DATA_TYPE], '' AS [CARDINALITY], t_object.Note AS [DESCRIPTION]
+FROM t_object 
+WHERE t_object.object_ID IN
+     (
+          SELECT CLASS_OBJECT_ID
+          FROM
+               (
+                    SELECT CLASS_OBJECT_ID, COUNT(*) AS DIAG_COUNT
+                    FROM
+                         (
+                              SELECT 
+                              t_diagram.name AS [DIAGRAM_NAME], 
+                              t_object.Object_ID AS [CLASS_OBJECT_ID]
+                              FROM ((t_diagramobjects 
+                              INNER JOIN t_object ON t_object.Object_ID = t_diagramobjects.Object_ID) 
+                              INNER JOIN t_diagram ON t_diagram.Diagram_ID = t_diagramobjects.Diagram_ID) 
+                              WHERE t_diagram.name = 'Animal'
+                              AND t_object.Object_Type = 'Class'
+                              UNION ALL
+                              SELECT 
+                              t_diagram.name AS [DIAGRAM_NAME], 
+                              t_object.Object_ID AS [CLASS_OBJECT_ID]
+                              FROM ((t_diagramobjects 
+                              INNER JOIN t_object ON t_object.Object_ID = t_diagramobjects.Object_ID) 
+                              INNER JOIN t_diagram ON t_diagram.Diagram_ID = t_diagramobjects.Diagram_ID) 
+                              WHERE t_diagram.name = 'Registering a Trial at ClinicalTrials.gov'
+                              AND t_object.Object_Type = 'Class'
+                         )
+                    GROUP BY CLASS_OBJECT_ID
+               )
+          WHERE DIAG_COUNT > 1
+     )
+UNION ALL 
+SELECT  t_object.name AS [CLASS_NAME], t_attribute.name AS [ATTRIBUTE_NAME], t_attribute.type AS [DATA_TYPE],
+t_attribute.lowerbound+'..'+t_attribute.upperbound AS [CARDINALITY], t_attribute.Notes AS [DESCRIPTION]
+FROM t_attribute INNER JOIN t_object ON t_attribute.object_ID = t_object.object_ID
+WHERE t_attribute.ID IN
+     (
+          SELECT ATTRIBUTE_ID
+          FROM
+          (
+               SELECT CLASS_OBJECT_ID, ATTRIBUTE_ID, COUNT(*) AS DIAG_COUNT
+               FROM
+               (
+                    SELECT t_diagram.name AS [DIAGRAM_NAME], t_object.Object_ID AS [CLASS_OBJECT_ID], t_attribute.ID AS [ATTRIBUTE_ID]
+                    FROM ((t_diagramobjects 
+                    INNER JOIN t_object ON t_object.Object_ID = t_diagramobjects.Object_ID) 
+                    INNER JOIN t_diagram ON t_diagram.Diagram_ID = t_diagramobjects.Diagram_ID) 
+                    INNER JOIN t_attribute ON t_attribute.Object_ID = t_object.Object_ID
+                    WHERE t_diagram.name = 'Animal'
+                    AND t_object.Object_Type = 'Class'
+                    AND 
+                    ( 
+                         ( 
+                    	          (INSTR(t_diagram.StyleEx,MID(t_object.ea_guid,2,6)) = 0) AND
+                    	          (INSTR(t_diagramobjects.ObjectStyle,'AttPro=0;AttPri=0;AttPub=0;AttPkg=0') = 0) AND
+                    	          (INSTR(t_diagramobjects.ObjectStyle,'AttCustom=0') = 0) AND
+                             	 "COMMENT:  this set brings back attributes for classes where nothing is hidden."
+                    	     )
+                         OR 
+                         ( 
+                    	          (INSTR(t_diagramobjects.ObjectStyle,'AttPro=0;AttPri=0;AttPub=0;AttPkg=0') > 0) AND
+                    	          (INSTR(t_diagram.StyleEx,MID('S_'+t_object.ea_guid,2,6)) > 0) AND
+                    	          (INSTR(t_diagram.StyleEx,MID(t_attribute.ea_guid,2,6)) = 0) AND
+                    	          "COMMENT:  this set evaluates to false so that it excludes attributes for classes where all attributes are hidden."
+                    	     )    
+                         OR
+                         ( 
+                              (INSTR(t_diagram.StyleEx,MID(t_attribute.ea_guid,2,6)) = 0) AND
+                              (INSTR(t_diagram.StyleEx,MID(t_object.ea_guid,2,6)) > 0) AND
+                    	          (INSTR(t_diagramobjects.ObjectStyle,'AttCustom=0') > 0) AND
+                    	          "COMMENT:  this set shows unhidden attributes - if AttCustom=0 and attribute is NOT IN StyleEx then show the attribute."
+                    	     )
+                         OR
+                         ( 
+                              (INSTR(t_diagram.StyleEx,MID(t_attribute.ea_guid,2,6)) > 0) AND 
+                              (INSTR(t_diagram.StyleEx,MID(t_object.ea_guid,2,6)) > 0) AND
+                              (INSTR(t_diagramobjects.ObjectStyle,'AttCustom=1') > 0) AND
+                    	          "COMMENT:  this set shows unhidden attributes - if AttCustom=1 and attribute IS IN StyleEx then show the attribute."
+                    	     )
+                    	)
+                    UNION ALL
+                    SELECT t_diagram.name AS [DIAGRAM_NAME], t_object.Object_ID AS [CLASS_OBJECT_ID], t_attribute.ID AS [ATTRIBUTE_ID]
+                    FROM ((t_diagramobjects 
+                    INNER JOIN t_object ON t_object.Object_ID = t_diagramobjects.Object_ID) 
+                    INNER JOIN t_diagram ON t_diagram.Diagram_ID = t_diagramobjects.Diagram_ID) 
+                    INNER JOIN t_attribute ON t_attribute.Object_ID = t_object.Object_ID
+                    WHERE t_diagram.name = 'Registering a Trial at ClinicalTrials.gov'
+                    AND t_object.Object_Type = 'Class'
+                    AND 
+                    ( 
+                         ( 
+                    	          (INSTR(t_diagram.StyleEx,MID(t_object.ea_guid,2,6)) = 0) AND
+                    	          (INSTR(t_diagramobjects.ObjectStyle,'AttPro=0;AttPri=0;AttPub=0;AttPkg=0') = 0) AND
+                    	          (INSTR(t_diagramobjects.ObjectStyle,'AttCustom=0') = 0) AND
+                    	          "COMMENT:  this set brings back attributes for classes where nothing is hidden."
+                    	     )
+                         OR 
+                         ( 
+                    	          (INSTR(t_diagramobjects.ObjectStyle,'AttPro=0;AttPri=0;AttPub=0;AttPkg=0') > 0) AND
+                    	          (INSTR(t_diagram.StyleEx,MID('S_'+t_object.ea_guid,2,6)) > 0) AND
+                    	          (INSTR(t_diagram.StyleEx,MID(t_attribute.ea_guid,2,6)) = 0) AND
+                    	          "COMMENT:  this set evaluates to false so that it excludes attributes for classes where all attributes are hidden."
+                    	     )    
+                         OR
+                         ( 
+                              (INSTR(t_diagram.StyleEx,MID(t_attribute.ea_guid,2,6)) = 0) AND
+                              (INSTR(t_diagram.StyleEx,MID(t_object.ea_guid,2,6)) > 0) AND
+                              (INSTR(t_diagramobjects.ObjectStyle,'AttCustom=0') > 0) AND
+                    	          "COMMENT:  this set shows unhidden attributes - if AttCustom=0 and attribute is NOT IN StyleEx then show the attribute."
+          	               )
+                         OR
+                         ( 
+                              (INSTR(t_diagram.StyleEx,MID(t_attribute.ea_guid,2,6)) > 0) AND
+                              (INSTR(t_diagram.StyleEx,MID(t_object.ea_guid,2,6)) > 0) AND
+                              (INSTR(t_diagramobjects.ObjectStyle,'AttCustom=1') > 0) AND
+                    	          "COMMENT:  this set shows unhidden attributes - if AttCustom=1 and attribute IS IN StyleEx then show the attribute."
+                    	     )
+               	     )
+               )
+               GROUP BY CLASS_OBJECT_ID, ATTRIBUTE_ID
+          )
+          WHERE DIAG_COUNT > 1
+     )
+ORDER BY 1, 2;
