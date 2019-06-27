@@ -1,0 +1,4 @@
+How to run a SQL query from within EA:
+1. Edit > Search in Model 
+2. Change "Common Searches" in 1st dropdown to "My Searches"
+3. Click on New Search ("+" on magnifying glass)
