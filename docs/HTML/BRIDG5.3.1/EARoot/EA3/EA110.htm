@@ -1,0 +1,916 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>Common Sub-Domain::HealthcareProvider</title>
+<link href="../../css/ea.css" rel="stylesheet" type="text/css" />
+<script>
+function initPage(src) {	
+	if(parent==this&&(this.location+"").indexOf('EARoot')!=-1)
+		document.location=(this.location+"").substring(0,(this.location+"").indexOf('EARoot'))+"index"+(this.location+"").substring((this.location+"").lastIndexOf('.'))+"?goto="+((this.location+"").substring((this.location+"").indexOf('EARoot')+7,(this.location+"").lastIndexOf('.')).replace(/\//g,':').replace(/EA/g,""));
+	else
+		parent.initPage(src);
+}
+
+function nameClassifier(name, separator)
+{
+  var str = name;
+  var classifierName;
+  var node = document.getElementById('name_classifier');
+  if(node != null)
+  {
+    classifierName = node.innerHTML;
+  }
+  if(classifierName != "")
+  {
+   str += separator + classifierName;
+  }
+  
+  return str;
+}
+</script>
+</head>
+<body onload="initPage(this);" class="Content">
+<div class="pageHeader"></div>
+<div class="PageBody">
+	<div id="name_classifier" style="display: none;"></div>
+	<span class="ObjectTitle"><script type="text/javascript">document.write(nameClassifier("HealthcareProvider", " : "))</script>  : Public   Class</span>
+	<table border="0" cellpadding="0" cellspacing="0" class="ObjectDetails">
+		<tr>
+			<td width="15%" class="ObjectDetailsTopic">Created:</td>
+			<td width="85%" class="ObjectDetailsValue">6/21/2005 11:16:03 AM</td>
+		</tr>
+		<tr>
+			<td class="ObjectDetailsTopic">Modified:</td>
+			<td class="ObjectDetailsValue">5/10/2019 10:53:53 AM</td>
+		</tr>
+		<tr style="height: 10px"><td colspan="2"></td></tr>
+		<tr>
+			<td class="ObjectDetailsTopic"><img src="../../images/plus03.gif" align="absmiddle" id="proj" onclick="parent.toggleData(this.id)" />Project:</td>
+			<td class="ObjectDetailsValue"></td>
+		</tr>
+		<tr id="proj00" style="display: none;">
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Author:</td>
+			<td class="ObjectDetailsValue">BRIDG SCC</td>
+		</tr>
+		<tr id="proj01" style="display: none;">
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Version:</td>
+			<td class="ObjectDetailsValue">1.0</td>
+		</tr>
+		<tr id="proj02" style="display: none;">
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Phase:</td>
+			<td class="ObjectDetailsValue">1.0</td>
+		</tr>
+		<tr id="proj03" style="display: none;">
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Status:</td>
+			<td class="ObjectDetailsValue"><none></td>
+		</tr>
+		<tr id="proj04" style="display: none;">
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Complexity:</td>
+			<td class="ObjectDetailsValue">Easy</td>
+		</tr>
+		<tr id="proj05" style="display: none;">
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Difficulty:</td>
+			<td class="ObjectDetailsValue"></td>
+		</tr>
+		<tr id="proj06" style="display: none;">
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Priority:</td>
+			<td class="ObjectDetailsValue"></td>
+		</tr>
+		<tr id="proj05" style="display: none;">
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Multiplicity:</td>
+			<td class="ObjectDetailsValue"></td>
+		</tr>
+		<tr>
+			<td class="ObjectDetailsTopic"><img src="../../images/plus03.gif" align="absmiddle" id="adv" onclick="parent.toggleData(this.id)" />Advanced:</td>
+			<td class="ObjectDetailsValue"></td>
+		</tr>
+		<tr id="adv00" style="display: none;">
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">UUID:</td>
+			<td class="ObjectDetailsValue">{42E3C62F-F9C6-43b1-97C5-2EA302FCF23B}</td>
+		</tr>
+		<tr id="adv01" style="display: none;">
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Appears In:</td>
+			<td class="ObjectDetailsValue"><a href="../EA3.htm">UML-Based Comprehensive BRIDG Model Diagram</a>, <a href="../EA1/EA34.htm">View AE: Adverse Event</a>, <a href="EA66.htm">View CM: Common</a>, <a href="../EA5/EA182.htm">View IM: Imaging</a>, <a href="../EA5/EA186.htm">DICOM SR TID 1500 BRIDG Class Diagram</a>, <a href="../EA7/EA255.htm">View PR: Protocol Representation</a>, <a href="../EA7/EA257.htm">Study Versioning</a>, <a href="../EA8/EA340.htm">View RG: Regulatory</a>, <a href="../EA10/EA371.htm">View SC: Study Conduct</a>, <a href="../EA11/EA457.htm">SDTM Disease Response (RS) Domain</a>, <a href="../EA11/EA451.htm">SDTM IG v3.2</a>, <a href="../EA12/EA603.htm">Organization</a>, <a href="../EA12/EA605.htm">Organization-Related Classes - no attributes</a>, <a href="../EA12/EA609.htm">Performer</a>, <a href="../EA12/EA601.htm">Oncology & Imaging</a>, <a href="../EA12/EA615.htm">Registering a Trial at ClinicalTrials.gov</a>, <a href="../EA12/EA607.htm">Participant Registration</a>, <a href="../EA12/EA591.htm">Lab-Related Classes</a>, <a href="../EA12/EA579.htm">Anatomic Pathology Structured Report (APSR)</a>, <a href="../EA12/EA629.htm">Study Management</a>, <a href="../EA12/EA585.htm">Common Data Model Harmonization (CDMH)</a>, <a href="../EA12/EA611.htm">Person Roles</a></td>
+		</tr>
+	</table>
+	<div class="ObjectDetailsNotes">DEFINITION:&lt;br/&gt;A person licensed, certified or otherwise authorized or permitted by law to administer healthcare in the ordinary course of business or practice of a profession.&lt;br/&gt;&lt;br/&gt;EXAMPLE(S):&#160; &lt;br/&gt;Physician, Physician Assistant, Psychologist, Nurse, Physical Therapist&lt;br/&gt;&lt;br/&gt;OTHER NAME(S):&lt;br/&gt;&lt;br/&gt;NOTE(S):&lt;br/&gt;</div>
+
+	<div class="TableGroup" id="TableGroup">
+		<ul class="ItemTitle">
+			<li onClick="parent.toggleItem('Attributes');" id="AttributesTitle">Attributes</li>
+			<li onClick="parent.toggleItem('AssociationsTo');" id="AssociationsToTitle">Associations To</li>
+			<li onClick="parent.toggleItem('AssociationsFrom');" id="AssociationsFromTitle">Associations From</li>
+			<li onClick="parent.toggleItem('TaggedVal');" id="TaggedValTitle">Tagged Values</li>
+		</ul>
+<div class="ItemBody" id="AttributesTable">
+	<table border="0" cellspacing="0" cellpadding="0" class="Table">
+		<tr>
+			<td width="100%" class="TableHeading">Attribute</td>
+		</tr>
+						<tr>
+				<td width="100%" class="TableRow">
+					<i>Public DSET&lt;ID&gt;</i><br /><strong>&nbsp;&nbsp;identifier</strong>
+				</td>
+			</tr>
+			<tr>
+				<td class="TableRowBottomDashed"  colspan="1">										
+					<a href="#" onclick="parent.toggleData('DetailsImageAttributes610')" style="text-decoration: none; color: #000000;"><img src="../../images/plus03.gif" align="absmiddle" id="DetailsImageAttributes610" border="0" />Details:</a>
+					<table border="0" cellspacing="0" cellpadding="0" class="Table" style="padding: 4px 18px;">
+					
+						<tr id="DetailsImageAttributes610_00" style="display: none;">
+							<td width="75"><i>Alias:</i></td>
+							<td></td>
+						</tr>
+						<tr id="DetailsImageAttributes610_01" style="display: none;">
+							<td width="75"><i>Initial:</i></td>
+							<td></td>
+						</tr>
+						<tr id="DetailsImageAttributes610_02" style="display: none;">
+							<td width="75"><i>Stereotype: </i></td>
+							<td></td>
+						</tr>
+						<tr id="DetailsImageAttributes610_03" style="display: none;">
+							<td width="75"><i>Ordered: </i></td>
+							<td></td>
+						</tr>
+						<tr id="DetailsImageAttributes610_04" style="display: none;">
+							<td width="75"><i>Range: </i></td>
+							<td>Range:0 to *</td>
+						</tr>
+						<tr id="DetailsImageAttributes610_05" style="display: none;">
+							<td width="75"><i>Transient: </i></td>
+							<td>False</td>
+						</tr>
+						<tr id="DetailsImageAttributes610_06" style="display: none;">
+							<td width="75"><i>Derived: </i></td>
+							<td>False</td>
+						</tr>
+							<tr id="DetailsImageAttributes610_07" style="display: none;">
+							<td width="75"><i>IsID: </i></td>
+						<td>False</td>
+						</tr>
+					</table>
+					
+					Map:C3PRv2.9=RemoteInvestigator.externalId<br>Map:caAERSv2.2=Investigator.nciIdentifier<br>Map:CDMHv1.0=HealthcareProvider.identifier<br>Map:CTOM=Investigator.nciIdentifier<br>Map:CTRPv1.0=HealthCareProvider.identifier<br>Map:CTRv1.0=HealthcareProvider.identifier<br>Map:FDA HL7 SD SD DSTU2012=plannedStudy/performer/assignedEntity.id<br>Map:FDA HL7 SD SD DSTU2012=assignedEntity.id<br>Map:Lab=Investigator.identifier<br>Map:OMOPv5.2=VISIT_OCCURRENCE.provider_id<br>Map:OMOPv5.2=PERSON.provider_id<br>Map:OMOPv5.2=MEASUREMENT.provider_id<br>Map:OMOPv5.2=OBSERVATION.provider_id<br>Map:OMOPv5.2=PROVIDER.dea<br>Map:OMOPv5.2=PROVIDER.provider_id<br>Map:OMOPv5.2=NOTE.provider_id<br>Map:OMOPv5.2=CONDITION_OCCURRENCE.provider_id<br>Map:OMOPv5.2=DEVICE_EXPOSURE.provider_id<br>Map:OMOPv5.2=DRUG_EXPOSURE.provider_id<br>Map:OMOPv5.2=PROVIDER.npi<br>Map:OMOPv5.2=PROCEDURE_OCCURRENCE.provider_id<br>Map:PCORNetv3.1=Procedures.providerid<br>Map:PCORNetv3.1=Diagnosis.providerid<br>Map:PCORNetv3.1=Prescribing.rx_providerid<br>Map:PCORNetv3.1=Encounter.providerid<br>Map:PCORNetv4.0=Encounter.providerid<br>Map:PCORNetv4.0=Diagnosis.providerid<br>Map:PCORNetv4.0=Procedures.providerid<br>Map:PCORNetv4.0=Obs_Clin.obsclin_providerid<br>Map:PCORNetv4.0=Med_Admin.medadmin_providerid<br>Map:PCORNetv4.0=Prescribing.rx_providerid<br>Map:PCORNetv4.0=Provider.providerid<br>Map:PCORNetv4.0=Provider.provider_npi<br>Map:PCORNetv4.0=Obs_Gen.obsgen_providerid<br>Map:Sentinelv6.0.2=Procedure.Provider<br>Map:Sentinelv6.0.2=Diagnosis.Provider<br>Map:Sentinelv6.0.2=Encounter.Provider<br>
+						<div class="ObjectDetailsNotes"><table>
+	<tr>
+		<td valign="top">
+			<i>Notes: </i><span style="margin-left: .4cm;"> </span>
+		</td>
+		<td>
+			DEFINITION:&lt;br/&gt;A unique symbol that establishes identity of the healthcare provider.&lt;br/&gt;&lt;br/&gt;EXAMPLE(S):&lt;br/&gt;&lt;br/&gt;OTHER NAME(S):&lt;br/&gt;&lt;br/&gt;NOTE(S):&lt;br/&gt;
+		</td>
+	</tr>
+</table></div>
+
+						
+				</td>
+			</tr>			<tr>
+				<td width="100%" class="TableRow">
+					<i>Public CD</i><br /><strong>&nbsp;&nbsp;roleCode</strong>
+				</td>
+			</tr>
+			<tr>
+				<td class="TableRowBottomDashed"  colspan="1">										
+					<a href="#" onclick="parent.toggleData('DetailsImageAttributes611')" style="text-decoration: none; color: #000000;"><img src="../../images/plus03.gif" align="absmiddle" id="DetailsImageAttributes611" border="0" />Details:</a>
+					<table border="0" cellspacing="0" cellpadding="0" class="Table" style="padding: 4px 18px;">
+					
+						<tr id="DetailsImageAttributes611_00" style="display: none;">
+							<td width="75"><i>Alias:</i></td>
+							<td></td>
+						</tr>
+						<tr id="DetailsImageAttributes611_01" style="display: none;">
+							<td width="75"><i>Initial:</i></td>
+							<td></td>
+						</tr>
+						<tr id="DetailsImageAttributes611_02" style="display: none;">
+							<td width="75"><i>Stereotype: </i></td>
+							<td></td>
+						</tr>
+						<tr id="DetailsImageAttributes611_03" style="display: none;">
+							<td width="75"><i>Ordered: </i></td>
+							<td></td>
+						</tr>
+						<tr id="DetailsImageAttributes611_04" style="display: none;">
+							<td width="75"><i>Range: </i></td>
+							<td></td>
+						</tr>
+						<tr id="DetailsImageAttributes611_05" style="display: none;">
+							<td width="75"><i>Transient: </i></td>
+							<td>False</td>
+						</tr>
+						<tr id="DetailsImageAttributes611_06" style="display: none;">
+							<td width="75"><i>Derived: </i></td>
+							<td>False</td>
+						</tr>
+							<tr id="DetailsImageAttributes611_07" style="display: none;">
+							<td width="75"><i>IsID: </i></td>
+						<td>False</td>
+						</tr>
+					</table>
+					
+					Map:CDMHv1.0=HealthcareProvider.roleCode<br>Map:DICOM=TID 1003 PersonObserverIdentifyingAttributes > Person Observer's Role in the Organization<br>Map:OMOPv5.2=PROVIDER.specialty_concept_id<br>Map:PCORNetv4.0=Provider.provider_specialty_primary<br>
+						<div class="ObjectDetailsNotes"><table>
+	<tr>
+		<td valign="top">
+			<i>Notes: </i><span style="margin-left: .4cm;"> </span>
+		</td>
+		<td>
+			DEFINITION:&lt;br/&gt;A coded value specifying the function) of the person in the context of this organization.&lt;br/&gt;&lt;br/&gt;EXAMPLE(S):&lt;br/&gt;physician, nurse, radiographer&lt;br/&gt;&lt;br/&gt;OTHER NAME(S):&lt;br/&gt;occupation&lt;br/&gt;&lt;br/&gt;NOTE(S):&lt;br/&gt;
+		</td>
+	</tr>
+</table></div>
+
+						
+				</td>
+			</tr>			<tr>
+				<td width="100%" class="TableRow">
+					<i>Public AD</i><br /><strong>&nbsp;&nbsp;postalAddress</strong>
+				</td>
+			</tr>
+			<tr>
+				<td class="TableRowBottomDashed"  colspan="1">										
+					<a href="#" onclick="parent.toggleData('DetailsImageAttributes612')" style="text-decoration: none; color: #000000;"><img src="../../images/plus03.gif" align="absmiddle" id="DetailsImageAttributes612" border="0" />Details:</a>
+					<table border="0" cellspacing="0" cellpadding="0" class="Table" style="padding: 4px 18px;">
+					
+						<tr id="DetailsImageAttributes612_00" style="display: none;">
+							<td width="75"><i>Alias:</i></td>
+							<td></td>
+						</tr>
+						<tr id="DetailsImageAttributes612_01" style="display: none;">
+							<td width="75"><i>Initial:</i></td>
+							<td></td>
+						</tr>
+						<tr id="DetailsImageAttributes612_02" style="display: none;">
+							<td width="75"><i>Stereotype: </i></td>
+							<td></td>
+						</tr>
+						<tr id="DetailsImageAttributes612_03" style="display: none;">
+							<td width="75"><i>Ordered: </i></td>
+							<td></td>
+						</tr>
+						<tr id="DetailsImageAttributes612_04" style="display: none;">
+							<td width="75"><i>Range: </i></td>
+							<td>Range:0 to 1</td>
+						</tr>
+						<tr id="DetailsImageAttributes612_05" style="display: none;">
+							<td width="75"><i>Transient: </i></td>
+							<td>False</td>
+						</tr>
+						<tr id="DetailsImageAttributes612_06" style="display: none;">
+							<td width="75"><i>Derived: </i></td>
+							<td>False</td>
+						</tr>
+							<tr id="DetailsImageAttributes612_07" style="display: none;">
+							<td width="75"><i>IsID: </i></td>
+						<td>False</td>
+						</tr>
+					</table>
+					
+					Map:APSRv2.1=hl7:author - hl7:author > hl7:assignedAuthor > hl7:addr<br>Map:APSRv2.1=Hdr: Participant - Referral Ordering Physician - hl7:ClinicalDocument > hl7:participant (Referral Ordering Physician) > hl7:associatedEntity > hl7:addr<br>Map:CTRPv1.0=HealthCareProvider.postalAddress<br>Map:CTRv1.0=HealthcareProvider.postalAddress<br>Map:FDA HL7 SD SD DSTU2012=plannedStudy/performer/assignedEntity.addr<br>Map:FDA HL7 SD SD DSTU2012=assignedEntity.addr<br>Map:ICSRr2=AssignedEntity.addr (in IndividualCaseSafetyReport)<br>Map:LabViewer2.2=Investigator.city<br>Map:LabViewer2.2=Investigator.streetAddress<br>Map:LabViewer2.2=Investigator.countryCode<br>Map:LabViewer2.2=Investigator.state<br>Map:LabViewer2.2=Investigator.postalCode<br>
+						<div class="ObjectDetailsNotes"><table>
+	<tr>
+		<td valign="top">
+			<i>Notes: </i><span style="margin-left: .4cm;"> </span>
+		</td>
+		<td>
+			DEFINITION:&lt;br/&gt;A contact point used to send physical forms of communication to the healthcare provider.&lt;br/&gt;&lt;br/&gt;EXAMPLE(S):&lt;br/&gt;&lt;br/&gt;OTHER NAME(S):&lt;br/&gt;&lt;br/&gt;NOTE(S):&lt;br/&gt;
+		</td>
+	</tr>
+</table></div>
+
+						
+				</td>
+			</tr>			<tr>
+				<td width="100%" class="TableRow">
+					<i>Public BAG&lt;TEL&gt;</i><br /><strong>&nbsp;&nbsp;telecomAddress</strong>
+				</td>
+			</tr>
+			<tr>
+				<td class="TableRowBottomDashed"  colspan="1">										
+					<a href="#" onclick="parent.toggleData('DetailsImageAttributes613')" style="text-decoration: none; color: #000000;"><img src="../../images/plus03.gif" align="absmiddle" id="DetailsImageAttributes613" border="0" />Details:</a>
+					<table border="0" cellspacing="0" cellpadding="0" class="Table" style="padding: 4px 18px;">
+					
+						<tr id="DetailsImageAttributes613_00" style="display: none;">
+							<td width="75"><i>Alias:</i></td>
+							<td></td>
+						</tr>
+						<tr id="DetailsImageAttributes613_01" style="display: none;">
+							<td width="75"><i>Initial:</i></td>
+							<td></td>
+						</tr>
+						<tr id="DetailsImageAttributes613_02" style="display: none;">
+							<td width="75"><i>Stereotype: </i></td>
+							<td></td>
+						</tr>
+						<tr id="DetailsImageAttributes613_03" style="display: none;">
+							<td width="75"><i>Ordered: </i></td>
+							<td></td>
+						</tr>
+						<tr id="DetailsImageAttributes613_04" style="display: none;">
+							<td width="75"><i>Range: </i></td>
+							<td>Range:0 to *</td>
+						</tr>
+						<tr id="DetailsImageAttributes613_05" style="display: none;">
+							<td width="75"><i>Transient: </i></td>
+							<td>False</td>
+						</tr>
+						<tr id="DetailsImageAttributes613_06" style="display: none;">
+							<td width="75"><i>Derived: </i></td>
+							<td>False</td>
+						</tr>
+							<tr id="DetailsImageAttributes613_07" style="display: none;">
+							<td width="75"><i>IsID: </i></td>
+						<td>False</td>
+						</tr>
+					</table>
+					
+					Map:APSRv2.1=Hdr: Participant - Referral Ordering Physician - hl7:ClinicalDocument > hl7:participant (Referral Ordering Physician) > hl7:associatedEntity > hl7:telecom<br>Map:APSRv2.1=hl7:author - hl7:author > hl7:assignedAuthor > hl7:telecom<br>Map:caAERSv2.2=PersonContact.ReportPerson.Physician.contactMechanisms<br>Map:caAERSv2.2=PersonContact.ReportPerson.Reporter.contactMechanisms<br>Map:caAERSv2.2=Investigator.faxNumber<br>Map:caAERSv2.2=SiteInvestigator.emailAddress<br>Map:caAERSv2.2=ContactMechanismBasedRecipient.address<br>Map:caAERSv2.2=Investigator.phoneNumber<br>Map:CTRPv1.0=HealthCareProvider.telecomAddress<br>Map:CTRv1.0=HealthcareProvider.telecomAddress<br>Map:FDA HL7 SD SD DSTU2012=plannedStudy/performer/assignedEntity.telecom<br>Map:FDA HL7 SD SD DSTU2012=assignedEntity.telecom<br>Map:ICSRr2=AssignedEntity.telecom (in IndividualCaseSafetyReport)<br>Map:LabViewer2.2=Investigator.phone<br>Map:LabViewer2.2=Investigator.telecomAddress<br>
+						<div class="ObjectDetailsNotes"><table>
+	<tr>
+		<td valign="top">
+			<i>Notes: </i><span style="margin-left: .4cm;"> </span>
+		</td>
+		<td>
+			DEFINITION:&lt;br/&gt;A sequence of digits or characters used to identify a particular telephone, fax, or email of the healthcare provider.&lt;br/&gt;&lt;br/&gt;EXAMPLE(S):&lt;br/&gt;&lt;br/&gt;OTHER NAME(S):&lt;br/&gt;&lt;br/&gt;NOTE(S):&lt;br/&gt;The set of digits that serves as the address for a telephone device. Included in the phone number are country, city, and area codes needed to uniquely address the telephone. A URL or e-mail would be similarly described.&lt;br/&gt;
+		</td>
+	</tr>
+</table></div>
+
+						
+				</td>
+			</tr>			<tr>
+				<td width="100%" class="TableRow">
+					<i>Public IVL&lt;TS.DATETIME&gt;</i><br /><strong>&nbsp;&nbsp;effectiveDateRange</strong>
+				</td>
+			</tr>
+			<tr>
+				<td class="TableRowBottomDashed"  colspan="1">										
+					<a href="#" onclick="parent.toggleData('DetailsImageAttributes614')" style="text-decoration: none; color: #000000;"><img src="../../images/plus03.gif" align="absmiddle" id="DetailsImageAttributes614" border="0" />Details:</a>
+					<table border="0" cellspacing="0" cellpadding="0" class="Table" style="padding: 4px 18px;">
+					
+						<tr id="DetailsImageAttributes614_00" style="display: none;">
+							<td width="75"><i>Alias:</i></td>
+							<td></td>
+						</tr>
+						<tr id="DetailsImageAttributes614_01" style="display: none;">
+							<td width="75"><i>Initial:</i></td>
+							<td></td>
+						</tr>
+						<tr id="DetailsImageAttributes614_02" style="display: none;">
+							<td width="75"><i>Stereotype: </i></td>
+							<td></td>
+						</tr>
+						<tr id="DetailsImageAttributes614_03" style="display: none;">
+							<td width="75"><i>Ordered: </i></td>
+							<td></td>
+						</tr>
+						<tr id="DetailsImageAttributes614_04" style="display: none;">
+							<td width="75"><i>Range: </i></td>
+							<td>Range:0 to 1</td>
+						</tr>
+						<tr id="DetailsImageAttributes614_05" style="display: none;">
+							<td width="75"><i>Transient: </i></td>
+							<td>False</td>
+						</tr>
+						<tr id="DetailsImageAttributes614_06" style="display: none;">
+							<td width="75"><i>Derived: </i></td>
+							<td>False</td>
+						</tr>
+							<tr id="DetailsImageAttributes614_07" style="display: none;">
+							<td width="75"><i>IsID: </i></td>
+						<td>False</td>
+						</tr>
+					</table>
+					
+					Map:C3PRv2.9=HealthcareSiteInvestigator.statusDate<br>Map:caAERSv2.2=SiteInvestigator.statusCode<br>Map:caAERSv2.2=SiteInvestigator.statusDate<br>Map:CTRPv1.0=HealthCareProvider.statusDateRange<br>Map:CTRPv1.0=HealthCareProvider.statusCode<br>Map:CTRv1.0=HealthcareProvider.effectiveDateRange<br>
+						<div class="ObjectDetailsNotes"><table>
+	<tr>
+		<td valign="top">
+			<i>Notes: </i><span style="margin-left: .4cm;"> </span>
+		</td>
+		<td>
+			DEFINITION:&lt;br/&gt;The date (and time) span for when the healthcare provider is active.&lt;br/&gt;&lt;br/&gt;EXAMPLE(S):&lt;br/&gt;&lt;br/&gt;OTHER NAME(S):&lt;br/&gt;&lt;br/&gt;NOTE(S):&lt;br/&gt;
+		</td>
+	</tr>
+</table></div>
+
+						
+				</td>
+			</tr>
+	</table>
+</div>
+		<div class="ItemBody" id="AssociationsToTable">
+			<table border="0" cellspacing="0" cellpadding="0" class="Table">
+				<tr>
+					<td width="40%" class="TableHeading">Element</td>
+					<td width="30%" class="TableHeading">Source Role</td>
+					<td width="30%" class="TableHeading">Target Role</td>
+				</tr>
+				<tr>
+					<td width="40%" class="TableRow" valign="top">
+						<a href="EA132.htm">Person</a><br />
+						Class &nbsp;
+					</td>
+					<td width="30%" class="TableRow" valign="top">
+						<strong>Name:</strong> performedHealthcareProvider<br />
+						&nbsp;
+					</td>
+					<td width="30%" class="TableRow" valign="top">
+						<strong>Name:</strong> performingPerson<br />
+						&nbsp;	
+					</td>
+				</tr>
+				<tr>
+					<td class="TableRowBottomDashed"  colspan="3">
+						<div class="DetailsDivParent"><img src="../../images/minus03.gif" align="absmiddle" id="DetailsImageLink615" onclick="parent.toggleDiv('detailsDIVLink615','DetailsImageLink615')" />Details:
+							<div id="detailsDIVLink615" class="DetailsDiv" >
+							<div class="ObjectDetailsNotes">DESCRIPTION:&lt;br/&gt;Each HealthcareProvider always is a function performed by one Person. Each Person might function as one or more HealthcareProvider.&lt;br/&gt;&lt;br/&gt;DEFINITION:&lt;br/&gt;&lt;br/&gt;EXAMPLE(S):&lt;br/&gt;&lt;br/&gt;OTHER NAME(S):&lt;br/&gt;&lt;br/&gt;NOTE(S):&lt;br/&gt;&lt;br/&gt;</div>
+
+							</div>
+						</div>
+					</td>
+				</tr>
+				<tr>
+					<td width="40%" class="TableRow" valign="top">
+						<a href="EA109.htm">HealthcareFacility</a><br />
+						Class &nbsp;
+					</td>
+					<td width="30%" class="TableRow" valign="top">
+						<strong>Name:</strong> staffingHealthcareProvider<br />
+						&nbsp;
+					</td>
+					<td width="30%" class="TableRow" valign="top">
+						<strong>Name:</strong> staffedHealthcareFacility<br />
+						&nbsp;	
+					</td>
+				</tr>
+				<tr>
+					<td class="TableRowBottomDashed"  colspan="3">
+						<div class="DetailsDivParent"><img src="../../images/minus03.gif" align="absmiddle" id="DetailsImageLink616" onclick="parent.toggleDiv('detailsDIVLink616','DetailsImageLink616')" />Details:
+							<div id="detailsDIVLink616" class="DetailsDiv" >
+							<div class="ObjectDetailsNotes">DESCRIPTION:&lt;br/&gt;Each HealthcareProvider might staff one HealthcareFacility. Each HealthcareFacility might be staffed by one or more HealthcareProvider.&lt;br/&gt;&lt;br/&gt;DEFINITION:&lt;br/&gt;&lt;br/&gt;EXAMPLE(S):&lt;br/&gt;&lt;br/&gt;OTHER NAME(S):&lt;br/&gt;&lt;br/&gt;NOTE(S):&lt;br/&gt;&lt;br/&gt;</div>
+
+							</div>
+						</div>
+					</td>
+				</tr>
+				<tr>
+					<td width="40%" class="TableRow" valign="top">
+						<a href="EA123.htm">Organization</a><br />
+						Class &nbsp;
+					</td>
+					<td width="30%" class="TableRow" valign="top">
+						<strong>Name:</strong> employedHealthcareProvider<br />
+						&nbsp;
+					</td>
+					<td width="30%" class="TableRow" valign="top">
+						<strong>Name:</strong> employingOrganization<br />
+						&nbsp;	
+					</td>
+				</tr>
+				<tr>
+					<td class="TableRowBottomDashed"  colspan="3">
+						<div class="DetailsDivParent"><img src="../../images/minus03.gif" align="absmiddle" id="DetailsImageLink617" onclick="parent.toggleDiv('detailsDIVLink617','DetailsImageLink617')" />Details:
+							<div id="detailsDIVLink617" class="DetailsDiv" >
+							<div class="ObjectDetailsNotes">DESCRIPTION:&lt;br/&gt;Each HealthcareProvider might belong to a department at one Organization. Each Organization might be the department for one or more HealthcareProvider.&lt;br/&gt;&lt;br/&gt;DEFINITION:&lt;br/&gt;&lt;br/&gt;EXAMPLE(S):&lt;br/&gt;&lt;br/&gt;OTHER NAME(S):&lt;br/&gt;&lt;br/&gt;NOTE(S):&lt;br/&gt;&lt;br/&gt;</div>
+
+							</div>
+						</div>
+					</td>
+				</tr>
+
+			</table>
+		</div>
+		<div class="ItemBody" id="AssociationsFromTable">
+			<table border="0" cellspacing="0" cellpadding="0" class="Table">
+				<tr>
+					<td width="40%" class="TableHeading">Element</td>
+					<td width="30%" class="TableHeading">Source Role</td>
+					<td width="30%" class="TableHeading">Target Role</td>
+				</tr>
+				<tr>
+					<td width="40%" class="TableRow" valign="top">
+						<a href="../EA8/EA346.htm">«DEPRECATED» RegulatoryApplicationSponsor</a><br />
+						Class &nbsp;
+					</td>
+					<td width="30%" class="TableRow" valign="top">
+						<strong>Name:</strong> performedRegulatoryApplicationSponsor<br />
+						&nbsp;
+					</td>
+					<td width="30%" class="TableRow" valign="top">
+						<strong>Name:</strong> performingHealthcareProvider<br />
+						&nbsp;	
+					</td>
+				</tr>
+				<tr>
+					<td class="TableRowBottomDashed"  colspan="3">
+						<div class="DetailsDivParent"><img src="../../images/minus03.gif" align="absmiddle" id="DetailsImageLink618" onclick="parent.toggleDiv('detailsDIVLink618','DetailsImageLink618')" />Details:
+							<div id="detailsDIVLink618" class="DetailsDiv" >
+							<div class="ObjectDetailsNotes">DESCRIPTION:&lt;br/&gt;Each RegulatoryApplicationSponsor might be a function performed by one HealthcareProvider. Each HealthcareProvider might function as one or more RegulatoryApplicationSponsor.&lt;br/&gt;&lt;br/&gt;DEFINITION:&lt;br/&gt;&lt;br/&gt;EXAMPLE(S):&lt;br/&gt;&lt;br/&gt;OTHER NAME(S):&lt;br/&gt;&lt;br/&gt;NOTE(S):&lt;br/&gt;&lt;br/&gt;</div>
+
+							</div>
+						</div>
+					</td>
+				</tr>
+				<tr>
+					<td width="40%" class="TableRow" valign="top">
+						<a href="../EA7/EA331.htm">StudyLegalSponsor</a><br />
+						Class &nbsp;
+					</td>
+					<td width="30%" class="TableRow" valign="top">
+						<strong>Name:</strong> performedStudyLegalSponsor<br />
+						&nbsp;
+					</td>
+					<td width="30%" class="TableRow" valign="top">
+						<strong>Name:</strong> performingHealthcareProvider<br />
+						&nbsp;	
+					</td>
+				</tr>
+				<tr>
+					<td class="TableRowBottomDashed"  colspan="3">
+						<div class="DetailsDivParent"><img src="../../images/minus03.gif" align="absmiddle" id="DetailsImageLink619" onclick="parent.toggleDiv('detailsDIVLink619','DetailsImageLink619')" />Details:
+							<div id="detailsDIVLink619" class="DetailsDiv" >
+							<div class="ObjectDetailsNotes">DESCRIPTION:&lt;br/&gt;Each StudyLegalSponsor might be a function performed by one HealthcareProvider.&#160; Each HealthcareProvider might function as one or more StudyLegalSponsor.&lt;br/&gt;&lt;br/&gt;DEFINITION:&lt;br/&gt;&lt;br/&gt;EXAMPLE(S):&lt;br/&gt;&lt;br/&gt;OTHER NAME(S):&lt;br/&gt;&lt;br/&gt;NOTE(S):&lt;br/&gt;</div>
+
+							</div>
+						</div>
+					</td>
+				</tr>
+				<tr>
+					<td width="40%" class="TableRow" valign="top">
+						<a href="EA85.htm">BiologicEntity</a><br />
+						Class &nbsp;
+					</td>
+					<td width="30%" class="TableRow" valign="top">
+						<strong>Name:</strong> providedForBiologicEntity<br />
+						&nbsp;
+					</td>
+					<td width="30%" class="TableRow" valign="top">
+						<strong>Name:</strong> primaryHealthcareProvider<br />
+						&nbsp;	
+					</td>
+				</tr>
+				<tr>
+					<td class="TableRowBottomDashed"  colspan="3">
+						<div class="DetailsDivParent"><img src="../../images/minus03.gif" align="absmiddle" id="DetailsImageLink620" onclick="parent.toggleDiv('detailsDIVLink620','DetailsImageLink620')" />Details:
+							<div id="detailsDIVLink620" class="DetailsDiv" >
+							<div class="ObjectDetailsNotes">DESCRIPTION:&lt;br/&gt;Each BiologicEntity might have primary care provided by one HealthcareProvider. Each HealthcareProvider might be the primary caregiver for one or more BiologicEntity.&lt;br/&gt;&lt;br/&gt;DEFINITION:&lt;br/&gt;&lt;br/&gt;EXAMPLE(S):&lt;br/&gt;&lt;br/&gt;OTHER NAME(S):&lt;br/&gt;&lt;br/&gt;NOTE(S):&lt;br/&gt;</div>
+
+							</div>
+						</div>
+					</td>
+				</tr>
+				<tr>
+					<td width="40%" class="TableRow" valign="top">
+						<a href="EA129.htm">Performer</a><br />
+						Class &nbsp;
+					</td>
+					<td width="30%" class="TableRow" valign="top">
+						<strong>Name:</strong> performedPerformer<br />
+						&nbsp;
+					</td>
+					<td width="30%" class="TableRow" valign="top">
+						<strong>Name:</strong> performingHealthcareProvider<br />
+						&nbsp;	
+					</td>
+				</tr>
+				<tr>
+					<td class="TableRowBottomDashed"  colspan="3">
+						<div class="DetailsDivParent"><img src="../../images/minus03.gif" align="absmiddle" id="DetailsImageLink621" onclick="parent.toggleDiv('detailsDIVLink621','DetailsImageLink621')" />Details:
+							<div id="detailsDIVLink621" class="DetailsDiv" >
+							<div class="ObjectDetailsNotes">DESCRIPTION:&lt;br/&gt;Each Performer might be a function performed by one HealthcareProvider. Each HealthcareProvider might function as one or more Performer. &lt;br/&gt;&lt;br/&gt;DEFINITION:&lt;br/&gt;&lt;br/&gt;EXAMPLE(S):&lt;br/&gt;&lt;br/&gt;OTHER NAME(S):&lt;br/&gt;&lt;br/&gt;NOTE(S):&lt;br/&gt;</div>
+
+							</div>
+						</div>
+					</td>
+				</tr>
+				<tr>
+					<td width="40%" class="TableRow" valign="top">
+						<a href="../EA10/EA432.htm">StudyPersonnel</a><br />
+						Class &nbsp;
+					</td>
+					<td width="30%" class="TableRow" valign="top">
+						<strong>Name:</strong> performedStudyPersonnel<br />
+						&nbsp;
+					</td>
+					<td width="30%" class="TableRow" valign="top">
+						<strong>Name:</strong> performingHealthcareProvider<br />
+						&nbsp;	
+					</td>
+				</tr>
+				<tr>
+					<td class="TableRowBottomDashed"  colspan="3">
+						<div class="DetailsDivParent"><img src="../../images/minus03.gif" align="absmiddle" id="DetailsImageLink622" onclick="parent.toggleDiv('detailsDIVLink622','DetailsImageLink622')" />Details:
+							<div id="detailsDIVLink622" class="DetailsDiv" >
+							<div class="ObjectDetailsNotes">DESCRIPTION:&lt;br/&gt;Each StudyPersonnel might be a function performed by one HealthcareProvider. Each HealthcareProvider might function as one or more StudyPersonnel.&lt;br/&gt;&lt;br/&gt;DEFINITION:&lt;br/&gt;Indicates that the StudyPersonnel role is being fulfilled by a HealthcareProvider&lt;br/&gt;&lt;br/&gt;EXAMPLE(S):&lt;br/&gt;&lt;br/&gt;OTHER NAME(S):&lt;br/&gt;&lt;br/&gt;NOTE(S):&lt;br/&gt;</div>
+
+							</div>
+						</div>
+					</td>
+				</tr>
+				<tr>
+					<td width="40%" class="TableRow" valign="top">
+						<a href="EA100.htm">DocumentAuthor</a><br />
+						Class &nbsp;
+					</td>
+					<td width="30%" class="TableRow" valign="top">
+						<strong>Name:</strong> performedDocumentAuthor<br />
+						&nbsp;
+					</td>
+					<td width="30%" class="TableRow" valign="top">
+						<strong>Name:</strong> performingHealthcareProvider<br />
+						&nbsp;	
+					</td>
+				</tr>
+				<tr>
+					<td class="TableRowBottomDashed"  colspan="3">
+						<div class="DetailsDivParent"><img src="../../images/minus03.gif" align="absmiddle" id="DetailsImageLink623" onclick="parent.toggleDiv('detailsDIVLink623','DetailsImageLink623')" />Details:
+							<div id="detailsDIVLink623" class="DetailsDiv" >
+							<div class="ObjectDetailsNotes">DESCRIPTION:&lt;br/&gt;Each DocumentAuthor might be a function performed by one HealthcareProvider.&#160; Each HealthcareProvider might function as one or more DocumentAuthor. &lt;br/&gt;&lt;br/&gt;DEFINITION:&lt;br/&gt;&lt;br/&gt;EXAMPLE(S):&lt;br/&gt;&lt;br/&gt;OTHER NAME(S):&lt;br/&gt;&lt;br/&gt;NOTE(S):&lt;br/&gt;&lt;br/&gt;</div>
+
+							</div>
+						</div>
+					</td>
+				</tr>
+				<tr>
+					<td width="40%" class="TableRow" valign="top">
+						<a href="EA112.htm">HealthcareProviderGroupMember</a><br />
+						Class &nbsp;
+					</td>
+					<td width="30%" class="TableRow" valign="top">
+						<strong>Name:</strong> performedHealthcareProviderGroupMember<br />
+						&nbsp;
+					</td>
+					<td width="30%" class="TableRow" valign="top">
+						<strong>Name:</strong> performingHealthcareProvider<br />
+						&nbsp;	
+					</td>
+				</tr>
+				<tr>
+					<td class="TableRowBottomDashed"  colspan="3">
+						<div class="DetailsDivParent"><img src="../../images/minus03.gif" align="absmiddle" id="DetailsImageLink624" onclick="parent.toggleDiv('detailsDIVLink624','DetailsImageLink624')" />Details:
+							<div id="detailsDIVLink624" class="DetailsDiv" >
+							<div class="ObjectDetailsNotes">DESCRIPTION:&lt;br/&gt;Each HealthcareProviderGroupMember always is a function performed by one HealthcareProvider. Each HealthcareProvider might function as one or more HealthcareProviderGroupMember.&lt;br/&gt;&lt;br/&gt;DEFINITION:&lt;br/&gt;&lt;br/&gt;EXAMPLE(S):&lt;br/&gt;&lt;br/&gt;OTHER NAME(S):&lt;br/&gt;&lt;br/&gt;NOTE(S):&lt;br/&gt;&lt;br/&gt;</div>
+
+							</div>
+						</div>
+					</td>
+				</tr>
+				<tr>
+					<td width="40%" class="TableRow" valign="top">
+						<a href="../EA10/EA439.htm">StudySitePersonnel</a><br />
+						Class &nbsp;
+					</td>
+					<td width="30%" class="TableRow" valign="top">
+						<strong>Name:</strong> performedStudySitePersonnel<br />
+						&nbsp;
+					</td>
+					<td width="30%" class="TableRow" valign="top">
+						<strong>Name:</strong> performingHealthcareProvider<br />
+						&nbsp;	
+					</td>
+				</tr>
+				<tr>
+					<td class="TableRowBottomDashed"  colspan="3">
+						<div class="DetailsDivParent"><img src="../../images/minus03.gif" align="absmiddle" id="DetailsImageLink625" onclick="parent.toggleDiv('detailsDIVLink625','DetailsImageLink625')" />Details:
+							<div id="detailsDIVLink625" class="DetailsDiv" >
+							<div class="ObjectDetailsNotes">DESCRIPTION:&lt;br/&gt;Each StudySitePersonnel might be a function performed by one HealthcareProvider. Each HealthcareProvider might function as one or more StudySitePersonnel.&lt;br/&gt;&lt;br/&gt;DEFINITION:&lt;br/&gt;Indicates that the StudySitePersonnel role is being fulfilled by a HealthcareProvider.&lt;br/&gt;&lt;br/&gt;EXAMPLE(S):&lt;br/&gt;&lt;br/&gt;OTHER NAME(S):&lt;br/&gt;&lt;br/&gt;NOTE(S):&lt;br/&gt;</div>
+
+							</div>
+						</div>
+					</td>
+				</tr>
+				<tr>
+					<td width="40%" class="TableRow" valign="top">
+						<a href="EA122.htm">NotificationReceiver</a><br />
+						Class &nbsp;
+					</td>
+					<td width="30%" class="TableRow" valign="top">
+						<strong>Name:</strong> performedNotificationReceiver<br />
+						&nbsp;
+					</td>
+					<td width="30%" class="TableRow" valign="top">
+						<strong>Name:</strong> performingHealthcareProvider<br />
+						&nbsp;	
+					</td>
+				</tr>
+				<tr>
+					<td class="TableRowBottomDashed"  colspan="3">
+						<div class="DetailsDivParent"><img src="../../images/minus03.gif" align="absmiddle" id="DetailsImageLink626" onclick="parent.toggleDiv('detailsDIVLink626','DetailsImageLink626')" />Details:
+							<div id="detailsDIVLink626" class="DetailsDiv" >
+							<div class="ObjectDetailsNotes">DESCRIPTION:&lt;br/&gt;Each NotificationReceiver might be a function performed by one HealthcareProvider.&#160; Each HealthcareProvider might function as one or more NotificationReceiver.&lt;br/&gt;&lt;br/&gt;DEFINITION:&lt;br/&gt;&lt;br/&gt;EXAMPLE(S):&lt;br/&gt;&lt;br/&gt;OTHER NAME(S):&lt;br/&gt;&lt;br/&gt;NOTE(S):&lt;br/&gt;&lt;br/&gt;</div>
+
+							</div>
+						</div>
+					</td>
+				</tr>
+
+			</table>
+		</div>
+<div class="ItemBody" id="TaggedValTable">
+	<table align="center" border="0" cellspacing="0" cellpadding="0" class="Table">
+		<tr>
+			<td width="50%" class="TableHeading">Tag</td>
+			<td width="50%" class="TableHeading">Value</td>
+		</tr>
+					<tr>
+				<td width="50%" class="TableRow" valign="top">Map:APSRv2.1</td>
+				<td width="50%" class="TableRow" valign="top">Hdr: Participant - Referral Ordering Physician - hl7:ClinicalDocument > hl7:participant (Referral Ordering Physician) > hl7:associatedEntity</td>
+			</tr>	
+			<tr>
+				<td class="TableRowBottomDashed"  colspan="2">
+					<div class="DetailsDivParent"><img src="../../images/minus03.gif" align="absmiddle" id="DetailsImageScenario627" onclick="parent.toggleDiv('detailsDIVScenario627','DetailsImageScenario627')" />Details:
+						<div id="detailsDIVScenario627" class="DetailsDiv" >
+						&nbsp;
+						</div>
+					</div>
+				</td>
+			</tr>			<tr>
+				<td width="50%" class="TableRow" valign="top">Map:C3PRv2.9</td>
+				<td width="50%" class="TableRow" valign="top">HealthcareSiteInvestigator</td>
+			</tr>	
+			<tr>
+				<td class="TableRowBottomDashed"  colspan="2">
+					<div class="DetailsDivParent"><img src="../../images/minus03.gif" align="absmiddle" id="DetailsImageScenario628" onclick="parent.toggleDiv('detailsDIVScenario628','DetailsImageScenario628')" />Details:
+						<div id="detailsDIVScenario628" class="DetailsDiv" >
+						&nbsp;
+						</div>
+					</div>
+				</td>
+			</tr>			<tr>
+				<td width="50%" class="TableRow" valign="top">Map:C3PRv2.9</td>
+				<td width="50%" class="TableRow" valign="top">Investigator</td>
+			</tr>	
+			<tr>
+				<td class="TableRowBottomDashed"  colspan="2">
+					<div class="DetailsDivParent"><img src="../../images/minus03.gif" align="absmiddle" id="DetailsImageScenario629" onclick="parent.toggleDiv('detailsDIVScenario629','DetailsImageScenario629')" />Details:
+						<div id="detailsDIVScenario629" class="DetailsDiv" >
+						&nbsp;
+						</div>
+					</div>
+				</td>
+			</tr>			<tr>
+				<td width="50%" class="TableRow" valign="top">Map:caAERSv2.2</td>
+				<td width="50%" class="TableRow" valign="top">SiteInvestigator</td>
+			</tr>	
+			<tr>
+				<td class="TableRowBottomDashed"  colspan="2">
+					<div class="DetailsDivParent"><img src="../../images/minus03.gif" align="absmiddle" id="DetailsImageScenario630" onclick="parent.toggleDiv('detailsDIVScenario630','DetailsImageScenario630')" />Details:
+						<div id="detailsDIVScenario630" class="DetailsDiv" >
+						&nbsp;
+						</div>
+					</div>
+				</td>
+			</tr>			<tr>
+				<td width="50%" class="TableRow" valign="top">Map:caAERSv2.2</td>
+				<td width="50%" class="TableRow" valign="top">Investigator</td>
+			</tr>	
+			<tr>
+				<td class="TableRowBottomDashed"  colspan="2">
+					<div class="DetailsDivParent"><img src="../../images/minus03.gif" align="absmiddle" id="DetailsImageScenario631" onclick="parent.toggleDiv('detailsDIVScenario631','DetailsImageScenario631')" />Details:
+						<div id="detailsDIVScenario631" class="DetailsDiv" >
+						&nbsp;
+						</div>
+					</div>
+				</td>
+			</tr>			<tr>
+				<td width="50%" class="TableRow" valign="top">Map:caAERSv2.2</td>
+				<td width="50%" class="TableRow" valign="top">RoleBasedRecipient.role</td>
+			</tr>	
+			<tr>
+				<td class="TableRowBottomDashed"  colspan="2">
+					<div class="DetailsDivParent"><img src="../../images/minus03.gif" align="absmiddle" id="DetailsImageScenario632" onclick="parent.toggleDiv('detailsDIVScenario632','DetailsImageScenario632')" />Details:
+						<div id="detailsDIVScenario632" class="DetailsDiv" >
+						&nbsp;
+						</div>
+					</div>
+				</td>
+			</tr>			<tr>
+				<td width="50%" class="TableRow" valign="top">Map:CDMHv1.0</td>
+				<td width="50%" class="TableRow" valign="top">HealthcareProvider</td>
+			</tr>	
+			<tr>
+				<td class="TableRowBottomDashed"  colspan="2">
+					<div class="DetailsDivParent"><img src="../../images/minus03.gif" align="absmiddle" id="DetailsImageScenario633" onclick="parent.toggleDiv('detailsDIVScenario633','DetailsImageScenario633')" />Details:
+						<div id="detailsDIVScenario633" class="DetailsDiv" >
+						&nbsp;
+						</div>
+					</div>
+				</td>
+			</tr>			<tr>
+				<td width="50%" class="TableRow" valign="top">Map:CTRPv1.0</td>
+				<td width="50%" class="TableRow" valign="top">HealthCareProvider</td>
+			</tr>	
+			<tr>
+				<td class="TableRowBottomDashed"  colspan="2">
+					<div class="DetailsDivParent"><img src="../../images/minus03.gif" align="absmiddle" id="DetailsImageScenario634" onclick="parent.toggleDiv('detailsDIVScenario634','DetailsImageScenario634')" />Details:
+						<div id="detailsDIVScenario634" class="DetailsDiv" >
+						&nbsp;
+						</div>
+					</div>
+				</td>
+			</tr>			<tr>
+				<td width="50%" class="TableRow" valign="top">Map:CTRPv3.8</td>
+				<td width="50%" class="TableRow" valign="top">HealthCareProvider</td>
+			</tr>	
+			<tr>
+				<td class="TableRowBottomDashed"  colspan="2">
+					<div class="DetailsDivParent"><img src="../../images/minus03.gif" align="absmiddle" id="DetailsImageScenario635" onclick="parent.toggleDiv('detailsDIVScenario635','DetailsImageScenario635')" />Details:
+						<div id="detailsDIVScenario635" class="DetailsDiv" >
+						&nbsp;
+						</div>
+					</div>
+				</td>
+			</tr>			<tr>
+				<td width="50%" class="TableRow" valign="top">Map:CTRRr3</td>
+				<td width="50%" class="TableRow" valign="top">HealthcareProvider</td>
+			</tr>	
+			<tr>
+				<td class="TableRowBottomDashed"  colspan="2">
+					<div class="DetailsDivParent"><img src="../../images/minus03.gif" align="absmiddle" id="DetailsImageScenario636" onclick="parent.toggleDiv('detailsDIVScenario636','DetailsImageScenario636')" />Details:
+						<div id="detailsDIVScenario636" class="DetailsDiv" >
+						&nbsp;
+						</div>
+					</div>
+				</td>
+			</tr>			<tr>
+				<td width="50%" class="TableRow" valign="top">Map:CTRv1.0</td>
+				<td width="50%" class="TableRow" valign="top">HealthcareProvider</td>
+			</tr>	
+			<tr>
+				<td class="TableRowBottomDashed"  colspan="2">
+					<div class="DetailsDivParent"><img src="../../images/minus03.gif" align="absmiddle" id="DetailsImageScenario637" onclick="parent.toggleDiv('detailsDIVScenario637','DetailsImageScenario637')" />Details:
+						<div id="detailsDIVScenario637" class="DetailsDiv" >
+						&nbsp;
+						</div>
+					</div>
+				</td>
+			</tr>			<tr>
+				<td width="50%" class="TableRow" valign="top">Map:HL7SP</td>
+				<td width="50%" class="TableRow" valign="top">Investigator</td>
+			</tr>	
+			<tr>
+				<td class="TableRowBottomDashed"  colspan="2">
+					<div class="DetailsDivParent"><img src="../../images/minus03.gif" align="absmiddle" id="DetailsImageScenario638" onclick="parent.toggleDiv('detailsDIVScenario638','DetailsImageScenario638')" />Details:
+						<div id="detailsDIVScenario638" class="DetailsDiv" >
+						&nbsp;
+						</div>
+					</div>
+				</td>
+			</tr>			<tr>
+				<td width="50%" class="TableRow" valign="top">Map:HL7SP</td>
+				<td width="50%" class="TableRow" valign="top">LicensedEntity</td>
+			</tr>	
+			<tr>
+				<td class="TableRowBottomDashed"  colspan="2">
+					<div class="DetailsDivParent"><img src="../../images/minus03.gif" align="absmiddle" id="DetailsImageScenario639" onclick="parent.toggleDiv('detailsDIVScenario639','DetailsImageScenario639')" />Details:
+						<div id="detailsDIVScenario639" class="DetailsDiv" >
+						&nbsp;
+						</div>
+					</div>
+				</td>
+			</tr>			<tr>
+				<td width="50%" class="TableRow" valign="top">Map:LabViewer2.2</td>
+				<td width="50%" class="TableRow" valign="top">Investigator</td>
+			</tr>	
+			<tr>
+				<td class="TableRowBottomDashed"  colspan="2">
+					<div class="DetailsDivParent"><img src="../../images/minus03.gif" align="absmiddle" id="DetailsImageScenario640" onclick="parent.toggleDiv('detailsDIVScenario640','DetailsImageScenario640')" />Details:
+						<div id="detailsDIVScenario640" class="DetailsDiv" >
+						&nbsp;
+						</div>
+					</div>
+				</td>
+			</tr>			<tr>
+				<td width="50%" class="TableRow" valign="top">Map:OMOPv5.2</td>
+				<td width="50%" class="TableRow" valign="top">PROVIDER</td>
+			</tr>	
+			<tr>
+				<td class="TableRowBottomDashed"  colspan="2">
+					<div class="DetailsDivParent"><img src="../../images/minus03.gif" align="absmiddle" id="DetailsImageScenario641" onclick="parent.toggleDiv('detailsDIVScenario641','DetailsImageScenario641')" />Details:
+						<div id="detailsDIVScenario641" class="DetailsDiv" >
+						&nbsp;
+						</div>
+					</div>
+				</td>
+			</tr>			<tr>
+				<td width="50%" class="TableRow" valign="top">Map:PCORNetv4.0</td>
+				<td width="50%" class="TableRow" valign="top">Provider</td>
+			</tr>	
+			<tr>
+				<td class="TableRowBottomDashed"  colspan="2">
+					<div class="DetailsDivParent"><img src="../../images/minus03.gif" align="absmiddle" id="DetailsImageScenario642" onclick="parent.toggleDiv('detailsDIVScenario642','DetailsImageScenario642')" />Details:
+						<div id="detailsDIVScenario642" class="DetailsDiv" >
+						&nbsp;
+						</div>
+					</div>
+				</td>
+			</tr>
+	</table>
+</div>	</div>
+<div class="pageFooter"></div>
+ 
+</body>
+</html>

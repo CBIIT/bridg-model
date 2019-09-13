@@ -1,0 +1,2378 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>Study Conduct Sub-Domain::PerformedObservation</title>
+<link href="../../css/ea.css" rel="stylesheet" type="text/css" />
+<script>
+function initPage(src) {	
+	if(parent==this&&(this.location+"").indexOf('EARoot')!=-1)
+		document.location=(this.location+"").substring(0,(this.location+"").indexOf('EARoot'))+"index"+(this.location+"").substring((this.location+"").lastIndexOf('.'))+"?goto="+((this.location+"").substring((this.location+"").indexOf('EARoot')+7,(this.location+"").lastIndexOf('.')).replace(/\//g,':').replace(/EA/g,""));
+	else
+		parent.initPage(src);
+}
+
+function nameClassifier(name, separator)
+{
+  var str = name;
+  var classifierName;
+  var node = document.getElementById('name_classifier');
+  if(node != null)
+  {
+    classifierName = node.innerHTML;
+  }
+  if(classifierName != "")
+  {
+   str += separator + classifierName;
+  }
+  
+  return str;
+}
+</script>
+</head>
+<body onload="initPage(this);" class="Content">
+<div class="pageHeader"></div>
+<div class="PageBody">
+	<div id="name_classifier" style="display: none;"></div>
+	<span class="ObjectTitle"><script type="text/javascript">document.write(nameClassifier("PerformedObservation", " : "))</script>  : Public   Class</span>
+	<table border="0" cellpadding="0" cellspacing="0" class="ObjectDetails">
+		<tr>
+			<td width="15%" class="ObjectDetailsTopic">Created:</td>
+			<td width="85%" class="ObjectDetailsValue">8/14/2007 11:08:58 AM</td>
+		</tr>
+		<tr>
+			<td class="ObjectDetailsTopic">Modified:</td>
+			<td class="ObjectDetailsValue">8/30/2019 11:09:33 PM</td>
+		</tr>
+		<tr style="height: 10px"><td colspan="2"></td></tr>
+		<tr>
+			<td class="ObjectDetailsTopic"><img src="../../images/plus03.gif" align="absmiddle" id="proj" onclick="parent.toggleData(this.id)" />Project:</td>
+			<td class="ObjectDetailsValue"></td>
+		</tr>
+		<tr id="proj00" style="display: none;">
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Author:</td>
+			<td class="ObjectDetailsValue">BRIDG SCC</td>
+		</tr>
+		<tr id="proj01" style="display: none;">
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Version:</td>
+			<td class="ObjectDetailsValue">1.0</td>
+		</tr>
+		<tr id="proj02" style="display: none;">
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Phase:</td>
+			<td class="ObjectDetailsValue">1.0</td>
+		</tr>
+		<tr id="proj03" style="display: none;">
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Status:</td>
+			<td class="ObjectDetailsValue"><none></td>
+		</tr>
+		<tr id="proj04" style="display: none;">
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Complexity:</td>
+			<td class="ObjectDetailsValue">Easy</td>
+		</tr>
+		<tr id="proj05" style="display: none;">
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Difficulty:</td>
+			<td class="ObjectDetailsValue"></td>
+		</tr>
+		<tr id="proj06" style="display: none;">
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Priority:</td>
+			<td class="ObjectDetailsValue"></td>
+		</tr>
+		<tr id="proj05" style="display: none;">
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Multiplicity:</td>
+			<td class="ObjectDetailsValue"></td>
+		</tr>
+		<tr>
+			<td class="ObjectDetailsTopic"><img src="../../images/plus03.gif" align="absmiddle" id="adv" onclick="parent.toggleData(this.id)" />Advanced:</td>
+			<td class="ObjectDetailsValue"></td>
+		</tr>
+		<tr id="adv00" style="display: none;">
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">UUID:</td>
+			<td class="ObjectDetailsValue">{E131CF62-27E5-4eee-A9D1-DE1E0C514227}</td>
+		</tr>
+		<tr id="adv01" style="display: none;">
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Appears In:</td>
+			<td class="ObjectDetailsValue"><a href="../EA3.htm">UML-Based Comprehensive BRIDG Model Diagram</a>, <a href="../EA1/EA34.htm">View AE: Adverse Event</a>, <a href="../EA4/EA167.htm">View EX: Experiment</a>, <a href="../EA5/EA182.htm">View IM: Imaging</a>, <a href="../EA5/EA184.htm">Imaging Acquisition</a>, <a href="../EA5/EA186.htm">DICOM SR TID 1500 BRIDG Class Diagram</a>, <a href="../EA6/EA215.htm">DEPRECATED Old View MB: Molecular Biology</a>, <a href="../EA6/EA217.htm">View MB: Molecular Biology</a>, <a href="EA371.htm">View SC: Study Conduct</a>, <a href="../EA11/EA453.htm">SDTM IG v3.1.3</a>, <a href="../EA11/EA459.htm">SDTM Vital Signs (VS)</a>, <a href="../EA11/EA457.htm">SDTM Disease Response (RS) Domain</a>, <a href="../EA11/EA449.htm">CDISC Lab Data Model v1.0.1</a>, <a href="../EA11/EA451.htm">SDTM IG v3.2</a>, <a href="../EA12/EA577.htm">Adverse Events</a>, <a href="../EA12/EA597.htm">Observations and Results</a>, <a href="../EA12/EA609.htm">Performer</a>, <a href="../EA12/EA601.htm">Oncology & Imaging</a>, <a href="../EA12/EA599.htm">Oncology</a>, <a href="../EA12/EA607.htm">Participant Registration</a>, <a href="../EA12/EA635.htm">Surveillance,  Epidemiology & End Results (SEER)</a>, <a href="../EA12/EA591.htm">Lab-Related Classes</a>, <a href="../EA12/EA579.htm">Anatomic Pathology Structured Report (APSR)</a>, <a href="../EA12/EA585.htm">Common Data Model Harmonization (CDMH)</a>, <a href="../EA12/EA581.htm">Animal</a>, <a href="../EA12/EA593.htm">National Biomedical Imaging Archive (NBIA)</a>, <a href="../EA12/EA587.htm">Diagnosis</a>, <a href="../EA12/EA595.htm">National Marrow Donor Program (NMDP)</a></td>
+		</tr>
+	</table>
+	<div class="ObjectDetailsNotes">DEFINITION:&lt;br/&gt;The completed action of observing, monitoring, measuring or otherwise qualitatively or quantitatively gathering data or information about one or more aspects of a subject.&lt;br/&gt;&lt;br/&gt;EXAMPLE(S):&lt;br/&gt;lab test, taking vital signs, physical exam, specimen quality review, obtaining DNA sequence, genotyping a genetic variant, measuring the pH of a solution&lt;br/&gt;&lt;br/&gt;OTHER NAME(S):&lt;br/&gt;&lt;br/&gt;NOTE(S):&lt;br/&gt;</div>
+
+	<div class="TableGroup" id="TableGroup">
+		<ul class="ItemTitle">
+			<li onClick="parent.toggleItem('Attributes');" id="AttributesTitle">Attributes</li>
+			<li onClick="parent.toggleItem('AssociationsTo');" id="AssociationsToTitle">Associations To</li>
+			<li onClick="parent.toggleItem('AssociationsFrom');" id="AssociationsFromTitle">Associations From</li>
+			<li onClick="parent.toggleItem('TaggedVal');" id="TaggedValTitle">Tagged Values</li>
+			<li onClick="parent.toggleItem('Constraints');" id="ConstraintsTitle">Constraints</li>
+			<li onClick="parent.toggleItem('Links');" id="LinksTitle">Other Links</li>
+		</ul>
+<div class="ItemBody" id="AttributesTable">
+	<table border="0" cellspacing="0" cellpadding="0" class="Table">
+		<tr>
+			<td width="100%" class="TableHeading">Attribute</td>
+		</tr>
+						<tr>
+				<td width="100%" class="TableRow">
+					<i>Public CD</i><br /><strong>&nbsp;&nbsp;methodCode</strong>
+				</td>
+			</tr>
+			<tr>
+				<td class="TableRowBottomDashed"  colspan="1">										
+					<a href="#" onclick="parent.toggleData('DetailsImageAttributes2987')" style="text-decoration: none; color: #000000;"><img src="../../images/plus03.gif" align="absmiddle" id="DetailsImageAttributes2987" border="0" />Details:</a>
+					<table border="0" cellspacing="0" cellpadding="0" class="Table" style="padding: 4px 18px;">
+					
+						<tr id="DetailsImageAttributes2987_00" style="display: none;">
+							<td width="75"><i>Alias:</i></td>
+							<td></td>
+						</tr>
+						<tr id="DetailsImageAttributes2987_01" style="display: none;">
+							<td width="75"><i>Initial:</i></td>
+							<td></td>
+						</tr>
+						<tr id="DetailsImageAttributes2987_02" style="display: none;">
+							<td width="75"><i>Stereotype: </i></td>
+							<td></td>
+						</tr>
+						<tr id="DetailsImageAttributes2987_03" style="display: none;">
+							<td width="75"><i>Ordered: </i></td>
+							<td></td>
+						</tr>
+						<tr id="DetailsImageAttributes2987_04" style="display: none;">
+							<td width="75"><i>Range: </i></td>
+							<td>Range:0 to 1</td>
+						</tr>
+						<tr id="DetailsImageAttributes2987_05" style="display: none;">
+							<td width="75"><i>Transient: </i></td>
+							<td>False</td>
+						</tr>
+						<tr id="DetailsImageAttributes2987_06" style="display: none;">
+							<td width="75"><i>Derived: </i></td>
+							<td>False</td>
+						</tr>
+							<tr id="DetailsImageAttributes2987_07" style="display: none;">
+							<td width="75"><i>IsID: </i></td>
+						<td>False</td>
+						</tr>
+					</table>
+					
+					Map:AE=PerformedProductInvestigation.evaluationMethodCode<br>Map:AE=CausalAssessment.methodCode<br>Map:APSRv2.1=[Problem] hl7:organizer [Problem] hl7:organizer > hl7:component [Any kind of AP observation] > hl7:observation > hl7:methodCode<br>Map:APSRv2.1=[Problem] hl7:organizer [Problem] hl7:organizer > hl7:component [Lab Obs] > hl7:observation > hl7:methodCode<br>Map:CDASHv1.1=EG.EGMETHOD<br>Map:CDMHv1.0=PerformedObservation.methodCode<br>Map:CTOM=ClinicalResult.meansVitalStatusObtainedCode<br>Map:CTOM=LesionDescription.methodCode<br>Map:CTOM=ClinicalResult.labTechniqueCode<br>Map:CTOM=ClinicalResult.assayMethodCode<br>Map:CTRPv3.8=PerformedObservation.methodCode<br>Map:CTRv1.0=PerformedObservation.methodCode<br>Map:DICOM=TID 300 Measurement > $Measurement parameter > Measurement Method<br>Map:DICOM=TID 1501 MeasurementGroup > Measurement Group > Measurement Method<br>Map:DICOM=TID 1419 ROIMeasurements > $Measurement parameter > Measurement Method<br>Map:DICOM=TID 1419 ROIMeasurements > Measurement Group > Measurement Method<br>Map:HCTv1.0=CDE 2630451:Procedures.Specify test and method for test performed on other infectious disease marker:<br>Map:HCTv1.0=CDE 2775544:Techniques.What tumor cell detection method was used ?<br>Map:HCTv1.0=CDE 2985297:Lab Results.Specify the chimerism laboratory procedure method type:<br>Map:HCTv1.0=CDE 2749395:Involvement and Extent of Disease.What was the systemic sclerosis biopsy type?<br>Map:HCTv1.0=CDE 3020053:Procedures.Specify other mental process development testing clinical assessment tool:<br>Map:HCTv1.0=CDE 3031335:Procedures.Specify disease or disorder assessment method:<br>Map:HCTv1.0=CDE 2778231:Techniques.Specify other tumor cell detection method used prior to HCST<br>Map:HCTv1.0=CDE 2778929:Techniques.What kind of method was used to detect tumor cells after purging?<br>Map:HCTv1.0=CDE 2780165:Lab Results.Chimerism study method type:<br>Map:HCTv1.0=CDE 2785787:Specimen Characteristics.Specify cell specimen viable laboratory procedure:<br>Map:HCTv1.0=CDE 2974158:Lab Results.What paroxysmal nocturnal hemoglobinuria test was used?<br>Map:HCTv1.0=CDE 2978298:Tumor Measurements.What was the primary neoplasm size assessment method?<br>Map:HCTv1.0=CDE 2974019:Procedures.Which method(s) were used to evaluate the status?<br>Map:HCTv1.0=CDE 3057363:Lab Results.Specify the method used to assess left ventricle performance:<br>Map:HCTv1.0=CDE 3179410:Lab Results.Second fungal infection confirmed laboratory procedure name:<br>Map:HCTv1.0=CDE 2974160:Lab Results.Specify other paroxysmal nocturnal hemoglobinuria test:<br>Map:HCTv1.0=CDE 2861466:Procedures.What type of cytogenetic analysis was the disease assessed by?<br>Map:HCTv1.0=CDE 2749589:Involvement and Extent of Disease.What was the systemic lupus erythematosus (SLE) biopsy type?<br>Map:HCTv1.0=CDE 3179398:Lab Results.First fungal infection confirmed laboratory procedure name:<br>Map:HCTv1.0=CDE 2760530:Specimen Characteristics.Which method of testing cell viability was used?<br>Map:HCTv1.0=CDE 3009669:Lab Results.Specify the index used to report the value:<br>Map:HCTv1.0=CDE 2767307:Techniques.Specify the other tumor cells detection method<br>Map:HCTv1.0=CDE 2861233:Procedures.What method was used to assess the disease?<br>Map:HCTv1.0=CDE 3179414:Lab Results.Third fungal infection confirmed laboratory procedure name:<br>Map:HCTv1.0=CDE 2963400:Lab Results.What type of neoplastic cell detection method was performed?<br>Map:HCTv1.0=CDE 3057325:Procedures.What clinical assessment test tool was used to determine mental development:<br>Map:ICSRr2=CausalityAssessment.methodCode (in IndividualCaseSafetyReport)<br>Map:LSDAMv2.2.3Plus=PerformedObservation.methodCode<br>Map:PCORNetv3.1=Vital.vital_source<br>Map:PCORNetv3.1=Pro_CM.pro_method<br>Map:PCORNetv3.1=Pro_CM.pro_cat<br>Map:PCORNetv4.0=Pro_CM.pro_cat<br>Map:PCORNetv4.0=Pro_CM.pro_method<br>Map:PCORNetv4.0=Vital.vital_source<br>Map:PGx v1.0=PG.PGMETHOD<br>Map:PGx v1.0=BS.BSMETHOD<br>Map:PGx v1.0=PF.PFMETHOD<br>Map:SDTM IGv3.1.2=PE.PEMETHOD<br>Map:SDTM IGv3.1.2=MB.MBMETHOD<br>Map:SDTM IGv3.1.2=EG.EGMETHOD<br>Map:SDTM IGv3.1.2=CM.CMPRESP<br>Map:SDTM IGv3.1.2=PC.PCMETHOD<br>Map:SDTM IGv3.1.2=CE.CEPRESP<br>Map:SDTM IGv3.1.2=MH.MHPRESP<br>Map:SDTM IGv3.1.2=MS.MSMETHOD<br>Map:SDTM IGv3.1.2=LB.LBMETHOD<br>Map:SDTM IGv3.1.3=TU.TUMETHOD<br>Map:SDTM IGv3.1.3=TR.TRMETHOD<br>Map:SDTM IGv3.1.3=PE.PEMETHOD<br>Map:SDTM IGv3.1.3=PC.PCMETHOD<br>Map:SDTM IGv3.1.3=MS.MSMETHOD<br>Map:SDTM IGv3.1.3=EG.EGMETHOD<br>Map:SDTM IGv3.1.3=LB.LBMETHOD<br>Map:SDTM IGv3.1.3=MB.MBMETHOD<br>Map:SDTM IGv3.2=PC.PCMETHOD<br>Map:SDTM IGv3.2=TR.TRMETHOD<br>Map:SDTM IGv3.2=MBMETHOD<br>Map:SDTM IGv3.2=EG.EGMETHOD<br>Map:SDTM IGv3.2=SR.SRMETHOD<br>Map:SDTM IGv3.2=IS.ISMETHOD<br>Map:SDTM IGv3.2=MI.MIMETHOD<br>Map:SDTM IGv3.2=PE.PEMETHOD<br>Map:SDTM IGv3.2=MS.MSMETHOD<br>Map:SDTM IGv3.2=MO.MOMETHOD<br>Map:SDTM IGv3.2=TU.TUMETHOD<br>Map:SDTM IGv3.2=LB.LBMETHOD<br>Map:SEER 2015=SECTION VI COLLABORATIVE STAGE DATA COLLECTION SYSTEM - CS LYMPH NODES EVAL<br>Map:SEER 2015=SECTION VI COLLABORATIVE STAGE DATA COLLECTION SYSTEM - CS TUMOR SIZE/EXT EVAL<br>Map:SEER 2015=SECTION IV DESCRIPTION OF THIS NEOPLASM - DIAGNOSTIC CONFIRMATION<br>Map:SEER 2015=SECTION VI COLLABORATIVE STAGE DATA COLLECTION SYSTEM - CS METS EVAL<br>
+						<div class="ObjectDetailsNotes"><table>
+	<tr>
+		<td valign="top">
+			<i>Notes: </i><span style="margin-left: .4cm;"> </span>
+		</td>
+		<td>
+			DEFINITION:&lt;br/&gt;A coded value specifying the technique used to perform the observation.&lt;br/&gt;&lt;br/&gt;EXAMPLE(S):&lt;br/&gt;Arterial puncture, sphygmomanometry (for blood pressure measurement)&lt;br/&gt;&lt;br/&gt;Global introspection, algorithm, bayesian (for Adverse Event causality)&lt;br/&gt;&lt;br/&gt;Estrogen Receptor Assay, Progesterone Receptor Assay, p53 Assay (for clinical result assay)&lt;br/&gt;&lt;br/&gt;OTHER NAME(S):&lt;br/&gt;&lt;br/&gt;NOTE(S):&lt;br/&gt;
+		</td>
+	</tr>
+</table></div>
+
+						
+				</td>
+			</tr>			<tr>
+				<td width="100%" class="TableRow">
+					<i>Public CD</i><br /><strong>&nbsp;&nbsp;derivationMethodCode</strong>
+				</td>
+			</tr>
+			<tr>
+				<td class="TableRowBottomDashed"  colspan="1">										
+					<a href="#" onclick="parent.toggleData('DetailsImageAttributes2988')" style="text-decoration: none; color: #000000;"><img src="../../images/plus03.gif" align="absmiddle" id="DetailsImageAttributes2988" border="0" />Details:</a>
+					<table border="0" cellspacing="0" cellpadding="0" class="Table" style="padding: 4px 18px;">
+					
+						<tr id="DetailsImageAttributes2988_00" style="display: none;">
+							<td width="75"><i>Alias:</i></td>
+							<td></td>
+						</tr>
+						<tr id="DetailsImageAttributes2988_01" style="display: none;">
+							<td width="75"><i>Initial:</i></td>
+							<td></td>
+						</tr>
+						<tr id="DetailsImageAttributes2988_02" style="display: none;">
+							<td width="75"><i>Stereotype: </i></td>
+							<td></td>
+						</tr>
+						<tr id="DetailsImageAttributes2988_03" style="display: none;">
+							<td width="75"><i>Ordered: </i></td>
+							<td></td>
+						</tr>
+						<tr id="DetailsImageAttributes2988_04" style="display: none;">
+							<td width="75"><i>Range: </i></td>
+							<td></td>
+						</tr>
+						<tr id="DetailsImageAttributes2988_05" style="display: none;">
+							<td width="75"><i>Transient: </i></td>
+							<td>False</td>
+						</tr>
+						<tr id="DetailsImageAttributes2988_06" style="display: none;">
+							<td width="75"><i>Derived: </i></td>
+							<td>False</td>
+						</tr>
+							<tr id="DetailsImageAttributes2988_07" style="display: none;">
+							<td width="75"><i>IsID: </i></td>
+						<td>False</td>
+						</tr>
+					</table>
+					
+					Map:DICOM=TID 300 Measurement > $Measurement parameter > Derivation<br>
+						<div class="ObjectDetailsNotes"><table>
+	<tr>
+		<td valign="top">
+			<i>Notes: </i><span style="margin-left: .4cm;"> </span>
+		</td>
+		<td>
+			DEFINITION:&lt;br/&gt;A coded value specifying the technique used to calculate a measured value.&lt;br/&gt;&lt;br/&gt;EXAMPLE(S):&lt;br/&gt;mean, maximum of set&lt;br/&gt;&lt;br/&gt;OTHER NAME(S):&lt;br/&gt;&lt;br/&gt;NOTE(S):&lt;br/&gt;
+		</td>
+	</tr>
+</table></div>
+
+						
+				</td>
+			</tr>			<tr>
+				<td width="100%" class="TableRow">
+					<i>Public CD</i><br /><strong>&nbsp;&nbsp;targetAnatomicSiteCode</strong>
+				</td>
+			</tr>
+			<tr>
+				<td class="TableRowBottomDashed"  colspan="1">										
+					<a href="#" onclick="parent.toggleData('DetailsImageAttributes2989')" style="text-decoration: none; color: #000000;"><img src="../../images/plus03.gif" align="absmiddle" id="DetailsImageAttributes2989" border="0" />Details:</a>
+					<table border="0" cellspacing="0" cellpadding="0" class="Table" style="padding: 4px 18px;">
+					
+						<tr id="DetailsImageAttributes2989_00" style="display: none;">
+							<td width="75"><i>Alias:</i></td>
+							<td></td>
+						</tr>
+						<tr id="DetailsImageAttributes2989_01" style="display: none;">
+							<td width="75"><i>Initial:</i></td>
+							<td></td>
+						</tr>
+						<tr id="DetailsImageAttributes2989_02" style="display: none;">
+							<td width="75"><i>Stereotype: </i></td>
+							<td></td>
+						</tr>
+						<tr id="DetailsImageAttributes2989_03" style="display: none;">
+							<td width="75"><i>Ordered: </i></td>
+							<td></td>
+						</tr>
+						<tr id="DetailsImageAttributes2989_04" style="display: none;">
+							<td width="75"><i>Range: </i></td>
+							<td>Range:0 to 1</td>
+						</tr>
+						<tr id="DetailsImageAttributes2989_05" style="display: none;">
+							<td width="75"><i>Transient: </i></td>
+							<td>False</td>
+						</tr>
+						<tr id="DetailsImageAttributes2989_06" style="display: none;">
+							<td width="75"><i>Derived: </i></td>
+							<td>False</td>
+						</tr>
+							<tr id="DetailsImageAttributes2989_07" style="display: none;">
+							<td width="75"><i>IsID: </i></td>
+						<td>False</td>
+						</tr>
+					</table>
+					
+					Map:CTOM=Imaging.anatomicSiteCode<br>Map:CTOM=Imaging.anatomicSiteCodeSystem<br>Map:CTRPv3.8=PerformedObservation.targetSiteCode<br>Map:CTRv1.0=PerformedObservation.targetAnatomicSiteCode<br>Map:DICOM=General Series Module - Body Part Examined (0018,0015)<br>Map:LSDAMv2.2.3Plus=PerformedObservation.targetAnatomicSiteCode<br>Map:NBIAv6.4=General_Series.body_part_examined<br>Map:SDTM IGv3.1.2=PE.PELOC<br>Map:SDTM IGv3.1.2=FA.FALOC<br>Map:SDTM IGv3.1.3=VS.VSLOC<br>Map:SDTM IGv3.1.3=PE.PELOC<br>Map:SDTM IGv3.1.3=FA.FALOC<br>Map:SDTM IGv3.2=MI.MILOC<br>Map:SDTM IGv3.2=MO.MOLOC<br>Map:SDTM IGv3.2=SR.SRLOC<br>Map:SDTM IGv3.2=VS.VSLOC<br>Map:SDTM IGv3.2=FA.FALOC<br>Map:SDTM IGv3.2=PE.PELOC<br>
+						<div class="ObjectDetailsNotes"><table>
+	<tr>
+		<td valign="top">
+			<i>Notes: </i><span style="margin-left: .4cm;"> </span>
+		</td>
+		<td>
+			DEFINITION:&lt;br/&gt;A coded value specifying the anatomic location that is the focus of the observation.&lt;br/&gt;&lt;br/&gt;EXAMPLE(S):&lt;br/&gt;Lower intestine for a colonoscopy observation&lt;br/&gt;&lt;br/&gt;OTHER NAME(S):&lt;br/&gt;&lt;br/&gt;NOTE(S):&lt;br/&gt;The target site of the result may be different than the target site of the activity (PerformedObservation) that generated it.&#160; For example, a chest x-ray (observation) has the target site of chest while the result might show an infiltration in the left lower lobe of the lung (target site of result), or a dermatological exam may check the skin across the whole body (target site of observation) while the result might identify a rash on the right leg (target site of result).&lt;br/&gt;&lt;br/&gt;Neither target anatomic site nor approach anatomic site is necessarily required or relevant for certain observations, however if either or both are present then the distinction between them is that the approach site is where the measurement or observation is performed and the target site is what is ultimately being evaluated. The target site is often implicit in the definition of the observation itself.&lt;br/&gt;&lt;br/&gt;Sources that capture anatomic site and laterality separately should map both to this attribute. For implementation models based on BRIDG where site and laterality are captured separately, you may wish to capture both concepts as a post-coordinated code structure or as multiple code repetitions&lt;br/&gt;
+		</td>
+	</tr>
+</table></div>
+
+						
+				</td>
+			</tr>			<tr>
+				<td width="100%" class="TableRow">
+					<i>Public CD</i><br /><strong>&nbsp;&nbsp;targetAnatomicSiteLateralityCode</strong>
+				</td>
+			</tr>
+			<tr>
+				<td class="TableRowBottomDashed"  colspan="1">										
+					<a href="#" onclick="parent.toggleData('DetailsImageAttributes2990')" style="text-decoration: none; color: #000000;"><img src="../../images/plus03.gif" align="absmiddle" id="DetailsImageAttributes2990" border="0" />Details:</a>
+					<table border="0" cellspacing="0" cellpadding="0" class="Table" style="padding: 4px 18px;">
+					
+						<tr id="DetailsImageAttributes2990_00" style="display: none;">
+							<td width="75"><i>Alias:</i></td>
+							<td></td>
+						</tr>
+						<tr id="DetailsImageAttributes2990_01" style="display: none;">
+							<td width="75"><i>Initial:</i></td>
+							<td></td>
+						</tr>
+						<tr id="DetailsImageAttributes2990_02" style="display: none;">
+							<td width="75"><i>Stereotype: </i></td>
+							<td></td>
+						</tr>
+						<tr id="DetailsImageAttributes2990_03" style="display: none;">
+							<td width="75"><i>Ordered: </i></td>
+							<td></td>
+						</tr>
+						<tr id="DetailsImageAttributes2990_04" style="display: none;">
+							<td width="75"><i>Range: </i></td>
+							<td>Range:0 to 1</td>
+						</tr>
+						<tr id="DetailsImageAttributes2990_05" style="display: none;">
+							<td width="75"><i>Transient: </i></td>
+							<td>False</td>
+						</tr>
+						<tr id="DetailsImageAttributes2990_06" style="display: none;">
+							<td width="75"><i>Derived: </i></td>
+							<td>False</td>
+						</tr>
+							<tr id="DetailsImageAttributes2990_07" style="display: none;">
+							<td width="75"><i>IsID: </i></td>
+						<td>False</td>
+						</tr>
+					</table>
+					
+					Map:CTRv1.0=PerformedObservation.targetAnatomicSiteLateralityCode<br>Map:LSDAMv2.2.3Plus=PerformedObservation.targetAnatomicSiteLateralityCode<br>Map:SDTM IGv3.1.3=VS.VSLOC<br>Map:SDTM IGv3.1.3=FA.FALOC<br>Map:SDTM IGv3.2=VS.VSLOC<br>Map:SDTM IGv3.2=VS.VSLAT<br>Map:SDTM IGv3.2=FA.FALAT<br>
+						<div class="ObjectDetailsNotes"><table>
+	<tr>
+		<td valign="top">
+			<i>Notes: </i><span style="margin-left: .4cm;"> </span>
+		</td>
+		<td>
+			DEFINITION:&lt;br/&gt;A coded value specifying the side of the body (or a paired organ) that is a target site for an observation. &lt;br/&gt;&lt;br/&gt;EXAMPLE(S):&lt;br/&gt;bilateral, left, right&lt;br/&gt;&lt;br/&gt;OTHER NAME(S):&lt;br/&gt;&lt;br/&gt;NOTE(S):&lt;br/&gt;This attribute was deprecated in BRIDG 3.1 but undeprecated in 4.0 since source use cases for separate laterality include SDTM and CTOM.&#160; This change ensures that users of the BRIDG model are not bound to a particular kind of vocabulary, such as pre- or post-coordinated vocabularies.&#160; Collapsing laterality into the target site code is an implementation option.&lt;br/&gt;
+		</td>
+	</tr>
+</table></div>
+
+						
+				</td>
+			</tr>			<tr>
+				<td width="100%" class="TableRow">
+					<i>Public CD</i><br /><strong>&nbsp;&nbsp;analysisMethodCode</strong>
+				</td>
+			</tr>
+			<tr>
+				<td class="TableRowBottomDashed"  colspan="1">										
+					<a href="#" onclick="parent.toggleData('DetailsImageAttributes2991')" style="text-decoration: none; color: #000000;"><img src="../../images/plus03.gif" align="absmiddle" id="DetailsImageAttributes2991" border="0" />Details:</a>
+					<table border="0" cellspacing="0" cellpadding="0" class="Table" style="padding: 4px 18px;">
+					
+						<tr id="DetailsImageAttributes2991_00" style="display: none;">
+							<td width="75"><i>Alias:</i></td>
+							<td></td>
+						</tr>
+						<tr id="DetailsImageAttributes2991_01" style="display: none;">
+							<td width="75"><i>Initial:</i></td>
+							<td></td>
+						</tr>
+						<tr id="DetailsImageAttributes2991_02" style="display: none;">
+							<td width="75"><i>Stereotype: </i></td>
+							<td></td>
+						</tr>
+						<tr id="DetailsImageAttributes2991_03" style="display: none;">
+							<td width="75"><i>Ordered: </i></td>
+							<td></td>
+						</tr>
+						<tr id="DetailsImageAttributes2991_04" style="display: none;">
+							<td width="75"><i>Range: </i></td>
+							<td>Range:0 to 1</td>
+						</tr>
+						<tr id="DetailsImageAttributes2991_05" style="display: none;">
+							<td width="75"><i>Transient: </i></td>
+							<td>False</td>
+						</tr>
+						<tr id="DetailsImageAttributes2991_06" style="display: none;">
+							<td width="75"><i>Derived: </i></td>
+							<td>False</td>
+						</tr>
+							<tr id="DetailsImageAttributes2991_07" style="display: none;">
+							<td width="75"><i>IsID: </i></td>
+						<td>False</td>
+						</tr>
+					</table>
+					
+					Map:PGx v1.0=PF.PFANMETH<br>Map:SDTM IGv3.1.2=MO.MOANMETH<br>
+						<div class="ObjectDetailsNotes"><table>
+	<tr>
+		<td valign="top">
+			<i>Notes: </i><span style="margin-left: .4cm;"> </span>
+		</td>
+		<td>
+			DEFINITION:&lt;br/&gt;A coded value specifying the technique used for secondary processing applied to a complex observation result (e.g. an image or a genetic sequence) to obtain a summarized result.&lt;br/&gt;&lt;br/&gt;EXAMPLE(S):&lt;br/&gt;Lowess, Paired-end mapping, Probe Signal Intensity, SNP Genotyping&lt;br/&gt;&lt;br/&gt;OTHER NAME(S):&lt;br/&gt;&lt;br/&gt;NOTE(S):&lt;br/&gt;There are often a range of analysis method codes that are appropriate for a given method code.&lt;br/&gt;
+		</td>
+	</tr>
+</table></div>
+
+						
+				</td>
+			</tr>			<tr>
+				<td width="100%" class="TableRow">
+					<i>Public CD</i><br /><strong>&nbsp;&nbsp;approachAnatomicSiteCode</strong>
+				</td>
+			</tr>
+			<tr>
+				<td class="TableRowBottomDashed"  colspan="1">										
+					<a href="#" onclick="parent.toggleData('DetailsImageAttributes2992')" style="text-decoration: none; color: #000000;"><img src="../../images/plus03.gif" align="absmiddle" id="DetailsImageAttributes2992" border="0" />Details:</a>
+					<table border="0" cellspacing="0" cellpadding="0" class="Table" style="padding: 4px 18px;">
+					
+						<tr id="DetailsImageAttributes2992_00" style="display: none;">
+							<td width="75"><i>Alias:</i></td>
+							<td></td>
+						</tr>
+						<tr id="DetailsImageAttributes2992_01" style="display: none;">
+							<td width="75"><i>Initial:</i></td>
+							<td></td>
+						</tr>
+						<tr id="DetailsImageAttributes2992_02" style="display: none;">
+							<td width="75"><i>Stereotype: </i></td>
+							<td></td>
+						</tr>
+						<tr id="DetailsImageAttributes2992_03" style="display: none;">
+							<td width="75"><i>Ordered: </i></td>
+							<td></td>
+						</tr>
+						<tr id="DetailsImageAttributes2992_04" style="display: none;">
+							<td width="75"><i>Range: </i></td>
+							<td>Range:0 to 1</td>
+						</tr>
+						<tr id="DetailsImageAttributes2992_05" style="display: none;">
+							<td width="75"><i>Transient: </i></td>
+							<td>False</td>
+						</tr>
+						<tr id="DetailsImageAttributes2992_06" style="display: none;">
+							<td width="75"><i>Derived: </i></td>
+							<td>False</td>
+						</tr>
+							<tr id="DetailsImageAttributes2992_07" style="display: none;">
+							<td width="75"><i>IsID: </i></td>
+						<td>False</td>
+						</tr>
+					</table>
+					
+					Map:CDASHv1.1=VS.VSLOC<br>Map:CTRv1.0=PerformedObservation.approachAnatomicSiteCode<br>Map:SDTM IGv3.1.2=EG.EGLOC<br>Map:SDTM IGv3.1.2=VS.VSLOC<br>Map:SDTM IGv3.1.2=FA.FALOC<br>Map:SDTM IGv3.1.3=EG.EGLOC<br>Map:SDTM IGv3.1.3=VS.VSLOC<br>Map:SDTM IGv3.1.3=FA.FALOC<br>Map:SDTM IGv3.2=EG.EGLEAD<br>Map:SDTM IGv3.2=FA.FALOC<br>Map:SDTM IGv3.2=VS.VSLOC<br>
+						<div class="ObjectDetailsNotes"><table>
+	<tr>
+		<td valign="top">
+			<i>Notes: </i><span style="margin-left: .4cm;"> </span>
+		</td>
+		<td>
+			DEFINITION:&lt;br/&gt;A coded value specifying the anatomic location or access point&#160; for an observation.&lt;br/&gt;&lt;br/&gt;EXAMPLE(S):&lt;br/&gt;Anus for a colonoscopy observation&lt;br/&gt;&lt;br/&gt;OTHER NAME(S):&lt;br/&gt;&lt;br/&gt;NOTE(S):&lt;br/&gt;Neither target anatomic site nor approach anatomic site is necessarily required or relevant for certain observations, however if either or both are present then the distinction between them is that the approach site is the acces point for the measurement or observation and the target site is what is ultimately being evaluated. &lt;br/&gt;&lt;br/&gt;Sources that capture anatomic site and laterality separately should map both to this attribute. For implementation models based on BRIDG where site and laterality are captured separately, you may wish to capture both concepts as a post-coordinated code structure or as multiple code repetitions.&lt;br/&gt;
+		</td>
+	</tr>
+</table></div>
+
+						
+				</td>
+			</tr>			<tr>
+				<td width="100%" class="TableRow">
+					<i>Public CD</i><br /><strong>&nbsp;&nbsp;approachAnatomicSiteLateralityCode</strong>
+				</td>
+			</tr>
+			<tr>
+				<td class="TableRowBottomDashed"  colspan="1">										
+					<a href="#" onclick="parent.toggleData('DetailsImageAttributes2993')" style="text-decoration: none; color: #000000;"><img src="../../images/plus03.gif" align="absmiddle" id="DetailsImageAttributes2993" border="0" />Details:</a>
+					<table border="0" cellspacing="0" cellpadding="0" class="Table" style="padding: 4px 18px;">
+					
+						<tr id="DetailsImageAttributes2993_00" style="display: none;">
+							<td width="75"><i>Alias:</i></td>
+							<td></td>
+						</tr>
+						<tr id="DetailsImageAttributes2993_01" style="display: none;">
+							<td width="75"><i>Initial:</i></td>
+							<td></td>
+						</tr>
+						<tr id="DetailsImageAttributes2993_02" style="display: none;">
+							<td width="75"><i>Stereotype: </i></td>
+							<td></td>
+						</tr>
+						<tr id="DetailsImageAttributes2993_03" style="display: none;">
+							<td width="75"><i>Ordered: </i></td>
+							<td></td>
+						</tr>
+						<tr id="DetailsImageAttributes2993_04" style="display: none;">
+							<td width="75"><i>Range: </i></td>
+							<td>Range:0 to 1</td>
+						</tr>
+						<tr id="DetailsImageAttributes2993_05" style="display: none;">
+							<td width="75"><i>Transient: </i></td>
+							<td>False</td>
+						</tr>
+						<tr id="DetailsImageAttributes2993_06" style="display: none;">
+							<td width="75"><i>Derived: </i></td>
+							<td>False</td>
+						</tr>
+							<tr id="DetailsImageAttributes2993_07" style="display: none;">
+							<td width="75"><i>IsID: </i></td>
+						<td>False</td>
+						</tr>
+					</table>
+					
+					Map:CDASHv1.1=VS.VSLOC<br>Map:CTRv1.0=PerformedObservation.approachAnatomicSiteLateralityCode<br>Map:SDTM IGv3.1.2=VS.VSLOC<br>Map:SDTM IGv3.1.2=EG.EGLOC<br>Map:SDTM IGv3.1.2=FA.FALOC<br>Map:SDTM IGv3.1.3=FA.FALOC<br>Map:SDTM IGv3.1.3=VS.VSLOC<br>Map:SDTM IGv3.2=VS.VSLOC<br>Map:SDTM IGv3.2=FA.FALAT<br>Map:SDTM IGv3.2=VS.VSLAT<br>
+						<div class="ObjectDetailsNotes"><table>
+	<tr>
+		<td valign="top">
+			<i>Notes: </i><span style="margin-left: .4cm;"> </span>
+		</td>
+		<td>
+			DEFINITION:&lt;br/&gt;A coded value specifying the side of the body (or a paired organ) that is an access point for a observation. &lt;br/&gt;&lt;br/&gt;EXAMPLE(S):&lt;br/&gt;bilateral, left, right&lt;br/&gt;&lt;br/&gt;OTHER NAME(S):&lt;br/&gt;&lt;br/&gt;NOTE(S):&lt;br/&gt;This attribute was deprecated in BRIDG 3.1 but undeprecated in 4.0 since source use cases for separate laterality include SDTM and CTOM.&#160; This change ensures that users of the BRIDG model are not bound to a particular kind of vocabulary, such as pre- or post-coordinated vocabularies.&#160; Collapsing laterality into the target site code is an implementation option.&lt;br/&gt;
+		</td>
+	</tr>
+</table></div>
+
+						
+				</td>
+			</tr>			<tr>
+				<td width="100%" class="TableRow">
+					<i>Public CD</i><br /><strong>&nbsp;&nbsp;bodySystemCode</strong>
+				</td>
+			</tr>
+			<tr>
+				<td class="TableRowBottomDashed"  colspan="1">										
+					<a href="#" onclick="parent.toggleData('DetailsImageAttributes2994')" style="text-decoration: none; color: #000000;"><img src="../../images/plus03.gif" align="absmiddle" id="DetailsImageAttributes2994" border="0" />Details:</a>
+					<table border="0" cellspacing="0" cellpadding="0" class="Table" style="padding: 4px 18px;">
+					
+						<tr id="DetailsImageAttributes2994_00" style="display: none;">
+							<td width="75"><i>Alias:</i></td>
+							<td></td>
+						</tr>
+						<tr id="DetailsImageAttributes2994_01" style="display: none;">
+							<td width="75"><i>Initial:</i></td>
+							<td></td>
+						</tr>
+						<tr id="DetailsImageAttributes2994_02" style="display: none;">
+							<td width="75"><i>Stereotype: </i></td>
+							<td></td>
+						</tr>
+						<tr id="DetailsImageAttributes2994_03" style="display: none;">
+							<td width="75"><i>Ordered: </i></td>
+							<td></td>
+						</tr>
+						<tr id="DetailsImageAttributes2994_04" style="display: none;">
+							<td width="75"><i>Range: </i></td>
+							<td>Range:0 to 1</td>
+						</tr>
+						<tr id="DetailsImageAttributes2994_05" style="display: none;">
+							<td width="75"><i>Transient: </i></td>
+							<td>False</td>
+						</tr>
+						<tr id="DetailsImageAttributes2994_06" style="display: none;">
+							<td width="75"><i>Derived: </i></td>
+							<td>False</td>
+						</tr>
+							<tr id="DetailsImageAttributes2994_07" style="display: none;">
+							<td width="75"><i>IsID: </i></td>
+						<td>False</td>
+						</tr>
+					</table>
+					
+					Map:CTRv1.0=PerformedObservationResult.bodySystemCode<br>Map:LSDAMv2.2.3Plus=PerformedObservationResult.bodySystemCode<br>Map:NCI CRF Standard=CDE 3192540v1.0: Medical History Review of Systems Criteria Category<br>Map:NCI CRF Standard=CDE 2182671v1.0:  Other Body System/Site Text<br>Map:NCI CRF Standard=CDE 3192450v1.0: Physical Examination Criteria Category<br>Map:SDTM IGv3.1.1=PE.PEBODSYS<br>Map:SDTM IGv3.1.2=PE.PEBODSYS<br>Map:SDTM IGv3.1.3=PE.PEBODSYS<br>Map:SDTM IGv3.2=PE.PEBODSYS<br>
+						<div class="ObjectDetailsNotes"><table>
+	<tr>
+		<td valign="top">
+			<i>Notes: </i><span style="margin-left: .4cm;"> </span>
+		</td>
+		<td>
+			DEFINITION:&lt;br/&gt;A coded value specifying the anatomical structure that consists of organs and organ subclasses responsible for certain body functions. &lt;br/&gt;&lt;br/&gt;EXAMPLE(S):&lt;br/&gt;gastrointestinal system, urinary system, hematopoietic system&lt;br/&gt;&lt;br/&gt;OTHER NAME(S):&lt;br/&gt;&lt;br/&gt;NOTE(S):&lt;br/&gt;
+		</td>
+	</tr>
+</table></div>
+
+						
+				</td>
+			</tr>			<tr>
+				<td width="100%" class="TableRow">
+					<i>Public CD</i><br /><strong>&nbsp;&nbsp;bodyPositionCode</strong>
+				</td>
+			</tr>
+			<tr>
+				<td class="TableRowBottomDashed"  colspan="1">										
+					<a href="#" onclick="parent.toggleData('DetailsImageAttributes2995')" style="text-decoration: none; color: #000000;"><img src="../../images/plus03.gif" align="absmiddle" id="DetailsImageAttributes2995" border="0" />Details:</a>
+					<table border="0" cellspacing="0" cellpadding="0" class="Table" style="padding: 4px 18px;">
+					
+						<tr id="DetailsImageAttributes2995_00" style="display: none;">
+							<td width="75"><i>Alias:</i></td>
+							<td></td>
+						</tr>
+						<tr id="DetailsImageAttributes2995_01" style="display: none;">
+							<td width="75"><i>Initial:</i></td>
+							<td></td>
+						</tr>
+						<tr id="DetailsImageAttributes2995_02" style="display: none;">
+							<td width="75"><i>Stereotype: </i></td>
+							<td></td>
+						</tr>
+						<tr id="DetailsImageAttributes2995_03" style="display: none;">
+							<td width="75"><i>Ordered: </i></td>
+							<td></td>
+						</tr>
+						<tr id="DetailsImageAttributes2995_04" style="display: none;">
+							<td width="75"><i>Range: </i></td>
+							<td>Range:0 to 1</td>
+						</tr>
+						<tr id="DetailsImageAttributes2995_05" style="display: none;">
+							<td width="75"><i>Transient: </i></td>
+							<td>False</td>
+						</tr>
+						<tr id="DetailsImageAttributes2995_06" style="display: none;">
+							<td width="75"><i>Derived: </i></td>
+							<td>False</td>
+						</tr>
+							<tr id="DetailsImageAttributes2995_07" style="display: none;">
+							<td width="75"><i>IsID: </i></td>
+						<td>False</td>
+						</tr>
+					</table>
+					
+					AE:Exclude=True<br>Map:CDASHv1.1=VS.VSPOS<br>Map:CDASHv1.1=EG.EGPOS<br>Map:CDMHv1.0=PerformedObservation.bodyPositionCode<br>Map:CTOM=ClinicalResult.bodyPositionCode<br>Map:CTRv1.0=PerformedObservation.bodyPositionCode<br>Map:DICOM=General Series Module - Patient Position (0018,5100)<br>Map:LSDAMv2.2.3Plus=PerformedObservation.bodyPositionCode<br>Map:NBIAv6.4=General_Image.patient_position<br>Map:PCORNetv3.1=Vital.bp_position<br>Map:PCORNetv4.0=Vital.bp_position<br>Map:SDTM IGv3.1.1=EG.EGPOS<br>Map:SDTM IGv3.1.1=VS.VSPOS<br>Map:SDTM IGv3.1.2=EG.EGPOS<br>Map:SDTM IGv3.1.2=VS.VSPOS<br>Map:SDTM IGv3.1.3=EG.EGPOS<br>Map:SDTM IGv3.1.3=VS.VSPOS<br>Map:SDTM IGv3.2=MO.MOPOS<br>Map:SDTM IGv3.2=EG.EGPOS<br>Map:SDTM IGv3.2=VS.VSPOS<br>Map:Sentinelv6.0.2=Vital Signs.Position<br>
+						<div class="ObjectDetailsNotes"><table>
+	<tr>
+		<td valign="top">
+			<i>Notes: </i><span style="margin-left: .4cm;"> </span>
+		</td>
+		<td>
+			DEFINITION:&lt;br/&gt;A coded value specifying the 3-dimensional spatial orientation of a subject during a particular observation.&lt;br/&gt;&lt;br/&gt;EXAMPLE(S):&lt;br/&gt;supine, trendelenburg, standing&lt;br/&gt;&lt;br/&gt;OTHER NAME(S):&lt;br/&gt;&lt;br/&gt;NOTE(S):&lt;br/&gt;
+		</td>
+	</tr>
+</table></div>
+
+						
+				</td>
+			</tr>			<tr>
+				<td width="100%" class="TableRow">
+					<i>Public CD</i><br /><strong>&nbsp;&nbsp;timePointCode</strong>
+				</td>
+			</tr>
+			<tr>
+				<td class="TableRowBottomDashed"  colspan="1">										
+					<a href="#" onclick="parent.toggleData('DetailsImageAttributes2996')" style="text-decoration: none; color: #000000;"><img src="../../images/plus03.gif" align="absmiddle" id="DetailsImageAttributes2996" border="0" />Details:</a>
+					<table border="0" cellspacing="0" cellpadding="0" class="Table" style="padding: 4px 18px;">
+					
+						<tr id="DetailsImageAttributes2996_00" style="display: none;">
+							<td width="75"><i>Alias:</i></td>
+							<td></td>
+						</tr>
+						<tr id="DetailsImageAttributes2996_01" style="display: none;">
+							<td width="75"><i>Initial:</i></td>
+							<td></td>
+						</tr>
+						<tr id="DetailsImageAttributes2996_02" style="display: none;">
+							<td width="75"><i>Stereotype: </i></td>
+							<td></td>
+						</tr>
+						<tr id="DetailsImageAttributes2996_03" style="display: none;">
+							<td width="75"><i>Ordered: </i></td>
+							<td></td>
+						</tr>
+						<tr id="DetailsImageAttributes2996_04" style="display: none;">
+							<td width="75"><i>Range: </i></td>
+							<td>Range:0 to 1</td>
+						</tr>
+						<tr id="DetailsImageAttributes2996_05" style="display: none;">
+							<td width="75"><i>Transient: </i></td>
+							<td>False</td>
+						</tr>
+						<tr id="DetailsImageAttributes2996_06" style="display: none;">
+							<td width="75"><i>Derived: </i></td>
+							<td>False</td>
+						</tr>
+							<tr id="DetailsImageAttributes2996_07" style="display: none;">
+							<td width="75"><i>IsID: </i></td>
+						<td>False</td>
+						</tr>
+					</table>
+					
+					Map:CDMHv1.0=PerformedObservation..timePointCode<br>Map:i2b2/ACTv1.4=Diagnosis.DIAGNOSIS_SOURCE<br>Map:PCORNetv3.1=Diagnosis.dx_source<br>Map:PCORNetv4.0=Diagnosis.dx_source<br>
+						<div class="ObjectDetailsNotes"><table>
+	<tr>
+		<td valign="top">
+			<i>Notes: </i><span style="margin-left: .4cm;"> </span>
+		</td>
+		<td>
+			DEFINITION:&lt;br/&gt;A coded value specifying the occasion when the observation was performed.&lt;br/&gt;&lt;br/&gt;EXAMPLE(S):&#160;&#160; &lt;br/&gt;AD = Admitting&lt;br/&gt;DI = Discharge&lt;br/&gt;FI = Final&lt;br/&gt;IN = Interim&lt;br/&gt;NI = No information&lt;br/&gt;UN = Unknown&lt;br/&gt;OT = Other&lt;br/&gt;&lt;br/&gt;OTHER NAME(S):&lt;br/&gt;Diagnosis Source&lt;br/&gt;&lt;br/&gt;NOTE(S):&lt;br/&gt;Theoretically this information should be derivable from the visit or encounter of which the observation is a component.&lt;br/&gt;
+		</td>
+	</tr>
+</table></div>
+
+						
+				</td>
+			</tr>			<tr>
+				<td width="100%" class="TableRow">
+					<i>Public IVL&lt;TS.DATETIME&gt;</i><br /><strong>&nbsp;&nbsp;focalDateRange</strong>
+				</td>
+			</tr>
+			<tr>
+				<td class="TableRowBottomDashed"  colspan="1">										
+					<a href="#" onclick="parent.toggleData('DetailsImageAttributes2997')" style="text-decoration: none; color: #000000;"><img src="../../images/plus03.gif" align="absmiddle" id="DetailsImageAttributes2997" border="0" />Details:</a>
+					<table border="0" cellspacing="0" cellpadding="0" class="Table" style="padding: 4px 18px;">
+					
+						<tr id="DetailsImageAttributes2997_00" style="display: none;">
+							<td width="75"><i>Alias:</i></td>
+							<td></td>
+						</tr>
+						<tr id="DetailsImageAttributes2997_01" style="display: none;">
+							<td width="75"><i>Initial:</i></td>
+							<td></td>
+						</tr>
+						<tr id="DetailsImageAttributes2997_02" style="display: none;">
+							<td width="75"><i>Stereotype: </i></td>
+							<td></td>
+						</tr>
+						<tr id="DetailsImageAttributes2997_03" style="display: none;">
+							<td width="75"><i>Ordered: </i></td>
+							<td></td>
+						</tr>
+						<tr id="DetailsImageAttributes2997_04" style="display: none;">
+							<td width="75"><i>Range: </i></td>
+							<td>Range:0 to 1</td>
+						</tr>
+						<tr id="DetailsImageAttributes2997_05" style="display: none;">
+							<td width="75"><i>Transient: </i></td>
+							<td>False</td>
+						</tr>
+						<tr id="DetailsImageAttributes2997_06" style="display: none;">
+							<td width="75"><i>Derived: </i></td>
+							<td>True</td>
+						</tr>
+							<tr id="DetailsImageAttributes2997_07" style="display: none;">
+							<td width="75"><i>IsID: </i></td>
+						<td>False</td>
+						</tr>
+					</table>
+					
+					Map:CTOM=Diagnosis.confirmationDate<br>Map:CTOM=DiseaseResponse.progressionDate<br>Map:CTRv1.0=PerformedObservation.focalDateRange<br>Map:ICSRr2=CausalityAssessment.effectiveTime (in IndividualCaseSafetyReport)<br>Map:LSDAMv2.2.3Plus=PerformedObservation.focalDateRange<br>Map:NCI CRF Standard=CDE 2006851v4.0: Adverse Event Final Assessment Date<br>Map:NCI CRF Standard=CDE 2744943v1.0:  Adverse Event Begin Assessment Date<br>Map:SDTM IGv3.1.2=PC.PCEVLINT<br>
+						<div class="ObjectDetailsNotes"><table>
+	<tr>
+		<td valign="top">
+			<i>Notes: </i><span style="margin-left: .4cm;"> </span>
+		</td>
+		<td>
+			DEFINITION:&lt;br/&gt;The time period in which the observation result is held to be true.&lt;br/&gt;&lt;br/&gt;EXAMPLE(S):&lt;br/&gt;&lt;br/&gt;OTHER NAME(S):&lt;br/&gt;&lt;br/&gt;NOTE(S):&lt;br/&gt;Derived from DefinedObservation.focalDateRange alone (i.e., directly from simple date ranges like 1990-1999) or from evaluating the expression in DefinedObservation.focalDateRange (which references a date that is now known).&lt;br/&gt;
+		</td>
+	</tr>
+</table></div>
+
+						
+				</td>
+			</tr>			<tr>
+				<td width="100%" class="TableRow">
+					<i>Public PQ.TIME</i><br /><strong>&nbsp;&nbsp;focalDuration</strong>
+				</td>
+			</tr>
+			<tr>
+				<td class="TableRowBottomDashed"  colspan="1">										
+					<a href="#" onclick="parent.toggleData('DetailsImageAttributes2998')" style="text-decoration: none; color: #000000;"><img src="../../images/plus03.gif" align="absmiddle" id="DetailsImageAttributes2998" border="0" />Details:</a>
+					<table border="0" cellspacing="0" cellpadding="0" class="Table" style="padding: 4px 18px;">
+					
+						<tr id="DetailsImageAttributes2998_00" style="display: none;">
+							<td width="75"><i>Alias:</i></td>
+							<td></td>
+						</tr>
+						<tr id="DetailsImageAttributes2998_01" style="display: none;">
+							<td width="75"><i>Initial:</i></td>
+							<td></td>
+						</tr>
+						<tr id="DetailsImageAttributes2998_02" style="display: none;">
+							<td width="75"><i>Stereotype: </i></td>
+							<td></td>
+						</tr>
+						<tr id="DetailsImageAttributes2998_03" style="display: none;">
+							<td width="75"><i>Ordered: </i></td>
+							<td></td>
+						</tr>
+						<tr id="DetailsImageAttributes2998_04" style="display: none;">
+							<td width="75"><i>Range: </i></td>
+							<td>Range:0 to 1</td>
+						</tr>
+						<tr id="DetailsImageAttributes2998_05" style="display: none;">
+							<td width="75"><i>Transient: </i></td>
+							<td>False</td>
+						</tr>
+						<tr id="DetailsImageAttributes2998_06" style="display: none;">
+							<td width="75"><i>Derived: </i></td>
+							<td>True</td>
+						</tr>
+							<tr id="DetailsImageAttributes2998_07" style="display: none;">
+							<td width="75"><i>IsID: </i></td>
+						<td>False</td>
+						</tr>
+					</table>
+					
+					AE:Exclude=True<br>Map:CTOM=DiseaseResponse.progressionPeriodUnitOfMeasureCode<br>Map:CTOM=DiseaseResponse.progressionPeriod<br>Map:CTRv1.0=PerformedObservation.focalDuration<br>Map:LSDAMv2.2.3Plus=PerformedObservation.focalDuration<br>Map:SDTM IGv3.1.1=QS.QSEVLINT<br>
+						<div class="ObjectDetailsNotes"><table>
+	<tr>
+		<td valign="top">
+			<i>Notes: </i><span style="margin-left: .4cm;"> </span>
+		</td>
+		<td>
+			DEFINITION:&lt;br/&gt;The quantity of time in which the observation result is held to be true.&lt;br/&gt;&lt;br/&gt;EXAMPLE(S):&lt;br/&gt;2 months is the focalDuration for a question such as &quot;Have you smoked in the last 2 months?&quot;.&lt;br/&gt;&lt;br/&gt;OTHER NAME(S):&lt;br/&gt;&lt;br/&gt;NOTE(S):&lt;br/&gt;Derived from PerformedObservation.focalDateRange.&lt;br/&gt;
+		</td>
+	</tr>
+</table></div>
+
+						
+				</td>
+			</tr>			<tr>
+				<td width="100%" class="TableRow">
+					<i>Public ANY</i><br /><strong>&nbsp;&nbsp;additionalQualifier</strong>
+				</td>
+			</tr>
+			<tr>
+				<td class="TableRowBottomDashed"  colspan="1">										
+					<a href="#" onclick="parent.toggleData('DetailsImageAttributes2999')" style="text-decoration: none; color: #000000;"><img src="../../images/plus03.gif" align="absmiddle" id="DetailsImageAttributes2999" border="0" />Details:</a>
+					<table border="0" cellspacing="0" cellpadding="0" class="Table" style="padding: 4px 18px;">
+					
+						<tr id="DetailsImageAttributes2999_00" style="display: none;">
+							<td width="75"><i>Alias:</i></td>
+							<td></td>
+						</tr>
+						<tr id="DetailsImageAttributes2999_01" style="display: none;">
+							<td width="75"><i>Initial:</i></td>
+							<td></td>
+						</tr>
+						<tr id="DetailsImageAttributes2999_02" style="display: none;">
+							<td width="75"><i>Stereotype: </i></td>
+							<td></td>
+						</tr>
+						<tr id="DetailsImageAttributes2999_03" style="display: none;">
+							<td width="75"><i>Ordered: </i></td>
+							<td></td>
+						</tr>
+						<tr id="DetailsImageAttributes2999_04" style="display: none;">
+							<td width="75"><i>Range: </i></td>
+							<td>Range:0 to *</td>
+						</tr>
+						<tr id="DetailsImageAttributes2999_05" style="display: none;">
+							<td width="75"><i>Transient: </i></td>
+							<td>False</td>
+						</tr>
+						<tr id="DetailsImageAttributes2999_06" style="display: none;">
+							<td width="75"><i>Derived: </i></td>
+							<td>False</td>
+						</tr>
+							<tr id="DetailsImageAttributes2999_07" style="display: none;">
+							<td width="75"><i>IsID: </i></td>
+						<td>False</td>
+						</tr>
+					</table>
+					
+					Map:SDTM IGv3.1.2=MI.MISTDTL<br>
+						<div class="ObjectDetailsNotes"><table>
+	<tr>
+		<td valign="top">
+			<i>Notes: </i><span style="margin-left: .4cm;"> </span>
+		</td>
+		<td>
+			DEFINITION:&lt;br/&gt;A value specifying a supplemental characterization of the observation&lt;br/&gt;&lt;br/&gt;EXAMPLE(S):&lt;br/&gt;For SDTM MI domain, this could be an intensity score or a percentage of cells displaying the presence of the biomarker or compound&lt;br/&gt;&lt;br/&gt;OTHER NAME(S):&lt;br/&gt;&lt;br/&gt;NOTE(S):&lt;br/&gt;This attribute ought not to be used if there are dedicated attributes for that purpose in this class.&lt;br/&gt;
+		</td>
+	</tr>
+</table></div>
+
+						
+				</td>
+			</tr>
+	</table>
+</div>
+		<div class="ItemBody" id="AssociationsToTable">
+			<table border="0" cellspacing="0" cellpadding="0" class="Table">
+				<tr>
+					<td width="40%" class="TableHeading">Element</td>
+					<td width="30%" class="TableHeading">Source Role</td>
+					<td width="30%" class="TableHeading">Target Role</td>
+				</tr>
+				<tr>
+					<td width="40%" class="TableRow" valign="top">
+						<a href="EA385.htm">PerformedActivity</a><br />
+						Class &nbsp;
+					</td>
+					<td width="30%" class="TableRow" valign="top">
+						<strong>Name:</strong> commentingPerformedObservation<br />
+						&nbsp;
+					</td>
+					<td width="30%" class="TableRow" valign="top">
+						<strong>Name:</strong> commentedPerformedActivity<br />
+						&nbsp;	
+					</td>
+				</tr>
+				<tr>
+					<td class="TableRowBottomDashed"  colspan="3">
+						<div class="DetailsDivParent"><img src="../../images/minus03.gif" align="absmiddle" id="DetailsImageLink3000" onclick="parent.toggleDiv('detailsDIVLink3000','DetailsImageLink3000')" />Details:
+							<div id="detailsDIVLink3000" class="DetailsDiv" >
+							<div class="ObjectDetailsNotes">DESCRIPTION:&lt;br/&gt;Each PerformedObservation might be commenting on one PerformedActivity. Each PerformedActivity might be commented on by one or more PerformedObservation.&lt;br/&gt;&lt;br/&gt;DEFINITION:&lt;br/&gt;&lt;br/&gt;EXAMPLE(S):&lt;br/&gt;&lt;br/&gt;OTHER NAME(S):&lt;br/&gt;&lt;br/&gt;NOTE(S):&lt;br/&gt;</div>
+
+							</div>
+						</div>
+					</td>
+				</tr>
+				<tr>
+					<td width="40%" class="TableRow" valign="top">
+						<a href="../EA1/EA49.htm">SafetyReportVersion</a><br />
+						Class &nbsp;
+					</td>
+					<td width="30%" class="TableRow" valign="top">
+						<strong>Name:</strong> commentingPerformedObservation<br />
+						&nbsp;
+					</td>
+					<td width="30%" class="TableRow" valign="top">
+						<strong>Name:</strong> commentedSafetyReportVersion<br />
+						&nbsp;	
+					</td>
+				</tr>
+				<tr>
+					<td class="TableRowBottomDashed"  colspan="3">
+						<div class="DetailsDivParent"><img src="../../images/minus03.gif" align="absmiddle" id="DetailsImageLink3001" onclick="parent.toggleDiv('detailsDIVLink3001','DetailsImageLink3001')" />Details:
+							<div id="detailsDIVLink3001" class="DetailsDiv" >
+							<div class="ObjectDetailsNotes">DESCRIPTION:&lt;br/&gt;Each PerformedObservation might be commenting on one SafetyReportVersion. Each SafetyReportVersion might be commented on by one or more PerformedObservation.&lt;br/&gt;&lt;br/&gt;DEFINITION:&lt;br/&gt;&lt;br/&gt;EXAMPLE(S):&lt;br/&gt;&lt;br/&gt;OTHER NAME(S):&lt;br/&gt;&lt;br/&gt;NOTE(S):&lt;br/&gt;&lt;br/&gt;</div>
+
+							</div>
+						</div>
+					</td>
+				</tr>
+				<tr>
+					<td width="40%" class="TableRow" valign="top">
+						<a href="EA405.htm">PerformedObservationResult</a><br />
+						Class &nbsp;
+					</td>
+					<td width="30%" class="TableRow" valign="top">
+						<strong>Name:</strong> recordedPerformedObservation<br />
+						&nbsp;
+					</td>
+					<td width="30%" class="TableRow" valign="top">
+						<strong>Name:</strong> triggeringPerformedObservationResult<br />
+						&nbsp;	
+					</td>
+				</tr>
+				<tr>
+					<td class="TableRowBottomDashed"  colspan="3">
+						<div class="DetailsDivParent"><img src="../../images/minus03.gif" align="absmiddle" id="DetailsImageLink3002" onclick="parent.toggleDiv('detailsDIVLink3002','DetailsImageLink3002')" />Details:
+							<div id="detailsDIVLink3002" class="DetailsDiv" >
+							<div class="ObjectDetailsNotes">DESCRIPTION:&lt;br/&gt;Each PerformedObservation might be recorded as a result of one PerformedObservationResult. Each PerformedObservationResult might result in recording one or more PerformedObservation.&lt;br/&gt;&lt;br/&gt;DEFINITION:&lt;br/&gt;&lt;br/&gt;EXAMPLE(S):&lt;br/&gt;&lt;br/&gt;OTHER NAME(S):&lt;br/&gt;&lt;br/&gt;NOTE(S):&lt;br/&gt;</div>
+
+							</div>
+						</div>
+					</td>
+				</tr>
+
+			</table>
+		</div>
+		<div class="ItemBody" id="AssociationsFromTable">
+			<table border="0" cellspacing="0" cellpadding="0" class="Table">
+				<tr>
+					<td width="40%" class="TableHeading">Element</td>
+					<td width="30%" class="TableHeading">Source Role</td>
+					<td width="30%" class="TableHeading">Target Role</td>
+				</tr>
+				<tr>
+					<td width="40%" class="TableRow" valign="top">
+						<a href="EA405.htm">PerformedObservationResult</a><br />
+						Class &nbsp;
+					</td>
+					<td width="30%" class="TableRow" valign="top">
+						<strong>Name:</strong> resultedPerformedObservationResult<br />
+						&nbsp;
+					</td>
+					<td width="30%" class="TableRow" valign="top">
+						<strong>Name:</strong> producingPerformedObservation<br />
+						&nbsp;	
+					</td>
+				</tr>
+				<tr>
+					<td class="TableRowBottomDashed"  colspan="3">
+						<div class="DetailsDivParent"><img src="../../images/minus03.gif" align="absmiddle" id="DetailsImageLink3003" onclick="parent.toggleDiv('detailsDIVLink3003','DetailsImageLink3003')" />Details:
+							<div id="detailsDIVLink3003" class="DetailsDiv" >
+							<div class="ObjectDetailsNotes">DESCRIPTION:&lt;br/&gt;Each PerformedObservationResult always is a result of one PerformedObservation.&#160; Each PerformedObservation might result in one or more PerformedObservationResult.&lt;br/&gt;&lt;br/&gt;DEFINITION:&lt;br/&gt;&lt;br/&gt;EXAMPLE(S):&lt;br/&gt;&lt;br/&gt;OTHER NAME(S):&lt;br/&gt;&lt;br/&gt;NOTE(S):&lt;br/&gt;&lt;br/&gt;</div>
+
+							</div>
+						</div>
+					</td>
+				</tr>
+				<tr>
+					<td width="40%" class="TableRow" valign="top">
+						<a href="EA379.htm">AssessedResultRelationship</a><br />
+						Class &nbsp;
+					</td>
+					<td width="30%" class="TableRow" valign="top">
+						<strong>Name:</strong> assessedAssessedResultRelationship<br />
+						&nbsp;
+					</td>
+					<td width="30%" class="TableRow" valign="top">
+						<strong>Name:</strong> assessingPerformedObservation<br />
+						&nbsp;	
+					</td>
+				</tr>
+				<tr>
+					<td class="TableRowBottomDashed"  colspan="3">
+						<div class="DetailsDivParent"><img src="../../images/minus03.gif" align="absmiddle" id="DetailsImageLink3004" onclick="parent.toggleDiv('detailsDIVLink3004','DetailsImageLink3004')" />Details:
+							<div id="detailsDIVLink3004" class="DetailsDiv" >
+							<div class="ObjectDetailsNotes">DESCRIPTION:&lt;br/&gt;Each AssessedResultRelationship always is the subject of one PerformedObservation.&#160; Each PerformedObservation might have as subject one or more AssessedResultRelationship.&lt;br/&gt;&lt;br/&gt;DEFINITION:&lt;br/&gt;&lt;br/&gt;EXAMPLE(S):&lt;br/&gt;&lt;br/&gt;OTHER NAME(S):&lt;br/&gt;&lt;br/&gt;NOTE(S):&lt;br/&gt;&lt;br/&gt;</div>
+
+							</div>
+						</div>
+					</td>
+				</tr>
+				<tr>
+					<td width="40%" class="TableRow" valign="top">
+						<a href="EA378.htm">AssessedActivityRelationship</a><br />
+						Class &nbsp;
+					</td>
+					<td width="30%" class="TableRow" valign="top">
+						<strong>Name:</strong> assessedAssessedActivityRelationship<br />
+						&nbsp;
+					</td>
+					<td width="30%" class="TableRow" valign="top">
+						<strong>Name:</strong> assessingPerformedObservation<br />
+						&nbsp;	
+					</td>
+				</tr>
+				<tr>
+					<td class="TableRowBottomDashed"  colspan="3">
+						<div class="DetailsDivParent"><img src="../../images/minus03.gif" align="absmiddle" id="DetailsImageLink3005" onclick="parent.toggleDiv('detailsDIVLink3005','DetailsImageLink3005')" />Details:
+							<div id="detailsDIVLink3005" class="DetailsDiv" >
+							<div class="ObjectDetailsNotes">DESCRIPTION:&lt;br/&gt;Each AssessedActivityRelationship always is the subject of one PerformedObservation.&#160; Each PerformedObservation might have as subject one or more AssessedActivityRelationship.&lt;br/&gt;&lt;br/&gt;DEFINITION:&lt;br/&gt;&lt;br/&gt;EXAMPLE(S):&lt;br/&gt;&lt;br/&gt;OTHER NAME(S):&lt;br/&gt;&lt;br/&gt;NOTE(S):&lt;br/&gt;&lt;br/&gt;</div>
+
+							</div>
+						</div>
+					</td>
+				</tr>
+
+			</table>
+		</div>
+<div class="ItemBody" id="TaggedValTable">
+	<table align="center" border="0" cellspacing="0" cellpadding="0" class="Table">
+		<tr>
+			<td width="50%" class="TableHeading">Tag</td>
+			<td width="50%" class="TableHeading">Value</td>
+		</tr>
+					<tr>
+				<td width="50%" class="TableRow" valign="top">Map:AIM v4 rv48</td>
+				<td width="50%" class="TableRow" valign="top">InferenceEntity</td>
+			</tr>	
+			<tr>
+				<td class="TableRowBottomDashed"  colspan="2">
+					<div class="DetailsDivParent"><img src="../../images/minus03.gif" align="absmiddle" id="DetailsImageScenario3006" onclick="parent.toggleDiv('detailsDIVScenario3006','DetailsImageScenario3006')" />Details:
+						<div id="detailsDIVScenario3006" class="DetailsDiv" >
+						&nbsp;
+						</div>
+					</div>
+				</td>
+			</tr>			<tr>
+				<td width="50%" class="TableRow" valign="top">Map:AIM v4 rv48</td>
+				<td width="50%" class="TableRow" valign="top">CalculationEntity</td>
+			</tr>	
+			<tr>
+				<td class="TableRowBottomDashed"  colspan="2">
+					<div class="DetailsDivParent"><img src="../../images/minus03.gif" align="absmiddle" id="DetailsImageScenario3007" onclick="parent.toggleDiv('detailsDIVScenario3007','DetailsImageScenario3007')" />Details:
+						<div id="detailsDIVScenario3007" class="DetailsDiv" >
+						&nbsp;
+						</div>
+					</div>
+				</td>
+			</tr>			<tr>
+				<td width="50%" class="TableRow" valign="top">Map:AIM v4 rv48</td>
+				<td width="50%" class="TableRow" valign="top">ImageAnnotation</td>
+			</tr>	
+			<tr>
+				<td class="TableRowBottomDashed"  colspan="2">
+					<div class="DetailsDivParent"><img src="../../images/minus03.gif" align="absmiddle" id="DetailsImageScenario3008" onclick="parent.toggleDiv('detailsDIVScenario3008','DetailsImageScenario3008')" />Details:
+						<div id="detailsDIVScenario3008" class="DetailsDiv" >
+						&nbsp;
+						</div>
+					</div>
+				</td>
+			</tr>			<tr>
+				<td width="50%" class="TableRow" valign="top">Map:AIM v4 rv48</td>
+				<td width="50%" class="TableRow" valign="top">ImageAnnotationCollection</td>
+			</tr>	
+			<tr>
+				<td class="TableRowBottomDashed"  colspan="2">
+					<div class="DetailsDivParent"><img src="../../images/minus03.gif" align="absmiddle" id="DetailsImageScenario3009" onclick="parent.toggleDiv('detailsDIVScenario3009','DetailsImageScenario3009')" />Details:
+						<div id="detailsDIVScenario3009" class="DetailsDiv" >
+						&nbsp;
+						</div>
+					</div>
+				</td>
+			</tr>			<tr>
+				<td width="50%" class="TableRow" valign="top">Map:AIM v4 rv48</td>
+				<td width="50%" class="TableRow" valign="top">ImagingObservationCharacteristic</td>
+			</tr>	
+			<tr>
+				<td class="TableRowBottomDashed"  colspan="2">
+					<div class="DetailsDivParent"><img src="../../images/minus03.gif" align="absmiddle" id="DetailsImageScenario3010" onclick="parent.toggleDiv('detailsDIVScenario3010','DetailsImageScenario3010')" />Details:
+						<div id="detailsDIVScenario3010" class="DetailsDiv" >
+						&nbsp;
+						</div>
+					</div>
+				</td>
+			</tr>			<tr>
+				<td width="50%" class="TableRow" valign="top">Map:AIM v4 rv48</td>
+				<td width="50%" class="TableRow" valign="top">ImagingObservationEntity</td>
+			</tr>	
+			<tr>
+				<td class="TableRowBottomDashed"  colspan="2">
+					<div class="DetailsDivParent"><img src="../../images/minus03.gif" align="absmiddle" id="DetailsImageScenario3011" onclick="parent.toggleDiv('detailsDIVScenario3011','DetailsImageScenario3011')" />Details:
+						<div id="detailsDIVScenario3011" class="DetailsDiv" >
+						&nbsp;
+						</div>
+					</div>
+				</td>
+			</tr>			<tr>
+				<td width="50%" class="TableRow" valign="top">Map:APSRv2.1</td>
+				<td width="50%" class="TableRow" valign="top">[Problem] hl7:organizer - [Problem] hl7:organizer > hl7:component [Any kind of AP observation] > hl7:observation > hl7:entryRelationship > hl7:observation</td>
+			</tr>	
+			<tr>
+				<td class="TableRowBottomDashed"  colspan="2">
+					<div class="DetailsDivParent"><img src="../../images/minus03.gif" align="absmiddle" id="DetailsImageScenario3012" onclick="parent.toggleDiv('detailsDIVScenario3012','DetailsImageScenario3012')" />Details:
+						<div id="detailsDIVScenario3012" class="DetailsDiv" >
+						&nbsp;
+						</div>
+					</div>
+				</td>
+			</tr>			<tr>
+				<td width="50%" class="TableRow" valign="top">Map:APSRv2.1</td>
+				<td width="50%" class="TableRow" valign="top">[Problem] hl7:organizer - [Problem] hl7:organizer > hl7:component [Any kind of AP observation] > hl7:observation > hl7:reference > [CHOICE OF EXTERNAL ACT/OBS/PROC/DOC] > hl7:externalObservation</td>
+			</tr>	
+			<tr>
+				<td class="TableRowBottomDashed"  colspan="2">
+					<div class="DetailsDivParent"><img src="../../images/minus03.gif" align="absmiddle" id="DetailsImageScenario3013" onclick="parent.toggleDiv('detailsDIVScenario3013','DetailsImageScenario3013')" />Details:
+						<div id="detailsDIVScenario3013" class="DetailsDiv" >
+						&nbsp;
+						</div>
+					</div>
+				</td>
+			</tr>			<tr>
+				<td width="50%" class="TableRow" valign="top">Map:APSRv2.1</td>
+				<td width="50%" class="TableRow" valign="top">[Problem] hl7:organizer - [Problem] hl7:organizer > hl7:component [Region of Interest] > hl7:regionOfInterest</td>
+			</tr>	
+			<tr>
+				<td class="TableRowBottomDashed"  colspan="2">
+					<div class="DetailsDivParent"><img src="../../images/minus03.gif" align="absmiddle" id="DetailsImageScenario3014" onclick="parent.toggleDiv('detailsDIVScenario3014','DetailsImageScenario3014')" />Details:
+						<div id="detailsDIVScenario3014" class="DetailsDiv" >
+						&nbsp;
+						</div>
+					</div>
+				</td>
+			</tr>			<tr>
+				<td width="50%" class="TableRow" valign="top">Map:APSRv2.1</td>
+				<td width="50%" class="TableRow" valign="top">[Problem] hl7:organizer - [Problem] hl7:organizer > hl7:component [Problem reported] > hl7:observation</td>
+			</tr>	
+			<tr>
+				<td class="TableRowBottomDashed"  colspan="2">
+					<div class="DetailsDivParent"><img src="../../images/minus03.gif" align="absmiddle" id="DetailsImageScenario3015" onclick="parent.toggleDiv('detailsDIVScenario3015','DetailsImageScenario3015')" />Details:
+						<div id="detailsDIVScenario3015" class="DetailsDiv" >
+						&nbsp;
+						</div>
+					</div>
+				</td>
+			</tr>			<tr>
+				<td width="50%" class="TableRow" valign="top">Map:APSRv2.1</td>
+				<td width="50%" class="TableRow" valign="top">[Upd Info] hl7:organizer - [Upd Info] hl7:organizer > hl7:component > hl7:observation</td>
+			</tr>	
+			<tr>
+				<td class="TableRowBottomDashed"  colspan="2">
+					<div class="DetailsDivParent"><img src="../../images/minus03.gif" align="absmiddle" id="DetailsImageScenario3016" onclick="parent.toggleDiv('detailsDIVScenario3016','DetailsImageScenario3016')" />Details:
+						<div id="detailsDIVScenario3016" class="DetailsDiv" >
+						&nbsp;
+						</div>
+					</div>
+				</td>
+			</tr>			<tr>
+				<td width="50%" class="TableRow" valign="top">Map:APSRv2.1</td>
+				<td width="50%" class="TableRow" valign="top">[Problem] hl7:organizer - [Problem] hl7:organizer > hl7:component [Embedded Image] > hl7:observationMedia > hl7:entryRelationship > hl7:act</td>
+			</tr>	
+			<tr>
+				<td class="TableRowBottomDashed"  colspan="2">
+					<div class="DetailsDivParent"><img src="../../images/minus03.gif" align="absmiddle" id="DetailsImageScenario3017" onclick="parent.toggleDiv('detailsDIVScenario3017','DetailsImageScenario3017')" />Details:
+						<div id="detailsDIVScenario3017" class="DetailsDiv" >
+						&nbsp;
+						</div>
+					</div>
+				</td>
+			</tr>			<tr>
+				<td width="50%" class="TableRow" valign="top">Map:APSRv2.1</td>
+				<td width="50%" class="TableRow" valign="top">[Problem] hl7:organizer - [Problem] hl7:organizer > hl7:component [Lab Obs] > hl7:observation > hl7:entryRelationship [Reference] > hl7:observation</td>
+			</tr>	
+			<tr>
+				<td class="TableRowBottomDashed"  colspan="2">
+					<div class="DetailsDivParent"><img src="../../images/minus03.gif" align="absmiddle" id="DetailsImageScenario3018" onclick="parent.toggleDiv('detailsDIVScenario3018','DetailsImageScenario3018')" />Details:
+						<div id="detailsDIVScenario3018" class="DetailsDiv" >
+						&nbsp;
+						</div>
+					</div>
+				</td>
+			</tr>			<tr>
+				<td width="50%" class="TableRow" valign="top">Map:APSRv2.1</td>
+				<td width="50%" class="TableRow" valign="top">[Problem] hl7:organizer - [Problem] hl7:organizer > hl7:component [Lab Obs] > hl7:observation</td>
+			</tr>	
+			<tr>
+				<td class="TableRowBottomDashed"  colspan="2">
+					<div class="DetailsDivParent"><img src="../../images/minus03.gif" align="absmiddle" id="DetailsImageScenario3019" onclick="parent.toggleDiv('detailsDIVScenario3019','DetailsImageScenario3019')" />Details:
+						<div id="detailsDIVScenario3019" class="DetailsDiv" >
+						&nbsp;
+						</div>
+					</div>
+				</td>
+			</tr>			<tr>
+				<td width="50%" class="TableRow" valign="top">Map:APSRv2.1</td>
+				<td width="50%" class="TableRow" valign="top">[IHE Prob Conc Entry] hl7:act - [IHE Prob Conc Entry] hl7:act > hl7:entryRelationship [problems of concern] > hl7:observation</td>
+			</tr>	
+			<tr>
+				<td class="TableRowBottomDashed"  colspan="2">
+					<div class="DetailsDivParent"><img src="../../images/minus03.gif" align="absmiddle" id="DetailsImageScenario3020" onclick="parent.toggleDiv('detailsDIVScenario3020','DetailsImageScenario3020')" />Details:
+						<div id="detailsDIVScenario3020" class="DetailsDiv" >
+						&nbsp;
+						</div>
+					</div>
+				</td>
+			</tr>			<tr>
+				<td width="50%" class="TableRow" valign="top">Map:APSRv2.1</td>
+				<td width="50%" class="TableRow" valign="top">SB: Procedure Steps Section - hl7:ClinicalDocument > hl7:component > hl7:structuredBody > hl7:component [Proc Steps] > hl7:section > hl7:entry > hl7:procedure > hl7:reference > [CHOICE OF EXTERNAL ACT/OBS/PROC/DOC] > hl7:externalObservation</td>
+			</tr>	
+			<tr>
+				<td class="TableRowBottomDashed"  colspan="2">
+					<div class="DetailsDivParent"><img src="../../images/minus03.gif" align="absmiddle" id="DetailsImageScenario3021" onclick="parent.toggleDiv('detailsDIVScenario3021','DetailsImageScenario3021')" />Details:
+						<div id="detailsDIVScenario3021" class="DetailsDiv" >
+						&nbsp;
+						</div>
+					</div>
+				</td>
+			</tr>			<tr>
+				<td width="50%" class="TableRow" valign="top">Map:APSRv2.1</td>
+				<td width="50%" class="TableRow" valign="top">[Problem] hl7:organizer - [Problem] hl7:organizer > hl7:component [Any kind of AP observation] > hl7:observation</td>
+			</tr>	
+			<tr>
+				<td class="TableRowBottomDashed"  colspan="2">
+					<div class="DetailsDivParent"><img src="../../images/minus03.gif" align="absmiddle" id="DetailsImageScenario3022" onclick="parent.toggleDiv('detailsDIVScenario3022','DetailsImageScenario3022')" />Details:
+						<div id="detailsDIVScenario3022" class="DetailsDiv" >
+						&nbsp;
+						</div>
+					</div>
+				</td>
+			</tr>			<tr>
+				<td width="50%" class="TableRow" valign="top">Map:APSRv2.1</td>
+				<td width="50%" class="TableRow" valign="top">[Problem] hl7:organizer - [Problem] hl7:organizer > hl7:component [Gen Cmt on Part Prob] > hl7:act</td>
+			</tr>	
+			<tr>
+				<td class="TableRowBottomDashed"  colspan="2">
+					<div class="DetailsDivParent"><img src="../../images/minus03.gif" align="absmiddle" id="DetailsImageScenario3023" onclick="parent.toggleDiv('detailsDIVScenario3023','DetailsImageScenario3023')" />Details:
+						<div id="detailsDIVScenario3023" class="DetailsDiv" >
+						&nbsp;
+						</div>
+					</div>
+				</td>
+			</tr>			<tr>
+				<td width="50%" class="TableRow" valign="top">Map:caAERSv2.2</td>
+				<td width="50%" class="TableRow" valign="top">Lab</td>
+			</tr>	
+			<tr>
+				<td class="TableRowBottomDashed"  colspan="2">
+					<div class="DetailsDivParent"><img src="../../images/minus03.gif" align="absmiddle" id="DetailsImageScenario3024" onclick="parent.toggleDiv('detailsDIVScenario3024','DetailsImageScenario3024')" />Details:
+						<div id="detailsDIVScenario3024" class="DetailsDiv" >
+						&nbsp;
+						</div>
+					</div>
+				</td>
+			</tr>			<tr>
+				<td width="50%" class="TableRow" valign="top">Map:CDISCLabv1.0.1</td>
+				<td width="50%" class="TableRow" valign="top">Base Test</td>
+			</tr>	
+			<tr>
+				<td class="TableRowBottomDashed"  colspan="2">
+					<div class="DetailsDivParent"><img src="../../images/minus03.gif" align="absmiddle" id="DetailsImageScenario3025" onclick="parent.toggleDiv('detailsDIVScenario3025','DetailsImageScenario3025')" />Details:
+						<div id="detailsDIVScenario3025" class="DetailsDiv" >
+						&nbsp;
+						</div>
+					</div>
+				</td>
+			</tr>			<tr>
+				<td width="50%" class="TableRow" valign="top">Map:CDMHv1.0</td>
+				<td width="50%" class="TableRow" valign="top">PerformedObservation</td>
+			</tr>	
+			<tr>
+				<td class="TableRowBottomDashed"  colspan="2">
+					<div class="DetailsDivParent"><img src="../../images/minus03.gif" align="absmiddle" id="DetailsImageScenario3026" onclick="parent.toggleDiv('detailsDIVScenario3026','DetailsImageScenario3026')" />Details:
+						<div id="detailsDIVScenario3026" class="DetailsDiv" >
+						&nbsp;
+						</div>
+					</div>
+				</td>
+			</tr>			<tr>
+				<td width="50%" class="TableRow" valign="top">Map:CTRPv3.8</td>
+				<td width="50%" class="TableRow" valign="top">PerformedObservation</td>
+			</tr>	
+			<tr>
+				<td class="TableRowBottomDashed"  colspan="2">
+					<div class="DetailsDivParent"><img src="../../images/minus03.gif" align="absmiddle" id="DetailsImageScenario3027" onclick="parent.toggleDiv('detailsDIVScenario3027','DetailsImageScenario3027')" />Details:
+						<div id="detailsDIVScenario3027" class="DetailsDiv" >
+						&nbsp;
+						</div>
+					</div>
+				</td>
+			</tr>			<tr>
+				<td width="50%" class="TableRow" valign="top">Map:CTRv1.0</td>
+				<td width="50%" class="TableRow" valign="top">PerformedStudyObservation</td>
+			</tr>	
+			<tr>
+				<td class="TableRowBottomDashed"  colspan="2">
+					<div class="DetailsDivParent"><img src="../../images/minus03.gif" align="absmiddle" id="DetailsImageScenario3028" onclick="parent.toggleDiv('detailsDIVScenario3028','DetailsImageScenario3028')" />Details:
+						<div id="detailsDIVScenario3028" class="DetailsDiv" >
+						&nbsp;
+						</div>
+					</div>
+				</td>
+			</tr>			<tr>
+				<td width="50%" class="TableRow" valign="top">Map:CTRv1.0</td>
+				<td width="50%" class="TableRow" valign="top">PerformedObservation</td>
+			</tr>	
+			<tr>
+				<td class="TableRowBottomDashed"  colspan="2">
+					<div class="DetailsDivParent"><img src="../../images/minus03.gif" align="absmiddle" id="DetailsImageScenario3029" onclick="parent.toggleDiv('detailsDIVScenario3029','DetailsImageScenario3029')" />Details:
+						<div id="detailsDIVScenario3029" class="DetailsDiv" >
+						&nbsp;
+						</div>
+					</div>
+				</td>
+			</tr>			<tr>
+				<td width="50%" class="TableRow" valign="top">Map:DICOM</td>
+				<td width="50%" class="TableRow" valign="top">TID 1411 VolumetricROIMeasurements > Measurement Group</td>
+			</tr>	
+			<tr>
+				<td class="TableRowBottomDashed"  colspan="2">
+					<div class="DetailsDivParent"><img src="../../images/minus03.gif" align="absmiddle" id="DetailsImageScenario3030" onclick="parent.toggleDiv('detailsDIVScenario3030','DetailsImageScenario3030')" />Details:
+						<div id="detailsDIVScenario3030" class="DetailsDiv" >
+						&nbsp;
+						</div>
+					</div>
+				</td>
+			</tr>			<tr>
+				<td width="50%" class="TableRow" valign="top">Map:DICOM</td>
+				<td width="50%" class="TableRow" valign="top">TID 1501 MeasurementGroup > Measurement Group</td>
+			</tr>	
+			<tr>
+				<td class="TableRowBottomDashed"  colspan="2">
+					<div class="DetailsDivParent"><img src="../../images/minus03.gif" align="absmiddle" id="DetailsImageScenario3031" onclick="parent.toggleDiv('detailsDIVScenario3031','DetailsImageScenario3031')" />Details:
+						<div id="detailsDIVScenario3031" class="DetailsDiv" >
+						&nbsp;
+						</div>
+					</div>
+				</td>
+			</tr>			<tr>
+				<td width="50%" class="TableRow" valign="top">Map:DICOM</td>
+				<td width="50%" class="TableRow" valign="top">TID 1500 MeasurementReport > Imaging Measurements > Include TID 1501 MeasurementGroup</td>
+			</tr>	
+			<tr>
+				<td class="TableRowBottomDashed"  colspan="2">
+					<div class="DetailsDivParent"><img src="../../images/minus03.gif" align="absmiddle" id="DetailsImageScenario3032" onclick="parent.toggleDiv('detailsDIVScenario3032','DetailsImageScenario3032')" />Details:
+						<div id="detailsDIVScenario3032" class="DetailsDiv" >
+						&nbsp;
+						</div>
+					</div>
+				</td>
+			</tr>			<tr>
+				<td width="50%" class="TableRow" valign="top">Map:DICOM</td>
+				<td width="50%" class="TableRow" valign="top">TID 1500 MeasurementReport > Imaging Measurements > Include TID 1410 PlanarROIMeasurements</td>
+			</tr>	
+			<tr>
+				<td class="TableRowBottomDashed"  colspan="2">
+					<div class="DetailsDivParent"><img src="../../images/minus03.gif" align="absmiddle" id="DetailsImageScenario3033" onclick="parent.toggleDiv('detailsDIVScenario3033','DetailsImageScenario3033')" />Details:
+						<div id="detailsDIVScenario3033" class="DetailsDiv" >
+						&nbsp;
+						</div>
+					</div>
+				</td>
+			</tr>			<tr>
+				<td width="50%" class="TableRow" valign="top">Map:DICOM</td>
+				<td width="50%" class="TableRow" valign="top">TID 1419 ROIMeasurements</td>
+			</tr>	
+			<tr>
+				<td class="TableRowBottomDashed"  colspan="2">
+					<div class="DetailsDivParent"><img src="../../images/minus03.gif" align="absmiddle" id="DetailsImageScenario3034" onclick="parent.toggleDiv('detailsDIVScenario3034','DetailsImageScenario3034')" />Details:
+						<div id="detailsDIVScenario3034" class="DetailsDiv" >
+						&nbsp;
+						</div>
+					</div>
+				</td>
+			</tr>			<tr>
+				<td width="50%" class="TableRow" valign="top">Map:DICOM</td>
+				<td width="50%" class="TableRow" valign="top">TID 1411 VolumetricROIMeasurements > Measurement Group > Include TID 1419 ROIMeasurements</td>
+			</tr>	
+			<tr>
+				<td class="TableRowBottomDashed"  colspan="2">
+					<div class="DetailsDivParent"><img src="../../images/minus03.gif" align="absmiddle" id="DetailsImageScenario3035" onclick="parent.toggleDiv('detailsDIVScenario3035','DetailsImageScenario3035')" />Details:
+						<div id="detailsDIVScenario3035" class="DetailsDiv" >
+						&nbsp;
+						</div>
+					</div>
+				</td>
+			</tr>			<tr>
+				<td width="50%" class="TableRow" valign="top">Map:DICOM</td>
+				<td width="50%" class="TableRow" valign="top">TID 1410 PlanarROIMeasurements > Measurement Group > Include TID 1419 ROIMeasurements</td>
+			</tr>	
+			<tr>
+				<td class="TableRowBottomDashed"  colspan="2">
+					<div class="DetailsDivParent"><img src="../../images/minus03.gif" align="absmiddle" id="DetailsImageScenario3036" onclick="parent.toggleDiv('detailsDIVScenario3036','DetailsImageScenario3036')" />Details:
+						<div id="detailsDIVScenario3036" class="DetailsDiv" >
+						&nbsp;
+						</div>
+					</div>
+				</td>
+			</tr>			<tr>
+				<td width="50%" class="TableRow" valign="top">Map:DICOM</td>
+				<td width="50%" class="TableRow" valign="top">TID 1501 MeasurementGroup > Measurement Group > Include TID 300 Measurement</td>
+			</tr>	
+			<tr>
+				<td class="TableRowBottomDashed"  colspan="2">
+					<div class="DetailsDivParent"><img src="../../images/minus03.gif" align="absmiddle" id="DetailsImageScenario3037" onclick="parent.toggleDiv('detailsDIVScenario3037','DetailsImageScenario3037')" />Details:
+						<div id="detailsDIVScenario3037" class="DetailsDiv" >
+						&nbsp;
+						</div>
+					</div>
+				</td>
+			</tr>			<tr>
+				<td width="50%" class="TableRow" valign="top">Map:DICOM</td>
+				<td width="50%" class="TableRow" valign="top">TID 1500 MeasurementReport > Qualitative Evaluations</td>
+			</tr>	
+			<tr>
+				<td class="TableRowBottomDashed"  colspan="2">
+					<div class="DetailsDivParent"><img src="../../images/minus03.gif" align="absmiddle" id="DetailsImageScenario3038" onclick="parent.toggleDiv('detailsDIVScenario3038','DetailsImageScenario3038')" />Details:
+						<div id="detailsDIVScenario3038" class="DetailsDiv" >
+						&nbsp;
+						</div>
+					</div>
+				</td>
+			</tr>			<tr>
+				<td width="50%" class="TableRow" valign="top">Map:DICOM</td>
+				<td width="50%" class="TableRow" valign="top">TID 300 Measurement</td>
+			</tr>	
+			<tr>
+				<td class="TableRowBottomDashed"  colspan="2">
+					<div class="DetailsDivParent"><img src="../../images/minus03.gif" align="absmiddle" id="DetailsImageScenario3039" onclick="parent.toggleDiv('detailsDIVScenario3039','DetailsImageScenario3039')" />Details:
+						<div id="detailsDIVScenario3039" class="DetailsDiv" >
+						&nbsp;
+						</div>
+					</div>
+				</td>
+			</tr>			<tr>
+				<td width="50%" class="TableRow" valign="top">Map:DICOM</td>
+				<td width="50%" class="TableRow" valign="top">TID 1500 MeasurementReport</td>
+			</tr>	
+			<tr>
+				<td class="TableRowBottomDashed"  colspan="2">
+					<div class="DetailsDivParent"><img src="../../images/minus03.gif" align="absmiddle" id="DetailsImageScenario3040" onclick="parent.toggleDiv('detailsDIVScenario3040','DetailsImageScenario3040')" />Details:
+						<div id="detailsDIVScenario3040" class="DetailsDiv" >
+						&nbsp;
+						</div>
+					</div>
+				</td>
+			</tr>			<tr>
+				<td width="50%" class="TableRow" valign="top">Map:DICOM</td>
+				<td width="50%" class="TableRow" valign="top">TID 1500 MeasurementReport > Imaging Measurements > Include TID 1411 VolumetricROIMeasurements</td>
+			</tr>	
+			<tr>
+				<td class="TableRowBottomDashed"  colspan="2">
+					<div class="DetailsDivParent"><img src="../../images/minus03.gif" align="absmiddle" id="DetailsImageScenario3041" onclick="parent.toggleDiv('detailsDIVScenario3041','DetailsImageScenario3041')" />Details:
+						<div id="detailsDIVScenario3041" class="DetailsDiv" >
+						&nbsp;
+						</div>
+					</div>
+				</td>
+			</tr>			<tr>
+				<td width="50%" class="TableRow" valign="top">Map:DICOM</td>
+				<td width="50%" class="TableRow" valign="top">TID 1410 PlanarROIMeasurements > Measurement Group</td>
+			</tr>	
+			<tr>
+				<td class="TableRowBottomDashed"  colspan="2">
+					<div class="DetailsDivParent"><img src="../../images/minus03.gif" align="absmiddle" id="DetailsImageScenario3042" onclick="parent.toggleDiv('detailsDIVScenario3042','DetailsImageScenario3042')" />Details:
+						<div id="detailsDIVScenario3042" class="DetailsDiv" >
+						&nbsp;
+						</div>
+					</div>
+				</td>
+			</tr>			<tr>
+				<td width="50%" class="TableRow" valign="top">Map:ICSRr2</td>
+				<td width="50%" class="TableRow" valign="top">InvestigativeEvent (in IndividualCaseSafetyReport)</td>
+			</tr>	
+			<tr>
+				<td class="TableRowBottomDashed"  colspan="2">
+					<div class="DetailsDivParent"><img src="../../images/minus03.gif" align="absmiddle" id="DetailsImageScenario3043" onclick="parent.toggleDiv('detailsDIVScenario3043','DetailsImageScenario3043')" />Details:
+						<div id="detailsDIVScenario3043" class="DetailsDiv" >
+						&nbsp;
+						</div>
+					</div>
+				</td>
+			</tr>			<tr>
+				<td width="50%" class="TableRow" valign="top">Map:ICSRr2</td>
+				<td width="50%" class="TableRow" valign="top">RelatedInvestigation (in IndividualCaseSafetyReport)</td>
+			</tr>	
+			<tr>
+				<td class="TableRowBottomDashed"  colspan="2">
+					<div class="DetailsDivParent"><img src="../../images/minus03.gif" align="absmiddle" id="DetailsImageScenario3044" onclick="parent.toggleDiv('detailsDIVScenario3044','DetailsImageScenario3044')" />Details:
+						<div id="detailsDIVScenario3044" class="DetailsDiv" >
+						&nbsp;
+						</div>
+					</div>
+				</td>
+			</tr>			<tr>
+				<td width="50%" class="TableRow" valign="top">Map:ICSRr2</td>
+				<td width="50%" class="TableRow" valign="top">Subject7 (in IndividualCaseSafetyReport)</td>
+			</tr>	
+			<tr>
+				<td class="TableRowBottomDashed"  colspan="2">
+					<div class="DetailsDivParent"><img src="../../images/minus03.gif" align="absmiddle" id="DetailsImageScenario3045" onclick="parent.toggleDiv('detailsDIVScenario3045','DetailsImageScenario3045')" />Details:
+						<div id="detailsDIVScenario3045" class="DetailsDiv" >
+						&nbsp;
+						</div>
+					</div>
+				</td>
+			</tr>			<tr>
+				<td width="50%" class="TableRow" valign="top">Map:ICSRr2</td>
+				<td width="50%" class="TableRow" valign="top">ObservationEvent (in IndividualCaseSafetyReport)</td>
+			</tr>	
+			<tr>
+				<td class="TableRowBottomDashed"  colspan="2">
+					<div class="DetailsDivParent"><img src="../../images/minus03.gif" align="absmiddle" id="DetailsImageScenario3046" onclick="parent.toggleDiv('detailsDIVScenario3046','DetailsImageScenario3046')" />Details:
+						<div id="detailsDIVScenario3046" class="DetailsDiv" >
+						&nbsp;
+						</div>
+					</div>
+				</td>
+			</tr>			<tr>
+				<td width="50%" class="TableRow" valign="top">Map:LabViewer2.2</td>
+				<td width="50%" class="TableRow" valign="top">LaboratoryTest</td>
+			</tr>	
+			<tr>
+				<td class="TableRowBottomDashed"  colspan="2">
+					<div class="DetailsDivParent"><img src="../../images/minus03.gif" align="absmiddle" id="DetailsImageScenario3047" onclick="parent.toggleDiv('detailsDIVScenario3047','DetailsImageScenario3047')" />Details:
+						<div id="detailsDIVScenario3047" class="DetailsDiv" >
+						&nbsp;
+						</div>
+					</div>
+				</td>
+			</tr>			<tr>
+				<td width="50%" class="TableRow" valign="top">Map:LSDAMv2.2.3Plus</td>
+				<td width="50%" class="TableRow" valign="top">PerformedObservation</td>
+			</tr>	
+			<tr>
+				<td class="TableRowBottomDashed"  colspan="2">
+					<div class="DetailsDivParent"><img src="../../images/minus03.gif" align="absmiddle" id="DetailsImageScenario3048" onclick="parent.toggleDiv('detailsDIVScenario3048','DetailsImageScenario3048')" />Details:
+						<div id="detailsDIVScenario3048" class="DetailsDiv" >
+						&nbsp;
+						</div>
+					</div>
+				</td>
+			</tr>			<tr>
+				<td width="50%" class="TableRow" valign="top">Map:LSDAMv2.2.3Plus</td>
+				<td width="50%" class="TableRow" valign="top">PerformedSpecimenQualityReview</td>
+			</tr>	
+			<tr>
+				<td class="TableRowBottomDashed"  colspan="2">
+					<div class="DetailsDivParent"><img src="../../images/minus03.gif" align="absmiddle" id="DetailsImageScenario3049" onclick="parent.toggleDiv('detailsDIVScenario3049','DetailsImageScenario3049')" />Details:
+						<div id="detailsDIVScenario3049" class="DetailsDiv" >
+						&nbsp;
+						</div>
+					</div>
+				</td>
+			</tr>			<tr>
+				<td width="50%" class="TableRow" valign="top">Map:PGx v1.0</td>
+				<td width="50%" class="TableRow" valign="top">BS</td>
+			</tr>	
+			<tr>
+				<td class="TableRowBottomDashed"  colspan="2">
+					<div class="DetailsDivParent"><img src="../../images/minus03.gif" align="absmiddle" id="DetailsImageScenario3050" onclick="parent.toggleDiv('detailsDIVScenario3050','DetailsImageScenario3050')" />Details:
+						<div id="detailsDIVScenario3050" class="DetailsDiv" >
+						&nbsp;
+						</div>
+					</div>
+				</td>
+			</tr>			<tr>
+				<td width="50%" class="TableRow" valign="top">Map:SDTM IGv3.1.2</td>
+				<td width="50%" class="TableRow" valign="top">SC.DOMAIN</td>
+			</tr>	
+			<tr>
+				<td class="TableRowBottomDashed"  colspan="2">
+					<div class="DetailsDivParent"><img src="../../images/minus03.gif" align="absmiddle" id="DetailsImageScenario3051" onclick="parent.toggleDiv('detailsDIVScenario3051','DetailsImageScenario3051')" />Details:
+						<div id="detailsDIVScenario3051" class="DetailsDiv" >
+						&nbsp;
+						</div>
+					</div>
+				</td>
+			</tr>			<tr>
+				<td width="50%" class="TableRow" valign="top">Map:SDTM IGv3.1.2</td>
+				<td width="50%" class="TableRow" valign="top">MB.DOMAIN</td>
+			</tr>	
+			<tr>
+				<td class="TableRowBottomDashed"  colspan="2">
+					<div class="DetailsDivParent"><img src="../../images/minus03.gif" align="absmiddle" id="DetailsImageScenario3052" onclick="parent.toggleDiv('detailsDIVScenario3052','DetailsImageScenario3052')" />Details:
+						<div id="detailsDIVScenario3052" class="DetailsDiv" >
+						&nbsp;
+						</div>
+					</div>
+				</td>
+			</tr>			<tr>
+				<td width="50%" class="TableRow" valign="top">Map:SDTM IGv3.1.2</td>
+				<td width="50%" class="TableRow" valign="top">LB.DOMAIN</td>
+			</tr>	
+			<tr>
+				<td class="TableRowBottomDashed"  colspan="2">
+					<div class="DetailsDivParent"><img src="../../images/minus03.gif" align="absmiddle" id="DetailsImageScenario3053" onclick="parent.toggleDiv('detailsDIVScenario3053','DetailsImageScenario3053')" />Details:
+						<div id="detailsDIVScenario3053" class="DetailsDiv" >
+						&nbsp;
+						</div>
+					</div>
+				</td>
+			</tr>			<tr>
+				<td width="50%" class="TableRow" valign="top">Map:SDTM IGv3.1.2</td>
+				<td width="50%" class="TableRow" valign="top">MS.DOMAIN</td>
+			</tr>	
+			<tr>
+				<td class="TableRowBottomDashed"  colspan="2">
+					<div class="DetailsDivParent"><img src="../../images/minus03.gif" align="absmiddle" id="DetailsImageScenario3054" onclick="parent.toggleDiv('detailsDIVScenario3054','DetailsImageScenario3054')" />Details:
+						<div id="detailsDIVScenario3054" class="DetailsDiv" >
+						&nbsp;
+						</div>
+					</div>
+				</td>
+			</tr>			<tr>
+				<td width="50%" class="TableRow" valign="top">Map:SDTM IGv3.1.2</td>
+				<td width="50%" class="TableRow" valign="top">CO.DOMAIN</td>
+			</tr>	
+			<tr>
+				<td class="TableRowBottomDashed"  colspan="2">
+					<div class="DetailsDivParent"><img src="../../images/minus03.gif" align="absmiddle" id="DetailsImageScenario3055" onclick="parent.toggleDiv('detailsDIVScenario3055','DetailsImageScenario3055')" />Details:
+						<div id="detailsDIVScenario3055" class="DetailsDiv" >
+						&nbsp;
+						</div>
+					</div>
+				</td>
+			</tr>			<tr>
+				<td width="50%" class="TableRow" valign="top">Map:SDTM IGv3.1.2</td>
+				<td width="50%" class="TableRow" valign="top">QS.DOMAIN</td>
+			</tr>	
+			<tr>
+				<td class="TableRowBottomDashed"  colspan="2">
+					<div class="DetailsDivParent"><img src="../../images/minus03.gif" align="absmiddle" id="DetailsImageScenario3056" onclick="parent.toggleDiv('detailsDIVScenario3056','DetailsImageScenario3056')" />Details:
+						<div id="detailsDIVScenario3056" class="DetailsDiv" >
+						&nbsp;
+						</div>
+					</div>
+				</td>
+			</tr>			<tr>
+				<td width="50%" class="TableRow" valign="top">Map:SDTM IGv3.1.2</td>
+				<td width="50%" class="TableRow" valign="top">PP.DOMAIN</td>
+			</tr>	
+			<tr>
+				<td class="TableRowBottomDashed"  colspan="2">
+					<div class="DetailsDivParent"><img src="../../images/minus03.gif" align="absmiddle" id="DetailsImageScenario3057" onclick="parent.toggleDiv('detailsDIVScenario3057','DetailsImageScenario3057')" />Details:
+						<div id="detailsDIVScenario3057" class="DetailsDiv" >
+						&nbsp;
+						</div>
+					</div>
+				</td>
+			</tr>			<tr>
+				<td width="50%" class="TableRow" valign="top">Map:SDTM IGv3.1.2</td>
+				<td width="50%" class="TableRow" valign="top">FA.DOMAIN</td>
+			</tr>	
+			<tr>
+				<td class="TableRowBottomDashed"  colspan="2">
+					<div class="DetailsDivParent"><img src="../../images/minus03.gif" align="absmiddle" id="DetailsImageScenario3058" onclick="parent.toggleDiv('detailsDIVScenario3058','DetailsImageScenario3058')" />Details:
+						<div id="detailsDIVScenario3058" class="DetailsDiv" >
+						&nbsp;
+						</div>
+					</div>
+				</td>
+			</tr>			<tr>
+				<td width="50%" class="TableRow" valign="top">Map:SDTM IGv3.1.2</td>
+				<td width="50%" class="TableRow" valign="top">MH.DOMAIN</td>
+			</tr>	
+			<tr>
+				<td class="TableRowBottomDashed"  colspan="2">
+					<div class="DetailsDivParent"><img src="../../images/minus03.gif" align="absmiddle" id="DetailsImageScenario3059" onclick="parent.toggleDiv('detailsDIVScenario3059','DetailsImageScenario3059')" />Details:
+						<div id="detailsDIVScenario3059" class="DetailsDiv" >
+						&nbsp;
+						</div>
+					</div>
+				</td>
+			</tr>			<tr>
+				<td width="50%" class="TableRow" valign="top">Map:SDTM IGv3.1.2</td>
+				<td width="50%" class="TableRow" valign="top">PC.DOMAIN</td>
+			</tr>	
+			<tr>
+				<td class="TableRowBottomDashed"  colspan="2">
+					<div class="DetailsDivParent"><img src="../../images/minus03.gif" align="absmiddle" id="DetailsImageScenario3060" onclick="parent.toggleDiv('detailsDIVScenario3060','DetailsImageScenario3060')" />Details:
+						<div id="detailsDIVScenario3060" class="DetailsDiv" >
+						&nbsp;
+						</div>
+					</div>
+				</td>
+			</tr>			<tr>
+				<td width="50%" class="TableRow" valign="top">Map:SDTM IGv3.1.2</td>
+				<td width="50%" class="TableRow" valign="top">VS.DOMAIN</td>
+			</tr>	
+			<tr>
+				<td class="TableRowBottomDashed"  colspan="2">
+					<div class="DetailsDivParent"><img src="../../images/minus03.gif" align="absmiddle" id="DetailsImageScenario3061" onclick="parent.toggleDiv('detailsDIVScenario3061','DetailsImageScenario3061')" />Details:
+						<div id="detailsDIVScenario3061" class="DetailsDiv" >
+						&nbsp;
+						</div>
+					</div>
+				</td>
+			</tr>			<tr>
+				<td width="50%" class="TableRow" valign="top">Map:SDTM IGv3.1.2</td>
+				<td width="50%" class="TableRow" valign="top">PE.DOMAIN</td>
+			</tr>	
+			<tr>
+				<td class="TableRowBottomDashed"  colspan="2">
+					<div class="DetailsDivParent"><img src="../../images/minus03.gif" align="absmiddle" id="DetailsImageScenario3062" onclick="parent.toggleDiv('detailsDIVScenario3062','DetailsImageScenario3062')" />Details:
+						<div id="detailsDIVScenario3062" class="DetailsDiv" >
+						&nbsp;
+						</div>
+					</div>
+				</td>
+			</tr>			<tr>
+				<td width="50%" class="TableRow" valign="top">Map:SDTM IGv3.1.2</td>
+				<td width="50%" class="TableRow" valign="top">EG.DOMAIN</td>
+			</tr>	
+			<tr>
+				<td class="TableRowBottomDashed"  colspan="2">
+					<div class="DetailsDivParent"><img src="../../images/minus03.gif" align="absmiddle" id="DetailsImageScenario3063" onclick="parent.toggleDiv('detailsDIVScenario3063','DetailsImageScenario3063')" />Details:
+						<div id="detailsDIVScenario3063" class="DetailsDiv" >
+						&nbsp;
+						</div>
+					</div>
+				</td>
+			</tr>			<tr>
+				<td width="50%" class="TableRow" valign="top">Map:SDTM IGv3.1.2</td>
+				<td width="50%" class="TableRow" valign="top">CE.DOMAIN</td>
+			</tr>	
+			<tr>
+				<td class="TableRowBottomDashed"  colspan="2">
+					<div class="DetailsDivParent"><img src="../../images/minus03.gif" align="absmiddle" id="DetailsImageScenario3064" onclick="parent.toggleDiv('detailsDIVScenario3064','DetailsImageScenario3064')" />Details:
+						<div id="detailsDIVScenario3064" class="DetailsDiv" >
+						&nbsp;
+						</div>
+					</div>
+				</td>
+			</tr>			<tr>
+				<td width="50%" class="TableRow" valign="top">Map:SDTM IGv3.1.3</td>
+				<td width="50%" class="TableRow" valign="top">PE</td>
+			</tr>	
+			<tr>
+				<td class="TableRowBottomDashed"  colspan="2">
+					<div class="DetailsDivParent"><img src="../../images/minus03.gif" align="absmiddle" id="DetailsImageScenario3065" onclick="parent.toggleDiv('detailsDIVScenario3065','DetailsImageScenario3065')" />Details:
+						<div id="detailsDIVScenario3065" class="DetailsDiv" >
+						&nbsp;
+						</div>
+					</div>
+				</td>
+			</tr>			<tr>
+				<td width="50%" class="TableRow" valign="top">Map:SDTM IGv3.1.3</td>
+				<td width="50%" class="TableRow" valign="top">MB</td>
+			</tr>	
+			<tr>
+				<td class="TableRowBottomDashed"  colspan="2">
+					<div class="DetailsDivParent"><img src="../../images/minus03.gif" align="absmiddle" id="DetailsImageScenario3066" onclick="parent.toggleDiv('detailsDIVScenario3066','DetailsImageScenario3066')" />Details:
+						<div id="detailsDIVScenario3066" class="DetailsDiv" >
+						&nbsp;
+						</div>
+					</div>
+				</td>
+			</tr>			<tr>
+				<td width="50%" class="TableRow" valign="top">Map:SDTM IGv3.1.3</td>
+				<td width="50%" class="TableRow" valign="top">VS</td>
+			</tr>	
+			<tr>
+				<td class="TableRowBottomDashed"  colspan="2">
+					<div class="DetailsDivParent"><img src="../../images/minus03.gif" align="absmiddle" id="DetailsImageScenario3067" onclick="parent.toggleDiv('detailsDIVScenario3067','DetailsImageScenario3067')" />Details:
+						<div id="detailsDIVScenario3067" class="DetailsDiv" >
+						&nbsp;
+						</div>
+					</div>
+				</td>
+			</tr>			<tr>
+				<td width="50%" class="TableRow" valign="top">Map:SDTM IGv3.1.3</td>
+				<td width="50%" class="TableRow" valign="top">CO</td>
+			</tr>	
+			<tr>
+				<td class="TableRowBottomDashed"  colspan="2">
+					<div class="DetailsDivParent"><img src="../../images/minus03.gif" align="absmiddle" id="DetailsImageScenario3068" onclick="parent.toggleDiv('detailsDIVScenario3068','DetailsImageScenario3068')" />Details:
+						<div id="detailsDIVScenario3068" class="DetailsDiv" >
+						&nbsp;
+						</div>
+					</div>
+				</td>
+			</tr>			<tr>
+				<td width="50%" class="TableRow" valign="top">Map:SDTM IGv3.1.3</td>
+				<td width="50%" class="TableRow" valign="top">EG</td>
+			</tr>	
+			<tr>
+				<td class="TableRowBottomDashed"  colspan="2">
+					<div class="DetailsDivParent"><img src="../../images/minus03.gif" align="absmiddle" id="DetailsImageScenario3069" onclick="parent.toggleDiv('detailsDIVScenario3069','DetailsImageScenario3069')" />Details:
+						<div id="detailsDIVScenario3069" class="DetailsDiv" >
+						&nbsp;
+						</div>
+					</div>
+				</td>
+			</tr>			<tr>
+				<td width="50%" class="TableRow" valign="top">Map:SDTM IGv3.1.3</td>
+				<td width="50%" class="TableRow" valign="top">FA</td>
+			</tr>	
+			<tr>
+				<td class="TableRowBottomDashed"  colspan="2">
+					<div class="DetailsDivParent"><img src="../../images/minus03.gif" align="absmiddle" id="DetailsImageScenario3070" onclick="parent.toggleDiv('detailsDIVScenario3070','DetailsImageScenario3070')" />Details:
+						<div id="detailsDIVScenario3070" class="DetailsDiv" >
+						&nbsp;
+						</div>
+					</div>
+				</td>
+			</tr>			<tr>
+				<td width="50%" class="TableRow" valign="top">Map:SDTM IGv3.1.3</td>
+				<td width="50%" class="TableRow" valign="top">PC</td>
+			</tr>	
+			<tr>
+				<td class="TableRowBottomDashed"  colspan="2">
+					<div class="DetailsDivParent"><img src="../../images/minus03.gif" align="absmiddle" id="DetailsImageScenario3071" onclick="parent.toggleDiv('detailsDIVScenario3071','DetailsImageScenario3071')" />Details:
+						<div id="detailsDIVScenario3071" class="DetailsDiv" >
+						&nbsp;
+						</div>
+					</div>
+				</td>
+			</tr>			<tr>
+				<td width="50%" class="TableRow" valign="top">Map:SDTM IGv3.1.3</td>
+				<td width="50%" class="TableRow" valign="top">QS</td>
+			</tr>	
+			<tr>
+				<td class="TableRowBottomDashed"  colspan="2">
+					<div class="DetailsDivParent"><img src="../../images/minus03.gif" align="absmiddle" id="DetailsImageScenario3072" onclick="parent.toggleDiv('detailsDIVScenario3072','DetailsImageScenario3072')" />Details:
+						<div id="detailsDIVScenario3072" class="DetailsDiv" >
+						&nbsp;
+						</div>
+					</div>
+				</td>
+			</tr>			<tr>
+				<td width="50%" class="TableRow" valign="top">Map:SDTM IGv3.1.3</td>
+				<td width="50%" class="TableRow" valign="top">RS</td>
+			</tr>	
+			<tr>
+				<td class="TableRowBottomDashed"  colspan="2">
+					<div class="DetailsDivParent"><img src="../../images/minus03.gif" align="absmiddle" id="DetailsImageScenario3073" onclick="parent.toggleDiv('detailsDIVScenario3073','DetailsImageScenario3073')" />Details:
+						<div id="detailsDIVScenario3073" class="DetailsDiv" >
+						&nbsp;
+						</div>
+					</div>
+				</td>
+			</tr>			<tr>
+				<td width="50%" class="TableRow" valign="top">Map:SDTM IGv3.1.3</td>
+				<td width="50%" class="TableRow" valign="top">SC</td>
+			</tr>	
+			<tr>
+				<td class="TableRowBottomDashed"  colspan="2">
+					<div class="DetailsDivParent"><img src="../../images/minus03.gif" align="absmiddle" id="DetailsImageScenario3074" onclick="parent.toggleDiv('detailsDIVScenario3074','DetailsImageScenario3074')" />Details:
+						<div id="detailsDIVScenario3074" class="DetailsDiv" >
+						&nbsp;
+						</div>
+					</div>
+				</td>
+			</tr>			<tr>
+				<td width="50%" class="TableRow" valign="top">Map:SDTM IGv3.1.3</td>
+				<td width="50%" class="TableRow" valign="top">TR</td>
+			</tr>	
+			<tr>
+				<td class="TableRowBottomDashed"  colspan="2">
+					<div class="DetailsDivParent"><img src="../../images/minus03.gif" align="absmiddle" id="DetailsImageScenario3075" onclick="parent.toggleDiv('detailsDIVScenario3075','DetailsImageScenario3075')" />Details:
+						<div id="detailsDIVScenario3075" class="DetailsDiv" >
+						&nbsp;
+						</div>
+					</div>
+				</td>
+			</tr>			<tr>
+				<td width="50%" class="TableRow" valign="top">Map:SDTM IGv3.1.3</td>
+				<td width="50%" class="TableRow" valign="top">TU</td>
+			</tr>	
+			<tr>
+				<td class="TableRowBottomDashed"  colspan="2">
+					<div class="DetailsDivParent"><img src="../../images/minus03.gif" align="absmiddle" id="DetailsImageScenario3076" onclick="parent.toggleDiv('detailsDIVScenario3076','DetailsImageScenario3076')" />Details:
+						<div id="detailsDIVScenario3076" class="DetailsDiv" >
+						&nbsp;
+						</div>
+					</div>
+				</td>
+			</tr>			<tr>
+				<td width="50%" class="TableRow" valign="top">Map:SDTM IGv3.1.3</td>
+				<td width="50%" class="TableRow" valign="top">MS</td>
+			</tr>	
+			<tr>
+				<td class="TableRowBottomDashed"  colspan="2">
+					<div class="DetailsDivParent"><img src="../../images/minus03.gif" align="absmiddle" id="DetailsImageScenario3077" onclick="parent.toggleDiv('detailsDIVScenario3077','DetailsImageScenario3077')" />Details:
+						<div id="detailsDIVScenario3077" class="DetailsDiv" >
+						&nbsp;
+						</div>
+					</div>
+				</td>
+			</tr>			<tr>
+				<td width="50%" class="TableRow" valign="top">Map:SDTM IGv3.1.3</td>
+				<td width="50%" class="TableRow" valign="top">LB</td>
+			</tr>	
+			<tr>
+				<td class="TableRowBottomDashed"  colspan="2">
+					<div class="DetailsDivParent"><img src="../../images/minus03.gif" align="absmiddle" id="DetailsImageScenario3078" onclick="parent.toggleDiv('detailsDIVScenario3078','DetailsImageScenario3078')" />Details:
+						<div id="detailsDIVScenario3078" class="DetailsDiv" >
+						&nbsp;
+						</div>
+					</div>
+				</td>
+			</tr>			<tr>
+				<td width="50%" class="TableRow" valign="top">Map:SDTM IGv3.2</td>
+				<td width="50%" class="TableRow" valign="top">QS</td>
+			</tr>	
+			<tr>
+				<td class="TableRowBottomDashed"  colspan="2">
+					<div class="DetailsDivParent"><img src="../../images/minus03.gif" align="absmiddle" id="DetailsImageScenario3079" onclick="parent.toggleDiv('detailsDIVScenario3079','DetailsImageScenario3079')" />Details:
+						<div id="detailsDIVScenario3079" class="DetailsDiv" >
+						&nbsp;
+						</div>
+					</div>
+				</td>
+			</tr>			<tr>
+				<td width="50%" class="TableRow" valign="top">Map:SDTM IGv3.2</td>
+				<td width="50%" class="TableRow" valign="top">LB</td>
+			</tr>	
+			<tr>
+				<td class="TableRowBottomDashed"  colspan="2">
+					<div class="DetailsDivParent"><img src="../../images/minus03.gif" align="absmiddle" id="DetailsImageScenario3080" onclick="parent.toggleDiv('detailsDIVScenario3080','DetailsImageScenario3080')" />Details:
+						<div id="detailsDIVScenario3080" class="DetailsDiv" >
+						&nbsp;
+						</div>
+					</div>
+				</td>
+			</tr>			<tr>
+				<td width="50%" class="TableRow" valign="top">Map:SDTM IGv3.2</td>
+				<td width="50%" class="TableRow" valign="top">PC</td>
+			</tr>	
+			<tr>
+				<td class="TableRowBottomDashed"  colspan="2">
+					<div class="DetailsDivParent"><img src="../../images/minus03.gif" align="absmiddle" id="DetailsImageScenario3081" onclick="parent.toggleDiv('detailsDIVScenario3081','DetailsImageScenario3081')" />Details:
+						<div id="detailsDIVScenario3081" class="DetailsDiv" >
+						&nbsp;
+						</div>
+					</div>
+				</td>
+			</tr>			<tr>
+				<td width="50%" class="TableRow" valign="top">Map:SDTM IGv3.2</td>
+				<td width="50%" class="TableRow" valign="top">PC</td>
+			</tr>	
+			<tr>
+				<td class="TableRowBottomDashed"  colspan="2">
+					<div class="DetailsDivParent"><img src="../../images/minus03.gif" align="absmiddle" id="DetailsImageScenario3082" onclick="parent.toggleDiv('detailsDIVScenario3082','DetailsImageScenario3082')" />Details:
+						<div id="detailsDIVScenario3082" class="DetailsDiv" >
+						&nbsp;
+						</div>
+					</div>
+				</td>
+			</tr>			<tr>
+				<td width="50%" class="TableRow" valign="top">Map:SDTM IGv3.2</td>
+				<td width="50%" class="TableRow" valign="top">DD</td>
+			</tr>	
+			<tr>
+				<td class="TableRowBottomDashed"  colspan="2">
+					<div class="DetailsDivParent"><img src="../../images/minus03.gif" align="absmiddle" id="DetailsImageScenario3083" onclick="parent.toggleDiv('detailsDIVScenario3083','DetailsImageScenario3083')" />Details:
+						<div id="detailsDIVScenario3083" class="DetailsDiv" >
+						&nbsp;
+						</div>
+					</div>
+				</td>
+			</tr>			<tr>
+				<td width="50%" class="TableRow" valign="top">Map:SDTM IGv3.2</td>
+				<td width="50%" class="TableRow" valign="top">PP</td>
+			</tr>	
+			<tr>
+				<td class="TableRowBottomDashed"  colspan="2">
+					<div class="DetailsDivParent"><img src="../../images/minus03.gif" align="absmiddle" id="DetailsImageScenario3084" onclick="parent.toggleDiv('detailsDIVScenario3084','DetailsImageScenario3084')" />Details:
+						<div id="detailsDIVScenario3084" class="DetailsDiv" >
+						&nbsp;
+						</div>
+					</div>
+				</td>
+			</tr>			<tr>
+				<td width="50%" class="TableRow" valign="top">Map:SDTM IGv3.2</td>
+				<td width="50%" class="TableRow" valign="top">IS</td>
+			</tr>	
+			<tr>
+				<td class="TableRowBottomDashed"  colspan="2">
+					<div class="DetailsDivParent"><img src="../../images/minus03.gif" align="absmiddle" id="DetailsImageScenario3085" onclick="parent.toggleDiv('detailsDIVScenario3085','DetailsImageScenario3085')" />Details:
+						<div id="detailsDIVScenario3085" class="DetailsDiv" >
+						&nbsp;
+						</div>
+					</div>
+				</td>
+			</tr>			<tr>
+				<td width="50%" class="TableRow" valign="top">Map:SDTM IGv3.2</td>
+				<td width="50%" class="TableRow" valign="top">PE</td>
+			</tr>	
+			<tr>
+				<td class="TableRowBottomDashed"  colspan="2">
+					<div class="DetailsDivParent"><img src="../../images/minus03.gif" align="absmiddle" id="DetailsImageScenario3086" onclick="parent.toggleDiv('detailsDIVScenario3086','DetailsImageScenario3086')" />Details:
+						<div id="detailsDIVScenario3086" class="DetailsDiv" >
+						&nbsp;
+						</div>
+					</div>
+				</td>
+			</tr>			<tr>
+				<td width="50%" class="TableRow" valign="top">Map:SDTM IGv3.2</td>
+				<td width="50%" class="TableRow" valign="top">MS</td>
+			</tr>	
+			<tr>
+				<td class="TableRowBottomDashed"  colspan="2">
+					<div class="DetailsDivParent"><img src="../../images/minus03.gif" align="absmiddle" id="DetailsImageScenario3087" onclick="parent.toggleDiv('detailsDIVScenario3087','DetailsImageScenario3087')" />Details:
+						<div id="detailsDIVScenario3087" class="DetailsDiv" >
+						&nbsp;
+						</div>
+					</div>
+				</td>
+			</tr>			<tr>
+				<td width="50%" class="TableRow" valign="top">Map:SDTM IGv3.2</td>
+				<td width="50%" class="TableRow" valign="top">MO</td>
+			</tr>	
+			<tr>
+				<td class="TableRowBottomDashed"  colspan="2">
+					<div class="DetailsDivParent"><img src="../../images/minus03.gif" align="absmiddle" id="DetailsImageScenario3088" onclick="parent.toggleDiv('detailsDIVScenario3088','DetailsImageScenario3088')" />Details:
+						<div id="detailsDIVScenario3088" class="DetailsDiv" >
+						&nbsp;
+						</div>
+					</div>
+				</td>
+			</tr>			<tr>
+				<td width="50%" class="TableRow" valign="top">Map:SDTM IGv3.2</td>
+				<td width="50%" class="TableRow" valign="top">SC</td>
+			</tr>	
+			<tr>
+				<td class="TableRowBottomDashed"  colspan="2">
+					<div class="DetailsDivParent"><img src="../../images/minus03.gif" align="absmiddle" id="DetailsImageScenario3089" onclick="parent.toggleDiv('detailsDIVScenario3089','DetailsImageScenario3089')" />Details:
+						<div id="detailsDIVScenario3089" class="DetailsDiv" >
+						&nbsp;
+						</div>
+					</div>
+				</td>
+			</tr>			<tr>
+				<td width="50%" class="TableRow" valign="top">Map:SDTM IGv3.2</td>
+				<td width="50%" class="TableRow" valign="top">RS</td>
+			</tr>	
+			<tr>
+				<td class="TableRowBottomDashed"  colspan="2">
+					<div class="DetailsDivParent"><img src="../../images/minus03.gif" align="absmiddle" id="DetailsImageScenario3090" onclick="parent.toggleDiv('detailsDIVScenario3090','DetailsImageScenario3090')" />Details:
+						<div id="detailsDIVScenario3090" class="DetailsDiv" >
+						&nbsp;
+						</div>
+					</div>
+				</td>
+			</tr>			<tr>
+				<td width="50%" class="TableRow" valign="top">Map:SDTM IGv3.2</td>
+				<td width="50%" class="TableRow" valign="top">SR</td>
+			</tr>	
+			<tr>
+				<td class="TableRowBottomDashed"  colspan="2">
+					<div class="DetailsDivParent"><img src="../../images/minus03.gif" align="absmiddle" id="DetailsImageScenario3091" onclick="parent.toggleDiv('detailsDIVScenario3091','DetailsImageScenario3091')" />Details:
+						<div id="detailsDIVScenario3091" class="DetailsDiv" >
+						&nbsp;
+						</div>
+					</div>
+				</td>
+			</tr>			<tr>
+				<td width="50%" class="TableRow" valign="top">Map:SDTM IGv3.2</td>
+				<td width="50%" class="TableRow" valign="top">VS</td>
+			</tr>	
+			<tr>
+				<td class="TableRowBottomDashed"  colspan="2">
+					<div class="DetailsDivParent"><img src="../../images/minus03.gif" align="absmiddle" id="DetailsImageScenario3092" onclick="parent.toggleDiv('detailsDIVScenario3092','DetailsImageScenario3092')" />Details:
+						<div id="detailsDIVScenario3092" class="DetailsDiv" >
+						&nbsp;
+						</div>
+					</div>
+				</td>
+			</tr>			<tr>
+				<td width="50%" class="TableRow" valign="top">Map:SDTM IGv3.2</td>
+				<td width="50%" class="TableRow" valign="top">SR</td>
+			</tr>	
+			<tr>
+				<td class="TableRowBottomDashed"  colspan="2">
+					<div class="DetailsDivParent"><img src="../../images/minus03.gif" align="absmiddle" id="DetailsImageScenario3093" onclick="parent.toggleDiv('detailsDIVScenario3093','DetailsImageScenario3093')" />Details:
+						<div id="detailsDIVScenario3093" class="DetailsDiv" >
+						&nbsp;
+						</div>
+					</div>
+				</td>
+			</tr>			<tr>
+				<td width="50%" class="TableRow" valign="top">Map:SDTM IGv3.2</td>
+				<td width="50%" class="TableRow" valign="top">MI</td>
+			</tr>	
+			<tr>
+				<td class="TableRowBottomDashed"  colspan="2">
+					<div class="DetailsDivParent"><img src="../../images/minus03.gif" align="absmiddle" id="DetailsImageScenario3094" onclick="parent.toggleDiv('detailsDIVScenario3094','DetailsImageScenario3094')" />Details:
+						<div id="detailsDIVScenario3094" class="DetailsDiv" >
+						&nbsp;
+						</div>
+					</div>
+				</td>
+			</tr>			<tr>
+				<td width="50%" class="TableRow" valign="top">Map:SDTM IGv3.2</td>
+				<td width="50%" class="TableRow" valign="top">EG</td>
+			</tr>	
+			<tr>
+				<td class="TableRowBottomDashed"  colspan="2">
+					<div class="DetailsDivParent"><img src="../../images/minus03.gif" align="absmiddle" id="DetailsImageScenario3095" onclick="parent.toggleDiv('detailsDIVScenario3095','DetailsImageScenario3095')" />Details:
+						<div id="detailsDIVScenario3095" class="DetailsDiv" >
+						&nbsp;
+						</div>
+					</div>
+				</td>
+			</tr>			<tr>
+				<td width="50%" class="TableRow" valign="top">Map:SDTM IGv3.2</td>
+				<td width="50%" class="TableRow" valign="top">TR</td>
+			</tr>	
+			<tr>
+				<td class="TableRowBottomDashed"  colspan="2">
+					<div class="DetailsDivParent"><img src="../../images/minus03.gif" align="absmiddle" id="DetailsImageScenario3096" onclick="parent.toggleDiv('detailsDIVScenario3096','DetailsImageScenario3096')" />Details:
+						<div id="detailsDIVScenario3096" class="DetailsDiv" >
+						&nbsp;
+						</div>
+					</div>
+				</td>
+			</tr>			<tr>
+				<td width="50%" class="TableRow" valign="top">Map:SDTM IGv3.2</td>
+				<td width="50%" class="TableRow" valign="top">TU</td>
+			</tr>	
+			<tr>
+				<td class="TableRowBottomDashed"  colspan="2">
+					<div class="DetailsDivParent"><img src="../../images/minus03.gif" align="absmiddle" id="DetailsImageScenario3097" onclick="parent.toggleDiv('detailsDIVScenario3097','DetailsImageScenario3097')" />Details:
+						<div id="detailsDIVScenario3097" class="DetailsDiv" >
+						&nbsp;
+						</div>
+					</div>
+				</td>
+			</tr>			<tr>
+				<td width="50%" class="TableRow" valign="top">Map:SDTM IGv3.2</td>
+				<td width="50%" class="TableRow" valign="top">FA</td>
+			</tr>	
+			<tr>
+				<td class="TableRowBottomDashed"  colspan="2">
+					<div class="DetailsDivParent"><img src="../../images/minus03.gif" align="absmiddle" id="DetailsImageScenario3098" onclick="parent.toggleDiv('detailsDIVScenario3098','DetailsImageScenario3098')" />Details:
+						<div id="detailsDIVScenario3098" class="DetailsDiv" >
+						&nbsp;
+						</div>
+					</div>
+				</td>
+			</tr>			<tr>
+				<td width="50%" class="TableRow" valign="top">Map:SDTM IGv3.2</td>
+				<td width="50%" class="TableRow" valign="top">MB</td>
+			</tr>	
+			<tr>
+				<td class="TableRowBottomDashed"  colspan="2">
+					<div class="DetailsDivParent"><img src="../../images/minus03.gif" align="absmiddle" id="DetailsImageScenario3099" onclick="parent.toggleDiv('detailsDIVScenario3099','DetailsImageScenario3099')" />Details:
+						<div id="detailsDIVScenario3099" class="DetailsDiv" >
+						&nbsp;
+						</div>
+					</div>
+				</td>
+			</tr>			<tr>
+				<td width="50%" class="TableRow" valign="top">Map:SDTM IGv3.2</td>
+				<td width="50%" class="TableRow" valign="top">PC</td>
+			</tr>	
+			<tr>
+				<td class="TableRowBottomDashed"  colspan="2">
+					<div class="DetailsDivParent"><img src="../../images/minus03.gif" align="absmiddle" id="DetailsImageScenario3100" onclick="parent.toggleDiv('detailsDIVScenario3100','DetailsImageScenario3100')" />Details:
+						<div id="detailsDIVScenario3100" class="DetailsDiv" >
+						&nbsp;
+						</div>
+					</div>
+				</td>
+			</tr>			<tr>
+				<td width="50%" class="TableRow" valign="top">Map:SDTM IGv3.2</td>
+				<td width="50%" class="TableRow" valign="top">CO</td>
+			</tr>	
+			<tr>
+				<td class="TableRowBottomDashed"  colspan="2">
+					<div class="DetailsDivParent"><img src="../../images/minus03.gif" align="absmiddle" id="DetailsImageScenario3101" onclick="parent.toggleDiv('detailsDIVScenario3101','DetailsImageScenario3101')" />Details:
+						<div id="detailsDIVScenario3101" class="DetailsDiv" >
+						&nbsp;
+						</div>
+					</div>
+				</td>
+			</tr>			<tr>
+				<td width="50%" class="TableRow" valign="top">Map:SDTM IGv3.2</td>
+				<td width="50%" class="TableRow" valign="top">RP</td>
+			</tr>	
+			<tr>
+				<td class="TableRowBottomDashed"  colspan="2">
+					<div class="DetailsDivParent"><img src="../../images/minus03.gif" align="absmiddle" id="DetailsImageScenario3102" onclick="parent.toggleDiv('detailsDIVScenario3102','DetailsImageScenario3102')" />Details:
+						<div id="detailsDIVScenario3102" class="DetailsDiv" >
+						&nbsp;
+						</div>
+					</div>
+				</td>
+			</tr>
+	</table>
+</div>		<div class="ItemBody" id="ConstraintsTable">
+			<table border="0" cellspacing="0" cellpadding="0" class="Table">
+			  	<tr>
+					<td width="80%" class="TableHeading">Constraint</td>
+					<td width="10%" class="TableHeading">Type</td>
+					<td width="10%" class="TableHeading">Status</td>
+				</tr>
+				<tr>
+					<td width="80%" class="TableRow">be reported by actualIndicator Qualifier</td>
+					<td width="10%" class="TableRow">Invariant</td>
+					<td width="10%" class="TableRow">Approved</td>
+				</tr>
+				<tr>
+					<td class="TableRowBottomDashed"  colspan="3">
+						<div class="DetailsDivParent"><img src="../../images/minus03.gif" align="absmiddle" id="DetailsImageConstraints3103" onclick="parent.toggleDiv('detailsDIVConstraints3103','DetailsImageConstraints3103')" />Details:
+							<div id="detailsDIVConstraints3103" class="DetailsDiv" >
+							<div class="ObjectDetailsNotes">Only Person, Device or Organization (via Assessor) with actualIndicator = &quot;true&quot; is valid.&lt;br/&gt;</div>
+
+							</div>
+						</div>
+					</td>
+				</tr>
+				<tr>
+					<td width="80%" class="TableRow">be performed by (lab) actualIndicator Qualifier</td>
+					<td width="10%" class="TableRow">Invariant</td>
+					<td width="10%" class="TableRow">Approved</td>
+				</tr>
+				<tr>
+					<td class="TableRowBottomDashed"  colspan="3">
+						<div class="DetailsDivParent"><img src="../../images/minus03.gif" align="absmiddle" id="DetailsImageConstraints3104" onclick="parent.toggleDiv('detailsDIVConstraints3104','DetailsImageConstraints3104')" />Details:
+							<div id="detailsDIVConstraints3104" class="DetailsDiv" >
+							<div class="ObjectDetailsNotes">Only Organization (via PerformingLaboratory) with actualIndicator = &quot;true&quot; is valid.&lt;br/&gt;</div>
+
+							</div>
+						</div>
+					</td>
+				</tr>
+
+			</table>
+		</div>
+		<div class="ItemBody" id="LinksTable">
+			<table align="center" border="0" cellspacing="0" cellpadding="0" class="Table">
+				<tr>
+					<td width="30%" class="TableHeading">Object</td>
+					<td width="10%" class="TableHeading">Type</td>
+					<td width="10%" class="TableHeading">Connection</td>
+					<td width="10%" class="TableHeading">Direction</td>
+					<td width="40%" class="TableHeading">Notes</td>
+				</tr>
+				<tr>
+					<td width="30%" class="TableRow" valign="top"><a href="../EA1/EA41.htm">CausalAssessment</a></td>
+					<td width="10%" class="TableRow" valign="top">Class</td>
+					<td width="10%" class="TableRow" valign="top">Generalization</td>
+					<td width="10%" class="TableRow" valign="top">From</td>
+					<td width="40%" class="TableRow" valign="top">DESCRIPTION:
+Each CausalAssessment always specializes one PerformedObservation. Each PerformedObservation might be specialized by one CausalAssessment.
+
+DEFINITION:
+
+EXAMPLE(S):
+
+OTHER NAME(S):
+
+NOTE(S):
+</td>
+				</tr>
+				<tr>
+					<td width="30%" class="TableRow" valign="top"><a href="../EA5/EA212.htm">PerformedImagingStudy</a></td>
+					<td width="10%" class="TableRow" valign="top">Class</td>
+					<td width="10%" class="TableRow" valign="top">Generalization</td>
+					<td width="10%" class="TableRow" valign="top">From</td>
+					<td width="40%" class="TableRow" valign="top">DESCRIPTION:
+Each PerformedImagingStudy always specializes one PerformedObservation. Each PerformedObservation might be specialized by one PerformedImagingStudy.
+
+DEFINITION:
+
+EXAMPLE(S):
+
+OTHER NAME(S):
+
+NOTE(S):</td>
+				</tr>
+				<tr>
+					<td width="30%" class="TableRow" valign="top"><a href="EA392.htm">PerformedEligibilityCriterion</a></td>
+					<td width="10%" class="TableRow" valign="top">Class</td>
+					<td width="10%" class="TableRow" valign="top">Generalization</td>
+					<td width="10%" class="TableRow" valign="top">From</td>
+					<td width="40%" class="TableRow" valign="top">DESCRIPTION:
+Each PerformedEligibilityCriterion always specializes one PerformedObservation. Each PerformedObservation might be specialized by one PerformedEligibilityCriterion.
+
+DEFINITION:
+
+EXAMPLE(S):
+
+OTHER NAME(S):
+
+NOTE(S):
+</td>
+				</tr>
+				<tr>
+					<td width="30%" class="TableRow" valign="top"><a href="../EA1/EA46.htm">PerformedProductInvestigation</a></td>
+					<td width="10%" class="TableRow" valign="top">Class</td>
+					<td width="10%" class="TableRow" valign="top">Generalization</td>
+					<td width="10%" class="TableRow" valign="top">From</td>
+					<td width="40%" class="TableRow" valign="top">DESCRIPTION:
+Each PerformedProductInvestigation always specializes one PerformedObservation. Each PerformedObservation might be specialized by one PerformedProductInvestigation.
+
+DEFINITION:
+
+EXAMPLE(S):
+
+OTHER NAME(S):
+
+NOTE(S):
+</td>
+				</tr>
+				<tr>
+					<td width="30%" class="TableRow" valign="top"><a href="../EA6/EA234.htm">PerformedGeneticObservation</a></td>
+					<td width="10%" class="TableRow" valign="top">Class</td>
+					<td width="10%" class="TableRow" valign="top">Generalization</td>
+					<td width="10%" class="TableRow" valign="top">From</td>
+					<td width="40%" class="TableRow" valign="top">DESCRIPTION:
+Each PerformedGeneticObservation always specializes one PerformedObservation. Each PerformedObservation might be specialized by one PerformedGeneticObservation.
+
+DEFINITION:
+
+EXAMPLE(S):
+
+OTHER NAME(S):
+
+NOTE(S):</td>
+				</tr>
+				<tr>
+					<td width="30%" class="TableRow" valign="top"><a href="../EA1/EA38.htm">AdverseEventOutcomeAssessment</a></td>
+					<td width="10%" class="TableRow" valign="top">Class</td>
+					<td width="10%" class="TableRow" valign="top">Generalization</td>
+					<td width="10%" class="TableRow" valign="top">From</td>
+					<td width="40%" class="TableRow" valign="top">DESCRIPTION:
+Each AdverseEventOutcomeAssessment always specializes one PerformedObservation. Each PerformedObservation might be specialized by one AdverseEventOutcomeAssessment.
+
+DEFINITION:
+
+EXAMPLE(S):
+
+OTHER NAME(S):
+
+NOTE(S):</td>
+				</tr>
+				<tr>
+					<td width="30%" class="TableRow" valign="top"><a href="EA385.htm">PerformedActivity</a></td>
+					<td width="10%" class="TableRow" valign="top">Class</td>
+					<td width="10%" class="TableRow" valign="top">Generalization</td>
+					<td width="10%" class="TableRow" valign="top">To</td>
+					<td width="40%" class="TableRow" valign="top">DESCRIPTION:
+Each PerformedObservation always specializes one PerformedActivity. Each PerformedActivity might be specialized by one PerformedObservation.
+
+DEFINITION:
+
+EXAMPLE(S):
+
+OTHER NAME(S):
+
+NOTE(S):
+</td>
+				</tr>
+
+			</table>
+		</div>
+	</div>
+<div class="pageFooter"></div>
+ 
+</body>
+</html>

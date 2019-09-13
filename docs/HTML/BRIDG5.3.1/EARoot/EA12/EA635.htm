@@ -1,0 +1,112 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>Surveillance, Epidemiology & End Results (SEER)</title>
+<link href="../../css/ea.css" rel="stylesheet" type="text/css" />
+<script>
+function initPage(src) {	
+	if(parent==this&&(this.location+"").indexOf('EARoot')!=-1)
+		document.location=(this.location+"").substring(0,(this.location+"").indexOf('EARoot'))+"index"+(this.location+"").substring((this.location+"").lastIndexOf('.'))+"?goto="+((this.location+"").substring((this.location+"").indexOf('EARoot')+7,(this.location+"").lastIndexOf('.')).replace(/\//g,':').replace(/EA/g,""));
+	else
+		parent.initPage(src);
+}
+
+function nameClassifier(name, separator)
+{
+  var str = name;
+  var classifierName;
+  var node = document.getElementById('name_classifier');
+  if(node != null)
+  {
+    classifierName = node.innerHTML;
+  }
+  if(classifierName != "")
+  {
+   str += separator + classifierName;
+  }
+  
+  return str;
+}
+</script>
+</head>
+<body onload="initPage(this);" class="Content">
+<div class="PageBody">
+	
+<img src="EA636.png" usemap="#EA636" border="0" />
+
+<MAP NAME="EA636">
+<area shape="rect" coords="623,87,1104,122" href="../EA13/EA854.htm" target="_self">
+<area shape="rect" coords="623,11,1182,73" href="EA717.htm" target="_self">
+<area shape="rect" coords="330,0,582,118" href="EA670.htm" target="_self">
+<area shape="rect" coords="19,532,197,611" href="../EA3/EA116.htm" target="_self">
+<area shape="rect" coords="1073,760,1252,831" href="../EA10/EA388.htm" target="_self">
+<area shape="rect" coords="718,644,910,715" href="../EA7/EA303.htm" target="_self">
+<area shape="rect" coords="762,562,920,607" href="../EA10/EA389.htm" target="_self">
+<area shape="rect" coords="755,383,968,428" href="../EA10/EA425.htm" target="_self">
+<area shape="rect" coords="660,273,819,316" href="../EA10/EA423.htm" target="_self">
+<area shape="rect" coords="1384,338,1592,385" href="../EA10/EA416.htm" target="_self">
+<area shape="rect" coords="286,618,512,662" href="../EA7/EA304.htm" target="_self">
+<area shape="rect" coords="476,514,682,593" href="../EA7/EA274.htm" target="_self">
+<area shape="rect" coords="540,613,694,669" href="../EA7/EA293.htm" target="_self">
+<area shape="rect" coords="1187,331,1349,379" href="../EA10/EA407.htm" target="_self">
+<area shape="rect" coords="1412,424,1580,545" href="../EA10/EA379.htm" target="_self">
+<area shape="rect" coords="540,686,708,736" href="../EA7/EA290.htm" target="_self">
+<area shape="rect" coords="505,332,736,418" href="../EA7/EA271.htm" target="_self">
+<area shape="rect" coords="1298,231,1507,324" href="../EA10/EA386.htm" target="_self">
+<area shape="rect" coords="1430,562,1573,655" href="../EA10/EA448.htm" target="_self">
+<area shape="rect" coords="250,496,457,593" href="../EA3/EA164.htm" target="_self">
+<area shape="rect" coords="361,342,488,412" href="../EA3/EA163.htm" target="_self">
+<area shape="rect" coords="1145,160,1330,212" href="../EA3/EA157.htm" target="_self">
+<area shape="rect" coords="972,160,1121,209" href="../EA3/EA120.htm" target="_self">
+<area shape="rect" coords="800,160,945,209" href="../EA3/EA142.htm" target="_self">
+<area shape="rect" coords="373,169,501,238" href="../EA3/EA129.htm" target="_self">
+<area shape="rect" coords="885,448,1106,549" href="../EA10/EA402.htm" target="_self">
+<area shape="rect" coords="933,599,1108,664" href="../EA10/EA398.htm" target="_self">
+<area shape="rect" coords="930,676,1156,743" href="../EA10/EA396.htm" target="_self">
+<area shape="rect" coords="1137,529,1307,614" href="../EA10/EA405.htm" target="_self">
+<area shape="rect" coords="1119,401,1284,466" href="../EA10/EA404.htm" target="_self">
+<area shape="rect" coords="1271,669,1517,776" href="../EA10/EA390.htm" target="_self">
+<area shape="rect" coords="942,223,1156,372" href="../EA10/EA385.htm" target="_self">
+<area shape="rect" coords="26,662,141,741" href="../EA3/EA89.htm" target="_self">
+<area shape="rect" coords="10,150,259,287" href="../EA3/EA132.htm" target="_self">
+<area shape="rect" coords="56,318,241,457" href="../EA3/EA85.htm" target="_self">
+<area shape="rect" coords="632,165,709,250" href="../EA3/EA76.htm" target="_self">
+</MAP>
+
+	<div class="ObjectTitle">Surveillance, Epidemiology & End Results (SEER) : Class diagram</div>
+	<table border="0" cellpadding="0" cellspacing="0" class="ObjectDetails">
+		<tr>
+			<td width="15%" class="ObjectDetailsTopic">Created:</td>
+			<td width="85%" class="ObjectDetailsValue">5/19/2017 12:00:00 AM</td>
+		</tr>
+		<tr>
+			<td width="15%" class="ObjectDetailsTopic">Modified:</td>
+			<td width="85%" class="ObjectDetailsValue">9/12/2019 5:36:59 PM</td>
+		</tr>
+		<tr style="padding-top: 10px;">
+			<td width="15%" class="ObjectDetailsTopic"><img src="../../images/plus03.gif" align="absmiddle" id="proj" onclick="parent.toggleData(this.id)" />Project:</td>
+			<td width="85%" class="ObjectDetailsValue"></td>			
+		</tr>
+		<tr id="proj00" style="display: none;">
+			<td width="15%" class="ObjectDetailsTopic" style="padding-left: 18px;">Author:</td>
+			<td width="85%" class="ObjectDetailsValue">BRIDG Modeling Team</td>
+		</tr>
+		<tr id="proj01" style="display: none;">
+			<td width="15%" class="ObjectDetailsTopic" style="padding-left: 18px;">Version:</td>
+			<td width="85%" class="ObjectDetailsValue">5.3</td>
+		</tr>
+		<tr>
+			<td width="15%" class="ObjectDetailsTopic"><img src="../../images/plus03.gif" align="absmiddle" id="adv" onclick="parent.toggleData(this.id)" />Advanced:</td>
+			<td width="85%" class="ObjectDetailsValue"></td>			
+		</tr>
+		<tr id="adv00" style="display: none;">
+			<td width="15%" class="ObjectDetailsTopic" style="padding-left: 18px;">ID:</td>
+			<td width="85%" class="ObjectDetailsValue">{5FA66E28-469E-403b-97A4-AD66E0EFF5C6}</td>
+		</tr>
+	</table>
+	
+</div>
+ 
+</body>
+</html>

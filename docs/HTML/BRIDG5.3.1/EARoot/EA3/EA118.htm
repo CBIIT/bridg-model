@@ -1,0 +1,347 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>Common Sub-Domain::MaterialName</title>
+<link href="../../css/ea.css" rel="stylesheet" type="text/css" />
+<script>
+function initPage(src) {	
+	if(parent==this&&(this.location+"").indexOf('EARoot')!=-1)
+		document.location=(this.location+"").substring(0,(this.location+"").indexOf('EARoot'))+"index"+(this.location+"").substring((this.location+"").lastIndexOf('.'))+"?goto="+((this.location+"").substring((this.location+"").indexOf('EARoot')+7,(this.location+"").lastIndexOf('.')).replace(/\//g,':').replace(/EA/g,""));
+	else
+		parent.initPage(src);
+}
+
+function nameClassifier(name, separator)
+{
+  var str = name;
+  var classifierName;
+  var node = document.getElementById('name_classifier');
+  if(node != null)
+  {
+    classifierName = node.innerHTML;
+  }
+  if(classifierName != "")
+  {
+   str += separator + classifierName;
+  }
+  
+  return str;
+}
+</script>
+</head>
+<body onload="initPage(this);" class="Content">
+<div class="pageHeader"></div>
+<div class="PageBody">
+	<div id="name_classifier" style="display: none;"></div>
+	<span class="ObjectTitle"><script type="text/javascript">document.write(nameClassifier("MaterialName", " : "))</script>  : Public   Class</span>
+	<table border="0" cellpadding="0" cellspacing="0" class="ObjectDetails">
+		<tr>
+			<td width="15%" class="ObjectDetailsTopic">Created:</td>
+			<td width="85%" class="ObjectDetailsValue">6/25/2010 4:31:09 PM</td>
+		</tr>
+		<tr>
+			<td class="ObjectDetailsTopic">Modified:</td>
+			<td class="ObjectDetailsValue">8/9/2018 10:51:21 PM</td>
+		</tr>
+		<tr style="height: 10px"><td colspan="2"></td></tr>
+		<tr>
+			<td class="ObjectDetailsTopic"><img src="../../images/plus03.gif" align="absmiddle" id="proj" onclick="parent.toggleData(this.id)" />Project:</td>
+			<td class="ObjectDetailsValue"></td>
+		</tr>
+		<tr id="proj00" style="display: none;">
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Author:</td>
+			<td class="ObjectDetailsValue">BRIDG SCC</td>
+		</tr>
+		<tr id="proj01" style="display: none;">
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Version:</td>
+			<td class="ObjectDetailsValue">1.0</td>
+		</tr>
+		<tr id="proj02" style="display: none;">
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Phase:</td>
+			<td class="ObjectDetailsValue">1.0</td>
+		</tr>
+		<tr id="proj03" style="display: none;">
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Status:</td>
+			<td class="ObjectDetailsValue"><none></td>
+		</tr>
+		<tr id="proj04" style="display: none;">
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Complexity:</td>
+			<td class="ObjectDetailsValue">Easy</td>
+		</tr>
+		<tr id="proj05" style="display: none;">
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Difficulty:</td>
+			<td class="ObjectDetailsValue"></td>
+		</tr>
+		<tr id="proj06" style="display: none;">
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Priority:</td>
+			<td class="ObjectDetailsValue"></td>
+		</tr>
+		<tr id="proj05" style="display: none;">
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Multiplicity:</td>
+			<td class="ObjectDetailsValue"></td>
+		</tr>
+		<tr>
+			<td class="ObjectDetailsTopic"><img src="../../images/plus03.gif" align="absmiddle" id="adv" onclick="parent.toggleData(this.id)" />Advanced:</td>
+			<td class="ObjectDetailsValue"></td>
+		</tr>
+		<tr id="adv00" style="display: none;">
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">UUID:</td>
+			<td class="ObjectDetailsValue">{DEE99B48-C0AA-4597-863E-862D48A9B724}</td>
+		</tr>
+		<tr id="adv01" style="display: none;">
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Appears In:</td>
+			<td class="ObjectDetailsValue"><a href="../EA3.htm">UML-Based Comprehensive BRIDG Model Diagram</a>, <a href="../EA1/EA34.htm">View AE: Adverse Event</a>, <a href="EA66.htm">View CM: Common</a>, <a href="../EA5/EA182.htm">View IM: Imaging</a>, <a href="../EA5/EA186.htm">DICOM SR TID 1500 BRIDG Class Diagram</a>, <a href="../EA8/EA340.htm">View RG: Regulatory</a>, <a href="../EA11/EA453.htm">SDTM IG v3.1.3</a>, <a href="../EA11/EA455.htm">SDTM Exposure (EX) Domain</a>, <a href="../EA11/EA451.htm">SDTM IG v3.2</a>, <a href="../EA12/EA613.htm">Product</a>, <a href="../EA12/EA601.htm">Oncology & Imaging</a>, <a href="../EA12/EA615.htm">Registering a Trial at ClinicalTrials.gov</a>, <a href="../EA12/EA579.htm">Anatomic Pathology Structured Report (APSR)</a>, <a href="../EA12/EA593.htm">National Biomedical Imaging Archive (NBIA)</a>, <a href="../EA12/EA595.htm">National Marrow Donor Program (NMDP)</a></td>
+		</tr>
+	</table>
+	<div class="ObjectDetailsNotes">DEFINITION:&lt;br/&gt;The non-unique textual identification of a material in a specified context.&lt;br/&gt;&lt;br/&gt;EXAMPLE(S):&lt;br/&gt;&lt;br/&gt;OTHER NAME(S):&lt;br/&gt;&lt;br/&gt;NOTE(S):&lt;br/&gt;</div>
+
+	<div class="TableGroup" id="TableGroup">
+		<ul class="ItemTitle">
+			<li onClick="parent.toggleItem('Attributes');" id="AttributesTitle">Attributes</li>
+			<li onClick="parent.toggleItem('AssociationsTo');" id="AssociationsToTitle">Associations To</li>
+			<li onClick="parent.toggleItem('TaggedVal');" id="TaggedValTitle">Tagged Values</li>
+		</ul>
+<div class="ItemBody" id="AttributesTable">
+	<table border="0" cellspacing="0" cellpadding="0" class="Table">
+		<tr>
+			<td width="100%" class="TableHeading">Attribute</td>
+		</tr>
+						<tr>
+				<td width="100%" class="TableRow">
+					<i>Public TN</i><br /><strong>&nbsp;&nbsp;name</strong>
+				</td>
+			</tr>
+			<tr>
+				<td class="TableRowBottomDashed"  colspan="1">										
+					<a href="#" onclick="parent.toggleData('DetailsImageAttributes701')" style="text-decoration: none; color: #000000;"><img src="../../images/plus03.gif" align="absmiddle" id="DetailsImageAttributes701" border="0" />Details:</a>
+					<table border="0" cellspacing="0" cellpadding="0" class="Table" style="padding: 4px 18px;">
+					
+						<tr id="DetailsImageAttributes701_00" style="display: none;">
+							<td width="75"><i>Alias:</i></td>
+							<td></td>
+						</tr>
+						<tr id="DetailsImageAttributes701_01" style="display: none;">
+							<td width="75"><i>Initial:</i></td>
+							<td></td>
+						</tr>
+						<tr id="DetailsImageAttributes701_02" style="display: none;">
+							<td width="75"><i>Stereotype: </i></td>
+							<td></td>
+						</tr>
+						<tr id="DetailsImageAttributes701_03" style="display: none;">
+							<td width="75"><i>Ordered: </i></td>
+							<td></td>
+						</tr>
+						<tr id="DetailsImageAttributes701_04" style="display: none;">
+							<td width="75"><i>Range: </i></td>
+							<td>Range:0 to 1</td>
+						</tr>
+						<tr id="DetailsImageAttributes701_05" style="display: none;">
+							<td width="75"><i>Transient: </i></td>
+							<td>False</td>
+						</tr>
+						<tr id="DetailsImageAttributes701_06" style="display: none;">
+							<td width="75"><i>Derived: </i></td>
+							<td>False</td>
+						</tr>
+							<tr id="DetailsImageAttributes701_07" style="display: none;">
+							<td width="75"><i>IsID: </i></td>
+						<td>False</td>
+						</tr>
+					</table>
+					
+					Map:AE=Ingredient.name<br>Map:AE=Component.name<br>Map:AE=Package.name<br>Map:AE=Product.name<br>Map:AIM v4 rv48=Equipment.manufacturerModelName<br>Map:APSRv2.1=[Problem] hl7:organizer - [Problem] hl7:organizer > hl7:participant > CHOICE OF PLAYING DEVICE OR PLAYING ENTITY > hl7:playingDevice > hl7:manufacturerModelName<br>Map:APSRv2.1=hl7:entryRelationship [CDA Supply Container] - hl7:entryRelationship [CDA Supply Container] > hl7:supply > hl7:product > hl7:manufacturedProduct > hl7:manufacturedMaterial > hl7:name<br>Map:APSRv2.1=hl7:author - hl7:author > hl7:assignedAuthor > CHOICE OF ASSIGNED PERSON OR DEVICE > hl7:assignedAuthoringDevice > hl7:manufacturerModelName<br>Map:APSRv2.1=[Problem] hl7:organizer - [Problem] hl7:organizer > hl7:component [Any kind of AP observation] > hl7:observation > hl7:participant > CHOICE OF PLAYING DEVICE OR PLAYING ENTITY > hl7:playingDevice > hl7:softwareName<br>Map:APSRv2.1=hl7:author - hl7:author > hl7:assignedAuthor > CHOICE OF ASSIGNED PERSON OR DEVICE > hl7:assignedAuthoringDevice > hl7:softwareName<br>Map:APSRv2.1=[Problem] hl7:organizer - [Problem] hl7:organizer > hl7:component [Any kind of AP observation] > hl7:observation > hl7:participant > CHOICE OF PLAYING DEVICE OR PLAYING ENTITY > hl7:playingDevice > hl7:manufacturerModelName<br>Map:caAERSv2.2=MedicalDevice.commonName<br>Map:caAERSv2.2=ConcomitantMedication.agentName<br>Map:caAERSv2.2=Agent.name<br>Map:caAERSv2.2=MedicalDevice.brandName<br>Map:CDASHv1.1=CM.CMTRT<br>Map:CDASHv1.1=SU.SUTRT<br>Map:CDASHv1.1=EX.EXTRT<br>Map:CTGOV=Other Names<br>Map:CTOM=Agent.name<br>Map:CTR&Rr2=IMP Trade name<br>Map:CTR&Rr2=IMP Name<br>Map:CTR&Rr2=Device name<br>Map:CTR&Rr2=IMP Code<br>Map:CTR&Rr2=AS INN<br>Map:CTR&Rr2=AS other descriptive name<br>Map:CTRPv1.0=Device.name<br>Map:CTRPv1.0=Drug.name<br>Map:CTRPv1.0=Biologic.name<br>Map:CTRPv1.0=Device.alternateName<br>Map:CTRPv1.0=Material.name<br>Map:CTRPv1.0=Product.name<br>Map:CTRPv1.0=FoodProduct.name<br>Map:CTRPv1.0=Cosmetic.name<br>Map:CTRPv1.0=FoodProduct.alternateName<br>Map:CTRPv1.0=Cosmetic.alternateName<br>Map:CTRPv1.0=Biologic.alternateName<br>Map:CTRPv1.0=Drug.alternateName<br>Map:CTRR=Intervention Name<br>Map:CTRR=Comparator(s) product name(s)<br>Map:CTRRr3=Material.name<br>Map:CTRv1.0=MaterialName.name<br>Map:DICOM=General Equipment Module - Manufacturer's Model Name (0008,1090)<br>Map:DICOM=Equipment Specification Module - Model Specification Sequence (0018,9912) > Manufacturer's Model Name (0008,1090)<br>Map:DICOM=TID 1004 DeviceObserverIdentifyingAttributes > Device Observer Model Name<br>Map:DICOM=TID 1004 DeviceObserverIdentifyingAttributes > Device Observer Name<br>Map:FDA HL7 SD SD DSTU2012=manufacturedMaterial.name<br>Map:HCTv1.0=CDE 2816476:Disease, Disorder or Finding.Specify other drug pharmacokinetics performed on to determine dosing:<br>Map:HCTv1.0=CDE 2741515:Therapies.Specify the other type of the monoclonal antibody preparative regimen:<br>Map:HCTv1.0=CDE 2594466:Pharmacologic Substance.Specify the other in vivo monoclonal antibody used after the start of the preparative regimen to prevent acute GVHD or graft rejection<br>Map:HCTv1.0=CDE 2740356:Therapies.What kind of additives are included in volume of infused product?<br>Map:HCTv1.0=CDE 3057651:Therapies.Specify the other retinoids given:<br>Map:HCTv1.0=CDE 3057634:Therapies.Specify the other radioisotope given:<br>Map:HCTv1.0=CDE 2746348:Techniques.Specify other CD3 antibody:<br>Map:HCTv1.0=CDE 2741610:Therapies.Specify the other type of the radiolabeled monoclonal antibody preparative regimen:<br>Map:HCTv1.0=CDE 2960392:Therapies.What was the type of intrathecal chemotherapy given for the preparative regimen?<br>Map:HCTv1.0=CDE 2775844:Therapies.What was the other hematopoietic, lymphoid growth factors, or cytokines administered?<br>Map:HCTv1.0=CDE 2794436:Therapies.Specify the agent types received for infection prophylaxis:<br>Map:HCTv1.0=CDE 2741578:Drug or Chemical.What anticoagulants were added to the product during collection?<br>Map:HCTv1.0=CDE 2787579:Therapies.Specify the other in vivo monoclonal antibody administered:<br>Map:HCTv1.0=CDE 2775819:Therapies.What was the specific erythropoietin drug administered?<br>Map:HCTv1.0=CDE 2594484:Pharmacologic Substance.Specify the other agent used after the start of the preparative regimen to prevent acute GVHD or graft rejection<br>Map:HCTv1.0=CDE 2816469:Disease, Disorder or Finding.Specify the drugs pharmacokinetics were performed on to determine dosing:<br>Map:HCTv1.0=CDE 2780779:Therapies.Specify the other additives that are included in volume of infused product<br>Map:HCTv1.0=CDE 2775817:Therapies.What was the specific G-CSF drug administered?<br>Map:HCTv1.0=CDE 2861458:Therapies.Specify other cytokine:<br>Map:HCTv1.0=CDE 2974115:Therapies.Specify the drug used to induce aplastic anemia:<br>Map:HCTv1.0=CDE 2794100:Therapies.Specify the other agent received for infection prophylaxis:<br>Map:HCTv1.0=CDE 2787872:Therapies.Specify the blinded randomized trial agent administered:<br>Map:HCTv1.0=CDE 2787667:Therapies.Specify the in vivo immunotoxin administered:<br>Map:HCTv1.0=CDE 2741589:Therapies.Specify the other anticoagulants<br>Map:HCTv1.0=CDE 2775782:Therapies.Type(s) of hematopoietic growth factor or cytokine agents given:<br>Map:HCTv1.0=CDE 2786707:Diagnostic, Therapeutic, and Research Equipment.Specify other cell selection system<br>Map:HCTv1.0=CDE 2958252:Therapies.What type of corticosteroids were administered for the preparative regimen?<br>Map:HCTv1.0=CDE 2960478:Therapies.What type of nitrosourea compound was administered?<br>Map:HCTv1.0=CDE 2787876:Therapies.Specify the other agent administered:<br>Map:HCTv1.0=CDE 2740983:Therapies.Specify the other type of preparative regimen medication:<br>Map:HCTv1.0=CDE 2860920:Therapies.Specify the other monoclonal antibody:<br>Map:HCTv1.0=CDE 2960398:Therapies.What was the other drug given for the preparative regimen?<br>Map:HL7SD=Product.name<br>Map:ICSRr2=DeviceInstance.softwareName (in R_Product)<br>Map:ICSRr2=Substance.name (in R_Product)<br>Map:ICSRr2=DeviceInstance.manufacturerModelName (in R_Product)<br>Map:ICSRr2=NamedEntity.name (in R_Product)<br>Map:ICSRr2=PackagedProduct.name (in R_Product)<br>Map:ICSRr2=Product.name (in R_Product)<br>Map:ICSRr2=MaterialKind.name (in R_Product)<br>Map:LSDAMv2.2.3Plus=Place.locatorValue<br>Map:LSDAMv2.2.3Plus=MaterialName.name<br>Map:LSDAMv2.2.3Plus=Container.name<br>Map:LSDAMv2.2.3Plus=Software.name<br>Map:NBIAv6.4=General_Equipment.manufacturer_model_name<br>Map:NCI CRF Standard=CDE 2871652v1.0: Ingredient Name<br>Map:NCI CRF Standard=CDE 10v4.0: Agent Name<br>Map:NCI CRF Standard=CDE 2179777v2.0: Concomitant Agent Name<br>Map:PGx v1.0=PB.PBDRUG<br>Map:SDTM IGv3.1.1=EX.EXTRT<br>Map:SDTM IGv3.1.1=CM.CMDECOD<br>Map:SDTM IGv3.1.1=SU.SUTRT<br>Map:SDTM IGv3.1.1=SU.SUDECOD<br>Map:SDTM IGv3.1.1=CM.CMTRT<br>Map:SDTM IGv3.1.2=EX.EXTRT<br>Map:SDTM IGv3.1.2=CM.CMTRT<br>Map:SDTM IGv3.1.2=SU.SUTRT<br>Map:SDTM IGv3.1.2=TS.TSVAL where TSPARMCD=CURTRT<br>Map:SDTM IGv3.1.3=TS.TSVALCD WHERE TSPARMCD = "CURTRT"<br>Map:SDTM IGv3.1.3=TS.TSVALNF WHERE TSPARMCD = "CURTRT"<br>Map:SDTM IGv3.1.3=TS.TSVAL WHERE TSPARMCD = "CURTRT"<br>Map:SDTM IGv3.1.3=EX.EXTRT<br>Map:SDTM IGv3.1.3=TS.TSVALNF WHERE TSPARMCD = "TRT"<br>Map:SDTM IGv3.1.3=TS.TSVAL WHERE TSPARMCD = "COMPTRT"<br>Map:SDTM IGv3.1.3=TS.TSVALNF WHERE TSPARMCD = "COMPTRT"<br>Map:SDTM IGv3.1.3=TS.TSVAL WHERE TSPARMCD = "TRT"<br>Map:SDTM IGv3.2=PR.PRTRT<br>Map:SDTM IGv3.2=EC.ECTRT<br>Map:SDTM IGv3.2=TS.(TRT) TSVALNF WHERE TSPARMCD = "TRT"<br>Map:SDTM IGv3.2=EX.EXTRT<br>Map:SDTM IGv3.2=TS.(CURTRT) TSVAL WHERE TSPARMCD = "CURTRT"<br>Map:SDTM IGv3.2=TS.(CURTRT) TSVALNF WHERE TSPARMCD = "CURTRT"<br>Map:SDTM IGv3.2=TS.(COMPTRT) TSVAL WHERE TSPARMCD = "COMPTRT"<br>Map:SDTM IGv3.2=TS.(COMPTRT) TSVALNF WHERE TSPARMCD = "COMPTRT"<br>Map:SDTM IGv3.2=TS.(TRT) TSVAL WHERE TSPARMCD = "TRT"<br>Map:SDTM IGv3.2=PR.PRDECOD<br>
+						<div class="ObjectDetailsNotes"><table>
+	<tr>
+		<td valign="top">
+			<i>Notes: </i><span style="margin-left: .4cm;"> </span>
+		</td>
+		<td>
+			DEFINITION:&lt;br/&gt;A non-unique textual identifier for the material.&#160; &lt;br/&gt;&lt;br/&gt;EXAMPLE(S):&lt;br/&gt;The therapeutic agent used in a chemotherapy clinical trial.&lt;br/&gt;&lt;br/&gt;OTHER NAME(S):&lt;br/&gt;&lt;br/&gt;NOTE(S):&lt;br/&gt;
+		</td>
+	</tr>
+</table></div>
+
+						
+				</td>
+			</tr>			<tr>
+				<td width="100%" class="TableRow">
+					<i>Public CD</i><br /><strong>&nbsp;&nbsp;typeCode</strong>
+				</td>
+			</tr>
+			<tr>
+				<td class="TableRowBottomDashed"  colspan="1">										
+					<a href="#" onclick="parent.toggleData('DetailsImageAttributes702')" style="text-decoration: none; color: #000000;"><img src="../../images/plus03.gif" align="absmiddle" id="DetailsImageAttributes702" border="0" />Details:</a>
+					<table border="0" cellspacing="0" cellpadding="0" class="Table" style="padding: 4px 18px;">
+					
+						<tr id="DetailsImageAttributes702_00" style="display: none;">
+							<td width="75"><i>Alias:</i></td>
+							<td></td>
+						</tr>
+						<tr id="DetailsImageAttributes702_01" style="display: none;">
+							<td width="75"><i>Initial:</i></td>
+							<td></td>
+						</tr>
+						<tr id="DetailsImageAttributes702_02" style="display: none;">
+							<td width="75"><i>Stereotype: </i></td>
+							<td></td>
+						</tr>
+						<tr id="DetailsImageAttributes702_03" style="display: none;">
+							<td width="75"><i>Ordered: </i></td>
+							<td></td>
+						</tr>
+						<tr id="DetailsImageAttributes702_04" style="display: none;">
+							<td width="75"><i>Range: </i></td>
+							<td>Range:0 to 1</td>
+						</tr>
+						<tr id="DetailsImageAttributes702_05" style="display: none;">
+							<td width="75"><i>Transient: </i></td>
+							<td>False</td>
+						</tr>
+						<tr id="DetailsImageAttributes702_06" style="display: none;">
+							<td width="75"><i>Derived: </i></td>
+							<td>False</td>
+						</tr>
+							<tr id="DetailsImageAttributes702_07" style="display: none;">
+							<td width="75"><i>IsID: </i></td>
+						<td>False</td>
+						</tr>
+					</table>
+					
+					Map:caAERSv2.2=MedicalDevice.brandName<br>Map:CTRv1.0=MaterialName.typeCode<br>Map:LSDAMv2.2.3Plus=MaterialName.typeCode<br>
+						<div class="ObjectDetailsNotes"><table>
+	<tr>
+		<td valign="top">
+			<i>Notes: </i><span style="margin-left: .4cm;"> </span>
+		</td>
+		<td>
+			DEFINITION:&lt;br/&gt;A coded value specifying the kind of material name.&lt;br/&gt;&lt;br/&gt;EXAMPLE(S):&lt;br/&gt;brand name&lt;br/&gt;&lt;br/&gt;OTHER NAME(S):&lt;br/&gt;&lt;br/&gt;NOTE(S):&lt;br/&gt;
+		</td>
+	</tr>
+</table></div>
+
+						
+				</td>
+			</tr>
+	</table>
+</div>
+		<div class="ItemBody" id="AssociationsToTable">
+			<table border="0" cellspacing="0" cellpadding="0" class="Table">
+				<tr>
+					<td width="40%" class="TableHeading">Element</td>
+					<td width="30%" class="TableHeading">Source Role</td>
+					<td width="30%" class="TableHeading">Target Role</td>
+				</tr>
+				<tr>
+					<td width="40%" class="TableRow" valign="top">
+						<a href="../EA8/EA348.htm">«DEPRECATED» RegulatoryAuthority</a><br />
+						Class &nbsp;
+					</td>
+					<td width="30%" class="TableRow" valign="top">
+						<strong>Name:</strong> approvedMaterialName<br />
+						&nbsp;
+					</td>
+					<td width="30%" class="TableRow" valign="top">
+						<strong>Name:</strong> approvingRegulatoryAuthority<br />
+						&nbsp;	
+					</td>
+				</tr>
+				<tr>
+					<td class="TableRowBottomDashed"  colspan="3">
+						<div class="DetailsDivParent"><img src="../../images/minus03.gif" align="absmiddle" id="DetailsImageLink703" onclick="parent.toggleDiv('detailsDIVLink703','DetailsImageLink703')" />Details:
+							<div id="detailsDIVLink703" class="DetailsDiv" >
+							<div class="ObjectDetailsNotes">DESCRIPTION:&lt;br/&gt;Each MaterialName might be approved by one RegulatoryAuthority. Each RegulatoryAuthority might approve one or more MaterialName.&lt;br/&gt;&lt;br/&gt;DEFINITION:&lt;br/&gt;&lt;br/&gt;EXAMPLE(S):&lt;br/&gt;&lt;br/&gt;OTHER NAME(S):&lt;br/&gt;&lt;br/&gt;NOTE(S):&lt;br/&gt;&lt;br/&gt;</div>
+
+							</div>
+						</div>
+					</td>
+				</tr>
+				<tr>
+					<td width="40%" class="TableRow" valign="top">
+						<a href="EA117.htm">Material</a><br />
+						Class &nbsp;
+					</td>
+					<td width="30%" class="TableRow" valign="top">
+						<strong>Name:</strong> namingMaterialName<br />
+						&nbsp;
+					</td>
+					<td width="30%" class="TableRow" valign="top">
+						<strong>Name:</strong> namedMaterial<br />
+						&nbsp;	
+					</td>
+				</tr>
+				<tr>
+					<td class="TableRowBottomDashed"  colspan="3">
+						<div class="DetailsDivParent"><img src="../../images/minus03.gif" align="absmiddle" id="DetailsImageLink704" onclick="parent.toggleDiv('detailsDIVLink704','DetailsImageLink704')" />Details:
+							<div id="detailsDIVLink704" class="DetailsDiv" >
+							<div class="ObjectDetailsNotes">DESCRIPTION:&lt;br/&gt;Each MaterialName always names one Material. Each Material always is named by one or more MaterialName.&lt;br/&gt;&lt;br/&gt;DEFINITION:&lt;br/&gt;&lt;br/&gt;EXAMPLE(S):&lt;br/&gt;&lt;br/&gt;OTHER NAME(S):&lt;br/&gt;&lt;br/&gt;NOTE(S):&lt;br/&gt;&lt;br/&gt;</div>
+
+							</div>
+						</div>
+					</td>
+				</tr>
+
+			</table>
+		</div>
+<div class="ItemBody" id="TaggedValTable">
+	<table align="center" border="0" cellspacing="0" cellpadding="0" class="Table">
+		<tr>
+			<td width="50%" class="TableHeading">Tag</td>
+			<td width="50%" class="TableHeading">Value</td>
+		</tr>
+					<tr>
+				<td width="50%" class="TableRow" valign="top">Map:APSRv2.1</td>
+				<td width="50%" class="TableRow" valign="top">[Problem] hl7:organizer - [Problem] hl7:organizer > hl7:participant > CHOICE OF PLAYING DEVICE OR PLAYING ENTITY > hl7:playingDevice > hl7:softwareName</td>
+			</tr>	
+			<tr>
+				<td class="TableRowBottomDashed"  colspan="2">
+					<div class="DetailsDivParent"><img src="../../images/minus03.gif" align="absmiddle" id="DetailsImageScenario705" onclick="parent.toggleDiv('detailsDIVScenario705','DetailsImageScenario705')" />Details:
+						<div id="detailsDIVScenario705" class="DetailsDiv" >
+						&nbsp;
+						</div>
+					</div>
+				</td>
+			</tr>			<tr>
+				<td width="50%" class="TableRow" valign="top">Map:CTRv1.0</td>
+				<td width="50%" class="TableRow" valign="top">MaterialName</td>
+			</tr>	
+			<tr>
+				<td class="TableRowBottomDashed"  colspan="2">
+					<div class="DetailsDivParent"><img src="../../images/minus03.gif" align="absmiddle" id="DetailsImageScenario706" onclick="parent.toggleDiv('detailsDIVScenario706','DetailsImageScenario706')" />Details:
+						<div id="detailsDIVScenario706" class="DetailsDiv" >
+						&nbsp;
+						</div>
+					</div>
+				</td>
+			</tr>			<tr>
+				<td width="50%" class="TableRow" valign="top">Map:ICSRr2</td>
+				<td width="50%" class="TableRow" valign="top">NamedEntity (in R_Product)</td>
+			</tr>	
+			<tr>
+				<td class="TableRowBottomDashed"  colspan="2">
+					<div class="DetailsDivParent"><img src="../../images/minus03.gif" align="absmiddle" id="DetailsImageScenario707" onclick="parent.toggleDiv('detailsDIVScenario707','DetailsImageScenario707')" />Details:
+						<div id="detailsDIVScenario707" class="DetailsDiv" >
+						&nbsp;
+						</div>
+					</div>
+				</td>
+			</tr>			<tr>
+				<td width="50%" class="TableRow" valign="top">Map:LSDAMv2.2.3Plus</td>
+				<td width="50%" class="TableRow" valign="top">MaterialName</td>
+			</tr>	
+			<tr>
+				<td class="TableRowBottomDashed"  colspan="2">
+					<div class="DetailsDivParent"><img src="../../images/minus03.gif" align="absmiddle" id="DetailsImageScenario708" onclick="parent.toggleDiv('detailsDIVScenario708','DetailsImageScenario708')" />Details:
+						<div id="detailsDIVScenario708" class="DetailsDiv" >
+						&nbsp;
+						</div>
+					</div>
+				</td>
+			</tr>
+	</table>
+</div>	</div>
+<div class="pageFooter"></div>
+ 
+</body>
+</html>
