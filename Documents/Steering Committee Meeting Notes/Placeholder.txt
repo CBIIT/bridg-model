@@ -1,0 +1,1 @@
+This file is a temporary placeholder to be deleted when the notes files are uploaded.  A file is needed to be able to create the folder in GitHub.
