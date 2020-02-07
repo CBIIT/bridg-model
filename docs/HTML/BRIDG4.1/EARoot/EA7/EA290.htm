@@ -1,0 +1,105 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>View RG: Regulatory</title>
+<link href="../../css/ea.css" rel="stylesheet" type="text/css" />
+<script>
+function initPage(src) {	
+	if(parent==this&&(this.location+"").indexOf('EARoot')!=-1)
+		document.location=(this.location+"").substring(0,(this.location+"").indexOf('EARoot'))+"index"+(this.location+"").substring((this.location+"").lastIndexOf('.'))+"?goto="+((this.location+"").substring((this.location+"").indexOf('EARoot')+7,(this.location+"").lastIndexOf('.')).replace(/\//g,':').replace(/EA/g,""));
+	else
+		parent.initPage(src);
+}
+
+function nameClassifier(name, separator)
+{
+  var str = name;
+  var classifierName;
+  var node = document.getElementById('name_classifier');
+  if(node != null)
+  {
+    classifierName = node.innerHTML;
+  }
+  if(classifierName != "")
+  {
+   str += separator + classifierName;
+  }
+  
+  return str;
+}
+</script>
+</head>
+<body onload="initPage(this);" class="Content">
+<div class="PageBody">
+	
+<img src="EA291.png" usemap="#EA291" border="0" />
+
+<MAP NAME="EA291">
+<area shape="rect" coords="306,2,1035,57" href="EA303.htm" target="_self">
+<area shape="rect" coords="11,336,349,788" href="../EA6/EA288.htm" target="_self">
+<area shape="rect" coords="10,815,347,1478" href="../EA6/EA257.htm" target="_self">
+<area shape="rect" coords="480,961,643,1031" href="EA299.htm" target="_self">
+<area shape="rect" coords="718,686,906,839" href="../EA3/EA131.htm" target="_self">
+<area shape="rect" coords="713,946,908,1086" href="../EA3/EA119.htm" target="_self">
+<area shape="rect" coords="583,1403,726,1473" href="../EA3/EA107.htm" target="_self">
+<area shape="rect" coords="1266,53,1503,272" href="../EA3/EA92.htm" target="_self">
+<area shape="rect" coords="244,51,891,142" href="EA294.htm" target="_self">
+<area shape="rect" coords="10,90,227,299" href="../EA2/EA49.htm" target="_self">
+<area shape="rect" coords="1035,176,1238,295" href="EA293.htm" target="_self">
+<area shape="rect" coords="882,1315,1142,1468" href="../EA3/EA105.htm" target="_self">
+<area shape="rect" coords="1270,1216,1556,1502" href="../EA3/EA125.htm" target="_self">
+<area shape="rect" coords="953,374,1206,463" href="../EA3/EA101.htm" target="_self">
+<area shape="rect" coords="519,209,659,282" href="../EA3/EA145.htm" target="_self">
+<area shape="rect" coords="797,196,1004,349" href="../EA3/EA91.htm" target="_self">
+<area shape="rect" coords="908,51,1064,112" href="../EA3/EA89.htm" target="_self">
+<area shape="rect" coords="315,162,472,250" href="../EA9/EA379.htm" target="_self">
+<area shape="rect" coords="359,822,604,897" href="../EA3/EA116.htm" target="_self">
+<area shape="rect" coords="553,428,814,595" href="../EA3/EA112.htm" target="_self">
+<area shape="rect" coords="1260,366,1520,490" href="EA302.htm" target="_self">
+<area shape="rect" coords="1204,764,1431,914" href="EA301.htm" target="_self">
+<area shape="rect" coords="1367,584,1499,643" href="EA300.htm" target="_self">
+<area shape="rect" coords="650,1176,965,1248" href="EA298.htm" target="_self">
+<area shape="rect" coords="1002,532,1255,647" href="EA296.htm" target="_self">
+<area shape="rect" coords="926,811,1075,883" href="EA295.htm" target="_self">
+<area shape="rect" coords="1102,1019,1356,1199" href="EA297.htm" target="_self">
+<area shape="rect" coords="420,713,676,789" href="../EA3/EA115.htm" target="_self">
+</MAP>
+
+	<div class="ObjectTitle">View RG: Regulatory : Class diagram</div>
+	<table border="0" cellpadding="0" cellspacing="0" class="ObjectDetails">
+		<tr>
+			<td width="15%" class="ObjectDetailsTopic">Created:</td>
+			<td width="85%" class="ObjectDetailsValue">8/7/2009 12:00:00 AM</td>
+		</tr>
+		<tr>
+			<td width="15%" class="ObjectDetailsTopic">Modified:</td>
+			<td width="85%" class="ObjectDetailsValue">3/17/2016 12:27:50 PM</td>
+		</tr>
+		<tr style="padding-top: 10px;">
+			<td width="15%" class="ObjectDetailsTopic"><img src="../../images/plus03.gif" align="absmiddle" id="proj" onclick="parent.toggleData(this.id)" />Project:</td>
+			<td width="85%" class="ObjectDetailsValue"></td>			
+		</tr>
+		<tr id="proj00" style="display: none;">
+			<td width="15%" class="ObjectDetailsTopic" style="padding-left: 18px;">Author:</td>
+			<td width="85%" class="ObjectDetailsValue">BRIDG SCC</td>
+		</tr>
+		<tr id="proj01" style="display: none;">
+			<td width="15%" class="ObjectDetailsTopic" style="padding-left: 18px;">Version:</td>
+			<td width="85%" class="ObjectDetailsValue">4.1</td>
+		</tr>
+		<tr>
+			<td width="15%" class="ObjectDetailsTopic"><img src="../../images/plus03.gif" align="absmiddle" id="adv" onclick="parent.toggleData(this.id)" />Advanced:</td>
+			<td width="85%" class="ObjectDetailsValue"></td>			
+		</tr>
+		<tr id="adv00" style="display: none;">
+			<td width="15%" class="ObjectDetailsTopic" style="padding-left: 18px;">ID:</td>
+			<td width="85%" class="ObjectDetailsValue">{8C70FDFE-213A-4d2b-A66A-4C01862B4E74}</td>
+		</tr>
+	</table>
+	<div class="ObjectDetailsNotes">The Regulatory sub-domain is intended for those involved in the creation and review of submissions to regulatory authorities. The majority of business requirements come from the regulated product submission (RPS) message specification.&#160; It focuses on the documentation required for a product submission to the Food and Drug Administration (FDA).</div>
+
+</div>
+ 
+</body>
+</html>

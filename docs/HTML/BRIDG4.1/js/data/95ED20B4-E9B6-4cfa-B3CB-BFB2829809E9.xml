@@ -1,0 +1,9 @@
+tocTab[tocTab.length] = new Array("0.7:1", "", "View RG: Regulatory", "EARoot/EA7/EA290.htm", "175.png", "1419", "0", "", "Logical diagram0","{8C70FDFE-213A-4d2b-A66A-4C01862B4E74}");
+tocTab[tocTab.length] = new Array("0.7:2", "", "«DEPRECATED» RegulatoryApplication", "EARoot/EA7/EA295.htm", "5.png", "E32422", "0", "", "Class0","{BA234556-FFAF-4b5c-B2A4-F973BE22FAEA}");
+tocTab[tocTab.length] = new Array("0.7:3", "", "«DEPRECATED» RegulatoryApplicationSponsor", "EARoot/EA7/EA296.htm", "5.png", "E32423", "0", "", "Class0","{C6C52217-7B40-489e-BEBC-EBE4176E78BD}");
+tocTab[tocTab.length] = new Array("0.7:4", "", "«DEPRECATED» RegulatoryAssessment", "EARoot/EA7/EA297.htm", "5.png", "E32424", "0", "", "Class0","{24A1E032-046F-4d2a-8A99-3F58397A3828}");
+tocTab[tocTab.length] = new Array("0.7:5", "", "«DEPRECATED» RegulatoryAuthority", "EARoot/EA7/EA298.htm", "5.png", "E32425", "0", "", "Class0","{80B5B6B0-06D9-4a58-8DFC-A4534CD520DD}");
+tocTab[tocTab.length] = new Array("0.7:6", "", "«DEPRECATED» RelevantRegulation", "EARoot/EA7/EA299.htm", "5.png", "E32426", "0", "", "Class0","{C8C0E4F6-6C87-4221-8215-52198536E9B7}");
+tocTab[tocTab.length] = new Array("0.7:7", "", "«DEPRECATED» ReviewableUnit", "EARoot/EA7/EA300.htm", "5.png", "E32427", "0", "", "Class0","{2F5549E2-31DC-44b5-B2B9-8561B687941B}");
+tocTab[tocTab.length] = new Array("0.7:8", "", "«DEPRECATED» Submission", "EARoot/EA7/EA301.htm", "5.png", "E32428", "0", "", "Class0","{CBA11677-DF6E-46bf-98D9-DBE4F1962E50}");
+tocTab[tocTab.length] = new Array("0.7:9", "", "«DEPRECATED» SubmissionUnit", "EARoot/EA7/EA302.htm", "5.png", "E32429", "0", "", "Class0","{8C9916AD-5E84-4ffd-B13C-6BECFEF14D45}");

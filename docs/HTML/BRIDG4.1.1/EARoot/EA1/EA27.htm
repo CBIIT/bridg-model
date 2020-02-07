@@ -1,0 +1,141 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>View AE: Adverse Event</title>
+<link href="../../css/ea.css" rel="stylesheet" type="text/css" />
+<script>
+function initPage(src) {	
+	if(parent==this&&(this.location+"").indexOf('EARoot')!=-1)
+		document.location=(this.location+"").substring(0,(this.location+"").indexOf('EARoot'))+"index"+(this.location+"").substring((this.location+"").lastIndexOf('.'))+"?goto="+((this.location+"").substring((this.location+"").indexOf('EARoot')+7,(this.location+"").lastIndexOf('.')).replace(/\//g,':').replace(/EA/g,""));
+	else
+		parent.initPage(src);
+}
+
+function nameClassifier(name, separator)
+{
+  var str = name;
+  var classifierName;
+  var node = document.getElementById('name_classifier');
+  if(node != null)
+  {
+    classifierName = node.innerHTML;
+  }
+  if(classifierName != "")
+  {
+   str += separator + classifierName;
+  }
+  
+  return str;
+}
+</script>
+</head>
+<body onload="initPage(this);" class="Content">
+<div class="PageBody">
+	
+<img src="EA28.png" usemap="#EA28" border="0" />
+
+<MAP NAME="EA28">
+<area shape="rect" coords="508,21,986,74" href="EA43.htm" target="_self">
+<area shape="rect" coords="2631,1357,2829,1420" href="../EA9/EA337.htm" target="_self">
+<area shape="rect" coords="1005,1717,1201,1792" href="../EA3/EA141.htm" target="_self">
+<area shape="rect" coords="1010,1879,1200,2352" href="../EA9/EA358.htm" target="_self">
+<area shape="rect" coords="1487,577,1671,913" href="../EA6/EA224.htm" target="_self">
+<area shape="rect" coords="1744,563,1992,987" href="../EA6/EA243.htm" target="_self">
+<area shape="rect" coords="2094,725,2275,900" href="../EA6/EA244.htm" target="_self">
+<area shape="rect" coords="2046,921,2275,1148" href="../EA6/EA226.htm" target="_self">
+<area shape="rect" coords="824,1801,946,1856" href="../EA3/EA122.htm" target="_self">
+<area shape="rect" coords="3119,952,3349,1265" href="../EA9/EA353.htm" target="_self">
+<area shape="rect" coords="407,1780,537,1848" href="../EA3/EA108.htm" target="_self">
+<area shape="rect" coords="84,1580,235,1707" href="../EA3/EA107.htm" target="_self">
+<area shape="rect" coords="706,524,950,658" href="../EA3/EA139.htm" target="_self">
+<area shape="rect" coords="1089,536,1191,612" href="../EA3/EA134.htm" target="_self">
+<area shape="rect" coords="986,728,1261,803" href="../EA3/EA102.htm" target="_self">
+<area shape="rect" coords="2918,2215,3067,2591" href="EA33.htm" target="_self">
+<area shape="rect" coords="1827,56,2011,275" href="../EA3/EA93.htm" target="_self">
+<area shape="rect" coords="618,838,842,970" href="../EA3/EA118.htm" target="_self">
+<area shape="rect" coords="31,62,226,249" href="../EA2/EA50.htm" target="_self">
+<area shape="rect" coords="2842,952,3083,1513" href="EA31.htm" target="_self">
+<area shape="rect" coords="3017,457,3238,678" href="EA32.htm" target="_self">
+<area shape="rect" coords="2578,1594,2816,2155" href="EA34.htm" target="_self">
+<area shape="rect" coords="1995,2041,2225,2869" href="../EA9/EA365.htm" target="_self">
+<area shape="rect" coords="2165,350,2396,671" href="EA42.htm" target="_self">
+<area shape="rect" coords="1820,284,2050,538" href="../EA3/EA135.htm" target="_self">
+<area shape="rect" coords="1531,395,1748,533" href="../EA3/EA147.htm" target="_self">
+<area shape="rect" coords="2443,705,2584,761" href="../EA9/EA329.htm" target="_self">
+<area shape="rect" coords="2253,117,2393,221" href="../EA3/EA94.htm" target="_self">
+<area shape="rect" coords="1811,1522,2314,2019" href="../EA9/EA357.htm" target="_self">
+<area shape="rect" coords="575,200,724,362" href="../EA3/EA74.htm" target="_self">
+<area shape="rect" coords="790,1163,1025,1214" href="../EA3/EA137.htm" target="_self">
+<area shape="rect" coords="357,1071,538,1170" href="../EA3/EA133.htm" target="_self">
+<area shape="rect" coords="1168,151,1359,276" href="../EA3/EA91.htm" target="_self">
+<area shape="rect" coords="201,2185,368,2309" href="../EA3/EA127.htm" target="_self">
+<area shape="rect" coords="2765,423,2997,684" href="EA40.htm" target="_self">
+<area shape="rect" coords="1374,194,1530,343" href="../EA3/EA92.htm" target="_self">
+<area shape="rect" coords="254,14,487,108" href="EA38.htm" target="_self">
+<area shape="rect" coords="1156,1447,1337,1570" href="../EA3/EA120.htm" target="_self">
+<area shape="rect" coords="9,972,236,1099" href="../EA3/EA80.htm" target="_self">
+<area shape="rect" coords="1506,2100,1758,2249" href="../EA6/EA281.htm" target="_self">
+<area shape="rect" coords="619,1845,740,1894" href="../EA3/EA89.htm" target="_self">
+<area shape="rect" coords="275,1550,512,1604" href="../EA3/EA115.htm" target="_self">
+<area shape="rect" coords="1561,1589,1796,2041" href="../EA6/EA289.htm" target="_self">
+<area shape="rect" coords="2968,1624,3162,1689" href="EA36.htm" target="_self">
+<area shape="rect" coords="1639,217,1743,284" href="../EA3/EA90.htm" target="_self">
+<area shape="rect" coords="278,589,503,941" href="../EA3/EA119.htm" target="_self">
+<area shape="rect" coords="1274,425,1466,492" href="../EA3/EA148.htm" target="_self">
+<area shape="rect" coords="2325,1976,2567,2549" href="EA39.htm" target="_self">
+<area shape="rect" coords="2697,712,3573,923" href="../EA9/EA356.htm" target="_self">
+<area shape="rect" coords="2333,853,2601,1373" href="../EA9/EA355.htm" target="_self">
+<area shape="rect" coords="1524,1146,1962,1498" href="../EA9/EA338.htm" target="_self">
+<area shape="rect" coords="856,301,1112,380" href="../EA9/EA330.htm" target="_self">
+<area shape="rect" coords="2637,1426,2818,1505" href="EA35.htm" target="_self">
+<area shape="rect" coords="3388,1871,3630,2267" href="EA30.htm" target="_self">
+<area shape="rect" coords="1093,882,1314,987" href="../EA3/EA70.htm" target="_self">
+<area shape="rect" coords="673,1609,939,1676" href="../EA3/EA124.htm" target="_self">
+<area shape="rect" coords="47,494,267,791" href="../EA3/EA73.htm" target="_self">
+<area shape="rect" coords="21,1337,1087,1486" href="../EA3/EA113.htm" target="_self">
+<area shape="rect" coords="383,2151,620,2552" href="../EA3/EA84.htm" target="_self">
+<area shape="rect" coords="21,255,298,462" href="../EA3/EA76.htm" target="_self">
+<area shape="rect" coords="1286,1662,1396,1763" href="../EA3/EA123.htm" target="_self">
+<area shape="rect" coords="3220,2321,3454,2562" href="EA41.htm" target="_self">
+<area shape="rect" coords="164,2885,3473,3167" href="../EA3/EA126.htm" target="_self">
+<area shape="rect" coords="31,1788,264,1925" href="../EA3/EA106.htm" target="_self">
+</MAP>
+
+	<div class="ObjectTitle">View AE: Adverse Event : Class diagram</div>
+	<table border="0" cellpadding="0" cellspacing="0" class="ObjectDetails">
+		<tr>
+			<td width="15%" class="ObjectDetailsTopic">Created:</td>
+			<td width="85%" class="ObjectDetailsValue">7/15/2009 12:00:00 AM</td>
+		</tr>
+		<tr>
+			<td width="15%" class="ObjectDetailsTopic">Modified:</td>
+			<td width="85%" class="ObjectDetailsValue">7/27/2016 5:03:23 PM</td>
+		</tr>
+		<tr style="padding-top: 10px;">
+			<td width="15%" class="ObjectDetailsTopic"><img src="../../images/plus03.gif" align="absmiddle" id="proj" onclick="parent.toggleData(this.id)" />Project:</td>
+			<td width="85%" class="ObjectDetailsValue"></td>			
+		</tr>
+		<tr id="proj00" style="display: none;">
+			<td width="15%" class="ObjectDetailsTopic" style="padding-left: 18px;">Author:</td>
+			<td width="85%" class="ObjectDetailsValue">BRIDG WG</td>
+		</tr>
+		<tr id="proj01" style="display: none;">
+			<td width="15%" class="ObjectDetailsTopic" style="padding-left: 18px;">Version:</td>
+			<td width="85%" class="ObjectDetailsValue">4.1.1</td>
+		</tr>
+		<tr>
+			<td width="15%" class="ObjectDetailsTopic"><img src="../../images/plus03.gif" align="absmiddle" id="adv" onclick="parent.toggleData(this.id)" />Advanced:</td>
+			<td width="85%" class="ObjectDetailsValue"></td>			
+		</tr>
+		<tr id="adv00" style="display: none;">
+			<td width="15%" class="ObjectDetailsTopic" style="padding-left: 18px;">ID:</td>
+			<td width="85%" class="ObjectDetailsValue">{EE227C56-F249-41fa-8DF4-93D772D62666}</td>
+		</tr>
+	</table>
+	<div class="ObjectDetailsNotes">The Adverse Event sub-domain is intended for those involved in safety related activities; such as detection, evaluation, follow-up and reporting.&#160; This includes safety issues involving people or products.&#160; It also includes activities during or after a research protocol.</div>
+
+</div>
+ 
+</body>
+</html>
