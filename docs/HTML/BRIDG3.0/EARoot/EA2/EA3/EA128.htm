@@ -1,0 +1,328 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>Protocol Representation Sub-Domain::InterventionalStudy</title>
+<link href="../../../css/ea.css" rel="stylesheet" type="text/css" />
+<script>
+function initPage(src) {
+	if(parent==this&&(this.location+"").indexOf('EARoot')!=-1)
+		document.location=(this.location+"").substring(0,(this.location+"").indexOf('EARoot'))+"index"+(this.location+"").substring((this.location+"").lastIndexOf('.'))+"?goto="+((this.location+"").substring((this.location+"").indexOf('EARoot')+7,(this.location+"").lastIndexOf('.')).replace(/\//g,':').replace(/EA/g,""));
+	else
+		parent.initPage(src);
+}
+</script>
+</head>
+<body onload="initPage(this);" class="Content">
+<div class="pageHeader"></div>
+<div class="PageBody">
+	<span class="ObjectTitle">InterventionalStudy  : public   class</span>
+	<table border="0" cellpadding="0" cellspacing="0" class="ObjectDetails">
+		<tr>
+			<td width="15%" class="ObjectDetailsTopic">Created:</td>
+			<td width="85%" class="ObjectDetailsValue">6/19/2008 7:54:44 AM</td>
+		</tr>
+		<tr>
+			<td class="ObjectDetailsTopic">Modified:</td>
+			<td class="ObjectDetailsValue">9/11/2009 2:39:40 PM</td>
+		</tr>
+		<tr style="height: 10px"><td colspan="2"></td></tr>
+		<tr>
+			<td class="ObjectDetailsTopic"><img src="../../../images/plus03.gif" align="absmiddle" id="proj" onclick="parent.toggleData(this.id)" />Project:</td>
+			<td class="ObjectDetailsValue"></td>
+		</tr>
+		<tr id="proj00" style="display: none;">
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Author:</td>
+			<td class="ObjectDetailsValue">BRIDG SCC</td>
+		</tr>
+		<tr id="proj01" style="display: none;">
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Version:</td>
+			<td class="ObjectDetailsValue">1.0</td>
+		</tr>
+		<tr id="proj02" style="display: none;">
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Phase:</td>
+			<td class="ObjectDetailsValue">1.0</td>
+		</tr>
+		<tr id="proj03" style="display: none;">
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Status:</td>
+			<td class="ObjectDetailsValue">Release 3.0</td>
+		</tr>
+		<tr id="proj04" style="display: none;">
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Complexity:</td>
+			<td class="ObjectDetailsValue">Easy</td>
+		</tr>
+		<tr>
+			<td class="ObjectDetailsTopic"><img src="../../../images/plus03.gif" align="absmiddle" id="adv" onclick="parent.toggleData(this.id)" />Advanced:</td>
+			<td class="ObjectDetailsValue"></td>
+		</tr>
+		<tr id="adv00" style="display: none;">
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">UUID:</td>
+			<td class="ObjectDetailsValue">{9CDD67F4-EC27-48f3-8B4A-BF626CD5020D}</td>
+		</tr>
+		<tr id="adv01" style="display: none;">
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Appears In:</td>
+			<td class="ObjectDetailsValue"><a href="../EA11.htm">UML-Based Comprehensive BRIDG Model Diagram</a>, <a href="EA95.htm">View PR: Protocol Representation</a></td>
+		</tr>
+	</table>
+	<div class="ObjectDetailsNotes">&lt;p&gt;An action plan and execution of a pre-clinical or clinical study in human beings in which individuals are assigned by an investigator based on a protocol to receive specific interventions. StudySubjects may receive diagnostic, therapeutic or other types of interventions. The assignment of the intervention may or may not be random. The individuals are then followed and biomedical and/or health outcomes are assessed.&lt;br/&gt;&lt;/p&gt;</div>
+
+	<div class="TableGroup" id="TableGroup">
+		<ul class="ItemTitle">
+			<li onClick="parent.toggleItem('Attributes');" id="AttributesTitle">Attributes</li>
+			<li onClick="parent.toggleItem('TaggedVal');" id="TaggedValTitle">Tagged Values</li>
+			<li onClick="parent.toggleItem('Constraints');" id="ConstraintsTitle">Constraints</li>
+			<li onClick="parent.toggleItem('Links');" id="LinksTitle">Other Links</li>
+		</ul>
+<div class="ItemBody" id="AttributesTable">
+	<table border="0" cellspacing="0" cellpadding="0" class="Table">
+		<tr>
+			<td width="40%" class="TableHeading">Attribute</td>
+			<td width="60%" class="TableHeading">Details</td>
+		</tr>
+						<tr>
+				<td width="40%" class="TableRow" valign="top"><i>public CD</i><br /><strong>&nbsp;&nbsp;controlTypeCode</strong></td>
+				<td width="60%" class="TableRow" valign="top"><i></i>Map:COPPA=InterventionalStudyProtocol.controlType<br><div class="ObjectDetailsNotes"><table>
+	<tr>
+		<td valign="top">
+			<i>Notes: </i><span style="margin-left: .4cm;"> </span>
+		</td>
+		<td>
+			A coded value specifying the comparator against which the study treatment is evaluated.&lt;br /&gt;&lt;br /&gt;For example, placebo, active, historical, uncontrolled, dose comparison. 
+		</td>
+	</tr>
+</table></div>
+</td>
+			</tr>			<tr>
+				<td width="40%" class="TableRow" valign="top"><i>public CD</i><br /><strong>&nbsp;&nbsp;controlConcurrencyTypeCode</strong></td>
+				<td width="60%" class="TableRow" valign="top"><i></i>Map:COPPA=InterventionalStudyProtocol.controlConcurrencyType<br><div class="ObjectDetailsNotes"><table>
+	<tr>
+		<td valign="top">
+			<i>Notes: </i><span style="margin-left: .4cm;"> </span>
+		</td>
+		<td>
+			A coded value specifying the temporal relationships of the control to the study intervention.&lt;br /&gt;&lt;br /&gt;For example, concurrent, historical, pre/post (patient owned control).
+		</td>
+	</tr>
+</table></div>
+</td>
+			</tr>			<tr>
+				<td width="40%" class="TableRow" valign="top"><i>public CD</i><br /><strong>&nbsp;&nbsp;allocationCode</strong></td>
+				<td width="60%" class="TableRow" valign="top"><i></i>Map:COPPA=InterventionalStudyProtocol.allocationCode<br>Map:CTGOV=Study Design Allocation<br><div class="ObjectDetailsNotes"><table>
+	<tr>
+		<td valign="top">
+			<i>Notes: </i><span style="margin-left: .4cm;"> </span>
+		</td>
+		<td>
+			A coded value specifying the method of assigning subjects to treatment or control groups.&lt;br /&gt;&lt;br /&gt;For example, n/a, randomized controlled trial, non-randomized trial.
+		</td>
+	</tr>
+</table></div>
+</td>
+			</tr>			<tr>
+				<td width="40%" class="TableRow" valign="top"><i>public CD</i><br /><strong>&nbsp;&nbsp;blindingSchemaCode</strong></td>
+				<td width="60%" class="TableRow" valign="top"><i></i>Map:C3PR=Study.descriptionText<br>Map:C3PR=Study.blindedIndicator<br>Map:COPPA=InterventionalStudyProtocol.blindingSchemaCode<br>Map:CTGOV=Study Design Masking<br>Map:CTOM=Protocol.blindedIndicator<br>Map:WHO=Masking<br><div class="ObjectDetailsNotes"><table>
+	<tr>
+		<td valign="top">
+			<i>Notes: </i><span style="margin-left: .4cm;"> </span>
+		</td>
+		<td>
+			A coded value specifying the type of masking used on a study protocol to ensure that the results are not biased by the subjects or investigators.&lt;br /&gt;&lt;br /&gt;For example, double-blinded would indicate that both the investigator and the participant would not know whether the intervention was a placebo or an active therapeutic intervention. This will be drawn from a coded list of terms that define the blinding type. &lt;br /&gt;&lt;br /&gt;For example, Open Label, Double Blind, Single Blind, etc.&nbsp;<WBR> 
+		</td>
+	</tr>
+</table></div>
+</td>
+			</tr>			<tr>
+				<td width="40%" class="TableRow" valign="top"><i>public DSET<CD></i><br /><strong>&nbsp;&nbsp;blindedRoleCode</strong></td>
+				<td width="60%" class="TableRow" valign="top"><i></i>Map:COPPA=InterventionalStudyProtocol.blindedRoleCode<br>Map:CTGOV=Masking Role<br>Map:WHO=Study Type Masking Who is Blinded<br><div class="ObjectDetailsNotes"><table>
+	<tr>
+		<td valign="top">
+			<i>Notes: </i><span style="margin-left: .4cm;"> </span>
+		</td>
+		<td>
+			A coded value specifying the roles of individuals who are masked for single or double blind studies.&lt;br /&gt;&lt;br /&gt;For example, subject, caregiver, investigator, or outcomes assessor.
+		</td>
+	</tr>
+</table></div>
+</td>
+			</tr>			<tr>
+				<td width="40%" class="TableRow" valign="top"><i>public INT</i><br /><strong>&nbsp;&nbsp;interventionGroupQuantity</strong></td>
+				<td width="60%" class="TableRow" valign="top"><i></i>Map:COPPA=InterventionalStudyProtocol.numberOfInterventionGroups<br>Map:CTGOV=Number of Arms<br><div class="ObjectDetailsNotes"><table>
+	<tr>
+		<td valign="top">
+			<i>Notes: </i><span style="margin-left: .4cm;"> </span>
+		</td>
+		<td>
+			An integer specifying the number of intervention groups.&lt;br /&gt;&lt;br /&gt;For example, enter 1 for single-arm study.&lt;br /&gt;&lt;br /&gt;NOTE:&nbsp;<WBR> This attribute should be derivable once arms have been defined for the study.
+		</td>
+	</tr>
+</table></div>
+</td>
+			</tr>			<tr>
+				<td width="40%" class="TableRow" valign="top"><i>public BL</i><br /><strong>&nbsp;&nbsp;acceptsHealthyVolunteersIndicator</strong></td>
+				<td width="60%" class="TableRow" valign="top"><i></i>Map:COPPA=InterventionalStudyProtocol.acceptsHealthyVolunteersIndicator<br>Map:CTGOV=Accepts Healthy Volunteers?<br><div class="ObjectDetailsNotes"><table>
+	<tr>
+		<td valign="top">
+			<i>Notes: </i><span style="margin-left: .4cm;"> </span>
+		</td>
+		<td>
+			Specifies whether persons who have not had the condition(s) being studied or otherwise related conditions or symptoms, as specified in the eligibility requirements, may participate in the study. 
+		</td>
+	</tr>
+</table></div>
+</td>
+			</tr>			<tr>
+				<td width="40%" class="TableRow" valign="top"><i>public ST</i><br /><strong>&nbsp;&nbsp;interventionDescription</strong></td>
+				<td width="60%" class="TableRow" valign="top"><i></i>Map:COPPA=InterventionalStudyProtocol.primaryPurposeCode<br>Map:CTGOV=Intervention Description<br><div class="ObjectDetailsNotes"><table>
+	<tr>
+		<td valign="top">
+			<i>Notes: </i><span style="margin-left: .4cm;"> </span>
+		</td>
+		<td>
+			A character string that provides the key details of the intervention. &lt;br /&gt;&lt;br /&gt;For example, the details may distinguish between arms of a study (e.g., comparison of different dosages of drug) and/or among similar interventions (e.g., comparison of multiple implantable cardiac defibrillators).&nbsp;<WBR> &lt;br /&gt;&lt;br /&gt;For example, interventions involving drugs may include dosage form, dosage, frequency and duration. (50 mg/m2, IV (in the vein) on day 5 of each 28 day cycle. Number of Cycles: until progression or unacceptable toxicity develops.)
+		</td>
+	</tr>
+</table></div>
+</td>
+			</tr>
+		</table>
+</div><div class="ItemBody" id="TaggedValTable">
+	<table align="center" border="0" cellspacing="0" cellpadding="0" class="Table">
+	<tr>
+			<td width="30%" class="TableHeading">Tag</td>
+			<td width="30%" class="TableHeading">Value</td>
+			<td width="40%" class="TableHeading">Details</td>
+	</tr>
+					<tr>
+				<td width="30%" class="TableRow" valign="top">Map:COPPA</td>
+				<td width="30%" class="TableRow" valign="top">InterventionalStudyProtocol.keywordText</td>
+				<td width="30%" class="TableRow" valign="top">&nbsp;</td>
+			</tr>			<tr>
+				<td width="30%" class="TableRow" valign="top">Map:COPPA</td>
+				<td width="30%" class="TableRow" valign="top">InterventionalStudyProtocol.AECodingSystem</td>
+				<td width="30%" class="TableRow" valign="top">&nbsp;</td>
+			</tr>			<tr>
+				<td width="30%" class="TableRow" valign="top">Map:COPPA</td>
+				<td width="30%" class="TableRow" valign="top">InterventionalStudyProtocol</td>
+				<td width="30%" class="TableRow" valign="top">&nbsp;</td>
+			</tr>			<tr>
+				<td width="30%" class="TableRow" valign="top">Map:COPPA</td>
+				<td width="30%" class="TableRow" valign="top">InterventionalStudyProtocol.publicDescription</td>
+				<td width="30%" class="TableRow" valign="top">&nbsp;</td>
+			</tr>			<tr>
+				<td width="30%" class="TableRow" valign="top">Map:COPPA</td>
+				<td width="30%" class="TableRow" valign="top">InterventionalStudyProtocol.acronym</td>
+				<td width="30%" class="TableRow" valign="top">&nbsp;</td>
+			</tr>			<tr>
+				<td width="30%" class="TableRow" valign="top">Map:COPPA</td>
+				<td width="30%" class="TableRow" valign="top">InterventionalStudyProtocol.officialTitle</td>
+				<td width="30%" class="TableRow" valign="top">&nbsp;</td>
+			</tr>			<tr>
+				<td width="30%" class="TableRow" valign="top">Map:COPPA</td>
+				<td width="30%" class="TableRow" valign="top">InterventionalStudyProtocol.publicTitle</td>
+				<td width="30%" class="TableRow" valign="top">&nbsp;</td>
+			</tr>			<tr>
+				<td width="30%" class="TableRow" valign="top">Map:COPPA</td>
+				<td width="30%" class="TableRow" valign="top">InterventionalStudyProtocol.keywordCode</td>
+				<td width="30%" class="TableRow" valign="top">&nbsp;</td>
+			</tr>			<tr>
+				<td width="30%" class="TableRow" valign="top">Map:COPPA</td>
+				<td width="30%" class="TableRow" valign="top">InterventionalStudyProtocol.targetAccrualNumber</td>
+				<td width="30%" class="TableRow" valign="top">&nbsp;</td>
+			</tr>			<tr>
+				<td width="30%" class="TableRow" valign="top">Map:COPPA</td>
+				<td width="30%" class="TableRow" valign="top">InterventionalStudyProtocol.responsiblePartyCode</td>
+				<td width="30%" class="TableRow" valign="top">&nbsp;</td>
+			</tr>			<tr>
+				<td width="30%" class="TableRow" valign="top">Map:COPPA</td>
+				<td width="30%" class="TableRow" valign="top">InterventionalStudyProtocol.dataMonitoringCommitteeAppointedIndicator</td>
+				<td width="30%" class="TableRow" valign="top">&nbsp;</td>
+			</tr>			<tr>
+				<td width="30%" class="TableRow" valign="top">Map:COPPA</td>
+				<td width="30%" class="TableRow" valign="top">InterventionalStudyProtocol..startDateTypeCode</td>
+				<td width="30%" class="TableRow" valign="top">&nbsp;</td>
+			</tr>			<tr>
+				<td width="30%" class="TableRow" valign="top">Map:COPPA</td>
+				<td width="30%" class="TableRow" valign="top">InterventionalStudyProtocol.targetAnatomicSiteCode</td>
+				<td width="30%" class="TableRow" valign="top">&nbsp;</td>
+			</tr>			<tr>
+				<td width="30%" class="TableRow" valign="top">Map:COPPA</td>
+				<td width="30%" class="TableRow" valign="top">InterventionalStudyProtocol.revision</td>
+				<td width="30%" class="TableRow" valign="top">&nbsp;</td>
+			</tr>			<tr>
+				<td width="30%" class="TableRow" valign="top">Map:COPPA</td>
+				<td width="30%" class="TableRow" valign="top">InterventionalStudyProtocol.primaryCompletionDate</td>
+				<td width="30%" class="TableRow" valign="top">&nbsp;</td>
+			</tr>			<tr>
+				<td width="30%" class="TableRow" valign="top">Map:COPPA</td>
+				<td width="30%" class="TableRow" valign="top">InterventionalStudyProtocol.primaryCompletionDateTypeCode</td>
+				<td width="30%" class="TableRow" valign="top">&nbsp;</td>
+			</tr>			<tr>
+				<td width="30%" class="TableRow" valign="top">Map:COPPA</td>
+				<td width="30%" class="TableRow" valign="top">InterventionalStudyProtocol.identifier</td>
+				<td width="30%" class="TableRow" valign="top">&nbsp;</td>
+			</tr>			<tr>
+				<td width="30%" class="TableRow" valign="top">Map:COPPA</td>
+				<td width="30%" class="TableRow" valign="top">InterventionalStudyProtocol.statusDate</td>
+				<td width="30%" class="TableRow" valign="top">&nbsp;</td>
+			</tr>			<tr>
+				<td width="30%" class="TableRow" valign="top">Map:COPPA</td>
+				<td width="30%" class="TableRow" valign="top">InterventionalStudyProtocol.scientificDescription</td>
+				<td width="30%" class="TableRow" valign="top">&nbsp;</td>
+			</tr>			<tr>
+				<td width="30%" class="TableRow" valign="top">Map:COPPA</td>
+				<td width="30%" class="TableRow" valign="top">InterventionalStudyProtocol.bibliographicDesignation</td>
+				<td width="30%" class="TableRow" valign="top">&nbsp;</td>
+			</tr>			<tr>
+				<td width="30%" class="TableRow" valign="top">Map:COPPA</td>
+				<td width="30%" class="TableRow" valign="top">InterventionalStudyProtocol.text</td>
+				<td width="30%" class="TableRow" valign="top">&nbsp;</td>
+			</tr>			<tr>
+				<td width="30%" class="TableRow" valign="top">Map:CTGOV</td>
+				<td width="30%" class="TableRow" valign="top">Study Type - Interventional</td>
+				<td width="30%" class="TableRow" valign="top">&nbsp;</td>
+			</tr>			<tr>
+				<td width="30%" class="TableRow" valign="top">Map:WHO</td>
+				<td width="30%" class="TableRow" valign="top">Study Type</td>
+				<td width="30%" class="TableRow" valign="top">&nbsp;</td>
+			</tr>
+</table>
+</div>		<div class="ItemBody" id="ConstraintsTable">
+			<table border="0" cellspacing="0" cellpadding="0" class="Table">
+			  	<tr>
+					<td width="24%" class="TableHeading">Constraint</td>
+					<td width="8%" class="TableHeading">Type</td>
+					<td width="8%" class="TableHeading">Status</td>
+					<td width="60%" class="TableHeading">Detail</td>
+				</tr>
+				<tr>
+					<td width="24%" class="TableRow">blindedRoleCode Qualifier</td>
+					<td width="8%" class="TableRow">Invariant</td>
+					<td width="8%" class="TableRow">Approved</td>
+					<td width="60%" class="TableRow"><div class="ObjectDetailsNotes">For blindedRoleCode, the roles identified map to StudySubject, StudyInvestigator, Assessor, and AssociatedPerson.</div>
+</td>
+				</tr>
+
+			</table>
+		</div>
+		<div class="ItemBody" id="LinksTable">
+			<table align="center" border="0" cellspacing="0" cellpadding="0" class="Table">
+				<tr>
+					<td width="30%" class="TableHeading">Object</td>
+					<td width="15%" class="TableHeading">Type</td>
+					<td width="15%" class="TableHeading">Connection</td>
+					<td width="40%" class="TableHeading">Notes</td>
+				</tr>
+				<tr>
+					<td width="30%" class="TableRow" valign="top"><a href="EA151.htm">Study</a></td>
+					<td width="15%" class="TableRow" valign="top">Class</td>
+					<td width="15%" class="TableRow" valign="top">Generalization</td>
+					<td width="40%" class="TableRow" valign="top">&nbsp;</td>
+				</tr>
+
+			</table>
+		</div>
+	</div>
+<div class="pageFooter"></div>
+ 
+</body>
+</html>

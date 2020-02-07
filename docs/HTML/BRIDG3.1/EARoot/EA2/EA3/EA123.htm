@@ -1,0 +1,277 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>Protocol Representation Sub-Domain::Arm</title>
+<link href="../../../css/ea.css" rel="stylesheet" type="text/css" />
+<script>
+function initPage(src) {
+	if(parent==this&&(this.location+"").indexOf('EARoot')!=-1)
+		document.location=(this.location+"").substring(0,(this.location+"").indexOf('EARoot'))+"index"+(this.location+"").substring((this.location+"").lastIndexOf('.'))+"?goto="+((this.location+"").substring((this.location+"").indexOf('EARoot')+7,(this.location+"").lastIndexOf('.')).replace(/\//g,':').replace(/EA/g,""));
+	else
+		parent.initPage(src);
+}
+</script>
+</head>
+<body onload="initPage(this);" class="Content">
+<div class="pageHeader"></div>
+<div class="PageBody">
+	<span class="ObjectTitle">Arm  : public   class</span>
+	<table border="0" cellpadding="0" cellspacing="0" class="ObjectDetails">
+		<tr>
+			<td width="15%" class="ObjectDetailsTopic">Created:</td>
+			<td width="85%" class="ObjectDetailsValue">3/12/2008 12:11:14 PM</td>
+		</tr>
+		<tr>
+			<td class="ObjectDetailsTopic">Modified:</td>
+			<td class="ObjectDetailsValue">2/23/2012 4:12:10 PM</td>
+		</tr>
+		<tr style="height: 10px"><td colspan="2"></td></tr>
+		<tr>
+			<td class="ObjectDetailsTopic"><img src="../../../images/plus03.gif" align="absmiddle" id="proj" onclick="parent.toggleData(this.id)" />Project:</td>
+			<td class="ObjectDetailsValue"></td>
+		</tr>
+		<tr id="proj00" style="display: none;">
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Author:</td>
+			<td class="ObjectDetailsValue">BRIDG SCC</td>
+		</tr>
+		<tr id="proj01" style="display: none;">
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Version:</td>
+			<td class="ObjectDetailsValue">1.0</td>
+		</tr>
+		<tr id="proj02" style="display: none;">
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Phase:</td>
+			<td class="ObjectDetailsValue">1.0</td>
+		</tr>
+		<tr id="proj03" style="display: none;">
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Status:</td>
+			<td class="ObjectDetailsValue"><none></td>
+		</tr>
+		<tr id="proj04" style="display: none;">
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Complexity:</td>
+			<td class="ObjectDetailsValue">Easy</td>
+		</tr>
+		<tr>
+			<td class="ObjectDetailsTopic"><img src="../../../images/plus03.gif" align="absmiddle" id="adv" onclick="parent.toggleData(this.id)" />Advanced:</td>
+			<td class="ObjectDetailsValue"></td>
+		</tr>
+		<tr id="adv00" style="display: none;">
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">UUID:</td>
+			<td class="ObjectDetailsValue">{3A2BE812-FD20-4597-A4E0-336DC4ACE897}</td>
+		</tr>
+		<tr id="adv01" style="display: none;">
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Appears In:</td>
+			<td class="ObjectDetailsValue"><a href="../EA11.htm">UML-Based Comprehensive BRIDG Model Diagram</a>, <a href="EA110.htm">View PR: Protocol Representation</a>, <a href="EA108.htm">Study Versioning View</a>, <a href="../EA5/EA198.htm">View SC: Study Conduct</a></td>
+		</tr>
+	</table>
+	<div class="ObjectDetailsNotes">&lt;p&gt;DEFINITION:&lt;br/&gt;&lt;/p&gt;&lt;p&gt;A path through the study which describes what activities the study subject or experimental unit will be involved in as they pass through the study.&lt;br/&gt;&lt;/p&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;&lt;p&gt;EXAMPLE(S):&lt;br/&gt;&lt;/p&gt;&lt;p&gt;A study could have 2 arms named IV-Oral and Oral-IV.&#160; The name IV-Oral reflects a path that passes through IV treatment, then Oral treatment.&lt;br/&gt;&lt;/p&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;&lt;p&gt;OTHER NAME(S):&lt;br/&gt;&lt;/p&gt;&lt;p&gt;Group [CTRR Observational Studies]&lt;br/&gt;&lt;/p&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;&lt;p&gt;NOTE(S):&lt;br/&gt;&lt;/p&gt;&lt;p&gt;An Arm is typically equivalent to a treatment group in a parallel design study. Generally, each subject is assigned to an arm, and the design of the study is reflected in the number and composition of the individual arms. This intended path through which the subject progresses in a study is composed of time point events (study cell) for each epoch of the study. Each time point event, in turn, has a pattern of child time points through which the subject would pass. This planned path thus describes how subjects assigned to the arm will be treated.&lt;br/&gt;&lt;/p&gt;</div>
+
+	<div class="TableGroup" id="TableGroup">
+		<ul class="ItemTitle">
+			<li onClick="parent.toggleItem('Attributes');" id="AttributesTitle">Attributes</li>
+			<li onClick="parent.toggleItem('AssociationsTo');" id="AssociationsToTitle">Associations To</li>
+			<li onClick="parent.toggleItem('AssociationsFrom');" id="AssociationsFromTitle">Associations From</li>
+			<li onClick="parent.toggleItem('TaggedVal');" id="TaggedValTitle">Tagged Values</li>
+			<li onClick="parent.toggleItem('Constraints');" id="ConstraintsTitle">Constraints</li>
+		</ul>
+<div class="ItemBody" id="AttributesTable">
+	<table border="0" cellspacing="0" cellpadding="0" class="Table">
+		<tr>
+			<td width="40%" class="TableHeading">Attribute</td>
+			<td width="60%" class="TableHeading">Details</td>
+		</tr>
+						<tr>
+				<td width="40%" class="TableRow" valign="top"><i>public ST</i><br /><strong>&nbsp;&nbsp;name</strong></td>
+				<td width="60%" class="TableRow" valign="top"><i>Range:0 to 1</i>Map:C3PR=ScheduledArm.name<br>Map:C3PR=PlannedArm.name<br>Map:C3PR=Arm.name<br>Map:caAERSv2.2=RadiationIntervention.treatmentArm<br>Map:COPPA=Arm.name<br>Map:CTGOV=Arms/Groups<br>Map:CTGOV=Arm Number or Label<br>Map:CTGOV=Group/Cohort Number or Label<br>Map:CTOM=StudyParticipantAssignment.armIdentifier<br>Map:HL7SD=Arm.title<br>Map:NCI CRF Standard=CDE 2454528v1.0: Protocol Arm Assignment Text<br>Map:SDTM IGv3.1.1=TV.ARMCD<br>Map:SDTM IGv3.1.1=DM.ARMCD<br>Map:SDTM IGv3.1.1=TA.ARMCD<br>Map:SDTM IGv3.1.2=TA.ARMCD<br>Map:SDTM IGv3.1.2=DM.ARMCD<br>Map:SDTM IGv3.1.2=TV.ARMCD<br>Map:TDM=StudyDesignArm.name<br><div class="ObjectDetailsNotes"><table>
+	<tr>
+		<td valign="top">
+			<i>Notes: </i><span style="margin-left: .4cm;"> </span>
+		</td>
+		<td>
+			DEFINITION:&lt;br /&gt;A non-unique textual identifier for the arm.&lt;br /&gt;&lt;br /&gt;EXAMPLE(S):&lt;br /&gt;Treatment A&lt;br /&gt;&lt;br /&gt;OTHER NAME(S):&lt;br /&gt;&lt;br /&gt;NOTE(S):
+		</td>
+	</tr>
+</table></div>
+</td>
+			</tr>			<tr>
+				<td width="40%" class="TableRow" valign="top"><i>public CD</i><br /><strong>&nbsp;&nbsp;typeCode</strong></td>
+				<td width="60%" class="TableRow" valign="top"><i>Range:0 to 1</i>Map:COPPA=Arm.typeCode<br>Map:CTGOV=Arm Type<br>Map:CTR&Rr2=Number Treatment Arms<br><div class="ObjectDetailsNotes"><table>
+	<tr>
+		<td valign="top">
+			<i>Notes: </i><span style="margin-left: .4cm;"> </span>
+		</td>
+		<td>
+			DEFINITION:&lt;br /&gt;A coded value specifying the kind of arm.&lt;br /&gt;&lt;br /&gt;EXAMPLE(S):&lt;br /&gt;Experimental, Active Comparator, Placebo Comparator, Sham Comparator, No intervention, Other &lt;br /&gt;&lt;br /&gt;OTHER NAME(S):&lt;br /&gt;&lt;br /&gt;NOTE(S):
+		</td>
+	</tr>
+</table></div>
+</td>
+			</tr>			<tr>
+				<td width="40%" class="TableRow" valign="top"><i>public ST</i><br /><strong>&nbsp;&nbsp;description</strong></td>
+				<td width="60%" class="TableRow" valign="top"><i>Range:0 to 1</i>Map:C3PR=PlannedArm.description<br>Map:C3PR=ScheduledArm.description<br>Map:C3PR=Arm.descriptionText<br>Map:COPPA=Arm.description<br>Map:CTGOV=Arm Description<br>Map:SDTM IGv3.1.1=DM.ARM<br>Map:SDTM IGv3.1.1=TV.ARM<br>Map:SDTM IGv3.1.1=TA.ARM<br>Map:SDTM IGv3.1.2=TV.ARM<br>Map:SDTM IGv3.1.2=TA.ARM<br>Map:SDTM IGv3.1.2=DM.ARM<br>Map:TDM=StudyDesignArm.description<br><div class="ObjectDetailsNotes"><table>
+	<tr>
+		<td valign="top">
+			<i>Notes: </i><span style="margin-left: .4cm;"> </span>
+		</td>
+		<td>
+			DEFINITION:&lt;br /&gt;The textual representation of the arm. This is a description of the pathway followed by all subjects, study subjects, or experimental units in a particular treatment regimen.&lt;br /&gt;&lt;br /&gt;EXAMPLE(S):&lt;br /&gt;Study subjects receive Drug X&lt;br /&gt;Experimental units receive Placebo&lt;br /&gt;Study subjects receive drug A IV in the first phase, drug B Oral in the second phase&lt;br /&gt;&lt;br /&gt;OTHER NAME(S):&lt;br /&gt;&lt;br /&gt;NOTE(S):&lt;br /&gt;This description should point out what is different between the Arms, if there is more than one Arm. 
+		</td>
+	</tr>
+</table></div>
+</td>
+			</tr>			<tr>
+				<td width="40%" class="TableRow" valign="top"><i>public URG<INT.NONNEG></i><br /><strong>&nbsp;&nbsp;targetAccrualNumberRange</strong></td>
+				<td width="60%" class="TableRow" valign="top"><i>Range:0 to 1</i>Map:C3PR=Arm.targetAccrualNumber<br>Map:C3PR=PlannedArm.targetAccrual<br>Map:CTGOV=Number of Subjects per Treatment Arm<br>Map:CTRR=Number of subjects per treatment arm<br>Map:TDM=StudyDesignArm.plannedArmAccrual<br><div class="ObjectDetailsNotes"><table>
+	<tr>
+		<td valign="top">
+			<i>Notes: </i><span style="margin-left: .4cm;"> </span>
+		</td>
+		<td>
+			DEFINITION:&lt;br /&gt;A range of integers specifying the minimum and maximum number of study subjects to be accrued for the arm.&lt;br /&gt;&lt;br /&gt;EXAMPLE(S):&lt;br /&gt;&lt;br /&gt;OTHER NAME(S):&lt;br /&gt;&lt;br /&gt;NOTE(S):&lt;br /&gt;This may represent the minimum number of study subjects needed to support data analysis and/or the maximum number of study subjects that may be accrued to this arm.
+		</td>
+	</tr>
+</table></div>
+</td>
+			</tr>			<tr>
+				<td width="40%" class="TableRow" valign="top"><i>public RTO<INT.NONNEG,INT.NONNEG></i><br /><strong>&nbsp;&nbsp;randomizationWeight</strong></td>
+				<td width="60%" class="TableRow" valign="top"><i>Range:0 to 1</i>Map:SDTM IGv3.1.2=TS.TSVAL where TSPARMCD=RANDRAT<br>Map:TDM=StudyDesignArm.randomizationWeightForArm<br><div class="ObjectDetailsNotes"><table>
+	<tr>
+		<td valign="top">
+			<i>Notes: </i><span style="margin-left: .4cm;"> </span>
+		</td>
+		<td>
+			DEFINITION:&lt;br /&gt;The relative proportion of study subjects to be randomized to the arm.&nbsp;<WBR> &lt;br /&gt;&lt;br /&gt;EXAMPLE(S):&lt;br /&gt;If 1/3 of study subjects are to be randomized to Arm A and 2/3 to Arm B, then the values of randomizationWeight for Arms A and B, respectively, could be expressed as 1 and 2 or as 1/3 and 2/3.&lt;br /&gt;&lt;br /&gt;OTHER NAME(S):&lt;br /&gt;&lt;br /&gt;NOTE(S):
+		</td>
+	</tr>
+</table></div>
+</td>
+			</tr>
+		</table>
+</div>		<div class="ItemBody" id="AssociationsToTable">
+			<table border="0" cellspacing="0" cellpadding="0" class="Table">
+				<tr>
+					<td width="20%" class="TableHeading">Element</td>
+					<td width="25%" class="TableHeading">Source Role</td>
+					<td width="25%" class="TableHeading">Target Role</td>
+					<td width="30%" class="TableHeading">Details</td>
+				</tr>
+				<tr>
+					<td width="20%" class="TableRow" valign="top">
+						<a href="EA162.htm">PlannedActivity</a><br />
+						Class &nbsp;
+					</td>
+					<td width="20%" class="TableRow" valign="top">
+						<strong>Name:</strong> containingArm<br />
+						&nbsp;
+					</td>
+					<td width="20%" class="TableRow" valign="top">
+						<strong>Name:</strong> containedPlannedActivity<br />
+						&nbsp;	
+					</td>
+					<td width="30%" class="TableRow" valign="top"><div class="ObjectDetailsNotes">&lt;p&gt;DEFINITION:&lt;br/&gt;&lt;/p&gt;&lt;p&gt;Each Arm always contains one or more PlannedActivity. Each PlannedActivity might occur in one or more Arm. &lt;br/&gt;&lt;/p&gt;</div>
+</td>
+				</tr>
+				<tr>
+					<td width="20%" class="TableRow" valign="top">
+						<a href="EA184.htm">StudyProtocolVersion</a><br />
+						Class &nbsp;
+					</td>
+					<td width="20%" class="TableRow" valign="top">
+						<strong>Name:</strong> subdividingArm<br />
+						&nbsp;
+					</td>
+					<td width="20%" class="TableRow" valign="top">
+						<strong>Name:</strong> subdividedStudyProtocolVersion<br />
+						&nbsp;	
+					</td>
+					<td width="30%" class="TableRow" valign="top"><div class="ObjectDetailsNotes">&lt;p&gt;DEFINITION:&lt;br/&gt;&lt;/p&gt;&lt;p&gt;Each Arm always is a division of one StudyProtocolVersion. Each StudyProtocolVersion might be divided into one or more Arm.&lt;br/&gt;&lt;/p&gt;</div>
+</td>
+				</tr>
+
+			</table>
+		</div>
+		<div class="ItemBody" id="AssociationsFromTable">
+			<table border="0" cellspacing="0" cellpadding="0" class="Table">
+				<tr>
+					<td width="20%" class="TableHeading">Element</td>
+					<td width="25%" class="TableHeading">Source Role</td>
+					<td width="25%" class="TableHeading">Target Role</td>
+					<td width="30%" class="TableHeading">Details</td>
+				</tr>
+				<tr>
+					<td width="20%" class="TableRow" valign="top">
+						<a href="../EA5/EA200.htm">PerformedExperimentalUnitAllocation</a><br />
+						Class &nbsp;
+					</td>
+					<td width="20%" class="TableRow" valign="top">
+						<strong>Name:</strong> assigningPerformedExperimentalUnitAllocation<br />
+						&nbsp;
+					</td>
+					<td width="20%" class="TableRow" valign="top">
+						<strong>Name:</strong> assignedArm<br />
+						&nbsp;	
+					</td>
+					<td width="30%" class="TableRow" valign="top"><div class="ObjectDetailsNotes">&lt;p&gt;DEFINITION:&lt;br/&gt;&lt;/p&gt;&lt;p&gt;Each PerformedExperimentalUnitAllocation might assign a subject to one Arm. Each Arm might be assigned a subject by one or more PerformedExperimentalUnitAllocation.&lt;br/&gt;&lt;/p&gt;</div>
+</td>
+				</tr>
+
+			</table>
+		</div>
+<div class="ItemBody" id="TaggedValTable">
+	<table align="center" border="0" cellspacing="0" cellpadding="0" class="Table">
+	<tr>
+			<td width="30%" class="TableHeading">Tag</td>
+			<td width="30%" class="TableHeading">Value</td>
+			<td width="40%" class="TableHeading">Details</td>
+	</tr>
+					<tr>
+				<td width="30%" class="TableRow" valign="top">Map:COPPA</td>
+				<td width="30%" class="TableRow" valign="top">Arm</td>
+				<td width="30%" class="TableRow" valign="top">&nbsp;</td>
+			</tr>			<tr>
+				<td width="30%" class="TableRow" valign="top">Map:HL7SD</td>
+				<td width="30%" class="TableRow" valign="top">Arm</td>
+				<td width="30%" class="TableRow" valign="top">&nbsp;</td>
+			</tr>			<tr>
+				<td width="30%" class="TableRow" valign="top">Map:SDTM IGv3.1.2</td>
+				<td width="30%" class="TableRow" valign="top">TA.DOMAIN</td>
+				<td width="30%" class="TableRow" valign="top">&nbsp;</td>
+			</tr>
+</table>
+</div>		<div class="ItemBody" id="ConstraintsTable">
+			<table border="0" cellspacing="0" cellpadding="0" class="Table">
+			  	<tr>
+					<td width="24%" class="TableHeading">Constraint</td>
+					<td width="8%" class="TableHeading">Type</td>
+					<td width="8%" class="TableHeading">Status</td>
+					<td width="60%" class="TableHeading">Detail</td>
+				</tr>
+				<tr>
+					<td width="24%" class="TableRow">name Unique</td>
+					<td width="8%" class="TableRow">Invariant</td>
+					<td width="8%" class="TableRow">Approved</td>
+					<td width="60%" class="TableRow"><div class="ObjectDetailsNotes">An Arm name must be unique within the context of the study that contains it.</div>
+</td>
+				</tr>
+				<tr>
+					<td width="24%" class="TableRow">Mandatory Attribute Qualifier</td>
+					<td width="8%" class="TableRow">Invariant</td>
+					<td width="8%" class="TableRow">Approved</td>
+					<td width="60%" class="TableRow"><div class="ObjectDetailsNotes">At least one of the following attributes must be mandatory for Arm: name, typeCode.</div>
+</td>
+				</tr>
+				<tr>
+					<td width="24%" class="TableRow">armType Qualifier</td>
+					<td width="8%" class="TableRow">Invariant</td>
+					<td width="8%" class="TableRow">Approved</td>
+					<td width="60%" class="TableRow"><div class="ObjectDetailsNotes">armType is only valid for InterventionalStudyProtocolVersion.</div>
+</td>
+				</tr>
+
+			</table>
+		</div>
+	</div>
+<div class="pageFooter"></div>
+ 
+</body>
+</html>

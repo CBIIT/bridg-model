@@ -1,0 +1,637 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>ISO 21090 Data Types::QTY</title>
+<link href="../../css/ea.css" rel="stylesheet" type="text/css" />
+<script>
+function initPage(src) {
+	if(parent==this&&(this.location+"").indexOf('EARoot')!=-1)
+		document.location=(this.location+"").substring(0,(this.location+"").indexOf('EARoot'))+"index"+(this.location+"").substring((this.location+"").lastIndexOf('.'))+"?goto="+((this.location+"").substring((this.location+"").indexOf('EARoot')+7,(this.location+"").lastIndexOf('.')).replace(/\//g,':').replace(/EA/g,""));
+	else
+		parent.initPage(src);
+}
+</script>
+</head>
+<body onload="initPage(this);" class="Content">
+<div class="pageHeader"></div>
+<div class="PageBody">
+	<span class="ObjectTitle">QTY  : public abstract  class</span>
+	<table border="0" cellpadding="0" cellspacing="0" class="ObjectDetails">
+		<tr>
+			<td width="15%" class="ObjectDetailsTopic">Created:</td>
+			<td width="85%" class="ObjectDetailsValue">7/26/2006 1:50:58 PM</td>
+		</tr>
+		<tr>
+			<td class="ObjectDetailsTopic">Modified:</td>
+			<td class="ObjectDetailsValue">5/21/2009 12:55:29 PM</td>
+		</tr>
+		<tr style="height: 10px"><td colspan="2"></td></tr>
+		<tr>
+			<td class="ObjectDetailsTopic"><img src="../../images/plus03.gif" align="absmiddle" id="proj" onclick="parent.toggleData(this.id)" />Project:</td>
+			<td class="ObjectDetailsValue"></td>
+		</tr>
+		<tr id="proj00" style="display: none;">
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Author:</td>
+			<td class="ObjectDetailsValue"></td>
+		</tr>
+		<tr id="proj01" style="display: none;">
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Version:</td>
+			<td class="ObjectDetailsValue">1.0</td>
+		</tr>
+		<tr id="proj02" style="display: none;">
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Phase:</td>
+			<td class="ObjectDetailsValue">1.0</td>
+		</tr>
+		<tr id="proj03" style="display: none;">
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Status:</td>
+			<td class="ObjectDetailsValue">Proposed</td>
+		</tr>
+		<tr id="proj04" style="display: none;">
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Complexity:</td>
+			<td class="ObjectDetailsValue">Easy</td>
+		</tr>
+		<tr>
+			<td class="ObjectDetailsTopic"><img src="../../images/plus03.gif" align="absmiddle" id="adv" onclick="parent.toggleData(this.id)" />Advanced:</td>
+			<td class="ObjectDetailsValue"></td>
+		</tr>
+		<tr id="adv00" style="display: none;">
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">UUID:</td>
+			<td class="ObjectDetailsValue">{BEA0F53E-A040-4184-835C-4EC4801C0439}</td>
+		</tr>
+		<tr id="adv01" style="display: none;">
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Appears In:</td>
+			<td class="ObjectDetailsValue"><a href="EA1084.htm">ISO Datatypes</a>, <a href="EA1096.htm">Quantities</a>, <a href="EA1098.htm">Quantities / Interface</a>, <a href="EA1094.htm">Quantites 2 / Interfaces</a>, <a href="EA1100.htm">Quantities 2</a>, <a href="EA1102.htm">Quantities 3</a></td>
+		</tr>
+	</table>
+	<div class="ObjectDetailsNotes">&lt;p&gt;The quantity datatype is an abstract generalization for all datatypes whose domain values has an order relation (less-or-equal) and where difference is defined in all of the datatype&#39;s totally ordered value subsets. &lt;br/&gt;&lt;/p&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;&lt;p&gt;The quantity type abstraction is needed in defining certain other types, such as the interval, and probability distributions.&lt;br/&gt;&lt;/p&gt;</div>
+
+	<div class="TableGroup" id="TableGroup">
+		<ul class="ItemTitle">
+			<li onClick="parent.toggleItem('Attributes');" id="AttributesTitle">Attributes</li>
+			<li onClick="parent.toggleItem('Operations');" id="OperationsTitle">Operations</li>
+			<li onClick="parent.toggleItem('Constraints');" id="ConstraintsTitle">Constraints</li>
+			<li onClick="parent.toggleItem('Links');" id="LinksTitle">Other Links</li>
+		</ul>
+<div class="ItemBody" id="AttributesTable">
+	<table border="0" cellspacing="0" cellpadding="0" class="Table">
+		<tr>
+			<td width="40%" class="TableHeading">Attribute</td>
+			<td width="60%" class="TableHeading">Details</td>
+		</tr>
+						<tr>
+				<td width="40%" class="TableRow" valign="top"><i>public <a href="EA1370.htm">ED</a></i><br /><strong>&nbsp;&nbsp;expression</strong></td>
+				<td width="60%" class="TableRow" valign="top"><i>Range:0 to 1</i><div class="ObjectDetailsNotes"><table>
+	<tr>
+		<td valign="top">
+			<i>Notes: </i><span style="margin-left: .4cm;"> </span>
+		</td>
+		<td>
+			An expression that can be used to derive the actual value of the quantity given information taken from the context of use.&lt;br /&gt;&lt;br /&gt;For example expression can be used for expressing dosage instructions that depend on patient body weight. &lt;br /&gt;&lt;br /&gt;If no proper value is provided for the QTY, then the value SHALL have a nullFlavor, whether or not an expression is provided. If no proper value is provided, and an expression is provided, the appropriate nullFlavor is usually DER. No nullFlavor is required if both a proper value and an expression is provided; in such cases, it is up to the processing to determine when the expression should be evaluated.&lt;br /&gt;&lt;br /&gt;The language of the expression is inferred from the mediatype. If multiple translations are provided in the expression, the evaluator is free to choose whichever language is preferred; all translations SHALL specify the same outcome.&lt;br /&gt;&lt;br /&gt;The language defines the forms that the expression property can take, how the information available in the context of the expression is made available within the features of the language, and how the language declares the new form of the value. Languages may only be used if this information has been appropriately defined for the context in which the QTY is used.&lt;br /&gt;&lt;br /&gt;Information Processing Entities are not required to implement any languages in order to claim direct or indirect conformance to this specification, but SHOULD declare what languages are supported in their conformance statements. &lt;br /&gt;Language&nbsp;&nbsp;&nbsp;&nbsp;Mediatype&lt;br /&gt;OCL&nbsp;&nbsp;&nbsp;&nbsp;text/plain+ocl&lt;br /&gt;Factor&nbsp;&nbsp;&nbsp;&nbsp;application/hl7-factor+xml&lt;br /&gt;MathML&nbsp;&nbsp;&nbsp;&nbsp;application/mathml+xml&lt;br /&gt;&lt;br /&gt;Note: Factor is an HL7 specific language documented in the Abstract Data Types Specification.
+		</td>
+	</tr>
+</table></div>
+</td>
+			</tr>			<tr>
+				<td width="40%" class="TableRow" valign="top"><i>public <a href="EA1283.htm">ED.TEXT</a></i><br /><strong>&nbsp;&nbsp;originalText</strong></td>
+				<td width="60%" class="TableRow" valign="top"><i>Range:0 to 1</i><div class="ObjectDetailsNotes"><table>
+	<tr>
+		<td valign="top">
+			<i>Notes: </i><span style="margin-left: .4cm;"> </span>
+		</td>
+		<td>
+			The text representation from which the QTY was encoded, if such a representation is the source of the QTY. &lt;br /&gt;&lt;br /&gt;Original text can be used in a structured user interface to capture what the user saw as a representation of the quantity on the data input screen, or in a situation where the user dictates or directly enters text, it is the text entered or uttered by the user. &lt;br /&gt;&lt;br /&gt;It is valid to use a QTY derived datatype to store only the text that the user entered or uttered. In this situation, original text will exist without a valid value. In a situation where the value is determined sometime after the text was entered, originalText is the text or phrase used as the basis for determining the value. The originalText is not a substitute for a valid value. If the actual value of the QTY is not valid, then the QTY SHALL be nullFlavored, irrespective of whether originalText has a value or not.&lt;br /&gt;&lt;br /&gt;The original text SHALL be an excerpt of the relevant information in the original sources, rather than a pointer or exact reproduction. Thus the original text SHALL be represented in plain text form. In specific circumstances, when clearly descirbed the context of use, the originalText may be a reference to some other text artefact for which the resolution scope is clearly described.&lt;br /&gt;&lt;br /&gt;Note: the details of the link in the originalText.reference between different artifacts of medical information (e.g., document and coded result) is outside the scope of this specification and may be further proscribed in specifications that use this specification.
+		</td>
+	</tr>
+</table></div>
+</td>
+			</tr>			<tr>
+				<td width="40%" class="TableRow" valign="top"><i>public <a href="EA1416.htm">QTY</a></i><br /><strong>&nbsp;&nbsp;uncertainty</strong></td>
+				<td width="60%" class="TableRow" valign="top"><i>Range:0 to 1</i><div class="ObjectDetailsNotes"><table>
+	<tr>
+		<td valign="top">
+			<i>Notes: </i><span style="margin-left: .4cm;"> </span>
+		</td>
+		<td>
+			The uncertainty of the quantity using a distribution function and its parameters. It is the primary measure of variance/uncertainty of the value (the square root of the sum of the squares of the differences between all data points and the mean). The actual type of uncertainty depends on the type of the QTY and is fixed for each type.&lt;br /&gt;&lt;br /&gt;Uncertainty SHALL only be applied to value domains that have a continuous distribution (REAL, PQ, MO, and TS). Uncertainty MAY be applied to the numerator and denominator of a RTO separately.&lt;br /&gt;&lt;br /&gt;Uncertainty SHALL not have an expression. Uncertainty SHALL not have uncertainty of its own. Uncertainty SHALL not have originalText - any uncertainty associated with the QTY should be conveyed as part of the originalText of the QTY itself.&lt;br /&gt;&lt;br /&gt;Note: uncertainty does not have it&#39;s own originalText because it is expected that the uncertainty of the quantity should be expressed in the originalText of the quantity itself.
+		</td>
+	</tr>
+</table></div>
+</td>
+			</tr>			<tr>
+				<td width="40%" class="TableRow" valign="top"><i>public <a href="EA1449.htm">UncertaintyType</a></i><br /><strong>&nbsp;&nbsp;uncertaintyType</strong></td>
+				<td width="60%" class="TableRow" valign="top"><i></i><div class="ObjectDetailsNotes"><table>
+	<tr>
+		<td valign="top">
+			<i>Notes: </i><span style="margin-left: .4cm;"> </span>
+		</td>
+		<td>
+			A code specifying the type of probability distribution in uncertainty. &lt;br /&gt;&lt;br /&gt;The null value (unknown) for the type code indicates that the probability distribution type is unknown. In that case, uncertainty has the meaning of an informal guess if it is populated.&lt;br /&gt;If populated, the value of this attribute SHALL be taken from the HL7 DistributionType code system.
+		</td>
+	</tr>
+</table></div>
+</td>
+			</tr>			<tr>
+				<td width="40%" class="TableRow" valign="top"><i>private IVL(QTY)</i><br /><strong>&nbsp;&nbsp;uncertainRange</strong></td>
+				<td width="60%" class="TableRow" valign="top"><i></i><div class="ObjectDetailsNotes"><table>
+	<tr>
+		<td valign="top">
+			<i>Notes: </i><span style="margin-left: .4cm;"> </span>
+		</td>
+		<td>
+			Indicates that the value comes from a range of possible values. &lt;br /&gt;&lt;br /&gt;uncertainRange is used where the actual value is unknown, but it is known that the value comes from a known range of possible values. uncertainRange differs from uncertainty in that uncertainty is used to report a particular value along with an associated distribution of uncertainty for the value, or to report the summary distribution of a set of data, whereas uncertainRange indicates that there is a single value that, although unknown, comes from a particular range of values. No inference regarding distribution of values can be taken. uncertainRange is often associated with an instruction to perform a particular operation at some point within a given time interval.
+		</td>
+	</tr>
+</table></div>
+</td>
+			</tr>
+		</table>
+</div><div class="ItemBody" id="OperationsTable">
+	<table border="0" cellspacing="0" cellpadding="0" class="Table">
+		<tr>
+			<td width="40%" class="TableHeading">Operation</td>
+			<td width="60%" class="TableHeading">Details</td>
+		</tr>
+						<tr>
+				<td width="40%" class="TableRow">
+					<i>public</i><br />
+					<strong><</strong>(<br />
+					<a href="#" onclick="parent.toggleData('param{99796C2D-9728-4b2b-BEB5-8459DAA2F32F}')" style="text-decoration: none; color: #000000;"><img src="../../images/plus03.gif" align="absmiddle" id="param{99796C2D-9728-4b2b-BEB5-8459DAA2F32F}" border="0" />other: QTY</a>, 
+					<table border="0" cellspacing="0" cellpadding="0" class="Table" style="padding: 4px 18px;">
+						<tr id="param{99796C2D-9728-4b2b-BEB5-8459DAA2F32F}00" style="display: none;">
+							<td width="50"><strong>Default:</strong></td>
+							<td></td>
+						</tr>
+						<tr id="param{99796C2D-9728-4b2b-BEB5-8459DAA2F32F}01" style="display: none;">
+							<td width="50"><strong>Kind:</strong></td>
+							<td>in</td>
+						</tr>
+						<tr id="param{99796C2D-9728-4b2b-BEB5-8459DAA2F32F}02" style="display: none;">
+							<td width="50"><strong>Stereotype: </strong></td>
+							<td></td>
+						</tr>
+						<tr id="param{99796C2D-9728-4b2b-BEB5-8459DAA2F32F}03" style="display: none;">
+							<td width="50"></td>
+							<td></td>
+						</tr>
+					</table>
+):<a href="EA1357.htm">BL</a>
+				</td>
+				<td width="60%" class="TableRow">
+					<i>Sequential  </i>
+					<table>
+						<tr>
+							<td valign = "top"><i></i><span style="margin-left: .7cm;"> </span></td>
+							<td></td>
+						</tr>
+					</table>
+					<div class="ObjectDetailsNotes"><table>
+	<tr>
+		<td valign="top">
+			<i>Notes: </i><span style="margin-left: .4cm;"> </span>
+		</td>
+		<td>
+			True if the value of this is less than the value of other.
+		</td>
+	</tr>
+</table></div>
+
+				</td>
+			</tr>
+			<tr>
+				<td width="40%" class="TableRow">
+					<i>public</i><br />
+					<strong><=</strong>(<br />
+					<a href="#" onclick="parent.toggleData('param{6B683379-2795-4f28-86D1-6A9C7321E148}')" style="text-decoration: none; color: #000000;"><img src="../../images/plus03.gif" align="absmiddle" id="param{6B683379-2795-4f28-86D1-6A9C7321E148}" border="0" />other: QTY</a>, 
+					<table border="0" cellspacing="0" cellpadding="0" class="Table" style="padding: 4px 18px;">
+						<tr id="param{6B683379-2795-4f28-86D1-6A9C7321E148}00" style="display: none;">
+							<td width="50"><strong>Default:</strong></td>
+							<td></td>
+						</tr>
+						<tr id="param{6B683379-2795-4f28-86D1-6A9C7321E148}01" style="display: none;">
+							<td width="50"><strong>Kind:</strong></td>
+							<td>in</td>
+						</tr>
+						<tr id="param{6B683379-2795-4f28-86D1-6A9C7321E148}02" style="display: none;">
+							<td width="50"><strong>Stereotype: </strong></td>
+							<td></td>
+						</tr>
+						<tr id="param{6B683379-2795-4f28-86D1-6A9C7321E148}03" style="display: none;">
+							<td width="50"></td>
+							<td></td>
+						</tr>
+					</table>
+):<a href="EA1357.htm">BL</a>
+				</td>
+				<td width="60%" class="TableRow">
+					<i>Sequential  </i>
+					<table>
+						<tr>
+							<td valign = "top"><i></i><span style="margin-left: .7cm;"> </span></td>
+							<td></td>
+						</tr>
+					</table>
+					<div class="ObjectDetailsNotes"><table>
+	<tr>
+		<td valign="top">
+			<i>Notes: </i><span style="margin-left: .4cm;"> </span>
+		</td>
+		<td>
+			True if the value of this is less than or equal to the value of other.
+		</td>
+	</tr>
+</table></div>
+
+				</td>
+			</tr>
+			<tr>
+				<td width="40%" class="TableRow">
+					<i>public</i><br />
+					<strong>>=</strong>(<br />
+					<a href="#" onclick="parent.toggleData('param{544F3D0D-E97B-498a-A7C9-FBD767B7F889}')" style="text-decoration: none; color: #000000;"><img src="../../images/plus03.gif" align="absmiddle" id="param{544F3D0D-E97B-498a-A7C9-FBD767B7F889}" border="0" />other: QTY</a>, 
+					<table border="0" cellspacing="0" cellpadding="0" class="Table" style="padding: 4px 18px;">
+						<tr id="param{544F3D0D-E97B-498a-A7C9-FBD767B7F889}00" style="display: none;">
+							<td width="50"><strong>Default:</strong></td>
+							<td></td>
+						</tr>
+						<tr id="param{544F3D0D-E97B-498a-A7C9-FBD767B7F889}01" style="display: none;">
+							<td width="50"><strong>Kind:</strong></td>
+							<td>in</td>
+						</tr>
+						<tr id="param{544F3D0D-E97B-498a-A7C9-FBD767B7F889}02" style="display: none;">
+							<td width="50"><strong>Stereotype: </strong></td>
+							<td></td>
+						</tr>
+						<tr id="param{544F3D0D-E97B-498a-A7C9-FBD767B7F889}03" style="display: none;">
+							<td width="50"></td>
+							<td></td>
+						</tr>
+					</table>
+):<a href="EA1357.htm">BL</a>
+				</td>
+				<td width="60%" class="TableRow">
+					<i>Sequential  </i>
+					<table>
+						<tr>
+							<td valign = "top"><i></i><span style="margin-left: .7cm;"> </span></td>
+							<td></td>
+						</tr>
+					</table>
+					<div class="ObjectDetailsNotes"><table>
+	<tr>
+		<td valign="top">
+			<i>Notes: </i><span style="margin-left: .4cm;"> </span>
+		</td>
+		<td>
+			True if the value of this is greater than or equal to the value of other.
+		</td>
+	</tr>
+</table></div>
+
+				</td>
+			</tr>
+			<tr>
+				<td width="40%" class="TableRow">
+					<i>public</i><br />
+					<strong>></strong>(<br />
+					<a href="#" onclick="parent.toggleData('param{DCFE079D-42E5-4d98-A2EE-7FFF230D82B8}')" style="text-decoration: none; color: #000000;"><img src="../../images/plus03.gif" align="absmiddle" id="param{DCFE079D-42E5-4d98-A2EE-7FFF230D82B8}" border="0" />other: QTY</a>, 
+					<table border="0" cellspacing="0" cellpadding="0" class="Table" style="padding: 4px 18px;">
+						<tr id="param{DCFE079D-42E5-4d98-A2EE-7FFF230D82B8}00" style="display: none;">
+							<td width="50"><strong>Default:</strong></td>
+							<td></td>
+						</tr>
+						<tr id="param{DCFE079D-42E5-4d98-A2EE-7FFF230D82B8}01" style="display: none;">
+							<td width="50"><strong>Kind:</strong></td>
+							<td>in</td>
+						</tr>
+						<tr id="param{DCFE079D-42E5-4d98-A2EE-7FFF230D82B8}02" style="display: none;">
+							<td width="50"><strong>Stereotype: </strong></td>
+							<td></td>
+						</tr>
+						<tr id="param{DCFE079D-42E5-4d98-A2EE-7FFF230D82B8}03" style="display: none;">
+							<td width="50"></td>
+							<td></td>
+						</tr>
+					</table>
+):<a href="EA1357.htm">BL</a>
+				</td>
+				<td width="60%" class="TableRow">
+					<i>Sequential  </i>
+					<table>
+						<tr>
+							<td valign = "top"><i></i><span style="margin-left: .7cm;"> </span></td>
+							<td></td>
+						</tr>
+					</table>
+					<div class="ObjectDetailsNotes"><table>
+	<tr>
+		<td valign="top">
+			<i>Notes: </i><span style="margin-left: .4cm;"> </span>
+		</td>
+		<td>
+			True if the value of this is greater than the value of other.
+		</td>
+	</tr>
+</table></div>
+
+				</td>
+			</tr>
+			<tr>
+				<td width="40%" class="TableRow">
+					<i>public</i><br />
+					<strong>-</strong>(<br />
+					<a href="#" onclick="parent.toggleData('param{3F293A0F-DEDB-4198-8FD0-94B50E929B45}')" style="text-decoration: none; color: #000000;"><img src="../../images/plus03.gif" align="absmiddle" id="param{3F293A0F-DEDB-4198-8FD0-94B50E929B45}" border="0" />other: QTY</a>, 
+					<table border="0" cellspacing="0" cellpadding="0" class="Table" style="padding: 4px 18px;">
+						<tr id="param{3F293A0F-DEDB-4198-8FD0-94B50E929B45}00" style="display: none;">
+							<td width="50"><strong>Default:</strong></td>
+							<td></td>
+						</tr>
+						<tr id="param{3F293A0F-DEDB-4198-8FD0-94B50E929B45}01" style="display: none;">
+							<td width="50"><strong>Kind:</strong></td>
+							<td>in</td>
+						</tr>
+						<tr id="param{3F293A0F-DEDB-4198-8FD0-94B50E929B45}02" style="display: none;">
+							<td width="50"><strong>Stereotype: </strong></td>
+							<td></td>
+						</tr>
+						<tr id="param{3F293A0F-DEDB-4198-8FD0-94B50E929B45}03" style="display: none;">
+							<td width="50"></td>
+							<td></td>
+						</tr>
+					</table>
+):<a href="EA1416.htm">QTY</a>
+				</td>
+				<td width="60%" class="TableRow">
+					<i>Sequential  </i>
+					<table>
+						<tr>
+							<td valign = "top"><i></i><span style="margin-left: .7cm;"> </span></td>
+							<td></td>
+						</tr>
+					</table>
+					<div class="ObjectDetailsNotes"><table>
+	<tr>
+		<td valign="top">
+			<i>Notes: </i><span style="margin-left: .4cm;"> </span>
+		</td>
+		<td>
+			The result of subtraction of other from this. Other must be of the type of value (same type as this, except for TS, where the value must be a TS or a PQ with units of time, or for PQ, where the value of other must have compatible units), else the result is nullFlavor NI.
+		</td>
+	</tr>
+</table></div>
+
+				</td>
+			</tr>
+			<tr>
+				<td width="40%" class="TableRow">
+					<i>public</i><br />
+					<strong>+</strong>(<br />
+					<a href="#" onclick="parent.toggleData('param{E64F3C1D-6082-46fe-93D7-1F790DBB9EF8}')" style="text-decoration: none; color: #000000;"><img src="../../images/plus03.gif" align="absmiddle" id="param{E64F3C1D-6082-46fe-93D7-1F790DBB9EF8}" border="0" />other: QTY</a>, 
+					<table border="0" cellspacing="0" cellpadding="0" class="Table" style="padding: 4px 18px;">
+						<tr id="param{E64F3C1D-6082-46fe-93D7-1F790DBB9EF8}00" style="display: none;">
+							<td width="50"><strong>Default:</strong></td>
+							<td></td>
+						</tr>
+						<tr id="param{E64F3C1D-6082-46fe-93D7-1F790DBB9EF8}01" style="display: none;">
+							<td width="50"><strong>Kind:</strong></td>
+							<td>in</td>
+						</tr>
+						<tr id="param{E64F3C1D-6082-46fe-93D7-1F790DBB9EF8}02" style="display: none;">
+							<td width="50"><strong>Stereotype: </strong></td>
+							<td></td>
+						</tr>
+						<tr id="param{E64F3C1D-6082-46fe-93D7-1F790DBB9EF8}03" style="display: none;">
+							<td width="50"></td>
+							<td></td>
+						</tr>
+					</table>
+):<a href="EA1416.htm">QTY</a>
+				</td>
+				<td width="60%" class="TableRow">
+					<i>Sequential  </i>
+					<table>
+						<tr>
+							<td valign = "top"><i></i><span style="margin-left: .7cm;"> </span></td>
+							<td></td>
+						</tr>
+					</table>
+					<div class="ObjectDetailsNotes"><table>
+	<tr>
+		<td valign="top">
+			<i>Notes: </i><span style="margin-left: .4cm;"> </span>
+		</td>
+		<td>
+			The result of addition of this and other. Other must be of the right type of value (same type as this, except for TS, where the value must be a PQ with units of time, or for PQ, where the value of other must have compatible units), else the result is nullFlavor NI.
+		</td>
+	</tr>
+</table></div>
+
+				</td>
+			</tr>
+			<tr>
+				<td width="40%" class="TableRow">
+					<i>public</i><br />
+					<strong>comparable</strong>(<br />
+					<a href="#" onclick="parent.toggleData('param{4FC64EC0-87CE-4e90-8951-3E7066CD5FE1}')" style="text-decoration: none; color: #000000;"><img src="../../images/plus03.gif" align="absmiddle" id="param{4FC64EC0-87CE-4e90-8951-3E7066CD5FE1}" border="0" />other: QTY</a>, 
+					<table border="0" cellspacing="0" cellpadding="0" class="Table" style="padding: 4px 18px;">
+						<tr id="param{4FC64EC0-87CE-4e90-8951-3E7066CD5FE1}00" style="display: none;">
+							<td width="50"><strong>Default:</strong></td>
+							<td></td>
+						</tr>
+						<tr id="param{4FC64EC0-87CE-4e90-8951-3E7066CD5FE1}01" style="display: none;">
+							<td width="50"><strong>Kind:</strong></td>
+							<td>in</td>
+						</tr>
+						<tr id="param{4FC64EC0-87CE-4e90-8951-3E7066CD5FE1}02" style="display: none;">
+							<td width="50"><strong>Stereotype: </strong></td>
+							<td></td>
+						</tr>
+						<tr id="param{4FC64EC0-87CE-4e90-8951-3E7066CD5FE1}03" style="display: none;">
+							<td width="50"></td>
+							<td></td>
+						</tr>
+					</table>
+):<a href="EA1357.htm">BL</a>
+				</td>
+				<td width="60%" class="TableRow">
+					<i>Sequential  </i>
+					<table>
+						<tr>
+							<td valign = "top"><i></i><span style="margin-left: .7cm;"> </span></td>
+							<td></td>
+						</tr>
+					</table>
+					<div class="ObjectDetailsNotes"><table>
+	<tr>
+		<td valign="top">
+			<i>Notes: </i><span style="margin-left: .4cm;"> </span>
+		</td>
+		<td>
+			whether this and other can be compared using equality. &lt;br /&gt;Note:&nbsp;<WBR> Generally this is true if both this and other are the same type unless noted otherwise for specializations for QTY.
+		</td>
+	</tr>
+</table></div>
+
+				</td>
+			</tr>
+			<tr>
+				<td width="40%" class="TableRow">
+					<i>public</i><br />
+					<strong>isDifference</strong>(<br />
+					<a href="#" onclick="parent.toggleData('param{67D419C8-606B-4fc8-955D-CCEF20CF09EA}')" style="text-decoration: none; color: #000000;"><img src="../../images/plus03.gif" align="absmiddle" id="param{67D419C8-606B-4fc8-955D-CCEF20CF09EA}" border="0" />other: QTY</a>, 
+					<table border="0" cellspacing="0" cellpadding="0" class="Table" style="padding: 4px 18px;">
+						<tr id="param{67D419C8-606B-4fc8-955D-CCEF20CF09EA}00" style="display: none;">
+							<td width="50"><strong>Default:</strong></td>
+							<td></td>
+						</tr>
+						<tr id="param{67D419C8-606B-4fc8-955D-CCEF20CF09EA}01" style="display: none;">
+							<td width="50"><strong>Kind:</strong></td>
+							<td>in</td>
+						</tr>
+						<tr id="param{67D419C8-606B-4fc8-955D-CCEF20CF09EA}02" style="display: none;">
+							<td width="50"><strong>Stereotype: </strong></td>
+							<td></td>
+						</tr>
+						<tr id="param{67D419C8-606B-4fc8-955D-CCEF20CF09EA}03" style="display: none;">
+							<td width="50"></td>
+							<td></td>
+						</tr>
+					</table>
+):Boolean
+				</td>
+				<td width="60%" class="TableRow">
+					<i>Sequential  </i>
+					<table>
+						<tr>
+							<td valign = "top"><i></i><span style="margin-left: .7cm;"> </span></td>
+							<td></td>
+						</tr>
+					</table>
+					<div class="ObjectDetailsNotes"><table>
+	<tr>
+		<td valign="top">
+			<i>Notes: </i><span style="margin-left: .4cm;"> </span>
+		</td>
+		<td>
+			True if other is an instance that expresses the difference between two instances of this type. &lt;br /&gt;Note:&nbsp;<WBR> Usually this is true if other the same as the type, except for TS, where the difference is expressed as a PQ with a unit that is a kind of time, and for PQ, where the units must be compatible. &lt;br /&gt;
+		</td>
+	</tr>
+</table></div>
+
+				</td>
+			</tr>
+
+		</table>
+</div>		<div class="ItemBody" id="ConstraintsTable">
+			<table border="0" cellspacing="0" cellpadding="0" class="Table">
+			  	<tr>
+					<td width="24%" class="TableHeading">Constraint</td>
+					<td width="8%" class="TableHeading">Type</td>
+					<td width="8%" class="TableHeading">Status</td>
+					<td width="60%" class="TableHeading">Detail</td>
+				</tr>
+				<tr>
+					<td width="24%" class="TableRow">uncertainty</td>
+					<td width="8%" class="TableRow">Invariant</td>
+					<td width="8%" class="TableRow">Approved</td>
+					<td width="60%" class="TableRow"><div class="ObjectDetailsNotes">uncertainty.isNotNull implies <br />&nbsp;<WBR>&nbsp;<WBR>&nbsp;<WBR>&nbsp;<WBR>&nbsp;<WBR> (uncertainty.expression.isNull and <br />&nbsp;<WBR>&nbsp;<WBR>&nbsp;<WBR>&nbsp;<WBR>&nbsp;<WBR>&nbsp;<WBR> uncertainty.uncertainty.isNull and <br />&nbsp;<WBR>&nbsp;<WBR>&nbsp;<WBR>&nbsp;<WBR>&nbsp;<WBR>&nbsp;<WBR> uncertainty.originalText.isNull)<br /></div>
+</td>
+				</tr>
+				<tr>
+					<td width="24%" class="TableRow">No History or Update Mode</td>
+					<td width="8%" class="TableRow">Invariant</td>
+					<td width="8%" class="TableRow">Approved</td>
+					<td width="60%" class="TableRow"><div class="ObjectDetailsNotes">noUpdateOrHistory(uncertainty) and<br />&nbsp;<WBR> noUpdateOrHistory(originalText) and<br />&nbsp;<WBR> noUpdateOrHistory(expression)<br /></div>
+</td>
+				</tr>
+
+			</table>
+		</div>
+		<div class="ItemBody" id="LinksTable">
+			<table align="center" border="0" cellspacing="0" cellpadding="0" class="Table">
+				<tr>
+					<td width="30%" class="TableHeading">Object</td>
+					<td width="15%" class="TableHeading">Type</td>
+					<td width="15%" class="TableHeading">Connection</td>
+					<td width="40%" class="TableHeading">Notes</td>
+				</tr>
+				<tr>
+					<td width="30%" class="TableRow" valign="top"><a href="EA1363.htm">CO</a></td>
+					<td width="15%" class="TableRow" valign="top">Class</td>
+					<td width="15%" class="TableRow" valign="top">Generalization</td>
+					<td width="40%" class="TableRow" valign="top">&nbsp;</td>
+				</tr>
+				<tr>
+					<td width="30%" class="TableRow" valign="top"><a href="EA1405.htm">PQ</a></td>
+					<td width="15%" class="TableRow" valign="top">Class</td>
+					<td width="15%" class="TableRow" valign="top">Generalization</td>
+					<td width="40%" class="TableRow" valign="top">&nbsp;</td>
+				</tr>
+				<tr>
+					<td width="30%" class="TableRow" valign="top"><a href="EA1389.htm">INT</a></td>
+					<td width="15%" class="TableRow" valign="top">Class</td>
+					<td width="15%" class="TableRow" valign="top">Generalization</td>
+					<td width="40%" class="TableRow" valign="top">&nbsp;</td>
+				</tr>
+				<tr>
+					<td width="30%" class="TableRow" valign="top"><a href="EA1320.htm">«interface» QTY</a></td>
+					<td width="15%" class="TableRow" valign="top">Class</td>
+					<td width="15%" class="TableRow" valign="top">Realisation</td>
+					<td width="40%" class="TableRow" valign="top">&nbsp;</td>
+				</tr>
+				<tr>
+					<td width="30%" class="TableRow" valign="top"><a href="EA1287.htm">«mixin» EXPR</a></td>
+					<td width="15%" class="TableRow" valign="top">Class</td>
+					<td width="15%" class="TableRow" valign="top">Realisation</td>
+					<td width="40%" class="TableRow" valign="top">&nbsp;</td>
+				</tr>
+				<tr>
+					<td width="30%" class="TableRow" valign="top"><a href="EA1417.htm">REAL</a></td>
+					<td width="15%" class="TableRow" valign="top">Class</td>
+					<td width="15%" class="TableRow" valign="top">Generalization</td>
+					<td width="40%" class="TableRow" valign="top">&nbsp;</td>
+				</tr>
+				<tr>
+					<td width="30%" class="TableRow" valign="top"><a href="EA1443.htm">TS</a></td>
+					<td width="15%" class="TableRow" valign="top">Class</td>
+					<td width="15%" class="TableRow" valign="top">Generalization</td>
+					<td width="40%" class="TableRow" valign="top">&nbsp;</td>
+				</tr>
+				<tr>
+					<td width="30%" class="TableRow" valign="top"><a href="EA1345.htm">«mixin» URG</a></td>
+					<td width="15%" class="TableRow" valign="top">Class</td>
+					<td width="15%" class="TableRow" valign="top">Realisation</td>
+					<td width="40%" class="TableRow" valign="top">&nbsp;</td>
+				</tr>
+				<tr>
+					<td width="30%" class="TableRow" valign="top"><a href="EA1354.htm">ANY</a></td>
+					<td width="15%" class="TableRow" valign="top">Class</td>
+					<td width="15%" class="TableRow" valign="top">Generalization</td>
+					<td width="40%" class="TableRow" valign="top">&nbsp;</td>
+				</tr>
+				<tr>
+					<td width="30%" class="TableRow" valign="top"><a href="EA1418.htm">RTO</a></td>
+					<td width="15%" class="TableRow" valign="top">Class</td>
+					<td width="15%" class="TableRow" valign="top">Generalization</td>
+					<td width="40%" class="TableRow" valign="top">&nbsp;</td>
+				</tr>
+				<tr>
+					<td width="30%" class="TableRow" valign="top"><a href="EA1310.htm">«mixin» PPD</a></td>
+					<td width="15%" class="TableRow" valign="top">Class</td>
+					<td width="15%" class="TableRow" valign="top">Realisation</td>
+					<td width="40%" class="TableRow" valign="top">&nbsp;</td>
+				</tr>
+				<tr>
+					<td width="30%" class="TableRow" valign="top"><a href="EA1398.htm">MO</a></td>
+					<td width="15%" class="TableRow" valign="top">Class</td>
+					<td width="15%" class="TableRow" valign="top">Generalization</td>
+					<td width="40%" class="TableRow" valign="top">&nbsp;</td>
+				</tr>
+
+			</table>
+		</div>
+	</div>
+<div class="pageFooter"></div>
+ 
+</body>
+</html>ding">Notes</td>

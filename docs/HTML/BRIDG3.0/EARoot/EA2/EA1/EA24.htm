@@ -1,0 +1,431 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>Adverse Event Sub-Domain::AdverseEvent</title>
+<link href="../../../css/ea.css" rel="stylesheet" type="text/css" />
+<script>
+function initPage(src) {
+	if(parent==this&&(this.location+"").indexOf('EARoot')!=-1)
+		document.location=(this.location+"").substring(0,(this.location+"").indexOf('EARoot'))+"index"+(this.location+"").substring((this.location+"").lastIndexOf('.'))+"?goto="+((this.location+"").substring((this.location+"").indexOf('EARoot')+7,(this.location+"").lastIndexOf('.')).replace(/\//g,':').replace(/EA/g,""));
+	else
+		parent.initPage(src);
+}
+</script>
+</head>
+<body onload="initPage(this);" class="Content">
+<div class="pageHeader"></div>
+<div class="PageBody">
+	<span class="ObjectTitle">AdverseEvent  : public   class</span>
+	<table border="0" cellpadding="0" cellspacing="0" class="ObjectDetails">
+		<tr>
+			<td width="15%" class="ObjectDetailsTopic">Created:</td>
+			<td width="85%" class="ObjectDetailsValue">3/3/2008 1:29:07 PM</td>
+		</tr>
+		<tr>
+			<td class="ObjectDetailsTopic">Modified:</td>
+			<td class="ObjectDetailsValue">9/11/2009 2:25:47 PM</td>
+		</tr>
+		<tr style="height: 10px"><td colspan="2"></td></tr>
+		<tr>
+			<td class="ObjectDetailsTopic"><img src="../../../images/plus03.gif" align="absmiddle" id="proj" onclick="parent.toggleData(this.id)" />Project:</td>
+			<td class="ObjectDetailsValue"></td>
+		</tr>
+		<tr id="proj00" style="display: none;">
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Author:</td>
+			<td class="ObjectDetailsValue">BRIDG SCC</td>
+		</tr>
+		<tr id="proj01" style="display: none;">
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Version:</td>
+			<td class="ObjectDetailsValue">1.0</td>
+		</tr>
+		<tr id="proj02" style="display: none;">
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Phase:</td>
+			<td class="ObjectDetailsValue">1.0</td>
+		</tr>
+		<tr id="proj03" style="display: none;">
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Status:</td>
+			<td class="ObjectDetailsValue">Release 3.0</td>
+		</tr>
+		<tr id="proj04" style="display: none;">
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Complexity:</td>
+			<td class="ObjectDetailsValue">Easy</td>
+		</tr>
+		<tr>
+			<td class="ObjectDetailsTopic"><img src="../../../images/plus03.gif" align="absmiddle" id="adv" onclick="parent.toggleData(this.id)" />Advanced:</td>
+			<td class="ObjectDetailsValue"></td>
+		</tr>
+		<tr id="adv00" style="display: none;">
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">UUID:</td>
+			<td class="ObjectDetailsValue">{EC125D25-9421-4273-BBF8-1148D7427E77}</td>
+		</tr>
+		<tr id="adv01" style="display: none;">
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Appears In:</td>
+			<td class="ObjectDetailsValue"><a href="../EA11.htm">UML-Based Comprehensive BRIDG Model Diagram</a>, <a href="EA22.htm">View AE: Adverse Event</a></td>
+		</tr>
+	</table>
+	<div class="ObjectDetailsNotes">&lt;p&gt;Any unfavorable and unintended sign, symptom, disease, or other medical occurrence with a temporal association with the use of a medical product, procedure or other therapy, or in conjunction with a research study, regardless of causal relationship. &lt;br/&gt;&lt;/p&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;&lt;p&gt;For example, death, back pain, headache, pulmonary embolism, heart attack.&lt;br/&gt;&lt;/p&gt;</div>
+
+	<div class="TableGroup" id="TableGroup">
+		<ul class="ItemTitle">
+			<li onClick="parent.toggleItem('Attributes');" id="AttributesTitle">Attributes</li>
+			<li onClick="parent.toggleItem('AssociationsFrom');" id="AssociationsFromTitle">Associations From</li>
+			<li onClick="parent.toggleItem('TaggedVal');" id="TaggedValTitle">Tagged Values</li>
+			<li onClick="parent.toggleItem('Links');" id="LinksTitle">Other Links</li>
+		</ul>
+<div class="ItemBody" id="AttributesTable">
+	<table border="0" cellspacing="0" cellpadding="0" class="Table">
+		<tr>
+			<td width="40%" class="TableHeading">Attribute</td>
+			<td width="60%" class="TableHeading">Details</td>
+		</tr>
+						<tr>
+				<td width="40%" class="TableRow" valign="top"><i>public CD</i><br /><strong>&nbsp;&nbsp;gradeCode</strong></td>
+				<td width="60%" class="TableRow" valign="top"><i></i>Map:AE=AdverseEvent.gradeOrSeverity<br>Map:CTOM=AdverseEvent.ctcGradeCode<br>Map:CTOM=AdverseEvent.ctcGradeCodeSystem<br>Map:SDTM IG=AE.AETOXGR<br><div class="ObjectDetailsNotes"><table>
+	<tr>
+		<td valign="top">
+			<i>Notes: </i><span style="margin-left: .4cm;"> </span>
+		</td>
+		<td>
+			A coded value specifying the level of injury suffered by the subject for whom the event is reported. &lt;br /&gt;&lt;br /&gt;For example, the gradeCode could be 3 if the CTCAE coding system is being used.
+		</td>
+	</tr>
+</table></div>
+</td>
+			</tr>			<tr>
+				<td width="40%" class="TableRow" valign="top"><i>public CD</i><br /><strong>&nbsp;&nbsp;severityCode</strong></td>
+				<td width="60%" class="TableRow" valign="top"><i></i>Map:AE=AdverseEvent.gradeOrSeverity<br>Map:SDTM IG=AE.AESEV<br><div class="ObjectDetailsNotes"><table>
+	<tr>
+		<td valign="top">
+			<i>Notes: </i><span style="margin-left: .4cm;"> </span>
+		</td>
+		<td>
+			A coded value specifying the intensity of the event.&lt;br /&gt;&lt;br /&gt;For example, moderate could be used to describe acne. 
+		</td>
+	</tr>
+</table></div>
+</td>
+			</tr>			<tr>
+				<td width="40%" class="TableRow" valign="top"><i>public CD</i><br /><strong>&nbsp;&nbsp;seriousnessCode</strong></td>
+				<td width="60%" class="TableRow" valign="top"><i></i>Map:AE=AdverseEvent.seriousnessCode<br>Map:AE=AdverseEvent.hospitalizationRequiredIndicator<br>Map:CTOM=AdverseEvent.seriousReasonCode<br>Map:SDTM IG=AE.AESHOSP<br>Map:SDTM IG=AE.AESER<br><div class="ObjectDetailsNotes"><table>
+	<tr>
+		<td valign="top">
+			<i>Notes: </i><span style="margin-left: .4cm;"> </span>
+		</td>
+		<td>
+			A coded value specifying the degree or extent of the consequence suffered by the subject.&nbsp;<WBR> &lt;br /&gt;&lt;br /&gt;For example, resulted in death, required hospitalization, was life threatening. 
+		</td>
+	</tr>
+</table></div>
+</td>
+			</tr>			<tr>
+				<td width="40%" class="TableRow" valign="top"><i>public CD</i><br /><strong>&nbsp;&nbsp;categoryCode</strong></td>
+				<td width="60%" class="TableRow" valign="top"><i></i>Map:COPPA=InterventionalStudyProtocol.interventionTypeCode<br>Map:COPPA=SubstanceAdministration.categoryCode<br>Map:COPPA=PlannedActivity.categoryCode<br>Map:COPPA=PlannedObservation.categoryCode<br>Map:COPPA=PlannedEligibilityCriterion.categoryCode<br>Map:COPPA=Activity.categoryCode<br>Map:CTOM=Activity.type<br>Map:CTOM=Surgery.name<br>Map:CTOM=SpecimenAcquisition.type<br>Map:CTOM=Surgery.startDate<br>Map:CTOM=Radiation.type<br>Map:CTOM=Surgery.anatomicSiteCodeSystem<br>Map:CTOM=Surgery.reasonCode<br>Map:CTOM=SubstanceAdministration.name<br>Map:CTOM=Surgery.durationUnitOfMeasureCode<br>Map:CTOM=Surgery.durationValue<br>Map:CTOM=SubstanceAdministration.type<br>Map:CTOM=Procedure.type<br>Map:CTOM=Imaging.type<br>Map:CTOM=Surgery.stopDate<br>Map:CTOM=Surgery.type<br>Map:CTOM=Surgery.anatomicSiteCode<br>Map:CTOM=Surgery.descriptionText<br>Map:Lab=Activity.typeModifier<br>Map:Lab=SubjectAssignment.type <br>Map:PSC=ActivityType.name<br>Map:SDTM IG=DS.DSCAT<br>Map:SDTM IG=QS.QSCAT<br>Map:SDTM IG=DA.DACAT<br>Map:SDTM IG=LB.LBCAT<br>Map:SDTM IG=CM.CMCAT<br>Map:SDTM IG=PE.PECAT<br>Map:SDTM IG=VS.VSCAT<br>Map:SDTM IG=EG.EGCAT<br>Map:SDTM IG=MH.MHCAT<br>Map:SDTM IG=EX.EXCAT<br>Map:SDTM IG=TI.IECAT<br>Map:SDTM IG=SC.SCCAT<br>Map:SDTM IG=SU.SUCAT<br>Map:SDTM IG=IE.IECAT<br><div class="ObjectDetailsNotes"><table>
+	<tr>
+		<td valign="top">
+			<i>Notes: </i><span style="margin-left: .4cm;"> </span>
+		</td>
+		<td>
+			A coded value specifying a classification of the adverse event.&lt;br /&gt;&lt;br /&gt;For example, bleeding, hypoglycemia.&lt;br /&gt;&lt;br /&gt;NOTE: Theoretically speaking, the category should be derivable from the subcategory, however if there may only be a category and not a subcategory, then both attributes must be present in the model. 
+		</td>
+	</tr>
+</table></div>
+</td>
+			</tr>			<tr>
+				<td width="40%" class="TableRow" valign="top"><i>public CD</i><br /><strong>&nbsp;&nbsp;subcategoryCode</strong></td>
+				<td width="60%" class="TableRow" valign="top"><i></i>Map:COPPA=Activity.subcategoryCode<br>Map:COPPA=PlannedActivity.subcategoryCode<br>Map:COPPA=SubstanceAdministration.subcategoryCode<br>Map:COPPA=PlannedObservation.subcategoryCode<br>Map:COPPA=PlannedEligibilityCriterion.subcategoryCode<br>Map:CTOM=Surgery.type<br>Map:Lab=Activity.typeModifier<br>Map:SDTM IG=VS.VSSCAT<br>Map:SDTM IG=MH.MHSCAT<br>Map:SDTM IG=IE.IESCAT<br>Map:SDTM IG=CM.CMSCAT<br>Map:SDTM IG=LB.LBSCAT<br>Map:SDTM IG=QS.QSSCAT<br>Map:SDTM IG=EX.EXSCAT<br>Map:SDTM IG=SU.SUSCAT<br>Map:SDTM IG=EG.EGSCAT<br>Map:SDTM IG=PE.PESCAT<br>Map:SDTM IG=DA.DASCAT<br>Map:SDTM IG=SC.SCSCAT<br>Map:SDTM IG=DS.DSSCAT<br>Map:WHO=Intervention(s)<br><div class="ObjectDetailsNotes"><table>
+	<tr>
+		<td valign="top">
+			<i>Notes: </i><span style="margin-left: .4cm;"> </span>
+		</td>
+		<td>
+			A coded value specifying a subdivision within a larger category of an adverse event.&lt;br /&gt;&lt;br /&gt;For example, neurologic.&lt;br /&gt;&lt;br /&gt;NOTE: Theoretically speaking, the category should be derivable from the subcategory, however if there may only be a category and not a subcategory, then both attributes must be present in the model. 
+		</td>
+	</tr>
+</table></div>
+</td>
+			</tr>			<tr>
+				<td width="40%" class="TableRow" valign="top"><i>public CD</i><br /><strong>&nbsp;&nbsp;occurrencePatternCode</strong></td>
+				<td width="60%" class="TableRow" valign="top"><i></i>Map:AE=AdverseEvent.patternCode<br>Map:CTOM=AdverseEvent.conditionPatternCode<br>Map:SDTM IG=AE.AEPATT<br><div class="ObjectDetailsNotes"><table>
+	<tr>
+		<td valign="top">
+			<i>Notes: </i><span style="margin-left: .4cm;"> </span>
+		</td>
+		<td>
+			A coded value specifying the time recurrence by which an adverse event occurs.&nbsp;<WBR> &lt;br /&gt;&lt;br /&gt;For example, intermittent. 
+		</td>
+	</tr>
+</table></div>
+</td>
+			</tr>			<tr>
+				<td width="40%" class="TableRow" valign="top"><i>public CD</i><br /><strong>&nbsp;&nbsp;endRelativeToReferenceCode</strong></td>
+				<td width="60%" class="TableRow" valign="top"><i></i>Map:SDTM IG=AE.ENRF<br><div class="ObjectDetailsNotes"><table>
+	<tr>
+		<td valign="top">
+			<i>Notes: </i><span style="margin-left: .4cm;"> </span>
+		</td>
+		<td>
+			A coded value specifying when this adverse event ended with respect to the sponsor-defined reference period. &lt;br /&gt;&lt;br /&gt;&lt;br /&gt;For example, before, during, during/after, after, etc.&lt;br /&gt;&lt;br /&gt;NOTE: If the reference period is computably represented, AdverseEvent.endRelativeToReferenceCode is conceptually derivable based on the reference period and the resolution date of the adverse event.&lt;br /&gt;&lt;br /&gt;NOTE: Sponsors should define the reference period in the study metadata.&lt;br /&gt;&lt;br /&gt;NOTE: This may be populated when a start date is not.
+		</td>
+	</tr>
+</table></div>
+</td>
+			</tr>			<tr>
+				<td width="40%" class="TableRow" valign="top"><i>public DSET<CD></i><br /><strong>&nbsp;&nbsp;unexpectedReasonCode</strong></td>
+				<td width="60%" class="TableRow" valign="top"><i></i>Map:AE=AdverseEvent.unexpectedReason<br><div class="ObjectDetailsNotes"><table>
+	<tr>
+		<td valign="top">
+			<i>Notes: </i><span style="margin-left: .4cm;"> </span>
+		</td>
+		<td>
+			A coded value specifying the representation of the criteria for determining whether an adverse event (experience or reaction) is considered unanticipated.&nbsp;<WBR> &lt;br /&gt;&lt;br /&gt;For example, severity, frequency, or specificity from what has been previously documented.&nbsp;<WBR> 
+		</td>
+	</tr>
+</table></div>
+</td>
+			</tr>			<tr>
+				<td width="40%" class="TableRow" valign="top"><i>public BL</i><br /><strong>&nbsp;&nbsp;expectedIndicator</strong></td>
+				<td width="60%" class="TableRow" valign="top"><i></i>Map:COPPA=AdverseEvent.expectedIndicator<br><div class="ObjectDetailsNotes"><table>
+	<tr>
+		<td valign="top">
+			<i>Notes: </i><span style="margin-left: .4cm;"> </span>
+		</td>
+		<td>
+			Specifies whether the specificity (nature), frequency, or severity of an adverse event is consistent with the applicable study documentation (e.g., investigator&#39;s brochure, protocol document, or consent document) or product labeling (package insert). 
+		</td>
+	</tr>
+</table></div>
+</td>
+			</tr>			<tr>
+				<td width="40%" class="TableRow" valign="top"><i>public BL</i><br /><strong>&nbsp;&nbsp;hospitalizationRequiredIndicator</strong></td>
+				<td width="60%" class="TableRow" valign="top"><i></i>Map:AE=AdverseEvent.hospitalizationRequiredIndicator<br>Map:SDTM IG=AE.AESHOSP<br><div class="ObjectDetailsNotes"><table>
+	<tr>
+		<td valign="top">
+			<i>Notes: </i><span style="margin-left: .4cm;"> </span>
+		</td>
+		<td>
+			Specifies whether the subject requires hospitalization as a result of the adverse event.
+		</td>
+	</tr>
+</table></div>
+</td>
+			</tr>			<tr>
+				<td width="40%" class="TableRow" valign="top"><i>public BL</i><br /><strong>&nbsp;&nbsp;highlightedIndicator</strong></td>
+				<td width="60%" class="TableRow" valign="top"><i></i>Map: AE=AdverseEvent.highlightedIndicator<br><div class="ObjectDetailsNotes"><table>
+	<tr>
+		<td valign="top">
+			<i>Notes: </i><span style="margin-left: .4cm;"> </span>
+		</td>
+		<td>
+			Specifies whether the adverse event or reaction term is a major concern or reason for reporting the adverse event.
+		</td>
+	</tr>
+</table></div>
+</td>
+			</tr>			<tr>
+				<td width="40%" class="TableRow" valign="top"><i>public PQ.TIME</i><br /><strong>&nbsp;&nbsp;duration</strong></td>
+				<td width="60%" class="TableRow" valign="top"><i></i>Map:SDTM IG=AE.DUR<br><div class="ObjectDetailsNotes"><table>
+	<tr>
+		<td valign="top">
+			<i>Notes: </i><span style="margin-left: .4cm;"> </span>
+		</td>
+		<td>
+			The length of time of an adverse event. &lt;br /&gt;&lt;br /&gt;For example, 1 day, 2 hours.&lt;br /&gt;&lt;br /&gt;NOTE: This is used only when duration is collected on the CRF and not derived from start and end date/times. 
+		</td>
+	</tr>
+</table></div>
+</td>
+			</tr>			<tr>
+				<td width="40%" class="TableRow" valign="top"><i>public TS.DATETIME</i><br /><strong>&nbsp;&nbsp;onsetDate</strong></td>
+				<td width="60%" class="TableRow" valign="top"><i></i>Map:AE=AdverseEvent.onsetDate<br>Map:CTOM=AdverseEvent.onsetDate<br>Map:SDTM IG=AE.AESTDTC<br><div class="ObjectDetailsNotes"><table>
+	<tr>
+		<td valign="top">
+			<i>Notes: </i><span style="margin-left: .4cm;"> </span>
+		</td>
+		<td>
+			The date (and time) on which an adverse event began. &lt;br /&gt;&lt;br /&gt;NOTE: Must be at least a full Date (8 digits) but could contain a time (14 digits).
+		</td>
+	</tr>
+</table></div>
+</td>
+			</tr>			<tr>
+				<td width="40%" class="TableRow" valign="top"><i>public TS.DATETIME</i><br /><strong>&nbsp;&nbsp;resolutionDate</strong></td>
+				<td width="60%" class="TableRow" valign="top"><i></i>Map:AE=AdverseEvent.resolutionDate<br>Map:CTOM=AdverseEvent.resolvedDate<br>Map:SDTM IG=AE.AEENDTC<br><div class="ObjectDetailsNotes"><table>
+	<tr>
+		<td valign="top">
+			<i>Notes: </i><span style="margin-left: .4cm;"> </span>
+		</td>
+		<td>
+			The date (and time) when the adverse event ends or returns to baseline.&lt;br /&gt;&lt;br /&gt;NOTE: Must be at least a full Date (8 digits) but could contain a time (14 digits).
+		</td>
+	</tr>
+</table></div>
+</td>
+			</tr>
+		</table>
+</div>		<div class="ItemBody" id="AssociationsFromTable">
+			<table border="0" cellspacing="0" cellpadding="0" class="Table">
+				<tr>
+					<td width="20%" class="TableHeading">Element</td>
+					<td width="25%" class="TableHeading">Source Role</td>
+					<td width="25%" class="TableHeading">Target Role</td>
+					<td width="30%" class="TableHeading">Details</td>
+				</tr>
+				<tr>
+					<td width="20%" class="TableRow" valign="top">
+						<a href="EA34.htm">PerformedProductInvestigation</a><br />
+						Class &nbsp;
+					</td>
+					<td width="20%" class="TableRow" valign="top">
+						<strong>Name:</strong> triggered<br />
+						&nbsp;
+					</td>
+					<td width="20%" class="TableRow" valign="top">
+						<strong>Name:</strong> triggering<br />
+						&nbsp;	
+					</td>
+					<td width="30%" class="TableRow" valign="top"><div class="ObjectDetailsNotes">&lt;p&gt;Each PerformedProductInvestigation always is triggered by one AdverseEvent.&#160; Each AdverseEvent sometimes triggers one or more PerformedProductInvestigation. NOTE: The investigation may also involve either a subject, a study subject or an experimental unit as a focus of activity.&lt;br/&gt;&lt;/p&gt;</div>
+</td>
+				</tr>
+				<tr>
+					<td width="20%" class="TableRow" valign="top">
+						<a href="EA28.htm">CausalAssessment</a><br />
+						Class &nbsp;
+					</td>
+					<td width="20%" class="TableRow" valign="top">
+						<strong>Name:</strong> triggered<br />
+						&nbsp;
+					</td>
+					<td width="20%" class="TableRow" valign="top">
+						<strong>Name:</strong> triggering<br />
+						&nbsp;	
+					</td>
+					<td width="30%" class="TableRow" valign="top"><div class="ObjectDetailsNotes">&lt;p&gt;Each CausalAssessment always is triggered by one AdverseEvent. Each AdverseEvent sometimes triggers one or more CausalAssessment.&lt;br/&gt;&lt;/p&gt;</div>
+</td>
+				</tr>
+				<tr>
+					<td width="20%" class="TableRow" valign="top">
+						<a href="EA26.htm">AdverseEventOutcomeAssessment</a><br />
+						Class &nbsp;
+					</td>
+					<td width="20%" class="TableRow" valign="top">
+						<strong>Name:</strong> triggered<br />
+						&nbsp;
+					</td>
+					<td width="20%" class="TableRow" valign="top">
+						<strong>Name:</strong> triggering<br />
+						&nbsp;	
+					</td>
+					<td width="30%" class="TableRow" valign="top"><div class="ObjectDetailsNotes">&lt;p&gt;Each AdverseEventOutcomeAssessment always is triggered by one AdverseEvent.&#160; Each AdverseEvent sometimes triggers one or more AdverseEventOutcomeAssessment.&lt;br/&gt;&lt;/p&gt;</div>
+</td>
+				</tr>
+				<tr>
+					<td width="20%" class="TableRow" valign="top">
+						<a href="EA38.htm">SafetyReport</a><br />
+						Class &nbsp;
+					</td>
+					<td width="20%" class="TableRow" valign="top">
+						<strong>Name:</strong> describing<br />
+						&nbsp;
+					</td>
+					<td width="20%" class="TableRow" valign="top">
+						<strong>Name:</strong> described<br />
+						&nbsp;	
+					</td>
+					<td width="30%" class="TableRow" valign="top"><div class="ObjectDetailsNotes">&lt;p&gt;Each SafetyReport sometimes describes one AdverseEvent.&#160; Each AdverseEvent always is described by one or more SafetyReport.&lt;br/&gt;&lt;/p&gt;</div>
+</td>
+				</tr>
+				<tr>
+					<td width="20%" class="TableRow" valign="top">
+						<a href="EA25.htm">AdverseEventActionTaken</a><br />
+						Class &nbsp;
+					</td>
+					<td width="20%" class="TableRow" valign="top">
+						<strong>Name:</strong> triggered<br />
+						&nbsp;
+					</td>
+					<td width="20%" class="TableRow" valign="top">
+						<strong>Name:</strong> triggering<br />
+						&nbsp;	
+					</td>
+					<td width="30%" class="TableRow" valign="top"><div class="ObjectDetailsNotes">&lt;p&gt;Each AdverseEventActionTaken always is triggered by one AdverseEvent. Each AdverseEvent sometimes triggers one or more AdverseEventActionTaken.&lt;br/&gt;&lt;/p&gt;</div>
+</td>
+				</tr>
+
+			</table>
+		</div>
+<div class="ItemBody" id="TaggedValTable">
+	<table align="center" border="0" cellspacing="0" cellpadding="0" class="Table">
+	<tr>
+			<td width="30%" class="TableHeading">Tag</td>
+			<td width="30%" class="TableHeading">Value</td>
+			<td width="40%" class="TableHeading">Details</td>
+	</tr>
+					<tr>
+				<td width="30%" class="TableRow" valign="top">Map:AE</td>
+				<td width="30%" class="TableRow" valign="top">AdverseEvent.adverseEventTermCode</td>
+				<td width="30%" class="TableRow" valign="top">&nbsp;</td>
+			</tr>			<tr>
+				<td width="30%" class="TableRow" valign="top">Map:AE</td>
+				<td width="30%" class="TableRow" valign="top">AdverseEvent.baselineDate</td>
+				<td width="30%" class="TableRow" valign="top">&nbsp;</td>
+			</tr>			<tr>
+				<td width="30%" class="TableRow" valign="top">Map:AE</td>
+				<td width="30%" class="TableRow" valign="top">AdverseEvent</td>
+				<td width="30%" class="TableRow" valign="top">&nbsp;</td>
+			</tr>			<tr>
+				<td width="30%" class="TableRow" valign="top">Map:AE</td>
+				<td width="30%" class="TableRow" valign="top">AdverseEvent.reactionText</td>
+				<td width="30%" class="TableRow" valign="top">&nbsp;</td>
+			</tr>			<tr>
+				<td width="30%" class="TableRow" valign="top">Map:AE</td>
+				<td width="30%" class="TableRow" valign="top">AdverseEvent.bodyLocation</td>
+				<td width="30%" class="TableRow" valign="top">&nbsp;</td>
+			</tr>			<tr>
+				<td width="30%" class="TableRow" valign="top">Map:CTOM</td>
+				<td width="30%" class="TableRow" valign="top">AdverseEvent.descriptionText</td>
+				<td width="30%" class="TableRow" valign="top">&nbsp;</td>
+			</tr>			<tr>
+				<td width="30%" class="TableRow" valign="top">Map:CTOM</td>
+				<td width="30%" class="TableRow" valign="top">AdverseEvent.outcomeCode</td>
+				<td width="30%" class="TableRow" valign="top">&nbsp;</td>
+			</tr>			<tr>
+				<td width="30%" class="TableRow" valign="top">Map:SDTM IG</td>
+				<td width="30%" class="TableRow" valign="top">AE.AEDECOD</td>
+				<td width="30%" class="TableRow" valign="top">&nbsp;</td>
+			</tr>			<tr>
+				<td width="30%" class="TableRow" valign="top">Map:SDTM IG</td>
+				<td width="30%" class="TableRow" valign="top">AE.AETERM</td>
+				<td width="30%" class="TableRow" valign="top">&nbsp;</td>
+			</tr>			<tr>
+				<td width="30%" class="TableRow" valign="top">Map:SDTM IG</td>
+				<td width="30%" class="TableRow" valign="top">AE.AEMODIFY</td>
+				<td width="30%" class="TableRow" valign="top">&nbsp;</td>
+			</tr>			<tr>
+				<td width="30%" class="TableRow" valign="top">Map:TDM</td>
+				<td width="30%" class="TableRow" valign="top">Incidents</td>
+				<td width="30%" class="TableRow" valign="top">&nbsp;</td>
+			</tr>
+</table>
+</div>		<div class="ItemBody" id="LinksTable">
+			<table align="center" border="0" cellspacing="0" cellpadding="0" class="Table">
+				<tr>
+					<td width="30%" class="TableHeading">Object</td>
+					<td width="15%" class="TableHeading">Type</td>
+					<td width="15%" class="TableHeading">Connection</td>
+					<td width="40%" class="TableHeading">Notes</td>
+				</tr>
+				<tr>
+					<td width="30%" class="TableRow" valign="top"><a href="../EA5/EA201.htm">PerformedObservationResult</a></td>
+					<td width="15%" class="TableRow" valign="top">Class</td>
+					<td width="15%" class="TableRow" valign="top">Generalization</td>
+					<td width="40%" class="TableRow" valign="top">&nbsp;</td>
+				</tr>
+
+			</table>
+		</div>
+	</div>
+<div class="pageFooter"></div>
+ 
+</body>
+</html>

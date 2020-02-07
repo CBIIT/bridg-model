@@ -1,0 +1,72 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>Note</title>
+<link href="../../css/ea.css" rel="stylesheet" type="text/css" />
+<script>
+function initPage(src) {
+	if(parent==this&&(this.location+"").indexOf('EARoot')!=-1)
+		document.location=(this.location+"").substring(0,(this.location+"").indexOf('EARoot'))+"index"+(this.location+"").substring((this.location+"").lastIndexOf('.'))+"?goto="+((this.location+"").substring((this.location+"").indexOf('EARoot')+7,(this.location+"").lastIndexOf('.')).replace(/\//g,':').replace(/EA/g,""));
+	else
+		parent.initPage(src);
+}
+</script>
+</head>
+<body onload="initPage(this);" class="Content">
+<div class="pageHeader"></div>
+<div class="PageBody">
+	<span class="ObjectTitle">Note  : public   note</span>
+	<table border="0" cellpadding="0" cellspacing="0" class="ObjectDetails">
+		<tr>
+			<td width="15%" class="ObjectDetailsTopic">Created:</td>
+			<td width="85%" class="ObjectDetailsValue">7/31/2006 9:07:09 PM</td>
+		</tr>
+		<tr>
+			<td class="ObjectDetailsTopic">Modified:</td>
+			<td class="ObjectDetailsValue">5/22/2009 1:06:47 PM</td>
+		</tr>
+		<tr style="height: 10px"><td colspan="2"></td></tr>
+		<tr>
+			<td class="ObjectDetailsTopic"><img src="../../images/plus03.gif" align="absmiddle" id="proj" onclick="parent.toggleData(this.id)" />Project:</td>
+			<td class="ObjectDetailsValue"></td>
+		</tr>
+		<tr id="proj00" style="display: none;">
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Author:</td>
+			<td class="ObjectDetailsValue"></td>
+		</tr>
+		<tr id="proj01" style="display: none;">
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Version:</td>
+			<td class="ObjectDetailsValue">1.0</td>
+		</tr>
+		<tr id="proj02" style="display: none;">
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Phase:</td>
+			<td class="ObjectDetailsValue">1.0</td>
+		</tr>
+		<tr id="proj03" style="display: none;">
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Status:</td>
+			<td class="ObjectDetailsValue">Proposed</td>
+		</tr>
+		<tr id="proj04" style="display: none;">
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Complexity:</td>
+			<td class="ObjectDetailsValue">Easy</td>
+		</tr>
+		<tr>
+			<td class="ObjectDetailsTopic"><img src="../../images/plus03.gif" align="absmiddle" id="adv" onclick="parent.toggleData(this.id)" />Advanced:</td>
+			<td class="ObjectDetailsValue"></td>
+		</tr>
+		<tr id="adv00" style="display: none;">
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">UUID:</td>
+			<td class="ObjectDetailsValue">{0625A1A6-B14F-451a-81C6-B37DB7A2EC93}</td>
+		</tr>
+		<tr id="adv01" style="display: none;">
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Appears In:</td>
+			<td class="ObjectDetailsValue"><a href="EA1096.htm">Quantities</a></td>
+		</tr>
+	</table>
+	<div class="ObjectDetailsNotes">&lt;p&gt;context PQR&lt;br/&gt;&lt;/p&gt;&lt;p&gt;&#160; inv &quot;null or value&quot;: isNull xor value.oclIsDefined &lt;br/&gt;&lt;/p&gt;&lt;p&gt;&#160; inv &quot;no originalText&quot;: originalText.oclIsUndefined&lt;br/&gt;&lt;/p&gt;&lt;p&gt;&#160; inv &quot;no updateMode or History on PQR&quot;: noUpdateOrHistory&lt;br/&gt;&lt;/p&gt;&lt;p&gt;&#160; inv &quot;no translations&quot;: translation.isEmpty&lt;br/&gt;&lt;/p&gt;&lt;p&gt;&#160; inv &quot;no source&quot;: source.oclIsUndefined&lt;br/&gt;&lt;/p&gt;&lt;p&gt;&#160;&#160;&#160; &lt;br/&gt;&lt;/p&gt;</div>
+
+<div class="pageFooter"></div>
+ 
+</body>
+</html>(data.oclIsUndefined and xml.oclIsUndefined) and&lt;br/&gt;&lt;/p&gt;&lt;p&gt;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; data.oclIsDefined implies (value.oclIsUndefined and xml.oclIsUndefined) and&lt;br/&gt;&lt;/p&gt;&lt;p&gt;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; xml.oclIsDefined implies (value.oclIsUndefined and data.oclIsUndefined)&lt;br/&gt;&lt;/p&gt;&lt;p&gt;&#160; inv &quot;integrityCheckAlgorithm required&quot;: integrityCheck.oclIsDefined = integrityCheckAlgorithm.oclIsDefined&lt;br/&gt;&lt;/p&gt;&lt;p&gt;&#160; inv &quot;thumbnails do not use reference&quot;: thumbnail.isNotNull implies not thumbnail.hasReference&lt;br/&gt;&lt;/p&gt;&lt;p&gt;&#160; inv &quot;thumbnails do not have thumbnails&quot;: thumbnail.isNotNull implies thumbnail.thumbnail.oclIsUndefined&lt;br/&gt;&lt;/p&gt;&lt;p&gt;&#160; inv &quot;compression only on binary&quot;: compression.oclIsDefined implies (data.oclIsDefined or reference.oclIsDefined)&lt;br/&gt;&lt;/p&gt;&lt;p&gt;&#160; inv &quot;mediaType cannot be null&quot;: isNotNull implies mediaType.oclIsDefined&lt;br/&gt;&lt;/p&gt;&lt;p&gt;&#160; inv &quot;value implies mediaType is text/plain&quot;: value.oclIsDefined implies mediaType = &#39;text/plain&#39;&lt;br/&gt;&lt;/p&gt;&lt;p&gt;&#160; inv &quot;no charset for value or xml&quot;: (value.oclIsDefined or xml.oclIsDefined) implies charset.oclIsUndefined&lt;br/&gt;&lt;/p&gt;&lt;p&gt;&#160; inv &quot;No History or Update Mode&quot;: noUpdateOrHistory(reference) and noUpdateOrHistory(thumbnail)&lt;br/&gt;&lt;/p&gt;&lt;p&gt;&#160; inv &quot;no nested translations&quot;: translation-&gt;forAll(t | t.translation-&gt;isEmpty)&lt;br/&gt;&lt;/p&gt;</div>

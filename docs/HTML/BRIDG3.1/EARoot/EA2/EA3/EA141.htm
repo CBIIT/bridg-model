@@ -1,0 +1,285 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>Protocol Representation Sub-Domain::DefinedProcedure</title>
+<link href="../../../css/ea.css" rel="stylesheet" type="text/css" />
+<script>
+function initPage(src) {
+	if(parent==this&&(this.location+"").indexOf('EARoot')!=-1)
+		document.location=(this.location+"").substring(0,(this.location+"").indexOf('EARoot'))+"index"+(this.location+"").substring((this.location+"").lastIndexOf('.'))+"?goto="+((this.location+"").substring((this.location+"").indexOf('EARoot')+7,(this.location+"").lastIndexOf('.')).replace(/\//g,':').replace(/EA/g,""));
+	else
+		parent.initPage(src);
+}
+</script>
+</head>
+<body onload="initPage(this);" class="Content">
+<div class="pageHeader"></div>
+<div class="PageBody">
+	<span class="ObjectTitle">DefinedProcedure  : public   class</span>
+	<table border="0" cellpadding="0" cellspacing="0" class="ObjectDetails">
+		<tr>
+			<td width="15%" class="ObjectDetailsTopic">Created:</td>
+			<td width="85%" class="ObjectDetailsValue">7/24/2009 1:26:31 PM</td>
+		</tr>
+		<tr>
+			<td class="ObjectDetailsTopic">Modified:</td>
+			<td class="ObjectDetailsValue">2/23/2012 4:14:07 PM</td>
+		</tr>
+		<tr style="height: 10px"><td colspan="2"></td></tr>
+		<tr>
+			<td class="ObjectDetailsTopic"><img src="../../../images/plus03.gif" align="absmiddle" id="proj" onclick="parent.toggleData(this.id)" />Project:</td>
+			<td class="ObjectDetailsValue"></td>
+		</tr>
+		<tr id="proj00" style="display: none;">
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Author:</td>
+			<td class="ObjectDetailsValue">BRIDG SCC</td>
+		</tr>
+		<tr id="proj01" style="display: none;">
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Version:</td>
+			<td class="ObjectDetailsValue">1.0</td>
+		</tr>
+		<tr id="proj02" style="display: none;">
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Phase:</td>
+			<td class="ObjectDetailsValue">1.0</td>
+		</tr>
+		<tr id="proj03" style="display: none;">
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Status:</td>
+			<td class="ObjectDetailsValue"><none></td>
+		</tr>
+		<tr id="proj04" style="display: none;">
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Complexity:</td>
+			<td class="ObjectDetailsValue">Easy</td>
+		</tr>
+		<tr>
+			<td class="ObjectDetailsTopic"><img src="../../../images/plus03.gif" align="absmiddle" id="adv" onclick="parent.toggleData(this.id)" />Advanced:</td>
+			<td class="ObjectDetailsValue"></td>
+		</tr>
+		<tr id="adv00" style="display: none;">
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">UUID:</td>
+			<td class="ObjectDetailsValue">{0AB9A6AF-A467-4106-B8AF-DAE23CBBFE54}</td>
+		</tr>
+		<tr id="adv01" style="display: none;">
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Appears In:</td>
+			<td class="ObjectDetailsValue"><a href="../EA11.htm">UML-Based Comprehensive BRIDG Model Diagram</a>, <a href="EA110.htm">View PR: Protocol Representation</a></td>
+		</tr>
+	</table>
+	<div class="ObjectDetailsNotes">&lt;p&gt;DEFINITION:&lt;br/&gt;&lt;/p&gt;&lt;p&gt;An activity defined at a global library level that is an action whose immediate and primary intention is the alteration of the physical condition of the subject, study subject or experimental unit.&lt;br/&gt;&lt;/p&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;&lt;p&gt;EXAMPLE(S):&lt;br/&gt;&lt;/p&gt;&lt;p&gt;Procedures may involve the disruption of some body surface (e.g. an incision in a surgical procedure).&lt;br/&gt;&lt;/p&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;&lt;p&gt;Conservative procedures such as reduction of a luxated joint, including physiotherapy such as chiropractic treatment, massage, balneotherapy, acupuncture, shiatsu.&lt;br/&gt;&lt;/p&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;&lt;p&gt;OTHER NAME(S):&lt;br/&gt;&lt;/p&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;&lt;p&gt;NOTE(S):&lt;br/&gt;&lt;/p&gt;</div>
+
+	<div class="TableGroup" id="TableGroup">
+		<ul class="ItemTitle">
+			<li onClick="parent.toggleItem('Attributes');" id="AttributesTitle">Attributes</li>
+			<li onClick="parent.toggleItem('AssociationsTo');" id="AssociationsToTitle">Associations To</li>
+			<li onClick="parent.toggleItem('AssociationsFrom');" id="AssociationsFromTitle">Associations From</li>
+			<li onClick="parent.toggleItem('TaggedVal');" id="TaggedValTitle">Tagged Values</li>
+			<li onClick="parent.toggleItem('Constraints');" id="ConstraintsTitle">Constraints</li>
+			<li onClick="parent.toggleItem('Links');" id="LinksTitle">Other Links</li>
+		</ul>
+<div class="ItemBody" id="AttributesTable">
+	<table border="0" cellspacing="0" cellpadding="0" class="Table">
+		<tr>
+			<td width="40%" class="TableHeading">Attribute</td>
+			<td width="60%" class="TableHeading">Details</td>
+		</tr>
+						<tr>
+				<td width="40%" class="TableRow" valign="top"><i>public CD</i><br /><strong>&nbsp;&nbsp;methodCode</strong></td>
+				<td width="60%" class="TableRow" valign="top"><i>Range:0 to 1</i>Map:BRIDGv2.2=PlannedProcedure.methodCode<br>Map:HCTv1.0=CDE 2750679:Graft Manipulation.What was the method of ex vivo graft manipulation other than for RBC removal or volume reduction?<br>Map:HCTv1.0=CDE 2750692:Graft Manipulation.Specify the ex vivo graft manipulation other than for RBC removal or volume reduction:<br><div class="ObjectDetailsNotes"><table>
+	<tr>
+		<td valign="top">
+			<i>Notes: </i><span style="margin-left: .4cm;"> </span>
+		</td>
+		<td>
+			DEFINITION:&lt;br /&gt;A coded value specifying the technique that is used for the procedure.&lt;br /&gt;&lt;br /&gt;EXAMPLE(S):&lt;br /&gt;For a specimen collection, the methodCode could =&nbsp;<WBR> &quot;finger stick&quot;, &quot;veni puncture&quot;, &quot;Abdominal/ ascites effusion&quot;, &quot;Biopsy&quot;, &quot;Bronchial alveolar lavage (BAL)&quot;.&lt;br /&gt;&lt;br /&gt;For a cholecystectomy, the methodCode could = &quot;open&quot;, &quot;laproscopic&quot;.&lt;br /&gt;&lt;br /&gt;OTHER NAME(S):&lt;br /&gt;&lt;br /&gt;NOTE(S):
+		</td>
+	</tr>
+</table></div>
+</td>
+			</tr>			<tr>
+				<td width="40%" class="TableRow" valign="top"><i>public CD</i><br /><strong>&nbsp;&nbsp;targetAnatomicSiteCode</strong></td>
+				<td width="60%" class="TableRow" valign="top"><i>Range:0 to 1</i>Map:BRIDGv2.2=PlannedProcedure.targetSiteCode<br>Map:SDTM IGv3.1.1=VS.VSLOC<br>Map:SDTM IGv3.1.1=PE.PELOC<br>Map:SDTM IGv3.1.1=AE.AELOC<br>Map:SDTM IGv3.1.1=EX.EXLOC<br><div class="ObjectDetailsNotes"><table>
+	<tr>
+		<td valign="top">
+			<i>Notes: </i><span style="margin-left: .4cm;"> </span>
+		</td>
+		<td>
+			DEFINITION:&lt;br /&gt;A coded value specifying the anatomic location that is the focus of a procedure.&lt;br /&gt;&lt;br /&gt;EXAMPLE(S):&lt;br /&gt;Kidney for a nephrectomy&lt;br /&gt;&lt;br /&gt;OTHER NAME(S):&lt;br /&gt;&lt;br /&gt;NOTE(S):&lt;br /&gt;Multiple contiguous sites within the same organ system may be referenced.&lt;br /&gt;&lt;br /&gt;Sources that capture anatomic site and laterality separately should map both to this attribute. For implementation models based on BRIDG where site and laterality are captured separately, you may wish to capture both concepts as a post-coordinated code structure or as multiple code repetitions.
+		</td>
+	</tr>
+</table></div>
+</td>
+			</tr>			<tr>
+				<td width="40%" class="TableRow" valign="top"><i>public CD</i><br /><strong>&nbsp;&nbsp;targetAnatomicSiteLateralityCode</strong></td>
+				<td width="60%" class="TableRow" valign="top"><i>&lt;&lt;DEPRECATED&gt;&gt;<br>Range:0 to 1</i>Map:SDTM IGv3.1.1=VS.VSLOC<br>Map:SDTM IGv3.1.1=PE.PELOC<br>Map:SDTM IGv3.1.1=EX.EXLOC<br>Map:SDTM IGv3.1.1=AE.AELOC<br><div class="ObjectDetailsNotes"><table>
+	<tr>
+		<td valign="top">
+			<i>Notes: </i><span style="margin-left: .4cm;"> </span>
+		</td>
+		<td>
+			DEFINITION:&lt;br /&gt;A coded value specifying the side of the body (or a paired organ) that is a target site for a procedure. &lt;br /&gt;&lt;br /&gt;EXAMPLE(S):&lt;br /&gt;bilateral, left, right&lt;br /&gt;&lt;br /&gt;OTHER NAME(S):&lt;br /&gt;&lt;br /&gt;NOTE(S):&lt;br /&gt;This attribute is deprecated in BRIDG 3.1 since the only source use case for splitting out laterality from anatomic site comes from CTOM.&nbsp;<WBR> All other source models had these concepts combined in one attribute.&nbsp;<WBR> Therefore it was determined to combine these attributes to match the majority of use cases.
+		</td>
+	</tr>
+</table></div>
+</td>
+			</tr>			<tr>
+				<td width="40%" class="TableRow" valign="top"><i>public CD</i><br /><strong>&nbsp;&nbsp;approachAnatomicSiteCode</strong></td>
+				<td width="60%" class="TableRow" valign="top"><i>Range:0 to 1</i>Map:BRIDGv2.2=PlannedProcedure.approachSiteCode<br>Map:SDTM IGv3.1.1=VS.VSLOC<br>Map:SDTM IGv3.1.1=PE.PELOC<br>Map:SDTM IGv3.1.1=AE.AELOC<br>Map:SDTM IGv3.1.1=EX.EXLOC<br><div class="ObjectDetailsNotes"><table>
+	<tr>
+		<td valign="top">
+			<i>Notes: </i><span style="margin-left: .4cm;"> </span>
+		</td>
+		<td>
+			DEFINITION:&lt;br /&gt;A coded value specifying the anatomic location or access point for a procedure.&lt;br /&gt;&lt;br /&gt;EXAMPLE(S):&lt;br /&gt;Arm for an injection&lt;br /&gt;Trans-abdominal for a nephrectomy&lt;br /&gt;&lt;br /&gt;OTHER NAME(S):&lt;br /&gt;&lt;br /&gt;NOTE(S):&lt;br /&gt;Sources that capture anatomic site and laterality separately should map both to this attribute. For implementation models based on BRIDG where site and laterality are captured separately, you may wish to capture both concepts as a post-coordinated code structure or as multiple code repetitions.
+		</td>
+	</tr>
+</table></div>
+</td>
+			</tr>			<tr>
+				<td width="40%" class="TableRow" valign="top"><i>public CD</i><br /><strong>&nbsp;&nbsp;approachAnatomicSiteLateralityCode</strong></td>
+				<td width="60%" class="TableRow" valign="top"><i>&lt;&lt;DEPRECATED&gt;&gt;<br>Range:0 to 1</i>Map:SDTM IGv3.1.1=AE.AELOC<br>Map:SDTM IGv3.1.1=PE.PELOC<br>Map:SDTM IGv3.1.1=VS.VSLOC<br>Map:SDTM IGv3.1.1=EX.EXLOC<br><div class="ObjectDetailsNotes"><table>
+	<tr>
+		<td valign="top">
+			<i>Notes: </i><span style="margin-left: .4cm;"> </span>
+		</td>
+		<td>
+			DEFINITION:&lt;br /&gt;A coded value specifying the side of the body (or a paired organ) that is an access point for a procedure. &lt;br /&gt;&lt;br /&gt;EXAMPLE(S):&lt;br /&gt;bilateral, left, right&lt;br /&gt;&lt;br /&gt;OTHER NAME(S):&lt;br /&gt;&lt;br /&gt;NOTE(S):&lt;br /&gt;This attribute is deprecated in BRIDG 3.1 since the only source use case for splitting out laterality from anatomic site comes from CTOM.&nbsp;<WBR> All other source models had these concepts combined in one attribute.&nbsp;<WBR> Therefore it was determined to combine these attributes to match the majority of use cases.
+		</td>
+	</tr>
+</table></div>
+</td>
+			</tr>			<tr>
+				<td width="40%" class="TableRow" valign="top"><i>public ST</i><br /><strong>&nbsp;&nbsp;nameCodeModifiedText</strong></td>
+				<td width="60%" class="TableRow" valign="top"><i>Range:0 to 1</i>Map:BRIDGSCC=Model Integrity<br><div class="ObjectDetailsNotes"><table>
+	<tr>
+		<td valign="top">
+			<i>Notes: </i><span style="margin-left: .4cm;"> </span>
+		</td>
+		<td>
+			DEFINITION:&lt;br /&gt;A character string that is a revision of the original text of the procedure to enable the coding of the text.&lt;br /&gt;&lt;br /&gt;EXAMPLE(S):&lt;br /&gt;If the original text is &quot;message&quot;, the nameCodeModifiedText could be set to &quot;massage&quot;, so that the text can be successfully coded.&lt;br /&gt;&lt;br /&gt;OTHER NAME(S):&lt;br /&gt;&lt;br /&gt;NOTE(S):&lt;br /&gt;In the context of BRIDG, text modification occurs a single time for a given instance of originalText.
+		</td>
+	</tr>
+</table></div>
+</td>
+			</tr>
+		</table>
+</div>		<div class="ItemBody" id="AssociationsToTable">
+			<table border="0" cellspacing="0" cellpadding="0" class="Table">
+				<tr>
+					<td width="20%" class="TableHeading">Element</td>
+					<td width="25%" class="TableHeading">Source Role</td>
+					<td width="25%" class="TableHeading">Target Role</td>
+					<td width="30%" class="TableHeading">Details</td>
+				</tr>
+				<tr>
+					<td width="20%" class="TableRow" valign="top">
+						<a href="../EA2/EA91.htm">Product</a><br />
+						Class &nbsp;
+					</td>
+					<td width="20%" class="TableRow" valign="top">
+						<strong>Name:</strong> usingDefinedProcedure<br />
+						&nbsp;
+					</td>
+					<td width="20%" class="TableRow" valign="top">
+						<strong>Name:</strong> usedProduct<br />
+						&nbsp;	
+					</td>
+					<td width="30%" class="TableRow" valign="top"><div class="ObjectDetailsNotes">&lt;p&gt;DEFINITION:&lt;br/&gt;&lt;/p&gt;&lt;p&gt;Each DefinedProcedure might use one or more Product. Each Product might be used during one or more DefinedProcedure.&lt;br/&gt;&lt;/p&gt;</div>
+</td>
+				</tr>
+
+			</table>
+		</div>
+		<div class="ItemBody" id="AssociationsFromTable">
+			<table border="0" cellspacing="0" cellpadding="0" class="Table">
+				<tr>
+					<td width="20%" class="TableHeading">Element</td>
+					<td width="25%" class="TableHeading">Source Role</td>
+					<td width="25%" class="TableHeading">Target Role</td>
+					<td width="30%" class="TableHeading">Details</td>
+				</tr>
+				<tr>
+					<td width="20%" class="TableRow" valign="top">
+						<a href="EA138.htm">DefinedObservation</a><br />
+						Class &nbsp;
+					</td>
+					<td width="20%" class="TableRow" valign="top">
+						<strong>Name:</strong> focusedDefinedObservation<br />
+						&nbsp;
+					</td>
+					<td width="20%" class="TableRow" valign="top">
+						<strong>Name:</strong> focusingDefinedProcedure<br />
+						&nbsp;	
+					</td>
+					<td width="30%" class="TableRow" valign="top"><div class="ObjectDetailsNotes">&lt;p&gt;DEFINITION:&lt;br/&gt;&lt;/p&gt;&lt;p&gt;Each DefinedObservation might have as focal context one DefinedProcedure. Each DefinedProcedure might be the focal context for one or more DefinedObservation.&lt;br/&gt;&lt;/p&gt;</div>
+</td>
+				</tr>
+
+			</table>
+		</div>
+<div class="ItemBody" id="TaggedValTable">
+	<table align="center" border="0" cellspacing="0" cellpadding="0" class="Table">
+	<tr>
+			<td width="30%" class="TableHeading">Tag</td>
+			<td width="30%" class="TableHeading">Value</td>
+			<td width="40%" class="TableHeading">Details</td>
+	</tr>
+					<tr>
+				<td width="30%" class="TableRow" valign="top">Map:CTRR</td>
+				<td width="30%" class="TableRow" valign="top">Intervention Name</td>
+				<td width="30%" class="TableRow" valign="top">&nbsp;</td>
+			</tr>
+</table>
+</div>		<div class="ItemBody" id="ConstraintsTable">
+			<table border="0" cellspacing="0" cellpadding="0" class="Table">
+			  	<tr>
+					<td width="24%" class="TableHeading">Constraint</td>
+					<td width="8%" class="TableHeading">Type</td>
+					<td width="8%" class="TableHeading">Status</td>
+					<td width="60%" class="TableHeading">Detail</td>
+				</tr>
+				<tr>
+					<td width="24%" class="TableRow">use actualIndicator Qualifier</td>
+					<td width="8%" class="TableRow">Invariant</td>
+					<td width="8%" class="TableRow">Approved</td>
+					<td width="60%" class="TableRow"><div class="ObjectDetailsNotes">Only Product with actualIndicator = “false” is valid.</div>
+</td>
+				</tr>
+
+			</table>
+		</div>
+		<div class="ItemBody" id="LinksTable">
+			<table align="center" border="0" cellspacing="0" cellpadding="0" class="Table">
+				<tr>
+					<td width="30%" class="TableHeading">Object</td>
+					<td width="15%" class="TableHeading">Type</td>
+					<td width="15%" class="TableHeading">Connection</td>
+					<td width="40%" class="TableHeading">Notes</td>
+				</tr>
+				<tr>
+					<td width="30%" class="TableRow" valign="top"><a href="EA151.htm">DefinedSubstanceAdministration</a></td>
+					<td width="15%" class="TableRow" valign="top">Class</td>
+					<td width="15%" class="TableRow" valign="top">Generalization</td>
+					<td width="40%" class="TableRow" valign="top">DEFINITION:
+Each DefinedSubstanceAdministration always specializes one DefinedProcedure. Each DefinedProcedure might be specialized by one DefinedSubstanceAdministration.</td>
+				</tr>
+				<tr>
+					<td width="30%" class="TableRow" valign="top"><a href="EA143.htm">DefinedSpecimenCollection</a></td>
+					<td width="15%" class="TableRow" valign="top">Class</td>
+					<td width="15%" class="TableRow" valign="top">Generalization</td>
+					<td width="40%" class="TableRow" valign="top">DEFINITION:
+Each DefinedSpecimenCollection always specializes one DefinedProcedure. Each DefinedProcedure might be specialized by one DefinedSpecimenCollection.</td>
+				</tr>
+				<tr>
+					<td width="30%" class="TableRow" valign="top"><a href="EA125.htm">DefinedActivity</a></td>
+					<td width="15%" class="TableRow" valign="top">Class</td>
+					<td width="15%" class="TableRow" valign="top">Generalization</td>
+					<td width="40%" class="TableRow" valign="top">DEFINITION:
+Each DefinedProcedure always specializes one DefinedActivity. Each DefinedActivity might be specialized by one DefinedProcedure.</td>
+				</tr>
+
+			</table>
+		</div>
+	</div>
+<div class="pageFooter"></div>
+ 
+</body>
+</html>

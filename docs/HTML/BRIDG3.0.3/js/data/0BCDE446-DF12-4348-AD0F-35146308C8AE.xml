@@ -1,0 +1,13 @@
+tocTab[tocTab.length] = new Array("4.2.4:1", "", "SU -  Substance Use", "EARoot/EA4/EA2/EA4/EA629.htm", "177.png", "749", "0", "", "Object diagram0","{424F4570-E543-4a36-9186-5B32DD6FBBC0}");
+tocTab[tocTab.length] = new Array("4.2.4:2", "", ": StudyProtocolDocument", "EARoot/EA4/EA2/EA4/EA631.htm", "25.png", "11150", "0", "", "Object0","{FE57BEB4-BFDC-4d53-8D36-88E44B04437E}");
+tocTab[tocTab.length] = new Array("4.2.4:3", "", ": StudyProtocolVersion", "EARoot/EA4/EA2/EA4/EA632.htm", "25.png", "11149", "0", "", "Object0","{F01BC0A6-9F82-40ae-ADFC-DFDEDAB70C12}");
+tocTab[tocTab.length] = new Array("4.2.4:4", "", ": DocumentIdentifier", "EARoot/EA4/EA2/EA4/EA633.htm", "25.png", "11148", "0", "", "Object0","{DF08AE3B-3034-4b83-A8FA-2A8C6228E900}");
+tocTab[tocTab.length] = new Array("4.2.4:5", "", ": StudySite", "EARoot/EA4/EA2/EA4/EA634.htm", "25.png", "11147", "0", "", "Object0","{A80DC31B-675A-426c-8B0A-83D4D38DFB70}");
+tocTab[tocTab.length] = new Array("4.2.4:6", "", ": Document", "EARoot/EA4/EA2/EA4/EA635.htm", "25.png", "11146", "0", "", "Object0","{A4E01464-7C97-4b5c-89BC-6BB6AFC6E11F}");
+tocTab[tocTab.length] = new Array("4.2.4:7", "", ": SubjectIdentifier", "EARoot/EA4/EA2/EA4/EA636.htm", "25.png", "11145", "0", "", "Object0","{717A1BB9-0E54-4e16-9AA6-2530B566AD25}");
+tocTab[tocTab.length] = new Array("4.2.4:8", "", ": StudySubject", "EARoot/EA4/EA2/EA4/EA637.htm", "25.png", "11144", "0", "", "Object0","{6749810C-645B-4910-96FC-E4EF2D4EECE9}");
+tocTab[tocTab.length] = new Array("4.2.4:9", "", ": PerformedActivity", "EARoot/EA4/EA2/EA4/EA638.htm", "25.png", "11143", "0", "", "Object0","{47412240-443F-48b6-B060-E1E7159E1A45}");
+tocTab[tocTab.length] = new Array("4.2.4:10", "", ": SubjectIdentifier", "EARoot/EA4/EA2/EA4/EA639.htm", "25.png", "11142", "0", "", "Object0","{4408070E-8A2E-4c0f-9E0A-5AD713613C82}");
+tocTab[tocTab.length] = new Array("4.2.4:11", "", ": PerformedSubstanceAdministration", "EARoot/EA4/EA2/EA4/EA640.htm", "25.png", "11141", "0", "", "Object0","{1BE28B8A-CD74-4f6e-AE58-E449ADF1BAA5}");
+tocTab[tocTab.length] = new Array("4.2.4:12", "", ": DefinedActivity", "EARoot/EA4/EA2/EA4/EA641.htm", "25.png", "11140", "0", "", "Object0","{1561A537-E629-4b78-BA6F-C49CD96A5A90}");
+tocTab[tocTab.length] = new Array("4.2.4:13", "", ": DefinedSubstanceAdministration", "EARoot/EA4/EA2/EA4/EA642.htm", "25.png", "11139", "0", "", "Object0","{10238D11-1163-4a01-967F-29A0C77022D0}");

@@ -1,0 +1,9 @@
+tocTab[tocTab.length] = new Array("2.4:1", "", "View RG: Regulatory", "EARoot/EA2/EA4/EA164.htm", "175.png", "595", "0", "", "Logical diagram0","{8C70FDFE-213A-4d2b-A66A-4C01862B4E74}");
+tocTab[tocTab.length] = new Array("2.4:2", "", "OversightAuthority", "EARoot/EA2/EA4/EA168.htm", "5.png", "8844", "0", "", "Class0","{E550C118-F94A-4977-A6CB-0BD885955BF0}");
+tocTab[tocTab.length] = new Array("2.4:3", "", "RegulatoryApplication", "EARoot/EA2/EA4/EA169.htm", "5.png", "8840", "0", "", "Class0","{BA234556-FFAF-4b5c-B2A4-F973BE22FAEA}");
+tocTab[tocTab.length] = new Array("2.4:4", "", "RegulatoryApplicationSponsor", "EARoot/EA2/EA4/EA170.htm", "5.png", "8841", "0", "", "Class0","{C6C52217-7B40-489e-BEBC-EBE4176E78BD}");
+tocTab[tocTab.length] = new Array("2.4:5", "", "RegulatoryAssessment", "EARoot/EA2/EA4/EA171.htm", "5.png", "8835", "0", "", "Class0","{24A1E032-046F-4d2a-8A99-3F58397A3828}");
+tocTab[tocTab.length] = new Array("2.4:6", "", "RegulatoryAuthority", "EARoot/EA2/EA4/EA172.htm", "5.png", "8837", "0", "", "Class0","{80B5B6B0-06D9-4a58-8DFC-A4534CD520DD}");
+tocTab[tocTab.length] = new Array("2.4:7", "", "ReviewableUnit", "EARoot/EA2/EA4/EA173.htm", "5.png", "8836", "0", "", "Class0","{2F5549E2-31DC-44b5-B2B9-8561B687941B}");
+tocTab[tocTab.length] = new Array("2.4:8", "", "Submission", "EARoot/EA2/EA4/EA174.htm", "5.png", "8842", "0", "", "Class0","{CBA11677-DF6E-46bf-98D9-DBE4F1962E50}");
+tocTab[tocTab.length] = new Array("2.4:9", "", "SubmissionUnit", "EARoot/EA2/EA4/EA175.htm", "5.png", "8839", "0", "", "Class0","{8C9916AD-5E84-4ffd-B13C-6BECFEF14D45}");

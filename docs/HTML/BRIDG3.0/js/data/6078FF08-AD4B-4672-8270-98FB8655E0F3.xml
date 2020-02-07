@@ -1,0 +1,7 @@
+tocTab[tocTab.length] = new Array("2:1", "", "BRIDG Sub-Domain Packages Diagram", "EARoot/EA2/EA9.htm", "175.png", "590", "0", "", "Logical diagram0","{B8E04A0B-9CBC-4d9a-89B8-8150B3F1BCAF}");
+tocTab[tocTab.length] = new Array("2:2", "", "UML-Based Comprehensive BRIDG Model Diagram", "EARoot/EA2/EA11.htm", "175.png", "591", "0", "", "Logical diagram0","{EB2DB575-6309-420d-8A26-5D6F69B0EC06}");
+tocTab[tocTab.length] = new Array("2.1", "1", "Adverse Event Sub-Domain", "EARoot/EA2/EA13.htm", "4.png", "", "", "{5A40B74C-78C3-4788-BC62-1E7061F5C00C}", "Package");
+tocTab[tocTab.length] = new Array("2.2", "1", "Common Sub-Domain", "EARoot/EA2/EA15.htm", "4.png", "", "", "{E7CF4F65-E7C2-404d-8204-75B0F9A7B585}", "Package");
+tocTab[tocTab.length] = new Array("2.3", "1", "Protocol Representation Sub-Domain", "EARoot/EA2/EA19.htm", "4.png", "", "", "{6B25174F-5AC4-4bda-A950-8213D9DD8686}", "Package");
+tocTab[tocTab.length] = new Array("2.4", "1", "Regulatory Sub-Domain", "EARoot/EA2/EA20.htm", "4.png", "", "", "{95ED20B4-E9B6-4cfa-B3CB-BFB2829809E9}", "Package");
+tocTab[tocTab.length] = new Array("2.5", "1", "Study Conduct Sub-Domain", "EARoot/EA2/EA21.htm", "4.png", "", "", "{C1D5C0DB-1DED-46f1-80B7-BBCC6B6A2F68}", "Package");

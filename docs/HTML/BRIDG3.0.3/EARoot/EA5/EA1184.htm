@@ -1,0 +1,72 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>Note</title>
+<link href="../../css/ea.css" rel="stylesheet" type="text/css" />
+<script>
+function initPage(src) {
+	if(parent==this&&(this.location+"").indexOf('EARoot')!=-1)
+		document.location=(this.location+"").substring(0,(this.location+"").indexOf('EARoot'))+"index"+(this.location+"").substring((this.location+"").lastIndexOf('.'))+"?goto="+((this.location+"").substring((this.location+"").indexOf('EARoot')+7,(this.location+"").lastIndexOf('.')).replace(/\//g,':').replace(/EA/g,""));
+	else
+		parent.initPage(src);
+}
+</script>
+</head>
+<body onload="initPage(this);" class="Content">
+<div class="pageHeader"></div>
+<div class="PageBody">
+	<span class="ObjectTitle">Note  : public   note</span>
+	<table border="0" cellpadding="0" cellspacing="0" class="ObjectDetails">
+		<tr>
+			<td width="15%" class="ObjectDetailsTopic">Created:</td>
+			<td width="85%" class="ObjectDetailsValue">7/27/2006 2:24:18 PM</td>
+		</tr>
+		<tr>
+			<td class="ObjectDetailsTopic">Modified:</td>
+			<td class="ObjectDetailsValue">5/22/2009 1:08:04 PM</td>
+		</tr>
+		<tr style="height: 10px"><td colspan="2"></td></tr>
+		<tr>
+			<td class="ObjectDetailsTopic"><img src="../../images/plus03.gif" align="absmiddle" id="proj" onclick="parent.toggleData(this.id)" />Project:</td>
+			<td class="ObjectDetailsValue"></td>
+		</tr>
+		<tr id="proj00" style="display: none;">
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Author:</td>
+			<td class="ObjectDetailsValue"></td>
+		</tr>
+		<tr id="proj01" style="display: none;">
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Version:</td>
+			<td class="ObjectDetailsValue">1.0</td>
+		</tr>
+		<tr id="proj02" style="display: none;">
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Phase:</td>
+			<td class="ObjectDetailsValue">1.0</td>
+		</tr>
+		<tr id="proj03" style="display: none;">
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Status:</td>
+			<td class="ObjectDetailsValue">Proposed</td>
+		</tr>
+		<tr id="proj04" style="display: none;">
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Complexity:</td>
+			<td class="ObjectDetailsValue">Easy</td>
+		</tr>
+		<tr>
+			<td class="ObjectDetailsTopic"><img src="../../images/plus03.gif" align="absmiddle" id="adv" onclick="parent.toggleData(this.id)" />Advanced:</td>
+			<td class="ObjectDetailsValue"></td>
+		</tr>
+		<tr id="adv00" style="display: none;">
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">UUID:</td>
+			<td class="ObjectDetailsValue">{2B32DB96-85B6-4ce0-89CE-2C0E1238EE4A}</td>
+		</tr>
+		<tr id="adv01" style="display: none;">
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Appears In:</td>
+			<td class="ObjectDetailsValue"><a href="EA1096.htm">Quantities</a></td>
+		</tr>
+	</table>
+	<div class="ObjectDetailsNotes">&lt;p&gt;context PQ&lt;br/&gt;&lt;/p&gt;&lt;p&gt;&#160; def: let unitsMatch (other : PQ) : Boolean = (canonical.unit = other.canonical.unit)&lt;br/&gt;&lt;/p&gt;&lt;p&gt;&#160; &lt;br/&gt;&lt;/p&gt;&lt;p&gt;&#160; inv &quot;null or value&quot;: isNull xor (value.oclIsDefined or uncertainRange.isNotNull)&lt;br/&gt;&lt;/p&gt;&lt;p&gt;&#160; inv &quot;value xor uncertainRange&quot;: not (value.oclIsDefined and uncertainRange.isNotNull)&lt;br/&gt;&lt;/p&gt;&lt;p&gt;&#160; inv &quot;uncertain types&quot;: uncertainRange.low.oclIsDefined implies uncertainRange.low.oclIsKindOf(&quot;PQ&quot;) and&lt;br/&gt;&lt;/p&gt;&lt;p&gt;&#160;&#160;&#160;&#160;&#160; uncertainRange.high.oclIsDefined implies uncertainRange.high.oclIsKindOf(&quot;PQ&quot;) and&lt;br/&gt;&lt;/p&gt;&lt;p&gt;&#160;&#160;&#160;&#160;&#160; uncertainty.oclIsDefined implies uncertainty.oclIsKindOf(&quot;PQ&quot;)&lt;br/&gt;&lt;/p&gt;&lt;p&gt;&#160; inv &quot;uncertainties - canonicals&quot;: uncertainRange.low.oclIsDefined implies unitsMatch(uncertainRange.low) and&lt;br/&gt;&lt;/p&gt;&lt;p&gt;&#160;&#160;&#160;&#160;&#160; uncertainRange.high.oclIsDefined implies unitsMatch(uncertainRange.high) and&lt;br/&gt;&lt;/p&gt;&lt;p&gt;&#160;&#160;&#160;&#160;&#160; uncertainty.oclIsDefined implies unitsMatch(uncertainty)&lt;br/&gt;&lt;/p&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;&lt;p&gt;context PQ::isDifference(other : QTY): Boolean&lt;br/&gt;&lt;/p&gt;&lt;p&gt;&#160; post: other.oclIsKindOf(PQ) and canonical.unit.equals(other.oclAsTypeOf(PQ).canonical.unit)&lt;br/&gt;&lt;/p&gt;</div>
+
+<div class="pageFooter"></div>
+ 
+</body>
+</html>/&gt;&lt;/p&gt;&lt;p&gt;&#160; inv &quot;mediaType cannot be null&quot;: isNotNull implies mediaType.oclIsDefined&lt;br/&gt;&lt;/p&gt;&lt;p&gt;&#160; inv &quot;value implies mediaType is text/plain&quot;: value.oclIsDefined implies mediaType = &#39;text/plain&#39;&lt;br/&gt;&lt;/p&gt;&lt;p&gt;&#160; inv &quot;no charset for value or xml&quot;: (value.oclIsDefined or xml.oclIsDefined) implies charset.oclIsUndefined&lt;br/&gt;&lt;/p&gt;&lt;p&gt;&#160; inv &quot;No History or Update Mode&quot;: noUpdateOrHistory(reference) and noUpdateOrHistory(thumbnail)&lt;br/&gt;&lt;/p&gt;&lt;p&gt;&#160; inv &quot;no nested translations&quot;: translation-&gt;forAll(t | t.translation-&gt;isEmpty)&lt;br/&gt;&lt;/p&gt;</div>

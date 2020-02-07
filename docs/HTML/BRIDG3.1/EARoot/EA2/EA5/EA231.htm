@@ -1,0 +1,189 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>Study Conduct Sub-Domain::PerformedMedicalConditionResult</title>
+<link href="../../../css/ea.css" rel="stylesheet" type="text/css" />
+<script>
+function initPage(src) {
+	if(parent==this&&(this.location+"").indexOf('EARoot')!=-1)
+		document.location=(this.location+"").substring(0,(this.location+"").indexOf('EARoot'))+"index"+(this.location+"").substring((this.location+"").lastIndexOf('.'))+"?goto="+((this.location+"").substring((this.location+"").indexOf('EARoot')+7,(this.location+"").lastIndexOf('.')).replace(/\//g,':').replace(/EA/g,""));
+	else
+		parent.initPage(src);
+}
+</script>
+</head>
+<body onload="initPage(this);" class="Content">
+<div class="pageHeader"></div>
+<div class="PageBody">
+	<span class="ObjectTitle">PerformedMedicalConditionResult  : public   class</span>
+	<table border="0" cellpadding="0" cellspacing="0" class="ObjectDetails">
+		<tr>
+			<td width="15%" class="ObjectDetailsTopic">Created:</td>
+			<td width="85%" class="ObjectDetailsValue">7/26/2007 12:05:41 PM</td>
+		</tr>
+		<tr>
+			<td class="ObjectDetailsTopic">Modified:</td>
+			<td class="ObjectDetailsValue">2/23/2012 4:26:55 PM</td>
+		</tr>
+		<tr style="height: 10px"><td colspan="2"></td></tr>
+		<tr>
+			<td class="ObjectDetailsTopic"><img src="../../../images/plus03.gif" align="absmiddle" id="proj" onclick="parent.toggleData(this.id)" />Project:</td>
+			<td class="ObjectDetailsValue"></td>
+		</tr>
+		<tr id="proj00" style="display: none;">
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Author:</td>
+			<td class="ObjectDetailsValue">BRIDG SCC</td>
+		</tr>
+		<tr id="proj01" style="display: none;">
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Version:</td>
+			<td class="ObjectDetailsValue">1.0</td>
+		</tr>
+		<tr id="proj02" style="display: none;">
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Phase:</td>
+			<td class="ObjectDetailsValue">1.0</td>
+		</tr>
+		<tr id="proj03" style="display: none;">
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Status:</td>
+			<td class="ObjectDetailsValue"><none></td>
+		</tr>
+		<tr id="proj04" style="display: none;">
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Complexity:</td>
+			<td class="ObjectDetailsValue">Easy</td>
+		</tr>
+		<tr>
+			<td class="ObjectDetailsTopic"><img src="../../../images/plus03.gif" align="absmiddle" id="adv" onclick="parent.toggleData(this.id)" />Advanced:</td>
+			<td class="ObjectDetailsValue"></td>
+		</tr>
+		<tr id="adv00" style="display: none;">
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">UUID:</td>
+			<td class="ObjectDetailsValue">{8E165368-DDE3-42db-A793-40350AC7B913}</td>
+		</tr>
+		<tr id="adv01" style="display: none;">
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Appears In:</td>
+			<td class="ObjectDetailsValue"><a href="../EA11.htm">UML-Based Comprehensive BRIDG Model Diagram</a>, <a href="../EA1/EA23.htm">View AE: Adverse Event</a>, <a href="EA198.htm">View SC: Study Conduct</a></td>
+		</tr>
+	</table>
+	<div class="ObjectDetailsNotes">&lt;p&gt;DEFINITION: &lt;br/&gt;&lt;/p&gt;&lt;p&gt;Any sign, symptom, disease, or other medical occurrence.&lt;br/&gt;&lt;/p&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;&lt;p&gt;EXAMPLE(S):&lt;br/&gt;&lt;/p&gt;&lt;p&gt;death, back pain, headache, pulmonary embolism, heart attack, pregnancy, flu, broken bone, menstrual period, depression&lt;br/&gt;&lt;/p&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;&lt;p&gt;OTHER NAME(S):&lt;br/&gt;&lt;/p&gt;&lt;p&gt;Clinical Events&lt;br/&gt;&lt;/p&gt;&lt;p&gt;Medical History&lt;br/&gt;&lt;/p&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;&lt;p&gt;NOTE(S):&lt;br/&gt;&lt;/p&gt;&lt;p&gt;This condition may have been recalled by the subject or a caregiver or provided in their medical record.&lt;br/&gt;&lt;/p&gt;</div>
+
+	<div class="TableGroup" id="TableGroup">
+		<ul class="ItemTitle">
+			<li onClick="parent.toggleItem('Attributes');" id="AttributesTitle">Attributes</li>
+			<li onClick="parent.toggleItem('AssociationsFrom');" id="AssociationsFromTitle">Associations From</li>
+			<li onClick="parent.toggleItem('TaggedVal');" id="TaggedValTitle">Tagged Values</li>
+			<li onClick="parent.toggleItem('Links');" id="LinksTitle">Other Links</li>
+		</ul>
+<div class="ItemBody" id="AttributesTable">
+	<table border="0" cellspacing="0" cellpadding="0" class="Table">
+		<tr>
+			<td width="40%" class="TableHeading">Attribute</td>
+			<td width="60%" class="TableHeading">Details</td>
+		</tr>
+						<tr>
+				<td width="40%" class="TableRow" valign="top"><i>public IVL<TS.DATETIME></i><br /><strong>&nbsp;&nbsp;occurrenceDateRange</strong></td>
+				<td width="60%" class="TableRow" valign="top"><i>Range:0 to 1</i>Map:CDASHv1.1=MH.MHENDAT<br>Map:CDASHv1.1=MH.MHSTDAT<br>Map:NCI CRF Standard=CDE 2736881v1.0: Personal Medical History Ongoing Indicator<br>Map:SDTM IGv3.1.1=MH.MHENDTC<br>Map:SDTM IGv3.1.1=MH.MHSTDTC<br>Map:SDTM IGv3.1.2=MH.MHENRTPT<br>Map:SDTM IGv3.1.2=MH.MHENRF<br>Map:SDTM IGv3.1.2=CE.CEENDTC<br>Map:SDTM IGv3.1.2=CE.CESTDTC<br>Map:SDTM IGv3.1.2=MH.MHENDTC<br>Map:SDTM IGv3.1.2=MH.MHSTDTC<br><div class="ObjectDetailsNotes"><table>
+	<tr>
+		<td valign="top">
+			<i>Notes: </i><span style="margin-left: .4cm;"> </span>
+		</td>
+		<td>
+			DEFINITION:&lt;br /&gt;The date and time span in which the medical condition began and ended. &lt;br /&gt;&lt;br /&gt;EXAMPLE(S):&lt;br /&gt;&lt;br /&gt;OTHER NAME(S):&lt;br /&gt;Onset date, resolution date, duration.&lt;br /&gt;&lt;br /&gt;NOTE(S):&lt;br /&gt;These may be partial dates or durations (duration is the width property of the IVL&lt;TS&gt; datatype).&lt;br /&gt;&lt;br /&gt;A condition may be considered to have ended when a subject returns to their baseline state.
+		</td>
+	</tr>
+</table></div>
+</td>
+			</tr>			<tr>
+				<td width="40%" class="TableRow" valign="top"><i>public CD</i><br /><strong>&nbsp;&nbsp;endRelativeToReferenceCode</strong></td>
+				<td width="60%" class="TableRow" valign="top"><i>Range:0 to 1</i>Map:SDTM IGv3.1.1=MH.MHENRF<br><div class="ObjectDetailsNotes"><table>
+	<tr>
+		<td valign="top">
+			<i>Notes: </i><span style="margin-left: .4cm;"> </span>
+		</td>
+		<td>
+			DEFINITION:&lt;br /&gt;A coded value specifying the end of the medical condition event with respect to the sponsor-defined reference period. &lt;br /&gt;&lt;br /&gt;EXAMPLE(S):&lt;br /&gt;before, during, during/after, after&lt;br /&gt;&lt;br /&gt;OTHER NAME(S):&lt;br /&gt;&lt;br /&gt;NOTE(S):&lt;br /&gt;Derived from comparing PerformedSubstanceAdministration.dateRange(IVL&lt;TS.DATETIME&gt;).high and PerformedStudySubjectMilestone.studyReferenceDateRange.&lt;br /&gt;&lt;br /&gt;Sponsors should define the reference period in the study metadata.&lt;br /&gt;&lt;br /&gt;This may be populated when a start date is not collected. 
+		</td>
+	</tr>
+</table></div>
+</td>
+			</tr>			<tr>
+				<td width="40%" class="TableRow" valign="top"><i>public BL</i><br /><strong>&nbsp;&nbsp;medicalHistoryIndicator</strong></td>
+				<td width="60%" class="TableRow" valign="top"><i>Range:0 to 1</i>Map:SDTM IGv3.1.2=MH.DOMAIN<br><div class="ObjectDetailsNotes"><table>
+	<tr>
+		<td valign="top">
+			<i>Notes: </i><span style="margin-left: .4cm;"> </span>
+		</td>
+		<td>
+			DEFINITION: &lt;br /&gt;Specifies whether the condition is considered part of the historical record of a subject, that is, it did not occur within the bounds of the study.&lt;br /&gt;&lt;br /&gt;EXAMPLE(S):&lt;br /&gt;&lt;br /&gt;OTHER NAME(S):&lt;br /&gt;&lt;br /&gt;NOTE(S):&lt;br /&gt;Derived from the medical history indicator on the activity (PerformedActivity.medicalHistoryIndicator) which produced this result.
+		</td>
+	</tr>
+</table></div>
+</td>
+			</tr>
+		</table>
+</div>		<div class="ItemBody" id="AssociationsFromTable">
+			<table border="0" cellspacing="0" cellpadding="0" class="Table">
+				<tr>
+					<td width="20%" class="TableHeading">Element</td>
+					<td width="25%" class="TableHeading">Source Role</td>
+					<td width="25%" class="TableHeading">Target Role</td>
+					<td width="30%" class="TableHeading">Details</td>
+				</tr>
+				<tr>
+					<td width="20%" class="TableRow" valign="top">
+						<a href="EA241.htm">PerformedSubstanceAdministration</a><br />
+						Class &nbsp;
+					</td>
+					<td width="20%" class="TableRow" valign="top">
+						<strong>Name:</strong> addressingPerformedSubstanceAdministration<br />
+						&nbsp;
+					</td>
+					<td width="20%" class="TableRow" valign="top">
+						<strong>Name:</strong> addressedPerformedMedicalConditionResult<br />
+						&nbsp;	
+					</td>
+					<td width="30%" class="TableRow" valign="top"><div class="ObjectDetailsNotes">&lt;p&gt;DEFINITION:&lt;br/&gt;&lt;/p&gt;&lt;p&gt;Each PerformedSubstanceAdministration might address one or more PerformedMedicalConditionResult. Each PerformedMedicalConditionResult might be addressed by one or more PerformedSubstanceAdministration.&lt;br/&gt;&lt;/p&gt;</div>
+</td>
+				</tr>
+
+			</table>
+		</div>
+<div class="ItemBody" id="TaggedValTable">
+	<table align="center" border="0" cellspacing="0" cellpadding="0" class="Table">
+	<tr>
+			<td width="30%" class="TableHeading">Tag</td>
+			<td width="30%" class="TableHeading">Value</td>
+			<td width="40%" class="TableHeading">Details</td>
+	</tr>
+					<tr>
+				<td width="30%" class="TableRow" valign="top">Map:caAERSv2.2</td>
+				<td width="30%" class="TableRow" valign="top">StudyParticipantPreExistingCondition</td>
+				<td width="30%" class="TableRow" valign="top">&nbsp;</td>
+			</tr>			<tr>
+				<td width="30%" class="TableRow" valign="top">Map:NCI CRF Standard</td>
+				<td width="30%" class="TableRow" valign="top">MedicalHistory</td>
+				<td width="30%" class="TableRow" valign="top">&nbsp;</td>
+			</tr>
+</table>
+</div>		<div class="ItemBody" id="LinksTable">
+			<table align="center" border="0" cellspacing="0" cellpadding="0" class="Table">
+				<tr>
+					<td width="30%" class="TableHeading">Object</td>
+					<td width="15%" class="TableHeading">Type</td>
+					<td width="15%" class="TableHeading">Connection</td>
+					<td width="40%" class="TableHeading">Notes</td>
+				</tr>
+				<tr>
+					<td width="30%" class="TableRow" valign="top"><a href="EA234.htm">PerformedObservationResult</a></td>
+					<td width="15%" class="TableRow" valign="top">Class</td>
+					<td width="15%" class="TableRow" valign="top">Generalization</td>
+					<td width="40%" class="TableRow" valign="top">DEFINITION:
+Each PerformedMedicalConditionResult always specializes one PerformedObservationResult. Each PerformedObservationResult might be specialized by one PerformedMedicalConditionResult.</td>
+				</tr>
+
+			</table>
+		</div>
+	</div>
+<div class="pageFooter"></div>
+ 
+</body>
+</html>

@@ -1,0 +1,5 @@
+tocTab[tocTab.length] = new Array("4.2.1", "1", "CM - Concomitant Medication", "EARoot/EA4/EA2/EA518.htm", "4.png", "", "", "{1774FAD3-4823-4ed1-874E-FE0DDA10539B}", "Package");
+tocTab[tocTab.length] = new Array("4.2.2", "1", "DM - Demography", "EARoot/EA4/EA2/EA519.htm", "4.png", "", "", "{C5852447-EA60-44a4-B330-79689711F70C}", "Package");
+tocTab[tocTab.length] = new Array("4.2.3", "1", "MH - Medical History", "EARoot/EA4/EA2/EA520.htm", "4.png", "", "", "{F4ECA8F6-2005-4d96-A42B-FD256B0245C0}", "Package");
+tocTab[tocTab.length] = new Array("4.2.4", "1", "SU - Substance Use", "EARoot/EA4/EA2/EA521.htm", "4.png", "", "", "{0BCDE446-DF12-4348-AD0F-35146308C8AE}", "Package");
+tocTab[tocTab.length] = new Array("4.2.5", "1", "VS - Vital Signs", "EARoot/EA4/EA2/EA522.htm", "4.png", "", "", "{F6C2ED66-B6DF-47d0-8961-BD53F274FF46}", "Package");

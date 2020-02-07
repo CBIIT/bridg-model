@@ -1,0 +1,817 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>Protocol Representation Sub-Domain::StudyProtocolVersion</title>
+<link href="../../../css/ea.css" rel="stylesheet" type="text/css" />
+<script>
+function initPage(src) {
+	if(parent==this&&(this.location+"").indexOf('EARoot')!=-1)
+		document.location=(this.location+"").substring(0,(this.location+"").indexOf('EARoot'))+"index"+(this.location+"").substring((this.location+"").lastIndexOf('.'))+"?goto="+((this.location+"").substring((this.location+"").indexOf('EARoot')+7,(this.location+"").lastIndexOf('.')).replace(/\//g,':').replace(/EA/g,""));
+	else
+		parent.initPage(src);
+}
+</script>
+</head>
+<body onload="initPage(this);" class="Content">
+<div class="pageHeader"></div>
+<div class="PageBody">
+	<span class="ObjectTitle">StudyProtocolVersion  : public   class</span>
+	<table border="0" cellpadding="0" cellspacing="0" class="ObjectDetails">
+		<tr>
+			<td width="15%" class="ObjectDetailsTopic">Created:</td>
+			<td width="85%" class="ObjectDetailsValue">3/14/2005 4:52:38 PM</td>
+		</tr>
+		<tr>
+			<td class="ObjectDetailsTopic">Modified:</td>
+			<td class="ObjectDetailsValue">2/23/2012 4:17:48 PM</td>
+		</tr>
+		<tr style="height: 10px"><td colspan="2"></td></tr>
+		<tr>
+			<td class="ObjectDetailsTopic"><img src="../../../images/plus03.gif" align="absmiddle" id="proj" onclick="parent.toggleData(this.id)" />Project:</td>
+			<td class="ObjectDetailsValue"></td>
+		</tr>
+		<tr id="proj00" style="display: none;">
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Author:</td>
+			<td class="ObjectDetailsValue">BRIDG SCC</td>
+		</tr>
+		<tr id="proj01" style="display: none;">
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Version:</td>
+			<td class="ObjectDetailsValue"></td>
+		</tr>
+		<tr id="proj02" style="display: none;">
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Phase:</td>
+			<td class="ObjectDetailsValue"></td>
+		</tr>
+		<tr id="proj03" style="display: none;">
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Status:</td>
+			<td class="ObjectDetailsValue"><none></td>
+		</tr>
+		<tr id="proj04" style="display: none;">
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Complexity:</td>
+			<td class="ObjectDetailsValue">Easy</td>
+		</tr>
+		<tr>
+			<td class="ObjectDetailsTopic"><img src="../../../images/plus03.gif" align="absmiddle" id="adv" onclick="parent.toggleData(this.id)" />Advanced:</td>
+			<td class="ObjectDetailsValue"></td>
+		</tr>
+		<tr id="adv00" style="display: none;">
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">UUID:</td>
+			<td class="ObjectDetailsValue">{792E71ED-0AD4-4eaf-A499-8AFB57DB3E62}</td>
+		</tr>
+		<tr id="adv01" style="display: none;">
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Appears In:</td>
+			<td class="ObjectDetailsValue"><a href="../EA11.htm">UML-Based Comprehensive BRIDG Model Diagram</a>, <a href="../EA1/EA23.htm">View AE: Adverse Event</a>, <a href="EA110.htm">View PR: Protocol Representation</a>, <a href="EA108.htm">Study Versioning View</a>, <a href="../EA5/EA198.htm">View SC: Study Conduct</a></td>
+		</tr>
+	</table>
+	<div class="ObjectDetailsNotes">&lt;p&gt;DEFINITION:&lt;br/&gt;&lt;/p&gt;&lt;p&gt;A plan at a particular point in time for a formal investigation to assess the utility, impact, pharmacological, physiological, and/or psychological effects of a particular treatment, procedure, drug, device, biologic, food product, cosmetic, care plan, or subject characteristic. &lt;br/&gt;&lt;/p&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;&lt;p&gt;EXAMPLE(S):&lt;br/&gt;&lt;/p&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;&lt;p&gt;OTHER NAME(S):&lt;br/&gt;&lt;/p&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;&lt;p&gt;NOTE(S):&lt;br/&gt;&lt;/p&gt;&lt;p&gt;The term &quot;protocol&quot; is somewhat overloaded and must be qualified to provide semantic context.&#160; Therefore the term &quot;study protocol&quot; was chosen to disambiguate it from other protocols. The notion of a study protocol includes (but is not limited to) the design, statistical considerations, activities to test a particular hypothesis or answer a particular question that is the basis of the study, characteristics, specifications, objective(s), background, pre-study/study/post-study portions of the plan (including the design, methodology, statistical considerations, organization).&#160; The study may be of any type that involves subjects, including prevention, therapeutic, interventional or observational.&#160; Subjects involved in the study protocol may be biological entities (human, animal, specimen, tissue, organ, etc.) or products. The study protocol is related to other supporting documents, including (but not limited to) informed consent documents, case report forms (CRFs), regulatory and approval documentation, correlative studies, etc. (via the inherited association to DocumentVersionRelationship).&#160; The complete notion of the study protocol is represented in BRIDG by the classes StudyProtocol, StudyProtocolVersion, StudyProtocolDocument, StudyProtocolDocumentVersion, StudyExecution and all their associations.&lt;br/&gt;&lt;/p&gt;&lt;p&gt;- The StudyProtocol class represents the content of the study protocol which includes characteristics and plan of the study which can be distilled into or abstracted from a version of the study protocol document and can exist even before the information is put into document form.&lt;br/&gt;&lt;/p&gt;&lt;p&gt;- The StudyProtocolVersion class represents the details of the study protocol that may change over time.&lt;br/&gt;&lt;/p&gt;&lt;p&gt;- The StudyProtocolDocument class represents the document form of the study protocol and is a grouping of the various study protocol document versions.&lt;br/&gt;&lt;/p&gt;&lt;p&gt;- The StudyProtocolDocumentVersion class represents the document form of the study protocol version and is the details of the study protocol document that may change over time.&lt;br/&gt;&lt;/p&gt;&lt;p&gt;- The StudyExecution class represents the conduct of a study based on a study protocol definition which includes the scheduled and performed activities that are subject-specific as well as study-level and site-level activities.&lt;br/&gt;&lt;/p&gt;</div>
+
+	<div class="TableGroup" id="TableGroup">
+		<ul class="ItemTitle">
+			<li onClick="parent.toggleItem('Attributes');" id="AttributesTitle">Attributes</li>
+			<li onClick="parent.toggleItem('AssociationsTo');" id="AssociationsToTitle">Associations To</li>
+			<li onClick="parent.toggleItem('AssociationsFrom');" id="AssociationsFromTitle">Associations From</li>
+			<li onClick="parent.toggleItem('TaggedVal');" id="TaggedValTitle">Tagged Values</li>
+			<li onClick="parent.toggleItem('Constraints');" id="ConstraintsTitle">Constraints</li>
+			<li onClick="parent.toggleItem('Links');" id="LinksTitle">Other Links</li>
+		</ul>
+<div class="ItemBody" id="AttributesTable">
+	<table border="0" cellspacing="0" cellpadding="0" class="Table">
+		<tr>
+			<td width="40%" class="TableHeading">Attribute</td>
+			<td width="60%" class="TableHeading">Details</td>
+		</tr>
+						<tr>
+				<td width="40%" class="TableRow" valign="top"><i>public ST</i><br /><strong>&nbsp;&nbsp;acronym</strong></td>
+				<td width="60%" class="TableRow" valign="top"><i>Range:0 to 1</i>Map:COPPA=InterventionalStudyProtocol.acronym<br>Map:COPPA=ObservationalStudyProtocol.acronym<br>Map:COPPA=StudyProtocol.acronym<br>Map:CTGOV=Acronym<br>Map:CTR&Rr2=Abbreviated title of trial<br>Map:CTRR=Acronym<br>Map:HSDBv1.0=[Study].Study Acronym<br>Map:WHO=Acronym<br><div class="ObjectDetailsNotes"><table>
+	<tr>
+		<td valign="top">
+			<i>Notes: </i><span style="margin-left: .4cm;"> </span>
+		</td>
+		<td>
+			DEFINITION:&lt;br /&gt;The non-unique initials or abbreviated name used for identification of the study.&nbsp;<WBR> &lt;br /&gt;&lt;br /&gt;EXAMPLE(S):&lt;br /&gt;WHI for Women&#39;s Health Initiative&lt;br /&gt;&lt;br /&gt;OTHER NAME(S):&lt;br /&gt;&lt;br /&gt;NOTE(S):
+		</td>
+	</tr>
+</table></div>
+</td>
+			</tr>			<tr>
+				<td width="40%" class="TableRow" valign="top"><i>public BL</i><br /><strong>&nbsp;&nbsp;mandatoryIndicator</strong></td>
+				<td width="60%" class="TableRow" valign="top"><i>Range:0 to 1</i>Map:PSCv2.6=Amendment.mandatory<br><div class="ObjectDetailsNotes"><table>
+	<tr>
+		<td valign="top">
+			<i>Notes: </i><span style="margin-left: .4cm;"> </span>
+		</td>
+		<td>
+			DEFINITION: &lt;br /&gt;Specifies whether the modifications contained in the study protocol version must be applied to all sites and subjects or study subjects that want to continue participating in the study.&lt;br /&gt;&lt;br /&gt;EXAMPLE(S):&lt;br /&gt;&lt;br /&gt;OTHER NAME(S):&lt;br /&gt;&lt;br /&gt;NOTE(S):
+		</td>
+	</tr>
+</table></div>
+</td>
+			</tr>			<tr>
+				<td width="40%" class="TableRow" valign="top"><i>public PQ.TIME</i><br /><strong>&nbsp;&nbsp;amendmentGracePeriod</strong></td>
+				<td width="60%" class="TableRow" valign="top"><i>Range:0 to 1</i>Map:C3PRv2.9=StudyVersion.gracePeriod<br><div class="ObjectDetailsNotes"><table>
+	<tr>
+		<td valign="top">
+			<i>Notes: </i><span style="margin-left: .4cm;"> </span>
+		</td>
+		<td>
+			DEFINITION:&lt;br /&gt;The period of time during which sites can continue to accrue on an existing study version before they are required to switch to the new study version. &lt;br /&gt;&lt;br /&gt;EXAMPLE(S): &lt;br /&gt;90 days&lt;br /&gt;&lt;br /&gt;OTHER NAME(S):&lt;br /&gt;&lt;br /&gt;NOTE(S):
+		</td>
+	</tr>
+</table></div>
+</td>
+			</tr>			<tr>
+				<td width="40%" class="TableRow" valign="top"><i>public CD</i><br /><strong>&nbsp;&nbsp;phaseCode</strong></td>
+				<td width="60%" class="TableRow" valign="top"><i>Range:0 to 1</i>Map:C3PR=Study.phaseCode<br>Map:C3PRv2.9=Study.phaseCode<br>Map:caAERSv2.2=Study.phaseCode<br>Map:COPPA=StudyProtocol.phaseCode<br>Map:COPPA=InterventionalStudyProtocol.phaseCode<br>Map:COPPA=ObservationalStudyProtocol.phaseCode<br>Map:CTGOV=Study Design Study Phase<br>Map:CTOM=Protocol.phaseCode<br>Map:CTR&Rr2=Trial type Therapeutic Exploratory (Phase II)<br>Map:CTR&Rr2=Trial type Therapeutic Confirmatory (Phase III)<br>Map:CTR&Rr2=Trial type Human pharmacology (Phase I)<br>Map:CTR&Rr2=Trial type Therapeutic Use (Phase IV)<br>Map:CTRR=Clinical Trial Phase<br>Map:HSDBv1.0=[Study].Phase<br>Map:LabViewer2.2=Study.phase<br>Map:SDTM IGv3.1.2=TS.TSVAL where TSPARMCD=TPHASE<br>Map:WHO=Study Type.Phase<br><div class="ObjectDetailsNotes"><table>
+	<tr>
+		<td valign="top">
+			<i>Notes: </i><span style="margin-left: .4cm;"> </span>
+		</td>
+		<td>
+			DEFINITION:&lt;br /&gt;A coded value specifying a stage in the progression of a therapy from initial experimental use in humans in clinical trials to post-market evaluation.&lt;br /&gt;&lt;br /&gt;EXAMPLE(S):&lt;br /&gt;I, I/II, II, III, N/A&lt;br /&gt;&lt;br /&gt;OTHER NAME(S):&lt;br /&gt;&lt;br /&gt;NOTE(S):&lt;br /&gt;Studies are generally categorized into four (sometimes five) phases described separately herein. An investigational medicine or product may be evaluated in two or more phases simultaneously in different studies, and some studies may overlap two different phases. Phase 1: The initial introduction of an investigational new drug into humans. Phase 1 studies are typically closely monitored and may be conducted in patients or normal volunteer subjects.&nbsp;<WBR> Phase 2: Controlled clinical studies conducted to evaluate the effectiveness of the drug for a particular indication or indications in patients with the disease or condition under study and to determine the common short-term side effects and risks associated with the drug. Phase 3: Studies are expanded controlled and uncontrolled. They are performed after preliminary evidence suggesting effectiveness of the drug has been obtained, and are intended to gather the additional information about effectiveness and safety that is needed to evaluate the overall benefit-risk relationship of the drug and to provide an adequate basis for physician labeling. Phase 3b: Phase 3b studies are a sub category of phase 3 near the time of approval to elicit additional findings. Phase 4:&nbsp;<WBR> Concurrent with marketing approval, Food and Drug Administration (FDA) may seek agreement from the sponsor to conduct certain post-marketing (phase 4) studies to delineate additional information about the drug&#39;s risks, benefits, and optimal use. Phase 5: Post-marketing surveillance is sometimes referred to as Phase 5. 
+		</td>
+	</tr>
+</table></div>
+</td>
+			</tr>			<tr>
+				<td width="40%" class="TableRow" valign="top"><i>public CD</i><br /><strong>&nbsp;&nbsp;primaryPurposeTypeCode</strong></td>
+				<td width="60%" class="TableRow" valign="top"><i>Range:0 to 1</i>Map:C3PR=Study.type<br>Map:C3PRv2.9=Study.type<br>Map:COPPA=ObservationalStudyProtocol.primaryPurposeCode<br>Map:COPPA=StudyProtocol.primaryPurposeCode<br>Map:COPPA=InterventionalStudyProtocol.primaryPurposeCode<br>Map:CTGOV=Study Design Primary Purpose<br>Map:CTGOV=Intervention Type<br>Map:CTOM=Protocol.intentCode<br>Map:CTR&Rr2=Trial type Other specification<br>Map:CTR&Rr2=Trial type Other<br>Map:CTR&Rr2=Trial type First administration to humans<br>Map:CTR&Rr2=Trial type Bioequivalence Study<br>Map:CTRR=Intervention Type<br>Map:CTRR=Primary Purpose<br>Map:ICSRr2=ResearchStudy.code (in IndividualCaseSafetyReport)<br>Map:SDTM IGv3.1.2=TS.TSVAL where TSPARMCD=TINDTP<br><div class="ObjectDetailsNotes"><table>
+	<tr>
+		<td valign="top">
+			<i>Notes: </i><span style="margin-left: .4cm;"> </span>
+		</td>
+		<td>
+			DEFINITION:&lt;br /&gt;A coded value specifying the type of study based upon the intent of the study&#39;s activities. A classification of the intent of the study.&lt;br /&gt;&lt;br /&gt;EXAMPLE(S):&lt;br /&gt;Treatment studies test new treatments, new combinations of drugs, or new approaches to surgery or radiation therapy. &lt;br /&gt;Prevention studies look for better ways to prevent disease in people who have never had the disease or to prevent a disease from returning. These approaches may include medicines, vitamins, vaccines, minerals, or lifestyle changes. &lt;br /&gt;Diagnostic studies are conducted to find better tests or procedures for diagnosing a particular disease or condition. &lt;br /&gt;Screening studies test the best way to detect certain diseases or health conditions. &lt;br /&gt;Quality of Life studies (or Supportive Care studies) explore ways to improve comfort and the quality of life for individuals with a chronic illness.&nbsp;<WBR> &lt;br /&gt;&lt;br /&gt;OTHER NAME(S):&lt;br /&gt;&lt;br /&gt;NOTE(S): &lt;br /&gt;StudyProtocolVersion.purposeStatement, StudyProtocolVersion.primaryPurposeTypeCode and StudyObjective may sound similar in meaning but are distinct concepts in BRIDG. StudyProtocolVersion.purposeStatement, which is an broad explanation of why a study is being conducted (e.g. determine efficacy of a drug or procedure), differs from StudyProtocolVersion.primaryPurposeTypeCode which is a classification of the purpose or intent of the study (e.g. Prevention, Treatment, Quality of Life), and that differs from StudyObjective, which describes in a specific and measurable way what the study hopes to accomplish (e.g. extend life of subjects at least 3 years, reduce frequency of symptoms).
+		</td>
+	</tr>
+</table></div>
+</td>
+			</tr>			<tr>
+				<td width="40%" class="TableRow" valign="top"><i>public ST</i><br /><strong>&nbsp;&nbsp;purposeStatement</strong></td>
+				<td width="60%" class="TableRow" valign="top"><i>Range:0 to 1</i>Map:CTRR=Trial Purpose Summary<br>Map:PRM=Trial Purpose Summary<br><div class="ObjectDetailsNotes"><table>
+	<tr>
+		<td valign="top">
+			<i>Notes: </i><span style="margin-left: .4cm;"> </span>
+		</td>
+		<td>
+			DEFINITION:&lt;br /&gt;A statement describing the overall intent of the study. This field describes the contribution of this study to product development, treatment strategies, prevention approaches, diagnostic techniques, or patient quality of life, i.e., what knowledge is being contributed from the conduct of this study.&lt;br /&gt;&lt;br /&gt;EXAMPLE(S):&lt;br /&gt;test the efficacy of a particular cancer treatment&lt;br /&gt;&lt;br /&gt;OTHER NAME(S):&lt;br /&gt;&lt;br /&gt;NOTE(S):&lt;br /&gt;StudyProtocolVersion.purposeStatement, StudyProtocolVersion.primaryPurposeTypeCode and StudyObjective may sound similar in meaning but are distinct concepts in BRIDG. StudyProtocolVersion.purposeStatement, which is an broad explanation of why a study is being conducted (e.g. determine efficacy of a drug or procedure), differs from StudyProtocolVersion.primaryPurposeTypeCode which is a classification of the purpose or intent of the study (e.g. Prevention, Treatment, Quality of Life), and that differs from StudyObjective, which describes in a specific and measurable way what the study hopes to accomplish (e.g. extend life of subjects at least 3 years, reduce frequency of symptoms).
+		</td>
+	</tr>
+</table></div>
+</td>
+			</tr>			<tr>
+				<td width="40%" class="TableRow" valign="top"><i>public DSET<CD></i><br /><strong>&nbsp;&nbsp;targetAnatomicSiteCode</strong></td>
+				<td width="60%" class="TableRow" valign="top"><i>Range:0 to *</i>Map:COPPA=InterventionalStudyProtocol.targetAnatomicSiteCode<br>Map:COPPA=ObservationalStudyProtocol.targetAnatomicSiteCode<br>Map:COPPA=StudyProtocol.targetAnatomicSiteCode<br><div class="ObjectDetailsNotes"><table>
+	<tr>
+		<td valign="top">
+			<i>Notes: </i><span style="margin-left: .4cm;"> </span>
+		</td>
+		<td>
+			DEFINITION:&lt;br /&gt;A coded value specifying the anatomic location that is the focus of a study.&lt;br /&gt;&lt;br /&gt;EXAMPLE(S):&lt;br /&gt;breast, ovary&lt;br /&gt;&lt;br /&gt;OTHER NAME(S):&lt;br /&gt;&lt;br /&gt;NOTE(S):&lt;br /&gt;Sources that capture anatomic site and laterality separately should map both to this attribute. For implementation models based on BRIDG where site and laterality are captured separately, you may wish to capture both concepts as a post-coordinated code structure or as multiple code repetitions.
+		</td>
+	</tr>
+</table></div>
+</td>
+			</tr>			<tr>
+				<td width="40%" class="TableRow" valign="top"><i>public CD</i><br /><strong>&nbsp;&nbsp;designConfigurationCode</strong></td>
+				<td width="60%" class="TableRow" valign="top"><i>Range:0 to 1</i>Map:COPPA=ObservationalStudyProtocol.studyModelCode<br>Map:COPPA=InterventionalStudyProtocol.designConfigurationCode<br>Map:CTGOV=Observational Study Model<br>Map:CTGOV=Study Design<br>Map:CTGOV=Intervention Model<br>Map:CTRR=Description of study design<br>Map:CTRR=Configuration<br>Map:WHO=Study Type Study Design Assignment<br><div class="ObjectDetailsNotes"><table>
+	<tr>
+		<td valign="top">
+			<i>Notes: </i><span style="margin-left: .4cm;"> </span>
+		</td>
+		<td>
+			DEFINITION:&lt;br /&gt;A coded value specifying a study pattern developed to compare treatment groups in a clinical or pre-clinical study.&lt;br /&gt;&lt;br /&gt;EXAMPLE(S):&lt;br /&gt;Parallel Group Design, Crossover Design, Factorial Designs, Cohort, Case-control, Case-only, Case-crossover, Ecologic or Community Studies, Family-based&lt;br /&gt;&lt;br /&gt;OTHER NAME(S):&lt;br /&gt;&lt;br /&gt;NOTE(S):&lt;br /&gt;The configuration usually requires randomization to one or more treatment arms, each arm being allocated a different (or no) treatment.
+		</td>
+	</tr>
+</table></div>
+</td>
+			</tr>			<tr>
+				<td width="40%" class="TableRow" valign="top"><i>public CD</i><br /><strong>&nbsp;&nbsp;companionCode</strong></td>
+				<td width="60%" class="TableRow" valign="top"><i>Range:0 to 1</i>Map:C3PRv2.9=Study.standaloneIndicator<br>Map:C3PRv2.9=Study.companionIndicator<br><div class="ObjectDetailsNotes"><table>
+	<tr>
+		<td valign="top">
+			<i>Notes: </i><span style="margin-left: .4cm;"> </span>
+		</td>
+		<td>
+			DEFINITION:&lt;br /&gt;A coded value specifying the type of ancillary study.&lt;br /&gt;&lt;br /&gt;EXAMPLE(S):&lt;br /&gt;Embedded, Non-Stand-Alone Companion: This study is part of a master study and cannot be executed separately from it nor in association with another master study. The documentation for this kind of companion study is embedded in the protocol of the master study.&nbsp;<WBR>&nbsp;<WBR> &lt;br /&gt;&lt;br /&gt;Non-Embedded, Non-Stand-Alone Companion: This study is documented separately from a master study, but must be performed as part of a master study or as part of several master studies.&lt;br /&gt;&lt;br /&gt;Non-Embedded, Stand-Alone Companion: This study is a separately documented study that can be performed on its own or as a companion to one or more master studies.&lt;br /&gt;&lt;br /&gt;Non-Companion/Independent: This study is documented and executed on its own and does not support co-execution with a master study. This kind of study may be a master study with companion studies of its own.&lt;br /&gt;&lt;br /&gt;OTHER NAME(S):&lt;br /&gt;&lt;br /&gt;NOTE(S):&lt;br /&gt;Changes to example codes will require revisiting the RIM-based BRIDG Model.
+		</td>
+	</tr>
+</table></div>
+</td>
+			</tr>			<tr>
+				<td width="40%" class="TableRow" valign="top"><i>public ED</i><br /><strong>&nbsp;&nbsp;studySchematic</strong></td>
+				<td width="60%" class="TableRow" valign="top"><i>Range:0 to 1</i>Map:COPPA=ObservationalStudyProtocol.studySchematic<br>Map:COPPA=StudyProtocol.studySchematic<br>Map:COPPA=InterventionalStudyProtocol.studySchematic<br>Map:CTRR=Study schematic/flow chart<br><div class="ObjectDetailsNotes"><table>
+	<tr>
+		<td valign="top">
+			<i>Notes: </i><span style="margin-left: .4cm;"> </span>
+		</td>
+		<td>
+			DEFINITION:&lt;br /&gt;Diagram which outlines all study epochs, timing of randomization and duration of treatments.&lt;br /&gt;&lt;br /&gt;EXAMPLE(S):&lt;br /&gt;&lt;br /&gt;OTHER NAME(S):&lt;br /&gt;&lt;br /&gt;NOTE(S):
+		</td>
+	</tr>
+</table></div>
+</td>
+			</tr>			<tr>
+				<td width="40%" class="TableRow" valign="top"><i>public ST</i><br /><strong>&nbsp;&nbsp;populationDescription</strong></td>
+				<td width="60%" class="TableRow" valign="top"><i>Range:0 to 1</i>Map:COPPA=ObservationalStudyProtocol.studyPopulationDescription<br>Map:COPPA=StudyProtocol.populationDescription<br>Map:COPPA=InterventionalStudyProtocol.populationDescription<br>Map:COPPA=ObservationalStudyProtocol.populationDescription<br>Map:CTGOV=Study Population Description<br>Map:CTR&Rr2=Population healthy volunteers<br>Map:CTRR=Target study population description<br>Map:WHO=Health Condition(s) or Problem(s) Studied<br><div class="ObjectDetailsNotes"><table>
+	<tr>
+		<td valign="top">
+			<i>Notes: </i><span style="margin-left: .4cm;"> </span>
+		</td>
+		<td>
+			DEFINITION:&lt;br /&gt;The textual representation of the subject characteristics, including inclusion and exclusion criteria and describes the population for which the study may be generalized. &lt;br /&gt;&lt;br /&gt;EXAMPLE(S):&lt;br /&gt;&lt;br /&gt;OTHER NAME(S):&lt;br /&gt;&lt;br /&gt;NOTE(S):&lt;br /&gt;This would include all subgroups as well.
+		</td>
+	</tr>
+</table></div>
+</td>
+			</tr>			<tr>
+				<td width="40%" class="TableRow" valign="top"><i>public CD</i><br /><strong>&nbsp;&nbsp;studySubjectTypeCode</strong></td>
+				<td width="60%" class="TableRow" valign="top"><i>Range:0 to 1</i>Map:HL7SP=StudyParticipation RMIM<br><div class="ObjectDetailsNotes"><table>
+	<tr>
+		<td valign="top">
+			<i>Notes: </i><span style="margin-left: .4cm;"> </span>
+		</td>
+		<td>
+			DEFINITION:&lt;br /&gt;A coded value specifying the kind of study subject involved in the study or investigation.&lt;br /&gt;&lt;br /&gt;EXAMPLE(S):&lt;br /&gt;human, rat, mouse, x-ray machine&lt;br /&gt;&lt;br /&gt;OTHER NAME(S):&lt;br /&gt;&lt;br /&gt;NOTE(S): &lt;br /&gt;This attribute is explicitly not meant to represent parts of study subjects that may be studied, such as a human eye, or groups of study subjects such as a herd of cows.&nbsp;<WBR> It is meant to represent the whole individual that is registered as a study subject.&nbsp;<WBR>&nbsp;<WBR> 
+		</td>
+	</tr>
+</table></div>
+</td>
+			</tr>			<tr>
+				<td width="40%" class="TableRow" valign="top"><i>public ST</i><br /><strong>&nbsp;&nbsp;plannedStudySubjectExperience</strong></td>
+				<td width="60%" class="TableRow" valign="top"><i>Range:0 to 1</i>Map:CTRR=Planned Subject Participation Experience<br>Map:PRM=Planned Subject Participation Experience (ICH)<br><div class="ObjectDetailsNotes"><table>
+	<tr>
+		<td valign="top">
+			<i>Notes: </i><span style="margin-left: .4cm;"> </span>
+		</td>
+		<td>
+			DEFINITION:&lt;br /&gt;A description of what the study subject can expect to experience over the course of the study, including the sequence and duration of activities.&lt;br /&gt;&lt;br /&gt;EXAMPLE(S):&lt;br /&gt;The description, sequence and duration of study epochs, including pre-randomization and post-treatment epochs, therapy withdrawal epochs, and single- and double-blind treatment epochs.&lt;br /&gt;&lt;br /&gt;OTHER NAME(S):&lt;br /&gt;&lt;br /&gt;NOTE(S):
+		</td>
+	</tr>
+</table></div>
+</td>
+			</tr>			<tr>
+				<td width="40%" class="TableRow" valign="top"><i>public PQ.TIME</i><br /><strong>&nbsp;&nbsp;plannedDuration</strong></td>
+				<td width="60%" class="TableRow" valign="top"><i>Range:0 to 1</i>Map:CTR&Rr2=PlannedActivity.plannedDuration<br>Map:HSDBv1.0=[Study].Study duration<br>Map:SDTM IGv3.1.2=TS.TSVAL where TSPARMCD=LENGTH<br><div class="ObjectDetailsNotes"><table>
+	<tr>
+		<td valign="top">
+			<i>Notes: </i><span style="margin-left: .4cm;"> </span>
+		</td>
+		<td>
+			DEFINITION:&lt;br /&gt;The intended period of time for the study.&lt;br /&gt;&lt;br /&gt;EXAMPLE(S):&lt;br /&gt;&lt;br /&gt;OTHER NAME(S):&lt;br /&gt;&lt;br /&gt;NOTE(S):
+		</td>
+	</tr>
+</table></div>
+</td>
+			</tr>			<tr>
+				<td width="40%" class="TableRow" valign="top"><i>public URG<INT.NONNEG></i><br /><strong>&nbsp;&nbsp;targetAccrualNumberRange</strong></td>
+				<td width="60%" class="TableRow" valign="top"><i>Range:0 to 1</i>Map:C3PR=Study.targetAccrualNumber<br>Map:C3PRv2.9=Study.targetAccrualNumber<br>Map:COPPA=StudyProtocol.targetAccrualNumber<br>Map:COPPA=InterventionalStudyProtocol.targetAccrualNumber<br>Map:COPPA=InterventionalStudyProtocol.maximumTargetAccrualNumber<br>Map:COPPA=ObservationalStudyProtocol.maximumTargetAccrualNumber<br>Map:COPPA=ObservationalStudyProtocol.targetAnatomicSiteCode.targetAccrualNumber<br>Map:COPPA=StudyProtocol.maximumTargetAccrualNumber<br>Map:CTGOV=Enrollment<br>Map:CTOM=Protocol.targetAccrualNumber<br>Map:CTR&Rr2=Population planned numbers in whole trial<br>Map:CTRR=Targeted Accrual<br>Map:HSDBv1.0=[Study].Targeted Accrual<br>Map:SDTM IGv3.1.2=TS.TSVAL where TSPARMCD=PLANSUB<br>Map:WHO=Target Sample Size<br><div class="ObjectDetailsNotes"><table>
+	<tr>
+		<td valign="top">
+			<i>Notes: </i><span style="margin-left: .4cm;"> </span>
+		</td>
+		<td>
+			DEFINITION:&lt;br /&gt;A range of integers specifying the minimum and maximum number of study subjects to be accrued for the study.&lt;br /&gt;&lt;br /&gt;EXAMPLE(S):&lt;br /&gt;&lt;br /&gt;OTHER NAME(S):&lt;br /&gt;&lt;br /&gt;NOTE(S):&lt;br /&gt;A typical target accrual number (always assumed to be a minimum target) would be targetAccrualNumberRange.IVL&lt;INT&gt;.low, a maximum target accrual would be targetAccrualNumberRange.IVL&lt;INT&gt;.high.
+		</td>
+	</tr>
+</table></div>
+</td>
+			</tr>			<tr>
+				<td width="40%" class="TableRow" valign="top"><i>public RTO<INT.NONNEG,PQ.TIME></i><br /><strong>&nbsp;&nbsp;periodicTargetAccrualNumber</strong></td>
+				<td width="60%" class="TableRow" valign="top"><i>Range:0 to 1</i>Map:COPPA=StudyProtocol.monthlyTargetAccrualNumber<br>Map:COPPA=ObservationalStudyProtocol.monthlyTargetAccrualNumber<br>Map:COPPA=InterventionalStudyProtocol.monthlyTargetAccrualNumber<br><div class="ObjectDetailsNotes"><table>
+	<tr>
+		<td valign="top">
+			<i>Notes: </i><span style="margin-left: .4cm;"> </span>
+		</td>
+		<td>
+			DEFINITION:&lt;br /&gt;A range of integers specifying the minimum and maximum number of study subjects to be accrued per a specified amount of time.&lt;br /&gt;&lt;br /&gt;EXAMPLE(S):&lt;br /&gt;For monthly target accrual, a given study may have a target accrual of 100 per 1 month meaning the numerator of the ratio is the integer 100 and the denominator is a PQ where the value is 1 and the unit is month.&lt;br /&gt;&lt;br /&gt;OTHER NAME(S):&lt;br /&gt;&lt;br /&gt;NOTE(S):
+		</td>
+	</tr>
+</table></div>
+</td>
+			</tr>			<tr>
+				<td width="40%" class="TableRow" valign="top"><i>public CD</i><br /><strong>&nbsp;&nbsp;accrualReportingMethodCode</strong></td>
+				<td width="60%" class="TableRow" valign="top"><i>Range:0 to 1</i>Map:COPPA=InterventionalStudyProtocol.accrualReportingMethodCode<br>Map:COPPA=ObservationalStudyProtocol.accrualReportingMethodCode<br>Map:COPPA=StudyProtocol.accrualReportingMethodCode<br><div class="ObjectDetailsNotes"><table>
+	<tr>
+		<td valign="top">
+			<i>Notes: </i><span style="margin-left: .4cm;"> </span>
+		</td>
+		<td>
+			DEFINITION:&lt;br /&gt;A coded value specifying the technique that is used for reporting study subject accrual data to the study sponsor.&lt;br /&gt;&lt;br /&gt;EXAMPLE(S):&lt;br /&gt;complete, abbreviated&lt;br /&gt;&lt;br /&gt;OTHER NAME(S):&lt;br /&gt;&lt;br /&gt;NOTE(S):
+		</td>
+	</tr>
+</table></div>
+</td>
+			</tr>			<tr>
+				<td width="40%" class="TableRow" valign="top"><i>public CD</i><br /><strong>&nbsp;&nbsp;responsiblePartyCode</strong></td>
+				<td width="60%" class="TableRow" valign="top"><i>Range:0 to 1</i>Map:COPPA=InterventionalStudyProtocol.responsiblePartyCode<br>Map:COPPA=StudyProtocol.responsiblePartyCode<br>Map:COPPA=ObservationalStudyProtocol.responsiblePartyCode<br>Map:CTGOV=Responsible Party<br><div class="ObjectDetailsNotes"><table>
+	<tr>
+		<td valign="top">
+			<i>Notes: </i><span style="margin-left: .4cm;"> </span>
+		</td>
+		<td>
+			DEFINITION:&lt;br /&gt;A coded value specifying the type of entity who is legally responsible for the execution of the study.&lt;br /&gt;&lt;br /&gt;EXAMPLE(S):&lt;br /&gt;PI, sponsor&lt;br /&gt;&lt;br /&gt;OTHER NAME(S):&lt;br /&gt;&lt;br /&gt;NOTE(S):
+		</td>
+	</tr>
+</table></div>
+</td>
+			</tr>			<tr>
+				<td width="40%" class="TableRow" valign="top"><i>public BL</i><br /><strong>&nbsp;&nbsp;multiInstitutionIndicator</strong></td>
+				<td width="60%" class="TableRow" valign="top"><i>Range:0 to 1</i>Map:C3PR=Study.multiInstitutionIndicator<br>Map:caAERSv2.2=Study.multiInstitutionIndicator<br>Map:CTOM=Protocol.multiInstitutionIndicator<br>Map:CTRR=Multi Institution Indicator<br><div class="ObjectDetailsNotes"><table>
+	<tr>
+		<td valign="top">
+			<i>Notes: </i><span style="margin-left: .4cm;"> </span>
+		</td>
+		<td>
+			DEFINITION:&lt;br /&gt;Specifies whether a study is designed to be conducted at more than one site concurrently.&lt;br /&gt;&lt;br /&gt;EXAMPLE(S):&lt;br /&gt;&lt;br /&gt;OTHER NAME(S):&lt;br /&gt;&lt;br /&gt;NOTE(S):&lt;br /&gt;This could be conceived as derivable, but since it needs to be defined before study sites are associated with a study, it is needed here.&lt;br /&gt;&lt;br /&gt;Traditionally, the domain concept for this attribute is called &quot;Multi-Institution&quot; indicator, but the intent is to identify whether there will be multiple sites which will have separate IRB approvals, personnel training, regulatory affairs, consistent use of procedures, etc. So if a given institution has multiple sites associated with it and does IRB approval at the institution level, but has more than one site involved in the study, even if all the sites are part of the same institution, it is still multiInstitutionIndicator = &quot;true&quot;.
+		</td>
+	</tr>
+</table></div>
+</td>
+			</tr>			<tr>
+				<td width="40%" class="TableRow" valign="top"><i>public CD</i><br /><strong>&nbsp;&nbsp;participatingOrganizationTypeCode</strong></td>
+				<td width="60%" class="TableRow" valign="top"><i>Range:0 to 1</i>Map:COPPA=StudyProtocol.participatingOrganizationTypeCode<br>Map:COPPA=ObservationalStudyProtocol.participatingOrganizationTypeCode<br>Map:COPPA=InterventionalStudyProtocol.participatingOrganizationTypeCode<br><div class="ObjectDetailsNotes"><table>
+	<tr>
+		<td valign="top">
+			<i>Notes: </i><span style="margin-left: .4cm;"> </span>
+		</td>
+		<td>
+			DEFINITION:&lt;br /&gt;A coded value specifying the kind of organizations planned to participate as study sites for this study.&lt;br /&gt;&lt;br /&gt;EXAMPLE(S):&lt;br /&gt;Cancer Center, Clinical Center, Consortium, Group, Intergroup, Multi-Center, Network, Single Institution&lt;br /&gt;&lt;br /&gt;OTHER NAME(S):&lt;br /&gt;&lt;br /&gt;NOTE(S):
+		</td>
+	</tr>
+</table></div>
+</td>
+			</tr>			<tr>
+				<td width="40%" class="TableRow" valign="top"><i>public DSET<CD></i><br /><strong>&nbsp;&nbsp;participatingLocationCode</strong></td>
+				<td width="60%" class="TableRow" valign="top"><i>Range:0 to *</i>Map:CTRR=Countries of Recruitment<br>Map:HSDBv1.0=[Study].location of study <br>Map:WHO=Countries of Recruitment<br><div class="ObjectDetailsNotes"><table>
+	<tr>
+		<td valign="top">
+			<i>Notes: </i><span style="margin-left: .4cm;"> </span>
+		</td>
+		<td>
+			DEFINITION:&lt;br /&gt;A coded value specifying the locations from which participants will be, are intended to be, or have been recruited for the study.&lt;br /&gt;&lt;br /&gt;EXAMPLE(S):&lt;br /&gt;&lt;br /&gt;OTHER NAME(S):&lt;br /&gt;participating countries, participating states&lt;br /&gt;&lt;br /&gt;NOTE(S):
+		</td>
+	</tr>
+</table></div>
+</td>
+			</tr>			<tr>
+				<td width="40%" class="TableRow" valign="top"><i>public OID</i><br /><strong>&nbsp;&nbsp;aeCodingSystem</strong></td>
+				<td width="60%" class="TableRow" valign="top"><i>Range:0 to 1</i>Map:caAERSv2.2=AETerminology<br>Map:COPPA=InterventionalStudyProtocol.AECodingSystem<br>Map:COPPA=ObservationalStudyProtocol.AECodingSystem<br>Map:COPPA=StudyProtocol.AEcodingSystem<br><div class="ObjectDetailsNotes"><table>
+	<tr>
+		<td valign="top">
+			<i>Notes: </i><span style="margin-left: .4cm;"> </span>
+		</td>
+		<td>
+			DEFINITION:&lt;br /&gt;The coding system used for recording adverse events for a study.&lt;br /&gt;&lt;br /&gt;EXAMPLE(S):&lt;br /&gt;&lt;br /&gt;OTHER NAME(S):&lt;br /&gt;&lt;br /&gt;NOTE(S):
+		</td>
+	</tr>
+</table></div>
+</td>
+			</tr>			<tr>
+				<td width="40%" class="TableRow" valign="top"><i>public OID</i><br /><strong>&nbsp;&nbsp;conditionCodingSystem</strong></td>
+				<td width="60%" class="TableRow" valign="top"><i>Range:0 to 1</i>Map:caAERSv2.2=DiseaseTerminology.diseaseCodeTerm<br><div class="ObjectDetailsNotes"><table>
+	<tr>
+		<td valign="top">
+			<i>Notes: </i><span style="margin-left: .4cm;"> </span>
+		</td>
+		<td>
+			DEFINITION: &lt;br /&gt;The coding system used for recording conditions that are the focus of a study.&lt;br /&gt;&lt;br /&gt;EXAMPLE(S):&lt;br /&gt;&lt;br /&gt;OTHER NAME(S):&lt;br /&gt;&lt;br /&gt;NOTE(S):
+		</td>
+	</tr>
+</table></div>
+</td>
+			</tr>
+		</table>
+</div>		<div class="ItemBody" id="AssociationsToTable">
+			<table border="0" cellspacing="0" cellpadding="0" class="Table">
+				<tr>
+					<td width="20%" class="TableHeading">Element</td>
+					<td width="25%" class="TableHeading">Source Role</td>
+					<td width="25%" class="TableHeading">Target Role</td>
+					<td width="30%" class="TableHeading">Details</td>
+				</tr>
+				<tr>
+					<td width="20%" class="TableRow" valign="top">
+						<a href="EA181.htm">StudyProtocol</a><br />
+						Class &nbsp;
+					</td>
+					<td width="20%" class="TableRow" valign="top">
+						<strong>Name:</strong> versioningStudyProtocolVersion<br />
+						&nbsp;
+					</td>
+					<td width="20%" class="TableRow" valign="top">
+						<strong>Name:</strong> versionedStudyProtocol<br />
+						&nbsp;	
+					</td>
+					<td width="30%" class="TableRow" valign="top"><div class="ObjectDetailsNotes">&lt;p&gt;DEFINITION:&lt;br/&gt;&lt;/p&gt;&lt;p&gt;Each StudyProtocolVersion always is a version of one StudyProtocol. Each StudyProtocol always has as a version one or more StudyProtocolVersion.&lt;br/&gt;&lt;/p&gt;</div>
+</td>
+				</tr>
+
+			</table>
+		</div>
+		<div class="ItemBody" id="AssociationsFromTable">
+			<table border="0" cellspacing="0" cellpadding="0" class="Table">
+				<tr>
+					<td width="20%" class="TableHeading">Element</td>
+					<td width="25%" class="TableHeading">Source Role</td>
+					<td width="25%" class="TableHeading">Target Role</td>
+					<td width="30%" class="TableHeading">Details</td>
+				</tr>
+				<tr>
+					<td width="20%" class="TableRow" valign="top">
+						<a href="../EA5/EA220.htm">PerformedActivity</a><br />
+						Class &nbsp;
+					</td>
+					<td width="20%" class="TableRow" valign="top">
+						<strong>Name:</strong> executedPerformedActivity<br />
+						&nbsp;
+					</td>
+					<td width="20%" class="TableRow" valign="top">
+						<strong>Name:</strong> versionStudyProtocolVersion<br />
+						&nbsp;	
+					</td>
+					<td width="30%" class="TableRow" valign="top"><div class="ObjectDetailsNotes">&lt;p&gt;DEFINITION:&lt;br/&gt;&lt;/p&gt;&lt;p&gt;Each PerformedActivity might execute under one StudyProtocolVersion.&#160; Each StudyProtocolVersion might be executed by one or more PerformedActivity.&lt;br/&gt;&lt;/p&gt;</div>
+</td>
+				</tr>
+				<tr>
+					<td width="20%" class="TableRow" valign="top">
+						<a href="../EA5/EA254.htm">StudyOversightAuthority</a><br />
+						Class &nbsp;
+					</td>
+					<td width="20%" class="TableRow" valign="top">
+						<strong>Name:</strong> overseeingStudyOversightAuthority<br />
+						&nbsp;
+					</td>
+					<td width="20%" class="TableRow" valign="top">
+						<strong>Name:</strong> overseenStudyProtocolVersion<br />
+						&nbsp;	
+					</td>
+					<td width="30%" class="TableRow" valign="top"><div class="ObjectDetailsNotes">&lt;p&gt;DEFINITION: &lt;br/&gt;&lt;/p&gt;&lt;p&gt;Each StudyOversightAuthority might oversee one StudyProtocolVersion. Each StudyProtocolVersion might be overseen by one or more StudyOversightAuthority.&lt;br/&gt;&lt;/p&gt;</div>
+</td>
+				</tr>
+				<tr>
+					<td width="20%" class="TableRow" valign="top">
+						<a href="../EA5/EA255.htm">StudyPersonnel</a><br />
+						Class &nbsp;
+					</td>
+					<td width="20%" class="TableRow" valign="top">
+						<strong>Name:</strong> performedStudyPersonnel<br />
+						&nbsp;
+					</td>
+					<td width="20%" class="TableRow" valign="top">
+						<strong>Name:</strong> performingStudyProtocolVersion<br />
+						&nbsp;	
+					</td>
+					<td width="30%" class="TableRow" valign="top"><div class="ObjectDetailsNotes">&lt;p&gt;DEFINITION:&lt;br/&gt;&lt;/p&gt;&lt;p&gt;Each StudyPersonnel might perform a role for one StudyProtocolVersion.&#160; Each StudyProtocolVersion might have a role performed by one or more StudyPersonnel.&lt;br/&gt;&lt;/p&gt;</div>
+</td>
+				</tr>
+				<tr>
+					<td width="20%" class="TableRow" valign="top">
+						<a href="../EA5/EA258.htm">StudyResource</a><br />
+						Class &nbsp;
+					</td>
+					<td width="20%" class="TableRow" valign="top">
+						<strong>Name:</strong> usedStudyResource<br />
+						&nbsp;
+					</td>
+					<td width="20%" class="TableRow" valign="top">
+						<strong>Name:</strong> usingStudyProtocolVersion<br />
+						&nbsp;	
+					</td>
+					<td width="30%" class="TableRow" valign="top"><div class="ObjectDetailsNotes">&lt;p&gt;DEFINITION:&lt;br/&gt;&lt;/p&gt;&lt;p&gt;Each StudyResource might be used for one StudyProtocolVersion.&#160; Each StudyProtocolVersion might use one or more StudyResource.&lt;br/&gt;&lt;/p&gt;</div>
+</td>
+				</tr>
+				<tr>
+					<td width="20%" class="TableRow" valign="top">
+						<a href="../EA5/EA263.htm">StudySiteProtocolVersionRelationship</a><br />
+						Class &nbsp;
+					</td>
+					<td width="20%" class="TableRow" valign="top">
+						<strong>Name:</strong> executingStudySiteProtocolVersionRelationship<br />
+						&nbsp;
+					</td>
+					<td width="20%" class="TableRow" valign="top">
+						<strong>Name:</strong> executedStudyProtocolVersion<br />
+						&nbsp;	
+					</td>
+					<td width="30%" class="TableRow" valign="top"><div class="ObjectDetailsNotes">&lt;p&gt;DEFINITION:&lt;br/&gt;&lt;/p&gt;&lt;p&gt;Each StudySiteProtocolVersionRelationship always executes one StudyProtocolVersion. Each StudyProtocolVersion might be executed at one or more StudySiteProtocolVersionRelationship.&lt;br/&gt;&lt;/p&gt;</div>
+</td>
+				</tr>
+				<tr>
+					<td width="20%" class="TableRow" valign="top">
+						<a href="EA185.htm">StudyReference</a><br />
+						Class &nbsp;
+					</td>
+					<td width="20%" class="TableRow" valign="top">
+						<strong>Name:</strong> referencingStudyReference<br />
+						&nbsp;
+					</td>
+					<td width="20%" class="TableRow" valign="top">
+						<strong>Name:</strong> referencedStudyProtocolVersion<br />
+						&nbsp;	
+					</td>
+					<td width="30%" class="TableRow" valign="top"><div class="ObjectDetailsNotes">&lt;p&gt;DEFINITION:&lt;br/&gt;&lt;/p&gt;&lt;p&gt;Each StudyReference always is referenced by one or more StudyProtocolVersion. Each StudyProtocolVersion might refer to one or more StudyReference.&lt;br/&gt;&lt;/p&gt;</div>
+</td>
+				</tr>
+				<tr>
+					<td width="20%" class="TableRow" valign="top">
+						<a href="EA183.htm">StudyProtocolDocumentVersion</a><br />
+						Class &nbsp;
+					</td>
+					<td width="20%" class="TableRow" valign="top">
+						<strong>Name:</strong> containedStudyProtocolDocumentVersion<br />
+						&nbsp;
+					</td>
+					<td width="20%" class="TableRow" valign="top">
+						<strong>Name:</strong> containingStudyProtocolVersion<br />
+						&nbsp;	
+					</td>
+					<td width="30%" class="TableRow" valign="top"><div class="ObjectDetailsNotes">&lt;p&gt;DEFINITION:&lt;br/&gt;&lt;/p&gt;&lt;p&gt;Each StudyProtocolDocumentVersion always contains one StudyProtocolVersion. Each StudyProtocolVersion might be the contents of one StudyProtocolDocumentVersion.&lt;br/&gt;&lt;/p&gt;</div>
+</td>
+				</tr>
+				<tr>
+					<td width="20%" class="TableRow" valign="top">
+						<a href="EA179.htm">StudyObjective</a><br />
+						Class &nbsp;
+					</td>
+					<td width="20%" class="TableRow" valign="top">
+						<strong>Name:</strong> involvedStudyObjective<br />
+						&nbsp;
+					</td>
+					<td width="20%" class="TableRow" valign="top">
+						<strong>Name:</strong> involvingStudyProtocolVersion<br />
+						&nbsp;	
+					</td>
+					<td width="30%" class="TableRow" valign="top"><div class="ObjectDetailsNotes">&lt;p&gt;DEFINITION:&lt;br/&gt;&lt;/p&gt;&lt;p&gt;Each StudyObjective always is an aim of one StudyProtocolVersion.&#160; Each StudyProtocolVersion might aim to achieve one or more StudyObjective.&lt;br/&gt;&lt;/p&gt;</div>
+</td>
+				</tr>
+				<tr>
+					<td width="20%" class="TableRow" valign="top">
+						<a href="EA178.htm">StudyLegalSponsor</a><br />
+						Class &nbsp;
+					</td>
+					<td width="20%" class="TableRow" valign="top">
+						<strong>Name:</strong> sponsoringStudyLegalSponsor<br />
+						&nbsp;
+					</td>
+					<td width="20%" class="TableRow" valign="top">
+						<strong>Name:</strong> sponsoredStudyProtocolVersion<br />
+						&nbsp;	
+					</td>
+					<td width="30%" class="TableRow" valign="top"><div class="ObjectDetailsNotes">&lt;p&gt;DEFINITION:&lt;br/&gt;&lt;/p&gt;&lt;p&gt;Each StudyLegalSponsor always is responsible for one StudyProtocolVersion.&#160; Each StudyProtocolVersion might be the responsibility of one or more StudyLegalSponsor.&lt;br/&gt;&lt;/p&gt;</div>
+</td>
+				</tr>
+				<tr>
+					<td width="20%" class="TableRow" valign="top">
+						<a href="EA177.htm">StudyCondition</a><br />
+						Class &nbsp;
+					</td>
+					<td width="20%" class="TableRow" valign="top">
+						<strong>Name:</strong> investigatedStudyCondition<br />
+						&nbsp;
+					</td>
+					<td width="20%" class="TableRow" valign="top">
+						<strong>Name:</strong> focuses onStudyProtocolVersion<br />
+						&nbsp;	
+					</td>
+					<td width="30%" class="TableRow" valign="top"><div class="ObjectDetailsNotes">&lt;p&gt;DEFINITION:&lt;br/&gt;&lt;/p&gt;&lt;p&gt;Each StudyCondition always is the focus of one StudyProtocolVersion. Each StudyProtocolVersion might focus on one or more StudyCondition.&lt;br/&gt;&lt;/p&gt;</div>
+</td>
+				</tr>
+				<tr>
+					<td width="20%" class="TableRow" valign="top">
+						<a href="EA176.htm">StudyAgent</a><br />
+						Class &nbsp;
+					</td>
+					<td width="20%" class="TableRow" valign="top">
+						<strong>Name:</strong> evaluatedStudyAgent<br />
+						&nbsp;
+					</td>
+					<td width="20%" class="TableRow" valign="top">
+						<strong>Name:</strong> evaluatingStudyProtocolVersion<br />
+						&nbsp;	
+					</td>
+					<td width="30%" class="TableRow" valign="top"><div class="ObjectDetailsNotes">&lt;p&gt;DEFINITION:&lt;br/&gt;&lt;/p&gt;&lt;p&gt;Each StudyAgent always is evaluated by one StudyProtocolVersion.&#160; Each StudyProtocolVersion might be evaluating one or more StudyAgent.&lt;br/&gt;&lt;/p&gt;</div>
+</td>
+				</tr>
+				<tr>
+					<td width="20%" class="TableRow" valign="top">
+						<a href="EA175.htm">StudyActivity</a><br />
+						Class &nbsp;
+					</td>
+					<td width="20%" class="TableRow" valign="top">
+						<strong>Name:</strong> usedStudyActivity<br />
+						&nbsp;
+					</td>
+					<td width="20%" class="TableRow" valign="top">
+						<strong>Name:</strong> usingStudyProtocolVersion<br />
+						&nbsp;	
+					</td>
+					<td width="30%" class="TableRow" valign="top"><div class="ObjectDetailsNotes">&lt;p&gt;DEFINITION:&lt;br/&gt;&lt;/p&gt;&lt;p&gt;Each StudyActivity always is used by one StudyProtocolVersion.&#160; Each StudyProtocolVersion might use one or more StudyActivity.&lt;br/&gt;&lt;/p&gt;</div>
+</td>
+				</tr>
+				<tr>
+					<td width="20%" class="TableRow" valign="top">
+						<a href="EA174.htm">StratumGroup</a><br />
+						Class &nbsp;
+					</td>
+					<td width="20%" class="TableRow" valign="top">
+						<strong>Name:</strong> describedStratumGroup<br />
+						&nbsp;
+					</td>
+					<td width="20%" class="TableRow" valign="top">
+						<strong>Name:</strong> describingStudyProtocolVersion<br />
+						&nbsp;	
+					</td>
+					<td width="30%" class="TableRow" valign="top"><div class="ObjectDetailsNotes">&lt;p&gt;DEFINITION:&lt;br/&gt;&lt;/p&gt;&lt;p&gt;Each StratumGroup always is defined by one StudyProtocolVersion. Each StudyProtocolVersion might define one or more StratumGroup.&lt;br/&gt;&lt;/p&gt;</div>
+</td>
+				</tr>
+				<tr>
+					<td width="20%" class="TableRow" valign="top">
+						<a href="EA172.htm">PlannedStudySite</a><br />
+						Class &nbsp;
+					</td>
+					<td width="20%" class="TableRow" valign="top">
+						<strong>Name:</strong> executingPlannedStudySite<br />
+						&nbsp;
+					</td>
+					<td width="20%" class="TableRow" valign="top">
+						<strong>Name:</strong> executesStudyProtocolVersion<br />
+						&nbsp;	
+					</td>
+					<td width="30%" class="TableRow" valign="top"><div class="ObjectDetailsNotes">&lt;p&gt;DEFINITION:&lt;br/&gt;&lt;/p&gt;&lt;p&gt;Each PlannedStudySite always plans to execute one StudyProtocolVersion.&#160; Each StudyProtocolVersion might be planned to be executed at one or more PlannedStudySite.&lt;br/&gt;&lt;/p&gt;</div>
+</td>
+				</tr>
+				<tr>
+					<td width="20%" class="TableRow" valign="top">
+						<a href="EA152.htm">Epoch</a><br />
+						Class &nbsp;
+					</td>
+					<td width="20%" class="TableRow" valign="top">
+						<strong>Name:</strong> subdividingEpoch<br />
+						&nbsp;
+					</td>
+					<td width="20%" class="TableRow" valign="top">
+						<strong>Name:</strong> subdividedStudyProtocolVersion<br />
+						&nbsp;	
+					</td>
+					<td width="30%" class="TableRow" valign="top"><div class="ObjectDetailsNotes">&lt;p&gt;DEFINITION:&lt;br/&gt;&lt;/p&gt;&lt;p&gt;Each Epoch always is a division of one StudyProtocolVersion. Each StudyProtocolVersion might be divided into one or more Epoch.&lt;br/&gt;&lt;/p&gt;</div>
+</td>
+				</tr>
+				<tr>
+					<td width="20%" class="TableRow" valign="top">
+						<a href="EA124.htm">CompanionStudyRelationship</a><br />
+						Class &nbsp;
+					</td>
+					<td width="20%" class="TableRow" valign="top">
+						<strong>Name:</strong> accompanyingCompanionStudyRelationship<br />
+						&nbsp;
+					</td>
+					<td width="20%" class="TableRow" valign="top">
+						<strong>Name:</strong> accompaniedStudyProtocolVersion<br />
+						&nbsp;	
+					</td>
+					<td width="30%" class="TableRow" valign="top"><div class="ObjectDetailsNotes">&lt;p&gt;DEFINITION:&lt;br/&gt;&lt;/p&gt;&lt;p&gt;Each CompanionStudyRelationship always is a companion of one StudyProtocolVersion. Each StudyProtocolVersion might have as a companion one or more CompanionStudyRelationship.&lt;br/&gt;&lt;/p&gt;</div>
+</td>
+				</tr>
+				<tr>
+					<td width="20%" class="TableRow" valign="top">
+						<a href="EA123.htm">Arm</a><br />
+						Class &nbsp;
+					</td>
+					<td width="20%" class="TableRow" valign="top">
+						<strong>Name:</strong> subdividingArm<br />
+						&nbsp;
+					</td>
+					<td width="20%" class="TableRow" valign="top">
+						<strong>Name:</strong> subdividedStudyProtocolVersion<br />
+						&nbsp;	
+					</td>
+					<td width="30%" class="TableRow" valign="top"><div class="ObjectDetailsNotes">&lt;p&gt;DEFINITION:&lt;br/&gt;&lt;/p&gt;&lt;p&gt;Each Arm always is a division of one StudyProtocolVersion. Each StudyProtocolVersion might be divided into one or more Arm.&lt;br/&gt;&lt;/p&gt;</div>
+</td>
+				</tr>
+
+			</table>
+		</div>
+<div class="ItemBody" id="TaggedValTable">
+	<table align="center" border="0" cellspacing="0" cellpadding="0" class="Table">
+	<tr>
+			<td width="30%" class="TableHeading">Tag</td>
+			<td width="30%" class="TableHeading">Value</td>
+			<td width="40%" class="TableHeading">Details</td>
+	</tr>
+					<tr>
+				<td width="30%" class="TableRow" valign="top">Map:AE</td>
+				<td width="30%" class="TableRow" valign="top">Study</td>
+				<td width="30%" class="TableRow" valign="top">&nbsp;</td>
+			</tr>			<tr>
+				<td width="30%" class="TableRow" valign="top">Map:C3PRv2.9</td>
+				<td width="30%" class="TableRow" valign="top">StudyVersion</td>
+				<td width="30%" class="TableRow" valign="top">&nbsp;</td>
+			</tr>			<tr>
+				<td width="30%" class="TableRow" valign="top">Map:C3PRv2.9</td>
+				<td width="30%" class="TableRow" valign="top">Study</td>
+				<td width="30%" class="TableRow" valign="top">&nbsp;</td>
+			</tr>			<tr>
+				<td width="30%" class="TableRow" valign="top">Map:caAERSv2.2</td>
+				<td width="30%" class="TableRow" valign="top">Study</td>
+				<td width="30%" class="TableRow" valign="top">&nbsp;</td>
+			</tr>			<tr>
+				<td width="30%" class="TableRow" valign="top">Map:COPPA</td>
+				<td width="30%" class="TableRow" valign="top">StudyProtocol</td>
+				<td width="30%" class="TableRow" valign="top">&nbsp;</td>
+			</tr>			<tr>
+				<td width="30%" class="TableRow" valign="top">Map:HL7SD</td>
+				<td width="30%" class="TableRow" valign="top">PlannedStudy</td>
+				<td width="30%" class="TableRow" valign="top">&nbsp;</td>
+			</tr>			<tr>
+				<td width="30%" class="TableRow" valign="top">Map:HL7SD</td>
+				<td width="30%" class="TableRow" valign="top">StudyCharacteristic</td>
+				<td width="30%" class="TableRow" valign="top">&nbsp;</td>
+			</tr>			<tr>
+				<td width="30%" class="TableRow" valign="top">Map:HL7SP</td>
+				<td width="30%" class="TableRow" valign="top">PlannedStudy</td>
+				<td width="30%" class="TableRow" valign="top">&nbsp;</td>
+			</tr>			<tr>
+				<td width="30%" class="TableRow" valign="top">Map:HL7SP</td>
+				<td width="30%" class="TableRow" valign="top">Study</td>
+				<td width="30%" class="TableRow" valign="top">&nbsp;</td>
+			</tr>			<tr>
+				<td width="30%" class="TableRow" valign="top">Map:ICSRr2</td>
+				<td width="30%" class="TableRow" valign="top">ResearchStudy (in IndividualCaseSafetyReport)</td>
+				<td width="30%" class="TableRow" valign="top">&nbsp;</td>
+			</tr>			<tr>
+				<td width="30%" class="TableRow" valign="top">Map:LabViewer2.2</td>
+				<td width="30%" class="TableRow" valign="top">Study</td>
+				<td width="30%" class="TableRow" valign="top">&nbsp;</td>
+			</tr>			<tr>
+				<td width="30%" class="TableRow" valign="top">Map:PSCv2.6</td>
+				<td width="30%" class="TableRow" valign="top">Study</td>
+				<td width="30%" class="TableRow" valign="top">&nbsp;</td>
+			</tr>			<tr>
+				<td width="30%" class="TableRow" valign="top">Map:SDTM IGv3.1.2</td>
+				<td width="30%" class="TableRow" valign="top">TS.DOMAIN</td>
+				<td width="30%" class="TableRow" valign="top">&nbsp;</td>
+			</tr>
+</table>
+</div>		<div class="ItemBody" id="ConstraintsTable">
+			<table border="0" cellspacing="0" cellpadding="0" class="Table">
+			  	<tr>
+					<td width="24%" class="TableHeading">Constraint</td>
+					<td width="8%" class="TableHeading">Type</td>
+					<td width="8%" class="TableHeading">Status</td>
+					<td width="60%" class="TableHeading">Detail</td>
+				</tr>
+				<tr>
+					<td width="24%" class="TableRow">mulitInstitutionalIndicator Qualifier</td>
+					<td width="8%" class="TableRow">Invariant</td>
+					<td width="8%" class="TableRow">Approved</td>
+					<td width="60%" class="TableRow"><div class="ObjectDetailsNotes">StudyProtocolVersion.multiInstitutionIndicator is derived when StudyProtocolVersion.participatingOrganizationTypeCode = &quot;Multi Center&quot;.</div>
+</td>
+				</tr>
+				<tr>
+					<td width="24%" class="TableRow">be the responsibility of actualIndicator Qualifier</td>
+					<td width="8%" class="TableRow">Invariant</td>
+					<td width="8%" class="TableRow">Approved</td>
+					<td width="60%" class="TableRow"><div class="ObjectDetailsNotes">Only Person or Organization (via StudyLegalSponsor) with actualIndicator = &quot;true&quot; is valid.</div>
+</td>
+				</tr>
+
+			</table>
+		</div>
+		<div class="ItemBody" id="LinksTable">
+			<table align="center" border="0" cellspacing="0" cellpadding="0" class="Table">
+				<tr>
+					<td width="30%" class="TableHeading">Object</td>
+					<td width="15%" class="TableHeading">Type</td>
+					<td width="15%" class="TableHeading">Connection</td>
+					<td width="40%" class="TableHeading">Notes</td>
+				</tr>
+				<tr>
+					<td width="30%" class="TableRow" valign="top"><a href="EA161.htm">ObservationalStudyProtocolVersion</a></td>
+					<td width="15%" class="TableRow" valign="top">Class</td>
+					<td width="15%" class="TableRow" valign="top">Generalization</td>
+					<td width="40%" class="TableRow" valign="top">DEFINITION:
+Each ObservationalStudyProtocolVersion always specializes one StudyProtocolVersion. Each StudyProtocolVersion might be specialized by one ObservationalStudyProtocolVersion.</td>
+				</tr>
+				<tr>
+					<td width="30%" class="TableRow" valign="top"><a href="EA154.htm">InterventionalStudyProtocolVersion</a></td>
+					<td width="15%" class="TableRow" valign="top">Class</td>
+					<td width="15%" class="TableRow" valign="top">Generalization</td>
+					<td width="40%" class="TableRow" valign="top">DEFINITION:
+Each InterventionalStudyProtocolVersion always specializes one StudyProtocolVersion. Each StudyProtocolVersion might be specialized by one InterventionalStudyProtocolVersion.</td>
+				</tr>
+				<tr>
+					<td width="30%" class="TableRow" valign="top"><a href="EA153.htm">ExpandedAccessStudyProtocolVersion</a></td>
+					<td width="15%" class="TableRow" valign="top">Class</td>
+					<td width="15%" class="TableRow" valign="top">Generalization</td>
+					<td width="40%" class="TableRow" valign="top">DEFINITION:
+Each ExpandedAccessStudyProtocolVersion always specializes one StudyProtocolVersion. Each StudyProtocolVersion might be specialized by one ExpandedAccessStudyProtocolVersion.</td>
+				</tr>
+
+			</table>
+		</div>
+	</div>
+<div class="pageFooter"></div>
+ 
+</body>
+</html>

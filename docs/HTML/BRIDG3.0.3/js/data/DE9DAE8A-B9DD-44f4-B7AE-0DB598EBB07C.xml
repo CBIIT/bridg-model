@@ -1,0 +1,16 @@
+tocTab[tocTab.length] = new Array("3.6:1", "", "Subject StateDiagram", "EARoot/EA3/EA6/EA386.htm", "183.png", "665", "0", "", "Statechart diagram0","{4CDDC77B-D360-407e-AE9E-AE14F681FB68}");
+tocTab[tocTab.length] = new Array("3.6:2", "", "Candidate", "EARoot/EA3/EA6/EA391.htm", "20.png", "10120", "0", "", "State0","{18E272F8-E641-43e8-93FE-AC8FD0354F46}");
+tocTab[tocTab.length] = new Array("3.6:3", "", "Eligible", "EARoot/EA3/EA6/EA392.htm", "20.png", "10121", "0", "", "State0","{18E0A12A-92BF-495f-B554-9CB17A5509AE}");
+tocTab[tocTab.length] = new Array("3.6:4", "", "Final", "EARoot/EA3/EA6/EA393.htm", "69.png", "10133", "0", "", "StateNode0","{2E9405EA-6919-4af6-8A0D-2C1B57948609}");
+tocTab[tocTab.length] = new Array("3.6:5", "", "Follow-Up", "EARoot/EA3/EA6/EA394.htm", "20.png", "10122", "0", "", "State0","{C4DBB06D-2E62-4148-B735-2B655DA5A5BC}");
+tocTab[tocTab.length] = new Array("3.6:6", "", "Ineligible", "EARoot/EA3/EA6/EA395.htm", "20.png", "10123", "0", "", "State0","{1E42EF0B-CD3A-4bc3-BF7F-DD19ACC01D57}");
+tocTab[tocTab.length] = new Array("3.6:7", "", "Initial", "EARoot/EA3/EA6/EA396.htm", "68.png", "10134", "0", "", "StateNode0","{EC04F553-A168-4b15-BBA2-D57308FD76C8}");
+tocTab[tocTab.length] = new Array("3.6:8", "", "Not Registered", "EARoot/EA3/EA6/EA397.htm", "20.png", "10124", "0", "", "State0","{6816BEF3-6620-498a-8044-306342EDC7EA}");
+tocTab[tocTab.length] = new Array("3.6:9", "", "Off-Study", "EARoot/EA3/EA6/EA400.htm", "20.png", "10125", "0", "", "State0","{D834D53B-3543-4430-82E6-6D484A42CFAD}");
+tocTab[tocTab.length] = new Array("3.6:10", "", "On-Study", "EARoot/EA3/EA6/EA401.htm", "20.png", "10126", "0", "", "State0","{8DCAECF9-EC16-423a-BD30-AEED9395215D}");
+tocTab[tocTab.length] = new Array("3.6:11", "", "Pending On-Study", "EARoot/EA3/EA6/EA402.htm", "20.png", "10129", "0", "", "State0","{204AA953-CA48-4513-AD9A-9D9D62BCDFB3}");
+tocTab[tocTab.length] = new Array("3.6:12", "", "Potential Candidate", "EARoot/EA3/EA6/EA403.htm", "20.png", "10130", "0", "", "State0","{298F7478-D05D-4bce-A43D-2F6CA415570A}");
+tocTab[tocTab.length] = new Array("3.6:13", "", "Screening", "EARoot/EA3/EA6/EA404.htm", "20.png", "10131", "0", "", "State0","{2748DD07-8189-434a-88FB-D1F0D41AF1FB}");
+tocTab[tocTab.length] = new Array("3.6:14", "", "Withdrawn", "EARoot/EA3/EA6/EA407.htm", "20.png", "10132", "0", "", "State0","{26624009-E6D8-46c2-9823-8C71AE5C9F91}");
+tocTab[tocTab.length] = new Array("3.6:15", "", "Intervention", "EARoot/EA3/EA6/EA408.htm", "20.png", "10127", "10126", "", "State0","{8E1905C9-C46A-489e-8656-968808992956}");
+tocTab[tocTab.length] = new Array("3.6:16", "", "Observation", "EARoot/EA3/EA6/EA409.htm", "20.png", "10128", "10126", "", "State0","{A029A7F3-EBFC-4a49-A706-8E2755313DE3}");

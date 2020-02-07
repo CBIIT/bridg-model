@@ -1,0 +1,7 @@
+tocTab[tocTab.length] = new Array("3.1", "1", "Activity Status", "EARoot/EA3/EA266.htm", "4.png", "", "", "{50B0D830-ABED-410d-B6E5-9AA704BF1EC4}", "Package");
+tocTab[tocTab.length] = new Array("3.2", "1", "Processing Status", "EARoot/EA3/EA267.htm", "4.png", "", "", "{906C72BE-98A6-4b12-9DAD-51AA106D3BB4}", "Package");
+tocTab[tocTab.length] = new Array("3.3", "1", "Review Board Process Status", "EARoot/EA3/EA268.htm", "4.png", "", "", "{16A51C74-9225-40b0-B62E-DBADA724F601}", "Package");
+tocTab[tocTab.length] = new Array("3.4", "1", "Study Overall Status", "EARoot/EA3/EA269.htm", "4.png", "", "", "{BE2FAFCB-5F56-477a-A126-6048AC557921}", "Package");
+tocTab[tocTab.length] = new Array("3.5", "1", "Study Site Accrual Status", "EARoot/EA3/EA270.htm", "4.png", "", "", "{179F5B50-B55A-4c14-BF6B-3F3A2B357DE7}", "Package");
+tocTab[tocTab.length] = new Array("3.6", "1", "Study Subject Status", "EARoot/EA3/EA271.htm", "4.png", "", "", "{DE9DAE8A-B9DD-44f4-B7AE-0DB598EBB07C}", "Package");
+tocTab[tocTab.length] = new Array("3.7", "1", "Submission Status", "EARoot/EA3/EA272.htm", "4.png", "", "", "{A05CCF92-1D1B-4bb2-BA59-4EAA8A949653}", "Package");

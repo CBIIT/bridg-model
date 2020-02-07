@@ -1,0 +1,13 @@
+tocTab[tocTab.length] = new Array("2.1:1", "", "View AE: Adverse Event", "EARoot/EA2/EA1/EA22.htm", "175.png", "592", "0", "", "Logical diagram0","{EE227C56-F249-41fa-8DF4-93D772D62666}");
+tocTab[tocTab.length] = new Array("2.1:2", "", "AdverseEvent", "EARoot/EA2/EA1/EA24.htm", "5.png", "8714", "0", "", "Class0","{EC125D25-9421-4273-BBF8-1148D7427E77}");
+tocTab[tocTab.length] = new Array("2.1:3", "", "AdverseEventActionTaken", "EARoot/EA2/EA1/EA25.htm", "5.png", "8700", "0", "", "Class0","{257F8F57-3260-48c2-9E3A-C78F5124B3D3}");
+tocTab[tocTab.length] = new Array("2.1:4", "", "AdverseEventOutcomeAssessment", "EARoot/EA2/EA1/EA26.htm", "5.png", "8708", "0", "", "Class0","{A518E8D1-6943-4e8f-9637-8FF7BAF0554A}");
+tocTab[tocTab.length] = new Array("2.1:5", "", "AdverseEventOutcomeResult", "EARoot/EA2/EA1/EA27.htm", "5.png", "8706", "0", "", "Class0","{940B5C4F-64F5-41d5-A644-CD74F8AF8890}");
+tocTab[tocTab.length] = new Array("2.1:6", "", "CausalAssessment", "EARoot/EA2/EA1/EA28.htm", "5.png", "8709", "0", "", "Class0","{CC8C8A1F-9738-40f8-9377-FF18004883E1}");
+tocTab[tocTab.length] = new Array("2.1:7", "", "EvaluatedActivity", "EARoot/EA2/EA1/EA29.htm", "5.png", "8702", "0", "", "Class0","{3EF30B12-17C3-4216-A16A-76AAA52474CC}");
+tocTab[tocTab.length] = new Array("2.1:8", "", "EvaluatedResult", "EARoot/EA2/EA1/EA30.htm", "5.png", "8705", "0", "", "Class0","{7B771A56-31ED-4cbc-9685-2E225A1470B2}");
+tocTab[tocTab.length] = new Array("2.1:9", "", "PerformedProductInvestigation", "EARoot/EA2/EA1/EA34.htm", "5.png", "8712", "0", "", "Class0","{DAEA9581-D4BB-4d66-8C7D-7047806783D4}");
+tocTab[tocTab.length] = new Array("2.1:10", "", "PerformedProductInvestigationResult", "EARoot/EA2/EA1/EA35.htm", "5.png", "8704", "0", "", "Class0","{70C4D5B8-A429-4bde-A709-C4C5035D6D15}");
+tocTab[tocTab.length] = new Array("2.1:11", "", "PerformedProductProblemDiscovery", "EARoot/EA2/EA1/EA36.htm", "5.png", "8713", "0", "", "Class0","{E1CDEEC7-8FF0-4605-928C-624B033E4BDD}");
+tocTab[tocTab.length] = new Array("2.1:12", "", "ProductActionTaken", "EARoot/EA2/EA1/EA37.htm", "5.png", "8711", "0", "", "Class0","{D40CFCFE-7632-44d1-9056-181C61BBE801}");
+tocTab[tocTab.length] = new Array("2.1:13", "", "SafetyReport", "EARoot/EA2/EA1/EA38.htm", "5.png", "8703", "0", "", "Class0","{67A32AF7-6AC8-4366-AC41-2CB43F48C801}");

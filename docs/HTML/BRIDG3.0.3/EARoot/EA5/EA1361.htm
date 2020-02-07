@@ -1,0 +1,437 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>ISO 21090 Data Types::CD</title>
+<link href="../../css/ea.css" rel="stylesheet" type="text/css" />
+<script>
+function initPage(src) {
+	if(parent==this&&(this.location+"").indexOf('EARoot')!=-1)
+		document.location=(this.location+"").substring(0,(this.location+"").indexOf('EARoot'))+"index"+(this.location+"").substring((this.location+"").lastIndexOf('.'))+"?goto="+((this.location+"").substring((this.location+"").indexOf('EARoot')+7,(this.location+"").lastIndexOf('.')).replace(/\//g,':').replace(/EA/g,""));
+	else
+		parent.initPage(src);
+}
+</script>
+</head>
+<body onload="initPage(this);" class="Content">
+<div class="pageHeader"></div>
+<div class="PageBody">
+	<span class="ObjectTitle">CD  : protected   class</span>
+	<table border="0" cellpadding="0" cellspacing="0" class="ObjectDetails">
+		<tr>
+			<td width="15%" class="ObjectDetailsTopic">Created:</td>
+			<td width="85%" class="ObjectDetailsValue">2/7/2008 2:26:32 PM</td>
+		</tr>
+		<tr>
+			<td class="ObjectDetailsTopic">Modified:</td>
+			<td class="ObjectDetailsValue">5/20/2009 4:42:44 PM</td>
+		</tr>
+		<tr style="height: 10px"><td colspan="2"></td></tr>
+		<tr>
+			<td class="ObjectDetailsTopic"><img src="../../images/plus03.gif" align="absmiddle" id="proj" onclick="parent.toggleData(this.id)" />Project:</td>
+			<td class="ObjectDetailsValue"></td>
+		</tr>
+		<tr id="proj00" style="display: none;">
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Author:</td>
+			<td class="ObjectDetailsValue">Grahame</td>
+		</tr>
+		<tr id="proj01" style="display: none;">
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Version:</td>
+			<td class="ObjectDetailsValue">1.0</td>
+		</tr>
+		<tr id="proj02" style="display: none;">
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Phase:</td>
+			<td class="ObjectDetailsValue">1.0</td>
+		</tr>
+		<tr id="proj03" style="display: none;">
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Status:</td>
+			<td class="ObjectDetailsValue">Proposed</td>
+		</tr>
+		<tr id="proj04" style="display: none;">
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Complexity:</td>
+			<td class="ObjectDetailsValue">Easy</td>
+		</tr>
+		<tr>
+			<td class="ObjectDetailsTopic"><img src="../../images/plus03.gif" align="absmiddle" id="adv" onclick="parent.toggleData(this.id)" />Advanced:</td>
+			<td class="ObjectDetailsValue"></td>
+		</tr>
+		<tr id="adv00" style="display: none;">
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">UUID:</td>
+			<td class="ObjectDetailsValue">{73926D92-AFCD-4e73-A103-110836AD712E}</td>
+		</tr>
+		<tr id="adv01" style="display: none;">
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Appears In:</td>
+			<td class="ObjectDetailsValue"><a href="EA1084.htm">ISO Datatypes</a>, <a href="EA1114.htm">Terms</a>, <a href="EA1116.htm">Terms / Interface</a>, <a href="EA1104.htm">Scratch</a></td>
+		</tr>
+	</table>
+	<div class="ObjectDetailsNotes">&lt;p&gt;A &lt;i&gt;CD&lt;/i&gt; is a reference to a concept defined in an external code system, terminology, or ontology. A &lt;i&gt;CD&lt;/i&gt; may contain a simple code - that is, a reference to a concept defined directly by the referenced code system, or it may contain an expression in some syntax defined by the referenced code system that can be meaningfully evaluated. e.g., the concept of a &quot;left foot&quot; as a postcoordinated term built from the primary code &quot;FOOT&quot; and the qualifier &quot;LEFT&quot;. &lt;br/&gt;&lt;/p&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;&lt;p&gt;A CD may also contain an original text or phrase that served as the basis of the coding. This is preserved to allow for validation of the representation of the concept in various fashions. &lt;br/&gt;&lt;/p&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;&lt;p&gt;A CD can contain one or more translations into multiple coding systems. The translations are all representations of the same concept in various code systems. There is only one concept, and only the first CD may contain an original text. It is possible to represent the translation chain - which CD was translated from which - if desired. Each CD may also carry a rationale to indicate why it is represented.&lt;br/&gt;&lt;/p&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;&lt;p&gt;A CD with no nullFlavor attribute SHALL have a code attribute or nonNull originalText attribute. A CD that has a code, codeSystem or originalText attribute but does not meet external constraints of the applicable value set SHALL have a nullFlavor attribute with a value of &quot;OTH&quot;.&lt;br/&gt;&lt;/p&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;&lt;p&gt;Attributes with type CD are generally bound by externally specified constraints which constrain the coded concepts to which a CD may refer. These constraints may be qualified as &quot;extensible&quot; (CWE) or &quot;not extensible&quot; (CNE). If the constraint is not extensible (CNE), then a the CD that does not have a nullFlavor SHALL contain a code that conforms to the constraint. If the constraint is extensible (CWE) then a CD that does not have a nullFlavor SHALL contain either a code that exists in the domain with which the attribute is associated, a code from a locally defined code system, or just some originalText that describes the concept. If the code is taken from a locally defined code system, then the codeSystem property SHALL specify the local code system.&lt;br/&gt;&lt;/p&gt;&lt;p&gt;For both CNE and CWE constraint types, the translations may contain nonNull codes from any source unless otherwise specified by the constraining model. &lt;br/&gt;&lt;/p&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;&lt;p&gt;For code systems that define expression syntaxes, CNE constraints may be used, providing that the code system definitions define the appropriate support to enable value sets to make useful statements about how to control the expression syntax, and that the value set machinery used also has the appropriate support&lt;br/&gt;&lt;/p&gt;</div>
+
+	<div class="TableGroup" id="TableGroup">
+		<ul class="ItemTitle">
+			<li onClick="parent.toggleItem('Attributes');" id="AttributesTitle">Attributes</li>
+			<li onClick="parent.toggleItem('Operations');" id="OperationsTitle">Operations</li>
+			<li onClick="parent.toggleItem('Constraints');" id="ConstraintsTitle">Constraints</li>
+			<li onClick="parent.toggleItem('Links');" id="LinksTitle">Other Links</li>
+		</ul>
+<div class="ItemBody" id="AttributesTable">
+	<table border="0" cellspacing="0" cellpadding="0" class="Table">
+		<tr>
+			<td width="40%" class="TableHeading">Attribute</td>
+			<td width="60%" class="TableHeading">Details</td>
+		</tr>
+						<tr>
+				<td width="40%" class="TableRow" valign="top"><i>public <a href="EA1259.htm">String</a></i><br /><strong>&nbsp;&nbsp;code</strong></td>
+				<td width="60%" class="TableRow" valign="top"><i>Range:0 to 1</i><div class="ObjectDetailsNotes"><table>
+	<tr>
+		<td valign="top">
+			<i>Notes: </i><span style="margin-left: .4cm;"> </span>
+		</td>
+		<td>
+			The plain code symbol defined by the code system, or an expression in a syntax defined by the code system which describes the concept. &lt;br /&gt;If a code is provided, it SHALL be an exact match to a plain code symbol or expression defined by the code system. If the code system defines a code or expression that includes whitespace, the code SHALL include the whitespace. An expression can only be used where the codeSystem either defines an expression syntax, or there is a generally accepted syntax for the codeSystem. A code system may be defined that only defines an expression syntax with bindings to other code Systems for the elements of the expression. &lt;br /&gt; It is at the discretion of the interpreting system whether to check for an expression instead of a simple code and evaluate the expression instead of treating the expression as a code. In some cases, it may be unclear or ambiguous whether the code represents a single symbol or an expression. This usually arises where the code system defines an expression language and then defines pre-coordinated concepts with symbols which match their expression, e.g. UCUM. In other cases, it is safe to treat the expression as a symbol. There is no guarantee that this is always safe: the definitions of the codeSystem should always be consulted to determine how to handle potential expressions. &lt;br /&gt;
+		</td>
+	</tr>
+</table></div>
+</td>
+			</tr>			<tr>
+				<td width="40%" class="TableRow" valign="top"><i>public <a href="EA1448.htm">Uid</a></i><br /><strong>&nbsp;&nbsp;codeSystem</strong></td>
+				<td width="60%" class="TableRow" valign="top"><i>Range:0 to 1</i><div class="ObjectDetailsNotes"><table>
+	<tr>
+		<td valign="top">
+			<i>Notes: </i><span style="margin-left: .4cm;"> </span>
+		</td>
+		<td>
+			The code system that defines the code, or if no code was found, the codeSystem in which no code was found. &lt;br /&gt;Code systems SHALL be referred to by a UID, which allows unambiguous reference to standard code systems and other local codesystems. Where either ISO or HL7 have assigned UID to code Systems, then these UIDs SHALL be used. Otherwise implementations SHALL use an appropriate ISO Object Identifier (OID) or UUID to construct a globally unique local coding system identifier.&lt;br /&gt;A CD that has a code attribute SHALL have a codeSystem specifying the system of concepts that defines the code.&lt;br /&gt;An CD with a nullFlavor OTH indicates that a concept could not be coded in the coding system or value set specified. Thus, for these coding exceptions, the code system or value set that did not contain the appropriate concept SHALL be provided in codeSystem or valueSet.
+		</td>
+	</tr>
+</table></div>
+</td>
+			</tr>			<tr>
+				<td width="40%" class="TableRow" valign="top"><i>public <a href="EA1259.htm">String</a></i><br /><strong>&nbsp;&nbsp;codeSystemName</strong></td>
+				<td width="60%" class="TableRow" valign="top"><i>Range:0 to 1</i><div class="ObjectDetailsNotes"><table>
+	<tr>
+		<td valign="top">
+			<i>Notes: </i><span style="margin-left: .4cm;"> </span>
+		</td>
+		<td>
+			The common name of the coding system. &lt;br /&gt;&lt;br /&gt;The code system name has no computational value. codeSystemName can never modify the meaning of codeSystem and cannot exist without codeSystem.&lt;br /&gt;&lt;br /&gt;Information Processing Entities claiming direct or indirect conformance SHALL NOT functionally rely on &lt;i&gt;codeSystemName&lt;/i&gt;. In addition, they MAY choose not to implement &lt;i&gt;codeSystemName&lt;/i&gt; but SHALL NOT reject instances because &lt;i&gt;codeSystemName&lt;/i&gt; is present.&lt;br /&gt;&lt;br /&gt;Note:&nbsp;<WBR> The purpose of a code system name is to assist an unaided human interpreter of a code value to interpret codeSystem.
+		</td>
+	</tr>
+</table></div>
+</td>
+			</tr>			<tr>
+				<td width="40%" class="TableRow" valign="top"><i>public <a href="EA1259.htm">String</a></i><br /><strong>&nbsp;&nbsp;codeSystemVersion</strong></td>
+				<td width="60%" class="TableRow" valign="top"><i>Range:0 to 1</i><div class="ObjectDetailsNotes"><table>
+	<tr>
+		<td valign="top">
+			<i>Notes: </i><span style="margin-left: .4cm;"> </span>
+		</td>
+		<td>
+			If applicable, a version descriptor defined specifically for the given code system.&lt;br /&gt;&lt;br /&gt;Different versions of one code system must be compatible. By definition a code symbol SHALL have the same meaning throughout all versions of a code system. Between versions, codes may be retired but not withdrawn or reused. Where the definition of the meaning of a code symbol changes, it must still be compatible (equal) between different code system versions.&lt;br /&gt;&lt;br /&gt;Whenever a code system changes in an incompatible way, it will constitute a new code system, not simply a different version, regardless of how the vocabulary publisher calls it. For example, the publisher of ICD-9 and ICD-10 calls these code systems, &quot;revision 9&quot; and &quot;revision 10&quot; respectively. However, ICD-10 is a complete redesign of the ICD code, not a backward compatible version. Therefore, for the purpose of this datatype specification, ICD-9 and ICD-10 are different code systems, not just different versions. By contrast, when LOINC updates from revision &quot;1.0j&quot; to &quot;1.0k&quot;, this would be considered as just another version of LOINC, since LOINC revisions are backwards compatible.
+		</td>
+	</tr>
+</table></div>
+</td>
+			</tr>			<tr>
+				<td width="40%" class="TableRow" valign="top"><i>public <a href="EA1259.htm">Uid</a></i><br /><strong>&nbsp;&nbsp;valueSet</strong></td>
+				<td width="60%" class="TableRow" valign="top"><i>Range:0 to 1</i><div class="ObjectDetailsNotes"><table>
+	<tr>
+		<td valign="top">
+			<i>Notes: </i><span style="margin-left: .4cm;"> </span>
+		</td>
+		<td>
+			The value set that applied when this CD was created.&lt;br /&gt;&lt;br /&gt;Value sets shall be referred to by an identifier name which allows unambiguous reference to a value set. Where either ISO or HL7 have assigned an identifying name to a value set, then that name shall be used. &lt;br /&gt;&lt;br /&gt;In many cases, a CD is created from a value set - either a code/code system pair is chosen from a valueSet, or one is not chosen and the CD has the exceptional value of NullFlavor.OTH. If no code is chosen, it is generally inappropriate to reference the code system from which the code was chosen as the value set may not match the code system (may include a subset of the codeSystem, or additional terms from other code systems); instead, the value set should be provided. In addition, there are some known use cases where the value set that a user or system was offered when choosing a code affects the interpretation of the code. &lt;br /&gt;&lt;br /&gt;If a code is provided, the meaning of the code must come from the definition of the code in the code system. The meaning of the code SHALL NOT depend on the value set. Information Processing Entities claiming direct or indirect conformance SHALL NOT be required to interpret the code in light of the valueSet, and they SHALL NOT reject an instance because of the presence or absence of any or a particular value set. 
+		</td>
+	</tr>
+</table></div>
+</td>
+			</tr>			<tr>
+				<td width="40%" class="TableRow" valign="top"><i>public <a href="EA1259.htm">String</a></i><br /><strong>&nbsp;&nbsp;valueSetVersion</strong></td>
+				<td width="60%" class="TableRow" valign="top"><i>Range:0 to 1</i><div class="ObjectDetailsNotes"><table>
+	<tr>
+		<td valign="top">
+			<i>Notes: </i><span style="margin-left: .4cm;"> </span>
+		</td>
+		<td>
+			The version of the valueSet in which no code was found.&lt;br /&gt;&lt;br /&gt;&lt;i&gt;valueSetVersion&lt;/i&gt; SHALL be provided when a valueSet is provided, and otherwise SHALL be null. The value of the &lt;i&gt;valueSetVersion&lt;/i&gt; must properly identify a particular version of the value set following the rules defined by the value set or its publisher. &lt;br /&gt;&lt;br /&gt;It is generally recommended that value set publishers specify that the version is identified by the date/time that the value set version is published, and that the publication process makes the date/time explicitly clearclear.&nbsp;<WBR> 
+		</td>
+	</tr>
+</table></div>
+</td>
+			</tr>			<tr>
+				<td width="40%" class="TableRow" valign="top"><i>public <a href="EA1422.htm">ST</a></i><br /><strong>&nbsp;&nbsp;displayName</strong></td>
+				<td width="60%" class="TableRow" valign="top"><i>Range:0 to 1</i><div class="ObjectDetailsNotes"><table>
+	<tr>
+		<td valign="top">
+			<i>Notes: </i><span style="margin-left: .4cm;"> </span>
+		</td>
+		<td>
+			A name, title, or representation for the code or expression as it exists in the code system.&lt;br /&gt;&lt;br /&gt;If populated, the displayName SHALL be a valid human readable representation of the concept as defined by the code system at the time of data entry. The displayName SHALL conform to any rules defined by the codingSystem; if the codeSystem does not define a human representation for the code or expression, then none can be provided. displayName is included both as a courtesy to an unaided human interpreter of a code value and as a documentation of the name used to display the concept to the user. The display name has no functional meaning; it SHALL never exist without a code; and it SHALL never modify the meaning of the code. A display name may not be present if the code is an expression for which no display name has been assigned or can be derived. Information Processing Entities claiming direct or indirect conformance MAY choose not to implement displayName but SHALL NOT reject instances because displayName is present.&lt;br /&gt;&lt;br /&gt;Display names SHALL not alter the meaning of the code value. Therefore, display names SHOULD NOT be presented to the user on a receiving application system without ascertaining that the display name adequately represents the concept referred to by the code value. Communication SHALL NOT simply rely on the display name. The display name&#39;s main purpose is to support implementation debugging.
+		</td>
+	</tr>
+</table></div>
+</td>
+			</tr>			<tr>
+				<td width="40%" class="TableRow" valign="top"><i>public <a href="EA1370.htm">ED</a></i><br /><strong>&nbsp;&nbsp;originalText</strong></td>
+				<td width="60%" class="TableRow" valign="top"><i>Range:0 to 1</i><div class="ObjectDetailsNotes"><table>
+	<tr>
+		<td valign="top">
+			<i>Notes: </i><span style="margin-left: .4cm;"> </span>
+		</td>
+		<td>
+			The text as seen and/or selected by the user who entered the data which represents the intended meaning of the user. &lt;br /&gt;&lt;br /&gt;Note: Local implementations may influence what is required to represent that original text.&lt;br /&gt;&lt;br /&gt;Original text can be used in a structured user interface to capture what the user saw as a representation of the code on the data input screen, or in a situation where the user dictates or directly enters text, it is the text entered or uttered by the user. &lt;br /&gt;&lt;br /&gt;It is valid to use the CD datatype to store only the text that the user entered or uttered. In this situation, original text will exist without a code. In a situation where the code is assigned sometime after the text was entered, originalText is the text or phrase used as the basis for assigning the code. &lt;br /&gt;&lt;br /&gt;The details of the link in the originalText.reference between different artifacts of medical information (e.g., document and coded result) is outside the scope of this specification and may be further proscribed in specifications that use this specification.&lt;br /&gt;&lt;br /&gt;The original text SHALL be an excerpt of the relevant information in the original sources, rather than a pointer or exact reproduction. Thus the original text SHALL be represented in plain text form. In specific circumstances, when clearly descirbed the context of use, the originalText may be a reference to some other text artefact for which the resolution scope is clearly described.&lt;br /&gt;&lt;br /&gt;Values of type CD MAY have a original text despite not having a code. Any CD value with no code signifies a coding exception. In this case, originalText is a name or description of the concept that was not coded. Such CD values MAY also contain translations. &lt;br /&gt;&lt;br /&gt;Translations directly encode the concept described in originalText. The originalText represents the originalText of the concept itself. Translations SHALL NOT have an originalText of their own.
+		</td>
+	</tr>
+</table></div>
+</td>
+			</tr>			<tr>
+				<td width="40%" class="TableRow" valign="top"><i>public <a href="EA1365.htm">CodingRationale</a></i><br /><strong>&nbsp;&nbsp;codingRationale</strong></td>
+				<td width="60%" class="TableRow" valign="top"><i></i><div class="ObjectDetailsNotes"><table>
+	<tr>
+		<td valign="top">
+			<i>Notes: </i><span style="margin-left: .4cm;"> </span>
+		</td>
+		<td>
+			the reason why a particular &lt;i&gt;CD&lt;/i&gt; has been provided, either as the root concept or as one of the translations.&lt;br /&gt;&lt;br /&gt;If populated, the value contained in this attribute SHALL be taken from this enumeration, composed from the HL7 CodingRationale code system
+		</td>
+	</tr>
+</table></div>
+</td>
+			</tr>			<tr>
+				<td width="40%" class="TableRow" valign="top"><i>public <a href="EA1269.htm">CD</a></i><br /><strong>&nbsp;&nbsp;source</strong></td>
+				<td width="60%" class="TableRow" valign="top"><i>Range:0 to 1</i><div class="ObjectDetailsNotes"><table>
+	<tr>
+		<td valign="top">
+			<i>Notes: </i><span style="margin-left: .4cm;"> </span>
+		</td>
+		<td>
+			A reference to the CD that was the source of this translation, if this CD was created by translating it from another CD. &lt;br /&gt;&lt;br /&gt;This property is a reference. The source to which the reference points SHALL be provided within the scope of this CD&#39;s root CD and translations; that is, another representation of the same concept in the same attribute.&lt;br /&gt;&lt;br /&gt;A CD consists of a single root code and a set of translations, which do not have translations. Using the codingRationale property, a sender can indicate which is the original code. There are some circumstances in which it is useful to know which CD was translation from which CD. The source allows for the translation sequence from one translation to another to be represented. Each element of the translation set was translated from the original CD. Each translation may, however, also have further translations. Thus, when a code is translated multiple times the information about which code served as the input to which translation will be preserved
+		</td>
+	</tr>
+</table></div>
+</td>
+			</tr>			<tr>
+				<td width="40%" class="TableRow" valign="top"><i>public Set(CD)</i><br /><strong>&nbsp;&nbsp;translation</strong></td>
+				<td width="60%" class="TableRow" valign="top"><i></i><div class="ObjectDetailsNotes"><table>
+	<tr>
+		<td valign="top">
+			<i>Notes: </i><span style="margin-left: .4cm;"> </span>
+		</td>
+		<td>
+			A set of other CDs that each represent a translation of this CD into equivalent codes within the same code system or into corresponding concepts from other code systems.&lt;br /&gt;&lt;br /&gt;The translations are quasi-synonyms of one real-world concept. Every translation in the set is supposed to express the same meaning &quot;in other words.&quot; However, exact synonymy rarely exists between two structurally different coding systems. For this reason, not all of the translations will be equally exact. &lt;br /&gt;Translations SHALL NOT contain translations. The root CD has one set of translations which lists all the translations. The root translation is generally the one that best meets the conformance criteria for the CD. No implication about lineage of the translations can be drawn from the selection of the root code. Instead the properties codingRationale and source is used to trace lineage. &lt;br /&gt;In the absence of a constraining model that makes constraints on the value domain of the CD, any of the translations MAY be the root CD. If the constraining model makes constraints on the value domain of the CD and there is a translation that meets the constraints, that translation SHOULD be the root CD. If the constraining model makes constraints on the value domain of the CD and there is no translation that meets the constraints, then any of the translations MAY be the root, as long as they are assigned a nullFlavor. An alternative is to put none of the translations in the root, and give it a nullFlavor of choice, and put all the translations in the translation property of the root. 
+		</td>
+	</tr>
+</table></div>
+</td>
+			</tr>
+		</table>
+</div><div class="ItemBody" id="OperationsTable">
+	<table border="0" cellspacing="0" cellpadding="0" class="Table">
+		<tr>
+			<td width="40%" class="TableHeading">Operation</td>
+			<td width="60%" class="TableHeading">Details</td>
+		</tr>
+						<tr>
+				<td width="40%" class="TableRow">
+					<i>public</i><br />
+					<strong>implies</strong>(<br />
+					<a href="#" onclick="parent.toggleData('param{A09E2469-65FB-4e01-94F8-FF5DB1C47E09}')" style="text-decoration: none; color: #000000;"><img src="../../images/plus03.gif" align="absmiddle" id="param{A09E2469-65FB-4e01-94F8-FF5DB1C47E09}" border="0" />other: CD</a>, 
+					<table border="0" cellspacing="0" cellpadding="0" class="Table" style="padding: 4px 18px;">
+						<tr id="param{A09E2469-65FB-4e01-94F8-FF5DB1C47E09}00" style="display: none;">
+							<td width="50"><strong>Default:</strong></td>
+							<td></td>
+						</tr>
+						<tr id="param{A09E2469-65FB-4e01-94F8-FF5DB1C47E09}01" style="display: none;">
+							<td width="50"><strong>Kind:</strong></td>
+							<td>in</td>
+						</tr>
+						<tr id="param{A09E2469-65FB-4e01-94F8-FF5DB1C47E09}02" style="display: none;">
+							<td width="50"><strong>Stereotype: </strong></td>
+							<td></td>
+						</tr>
+						<tr id="param{A09E2469-65FB-4e01-94F8-FF5DB1C47E09}03" style="display: none;">
+							<td width="50"></td>
+							<td></td>
+						</tr>
+					</table>
+):<a href="EA1357.htm">BL</a>
+				</td>
+				<td width="60%" class="TableRow">
+					<i>Sequential  </i>
+					<table>
+						<tr>
+							<td valign = "top"><i></i><span style="margin-left: .7cm;"> </span></td>
+							<td></td>
+						</tr>
+					</table>
+					<div class="ObjectDetailsNotes"><table>
+	<tr>
+		<td valign="top">
+			<i>Notes: </i><span style="margin-left: .4cm;"> </span>
+		</td>
+		<td>
+			True if this code+codeSystem is a specialization of the other code+codeSystem or has the same meaning.&lt;br /&gt;&lt;br /&gt;Note: in SNOMED, for example, two isomorphic forms of the same expression will imply each other.&lt;br /&gt;&lt;br /&gt;Note:&nbsp;<WBR> A terminology service may be used to make this determination.
+		</td>
+	</tr>
+</table></div>
+
+				</td>
+			</tr>
+
+		</table>
+</div>		<div class="ItemBody" id="ConstraintsTable">
+			<table border="0" cellspacing="0" cellpadding="0" class="Table">
+			  	<tr>
+					<td width="24%" class="TableHeading">Constraint</td>
+					<td width="8%" class="TableHeading">Type</td>
+					<td width="8%" class="TableHeading">Status</td>
+					<td width="60%" class="TableHeading">Detail</td>
+				</tr>
+				<tr>
+					<td width="24%" class="TableRow">def: hasCode</td>
+					<td width="8%" class="TableRow">Invariant</td>
+					<td width="8%" class="TableRow">Approved</td>
+					<td width="60%" class="TableRow"><div class="ObjectDetailsNotes">def: let hasCode : Boolean = code.oclIsDefined</div>
+</td>
+				</tr>
+				<tr>
+					<td width="24%" class="TableRow">def: hasCodeSystem</td>
+					<td width="8%" class="TableRow">Invariant</td>
+					<td width="8%" class="TableRow">Approved</td>
+					<td width="60%" class="TableRow"><div class="ObjectDetailsNotes">def: let hasCodeSystem : Boolean = codeSystem.oclIsDefined<br /></div>
+</td>
+				</tr>
+				<tr>
+					<td width="24%" class="TableRow">def: hasOriginalText</td>
+					<td width="8%" class="TableRow">Invariant</td>
+					<td width="8%" class="TableRow">Approved</td>
+					<td width="60%" class="TableRow"><div class="ObjectDetailsNotes">def: let hasOriginalText : Boolean = originalText.isNotNull<br /></div>
+</td>
+				</tr>
+				<tr>
+					<td width="24%" class="TableRow">def: fromCodeSystem(system : Uid)</td>
+					<td width="8%" class="TableRow">Invariant</td>
+					<td width="8%" class="TableRow">Approved</td>
+					<td width="60%" class="TableRow"><div class="ObjectDetailsNotes">def: let fromCodeSystem(system : Uid) : Boolean = codeSystem = system or translation-&gt;select(t | t.fromCodeSystem(system))-&gt;notEmpty<br /></div>
+</td>
+				</tr>
+				<tr>
+					<td width="24%" class="TableRow">def: noOriginalText</td>
+					<td width="8%" class="TableRow">Invariant</td>
+					<td width="8%" class="TableRow">Approved</td>
+					<td width="60%" class="TableRow"><div class="ObjectDetailsNotes">def: let noOriginalText : Boolean originalText.oclIsUndefined<br /></div>
+</td>
+				</tr>
+				<tr>
+					<td width="24%" class="TableRow">null or (one or both of code and/or originalText)
+</td>
+					<td width="8%" class="TableRow">Invariant</td>
+					<td width="8%" class="TableRow">Approved</td>
+					<td width="60%" class="TableRow"><div class="ObjectDetailsNotes">isNotNull implies (hasCode or hasOriginalText)<br /></div>
+</td>
+				</tr>
+				<tr>
+					<td width="24%" class="TableRow">other requires codeSystem or valueSet</td>
+					<td width="8%" class="TableRow">Invariant</td>
+					<td width="8%" class="TableRow">Approved</td>
+					<td width="60%" class="TableRow"><div class="ObjectDetailsNotes">(nullFlavor = NullFlavor.OTH) implies (codeSystem.oclIsDefined or valueSet.oclIsDefined)<br /></div>
+</td>
+				</tr>
+				<tr>
+					<td width="24%" class="TableRow">code requires codeSystem</td>
+					<td width="8%" class="TableRow">Invariant</td>
+					<td width="8%" class="TableRow">Approved</td>
+					<td width="60%" class="TableRow"><div class="ObjectDetailsNotes">code.oclIsDefined implies codeSystem.oclIsDefined</div>
+</td>
+				</tr>
+				<tr>
+					<td width="24%" class="TableRow">codeSystemName only if codeSystem</td>
+					<td width="8%" class="TableRow">Invariant</td>
+					<td width="8%" class="TableRow">Approved</td>
+					<td width="60%" class="TableRow"><div class="ObjectDetailsNotes">codeSystemName.oclIsDefined implies codeSystem.oclIsDefined</div>
+</td>
+				</tr>
+				<tr>
+					<td width="24%" class="TableRow">codeSystemVersion only if codeSystem</td>
+					<td width="8%" class="TableRow">Invariant</td>
+					<td width="8%" class="TableRow">Approved</td>
+					<td width="60%" class="TableRow"><div class="ObjectDetailsNotes">codeSystemVersion.oclIsDefined implies codeSystem.oclIsDefined</div>
+</td>
+				</tr>
+				<tr>
+					<td width="24%" class="TableRow">displayName only if code</td>
+					<td width="8%" class="TableRow">Invariant</td>
+					<td width="8%" class="TableRow">Approved</td>
+					<td width="60%" class="TableRow"><div class="ObjectDetailsNotes">displayName.oclIsDefined implies code.oclIsDefined<br /></div>
+</td>
+				</tr>
+				<tr>
+					<td width="24%" class="TableRow">valueSet requires valueSetVersion</td>
+					<td width="8%" class="TableRow">Invariant</td>
+					<td width="8%" class="TableRow">Approved</td>
+					<td width="60%" class="TableRow"><div class="ObjectDetailsNotes">valueSet.oclIsDefined implies (valueSetVersion.oclIsDefined)</div>
+</td>
+				</tr>
+				<tr>
+					<td width="24%" class="TableRow">No original text on translations</td>
+					<td width="8%" class="TableRow">Invariant</td>
+					<td width="8%" class="TableRow">Approved</td>
+					<td width="60%" class="TableRow"><div class="ObjectDetailsNotes">translation-&gt; forAll(t | t.noOriginalText)</div>
+</td>
+				</tr>
+				<tr>
+					<td width="24%" class="TableRow">Translations cannot have translations</td>
+					<td width="8%" class="TableRow">Invariant</td>
+					<td width="8%" class="TableRow">Approved</td>
+					<td width="60%" class="TableRow"><div class="ObjectDetailsNotes">translation-&gt;forAll(t | t.translation-&gt;isEmpty)</div>
+</td>
+				</tr>
+				<tr>
+					<td width="24%" class="TableRow">no updateMode or History on CD elements</td>
+					<td width="8%" class="TableRow">Invariant</td>
+					<td width="8%" class="TableRow">Approved</td>
+					<td width="60%" class="TableRow"><div class="ObjectDetailsNotes">noUpdateOrHistory(displayName) and noUpdateOrHistory(originalText) and translation-&gt;forAll(t | noUpdateOrHistory(t))</div>
+</td>
+				</tr>
+
+			</table>
+		</div>
+		<div class="ItemBody" id="LinksTable">
+			<table align="center" border="0" cellspacing="0" cellpadding="0" class="Table">
+				<tr>
+					<td width="30%" class="TableHeading">Object</td>
+					<td width="15%" class="TableHeading">Type</td>
+					<td width="15%" class="TableHeading">Connection</td>
+					<td width="40%" class="TableHeading">Notes</td>
+				</tr>
+				<tr>
+					<td width="30%" class="TableRow" valign="top"><a href="EA1362.htm">«constraint» CD.CV</a></td>
+					<td width="15%" class="TableRow" valign="top">Class</td>
+					<td width="15%" class="TableRow" valign="top">Generalization</t                                                                                                                                                                                                                                                                                                                                                                                                                        d>
+					<td width="40%" class="TableRow" valign="top">&nbsp;</td>
+				</tr>
+				<tr>
+					<td width="30%" class="TableRow" valign="top"><a href="EA1407.htm">PQR</a></td>
+					<td width="15%" class="TableRow" valign="top">Class</td>
+					<td width="15%" class="TableRow" valign="top">Generalization</td>
+					<td width="40%" class="TableRow" valign="top">&nbsp;</td>
+				</tr>
+				<tr>
+					<td width="30%" class="TableRow" valign="top"><a href="EA1269.htm">«interface» CD</a></td>
+					<td width="15%" class="TableRow" valign="top">Class</td>
+					<td width="15%" class="TableRow" valign="top">Realisation</td>
+					<td width="40%" class="TableRow" valign="top">&nbsp;</td>
+				</tr>
+				<tr>
+					<td width="30%" class="TableRow" valign="top"><a href="EA1354.htm">ANY</a></td>
+					<td width="15%" class="TableRow" valign="top">Class</td>
+					<td width="15%" class="TableRow" valign="top">Generalization</td>
+					<td width="40%" class="TableRow" valign="top">&nbsp;</td>
+				</tr>
+
+			</table>
+		</div>
+	</div>
+<div class="pageFooter"></div>
+ 
+</body>
+</html>lass="ObjectDetailsTopic">Created:</td>
