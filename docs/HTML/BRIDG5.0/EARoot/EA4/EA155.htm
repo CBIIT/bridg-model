@@ -1,0 +1,116 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>View EX: Experiment</title>
+<link href="../../css/ea.css" rel="stylesheet" type="text/css" />
+<script>
+function initPage(src) {	
+	if(parent==this&&(this.location+"").indexOf('EARoot')!=-1)
+		document.location=(this.location+"").substring(0,(this.location+"").indexOf('EARoot'))+"index"+(this.location+"").substring((this.location+"").lastIndexOf('.'))+"?goto="+((this.location+"").substring((this.location+"").indexOf('EARoot')+7,(this.location+"").lastIndexOf('.')).replace(/\//g,':').replace(/EA/g,""));
+	else
+		parent.initPage(src);
+}
+
+function nameClassifier(name, separator)
+{
+  var str = name;
+  var classifierName;
+  var node = document.getElementById('name_classifier');
+  if(node != null)
+  {
+    classifierName = node.innerHTML;
+  }
+  if(classifierName != "")
+  {
+   str += separator + classifierName;
+  }
+  
+  return str;
+}
+</script>
+</head>
+<body onload="initPage(this);" class="Content">
+<div class="PageBody">
+	
+<img src="EA156.png" usemap="#EA156" border="0" />
+
+<MAP NAME="EA156">
+<area shape="rect" coords="540,7,1027,67" href="EA169.htm" target="_self">
+<area shape="rect" coords="1083,508,1769,579" href="../EA3/EA70.htm" target="_self">
+<area shape="rect" coords="1688,1192,1837,1262" href="../EA10/EA366.htm" target="_self">
+<area shape="rect" coords="1965,10,2274,270" href="../EA3/EA126.htm" target="_self">
+<area shape="rect" coords="264,4,481,232" href="../EA11/EA635.htm" target="_self">
+<area shape="rect" coords="547,110,980,172" href="EA159.htm" target="_self">
+<area shape="rect" coords="1003,1458,1150,1546" href="../EA6/EA212.htm" target="_self">
+<area shape="rect" coords="540,1288,803,1749" href="../EA3/EA143.htm" target="_self">
+<area shape="rect" coords="1294,1299,1499,1520" href="../EA6/EA227.htm" target="_self">
+<area shape="rect" coords="1697,105,1840,212" href="../EA3/EA132.htm" target="_self">
+<area shape="rect" coords="698,582,836,654" href="EA158.htm" target="_self">
+<area shape="rect" coords="1662,700,1877,1090" href="../EA10/EA373.htm" target="_self">
+<area shape="rect" coords="1822,306,2134,605" href="../EA7/EA256.htm" target="_self">
+<area shape="rect" coords="2176,284,2430,677" href="../EA7/EA278.htm" target="_self">
+<area shape="rect" coords="899,599,1153,979" href="../EA10/EA392.htm" target="_self">
+<area shape="rect" coords="2026,732,2281,1265" href="../EA10/EA390.htm" target="_self">
+<area shape="rect" coords="415,903,579,991" href="../EA6/EA226.htm" target="_self">
+<area shape="rect" coords="10,237,223,429" href="../EA3/EA76.htm" target="_self">
+<area shape="rect" coords="25,533,190,647" href="../EA3/EA78.htm" target="_self">
+<area shape="rect" coords="252,246,495,510" href="../EA3/EA73.htm" target="_self">
+<area shape="rect" coords="36,1069,241,1303" href="../EA3/EA127.htm" target="_self">
+<area shape="rect" coords="22,751,276,1030" href="../EA3/EA107.htm" target="_self">
+<area shape="rect" coords="16,1336,280,1703" href="../EA3/EA88.htm" target="_self">
+<area shape="rect" coords="657,987,805,1088" href="../EA6/EA235.htm" target="_self">
+<area shape="rect" coords="927,1322,1091,1423" href="../EA6/EA230.htm" target="_self">
+<area shape="rect" coords="1293,898,1530,1237" href="../EA10/EA391.htm" target="_self">
+<area shape="rect" coords="1245,316,1418,495" href="EA168.htm" target="_self">
+<area shape="rect" coords="1503,236,1652,428" href="EA167.htm" target="_self">
+<area shape="rect" coords="1244,83,1371,275" href="EA166.htm" target="_self">
+<area shape="rect" coords="562,277,694,347" href="EA165.htm" target="_self">
+<area shape="rect" coords="794,277,916,347" href="EA164.htm" target="_self">
+<area shape="rect" coords="519,530,848,830" href="EA163.htm" target="_self">
+<area shape="rect" coords="1697,30,1913,84" href="../EA3/EA131.htm" target="_self">
+<area shape="rect" coords="1024,19,1210,139" href="../EA3/EA139.htm" target="_self">
+<area shape="rect" coords="1397,23,1526,217" href="../EA3/EA130.htm" target="_self">
+<area shape="rect" coords="1028,203,1199,411" href="EA162.htm" target="_self">
+<area shape="rect" coords="441,1072,624,1142" href="EA161.htm" target="_self">
+<area shape="rect" coords="385,1328,513,1416" href="EA160.htm" target="_self">
+<area shape="rect" coords="983,994,1105,1143" href="../EA6/EA213.htm" target="_self">
+</MAP>
+
+	<div class="ObjectTitle">View EX: Experiment : Class diagram</div>
+	<table border="0" cellpadding="0" cellspacing="0" class="ObjectDetails">
+		<tr>
+			<td width="15%" class="ObjectDetailsTopic">Created:</td>
+			<td width="85%" class="ObjectDetailsValue">9/16/2013 12:00:00 AM</td>
+		</tr>
+		<tr>
+			<td width="15%" class="ObjectDetailsTopic">Modified:</td>
+			<td width="85%" class="ObjectDetailsValue">8/28/2017 4:42:28 PM</td>
+		</tr>
+		<tr style="padding-top: 10px;">
+			<td width="15%" class="ObjectDetailsTopic"><img src="../../images/plus03.gif" align="absmiddle" id="proj" onclick="parent.toggleData(this.id)" />Project:</td>
+			<td width="85%" class="ObjectDetailsValue"></td>			
+		</tr>
+		<tr id="proj00" style="display: none;">
+			<td width="15%" class="ObjectDetailsTopic" style="padding-left: 18px;">Author:</td>
+			<td width="85%" class="ObjectDetailsValue">BRIDG Development Team</td>
+		</tr>
+		<tr id="proj01" style="display: none;">
+			<td width="15%" class="ObjectDetailsTopic" style="padding-left: 18px;">Version:</td>
+			<td width="85%" class="ObjectDetailsValue">5.0.1</td>
+		</tr>
+		<tr>
+			<td width="15%" class="ObjectDetailsTopic"><img src="../../images/plus03.gif" align="absmiddle" id="adv" onclick="parent.toggleData(this.id)" />Advanced:</td>
+			<td width="85%" class="ObjectDetailsValue"></td>			
+		</tr>
+		<tr id="adv00" style="display: none;">
+			<td width="15%" class="ObjectDetailsTopic" style="padding-left: 18px;">ID:</td>
+			<td width="85%" class="ObjectDetailsValue">{C6823D6C-7B17-461d-87F5-9084DE76CE5F}</td>
+		</tr>
+	</table>
+	<div class="ObjectDetailsNotes">The Experiment sub-domain includes concepts related to the design, planning, resourcing and execution of experiments, which are intended to test hypotheses or lead to discoveries.&lt;br/&gt;</div>
+
+</div>
+ 
+</body>
+</html>

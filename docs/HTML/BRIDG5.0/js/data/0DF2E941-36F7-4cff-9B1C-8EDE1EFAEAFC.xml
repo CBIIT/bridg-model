@@ -1,0 +1,13 @@
+tocTab[tocTab.length] = new Array("0.9:1", "", "View SA: Statistical Analysis", "EARoot/EA9/EA339.htm", "175.png", "1413", "0", "", "Logical diagram0","{36A756E3-384D-41bb-B796-094956BE234D}");
+tocTab[tocTab.length] = new Array("0.9:2", "", "DataMonitoringCommitteeCharterVersion", "EARoot/EA9/EA343.htm", "5.png", "E32224", "0", "", "Class0","{049CA0FE-0F40-479c-B042-020E31849811}");
+tocTab[tocTab.length] = new Array("0.9:3", "", "GeneralStatisticalConsideration", "EARoot/EA9/EA344.htm", "5.png", "E32225", "0", "", "Class0","{15A58451-EF14-48de-81E5-B3437995E97E}");
+tocTab[tocTab.length] = new Array("0.9:4", "", "IntegratedStatisticalAnalysisPlan", "EARoot/EA9/EA345.htm", "5.png", "E32226", "0", "", "Class0","{7876BB92-108C-4270-96E4-4B8F28BF91C6}");
+tocTab[tocTab.length] = new Array("0.9:5", "", "PrincipalStatisticalAnalysisPlanVersion", "EARoot/EA9/EA346.htm", "5.png", "E32227", "0", "", "Class0","{BFE51DEB-CC96-40e6-952B-087F67C1863F}");
+tocTab[tocTab.length] = new Array("0.9:6", "", "SampleSizeConsideration", "EARoot/EA9/EA347.htm", "5.png", "E32228", "0", "", "Class0","{7CA22211-50CD-4b3f-9F08-95BCFBCD7B22}");
+tocTab[tocTab.length] = new Array("0.9:7", "", "StatisticalAnalysisPlan", "EARoot/EA9/EA348.htm", "5.png", "E32229", "0", "", "Class0","{391C1FE7-29BC-45d4-8C31-426A6AA0E0FF}");
+tocTab[tocTab.length] = new Array("0.9:8", "", "StatisticalAnalysisPlanDocumentVersion", "EARoot/EA9/EA349.htm", "5.png", "E32230", "0", "", "Class0","{04F2EDA2-9C18-4cac-B4D5-B4EB55A38157}");
+tocTab[tocTab.length] = new Array("0.9:9", "", "StatisticalAnalysisPlanVersion", "EARoot/EA9/EA350.htm", "5.png", "E32231", "0", "", "Class0","{656B1232-B481-4676-B62A-E9E24B1B333B}");
+tocTab[tocTab.length] = new Array("0.9:10", "", "StatisticalAnalysisPlanVersionModificationSummary", "EARoot/EA9/EA351.htm", "5.png", "E32232", "0", "", "Class0","{DD0EC08B-3DCD-46f7-89FC-48B7879D2153}");
+tocTab[tocTab.length] = new Array("0.9:11", "", "StatisticalAnalysisPlanVersionStatus", "EARoot/EA9/EA352.htm", "5.png", "E32233", "0", "", "Class0","{6C9BBED4-1089-4a49-AE7C-821B635DF40C}");
+tocTab[tocTab.length] = new Array("0.9:12", "", "StudySpecificStatisticalAnalysisPlan", "EARoot/EA9/EA353.htm", "5.png", "E32234", "0", "", "Class0","{49313431-F5A4-4f6f-A461-7C23DFDF8E89}");
+tocTab[tocTab.length] = new Array("0.9:13", "", "SupplementalStatisticalAnalysisPlanVersion", "EARoot/EA9/EA354.htm", "5.png", "E32235", "0", "", "Class0","{A5278E5C-64B5-4cf7-9B68-77ED14967EE4}");

@@ -1,0 +1,1870 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>Study Conduct Sub-Domain::PerformedActivity</title>
+<link href="../../css/ea.css" rel="stylesheet" type="text/css" />
+<script>
+function initPage(src) {	
+	if(parent==this&&(this.location+"").indexOf('EARoot')!=-1)
+		document.location=(this.location+"").substring(0,(this.location+"").indexOf('EARoot'))+"index"+(this.location+"").substring((this.location+"").lastIndexOf('.'))+"?goto="+((this.location+"").substring((this.location+"").indexOf('EARoot')+7,(this.location+"").lastIndexOf('.')).replace(/\//g,':').replace(/EA/g,""));
+	else
+		parent.initPage(src);
+}
+
+function nameClassifier(name, separator)
+{
+  var str = name;
+  var classifierName;
+  var node = document.getElementById('name_classifier');
+  if(node != null)
+  {
+    classifierName = node.innerHTML;
+  }
+  if(classifierName != "")
+  {
+   str += separator + classifierName;
+  }
+  
+  return str;
+}
+</script>
+</head>
+<body onload="initPage(this);" class="Content">
+<div class="pageHeader"></div>
+<div class="PageBody">
+	<div id="name_classifier" style="display: none;"></div>
+	<span class="ObjectTitle"><script type="text/javascript">document.write(nameClassifier("PerformedActivity", " : "))</script>  : Public   Class</span>
+	<table border="0" cellpadding="0" cellspacing="0" class="ObjectDetails">
+		<tr>
+			<td width="15%" class="ObjectDetailsTopic">Created:</td>
+			<td width="85%" class="ObjectDetailsValue">1/5/2005 2:51:42 PM</td>
+		</tr>
+		<tr>
+			<td class="ObjectDetailsTopic">Modified:</td>
+			<td class="ObjectDetailsValue">8/26/2017 2:57:08 AM</td>
+		</tr>
+		<tr style="height: 10px"><td colspan="2"></td></tr>
+		<tr>
+			<td class="ObjectDetailsTopic"><img src="../../images/plus03.gif" align="absmiddle" id="proj" onclick="parent.toggleData(this.id)" />Project:</td>
+			<td class="ObjectDetailsValue"></td>
+		</tr>
+		<tr id="proj00" style="display: none;">
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Author:</td>
+			<td class="ObjectDetailsValue">BRIDG SCC</td>
+		</tr>
+		<tr id="proj01" style="display: none;">
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Version:</td>
+			<td class="ObjectDetailsValue">1.0</td>
+		</tr>
+		<tr id="proj02" style="display: none;">
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Phase:</td>
+			<td class="ObjectDetailsValue">1.0</td>
+		</tr>
+		<tr id="proj03" style="display: none;">
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Status:</td>
+			<td class="ObjectDetailsValue"><none></td>
+		</tr>
+		<tr id="proj04" style="display: none;">
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Complexity:</td>
+			<td class="ObjectDetailsValue">Easy</td>
+		</tr>
+		<tr id="proj05" style="display: none;">
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Difficulty:</td>
+			<td class="ObjectDetailsValue"></td>
+		</tr>
+		<tr id="proj06" style="display: none;">
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Priority:</td>
+			<td class="ObjectDetailsValue"></td>
+		</tr>
+		<tr id="proj05" style="display: none;">
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Multiplicity:</td>
+			<td class="ObjectDetailsValue"></td>
+		</tr>
+		<tr>
+			<td class="ObjectDetailsTopic"><img src="../../images/plus03.gif" align="absmiddle" id="adv" onclick="parent.toggleData(this.id)" />Advanced:</td>
+			<td class="ObjectDetailsValue"></td>
+		</tr>
+		<tr id="adv00" style="display: none;">
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">UUID:</td>
+			<td class="ObjectDetailsValue">{E2BB5EC1-013B-4928-A5BD-867351586A9E}</td>
+		</tr>
+		<tr id="adv01" style="display: none;">
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Appears In:</td>
+			<td class="ObjectDetailsValue"><a href="../EA1.htm">UML-Based Comprehensive BRIDG Model Diagram</a>, <a href="../EA2/EA45.htm">View BSP: Biospecimen</a>, <a href="../EA4/EA155.htm">View EX: Experiment</a>, <a href="../EA1/EA28.htm">View AE: Adverse Event</a>, <a href="../EA3/EA62.htm">BRIDG BackBone</a>, <a href="../EA7/EA242.htm">Study Versioning View</a>, <a href="EA356.htm">View SC: Study Conduct</a>, <a href="../EA5/EA170.htm">View IM: Imaging</a>, <a href="../EA11/EA432.htm">Activities</a>, <a href="../EA11/EA434.htm">Adverse Events</a>, <a href="../EA11/EA446.htm">Observations and Results</a>, <a href="../EA11/EA450.htm">Performer</a>, <a href="../EA5/EA172.htm">Imaging Acquisition</a>, <a href="../EA5/EA174.htm">DICOM SR TID 1500 BRIDG Class Diagram</a>, <a href="../EA11/EA440.htm">Oncology View</a>, <a href="../EA11/EA454.htm">SDTM 3.1.3 View</a>, <a href="../EA11/EA460.htm">SDTM Vital Signs (VS) View</a>, <a href="../EA11/EA458.htm">SDTM Disease Response (RS) Domain View</a>, <a href="../EA11/EA456.htm">SDTM Exposure (EX) Domain View</a>, <a href="../EA11/EA438.htm">ClinicalTrials.gov</a>, <a href="../EA11/EA448.htm">Participant Registration</a>, <a href="../EA11/EA462.htm">SEER View</a></td>
+		</tr>
+	</table>
+	<div class="ObjectDetailsNotes">DEFINITION:&lt;br/&gt;An activity that is successfully or unsuccessfully completed. &lt;br/&gt;&lt;br/&gt;EXAMPLE(S):&lt;br/&gt;CBC performed on a specific StudySubject on a given day.&lt;br/&gt;&lt;br/&gt;A scheduled blood draw that is missed by a specific ExperimentalUnit on a given day.&lt;br/&gt;&lt;br/&gt;OTHER NAME(S):&lt;br/&gt;&lt;br/&gt;NOTE(S):&lt;br/&gt;</div>
+
+	<div class="TableGroup" id="TableGroup">
+		<ul class="ItemTitle">
+			<li onClick="parent.toggleItem('Attributes');" id="AttributesTitle">Attributes</li>
+			<li onClick="parent.toggleItem('AssociationsTo');" id="AssociationsToTitle">Associations To</li>
+			<li onClick="parent.toggleItem('AssociationsFrom');" id="AssociationsFromTitle">Associations From</li>
+			<li onClick="parent.toggleItem('TaggedVal');" id="TaggedValTitle">Tagged Values</li>
+			<li onClick="parent.toggleItem('Constraints');" id="ConstraintsTitle">Constraints</li>
+			<li onClick="parent.toggleItem('Links');" id="LinksTitle">Other Links</li>
+		</ul>
+<div class="ItemBody" id="AttributesTable">
+	<table border="0" cellspacing="0" cellpadding="0" class="Table">
+		<tr>
+			<td width="100%" class="TableHeading">Attribute</td>
+		</tr>
+						<tr>
+				<td width="100%" class="TableRow">
+					<i>Public INT.POS</i><br /><strong>&nbsp;&nbsp;repetitionNumber</strong>
+				</td>
+			</tr>
+			<tr>
+				<td class="TableRowBottomDashed"  colspan="1">										
+					<a href="#" onclick="parent.toggleData('DetailsImageAttributes2425')" style="text-decoration: none; color: #000000;"><img src="../../images/plus03.gif" align="absmiddle" id="DetailsImageAttributes2425" border="0" />Details:</a>
+					<table border="0" cellspacing="0" cellpadding="0" class="Table" style="padding: 4px 18px;">
+					
+						<tr id="DetailsImageAttributes2425_00" style="display: none;">
+							<td width="75"><i>Alias:</i></td>
+							<td></td>
+						</tr>
+						<tr id="DetailsImageAttributes2425_01" style="display: none;">
+							<td width="75"><i>Initial:</i></td>
+							<td></td>
+						</tr>
+						<tr id="DetailsImageAttributes2425_02" style="display: none;">
+							<td width="75"><i>Stereotype: </i></td>
+							<td></td>
+						</tr>
+						<tr id="DetailsImageAttributes2425_03" style="display: none;">
+							<td width="75"><i>Ordered: </i></td>
+							<td></td>
+						</tr>
+						<tr id="DetailsImageAttributes2425_04" style="display: none;">
+							<td width="75"><i>Range: </i></td>
+							<td>Range:0 to 1</td>
+						</tr>
+						<tr id="DetailsImageAttributes2425_05" style="display: none;">
+							<td width="75"><i>Transient: </i></td>
+							<td>False</td>
+						</tr>
+						<tr id="DetailsImageAttributes2425_06" style="display: none;">
+							<td width="75"><i>Derived: </i></td>
+							<td>True</td>
+						</tr>
+							<tr id="DetailsImageAttributes2425_07" style="display: none;">
+							<td width="75"><i>IsID: </i></td>
+						<td>False</td>
+						</tr>
+					</table>
+					
+					Map:caAERSv2.2=CourseDate.number<br>Map:caAERSv2.2=TreatmentInformation.totalCourses<br>Map:caAERSv2.2=AdverseEventReportingPeriod.cycleNumber<br>Map:CTRv1.0=PerformedActivity.repetitionNumber<br>Map:HCTv1.0=CDE 2954036:Therapy Doses.Specify the number of days of radiation therapy<br>Map:HCTv1.0=CDE 3060718:Therapies.What was the number of cycles for the therapeutic procedure?<br>Map:HCTv1.0=CDE 3060732:Therapies.What is the reason for the number of cycles missing value?<br>Map:HCTv1.0=CDE 2763975:Therapies.What is the number of systemic/intrathecal therapy cycles administered?<br>Map:LSDAMv2.2.3Plus=PerformedActivity.repetitionNumber<br>Map:NCI CRF Standard=CDE 2744948v1.0: Treatment Cycle Number<br>Map:NCI CRF Standard=CDE 2072v4.1: Treatment Current Course Number<br>Map:NCI CRF Standard=CDE 2732184v1.0: Protocol Course Number Count<br>Map:NCI CRF Standard=CDE 62590v3.0: Agent Course Count<br>Map:NCI CRF Standard=CDE 62676v3.0: Prior Chemotherapy Regimen Number<br>Map:PGx v1.0=PF.PFREPNUM<br>
+						<div class="ObjectDetailsNotes"><table>
+	<tr>
+		<td valign="top">
+			<i>Notes: </i><span style="margin-left: .4cm;"> </span>
+		</td>
+		<td>
+			DEFINITION:&lt;br/&gt;An integer that identifies the particular occurrence of a repeating activity. The first repetition is defined as &#39;1&#39;.&lt;br/&gt;&lt;br/&gt;EXAMPLE(S):&lt;br/&gt;A PlannedActivity might have a repeatQuantity of 4 which would result in 4 ScheduledActivity and PerformedActivity with repetitionNumbers of 1, 2, 3, and 4 respectively.&lt;br/&gt;&lt;br/&gt;OTHER NAME(S):&lt;br/&gt;&lt;br/&gt;NOTE(S):&lt;br/&gt;Derived from ScheduledActivity.repetitionNumber.&lt;br/&gt;
+		</td>
+	</tr>
+</table></div>
+
+						
+				</td>
+			</tr>			<tr>
+				<td width="100%" class="TableRow">
+					<i>Public ST</i><br /><strong>&nbsp;&nbsp;nameCodeModifiedText</strong>
+				</td>
+			</tr>
+			<tr>
+				<td class="TableRowBottomDashed"  colspan="1">										
+					<a href="#" onclick="parent.toggleData('DetailsImageAttributes2426')" style="text-decoration: none; color: #000000;"><img src="../../images/plus03.gif" align="absmiddle" id="DetailsImageAttributes2426" border="0" />Details:</a>
+					<table border="0" cellspacing="0" cellpadding="0" class="Table" style="padding: 4px 18px;">
+					
+						<tr id="DetailsImageAttributes2426_00" style="display: none;">
+							<td width="75"><i>Alias:</i></td>
+							<td></td>
+						</tr>
+						<tr id="DetailsImageAttributes2426_01" style="display: none;">
+							<td width="75"><i>Initial:</i></td>
+							<td></td>
+						</tr>
+						<tr id="DetailsImageAttributes2426_02" style="display: none;">
+							<td width="75"><i>Stereotype: </i></td>
+							<td></td>
+						</tr>
+						<tr id="DetailsImageAttributes2426_03" style="display: none;">
+							<td width="75"><i>Ordered: </i></td>
+							<td></td>
+						</tr>
+						<tr id="DetailsImageAttributes2426_04" style="display: none;">
+							<td width="75"><i>Range: </i></td>
+							<td>Range:0 to 1</td>
+						</tr>
+						<tr id="DetailsImageAttributes2426_05" style="display: none;">
+							<td width="75"><i>Transient: </i></td>
+							<td>False</td>
+						</tr>
+						<tr id="DetailsImageAttributes2426_06" style="display: none;">
+							<td width="75"><i>Derived: </i></td>
+							<td>False</td>
+						</tr>
+							<tr id="DetailsImageAttributes2426_07" style="display: none;">
+							<td width="75"><i>IsID: </i></td>
+						<td>False</td>
+						</tr>
+					</table>
+					
+					Map:SDTM IGv3.1.3=MH.MHMODIFY<br>
+						<div class="ObjectDetailsNotes"><table>
+	<tr>
+		<td valign="top">
+			<i>Notes: </i><span style="margin-left: .4cm;"> </span>
+		</td>
+		<td>
+			DEFINITION:&lt;br/&gt;A character string that is a revision of the original text of the activity designation to enable the coding of the text. &lt;br/&gt;&lt;br/&gt;EXAMPLE(S):&lt;br/&gt;If the originalText is &quot;apendectomy&quot;, the valueCodeModifiedText could be changed to &quot;appendectomy&quot;, so that the text can be successfully coded.&lt;br/&gt;&lt;br/&gt;OTHER NAME(S):&lt;br/&gt;&lt;br/&gt;NOTE(S):&lt;br/&gt;In the context of BRIDG, text modification occurs a single time for a given instance of originalText. &lt;br/&gt;&lt;br/&gt;This attribute accommodates cases where the original text for identifying what is the activity is captured as DefinedActivity.nameCode(CD).originalText, but is unencodable as is, and requires modification to enable encoding, then&#160; the code can be captured as DefinedActivity.nameCode(CD).code.&lt;br/&gt;
+		</td>
+	</tr>
+</table></div>
+
+						
+				</td>
+			</tr>			<tr>
+				<td width="100%" class="TableRow">
+					<i>Public IVL&lt;TS.DATETIME&gt;</i><br /><strong>&nbsp;&nbsp;dateRange</strong>
+				</td>
+			</tr>
+			<tr>
+				<td class="TableRowBottomDashed"  colspan="1">										
+					<a href="#" onclick="parent.toggleData('DetailsImageAttributes2427')" style="text-decoration: none; color: #000000;"><img src="../../images/plus03.gif" align="absmiddle" id="DetailsImageAttributes2427" border="0" />Details:</a>
+					<table border="0" cellspacing="0" cellpadding="0" class="Table" style="padding: 4px 18px;">
+					
+						<tr id="DetailsImageAttributes2427_00" style="display: none;">
+							<td width="75"><i>Alias:</i></td>
+							<td></td>
+						</tr>
+						<tr id="DetailsImageAttributes2427_01" style="display: none;">
+							<td width="75"><i>Initial:</i></td>
+							<td></td>
+						</tr>
+						<tr id="DetailsImageAttributes2427_02" style="display: none;">
+							<td width="75"><i>Stereotype: </i></td>
+							<td></td>
+						</tr>
+						<tr id="DetailsImageAttributes2427_03" style="display: none;">
+							<td width="75"><i>Ordered: </i></td>
+							<td></td>
+						</tr>
+						<tr id="DetailsImageAttributes2427_04" style="display: none;">
+							<td width="75"><i>Range: </i></td>
+							<td>Range:0 to 1</td>
+						</tr>
+						<tr id="DetailsImageAttributes2427_05" style="display: none;">
+							<td width="75"><i>Transient: </i></td>
+							<td>False</td>
+						</tr>
+						<tr id="DetailsImageAttributes2427_06" style="display: none;">
+							<td width="75"><i>Derived: </i></td>
+							<td>False</td>
+						</tr>
+							<tr id="DetailsImageAttributes2427_07" style="display: none;">
+							<td width="75"><i>IsID: </i></td>
+						<td>False</td>
+						</tr>
+					</table>
+					
+					Map:AE=AdverseEvent.baselineDate<br>Map:AE=ProductInvestigation.investigationDate<br>Map:AE=Device.dateDeviceReturnedToManufacturer<br>Map:AIM v4 rv48=AnnotationEntity.dateTime<br>Map:AIM v4 rv48=AnnotationCollection.dateTime<br>Map:C3PRv2.9=StudyParticipantDiseaseHistory.diagnosisDate<br>Map:C3PRv2.9=ScheduledEpoch.offEpochDate<br>Map:C3PRv2.9=ScheduledArm.startDate<br>Map:C3PRv2.9=ScheduledEpoch.startDate<br>Map:C3PRv2.9=StudySubjectConsentVersion.informedConsentSignedDate<br>Map:C3PRv2.9=ScheduledNotification.dateSent<br>Map:caAERSv2.2=AdverseEventReportingPeriod.startDate<br>Map:caAERSv2.2=CM.CMENTIM<br>Map:caAERSv2.2=AdverseEventResponseDescription.eventTreatmentTime<br>Map:caAERSv2.2=AdverseEventResponseDescription.dateRemovedFromProtocol<br>Map:caAERSv2.2=ConcomitantMedication.startDate<br>Map:caAERSv2.2=StudyParticipantPriorTherapy.endDate<br>Map:caAERSv2.2=StudyParticipantAssignment.firstCourseDate<br>Map:caAERSv2.2=AdverseEventResponseDescription.reducedDate<br>Map:caAERSv2.2=StudyParticipantConcomitantMedication.startDate<br>Map:caAERSv2.2=TreatmentInformation.firstCourseDate<br>Map:caAERSv2.2=ReportingPeriodReviewComment<br>Map:caAERSv2.2=LabValue.date<br>Map:caAERSv2.2=AdverseEventReportingPeriod.endDate<br>Map:caAERSv2.2=ConcomitantMedication.endDate<br>Map:caAERSv2.2=SurgeryIntervention.interventionDate<br>Map:caAERSv2.2=MedicalDevice.implantedDate<br>Map:caAERSv2.2=AdverseEvent.gradedDate<br>Map:caAERSv2.2=Lab.labDate<br>Map:caAERSv2.2=StudyParticipantConcomitantMedication.endDate<br>Map:caAERSv2.2=MedicalDevice.explantedDate<br>Map:caAERSv2.2=CourseDate.date<br>Map:caAERSv2.2=DiseaseHistory.diagnosticDate<br>Map:caAERSv2.2=AdverseEventResponseDescription.statusDate<br>Map:caAERSv2.2=StudyParticipantPriorTherapy.startDate<br>Map:caAERSv2.2=RadiationIntervention.lastTreatmentDate<br>Map:CDASHv1.1=EG.EGTIM<br>Map:CDASHv1.1=EX.EXSTDAT<br>Map:CDASHv1.1=MH.MHDAT<br>Map:CDASHv1.1=LB.LBTIM<br>Map:CDASHv1.1=VS.VSTIM<br>Map:CDASHv1.1=CM.CMENDAT<br>Map:CDASHv1.1=PE.PETIM<br>Map:CDASHv1.1=LB.LBDAT<br>Map:CDASHv1.1=EX.EXENDAT<br>Map:CDASHv1.1=CM.CMSTDAT<br>Map:CDASHv1.1=CM.CMSTTIM<br>Map:CDASHv1.1=EG.EGDAT<br>Map:CDASHv1.1=EX.EXSTTIM<br>Map:CDASHv1.1=DM.DMDAT<br>Map:CDASHv1.1=DS.DSSTDAT<br>Map:CDASHv1.1=EX.EXENTIM<br>Map:CDASHv1.1=DS.DSSTTIM<br>Map:CDASHv1.1=SU.SUENDAT<br>Map:CDASHv1.1=CM.CMENTIM<br>Map:CDASHv1.1=DA.DADAT<br>Map:CDASHv1.1=PE.PEDAT<br>Map:CDASHv1.1=VS.VSDAT<br>Map:CDASHv1.1=SU.SUSTDAT<br>Map:CTGOV=Record Verification Date<br>Map:CTOM=AdverseEventTherapy.treatmentDate<br>Map:CTOM=Activity.startDate<br>Map:CTOM=LesionEvaluation.evaluationDate<br>Map:CTOM=Surgery.startDate<br>Map:CTOM=SubstanceAdministration.startDate<br>Map:CTOM=Assessment.evaluationDate<br>Map:CTOM=QualitativeEvaluation.evaluationDate<br>Map:CTOM=FemaleReproductiveCharacteristic.menopauseStartDate<br>Map:CTOM=Diagnosis.evaluationDate<br>Map:CTOM=Imaging.startDate<br>Map:CTOM=DiseaseResponse.evaluationDate<br>Map:CTOM=StudyParticipantAssignment.enrollmentAge<br>Map:CTOM=Activity.stopDate<br>Map:CTOM=DeathSummary.evaluationDate<br>Map:CTOM=Procedure.startDate<br>Map:CTOM=SpecimenAcquisition.startDate<br>Map:CTOM=SubstanceAdministration.stopDate<br>Map:CTOM=Surgery.stopDate<br>Map:CTOM=Radiation.stopDate<br>Map:CTOM=SpecimenAcquisition.stopDate<br>Map:CTOM=Radiation.startDate<br>Map:CTOM=Procedure.stopDate<br>Map:CTOM=Imaging.stopDate<br>Map:CTRPv1.0=InterventionalStudyProtocol.recordVerificationDate<br>Map:CTRPv1.0=ObservationalStudyProtocol.recordVerificationDate<br>Map:CTRPv1.0=StudyProtocol.recordVerificationDate<br>Map:CTRPv3.8=PerformedActivity.actualDateRange<br>Map:CTRv1.0=PerformedActivity.dateRange<br>Map:DICOM=General Study Module - Study Date (0008,0020)<br>Map:DICOM=Study Level Keys for the Patient Root Query/Retrieve Information Model -  Study Date (0008,0020)<br>Map:DICOM=Study Level Keys for the Patient Root Query/Retrieve Information Model -  Study Time (0008,0030)<br>Map:DICOM=General Study Module - Study Time (0008,0030)<br>Map:HCTv1.0=CDE 2866504:Occurrences.Date of current clinical / hematologic assessment used to assess the disease status<br>Map:HCTv1.0=CDE 2866135:Occurrences.What date was the relapse/progression detected by a cytogenetic/FISH method?<br>Map:HCTv1.0=CDE 2960535:Therapies.When did therapy stop?<br>Map:HCTv1.0=CDE 2866139:Occurrences.What date was the relapse/progression detected by a clinical/hematological method?<br>Map:HCTv1.0=CDE 2770403:Lab Results.What was the date of the clinical or hematologic evidence?<br>Map:HCTv1.0=CDE 2770388:Lab Results.What was the date of the molecular analysis?<br>Map:HCTv1.0=CDE 2866525:Occurrences.Date of the latest cytogenetic / FISH assessment:<br>Map:HCTv1.0=CDE 2775861:Occurrences.What date was an initial platelet count greater than or equal to 50 x 10E9/L achieved?<br>Map:HCTv1.0=CDE 2866078:Occurrences.Date platelets >= 20 x 10^9/L:<br>Map:HCTv1.0=CDE 2866527:Diagnosis.Date of diagnosis of chronic GVHD<br>Map:HCTv1.0=CDE 2786643:Occurrences.Thawing process begin time:<br>Map:HCTv1.0=MD Anderson Specific Content: Product.Number of days cell product was in culture<br>Map:HCTv1.0=CDE 2960533:Therapies.When did the therapy start?<br>Map:HCTv1.0=CDE 2760949:Disease, Disorder or Finding.Date of the disease status evaluation:<br>Map:HCTv1.0=CDE 3124175:Occurrences.Date cytogenetic status established:<br>Map:HCTv1.0=CDE 2866437:Occurrences.Date the cytogenetic complete remission was determined via FISH:<br>Map:HCTv1.0=CDE 2866494:Lab Results.Date of decline in ANC to less than 500/mmE3 for 3 days or more:<br>Map:HCTv1.0=CDE 2821465:Disease Response.What was the date of best response?<br>Map:HCTv1.0=CDE 2797546:Occurrences.Date first discharged from hospital post-HSCT:<br>Map:HCTv1.0=CDE 3005937:Occurrences.Evaluation Date:<br>Map:HCTv1.0=CDE 2866424:Hematopoietic Stem Cell Transplant (HSCT) : Part 1 of 4.Date of the most recent previous HSCT:<br>Map:HCTv1.0=CDE 2866710:Diagnosis.What is the diagnosis date of the new malignancy, lymphoproliferative or myeloproliferative disorder that occurred?<br>Map:HCTv1.0=CDE 2774075:Numbers.How many subsequent days of collection?<br>Map:HCTv1.0=CDE 3061478:Therapies.Specify the date other treatment was started:<br>Map:HCTv1.0=CDE 2866133:Occurrences.What date was the relapse/progression detected by a molecular method?<br>Map:HCTv1.0=CDE 2947021:Occurrences.Date of relapse:<br>Map:HCTv1.0=CDE 2770838:Occurrences.What was the date of the subsequent HSCT?<br>Map:HCTv1.0=CDE 2866059:Lab Results.Date of product analysis:<br>Map:HCTv1.0=CDE 2978753:Occurrences.Date of post therapy disease relapse/progression<br>Map:HCTv1.0=CDE 2932795:Diagnosis.Date of diagnosis:<br>Map:HCTv1.0=CDE 2931619:Therapies.Date radiation therapy started:<br>Map:HCTv1.0=CDE 2770410:Occurrences.What is the documented date of the stable, mixed chimerism?<br>Map:HCTv1.0=CDE 2944110:Occurrences.What date did the disease relapse or progress?<br>Map:HCTv1.0=CDE 2866462:Occurrences.Date of the current molecular assessment used to assess the disease status.<br>Map:HCTv1.0=CDE 2936575:Disease Response.Specify the date complete remission was achieved:<br>Map:HCTv1.0=CDE 2943067:Diagnosis.What was the date of MDS / MPS transformation?<br>Map:HCTv1.0=CDE 2951782:Diagnosis.What was the date of the PET assessment?<br>Map:HCTv1.0=CDE 2866433:Occurrences.Specify the date the clinical / hematologic CR was achieved:<br>Map:HCTv1.0=CDE 2866764:Occurrences.What assessment date determined that CR has not been achieved from the HSCT?<br>Map:HCTv1.0=CDE 2866759:Occurrences.Survival status:latest follow-up date<br>Map:HCTv1.0=CDE 2594448:Therapies.What was the start date for the velafermin administration?<br>Map:HCTv1.0=CDE 2707802:Occurrences.Product infusion end time:<br>Map:HCTv1.0=CDE 2866746:Diagnosis.What was the date of diagnosis of the primary disease for which the hematopoietic stem cell transplantation was performed?<br>Map:HCTv1.0=CDE 2953206:Techniques.Date of consent to donate research blood samples:<br>Map:HCTv1.0=CDE 2794409:Therapies.What was the end date the immunosuppressive agents were administered to treat or prevent GVHD?<br>Map:HCTv1.0=CDE 2970253:Occurrences.If necessary, please validate the recurrent/progressive disease status date response.<br>Map:HCTv1.0=CDE 2960313:Therapies.When did the preparative regimen medication start?<br>Map:HCTv1.0=CDE 2798743:Diagnosis.Specify the year the diagnosis was made:<br>Map:HCTv1.0=CDE 2866037:Procedures.Date of multiple product infusion<br>Map:HCTv1.0=CDE 2866035:Therapies.Date of receipt of product at your facility:<br>Map:HCTv1.0=CDE 2980873:Therapies.Date of orthopedic surgery<br>Map:HCTv1.0=CDE 2750854:Therapy Results.Date of relapse following the therapeutic procedure:<br>Map:HCTv1.0=CDE 2965140:Procedures.Date of excisional biopsy / surgical procedure performed:<br>Map:HCTv1.0=CDE 3163960:Therapies.Erythrocyte transfusion date:<br>Map:HCTv1.0=CDE 3006893:Occurrences.Sample (specimen) collection date.<br>Map:HCTv1.0=CDE 2866508:Occurrences.Date the current disease status was established:<br>Map:HCTv1.0=CDE 2866380:Occurrences.If initial platelets have not recovered to >20 x 10^9/L since HSCT, what was the date of last assessment?<br>Map:HCTv1.0=CDE 2744513:Therapies.Specify date systemic/intrathecal therapy started:<br>Map:HCTv1.0=CDE 2979195:Therapies.What was the date of the last chemotherapy cycle?<br>Map:HCTv1.0=CDE 2866443:Occurrences.Date the cytogenetic complete remission was determined via conventional cytogenetics:<br>Map:HCTv1.0=CDE 2866949:Occurrences.Date the relapse / progression was first seen by clinical / hematological method:<br>Map:HCTv1.0=CDE 2774708:Therapies.Time of receipt of product:<br>Map:HCTv1.0=MD Anderson Specific Content: Transplant.Day of infusion. <br>Map:HCTv1.0=CDE 2947020:Involvement and Extent of Disease.Date of progression:<br>Map:HCTv1.0=CDE 2750705:Therapy Results.Date response to line of therapy established:<br>Map:HCTv1.0=CDE 2594446:Therapies.Specify the start date of the KGF administration:<br>Map:HCTv1.0=CDE 2794460:Occurrences.Actual date of follow-up:<br>Map:HCTv1.0=CDE 2866523:Therapies.Date of DCI:<br>Map:HCTv1.0=CDE 2771948:Therapies.Date of last leukapheresis:<br>Map:HCTv1.0=CDE 2861238:Occurrences.When was the disease assessment type used to assess the disease?<br>Map:HCTv1.0=CDE 2875783:Therapies.Preparative regimen begin date:<br>Map:HCTv1.0=CDE 3082352:Therapies.What was the last date chemotherapy was administered?<br>Map:HCTv1.0=CDE 2786663:Occurrences.Thawing process end time:<br>Map:HCTv1.0=CDE 2866485:Lab Results.Date of ANC recovery:<br>Map:HCTv1.0=CDE 3019234:Therapies.What date did the radiation therapy end?<br>Map:HCTv1.0=CDE 2866487:Activity.Date storage started:<br>Map:HCTv1.0=CDE 2782523:Lab Results.What was the date of the cytogenetic analysis?<br>Map:HCTv1.0=CDE 3057653:Therapies.Specify the date retinoid therapy was started:<br>Map:HCTv1.0=CDE 2866144:Occurrences.If absolute neutrophil count of 0.5x10^9/L has not been achieved, what was the date of last assessment?<br>Map:HCTv1.0=CDE 3163964:Therapies.Platelet transfusion date:<br>Map:HCTv1.0=CDE 2866483:Therapies.Specify the date for the first course of each agent administered:<br>Map:HCTv1.0=CDE 2866951:Occurrences.First date seen that detected the relapse / progression by cytogenetic / FISH method:<br>Map:HCTv1.0=CDE 2866938:Hematopoietic Stem Cell Transplant (HSCT) : Part 1 of 4.Date of hematopoietic stem cell transplantation (HSCT) for which this form is being completed:<br>Map:HCTv1.0=CDE 2744515:Therapies.Specify date systemic/intrathecal therapy ended:<br>Map:HCTv1.0=CDE 3018891:Therapies.Radiation therapy administered begin date:<br>Map:HCTv1.0=CDE 2705511:Occurrences.Product infusion begin time:<br>Map:HCTv1.0=CDE 2866131:Occurrences.Date the original disease status was determined:<br>Map:HCTv1.0=CDE 2866414:Occurrences.First date of 3 consecutive labs initial ANC recovery >= to 0.5 x 10^9 was achieved:<br>Map:HCTv1.0=CDE 3115646:Therapies.Date of previous HSCT:<br>Map:HCTv1.0=CDE 2936618:Occurrences.Date the disease status was established:<br>Map:HCTv1.0=CDE 2954767:Therapies.What date was the surgical procedure performed?<br>Map:HCTv1.0=CDE 2866534:Diagnosis.If the MDS sub type is AML, date of MDS diagnosis:<br>Map:HCTv1.0=CDE 2866490:Occurrences.Thawing process begin date:<br>Map:HCTv1.0=CDE 2953362:Lab Results.Date the histologic transformation occurred:<br>Map:HCTv1.0=CDE 2866947:Occurrences.Date the relapse / progression was first seen by molecular method:<br>Map:HCTv1.0=CDE 2866435:Occurrences.Date the molecular complete remission was determined:<br>Map:HCTv1.0=CDE 2957536:Occurrences.Date of secondary malignancy:<br>Map:HCTv1.0=CDE 2953241:Techniques.Date of consent to submit research data:<br>Map:HCTv1.0=CDE 3061335:Therapies.What date was immunotherapy administered?<br>Map:HCTv1.0=CDE 2931627:Therapies.Date radiation therapy stopped:<br>Map:HCTv1.0=CDE 2964208:Therapies.Specify the date the first chemotherapy cycle began<br>Map:HCTv1.0=CDE 2771864:Therapies.If the apheresis for the DCI source was done at a different time other than for the collection of PBSC used for the allogeneic HSCT, what was the date of apheresis?<br>Map:HCTv1.0=CDE 2771946:Therapies.Date of first leukapheresis:<br>Map:HCTv1.0=CDE 2986174:Occurrences.If necessary, please validate the sample collection date response.<br>Map:HCTv1.0=CDE 2860472:Therapies.What date did the systemic therapy end?<br>Map:HCTv1.0=CDE 2860466:Therapies.What date did the systemic therapy begin?<br>Map:HCTv1.0=CDE 2866766:Therapies.Date of product collection:<br>Map:HCTv1.0=CDE 2866737:Medical Records and Forms.Clinical Data Form Today's Date<br>Map:ICSRr2=ProductEvent.effectiveTime (in R_Product)<br>Map:ICSRr2=RelatedInvestigation.effectiveTime (in IndividualCaseSafetyReport)<br>Map:ICSRr2=InvestigativeEvent.effectiveTime (in IndividualCaseSafetyReport)<br>Map:ICSRr2=SpecimenCollectionProcess.effectiveTime (in R_Specimen universal)<br>Map:ICSRr2=TransportationEvent.effectiveTime (in R_Product)<br>Map:Lab=Activity.actualEndDateTime<br>Map:Lab=LabResult.testPerformedDateTime<br>Map:Lab=Activity.actualStartDateTime<br>Map:LabViewer2.2=Activity.actualEndDateTime<br>Map:LabViewer2.2=Activity.actualStartDateTime<br>Map:LabViewer2.2=SpecimenCollection.actualStartDateTime<br>Map:LabViewer2.2=SpecimenCollection.actualEndDateTime<br>Map:LabViewer2.2=LaboratoryResult.testPerformedDateTime<br>Map:LSDAMv2.2.3Plus=PerformedActivity.actualDateRange<br>Map:NCI CRF Standard=CDE 2003745v5.0: Form Completion Date<br>Map:NCI CRF Standard=CDE 3028746v1.0: Intervention Occurrence End Date<br>Map:NCI CRF Standard=CDE 2004170v3.0: Evaluation Date<br>Map:NCI CRF Standard=CDE 2171v4.0: Patient Registration Date<br>Map:NCI CRF Standard=CDE 2179659v2.0: Patient Relevant Medical History Date<br>Map:NCI CRF Standard=CDE 2992v4.0: Treatment Reporting Period End Date<br>Map:NCI CRF Standard=CDE 2993v4.0: Treatment Reporting Period Begin Dat<br>Map:NCI CRF Standard=CDE 64166v3.0: Form Amended Complete Date<br>Map:NCI CRF Standard=CDE 65167v3.0: Last Treatment Date<br>Map:NCI CRF Standard=CDE 3008897v1.0: Case Report Form Review Date<br>Map:NCI CRF Standard=CDE 62739v3.0: Current Stage Complete Assessment Date<br>Map:NCI CRF Standard=CDE 2003745v5.0:  Form Completion Date<br>Map:NCI CRF Standard=CDE 2003580v3.0: Lab Collection Time<br>Map:NCI CRF Standard=CDE 2004139v3.0: Stop Time<br>Map:NCI CRF Standard=CDE 3028744v1.0: Intervention Occurrence Begin Date<br>Map:NCI CRF Standard=CDE 2004095v3.0: Start Time<br>Map:NCI CRF Standard=CDE 2004004v3.0: Sample Collection Date<br>Map:NCI CRF Standard=CDE 2746541v1.0:  Participant Enrollment Date<br>Map:PGx v1.0=BE.BEDUR<br>Map:PGx v1.0=PG.PGDTC<br>Map:PGx v1.0=BE.BEENDTC<br>Map:PGx v1.0=BS.BSDTC<br>Map:PGx v1.0=SB.SBDTC<br>Map:PGx v1.0=BE.BEDTC<br>Map:PGx v1.0=PF.PFDTC<br>Map:PGx v1.0=PF.PFRFTDTC<br>Map:PGx v1.0=BE.BESTDTC<br>Map:PSC=VitalSign.measureTime<br>Map:PSC=StudyParticipantAssignment.startDate<br>Map:PSC=ScheduledEventState.occured<br>Map:PSC=Occurred.date <br>Map:PSCv2.6=AdverseEvent.detectionDate<br>Map:SDTM IGv3.1.1=EX.EXENDTC<br>Map:SDTM IGv3.1.1=SV.SVENDTC<br>Map:SDTM IGv3.1.1=LB.LBDTC<br>Map:SDTM IGv3.1.1=EX.EXSTDTC<br>Map:SDTM IGv3.1.1=EG.EGDTC<br>Map:SDTM IGv3.1.1=SV.SVSTDTC<br>Map:SDTM IGv3.1.1=VS.VSDTC<br>Map:SDTM IGv3.1.1=DS.DSDTC<br>Map:SDTM IGv3.1.1=MH.MHDTC<br>Map:SDTM IGv3.1.1=DA.DADTC<br>Map:SDTM IGv3.1.1=DS.DSSTDTC<br>Map:SDTM IGv3.1.1=PE.PEDTC<br>Map:SDTM IGv3.1.1=SU.SUENDTC<br>Map:SDTM IGv3.1.1=IE.IEDTC<br>Map:SDTM IGv3.1.1=QS.QSDTC<br>Map:SDTM IGv3.1.1=SE.SESTDTC<br>Map:SDTM IGv3.1.1=DM.DMDTC<br>Map:SDTM IGv3.1.1=CM.CMENDTC<br>Map:SDTM IGv3.1.1=CO.CODTC<br>Map:SDTM IGv3.1.1=CM.CMSTDTC<br>Map:SDTM IGv3.1.1=SE.SEENDTC<br>Map:SDTM IGv3.1.1=SC.SCDTC<br>Map:SDTM IGv3.1.1=SU.SUSTDTC<br>Map:SDTM IGv3.1.1=LB.LBENDTC<br>Map:SDTM IGv3.1.2=CE.CESTTPT<br>Map:SDTM IGv3.1.2=CE.CESTRF<br>Map:SDTM IGv3.1.2=VS.VSRFTDTC<br>Map:SDTM IGv3.1.2=QS.QSRFTDTC<br>Map:SDTM IGv3.1.2=PP.PPRFTDTC<br>Map:SDTM IGv3.1.2=CM.CMENRTPT<br>Map:SDTM IGv3.1.2=CM.CMSTRF<br>Map:SDTM IGv3.1.2=CE.CEENRTPT<br>Map:SDTM IGv3.1.2=PC.PCRFTDTC<br>Map:SDTM IGv3.1.2=MH.MHDTC<br>Map:SDTM IGv3.1.2=CM.CMSTTPT<br>Map:SDTM IGv3.1.2=SU.SUSTTPT<br>Map:SDTM IGv3.1.2=QS.QSDTC<br>Map:SDTM IGv3.1.2=CM.CMENDTC<br>Map:SDTM IGv3.1.2=SV.SVENDTC<br>Map:SDTM IGv3.1.2=CM.CMENRF<br>Map:SDTM IGv3.1.2=PE.PEDTC<br>Map:SDTM IGv3.1.2=CM.CMENTPT<br>Map:SDTM IGv3.1.2=IE.IEDTC<br>Map:SDTM IGv3.1.2=CM.CMSTRTPT<br>Map:SDTM IGv3.1.2=MB.MBRFTDTC<br>Map:SDTM IGv3.1.2=DM.DMDTC<br>Map:SDTM IGv3.1.2=SE.SEENDTC<br>Map:SDTM IGv3.1.2=SU.SUSENDTC<br>Map:SDTM IGv3.1.2=VS.VSDTC<br>Map:SDTM IGv3.1.2=PP.PPDTC<br>Map:SDTM IGv3.1.2=CE.CEENRF<br>Map:SDTM IGv3.1.2=EG.EGRFTDTC<br>Map:SDTM IGv3.1.2=SV.SVSTDTC<br>Map:SDTM IGv3.1.2=PC.PCENDTC<br>Map:SDTM IGv3.1.2=DA.DADTC<br>Map:SDTM IGv3.1.2=EX.EXSTDTC<br>Map:SDTM IGv3.1.2=MS.MSDTC<br>Map:SDTM IGv3.1.2=SU.SUSTRTPT<br>Map:SDTM IGv3.1.2=LB.LBRFTDTC<br>Map:SDTM IGv3.1.2=CO.CODTC<br>Map:SDTM IGv3.1.2=SU.SUENRF<br>Map:SDTM IGv3.1.2=FA.FADTC<br>Map:SDTM IGv3.1.2=SC.SCDTC<br>Map:SDTM IGv3.1.2=MB.MBDTC<br>Map:SDTM IGv3.1.2=EX.EXENDTC<br>Map:SDTM IGv3.1.2=CE.CEDTC<br>Map:SDTM IGv3.1.2=SE.SESTDTC<br>Map:SDTM IGv3.1.2=DS.DSSTDTC<br>Map:SDTM IGv3.1.2=SU.SUENTPT<br>Map:SDTM IGv3.1.2=CE.CEENTPT<br>Map:SDTM IGv3.1.2=CE.CESTRTPT<br>Map:SDTM IGv3.1.2=SU.SUENRTPT<br>Map:SDTM IGv3.1.2=LB.LBENDTC<br>Map:SDTM IGv3.1.2=PC.PCDTC<br>Map:SDTM IGv3.1.2=CM.CMSTDTC<br>Map:SDTM IGv3.1.2=EG.EGDTC<br>Map:SDTM IGv3.1.2=SU.SUSTDTC<br>Map:SDTM IGv3.1.2=LB.LBDTC<br>Map:SDTM IGv3.1.2=SU.SUSTRF<br>Map:SDTM IGv3.1.3=MH.MHENTPT<br>Map:SDTM IGv3.1.3=DM.RFXSTDTC<br>Map:SDTM IGv3.1.3=MH.MHDTC<br>Map:SDTM IGv3.1.3=MB.MBRFTDTC<br>Map:SDTM IGv3.1.3=MB.MBDTC<br>Map:SDTM IGv3.1.3=LB.LBRFTDTC<br>Map:SDTM IGv3.1.3=LB.LBENDTC<br>Map:SDTM IGv3.1.3=LB.LBDTC<br>Map:SDTM IGv3.1.3=IE.IEDTC<br>Map:SDTM IGv3.1.3=FA.FADTC<br>Map:SDTM IGv3.1.3=EX.EXENDTC<br>Map:SDTM IGv3.1.3=MS.MSDTC<br>Map:SDTM IGv3.1.3=EG.EGDTC<br>Map:SDTM IGv3.1.3=MH.MHENDTC<br>Map:SDTM IGv3.1.3=DS.DSDTC<br>Map:SDTM IGv3.1.3=EX.EXSTDTC<br>Map:SDTM IGv3.1.3=DM.RFXENDTC<br>Map:SDTM IGv3.1.3=DM.RFPENDTC<br>Map:SDTM IGv3.1.3=DM.DMDTC<br>Map:SDTM IGv3.1.3=DA.DADTC<br>Map:SDTM IGv3.1.3=CO.CODTC<br>Map:SDTM IGv3.1.3=CM.CMSTTPT<br>Map:SDTM IGv3.1.3=CM.CMSTDTC<br>Map:SDTM IGv3.1.3=CM.CMENTPT<br>Map:SDTM IGv3.1.3=CM.CMENDTC<br>Map:SDTM IGv3.1.3=CE.CESTTPT<br>Map:SDTM IGv3.1.3=CE.CEENTPT<br>Map:SDTM IGv3.1.3=CE.CEDTC<br>Map:SDTM IGv3.1.3=AE.AEENTPT<br>Map:SDTM IGv3.1.3=DS.DSSTDTC<br>Map:SDTM IGv3.1.3=EG.EGRFTDTC<br>Map:SDTM IGv3.1.3=MH.MHSTDTC<br>Map:SDTM IGv3.1.3=VS.VSRFTDTC<br>Map:SDTM IGv3.1.3=VS.VSDTC<br>Map:SDTM IGv3.1.3=TU.TUDTC<br>Map:SDTM IGv3.1.3=TR.TRDTC<br>Map:SDTM IGv3.1.3=SV.SVSTDTC<br>Map:SDTM IGv3.1.3=SV.SVENDTC<br>Map:SDTM IGv3.1.3=PC.PCRFTDTC<br>Map:SDTM IGv3.1.3=SU.SUSTTPT<br>Map:SDTM IGv3.1.3=PC.PCENDTC<br>Map:SDTM IGv3.1.3=PE.PEDTC<br>Map:SDTM IGv3.1.3=QS.QSDTC<br>Map:SDTM IGv3.1.3=QS.QSRFTDTC<br>Map:SDTM IGv3.1.3=SU.SUENTPT<br>Map:SDTM IGv3.1.3=SC.SCDTC<br>Map:SDTM IGv3.1.3=SE.SEENDTC<br>Map:SDTM IGv3.1.3=SE.SESTDTC<br>Map:SDTM IGv3.1.3=SU.SUENDTC<br>Map:SDTM IGv3.1.3=RS.RSDTC<br>Map:SDTM IGv3.1.3=PC.PCDTC<br>Map:SDTM IGv3.1.3=SU.SUSTDTC<br>Map:SEER 2015=SECTION VII FIRST COURSE OF THERAPY - RADIATION<br>Map:SEER 2015=SECTION VII FIRST COURSE OF THERAPY - DATE CHEMOTHERAPY STARTED<br>Map:SEER 2015=SECTION VII FIRST COURSE OF THERAPY - DATE CHEMOTHERAPY STARTED FLAG<br>Map:SEER 2015=SECTION VII FIRST COURSE OF THERAPY - DATE HORMONE THERAPY STARTED<br>Map:SEER 2015=SECTION VII FIRST COURSE OF THERAPY - DATE HORMONE THERAPY STARTED FLAG<br>Map:SEER 2015=SECTION VII FIRST COURSE OF THERAPY - DATE IMMUNOTHERAPY STARTED FLAG<br>Map:SEER 2015=SECTION VII FIRST COURSE OF THERAPY - DATE OTHER TREATMENT STARTED<br>Map:SEER 2015=SECTION VII FIRST COURSE OF THERAPY - DATE RADIATION STARTED FLAG<br>Map:SEER 2015=SECTION IV DESCRIPTION OF THIS NEOPLASM - DATE OF DIAGNOSIS<br>Map:SEER 2015=SECTION VII FIRST COURSE OF THERAPY - DATE IMMUNOTHERAPY STARTED<br>Map:SEER 2015=SECTION VII FIRST COURSE OF THERAPY - DATE RADIATION STARTED<br>Map:SEER 2015=SECTION VII FIRST COURSE OF THERAPY - DATE OF FIRST SURGICAL PROCEDURE FLAG<br>Map:SEER 2015=SECTION VII FIRST COURSE OF THERAPY - DATE OF FIRST SURGICAL PROCEDURE<br>Map:SEER 2015=SECTION VII FIRST COURSE OF THERAPY - DATE THERAPY INITIATED FLAG<br>Map:SEER 2015=SECTION IV DESCRIPTION OF THIS NEOPLASM - DATE OF DIAGNOSIS FLAG<br>Map:SEER 2015=SECTION VII FIRST COURSE OF THERAPY - DATE OTHER TREATMENT STARTED FLAG<br>Map:WHO=Date of Registration in Primary Registry<br>Map:WHO=Date of First Enrollment<br>
+						<div class="ObjectDetailsNotes"><table>
+	<tr>
+		<td valign="top">
+			<i>Notes: </i><span style="margin-left: .4cm;"> </span>
+		</td>
+		<td>
+			DEFINITION:&lt;br/&gt;The date and time span when this activity began and ended.&lt;br/&gt;&lt;br/&gt;EXAMPLE(S):&lt;br/&gt;The date and time when a sample is taken from the subject. &lt;br/&gt;&lt;br/&gt;A dose of chemotherapy is given on June 12th starting at 9am and finishing at 12pm.&lt;br/&gt;&lt;br/&gt;OTHER NAME(S):&lt;br/&gt;&lt;br/&gt;NOTE(S):&lt;br/&gt;Whether administrative or preparatory activities are included in this time frame is up to whoever is defining the activity - this time frame is all that matters when the activity occurred.&lt;br/&gt;&lt;br/&gt;The date range is an interval (IVL) data type, meaning it has a beginning (low) and end (high) values. It is also a datetime (TS.DATETIME) data type, meaning the beginning date and the end date can have uncertain values (e.g., a range). For example, if a subject was diagnosed with leukemia sometime in 2009 and that subject had a transplant (substance administration) sometime in 2010. We can surmise that the subject must have had a preparative regimen sometime between those times. Therefore the preparative regimen activity would have a beginning (low) date range of between 2009-01-01 and 2009-12-31; and an ending (high) date range of between 2010-01-01 and 2010-12-31. The precise data type mappings would be:&lt;br/&gt;IVL#lt;TS.DATETIME#gt;.low.uncertainRange.low = 2009-01-01&lt;br/&gt;IVL#lt;TS.DATETIME#gt;.low.uncertainRange.high = 2009-12-31&lt;br/&gt;IVL#lt;TS.DATETIME#gt;.high.uncertainRange.low = 2010-01-01&lt;br/&gt;IVL#lt;TS.DATETIME#gt;.high.uncertainRange.high = 2010-12-31&lt;br/&gt;&lt;br/&gt;[Note that times are left out of the example to keep it as simple as possible.]&lt;br/&gt;
+		</td>
+	</tr>
+</table></div>
+
+						
+				</td>
+			</tr>			<tr>
+				<td width="100%" class="TableRow">
+					<i>Public CD</i><br /><strong>&nbsp;&nbsp;dateRangeValidationCode</strong>
+				</td>
+			</tr>
+			<tr>
+				<td class="TableRowBottomDashed"  colspan="1">										
+					<a href="#" onclick="parent.toggleData('DetailsImageAttributes2428')" style="text-decoration: none; color: #000000;"><img src="../../images/plus03.gif" align="absmiddle" id="DetailsImageAttributes2428" border="0" />Details:</a>
+					<table border="0" cellspacing="0" cellpadding="0" class="Table" style="padding: 4px 18px;">
+					
+						<tr id="DetailsImageAttributes2428_00" style="display: none;">
+							<td width="75"><i>Alias:</i></td>
+							<td></td>
+						</tr>
+						<tr id="DetailsImageAttributes2428_01" style="display: none;">
+							<td width="75"><i>Initial:</i></td>
+							<td></td>
+						</tr>
+						<tr id="DetailsImageAttributes2428_02" style="display: none;">
+							<td width="75"><i>Stereotype: </i></td>
+							<td></td>
+						</tr>
+						<tr id="DetailsImageAttributes2428_03" style="display: none;">
+							<td width="75"><i>Ordered: </i></td>
+							<td></td>
+						</tr>
+						<tr id="DetailsImageAttributes2428_04" style="display: none;">
+							<td width="75"><i>Range: </i></td>
+							<td>Range:0 to 1</td>
+						</tr>
+						<tr id="DetailsImageAttributes2428_05" style="display: none;">
+							<td width="75"><i>Transient: </i></td>
+							<td>False</td>
+						</tr>
+						<tr id="DetailsImageAttributes2428_06" style="display: none;">
+							<td width="75"><i>Derived: </i></td>
+							<td>False</td>
+						</tr>
+							<tr id="DetailsImageAttributes2428_07" style="display: none;">
+							<td width="75"><i>IsID: </i></td>
+						<td>False</td>
+						</tr>
+					</table>
+					
+					Map:HCTv1.0=CDE 2794432:Therapies.If necessary, please validate the final date of immunosuppressant administration response.<br>Map:HCTv1.0=CDE 2821467:Disease Response.If necessary, please validate the best response date value.<br>Map:HCTv1.0=CDE 2775854:Occurrences.If necessary, please validate the date of platelets greater than or equal to 20 x 10E9/L response.<br>Map:HCTv1.0=CDE 3162397:Occurrences.If necessary, please validate the last contact date response<br>Map:HCTv1.0=CDE 2991134:Occurrences.If necessary, please validate the evaluation date response.<br>Map:HCTv1.0=CDE 3071475:Quality of Life.If necessary, please validate the vineland adaptive behavior date response.<br>Map:HCTv1.0=CDE 2979213:Therapies.If necessary, please validate the last chemotherapy cycle date response.<br>Map:HCTv1.0=CDE 3133870:Diagnosis.If necessary, please validate the diagnosis date response.<br>Map:HCTv1.0=CDE 2980833:Therapies.If necessary, please validate the orthopedic surgery date response.<br>Map:HCTv1.0=CDE 2775863:Occurrences.If necessary, please validate the date of platelets greater than or equal to 50 x 10E9/L response.<br>Map:HCTv1.0=CDE 2978136:Therapies.If necessary, please validate the chemotherapy administered date response.<br>Map:HCTv1.0=CDE 2946356:Occurrences.If necessary, please validate the disease status date response.<br>
+						<div class="ObjectDetailsNotes"><table>
+	<tr>
+		<td valign="top">
+			<i>Notes: </i><span style="margin-left: .4cm;"> </span>
+		</td>
+		<td>
+			DEFINITION:&lt;br/&gt;A coded value specifying the degree of authoritativeness or certiitude of&#160; the date of the activity&lt;br/&gt;&lt;br/&gt;EXAMPLE(S):&lt;br/&gt;date estimated&lt;br/&gt;date greater than 100 days - day is correct&lt;br/&gt;date known&lt;br/&gt;date less than 100 days - date is correct&lt;br/&gt;date previously reported&lt;br/&gt;&lt;br/&gt;OTHER NAME(S):&lt;br/&gt;&lt;br/&gt;NOTE(S):&lt;br/&gt;The concept of &quot;date unknown&quot; is captured by a nullFlavor of &quot;UNK&quot; on the dateRange attribute, rather than a code in this attribute.&lt;br/&gt;
+		</td>
+	</tr>
+</table></div>
+
+						
+				</td>
+			</tr>			<tr>
+				<td width="100%" class="TableRow">
+					<i>Public IVL&lt;INT&gt;</i><br /><strong>&nbsp;&nbsp;studyDayRange</strong>
+				</td>
+			</tr>
+			<tr>
+				<td class="TableRowBottomDashed"  colspan="1">										
+					<a href="#" onclick="parent.toggleData('DetailsImageAttributes2429')" style="text-decoration: none; color: #000000;"><img src="../../images/plus03.gif" align="absmiddle" id="DetailsImageAttributes2429" border="0" />Details:</a>
+					<table border="0" cellspacing="0" cellpadding="0" class="Table" style="padding: 4px 18px;">
+					
+						<tr id="DetailsImageAttributes2429_00" style="display: none;">
+							<td width="75"><i>Alias:</i></td>
+							<td></td>
+						</tr>
+						<tr id="DetailsImageAttributes2429_01" style="display: none;">
+							<td width="75"><i>Initial:</i></td>
+							<td></td>
+						</tr>
+						<tr id="DetailsImageAttributes2429_02" style="display: none;">
+							<td width="75"><i>Stereotype: </i></td>
+							<td></td>
+						</tr>
+						<tr id="DetailsImageAttributes2429_03" style="display: none;">
+							<td width="75"><i>Ordered: </i></td>
+							<td></td>
+						</tr>
+						<tr id="DetailsImageAttributes2429_04" style="display: none;">
+							<td width="75"><i>Range: </i></td>
+							<td>Range:0 to 1</td>
+						</tr>
+						<tr id="DetailsImageAttributes2429_05" style="display: none;">
+							<td width="75"><i>Transient: </i></td>
+							<td>False</td>
+						</tr>
+						<tr id="DetailsImageAttributes2429_06" style="display: none;">
+							<td width="75"><i>Derived: </i></td>
+							<td>True</td>
+						</tr>
+							<tr id="DetailsImageAttributes2429_07" style="display: none;">
+							<td width="75"><i>IsID: </i></td>
+						<td>False</td>
+						</tr>
+					</table>
+					
+					Map:CTRv1.0=PerformedActivity.studyDayRange<br>Map:PGx v1.0=BE.BESTDY<br>Map:PGx v1.0=BE.BEENDY<br>Map:PGx v1.0=PG.PGDY<br>Map:PGx v1.0=BS.BSDY<br>Map:PGx v1.0=PF.PFDY<br>Map:SDTM IGv3.1.2=FA.FADY<br>Map:SDTM IGv3.1.2=DM.DMDY<br>Map:SDTM IGv3.1.2=EX.EXSTDY<br>Map:SDTM IGv3.1.2=AE.AESTDY<br>Map:SDTM IGv3.1.2=MB.MBDY<br>Map:SDTM IGv3.1.2=MS.MSDY<br>Map:SDTM IGv3.1.2=CM.CMSTDY<br>Map:SDTM IGv3.1.2=SC.SCDY<br>Map:SDTM IGv3.1.2=AE.AEENDY<br>Map:SDTM IGv3.1.2=SU.SUENDY<br>Map:SDTM IGv3.1.2=DS.DSSTDY<br>Map:SDTM IGv3.1.2=IE.IEDY<br>Map:SDTM IGv3.1.2=EG.EGDY<br>Map:SDTM IGv3.1.2=CE.CEDY<br>Map:SDTM IGv3.1.2=SU.SUSTDY<br>Map:SDTM IGv3.1.2=PE.PEDY<br>Map:SDTM IGv3.1.2=VS.VSDY<br>Map:SDTM IGv3.1.2=DA.DADY<br>Map:SDTM IGv3.1.2=SV.SVENDY<br>Map:SDTM IGv3.1.2=QS.QSDY<br>Map:SDTM IGv3.1.2=EX.EXENDY<br>Map:SDTM IGv3.1.2=PC.PCDY<br>Map:SDTM IGv3.1.2=SV.SVSTDY<br>Map:SDTM IGv3.1.2=CM.CMENDY<br>Map:SDTM IGv3.1.2=MH.MHDY<br>Map:SDTM IGv3.1.2=LB.LBDY<br>Map:SDTM IGv3.1.3=VS.VSDY<br>Map:SDTM IGv3.1.3=CE.CEENDTC<br>Map:SDTM IGv3.1.3=CE.CESTDTC<br>Map:SDTM IGv3.1.3=MH.MHENDTC<br>Map:SDTM IGv3.1.3=MH.MHSSTDTC<br>Map:SDTM IGv3.1.3=RS.RSDY<br>Map:SDTM IGv3.1.3=QS.QSDY<br>Map:SDTM IGv3.1.3=IE.IEDY<br>Map:SDTM IGv3.1.3=LB.LBDY<br>Map:SDTM IGv3.1.3=MB.MBDY<br>Map:SDTM IGv3.1.3=FA.FADY<br>Map:SDTM IGv3.1.3=SU.SUENDY<br>Map:SDTM IGv3.1.3=PE.PEDY<br>Map:SDTM IGv3.1.3=TU.TUDY<br>Map:SDTM IGv3.1.3=SC.SCDY<br>Map:SDTM IGv3.1.3=MH.MHDY<br>Map:SDTM IGv3.1.3=SU.SUSTDY<br>Map:SDTM IGv3.1.3=SV.SVENDY<br>Map:SDTM IGv3.1.3=SV.SVSTDY<br>Map:SDTM IGv3.1.3=TR.TRDY<br>Map:SDTM IGv3.1.3=MS.MSDY<br>Map:SDTM IGv3.1.3=PC.PCDY<br>Map:SDTM IGv3.1.3=EX.EXSTDY<br>Map:SDTM IGv3.1.3=EX.EXENDY<br>Map:SDTM IGv3.1.3=DA.DADY<br>Map:SDTM IGv3.1.3=EG.VISITDY<br>Map:SDTM IGv3.1.3=EG.EGDY<br>Map:SDTM IGv3.1.3=DM.DMDY<br>Map:SDTM IGv3.1.3=CM.CMSTDY<br>Map:SDTM IGv3.1.3=CM.CMENDY<br>Map:SDTM IGv3.1.3=CE.CEDY<br>Map:SDTM IGv3.1.3=DS.DSSTDY<br>
+						<div class="ObjectDetailsNotes"><table>
+	<tr>
+		<td valign="top">
+			<i>Notes: </i><span style="margin-left: .4cm;"> </span>
+		</td>
+		<td>
+			DEFINITION:&lt;br/&gt;The relative timing for a performed activity expressed as the number of days offset from the study-defined reference activity (e.g., date of registration, start of treatment) for this particular experimental unit.&lt;br/&gt;&lt;br/&gt;EXAMPLE(S):&lt;br/&gt;Day 1, Days 10-20&lt;br/&gt;&lt;br/&gt;OTHER NAME(S):&lt;br/&gt;Study Day&lt;br/&gt;&lt;br/&gt;NOTE(S):&lt;br/&gt;Derived from the dateRange of this activity minus the dateRange of the reference activity + 1.&lt;br/&gt;&lt;br/&gt;The study-defined reference activity can be different from study to study. The study day for a date after this reference activity is a positive integer calculated as the difference in the two dates + 1.&#160; The study day for dates before the reference activity is a negative integer calculated as the difference between the two dates.&#160; Note that this means there is no &quot;Day 0.&quot;&lt;br/&gt;
+		</td>
+	</tr>
+</table></div>
+
+						
+				</td>
+			</tr>			<tr>
+				<td width="100%" class="TableRow">
+					<i>Public PQ.TIME</i><br /><strong>&nbsp;&nbsp;duration</strong>
+				</td>
+			</tr>
+			<tr>
+				<td class="TableRowBottomDashed"  colspan="1">										
+					<a href="#" onclick="parent.toggleData('DetailsImageAttributes2430')" style="text-decoration: none; color: #000000;"><img src="../../images/plus03.gif" align="absmiddle" id="DetailsImageAttributes2430" border="0" />Details:</a>
+					<table border="0" cellspacing="0" cellpadding="0" class="Table" style="padding: 4px 18px;">
+					
+						<tr id="DetailsImageAttributes2430_00" style="display: none;">
+							<td width="75"><i>Alias:</i></td>
+							<td></td>
+						</tr>
+						<tr id="DetailsImageAttributes2430_01" style="display: none;">
+							<td width="75"><i>Initial:</i></td>
+							<td></td>
+						</tr>
+						<tr id="DetailsImageAttributes2430_02" style="display: none;">
+							<td width="75"><i>Stereotype: </i></td>
+							<td></td>
+						</tr>
+						<tr id="DetailsImageAttributes2430_03" style="display: none;">
+							<td width="75"><i>Ordered: </i></td>
+							<td></td>
+						</tr>
+						<tr id="DetailsImageAttributes2430_04" style="display: none;">
+							<td width="75"><i>Range: </i></td>
+							<td>Range:0 to 1</td>
+						</tr>
+						<tr id="DetailsImageAttributes2430_05" style="display: none;">
+							<td width="75"><i>Transient: </i></td>
+							<td>False</td>
+						</tr>
+						<tr id="DetailsImageAttributes2430_06" style="display: none;">
+							<td width="75"><i>Derived: </i></td>
+							<td>True</td>
+						</tr>
+							<tr id="DetailsImageAttributes2430_07" style="display: none;">
+							<td width="75"><i>IsID: </i></td>
+						<td>False</td>
+						</tr>
+					</table>
+					
+					AE:Exclude=True<br>Map:caAERSv2.2=CourseAgent.durationAndSchedule<br>Map:CDASHv1.1=SU.SUCDUR<br>Map:CDASHv1.1=SU.SUCDURU<br>Map:CTOM=Activity.durationValue<br>Map:CTOM=Radiation.durationValue<br>Map:CTOM=Imaging.durationValue<br>Map:CTOM=Radiation.durationUnitOfMeasureCode<br>Map:CTOM=Imaging.durationUnitOfMeasureCode<br>Map:CTOM=Procedure.durationUnitOfMeasureCode<br>Map:CTOM=SubstanceAdministration.durationValue<br>Map:CTOM=SubstanceAdministration.durationUnitOfMeasureCode<br>Map:CTOM=Procedure.durationValue<br>Map:CTOM=Activity.durationUnitOfMeasureCode<br>Map:CTOM=Surgery.durationValue<br>Map:CTOM=SpecimenAcquisition.durationValue<br>Map:CTOM=Surgery.durationUnitOfMeasureCode<br>Map:CTOM=SpecimenAcquisition.durationUnitOfMeasureCode<br>Map:CTRPv3.8=PerformedActivity.actualDuration<br>Map:CTRv1.0=PerformedActivity.duration<br>Map:LSDAMv2.2.3Plus=PerformedActivity.actualDuration<br>Map:SDTM IGv3.1.1=EX.EXDUR<br>Map:SDTM IGv3.1.1=CM.CMDUR<br>Map:SDTM IGv3.1.1=SU.SUDUR<br>Map:SDTM IGv3.1.2=EX.EXDUR<br>Map:SDTM IGv3.1.2=CM.CMDUR<br>Map:SDTM IGv3.1.2=SU.SUDUR<br>Map:SDTM IGv3.1.3=CM.CMDUR<br>Map:SDTM IGv3.1.3=EX.EXDUR<br>Map:SDTM IGv3.1.3=SU.SUDUR<br>
+						<div class="ObjectDetailsNotes"><table>
+	<tr>
+		<td valign="top">
+			<i>Notes: </i><span style="margin-left: .4cm;"> </span>
+		</td>
+		<td>
+			DEFINITION:&lt;br/&gt;The period of time over which the activity is performed.&lt;br/&gt;&lt;br/&gt;EXAMPLE(S):&lt;br/&gt;&lt;br/&gt;OTHER NAME(S):&lt;br/&gt;&lt;br/&gt;NOTE(S):&lt;br/&gt;Derived from the notion of duration in the IVL (width) portion of the dateRange attribute.&lt;br/&gt;
+		</td>
+	</tr>
+</table></div>
+
+						
+				</td>
+			</tr>			<tr>
+				<td width="100%" class="TableRow">
+					<i>Public PQ.TIME</i><br /><strong>&nbsp;&nbsp;delayDuration</strong>
+				</td>
+			</tr>
+			<tr>
+				<td class="TableRowBottomDashed"  colspan="1">										
+					<a href="#" onclick="parent.toggleData('DetailsImageAttributes2431')" style="text-decoration: none; color: #000000;"><img src="../../images/plus03.gif" align="absmiddle" id="DetailsImageAttributes2431" border="0" />Details:</a>
+					<table border="0" cellspacing="0" cellpadding="0" class="Table" style="padding: 4px 18px;">
+					
+						<tr id="DetailsImageAttributes2431_00" style="display: none;">
+							<td width="75"><i>Alias:</i></td>
+							<td></td>
+						</tr>
+						<tr id="DetailsImageAttributes2431_01" style="display: none;">
+							<td width="75"><i>Initial:</i></td>
+							<td></td>
+						</tr>
+						<tr id="DetailsImageAttributes2431_02" style="display: none;">
+							<td width="75"><i>Stereotype: </i></td>
+							<td></td>
+						</tr>
+						<tr id="DetailsImageAttributes2431_03" style="display: none;">
+							<td width="75"><i>Ordered: </i></td>
+							<td></td>
+						</tr>
+						<tr id="DetailsImageAttributes2431_04" style="display: none;">
+							<td width="75"><i>Range: </i></td>
+							<td>Range:0 to 1</td>
+						</tr>
+						<tr id="DetailsImageAttributes2431_05" style="display: none;">
+							<td width="75"><i>Transient: </i></td>
+							<td>False</td>
+						</tr>
+						<tr id="DetailsImageAttributes2431_06" style="display: none;">
+							<td width="75"><i>Derived: </i></td>
+							<td>True</td>
+						</tr>
+							<tr id="DetailsImageAttributes2431_07" style="display: none;">
+							<td width="75"><i>IsID: </i></td>
+						<td>False</td>
+						</tr>
+					</table>
+					
+					AE:Exclude=True<br>Map:caAERSv2.2=CourseAgent.administrationDelayUnits<br>Map:caAERSv2.2=AdverseEventResponseDescription.daysNotGiven<br>Map:caAERSv2.2=CourseAgent.administrationDelayAmount<br>Map:CTRv1.0=PerformedActivity.delayDuration<br>Map:LSDAMv2.2.3Plus=PerformedActivity.delayDuration<br>
+						<div class="ObjectDetailsNotes"><table>
+	<tr>
+		<td valign="top">
+			<i>Notes: </i><span style="margin-left: .4cm;"> </span>
+		</td>
+		<td>
+			DEFINITION:&lt;br/&gt;The period of time that an action is delayed relative to an original schedule. &lt;br/&gt;&lt;br/&gt;EXAMPLE(S):&lt;br/&gt;If a substance administration is delayed 2 days as a result of an adverse event, then the delayDuration is 2 days.&lt;br/&gt;&lt;br/&gt;OTHER NAME(S):&lt;br/&gt;&lt;br/&gt;NOTE(S):&lt;br/&gt;Derived from comparing the dates of the scheduled activity with the corresponding performed activity.&lt;br/&gt;
+		</td>
+	</tr>
+</table></div>
+
+						
+				</td>
+			</tr>			<tr>
+				<td width="100%" class="TableRow">
+					<i>Public BL</i><br /><strong>&nbsp;&nbsp;negationIndicator</strong>
+				</td>
+			</tr>
+			<tr>
+				<td class="TableRowBottomDashed"  colspan="1">										
+					<a href="#" onclick="parent.toggleData('DetailsImageAttributes2432')" style="text-decoration: none; color: #000000;"><img src="../../images/plus03.gif" align="absmiddle" id="DetailsImageAttributes2432" border="0" />Details:</a>
+					<table border="0" cellspacing="0" cellpadding="0" class="Table" style="padding: 4px 18px;">
+					
+						<tr id="DetailsImageAttributes2432_00" style="display: none;">
+							<td width="75"><i>Alias:</i></td>
+							<td></td>
+						</tr>
+						<tr id="DetailsImageAttributes2432_01" style="display: none;">
+							<td width="75"><i>Initial:</i></td>
+							<td></td>
+						</tr>
+						<tr id="DetailsImageAttributes2432_02" style="display: none;">
+							<td width="75"><i>Stereotype: </i></td>
+							<td></td>
+						</tr>
+						<tr id="DetailsImageAttributes2432_03" style="display: none;">
+							<td width="75"><i>Ordered: </i></td>
+							<td></td>
+						</tr>
+						<tr id="DetailsImageAttributes2432_04" style="display: none;">
+							<td width="75"><i>Range: </i></td>
+							<td>Range:0 to 1</td>
+						</tr>
+						<tr id="DetailsImageAttributes2432_05" style="display: none;">
+							<td width="75"><i>Transient: </i></td>
+							<td>False</td>
+						</tr>
+						<tr id="DetailsImageAttributes2432_06" style="display: none;">
+							<td width="75"><i>Derived: </i></td>
+							<td>False</td>
+						</tr>
+							<tr id="DetailsImageAttributes2432_07" style="display: none;">
+							<td width="75"><i>IsID: </i></td>
+						<td>False</td>
+						</tr>
+					</table>
+					
+					Map:AE=PerformedObservationResult.negationIndicator<br>Map:AE=ProductInvestigation.investigationPerformedIndicator<br>Map:CDASHv1.1=VS.VSSTAT<br>Map:CTRv1.0=PerformedActivity.negationIndicator<br>Map:HCTv1.0=CDE 2695060:Lab Results.If FDA licensed nucleic acid amplification test (NAT) for human immunodeficiency virus(HIV)-1 performed; specify results<br>Map:HCTv1.0=CDE 3073224:Lab Results.What is the reason for the DRB1 allelles missing value?<br>Map:HCTv1.0=CDE 3073226:Lab Results.What is the reason for the DRB3 allelles missing value?<br>Map:HCTv1.0=CDE 2682755:Therapies.Was imatinib mesylate given for pre-transplant therapy for the other acute leukemia anytime prior to the start of the preparative regimen?<br>Map:HCTv1.0=CDE 2772013:Procedures.Was the donor tested for sickle cell anemia?<br>Map:HCTv1.0=CDE 2686194:Lab Results.For the systemic lupus erythematosus, what was the C3 test result?<br>Map:HCTv1.0=CDE 2681691:Chronic or Associated Diseases and Exposures.What was the recipient's test results for the presence of CMV-antibodies?(Chronic)<br>Map:HCTv1.0=CDE 2748995:Techniques.Was a particular tumor cell detection method used after purging?<br>Map:HCTv1.0=CDE 2760264:Lab Results.Did laboratory procedure test for nucleated cells?<br>Map:HCTv1.0=CDE 3073233:Lab Results.What is the reason for the DRB5 allelles missing value?<br>Map:HCTv1.0=CDE 2749880:Lab Results.For the polyarteritis nodosa, classical or microscopic, what was the laboratory procedure type?<br>Map:HCTv1.0=CDE 2760292:Lab Results.Did the laboratory procedure test for CD34+ cells?<br>Map:HCTv1.0=CDE 3073235:Lab Results.What is the reason for the DQB1 allelles missing value?<br>Map:HCTv1.0=CDE 2689329:Lab Results.For systemic lupus, erythematosus, what was the total complement test result?<br>Map:HCTv1.0=CDE 2686182:Lab Results.For the systemic lupus erythematosus, what was the ANA test result?<br>Map:HCTv1.0=CDE 2691365:Lab Results.For the polymyositis-dermatomyositis, were the biopsy results typical of the disease?<br>Map:HCTv1.0=CDE 3073237:Lab Results.What is the reason for the DPB1 allelles missing value?<br>Map:HCTv1.0=CDE 3073243:Lab Results.What is the reason for the DPA1 allelles missing value?<br>Map:HCTv1.0=CDE 2760131:Lab Results.Did laboratory procedure test for mononucleated cells?<br>Map:HCTv1.0=CDE 2760308:Lab Results.Did laboratory procedure test for CD3 + cells?<br>Map:HCTv1.0=CDE 3073218:Lab Results.What is the reason for the A alleles missing value?<br>Map:HCTv1.0=CDE 2691376:Lab Results.For the polymyositis-dermatomyositis, were the EMG results typical of the disease?<br>Map:HCTv1.0=CDE 2775132:Therapies.Was a particular post hematopoietic stem cell transplant therapy administered?<br>Map:HCTv1.0=CDE 2760378:Specimen Characteristics.Was the cell viability tested?<br>Map:HCTv1.0=CDE 3073239:Lab Results.What is the reason for the DQA1 allelles missing value?<br>Map:HCTv1.0=CDE 2686188:Lab Results.For the systemic lupus erythematosus, what was the ds DNA test result?<br>Map:HCTv1.0=CDE 2760376:Lab Results.Did laboratory procedure test for CD4 + cells?<br>Map:HCTv1.0=CDE 2760277:Lab Results.Did laboratory procedure test for nucleated red blood cells?<br>Map:HCTv1.0=CDE 2749876:Lab Results.For the wegener granulomatosis, what was the result of the laboratory procedure?<br>Map:HCTv1.0=CDE 2691374:Lab Results.For the dermatomyositis, was there a rash present that was typical of the disease?<br>Map:HCTv1.0=CDE 3098936:Individuals.What is the reason for the missing number of pregnancies?<br>Map:HCTv1.0=CDE 2689324:Lab Results.For the systemic lupus erythematosus (SLE), what was the C4 test result?<br>Map:HCTv1.0=CDE 2769662:Procedures.Did this donor have a central line placed?<br>Map:HCTv1.0=CDE 3073222:Lab Results.What is the reason for the C alleles missing value?<br>Map:HCTv1.0=CDE 3073228:Lab Results.What is the reason for the DRB4 alleles missing value?<br>Map:HCTv1.0=CDE 3073220:Lab Results.What is the reason for the B alleles missing value?<br>Map:HCTv1.0=CDE 2749870:Lab Results.For the antiphospholipid syndrome, what was the result of the laboratory procedure?<br>Map:HCTv1.0=CDE 2682913:Lab Results.For the systemic lupus erythematosus, what was the test results at diagnosis for the other antibody?<br>Map:LSDAMv2.2.3Plus=PerformedActivity.missedIndicator<br>Map:NCI CRF Standard=CDE 2838523v1.0: Laboratory Specimen Collection Status Indicator<br>Map:NCI CRF Standard=CDE 2179986v1.0: Concomitant Medication Use Ind-3<br>Map:PGx v1.0=PG.PGSTAT<br>Map:PGx v1.0=BS.BSSTAT<br>Map:PGx v1.0=PF.PFSTAT<br>Map:SDTM IGv3.1.1=LB.LBSTAT<br>Map:SDTM IGv3.1.1=SC.SCSTAT<br>Map:SDTM IGv3.1.1=MH.MHSTAT<br>Map:SDTM IGv3.1.1=DA.DASTAT<br>Map:SDTM IGv3.1.1=SU.SUSTAT<br>Map:SDTM IGv3.1.1=CM.CMSTAT<br>Map:SDTM IGv3.1.1=PE.PESTAT<br>Map:SDTM IGv3.1.1=EG.EGSTAT<br>Map:SDTM IGv3.1.1=VS.VSSTAT<br>Map:SDTM IGv3.1.1=QS.QSSTAT<br>Map:SDTM IGv3.1.2=CM.CMSTAT<br>Map:SDTM IGv3.1.2=SC.SCSTAT<br>Map:SDTM IGv3.1.2=VS.VSSTAT<br>Map:SDTM IGv3.1.2=PC.PCSTAT<br>Map:SDTM IGv3.1.2=PP.PPSTAT<br>Map:SDTM IGv3.1.2=PE.PESTAT<br>Map:SDTM IGv3.1.2=FA.FASTAT<br>Map:SDTM IGv3.1.2=MH.MHSTAT<br>Map:SDTM IGv3.1.2=LB.LBSTAT<br>Map:SDTM IGv3.1.2=SU.SUSTAT<br>Map:SDTM IGv3.1.2=MS.MSSTAT<br>Map:SDTM IGv3.1.2=MB.MBSTAT<br>Map:SDTM IGv3.1.2=EG.EGSTAT<br>Map:SDTM IGv3.1.2=DA.DASTAT<br>Map:SDTM IGv3.1.2=QS.QSSTAT<br>Map:SDTM IGv3.1.2=CE.CESTAT<br>Map:SDTM IGv3.1.3=MS.MSSTAT<br>Map:SDTM IGv3.1.3=VS.VSSTAT<br>Map:SDTM IGv3.1.3=PC.PCSTAT<br>Map:SDTM IGv3.1.3=PE.PESTAT<br>Map:SDTM IGv3.1.3=QS.QSSTAT<br>Map:SDTM IGv3.1.3=RS.RSSTAT<br>Map:SDTM IGv3.1.3=SC.SCSTAT<br>Map:SDTM IGv3.1.3=MB.MBSTAT<br>Map:SDTM IGv3.1.3=TR.TRSTAT<br>Map:SDTM IGv3.1.3=FA.FASTAT<br>Map:SDTM IGv3.1.3=SU.SUSTAT<br>Map:SDTM IGv3.1.3=MH.MHOCCUR<br>Map:SDTM IGv3.1.3=LB.LBSTAT<br>Map:SDTM IGv3.1.3=CM.CMSTAT<br>Map:SDTM IGv3.1.3=DA.DASTAT<br>Map:SDTM IGv3.1.3=EG.EGSTAT<br>
+						<div class="ObjectDetailsNotes"><table>
+	<tr>
+		<td valign="top">
+			<i>Notes: </i><span style="margin-left: .4cm;"> </span>
+		</td>
+		<td>
+			DEFINITION:&lt;br/&gt;Specifies whether an activity did not occur.&lt;br/&gt;&lt;br/&gt;EXAMPLE(S):&lt;br/&gt;If a subject did not take aspirin in the previous week, the negationIndicator = &quot;true&quot;.&lt;br/&gt;&lt;br/&gt;OTHER NAME(S):&lt;br/&gt;&lt;br/&gt;NOTE(S):&lt;br/&gt;If it is important to capture the fact that a particular activity did not occur, then this attribute is used, often along with negationReason.&lt;br/&gt;
+		</td>
+	</tr>
+</table></div>
+
+						
+				</td>
+			</tr>			<tr>
+				<td width="100%" class="TableRow">
+					<i>Public DSET&lt;SC&gt;</i><br /><strong>&nbsp;&nbsp;negationReason</strong>
+				</td>
+			</tr>
+			<tr>
+				<td class="TableRowBottomDashed"  colspan="1">										
+					<a href="#" onclick="parent.toggleData('DetailsImageAttributes2433')" style="text-decoration: none; color: #000000;"><img src="../../images/plus03.gif" align="absmiddle" id="DetailsImageAttributes2433" border="0" />Details:</a>
+					<table border="0" cellspacing="0" cellpadding="0" class="Table" style="padding: 4px 18px;">
+					
+						<tr id="DetailsImageAttributes2433_00" style="display: none;">
+							<td width="75"><i>Alias:</i></td>
+							<td></td>
+						</tr>
+						<tr id="DetailsImageAttributes2433_01" style="display: none;">
+							<td width="75"><i>Initial:</i></td>
+							<td></td>
+						</tr>
+						<tr id="DetailsImageAttributes2433_02" style="display: none;">
+							<td width="75"><i>Stereotype: </i></td>
+							<td></td>
+						</tr>
+						<tr id="DetailsImageAttributes2433_03" style="display: none;">
+							<td width="75"><i>Ordered: </i></td>
+							<td></td>
+						</tr>
+						<tr id="DetailsImageAttributes2433_04" style="display: none;">
+							<td width="75"><i>Range: </i></td>
+							<td>Range:0 to *</td>
+						</tr>
+						<tr id="DetailsImageAttributes2433_05" style="display: none;">
+							<td width="75"><i>Transient: </i></td>
+							<td>False</td>
+						</tr>
+						<tr id="DetailsImageAttributes2433_06" style="display: none;">
+							<td width="75"><i>Derived: </i></td>
+							<td>False</td>
+						</tr>
+							<tr id="DetailsImageAttributes2433_07" style="display: none;">
+							<td width="75"><i>IsID: </i></td>
+						<td>False</td>
+						</tr>
+					</table>
+					
+					Map:AE=ProductInvestigation.notEvaluatedByManufacturerExplanation<br>Map:CTRPv3.8=PerformedSubjectMilestone.missedReason<br>Map:CTRv1.0=PerformedActivity.negationReason<br>Map:HCTv1.0=CDE 2963889:Disease, Disorder or Finding.Specify reason status was not assessed:<br>Map:HCTv1.0=CDE 2764241:Therapies.What is the reason for the systemic/intrathecal number of cycles missing value?<br>Map:HCTv1.0=CDE 2775605:Therapies.Specify the reason this HSCT was canceled:<br>Map:HCTv1.0=CDE 2964380:Therapy Doses.What is the reason for the number of chemotherapy cycles missing values?<br>Map:HCTv1.0=CDE 2646256:Treatment/Off-treatment Reasons.Reasons for treatment discontinuation<br>Map:HCTv1.0=CDE 2775548:Therapies.Specify the reason the HSCT was not performed:<br>Map:HCTv1.0=CDE 2949994:Therapies.What is the reason for the systemic therapy cycle administered missing value?<br>Map:HCTv1.0=CDE 2556195:Therapy Results.Specify reason<br>Map:HCTv1.0=CDE 3124485:Disease Response.What is the reason for the missing disease status?<br>Map:LSDAMv2.2.3Plus=PerformedActivity.missedReason<br>Map:PGx v1.0=BS.BSREASND<br>Map:PGx v1.0=PG.PGREASND<br>Map:PGx v1.0=PF.PFREASND<br>Map:PSC=Canceled<br>Map:SDTM IGv3.1.1=SC.SCREASND<br>Map:SDTM IGv3.1.1=DA.DAREASND<br>Map:SDTM IGv3.1.1=EG.EGREASND<br>Map:SDTM IGv3.1.1=VS.VSREASND<br>Map:SDTM IGv3.1.1=QS.QSREASND<br>Map:SDTM IGv3.1.1=PE.PEREASND<br>Map:SDTM IGv3.1.1=CM.CMREASND<br>Map:SDTM IGv3.1.1=LB.LBREASND<br>Map:SDTM IGv3.1.1=SU.SUREASND<br>Map:SDTM IGv3.1.1=MH.MHREASND<br>Map:SDTM IGv3.1.2=PP.PPREASND<br>Map:SDTM IGv3.1.2=CM.CMREASND<br>Map:SDTM IGv3.1.2=SC.SCREASND<br>Map:SDTM IGv3.1.2=MS.MSREASND<br>Map:SDTM IGv3.1.2=EG.EGREASND<br>Map:SDTM IGv3.1.2=MB.MBREASND<br>Map:SDTM IGv3.1.2=PC.PCREASND<br>Map:SDTM IGv3.1.2=VS.VSREASND<br>Map:SDTM IGv3.1.2=FA.FAREASND<br>Map:SDTM IGv3.1.2=SU.SUREASND<br>Map:SDTM IGv3.1.2=LB.LBREASND<br>Map:SDTM IGv3.1.2=QS.QSREASND<br>Map:SDTM IGv3.1.2=PE.PEREASND<br>Map:SDTM IGv3.1.2=MH.MHREASND<br>Map:SDTM IGv3.1.2=CE.CEREASND<br>Map:SDTM IGv3.1.2=DA.DAREASND<br>Map:SDTM IGv3.1.3=CE.CEREASND<br>Map:SDTM IGv3.1.3=CM.CMREASND<br>Map:SDTM IGv3.1.3=EG.EGREASND<br>Map:SDTM IGv3.1.3=MH.MHREASND<br>Map:SDTM IGv3.1.3=FA.FAREASND<br>Map:SDTM IGv3.1.3=LB.LBREASND<br>Map:SDTM IGv3.1.3=MB.MBREASND<br>Map:SDTM IGv3.1.3=DA.DAREASND<br>Map:SDTM IGv3.1.3=PC.PCREASND<br>Map:SDTM IGv3.1.3=PE.PEREASND<br>Map:SDTM IGv3.1.3=QS.QSREASND<br>Map:SDTM IGv3.1.3=RS.RSREASND<br>Map:SDTM IGv3.1.3=SC.SCREASND<br>Map:SDTM IGv3.1.3=SU.SUREASND<br>Map:SDTM IGv3.1.3=VS.VSREASND<br>Map:SDTM IGv3.1.3=MS.MSREASND<br>Map:SDTM IGv3.1.3=TR.TRREASND<br>Map:SEER 2015=SECTION VII FIRST COURSE OF THERAPY - REASON FOR NO SURGERY OF PRIMARY SITE<br>
+						<div class="ObjectDetailsNotes"><table>
+	<tr>
+		<td valign="top">
+			<i>Notes: </i><span style="margin-left: .4cm;"> </span>
+		</td>
+		<td>
+			DEFINITION:&lt;br/&gt;The text and/or code that describes why an activity did not occur.&lt;br/&gt;&lt;br/&gt;EXAMPLE(S):&lt;br/&gt;forgot to ask, sample lost&lt;br/&gt;&lt;br/&gt;OTHER NAME(S):&lt;br/&gt;&lt;br/&gt;NOTE(S):&lt;br/&gt;
+		</td>
+	</tr>
+</table></div>
+
+						
+				</td>
+			</tr>			<tr>
+				<td width="100%" class="TableRow">
+					<i>Public BL</i><br /><strong>&nbsp;&nbsp;fastingStatusIndicator</strong>
+				</td>
+			</tr>
+			<tr>
+				<td class="TableRowBottomDashed"  colspan="1">										
+					<a href="#" onclick="parent.toggleData('DetailsImageAttributes2434')" style="text-decoration: none; color: #000000;"><img src="../../images/plus03.gif" align="absmiddle" id="DetailsImageAttributes2434" border="0" />Details:</a>
+					<table border="0" cellspacing="0" cellpadding="0" class="Table" style="padding: 4px 18px;">
+					
+						<tr id="DetailsImageAttributes2434_00" style="display: none;">
+							<td width="75"><i>Alias:</i></td>
+							<td></td>
+						</tr>
+						<tr id="DetailsImageAttributes2434_01" style="display: none;">
+							<td width="75"><i>Initial:</i></td>
+							<td></td>
+						</tr>
+						<tr id="DetailsImageAttributes2434_02" style="display: none;">
+							<td width="75"><i>Stereotype: </i></td>
+							<td></td>
+						</tr>
+						<tr id="DetailsImageAttributes2434_03" style="display: none;">
+							<td width="75"><i>Ordered: </i></td>
+							<td></td>
+						</tr>
+						<tr id="DetailsImageAttributes2434_04" style="display: none;">
+							<td width="75"><i>Range: </i></td>
+							<td>Range:0 to 1</td>
+						</tr>
+						<tr id="DetailsImageAttributes2434_05" style="display: none;">
+							<td width="75"><i>Transient: </i></td>
+							<td>False</td>
+						</tr>
+						<tr id="DetailsImageAttributes2434_06" style="display: none;">
+							<td width="75"><i>Derived: </i></td>
+							<td>True</td>
+						</tr>
+							<tr id="DetailsImageAttributes2434_07" style="display: none;">
+							<td width="75"><i>IsID: </i></td>
+						<td>False</td>
+						</tr>
+					</table>
+					
+					Map:CDASHv1.1=LB.LBCOND<br>Map:CTRv1.0=PerformedActivity.fastingStatusIndicator<br>Map:Lab=SpecimenCollection.fastingStatus<br>Map:LabViewer2.2=SpecimenCollection.fastingStatusIndicator<br>Map:LSDAMv2.2.3Plus=PerformedSpecimenCollection.fastingStatusIndicator<br>Map:SDTM IGv3.1.1=LB.LBFAST<br>Map:SDTM IGv3.1.2=LB.LBFAST<br>Map:SDTM IGv3.1.2=PC.PCFAST<br>Map:SDTM IGv3.1.3=LB.LBFAST<br>Map:SDTM IGv3.1.3=PC.PCFAST<br>
+						<div class="ObjectDetailsNotes"><table>
+	<tr>
+		<td valign="top">
+			<i>Notes: </i><span style="margin-left: .4cm;"> </span>
+		</td>
+		<td>
+			DEFINITION:&lt;br/&gt;Specifies whether the participant had been abstaining from eating when the activity was performed.&lt;br/&gt;&lt;br/&gt;EXAMPLE(S):&lt;br/&gt;&lt;br/&gt;OTHER NAME(S):&lt;br/&gt;&lt;br/&gt;NOTE(S):&lt;br/&gt;Derived from the presence of a PerformedObservation (e.g. &quot;Was the subject fasting when the specimen collection was performed?&quot;) and associated PerformedObservationResult.value (constrained to a BL with value of &quot;true&quot;) related to a PerformedActivity. The PerformedObservation would be related to the PerformedActivity by both being components of the same composite activity such as a visit (DefinedSubjectActivityGroup or PlannedSubjectActivityGroup).&lt;br/&gt;
+		</td>
+	</tr>
+</table></div>
+
+						
+				</td>
+			</tr>			<tr>
+				<td width="100%" class="TableRow">
+					<i>Public BL</i><br /><strong>&nbsp;&nbsp;medicalHistoryIndicator</strong>
+				</td>
+			</tr>
+			<tr>
+				<td class="TableRowBottomDashed"  colspan="1">										
+					<a href="#" onclick="parent.toggleData('DetailsImageAttributes2435')" style="text-decoration: none; color: #000000;"><img src="../../images/plus03.gif" align="absmiddle" id="DetailsImageAttributes2435" border="0" />Details:</a>
+					<table border="0" cellspacing="0" cellpadding="0" class="Table" style="padding: 4px 18px;">
+					
+						<tr id="DetailsImageAttributes2435_00" style="display: none;">
+							<td width="75"><i>Alias:</i></td>
+							<td></td>
+						</tr>
+						<tr id="DetailsImageAttributes2435_01" style="display: none;">
+							<td width="75"><i>Initial:</i></td>
+							<td></td>
+						</tr>
+						<tr id="DetailsImageAttributes2435_02" style="display: none;">
+							<td width="75"><i>Stereotype: </i></td>
+							<td></td>
+						</tr>
+						<tr id="DetailsImageAttributes2435_03" style="display: none;">
+							<td width="75"><i>Ordered: </i></td>
+							<td></td>
+						</tr>
+						<tr id="DetailsImageAttributes2435_04" style="display: none;">
+							<td width="75"><i>Range: </i></td>
+							<td>Range:0 to 1</td>
+						</tr>
+						<tr id="DetailsImageAttributes2435_05" style="display: none;">
+							<td width="75"><i>Transient: </i></td>
+							<td>False</td>
+						</tr>
+						<tr id="DetailsImageAttributes2435_06" style="display: none;">
+							<td width="75"><i>Derived: </i></td>
+							<td>True</td>
+						</tr>
+							<tr id="DetailsImageAttributes2435_07" style="display: none;">
+							<td width="75"><i>IsID: </i></td>
+						<td>False</td>
+						</tr>
+					</table>
+					
+					Map:HCTv1.0=CDE 2676441:Comorbid Conditions.Is there a history of mechanical ventilation?<br>
+						<div class="ObjectDetailsNotes"><table>
+	<tr>
+		<td valign="top">
+			<i>Notes: </i><span style="margin-left: .4cm;"> </span>
+		</td>
+		<td>
+			DEFINITION: &lt;br/&gt;Specifies whether the activity is considered part of the historical record of a subject, that is, it did not occur within the bounds of the study.&lt;br/&gt;&lt;br/&gt;EXAMPLE(S):&lt;br/&gt;&lt;br/&gt;OTHER NAME(S):&lt;br/&gt;&lt;br/&gt;NOTE(S):&lt;br/&gt;Derived from comparing the date range of the activity (PerformedActivity.dateRange) with the subject participation in the study (PerformedStudySubjectMilestone.studyReferenceDateRange).&#160; If the date is within the study participation date range then this indicator will be &quot;false&quot;.&#160; Note that this means that this indicator will be derived differently for each study.&lt;br/&gt;
+		</td>
+	</tr>
+</table></div>
+
+						
+				</td>
+			</tr>			<tr>
+				<td width="100%" class="TableRow">
+					<i>Public CD</i><br /><strong>&nbsp;&nbsp;statusCode</strong>
+				</td>
+			</tr>
+			<tr>
+				<td class="TableRowBottomDashed"  colspan="1">										
+					<a href="#" onclick="parent.toggleData('DetailsImageAttributes2436')" style="text-decoration: none; color: #000000;"><img src="../../images/plus03.gif" align="absmiddle" id="DetailsImageAttributes2436" border="0" />Details:</a>
+					<table border="0" cellspacing="0" cellpadding="0" class="Table" style="padding: 4px 18px;">
+					
+						<tr id="DetailsImageAttributes2436_00" style="display: none;">
+							<td width="75"><i>Alias:</i></td>
+							<td></td>
+						</tr>
+						<tr id="DetailsImageAttributes2436_01" style="display: none;">
+							<td width="75"><i>Initial:</i></td>
+							<td></td>
+						</tr>
+						<tr id="DetailsImageAttributes2436_02" style="display: none;">
+							<td width="75"><i>Stereotype: </i></td>
+							<td></td>
+						</tr>
+						<tr id="DetailsImageAttributes2436_03" style="display: none;">
+							<td width="75"><i>Ordered: </i></td>
+							<td></td>
+						</tr>
+						<tr id="DetailsImageAttributes2436_04" style="display: none;">
+							<td width="75"><i>Range: </i></td>
+							<td>Range:0 to 1</td>
+						</tr>
+						<tr id="DetailsImageAttributes2436_05" style="display: none;">
+							<td width="75"><i>Transient: </i></td>
+							<td>False</td>
+						</tr>
+						<tr id="DetailsImageAttributes2436_06" style="display: none;">
+							<td width="75"><i>Derived: </i></td>
+							<td>False</td>
+						</tr>
+							<tr id="DetailsImageAttributes2436_07" style="display: none;">
+							<td width="75"><i>IsID: </i></td>
+						<td>False</td>
+						</tr>
+					</table>
+					
+					Map:AE=ProductInvestigation.manufacturerEvaluationStatus<br>Map:AE=PerformedActivity.ongoingPerformanceIndicator<br>Map:CTOM=Histopathology.statusCode<br>Map:CTOM=ClinicalResult.statusCode<br>Map:CTOM=Observation.statusCode<br>Map:CTRPv1.0=SubstanceAdministration.statusCode<br>Map:CTRPv1.0=Activity.statusCode<br>Map:CTRPv3.8=Activity.statusCode<br>Map:CTRv1.0=PerformedActivity.statusCode<br>Map:HL7SD=EligibilityCriterion.statusCode<br>Map:ICSRr2=RelatedInvestigation.statusCode (in IndividualCaseSafetyReport)<br>Map:ICSRr2=InvestigativeEvent.statusCode (in IndividualCaseSafetyReport)<br>Map:Lab=LabTest.status<br>Map:LabViewer2.2=LaboratoryTest.status<br>Map:LSDAMv2.2.3Plus=PerformedActivity.statusCode<br>Map:SEER 2015=SECTION VII FIRST COURSE OF THERAPY - TREATMENT STATUS<br>
+						<div class="ObjectDetailsNotes"><table>
+	<tr>
+		<td valign="top">
+			<i>Notes: </i><span style="margin-left: .4cm;"> </span>
+		</td>
+		<td>
+			DEFINITION:&lt;br/&gt;A coded value specifying the phase in the lifecycle of a performed activity.&lt;br/&gt;&lt;br/&gt;EXAMPLE(S):&lt;br/&gt;For a lab test, this would be the condition or stage in the lifecycle of the test (e.g., &quot;completed&quot;, &quot;canceled&quot;, etc.).&lt;br/&gt;&lt;br/&gt;OTHER NAME(S):&lt;br/&gt;&lt;br/&gt;NOTE(S):&lt;br/&gt;Please refer to the Performed Activity Status state transition diagram for further details.&lt;br/&gt;
+		</td>
+	</tr>
+</table></div>
+
+						
+				</td>
+			</tr>			<tr>
+				<td width="100%" class="TableRow">
+					<i>Public TS.DATETIME</i><br /><strong>&nbsp;&nbsp;statusDate</strong>
+				</td>
+			</tr>
+			<tr>
+				<td class="TableRowBottomDashed"  colspan="1">										
+					<a href="#" onclick="parent.toggleData('DetailsImageAttributes2437')" style="text-decoration: none; color: #000000;"><img src="../../images/plus03.gif" align="absmiddle" id="DetailsImageAttributes2437" border="0" />Details:</a>
+					<table border="0" cellspacing="0" cellpadding="0" class="Table" style="padding: 4px 18px;">
+					
+						<tr id="DetailsImageAttributes2437_00" style="display: none;">
+							<td width="75"><i>Alias:</i></td>
+							<td></td>
+						</tr>
+						<tr id="DetailsImageAttributes2437_01" style="display: none;">
+							<td width="75"><i>Initial:</i></td>
+							<td></td>
+						</tr>
+						<tr id="DetailsImageAttributes2437_02" style="display: none;">
+							<td width="75"><i>Stereotype: </i></td>
+							<td></td>
+						</tr>
+						<tr id="DetailsImageAttributes2437_03" style="display: none;">
+							<td width="75"><i>Ordered: </i></td>
+							<td></td>
+						</tr>
+						<tr id="DetailsImageAttributes2437_04" style="display: none;">
+							<td width="75"><i>Range: </i></td>
+							<td>Range:0 to 1</td>
+						</tr>
+						<tr id="DetailsImageAttributes2437_05" style="display: none;">
+							<td width="75"><i>Transient: </i></td>
+							<td>False</td>
+						</tr>
+						<tr id="DetailsImageAttributes2437_06" style="display: none;">
+							<td width="75"><i>Derived: </i></td>
+							<td>False</td>
+						</tr>
+							<tr id="DetailsImageAttributes2437_07" style="display: none;">
+							<td width="75"><i>IsID: </i></td>
+						<td>False</td>
+						</tr>
+					</table>
+					
+					Map:CTRPv1.0=Activity.statusDateRange<br>Map:CTRPv1.0=SubstanceAdministration.statusDateRange<br>Map:CTRPv3.8=Activity.statusDateRange<br>Map:CTRv1.0=PerformedActivity.statusDate<br>Map:LabViewer2.2=Study.startDate<br>Map:LSDAMv2.2.3Plus=PerformedActivity.statusDate<br>
+						<div class="ObjectDetailsNotes"><table>
+	<tr>
+		<td valign="top">
+			<i>Notes: </i><span style="margin-left: .4cm;"> </span>
+		</td>
+		<td>
+			DEFINITION:&lt;br/&gt;The date (and time) on which the status is assigned to the activity.&lt;br/&gt;&lt;br/&gt;EXAMPLE(S):&lt;br/&gt;&lt;br/&gt;OTHER NAME(S):&lt;br/&gt;&lt;br/&gt;NOTE(S):&lt;br/&gt;
+		</td>
+	</tr>
+</table></div>
+
+						
+				</td>
+			</tr>
+	</table>
+</div>
+		<div class="ItemBody" id="AssociationsToTable">
+			<table border="0" cellspacing="0" cellpadding="0" class="Table">
+				<tr>
+					<td width="40%" class="TableHeading">Element</td>
+					<td width="30%" class="TableHeading">Source Role</td>
+					<td width="30%" class="TableHeading">Target Role</td>
+				</tr>
+				<tr>
+					<td width="40%" class="TableRow" valign="top">
+						<a href="../EA7/EA293.htm">PlannedActivity</a><br />
+						Class &nbsp;
+					</td>
+					<td width="30%" class="TableRow" valign="top">
+						<strong>Name:</strong> instantiatingPerformedActivity<br />
+						&nbsp;
+					</td>
+					<td width="30%" class="TableRow" valign="top">
+						<strong>Name:</strong> instantiatedPlannedActivity<br />
+						&nbsp;	
+					</td>
+				</tr>
+				<tr>
+					<td class="TableRowBottomDashed"  colspan="3">
+						<div class="DetailsDivParent"><img src="../../images/minus03.gif" align="absmiddle" id="DetailsImageLink2438" onclick="parent.toggleDiv('detailsDIVLink2438','DetailsImageLink2438')" />Details:
+							<div id="detailsDIVLink2438" class="DetailsDiv" >
+							<div class="ObjectDetailsNotes">DESCRIPTION:&lt;br/&gt;Each PerformedActivity might instantiate one PlannedActivity. Each PlannedActivity might be instantiated by one or more PerformedActivity.&lt;br/&gt;&lt;br/&gt;DEFINITION:&lt;br/&gt;&lt;br/&gt;EXAMPLE(S):&lt;br/&gt;&lt;br/&gt;OTHER NAME(S):&lt;br/&gt;&lt;br/&gt;NOTE(S):&lt;br/&gt;&lt;br/&gt;</div>
+
+							</div>
+						</div>
+					</td>
+				</tr>
+				<tr>
+					<td width="40%" class="TableRow" valign="top">
+						<a href="../EA3/EA121.htm">Place</a><br />
+						Class &nbsp;
+					</td>
+					<td width="30%" class="TableRow" valign="top">
+						<strong>Name:</strong> locatedPerformedActivity<br />
+						&nbsp;
+					</td>
+					<td width="30%" class="TableRow" valign="top">
+						<strong>Name:</strong> locatingPlace<br />
+						&nbsp;	
+					</td>
+				</tr>
+				<tr>
+					<td class="TableRowBottomDashed"  colspan="3">
+						<div class="DetailsDivParent"><img src="../../images/minus03.gif" align="absmiddle" id="DetailsImageLink2439" onclick="parent.toggleDiv('detailsDIVLink2439','DetailsImageLink2439')" />Details:
+							<div id="detailsDIVLink2439" class="DetailsDiv" >
+							<div class="ObjectDetailsNotes">DESCRIPTION:&lt;br/&gt;Each PerformedActivity might take place in one Place.&#160; Each Place might be the location for one or more PerformedActivity.&lt;br/&gt;&lt;br/&gt;DEFINITION:&lt;br/&gt;&lt;br/&gt;EXAMPLE(S):&lt;br/&gt;&lt;br/&gt;OTHER NAME(S):&lt;br/&gt;&lt;br/&gt;NOTE(S):&lt;br/&gt;&lt;br/&gt;</div>
+
+							</div>
+						</div>
+					</td>
+				</tr>
+				<tr>
+					<td width="40%" class="TableRow" valign="top">
+						<a href="../EA7/EA256.htm">DefinedActivity</a><br />
+						Class &nbsp;
+					</td>
+					<td width="30%" class="TableRow" valign="top">
+						<strong>Name:</strong> instantiatingPerformedActivity<br />
+						&nbsp;
+					</td>
+					<td width="30%" class="TableRow" valign="top">
+						<strong>Name:</strong> instantiatedDefinedActivity<br />
+						&nbsp;	
+					</td>
+				</tr>
+				<tr>
+					<td class="TableRowBottomDashed"  colspan="3">
+						<div class="DetailsDivParent"><img src="../../images/minus03.gif" align="absmiddle" id="DetailsImageLink2440" onclick="parent.toggleDiv('detailsDIVLink2440','DetailsImageLink2440')" />Details:
+							<div id="detailsDIVLink2440" class="DetailsDiv" >
+							<div class="ObjectDetailsNotes">DESCRIPTION:&lt;br/&gt;Each PerformedActivity might instantiate one DefinedActivity. Each DefinedActivity might be instantiated by one or more PerformedActivity.&lt;br/&gt;&lt;br/&gt;DEFINITION:&lt;br/&gt;&lt;br/&gt;EXAMPLE(S):&lt;br/&gt;&lt;br/&gt;OTHER NAME(S):&lt;br/&gt;&lt;br/&gt;NOTE(S):&lt;br/&gt;</div>
+
+							</div>
+						</div>
+					</td>
+				</tr>
+				<tr>
+					<td width="40%" class="TableRow" valign="top">
+						<a href="../EA7/EA323.htm">StudyProtocolVersion</a><br />
+						Class &nbsp;
+					</td>
+					<td width="30%" class="TableRow" valign="top">
+						<strong>Name:</strong> executedPerformedActivity<br />
+						&nbsp;
+					</td>
+					<td width="30%" class="TableRow" valign="top">
+						<strong>Name:</strong> executingStudyProtocolVersion<br />
+						&nbsp;	
+					</td>
+				</tr>
+				<tr>
+					<td class="TableRowBottomDashed"  colspan="3">
+						<div class="DetailsDivParent"><img src="../../images/minus03.gif" align="absmiddle" id="DetailsImageLink2441" onclick="parent.toggleDiv('detailsDIVLink2441','DetailsImageLink2441')" />Details:
+							<div id="detailsDIVLink2441" class="DetailsDiv" >
+							<div class="ObjectDetailsNotes">DESCRIPTION:&lt;br/&gt;Each PerformedActivity might execute under one StudyProtocolVersion.&#160; Each StudyProtocolVersion might be executed by one or more PerformedActivity.&lt;br/&gt;&lt;br/&gt;DEFINITION:&lt;br/&gt;&lt;br/&gt;EXAMPLE(S):&lt;br/&gt;&lt;br/&gt;OTHER NAME(S):&lt;br/&gt;&lt;br/&gt;NOTE(S):&lt;br/&gt;&lt;br/&gt;</div>
+
+							</div>
+						</div>
+					</td>
+				</tr>
+				<tr>
+					<td width="40%" class="TableRow" valign="top">
+						<a href="EA407.htm">ScheduledActivity</a><br />
+						Class &nbsp;
+					</td>
+					<td width="30%" class="TableRow" valign="top">
+						<strong>Name:</strong> instantiatingPerformedActivity<br />
+						&nbsp;
+					</td>
+					<td width="30%" class="TableRow" valign="top">
+						<strong>Name:</strong> instantiatedScheduledActivity<br />
+						&nbsp;	
+					</td>
+				</tr>
+				<tr>
+					<td class="TableRowBottomDashed"  colspan="3">
+						<div class="DetailsDivParent"><img src="../../images/minus03.gif" align="absmiddle" id="DetailsImageLink2442" onclick="parent.toggleDiv('detailsDIVLink2442','DetailsImageLink2442')" />Details:
+							<div id="detailsDIVLink2442" class="DetailsDiv" >
+							<div class="ObjectDetailsNotes">DESCRIPTION:&lt;br/&gt;Each PerformedActivity might instantiate one ScheduledActivity. Each ScheduledActivity might be instantiated by one or more PerformedActivity.&lt;br/&gt;&lt;br/&gt;DEFINITION:&lt;br/&gt;&lt;br/&gt;EXAMPLE(S):&lt;br/&gt;&lt;br/&gt;OTHER NAME(S):&lt;br/&gt;&lt;br/&gt;NOTE(S):&lt;br/&gt;&lt;br/&gt;</div>
+
+							</div>
+						</div>
+					</td>
+				</tr>
+				<tr>
+					<td width="40%" class="TableRow" valign="top">
+						<a href="../EA7/EA290.htm">Epoch</a><br />
+						Class &nbsp;
+					</td>
+					<td width="30%" class="TableRow" valign="top">
+						<strong>Name:</strong> containedPerformedActivity<br />
+						&nbsp;
+					</td>
+					<td width="30%" class="TableRow" valign="top">
+						<strong>Name:</strong> containingEpoch<br />
+						&nbsp;	
+					</td>
+				</tr>
+				<tr>
+					<td class="TableRowBottomDashed"  colspan="3">
+						<div class="DetailsDivParent"><img src="../../images/minus03.gif" align="absmiddle" id="DetailsImageLink2443" onclick="parent.toggleDiv('detailsDIVLink2443','DetailsImageLink2443')" />Details:
+							<div id="detailsDIVLink2443" class="DetailsDiv" >
+							<div class="ObjectDetailsNotes">DESCRIPTION:&lt;br/&gt;Each PerformedActivity might be contained by one Epoch. Each Epoch might contain one or more PerformedActivity.&lt;br/&gt;&lt;br/&gt;DEFINITION:&lt;br/&gt;Indicates that a performed but unplanned activity is categorized as part of a particular Epoch.&lt;br/&gt;&lt;br/&gt;EXAMPLE(S):&lt;br/&gt;&lt;br/&gt;OTHER NAME(S):&lt;br/&gt;&lt;br/&gt;NOTE(S): &lt;br/&gt;This cannot be derived by looking at the corresponding planned activity because this association is only used for unplanned activities.&lt;br/&gt;</div>
+
+							</div>
+						</div>
+					</td>
+				</tr>
+
+			</table>
+		</div>
+		<div class="ItemBody" id="AssociationsFromTable">
+			<table border="0" cellspacing="0" cellpadding="0" class="Table">
+				<tr>
+					<td width="40%" class="TableHeading">Element</td>
+					<td width="30%" class="TableHeading">Source Role</td>
+					<td width="30%" class="TableHeading">Target Role</td>
+				</tr>
+				<tr>
+					<td width="40%" class="TableRow" valign="top">
+						<a href="EA365.htm">AssessedActivityRelationship</a><br />
+						Class &nbsp;
+					</td>
+					<td width="30%" class="TableRow" valign="top">
+						<strong>Name:</strong> assessingAssessedActivityRelationship<br />
+						&nbsp;
+					</td>
+					<td width="30%" class="TableRow" valign="top">
+						<strong>Name:</strong> assessedPerformedActivity<br />
+						&nbsp;	
+					</td>
+				</tr>
+				<tr>
+					<td class="TableRowBottomDashed"  colspan="3">
+						<div class="DetailsDivParent"><img src="../../images/minus03.gif" align="absmiddle" id="DetailsImageLink2444" onclick="parent.toggleDiv('detailsDIVLink2444','DetailsImageLink2444')" />Details:
+							<div id="detailsDIVLink2444" class="DetailsDiv" >
+							<div class="ObjectDetailsNotes">DESCRIPTION:&lt;br/&gt;Each AssessedActivityRelationship always has as subject one PerformedActivity. Each PerformedActivity might be the subject of one or more AssessedActivityRelationship.&lt;br/&gt;&lt;br/&gt;DEFINITION:&lt;br/&gt;&lt;br/&gt;EXAMPLE(S):&lt;br/&gt;&lt;br/&gt;OTHER NAME(S):&lt;br/&gt;&lt;br/&gt;NOTE(S):&lt;br/&gt;&lt;br/&gt;</div>
+
+							</div>
+						</div>
+					</td>
+				</tr>
+				<tr>
+					<td width="40%" class="TableRow" valign="top">
+						<a href="EA377.htm">PerformedCompositionRelationship</a><br />
+						Class &nbsp;
+					</td>
+					<td width="30%" class="TableRow" valign="top">
+						<strong>Name:</strong> compositePerformedCompositionRelationship<br />
+						&nbsp;
+					</td>
+					<td width="30%" class="TableRow" valign="top">
+						<strong>Name:</strong> componentPerformedActivity<br />
+						&nbsp;	
+					</td>
+				</tr>
+				<tr>
+					<td class="TableRowBottomDashed"  colspan="3">
+						<div class="DetailsDivParent"><img src="../../images/minus03.gif" align="absmiddle" id="DetailsImageLink2445" onclick="parent.toggleDiv('detailsDIVLink2445','DetailsImageLink2445')" />Details:
+							<div id="detailsDIVLink2445" class="DetailsDiv" >
+							<div class="ObjectDetailsNotes">DESCRIPTION:&lt;br/&gt;Each PerformedCompositionRelationship always is the parent of one PerformedActivity. Each PerformedActivity might be the component of one PerformedCompositionRelationship.&lt;br/&gt;&lt;br/&gt;DEFINITION:&lt;br/&gt;&lt;br/&gt;EXAMPLE(S):&lt;br/&gt;&lt;br/&gt;OTHER NAME(S):&lt;br/&gt;&lt;br/&gt;NOTE(S):&lt;br/&gt;&lt;br/&gt;</div>
+
+							</div>
+						</div>
+					</td>
+				</tr>
+				<tr>
+					<td width="40%" class="TableRow" valign="top">
+						<a href="EA400.htm">PerformedSubstanceAdministration</a><br />
+						Class &nbsp;
+					</td>
+					<td width="30%" class="TableRow" valign="top">
+						<strong>Name:</strong> startEvaluatedPerformedSubstanceAdministration<br />
+						&nbsp;
+					</td>
+					<td width="30%" class="TableRow" valign="top">
+						<strong>Name:</strong> startRelatedPerformedActivity<br />
+						&nbsp;	
+					</td>
+				</tr>
+				<tr>
+					<td class="TableRowBottomDashed"  colspan="3">
+						<div class="DetailsDivParent"><img src="../../images/minus03.gif" align="absmiddle" id="DetailsImageLink2446" onclick="parent.toggleDiv('detailsDIVLink2446','DetailsImageLink2446')" />Details:
+							<div id="detailsDIVLink2446" class="DetailsDiv" >
+							<div class="ObjectDetailsNotes">DESCRIPTION:&lt;br/&gt;Each PerformedSubstanceAdministration might have start evaluated in relation to one PerformedActivity. Each PerformedActivity might be the timepoint for evaluating the start of one or more PerformedSubstanceAdministration.&lt;br/&gt;&lt;br/&gt;DEFINITION:&lt;br/&gt;&lt;br/&gt;EXAMPLE(S):&lt;br/&gt;In CDISC SDTM, CMSTTPT indicates a study event that may be a reference event for the start of a concomitant medication (PerformedSubstanceAdministration) or SUENTPT might be the reference event for the start of a substance use event (also a PerformedSubstanceAdministration.&lt;br/&gt;&lt;br/&gt;OTHER NAME(S):&lt;br/&gt;&lt;br/&gt;NOTE(S):&lt;br/&gt;As per CDISC, any given substance administration can have its start evaluated in relation to a performed activity. Likewise it can also have its end evaluated in relation to a performed activity.&#160; The two performed activities need not necessarily be the same in both cases, thus there are two distinct associations between PerformeSubstanceAdministration and PerformedActivity for evaluating start and end of the administration.&lt;br/&gt;</div>
+
+							</div>
+						</div>
+					</td>
+				</tr>
+				<tr>
+					<td width="40%" class="TableRow" valign="top">
+						<a href="EA400.htm">PerformedSubstanceAdministration</a><br />
+						Class &nbsp;
+					</td>
+					<td width="30%" class="TableRow" valign="top">
+						<strong>Name:</strong> endEvaluatedPerformedSubstanceAdministration<br />
+						&nbsp;
+					</td>
+					<td width="30%" class="TableRow" valign="top">
+						<strong>Name:</strong> endRelatedPerformedActivity<br />
+						&nbsp;	
+					</td>
+				</tr>
+				<tr>
+					<td class="TableRowBottomDashed"  colspan="3">
+						<div class="DetailsDivParent"><img src="../../images/minus03.gif" align="absmiddle" id="DetailsImageLink2447" onclick="parent.toggleDiv('detailsDIVLink2447','DetailsImageLink2447')" />Details:
+							<div id="detailsDIVLink2447" class="DetailsDiv" >
+							<div class="ObjectDetailsNotes">DESCRIPTION:&lt;br/&gt;Each PerformedSubstanceAdministration might have end evaluated in relation to one PerformedActivity. Each PerformedActivity might be the timepoint for evaluating the end of one or more PerformedSubstanceAdministration.&lt;br/&gt;&lt;br/&gt;DEFINITION:&lt;br/&gt;&lt;br/&gt;EXAMPLE(S):&lt;br/&gt;In CDISC SDTM, CMENTPT indicates a study event that may be a reference event for the end of a concomitant medication (PerformedSubstanceAdministration) or SUENTPT might be the reference event for the end of a substance use event (also a PerformedSubstanceAdministration).&lt;br/&gt;&lt;br/&gt;OTHER NAME(S):&lt;br/&gt;&lt;br/&gt;NOTE(S):&lt;br/&gt;As per CDISC, any given substance administration can have its start evaluated in relation to a performed activity. Likewise it can also have its end evaluated in relation to a performed activity.&#160; The two performed activities need not necessarily be the same in both cases, thus there are two distinct associations between PerformeSubstanceAdministration and PerformedActivity for evaluating start and end of the administration.&lt;br/&gt;</div>
+
+							</div>
+						</div>
+					</td>
+				</tr>
+				<tr>
+					<td width="40%" class="TableRow" valign="top">
+						<a href="EA390.htm">PerformedObservation</a><br />
+						Class &nbsp;
+					</td>
+					<td width="30%" class="TableRow" valign="top">
+						<strong>Name:</strong> commentingPerformedObservation<br />
+						&nbsp;
+					</td>
+					<td width="30%" class="TableRow" valign="top">
+						<strong>Name:</strong> commentedPerformedActivity<br />
+						&nbsp;	
+					</td>
+				</tr>
+				<tr>
+					<td class="TableRowBottomDashed"  colspan="3">
+						<div class="DetailsDivParent"><img src="../../images/minus03.gif" align="absmiddle" id="DetailsImageLink2448" onclick="parent.toggleDiv('detailsDIVLink2448','DetailsImageLink2448')" />Details:
+							<div id="detailsDIVLink2448" class="DetailsDiv" >
+							<div class="ObjectDetailsNotes">DESCRIPTION:&lt;br/&gt;Each PerformedObservation might be commenting on one PerformedActivity. Each PerformedActivity might be commented on by one or more PerformedObservation.&lt;br/&gt;&lt;br/&gt;DEFINITION:&lt;br/&gt;&lt;br/&gt;EXAMPLE(S):&lt;br/&gt;&lt;br/&gt;OTHER NAME(S):&lt;br/&gt;&lt;br/&gt;NOTE(S):&lt;br/&gt;</div>
+
+							</div>
+						</div>
+					</td>
+				</tr>
+				<tr>
+					<td width="40%" class="TableRow" valign="top">
+						<a href="EA372.htm">ObservationResultActionTakenRelationship</a><br />
+						Class &nbsp;
+					</td>
+					<td width="30%" class="TableRow" valign="top">
+						<strong>Name:</strong> triggeringObservationResultActionTakenRelationship<br />
+						&nbsp;
+					</td>
+					<td width="30%" class="TableRow" valign="top">
+						<strong>Name:</strong> triggeredPerformedActivity<br />
+						&nbsp;	
+					</td>
+				</tr>
+				<tr>
+					<td class="TableRowBottomDashed"  colspan="3">
+						<div class="DetailsDivParent"><img src="../../images/minus03.gif" align="absmiddle" id="DetailsImageLink2449" onclick="parent.toggleDiv('detailsDIVLink2449','DetailsImageLink2449')" />Details:
+							<div id="detailsDIVLink2449" class="DetailsDiv" >
+							<div class="ObjectDetailsNotes">DESCRIPTION:&lt;br/&gt;Each ObservationResultActionTakenRelationship always triggers one PerformedActivity. Each PerformedActivity might be triggered by one or more ObservationResultActionTakenRelationship.&lt;br/&gt;&lt;br/&gt;DEFINITION:&lt;br/&gt;Indicates the PerformedActivity undertaken as a result of an ObservationResult&lt;br/&gt;&lt;br/&gt;EXAMPLE(S):&lt;br/&gt;&lt;br/&gt;OTHER NAME(S):&lt;br/&gt;&lt;br/&gt;NOTE(S):&lt;br/&gt;</div>
+
+							</div>
+						</div>
+					</td>
+				</tr>
+				<tr>
+					<td width="40%" class="TableRow" valign="top">
+						<a href="EA391.htm">PerformedObservationResult</a><br />
+						Class &nbsp;
+					</td>
+					<td width="30%" class="TableRow" valign="top">
+						<strong>Name:</strong> startEvaluatedPerformedObservationResult<br />
+						&nbsp;
+					</td>
+					<td width="30%" class="TableRow" valign="top">
+						<strong>Name:</strong> startRelatedPerformedActivity<br />
+						&nbsp;	
+					</td>
+				</tr>
+				<tr>
+					<td class="TableRowBottomDashed"  colspan="3">
+						<div class="DetailsDivParent"><img src="../../images/minus03.gif" align="absmiddle" id="DetailsImageLink2450" onclick="parent.toggleDiv('detailsDIVLink2450','DetailsImageLink2450')" />Details:
+							<div id="detailsDIVLink2450" class="DetailsDiv" >
+							<div class="ObjectDetailsNotes">DESCRIPTION:&lt;br/&gt;Each PerformedObservationResult might have start evaluated in relation to one PerformedActivity. Each PerformedActivity might be the timepoint for evaluating start of one or more PerformedObservationResult.&lt;br/&gt;&lt;br/&gt;DEFINITION:&lt;br/&gt;&lt;br/&gt;EXAMPLE(S):&lt;br/&gt;In CDISC SDTM, CESTTPT indicates a study event that may be a reference event for the start of a clinical event (PerformedObservationResult).&lt;br/&gt;&lt;br/&gt;OTHER NAME(S):&lt;br/&gt;&lt;br/&gt;NOTE(S):&lt;br/&gt;As per CDISC, any given observation result can have its start evaluated in relation to a performed activity. Likewise it can also have its end evaluated in relation to a performed activity.&#160; The two performed activities need not necessarily be the same in both cases, thus there are two distinct associations between PerformeObservationResult and PerformedActivity for evaluating start and end of the result.&lt;br/&gt;</div>
+
+							</div>
+						</div>
+					</td>
+				</tr>
+				<tr>
+					<td width="40%" class="TableRow" valign="top">
+						<a href="EA391.htm">PerformedObservationResult</a><br />
+						Class &nbsp;
+					</td>
+					<td width="30%" class="TableRow" valign="top">
+						<strong>Name:</strong> endEvaluatedPerformedObservationResult<br />
+						&nbsp;
+					</td>
+					<td width="30%" class="TableRow" valign="top">
+						<strong>Name:</strong> endRelatedPerformedActivity<br />
+						&nbsp;	
+					</td>
+				</tr>
+				<tr>
+					<td class="TableRowBottomDashed"  colspan="3">
+						<div class="DetailsDivParent"><img src="../../images/minus03.gif" align="absmiddle" id="DetailsImageLink2451" onclick="parent.toggleDiv('detailsDIVLink2451','DetailsImageLink2451')" />Details:
+							<div id="detailsDIVLink2451" class="DetailsDiv" >
+							<div class="ObjectDetailsNotes">DESCRIPTION:&lt;br/&gt;Each PerformedObservationResult might have end evaluated in relation to one PerformedActivity. Each PerformedActivity might be the timpoint for evaluating end of one or more PerformedObservationResult.&lt;br/&gt;&lt;br/&gt;DEFINITION:&lt;br/&gt;&lt;br/&gt;EXAMPLE(S):&lt;br/&gt;In CDISC SDTM, AEENTPT indicates a study event that may be a reference event for the end of an adverse event, CEENTPT indicates a study event that may be a reference event for the end of a clinical event (PerformedObservationResult) and MHENTPT indicates a study event that may be a reference event for the end of a medical condition (PerformedMedicalConditionResult).&lt;br/&gt;&lt;br/&gt;OTHER NAME(S):&lt;br/&gt;&lt;br/&gt;NOTE(S):&lt;br/&gt;As per CDISC, any given observation result can have its start evaluated in relation to a performed activities. Likewise it can also have its end evaluated in relation to a performed activity.&#160; The two performed activities need not necessarily be the same in both cases, thus there are two distinct associations between PerformeObservationResult and PerformedActivity for evaluating start and end of the result.&lt;br/&gt;&lt;br/&gt;</div>
+
+							</div>
+						</div>
+					</td>
+				</tr>
+				<tr>
+					<td width="40%" class="TableRow" valign="top">
+						<a href="EA377.htm">PerformedCompositionRelationship</a><br />
+						Class &nbsp;
+					</td>
+					<td width="30%" class="TableRow" valign="top">
+						<strong>Name:</strong> componentPerformedCompositionRelationship<br />
+						&nbsp;
+					</td>
+					<td width="30%" class="TableRow" valign="top">
+						<strong>Name:</strong> compositePerformedActivity<br />
+						&nbsp;	
+					</td>
+				</tr>
+				<tr>
+					<td class="TableRowBottomDashed"  colspan="3">
+						<div class="DetailsDivParent"><img src="../../images/minus03.gif" align="absmiddle" id="DetailsImageLink2452" onclick="parent.toggleDiv('detailsDIVLink2452','DetailsImageLink2452')" />Details:
+							<div id="detailsDIVLink2452" class="DetailsDiv" >
+							<div class="ObjectDetailsNotes">DESCRIPTION:&lt;br/&gt;Each PerformedCompositionRelationship always is the component of one PerformedActivity. Each PerformedActivity might be the parent of one or more PerformedCompositionRelationship.&lt;br/&gt;&lt;br/&gt;DEFINITION:&lt;br/&gt;&lt;br/&gt;EXAMPLE(S):&lt;br/&gt;&lt;br/&gt;OTHER NAME(S):&lt;br/&gt;&lt;br/&gt;NOTE(S):&lt;br/&gt;&lt;br/&gt;</div>
+
+							</div>
+						</div>
+					</td>
+				</tr>
+				<tr>
+					<td width="40%" class="TableRow" valign="top">
+						<a href="../EA1/EA36.htm">EvaluatedActivityRelationship</a><br />
+						Class &nbsp;
+					</td>
+					<td width="30%" class="TableRow" valign="top">
+						<strong>Name:</strong> evaluatingEvaluatedActivityRelationship<br />
+						&nbsp;
+					</td>
+					<td width="30%" class="TableRow" valign="top">
+						<strong>Name:</strong> evaluatedPerformedActivity<br />
+						&nbsp;	
+					</td>
+				</tr>
+				<tr>
+					<td class="TableRowBottomDashed"  colspan="3">
+						<div class="DetailsDivParent"><img src="../../images/minus03.gif" align="absmiddle" id="DetailsImageLink2453" onclick="parent.toggleDiv('detailsDIVLink2453','DetailsImageLink2453')" />Details:
+							<div id="detailsDIVLink2453" class="DetailsDiv" >
+							<div class="ObjectDetailsNotes">DESCRIPTION:&lt;br/&gt;Each EvaluatedActivityRelationship always evaluates one PerformedActivity. Each PerformedActivity might be evaluated by one or more EvaluatedActivityRelationship.&lt;br/&gt;&lt;br/&gt;DEFINITION:&lt;br/&gt;&lt;br/&gt;EXAMPLE(S):&lt;br/&gt;&lt;br/&gt;OTHER NAME(S):&lt;br/&gt;&lt;br/&gt;NOTE(S):&lt;br/&gt;&lt;br/&gt;</div>
+
+							</div>
+						</div>
+					</td>
+				</tr>
+
+			</table>
+		</div>
+<div class="ItemBody" id="TaggedValTable">
+	<table align="center" border="0" cellspacing="0" cellpadding="0" class="Table">
+		<tr>
+			<td width="50%" class="TableHeading">Tag</td>
+			<td width="50%" class="TableHeading">Value</td>
+		</tr>
+					<tr>
+				<td width="50%" class="TableRow" valign="top">Map:AE</td>
+				<td width="50%" class="TableRow" valign="top">PerformedActivity</td>
+			</tr>	
+			<tr>
+				<td class="TableRowBottomDashed"  colspan="2">
+					<div class="DetailsDivParent"><img src="../../images/minus03.gif" align="absmiddle" id="DetailsImageScenario2454" onclick="parent.toggleDiv('detailsDIVScenario2454','DetailsImageScenario2454')" />Details:
+						<div id="detailsDIVScenario2454" class="DetailsDiv" >
+						&nbsp;
+						</div>
+					</div>
+				</td>
+			</tr>			<tr>
+				<td width="50%" class="TableRow" valign="top">Map:C3PRv2.9</td>
+				<td width="50%" class="TableRow" valign="top">ScheduledArm</td>
+			</tr>	
+			<tr>
+				<td class="TableRowBottomDashed"  colspan="2">
+					<div class="DetailsDivParent"><img src="../../images/minus03.gif" align="absmiddle" id="DetailsImageScenario2455" onclick="parent.toggleDiv('detailsDIVScenario2455','DetailsImageScenario2455')" />Details:
+						<div id="detailsDIVScenario2455" class="DetailsDiv" >
+						&nbsp;
+						</div>
+					</div>
+				</td>
+			</tr>			<tr>
+				<td width="50%" class="TableRow" valign="top">Map:caAERSv2.2</td>
+				<td width="50%" class="TableRow" valign="top">CourseDate</td>
+			</tr>	
+			<tr>
+				<td class="TableRowBottomDashed"  colspan="2">
+					<div class="DetailsDivParent"><img src="../../images/minus03.gif" align="absmiddle" id="DetailsImageScenario2456" onclick="parent.toggleDiv('detailsDIVScenario2456','DetailsImageScenario2456')" />Details:
+						<div id="detailsDIVScenario2456" class="DetailsDiv" >
+						&nbsp;
+						</div>
+					</div>
+				</td>
+			</tr>			<tr>
+				<td width="50%" class="TableRow" valign="top">Map:caAERSv2.2</td>
+				<td width="50%" class="TableRow" valign="top">AdverseEventReportingPeriod</td>
+			</tr>	
+			<tr>
+				<td class="TableRowBottomDashed"  colspan="2">
+					<div class="DetailsDivParent"><img src="../../images/minus03.gif" align="absmiddle" id="DetailsImageScenario2457" onclick="parent.toggleDiv('detailsDIVScenario2457','DetailsImageScenario2457')" />Details:
+						<div id="detailsDIVScenario2457" class="DetailsDiv" >
+						&nbsp;
+						</div>
+					</div>
+				</td>
+			</tr>			<tr>
+				<td width="50%" class="TableRow" valign="top">Map:caAERSv2.2</td>
+				<td width="50%" class="TableRow" valign="top">TreatmentInformation</td>
+			</tr>	
+			<tr>
+				<td class="TableRowBottomDashed"  colspan="2">
+					<div class="DetailsDivParent"><img src="../../images/minus03.gif" align="absmiddle" id="DetailsImageScenario2458" onclick="parent.toggleDiv('detailsDIVScenario2458','DetailsImageScenario2458')" />Details:
+						<div id="detailsDIVScenario2458" class="DetailsDiv" >
+						&nbsp;
+						</div>
+					</div>
+				</td>
+			</tr>			<tr>
+				<td width="50%" class="TableRow" valign="top">Map:CTRPv3.8</td>
+				<td width="50%" class="TableRow" valign="top">PerformedActivity</td>
+			</tr>	
+			<tr>
+				<td class="TableRowBottomDashed"  colspan="2">
+					<div class="DetailsDivParent"><img src="../../images/minus03.gif" align="absmiddle" id="DetailsImageScenario2459" onclick="parent.toggleDiv('detailsDIVScenario2459','DetailsImageScenario2459')" />Details:
+						<div id="detailsDIVScenario2459" class="DetailsDiv" >
+						&nbsp;
+						</div>
+					</div>
+				</td>
+			</tr>			<tr>
+				<td width="50%" class="TableRow" valign="top">Map:CTRv1.0</td>
+				<td width="50%" class="TableRow" valign="top">PerformedActivity</td>
+			</tr>	
+			<tr>
+				<td class="TableRowBottomDashed"  colspan="2">
+					<div class="DetailsDivParent"><img src="../../images/minus03.gif" align="absmiddle" id="DetailsImageScenario2460" onclick="parent.toggleDiv('detailsDIVScenario2460','DetailsImageScenario2460')" />Details:
+						<div id="detailsDIVScenario2460" class="DetailsDiv" >
+						&nbsp;
+						</div>
+					</div>
+				</td>
+			</tr>			<tr>
+				<td width="50%" class="TableRow" valign="top">Map:DICOM</td>
+				<td width="50%" class="TableRow" valign="top">TID 1501 MeasurementGroup > Measurement Group > Include TID 1502 TimePointContext</td>
+			</tr>	
+			<tr>
+				<td class="TableRowBottomDashed"  colspan="2">
+					<div class="DetailsDivParent"><img src="../../images/minus03.gif" align="absmiddle" id="DetailsImageScenario2461" onclick="parent.toggleDiv('detailsDIVScenario2461','DetailsImageScenario2461')" />Details:
+						<div id="detailsDIVScenario2461" class="DetailsDiv" >
+						&nbsp;
+						</div>
+					</div>
+				</td>
+			</tr>			<tr>
+				<td width="50%" class="TableRow" valign="top">Map:DICOM</td>
+				<td width="50%" class="TableRow" valign="top">TID 1411 VolumetricROIMeasurements > Measurement Group > Include TID 1502 TimePointContext</td>
+			</tr>	
+			<tr>
+				<td class="TableRowBottomDashed"  colspan="2">
+					<div class="DetailsDivParent"><img src="../../images/minus03.gif" align="absmiddle" id="DetailsImageScenario2462" onclick="parent.toggleDiv('detailsDIVScenario2462','DetailsImageScenario2462')" />Details:
+						<div id="detailsDIVScenario2462" class="DetailsDiv" >
+						&nbsp;
+						</div>
+					</div>
+				</td>
+			</tr>			<tr>
+				<td width="50%" class="TableRow" valign="top">Map:DICOM</td>
+				<td width="50%" class="TableRow" valign="top">TID 1502 TimePointContext</td>
+			</tr>	
+			<tr>
+				<td class="TableRowBottomDashed"  colspan="2">
+					<div class="DetailsDivParent"><img src="../../images/minus03.gif" align="absmiddle" id="DetailsImageScenario2463" onclick="parent.toggleDiv('detailsDIVScenario2463','DetailsImageScenario2463')" />Details:
+						<div id="detailsDIVScenario2463" class="DetailsDiv" >
+						&nbsp;
+						</div>
+					</div>
+				</td>
+			</tr>			<tr>
+				<td width="50%" class="TableRow" valign="top">Map:DICOM</td>
+				<td width="50%" class="TableRow" valign="top">TID 1502 TimePointContext > Time Point</td>
+			</tr>	
+			<tr>
+				<td class="TableRowBottomDashed"  colspan="2">
+					<div class="DetailsDivParent"><img src="../../images/minus03.gif" align="absmiddle" id="DetailsImageScenario2464" onclick="parent.toggleDiv('detailsDIVScenario2464','DetailsImageScenario2464')" />Details:
+						<div id="detailsDIVScenario2464" class="DetailsDiv" >
+						&nbsp;
+						</div>
+					</div>
+				</td>
+			</tr>			<tr>
+				<td width="50%" class="TableRow" valign="top">Map:DICOM</td>
+				<td width="50%" class="TableRow" valign="top">TID 1410 PlanarROIMeasurements > Measurement Group > Include TID 1502 TimePointContext</td>
+			</tr>	
+			<tr>
+				<td class="TableRowBottomDashed"  colspan="2">
+					<div class="DetailsDivParent"><img src="../../images/minus03.gif" align="absmiddle" id="DetailsImageScenario2465" onclick="parent.toggleDiv('detailsDIVScenario2465','DetailsImageScenario2465')" />Details:
+						<div id="detailsDIVScenario2465" class="DetailsDiv" >
+						&nbsp;
+						</div>
+					</div>
+				</td>
+			</tr>			<tr>
+				<td width="50%" class="TableRow" valign="top">Map:ICSRr2</td>
+				<td width="50%" class="TableRow" valign="top">productActChoice (in R_Product)</td>
+			</tr>	
+			<tr>
+				<td class="TableRowBottomDashed"  colspan="2">
+					<div class="DetailsDivParent"><img src="../../images/minus03.gif" align="absmiddle" id="DetailsImageScenario2466" onclick="parent.toggleDiv('detailsDIVScenario2466','DetailsImageScenario2466')" />Details:
+						<div id="detailsDIVScenario2466" class="DetailsDiv" >
+						&nbsp;
+						</div>
+					</div>
+				</td>
+			</tr>			<tr>
+				<td width="50%" class="TableRow" valign="top">Map:LabViewer2.2</td>
+				<td width="50%" class="TableRow" valign="top">Activity</td>
+			</tr>	
+			<tr>
+				<td class="TableRowBottomDashed"  colspan="2">
+					<div class="DetailsDivParent"><img src="../../images/minus03.gif" align="absmiddle" id="DetailsImageScenario2467" onclick="parent.toggleDiv('detailsDIVScenario2467','DetailsImageScenario2467')" />Details:
+						<div id="detailsDIVScenario2467" class="DetailsDiv" >
+						&nbsp;
+						</div>
+					</div>
+				</td>
+			</tr>			<tr>
+				<td width="50%" class="TableRow" valign="top">Map:LSDAMv2.2.3Plus</td>
+				<td width="50%" class="TableRow" valign="top">PerformedMedicalHistoryResult</td>
+			</tr>	
+			<tr>
+				<td class="TableRowBottomDashed"  colspan="2">
+					<div class="DetailsDivParent"><img src="../../images/minus03.gif" align="absmiddle" id="DetailsImageScenario2468" onclick="parent.toggleDiv('detailsDIVScenario2468','DetailsImageScenario2468')" />Details:
+						<div id="detailsDIVScenario2468" class="DetailsDiv" >
+						&nbsp;
+						</div>
+					</div>
+				</td>
+			</tr>			<tr>
+				<td width="50%" class="TableRow" valign="top">Map:LSDAMv2.2.3Plus</td>
+				<td width="50%" class="TableRow" valign="top">PerformedActivity</td>
+			</tr>	
+			<tr>
+				<td class="TableRowBottomDashed"  colspan="2">
+					<div class="DetailsDivParent"><img src="../../images/minus03.gif" align="absmiddle" id="DetailsImageScenario2469" onclick="parent.toggleDiv('detailsDIVScenario2469','DetailsImageScenario2469')" />Details:
+						<div id="detailsDIVScenario2469" class="DetailsDiv" >
+						&nbsp;
+						</div>
+					</div>
+				</td>
+			</tr>			<tr>
+				<td width="50%" class="TableRow" valign="top">Map:PGx v1.0</td>
+				<td width="50%" class="TableRow" valign="top">BE</td>
+			</tr>	
+			<tr>
+				<td class="TableRowBottomDashed"  colspan="2">
+					<div class="DetailsDivParent"><img src="../../images/minus03.gif" align="absmiddle" id="DetailsImageScenario2470" onclick="parent.toggleDiv('detailsDIVScenario2470','DetailsImageScenario2470')" />Details:
+						<div id="detailsDIVScenario2470" class="DetailsDiv" >
+						&nbsp;
+						</div>
+					</div>
+				</td>
+			</tr>			<tr>
+				<td width="50%" class="TableRow" valign="top">Map:PSCv2.6</td>
+				<td width="50%" class="TableRow" valign="top">Occurred</td>
+			</tr>	
+			<tr>
+				<td class="TableRowBottomDashed"  colspan="2">
+					<div class="DetailsDivParent"><img src="../../images/minus03.gif" align="absmiddle" id="DetailsImageScenario2471" onclick="parent.toggleDiv('detailsDIVScenario2471','DetailsImageScenario2471')" />Details:
+						<div id="detailsDIVScenario2471" class="DetailsDiv" >
+						&nbsp;
+						</div>
+					</div>
+				</td>
+			</tr>			<tr>
+				<td width="50%" class="TableRow" valign="top">Map:SDTM IGv3.1.2</td>
+				<td width="50%" class="TableRow" valign="top">SE.DOMAIN</td>
+			</tr>	
+			<tr>
+				<td class="TableRowBottomDashed"  colspan="2">
+					<div class="DetailsDivParent"><img src="../../images/minus03.gif" align="absmiddle" id="DetailsImageScenario2472" onclick="parent.toggleDiv('detailsDIVScenario2472','DetailsImageScenario2472')" />Details:
+						<div id="detailsDIVScenario2472" class="DetailsDiv" >
+						&nbsp;
+						</div>
+					</div>
+				</td>
+			</tr>			<tr>
+				<td width="50%" class="TableRow" valign="top">Map:SDTM IGv3.1.2</td>
+				<td width="50%" class="TableRow" valign="top">SV.DOMAIN</td>
+			</tr>	
+			<tr>
+				<td class="TableRowBottomDashed"  colspan="2">
+					<div class="DetailsDivParent"><img src="../../images/minus03.gif" align="absmiddle" id="DetailsImageScenario2473" onclick="parent.toggleDiv('detailsDIVScenario2473','DetailsImageScenario2473')" />Details:
+						<div id="detailsDIVScenario2473" class="DetailsDiv" >
+						&nbsp;
+						</div>
+					</div>
+				</td>
+			</tr>			<tr>
+				<td width="50%" class="TableRow" valign="top">Map:SDTM IGv3.1.3</td>
+				<td width="50%" class="TableRow" valign="top">MH</td>
+			</tr>	
+			<tr>
+				<td class="TableRowBottomDashed"  colspan="2">
+					<div class="DetailsDivParent"><img src="../../images/minus03.gif" align="absmiddle" id="DetailsImageScenario2474" onclick="parent.toggleDiv('detailsDIVScenario2474','DetailsImageScenario2474')" />Details:
+						<div id="detailsDIVScenario2474" class="DetailsDiv" >
+						&nbsp;
+						</div>
+					</div>
+				</td>
+			</tr>			<tr>
+				<td width="50%" class="TableRow" valign="top">Map:SDTM IGv3.1.3</td>
+				<td width="50%" class="TableRow" valign="top">SE</td>
+			</tr>	
+			<tr>
+				<td class="TableRowBottomDashed"  colspan="2">
+					<div class="DetailsDivParent"><img src="../../images/minus03.gif" align="absmiddle" id="DetailsImageScenario2475" onclick="parent.toggleDiv('detailsDIVScenario2475','DetailsImageScenario2475')" />Details:
+						<div id="detailsDIVScenario2475" class="DetailsDiv" >
+						&nbsp;
+						</div>
+					</div>
+				</td>
+			</tr>			<tr>
+				<td width="50%" class="TableRow" valign="top">Map:SDTM IGv3.1.3</td>
+				<td width="50%" class="TableRow" valign="top">SV</td>
+			</tr>	
+			<tr>
+				<td class="TableRowBottomDashed"  colspan="2">
+					<div class="DetailsDivParent"><img src="../../images/minus03.gif" align="absmiddle" id="DetailsImageScenario2476" onclick="parent.toggleDiv('detailsDIVScenario2476','DetailsImageScenario2476')" />Details:
+						<div id="detailsDIVScenario2476" class="DetailsDiv" >
+						&nbsp;
+						</div>
+					</div>
+				</td>
+			</tr>			<tr>
+				<td width="50%" class="TableRow" valign="top">Map:SDTM IGv3.1.3</td>
+				<td width="50%" class="TableRow" valign="top">AE.AECONTRT</td>
+			</tr>	
+			<tr>
+				<td class="TableRowBottomDashed"  colspan="2">
+					<div class="DetailsDivParent"><img src="../../images/minus03.gif" align="absmiddle" id="DetailsImageScenario2477" onclick="parent.toggleDiv('detailsDIVScenario2477','DetailsImageScenario2477')" />Details:
+						<div id="detailsDIVScenario2477" class="DetailsDiv" >
+						&nbsp;
+						</div>
+					</div>
+				</td>
+			</tr>			<tr>
+				<td width="50%" class="TableRow" valign="top">Map:SEER 2015</td>
+				<td width="50%" class="TableRow" valign="top">SECTION VIII FOLLOW UP INFORMATION - SURVIVAL DATA ITEMS</td>
+			</tr>	
+			<tr>
+				<td class="TableRowBottomDashed"  colspan="2">
+					<div class="DetailsDivParent"><img src="../../images/minus03.gif" align="absmiddle" id="DetailsImageScenario2478" onclick="parent.toggleDiv('detailsDIVScenario2478','DetailsImageScenario2478')" />Details:
+						<div id="detailsDIVScenario2478" class="DetailsDiv" >
+						&nbsp;
+						</div>
+					</div>
+				</td>
+			</tr>			<tr>
+				<td width="50%" class="TableRow" valign="top">Map:SEER 2015</td>
+				<td width="50%" class="TableRow" valign="top">SECTION IV DESCRIPTION OF THIS NEOPLASM</td>
+			</tr>	
+			<tr>
+				<td class="TableRowBottomDashed"  colspan="2">
+					<div class="DetailsDivParent"><img src="../../images/minus03.gif" align="absmiddle" id="DetailsImageScenario2479" onclick="parent.toggleDiv('detailsDIVScenario2479','DetailsImageScenario2479')" />Details:
+						<div id="detailsDIVScenario2479" class="DetailsDiv" >
+						&nbsp;
+						</div>
+					</div>
+				</td>
+			</tr>			<tr>
+				<td width="50%" class="TableRow" valign="top">Map:SEER 2015</td>
+				<td width="50%" class="TableRow" valign="top">SECTION IX ADMINISTRATIVE CODES</td>
+			</tr>	
+			<tr>
+				<td class="TableRowBottomDashed"  colspan="2">
+					<div class="DetailsDivParent"><img src="../../images/minus03.gif" align="absmiddle" id="DetailsImageScenario2480" onclick="parent.toggleDiv('detailsDIVScenario2480','DetailsImageScenario2480')" />Details:
+						<div id="detailsDIVScenario2480" class="DetailsDiv" >
+						&nbsp;
+						</div>
+					</div>
+				</td>
+			</tr>			<tr>
+				<td width="50%" class="TableRow" valign="top">Map:SEER 2015</td>
+				<td width="50%" class="TableRow" valign="top">SECTION V STAGE OF DISEASE AT DIAGNOSIS</td>
+			</tr>	
+			<tr>
+				<td class="TableRowBottomDashed"  colspan="2">
+					<div class="DetailsDivParent"><img src="../../images/minus03.gif" align="absmiddle" id="DetailsImageScenario2481" onclick="parent.toggleDiv('detailsDIVScenario2481','DetailsImageScenario2481')" />Details:
+						<div id="detailsDIVScenario2481" class="DetailsDiv" >
+						&nbsp;
+						</div>
+					</div>
+				</td>
+			</tr>			<tr>
+				<td width="50%" class="TableRow" valign="top">Map:SEER 2015</td>
+				<td width="50%" class="TableRow" valign="top">SECTION VI COLLABORATIVE STAGE DATA COLLECTION SYSTEM</td>
+			</tr>	
+			<tr>
+				<td class="TableRowBottomDashed"  colspan="2">
+					<div class="DetailsDivParent"><img src="../../images/minus03.gif" align="absmiddle" id="DetailsImageScenario2482" onclick="parent.toggleDiv('detailsDIVScenario2482','DetailsImageScenario2482')" />Details:
+						<div id="detailsDIVScenario2482" class="DetailsDiv" >
+						&nbsp;
+						</div>
+					</div>
+				</td>
+			</tr>			<tr>
+				<td width="50%" class="TableRow" valign="top">Map:SEER 2015</td>
+				<td width="50%" class="TableRow" valign="top">SECTION VII FIRST COURSE OF THERAPY</td>
+			</tr>	
+			<tr>
+				<td class="TableRowBottomDashed"  colspan="2">
+					<div class="DetailsDivParent"><img src="../../images/minus03.gif" align="absmiddle" id="DetailsImageScenario2483" onclick="parent.toggleDiv('detailsDIVScenario2483','DetailsImageScenario2483')" />Details:
+						<div id="detailsDIVScenario2483" class="DetailsDiv" >
+						&nbsp;
+						</div>
+					</div>
+				</td>
+			</tr>			<tr>
+				<td width="50%" class="TableRow" valign="top">Map:SEER 2015</td>
+				<td width="50%" class="TableRow" valign="top">SECTION VIII FOLLOW UP INFORMATION</td>
+			</tr>	
+			<tr>
+				<td class="TableRowBottomDashed"  colspan="2">
+					<div class="DetailsDivParent"><img src="../../images/minus03.gif" align="absmiddle" id="DetailsImageScenario2484" onclick="parent.toggleDiv('detailsDIVScenario2484','DetailsImageScenario2484')" />Details:
+						<div id="detailsDIVScenario2484" class="DetailsDiv" >
+						&nbsp;
+						</div>
+					</div>
+				</td>
+			</tr>
+	</table>
+</div>		<div class="ItemBody" id="ConstraintsTable">
+			<table border="0" cellspacing="0" cellpadding="0" class="Table">
+			  	<tr>
+					<td width="80%" class="TableHeading">Constraint</td>
+					<td width="10%" class="TableHeading">Type</td>
+					<td width="10%" class="TableHeading">Status</td>
+				</tr>
+				<tr>
+					<td width="80%" class="TableRow">be participated in by actualIndicator Qualifier</td>
+					<td width="10%" class="TableRow">Invariant</td>
+					<td width="10%" class="TableRow">Approved</td>
+				</tr>
+				<tr>
+					<td class="TableRowBottomDashed"  colspan="3">
+						<div class="DetailsDivParent"><img src="../../images/minus03.gif" align="absmiddle" id="DetailsImageConstraints2485" onclick="parent.toggleDiv('detailsDIVConstraints2485','DetailsImageConstraints2485')" />Details:
+							<div id="detailsDIVConstraints2485" class="DetailsDiv" >
+							<div class="ObjectDetailsNotes">Only BiologicEntity, BiologicEntityGroup, Material, ProductGroup or Organization (via Subject or ExperimentalUnit) with actualIndicator = &#8220;true&#8221; is valid. &lt;br/&gt;</div>
+
+							</div>
+						</div>
+					</td>
+				</tr>
+				<tr>
+					<td width="80%" class="TableRow">instantiates Exclusive Or</td>
+					<td width="10%" class="TableRow">Invariant</td>
+					<td width="10%" class="TableRow">Approved</td>
+				</tr>
+				<tr>
+					<td class="TableRowBottomDashed"  colspan="3">
+						<div class="DetailsDivParent"><img src="../../images/minus03.gif" align="absmiddle" id="DetailsImageConstraints2486" onclick="parent.toggleDiv('detailsDIVConstraints2486','DetailsImageConstraints2486')" />Details:
+							<div id="detailsDIVConstraints2486" class="DetailsDiv" >
+							<div class="ObjectDetailsNotes">A PerformedActivity must instantiate one and only one of the following: DefinedActivity, PlannedActivity, ScheduledActivity.&lt;br/&gt;</div>
+
+							</div>
+						</div>
+					</td>
+				</tr>
+				<tr>
+					<td width="80%" class="TableRow">execute under Qualifier</td>
+					<td width="10%" class="TableRow">Invariant</td>
+					<td width="10%" class="TableRow">Approved</td>
+				</tr>
+				<tr>
+					<td class="TableRowBottomDashed"  colspan="3">
+						<div class="DetailsDivParent"><img src="../../images/minus03.gif" align="absmiddle" id="DetailsImageConstraints2487" onclick="parent.toggleDiv('detailsDIVConstraints2487','DetailsImageConstraints2487')" />Details:
+							<div id="detailsDIVConstraints2487" class="DetailsDiv" >
+							<div class="ObjectDetailsNotes">A PerformedActivity is only directly related to a StudyProtocolVersion if it is not instantiating a PlannedActivity or ScheduledActivity (i.e., it is instantiating a DefinedActivity).&lt;br/&gt;</div>
+
+							</div>
+						</div>
+					</td>
+				</tr>
+				<tr>
+					<td width="80%" class="TableRow">be performed by actualIndicator Qualifier</td>
+					<td width="10%" class="TableRow">Invariant</td>
+					<td width="10%" class="TableRow">Approved</td>
+				</tr>
+				<tr>
+					<td class="TableRowBottomDashed"  colspan="3">
+						<div class="DetailsDivParent"><img src="../../images/minus03.gif" align="absmiddle" id="DetailsImageConstraints2488" onclick="parent.toggleDiv('detailsDIVConstraints2488','DetailsImageConstraints2488')" />Details:
+							<div id="detailsDIVConstraints2488" class="DetailsDiv" >
+							<div class="ObjectDetailsNotes">Only Person, Organization or Device (via Performer) with actualIndicator = &quot;true&quot; is valid.&lt;br/&gt;</div>
+
+							</div>
+						</div>
+					</td>
+				</tr>
+				<tr>
+					<td width="80%" class="TableRow">dateRange Qualifier</td>
+					<td width="10%" class="TableRow">Invariant</td>
+					<td width="10%" class="TableRow">Approved</td>
+				</tr>
+				<tr>
+					<td class="TableRowBottomDashed"  colspan="3">
+						<div class="DetailsDivParent"><img src="../../images/minus03.gif" align="absmiddle" id="DetailsImageConstraints2489" onclick="parent.toggleDiv('detailsDIVConstraints2489','DetailsImageConstraints2489')" />Details:
+							<div id="detailsDIVConstraints2489" class="DetailsDiv" >
+							<div class="ObjectDetailsNotes">When PerformedObservation.focalDateRange is present, PerformedObservation.dateRange must be a single date.&lt;br/&gt;</div>
+
+							</div>
+						</div>
+					</td>
+				</tr>
+				<tr>
+					<td width="80%" class="TableRow">containingEpoch Qualifier</td>
+					<td width="10%" class="TableRow">Invariant</td>
+					<td width="10%" class="TableRow">Approved</td>
+				</tr>
+				<tr>
+					<td class="TableRowBottomDashed"  colspan="3">
+						<div class="DetailsDivParent"><img src="../../images/minus03.gif" align="absmiddle" id="DetailsImageConstraints2490" onclick="parent.toggleDiv('detailsDIVConstraints2490','DetailsImageConstraints2490')" />Details:
+							<div id="detailsDIVConstraints2490" class="DetailsDiv" >
+							<div class="ObjectDetailsNotes">The containing Epoch association must not be present for PerformedActivities that instantiate PlannedActivities (or ScheduledActivites that instantiate PlannedActivities) with an association to Epoch.&lt;br/&gt;</div>
+
+							</div>
+						</div>
+					</td>
+				</tr>
+
+			</table>
+		</div>
+		<div class="ItemBody" id="LinksTable">
+			<table align="center" border="0" cellspacing="0" cellpadding="0" class="Table">
+				<tr>
+					<td width="30%" class="TableHeading">Object</td>
+					<td width="10%" class="TableHeading">Type</td>
+					<td width="10%" class="TableHeading">Connection</td>
+					<td width="10%" class="TableHeading">Direction</td>
+					<td width="40%" class="TableHeading">Notes</td>
+				</tr>
+				<tr>
+					<td width="30%" class="TableRow" valign="top"><a href="EA393.htm">PerformedProductTransport</a></td>
+					<td width="10%" class="TableRow" valign="top">Class</td>
+					<td width="10%" class="TableRow" valign="top">Generalization</td>
+					<td width="10%" class="TableRow" valign="top">From</td>
+					<td width="40%" class="TableRow" valign="top">DESCRIPTION:
+Each PerformedProductTransport always specializes one PerformedActivity. Each PerformedActivity might be specialized by one PerformedProductTransport.
+
+DEFINITION:
+
+EXAMPLE(S):
+
+OTHER NAME(S):
+
+NOTE(S):
+</td>
+				</tr>
+				<tr>
+					<td width="30%" class="TableRow" valign="top"><a href="EA359.htm">PerformedMedicalRecordAbstraction</a></td>
+					<td width="10%" class="TableRow" valign="top">Class</td>
+					<td width="10%" class="TableRow" valign="top">Generalization</td>
+					<td width="10%" class="TableRow" valign="top">From</td>
+					<td width="40%" class="TableRow" valign="top">DESCRIPTION:
+Each PerformedMedicalRecordAbstraction always specializes one PerformedActivity. Each PerformedActivity might be specialized by one PerformedMedicalRecordAbstraction.
+
+DEFINITION:
+
+EXAMPLE(S):
+
+OTHER NAME(S):
+
+NOTE(S):</td>
+				</tr>
+				<tr>
+					<td width="30%" class="TableRow" valign="top"><a href="../EA3/EA70.htm">Activity</a></td>
+					<td width="10%" class="TableRow" valign="top">Class</td>
+					<td width="10%" class="TableRow" valign="top">Generalization</td>
+					<td width="10%" class="TableRow" valign="top">To</td>
+					<td width="40%" class="TableRow" valign="top">DESCRIPTION:
+Each PerformedActivity always specializes one Activity. Each Activity might be specialized by one PerformedActivity.
+
+DEFINITION:
+
+EXAMPLE(S):
+
+OTHER NAME(S):
+
+NOTE(S):
+</td>
+				</tr>
+				<tr>
+					<td width="30%" class="TableRow" valign="top"><a href="EA374.htm">PerformedAdministrativeActivity</a></td>
+					<td width="10%" class="TableRow" valign="top">Class</td>
+					<td width="10%" class="TableRow" valign="top">Generalization</td>
+					<td width="10%" class="TableRow" valign="top">From</td>
+					<td width="40%" class="TableRow" valign="top">DESCRIPTION:
+Each PerformedAdministrativeActivity always specializes one PerformedActivity. Each PerformedActivity might be specialized by one PerformedAdministrativeActivity.
+
+DEFINITION:
+
+EXAMPLE(S):
+
+OTHER NAME(S):
+
+NOTE(S):</td>
+				</tr>
+				<tr>
+					<td width="30%" class="TableRow" valign="top"><a href="EA390.htm">PerformedObservation</a></td>
+					<td width="10%" class="TableRow" valign="top">Class</td>
+					<td width="10%" class="TableRow" valign="top">Generalization</td>
+					<td width="10%" class="TableRow" valign="top">From</td>
+					<td width="40%" class="TableRow" valign="top">DESCRIPTION:
+Each PerformedObservation always specializes one PerformedActivity. Each PerformedActivity might be specialized by one PerformedObservation.
+
+DEFINITION:
+
+EXAMPLE(S):
+
+OTHER NAME(S):
+
+NOTE(S):
+</td>
+				</tr>
+				<tr>
+					<td width="30%" class="TableRow" valign="top"><a href="EA392.htm">PerformedProcedure</a></td>
+					<td width="10%" class="TableRow" valign="top">Class</td>
+					<td width="10%" class="TableRow" valign="top">Generalization</td>
+					<td width="10%" class="TableRow" valign="top">From</td>
+					<td width="40%" class="TableRow" valign="top">DESCRIPTION:
+Each PerformedProcedure always specializes one PerformedActivity. Each PerformedActivity might be specialized by one PerformedProcedure.
+
+DEFINITION:
+
+EXAMPLE(S):
+
+OTHER NAME(S):
+
+NOTE(S):
+</td>
+				</tr>
+
+			</table>
+		</div>
+	</div>
+<div class="pageFooter"></div>
+ 
+</body>
+</html>

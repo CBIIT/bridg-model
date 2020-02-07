@@ -1,0 +1,10 @@
+tocTab[tocTab.length] = new Array("0.4:1", "", "View EX: Experiment", "EARoot/EA4/EA155.htm", "175.png", "1411", "0", "", "Logical diagram0","{C6823D6C-7B17-461d-87F5-9084DE76CE5F}");
+tocTab[tocTab.length] = new Array("0.4:2", "", "DeviceParameter", "EARoot/EA4/EA160.htm", "5.png", "E32175", "0", "", "Class0","{3B7FE75A-EAFE-4b0e-B7AA-D10AF2A68D95}");
+tocTab[tocTab.length] = new Array("0.4:3", "", "DeviceParameterValue", "EARoot/EA4/EA161.htm", "5.png", "E32176", "0", "", "Class0","{9E9765CD-3F58-4ae1-B18E-3EAC90127B16}");
+tocTab[tocTab.length] = new Array("0.4:4", "", "Experiment", "EARoot/EA4/EA162.htm", "5.png", "E32177", "0", "", "Class0","{57343ABC-180A-42b8-8252-EE14A0D2777E}");
+tocTab[tocTab.length] = new Array("0.4:5", "", "ExperimentalActivityItem", "EARoot/EA4/EA163.htm", "5.png", "E32178", "0", "", "Class0","{67E9811F-AD9D-412c-BD94-43A741DCE7ED}");
+tocTab[tocTab.length] = new Array("0.4:6", "", "ExperimentalFactor", "EARoot/EA4/EA164.htm", "5.png", "E32179", "0", "", "Class0","{A4E1552C-783C-42fd-B001-F3FC0FB03A47}");
+tocTab[tocTab.length] = new Array("0.4:7", "", "ExperimentalFactorValue", "EARoot/EA4/EA165.htm", "5.png", "E32180", "0", "", "Class0","{4F954E86-B919-4915-B65C-C987E56FFC38}");
+tocTab[tocTab.length] = new Array("0.4:8", "", "InVitroCharacterization", "EARoot/EA4/EA166.htm", "5.png", "E32181", "0", "", "Class0","{997D9C0D-7BBC-4d2b-9982-263CD4DC4ACB}");
+tocTab[tocTab.length] = new Array("0.4:9", "", "InVivoCharacterization", "EARoot/EA4/EA167.htm", "5.png", "E32182", "0", "", "Class0","{B8630748-0A2E-445f-9AB2-78E6BC35FE5B}");
+tocTab[tocTab.length] = new Array("0.4:10", "", "PhysicoChemicalCharacterization", "EARoot/EA4/EA168.htm", "5.png", "E32183", "0", "", "Class0","{ECB9EBF0-B2C8-4f77-A66F-11D0B9609AED}");

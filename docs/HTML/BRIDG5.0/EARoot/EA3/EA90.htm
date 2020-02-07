@@ -1,0 +1,426 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>Common Sub-Domain::Document</title>
+<link href="../../css/ea.css" rel="stylesheet" type="text/css" />
+<script>
+function initPage(src) {	
+	if(parent==this&&(this.location+"").indexOf('EARoot')!=-1)
+		document.location=(this.location+"").substring(0,(this.location+"").indexOf('EARoot'))+"index"+(this.location+"").substring((this.location+"").lastIndexOf('.'))+"?goto="+((this.location+"").substring((this.location+"").indexOf('EARoot')+7,(this.location+"").lastIndexOf('.')).replace(/\//g,':').replace(/EA/g,""));
+	else
+		parent.initPage(src);
+}
+
+function nameClassifier(name, separator)
+{
+  var str = name;
+  var classifierName;
+  var node = document.getElementById('name_classifier');
+  if(node != null)
+  {
+    classifierName = node.innerHTML;
+  }
+  if(classifierName != "")
+  {
+   str += separator + classifierName;
+  }
+  
+  return str;
+}
+</script>
+</head>
+<body onload="initPage(this);" class="Content">
+<div class="pageHeader"></div>
+<div class="PageBody">
+	<div id="name_classifier" style="display: none;"></div>
+	<span class="ObjectTitle"><script type="text/javascript">document.write(nameClassifier("Document", " : "))</script>  : Public   Class</span>
+	<table border="0" cellpadding="0" cellspacing="0" class="ObjectDetails">
+		<tr>
+			<td width="15%" class="ObjectDetailsTopic">Created:</td>
+			<td width="85%" class="ObjectDetailsValue">2/9/2006 9:23:40 AM</td>
+		</tr>
+		<tr>
+			<td class="ObjectDetailsTopic">Modified:</td>
+			<td class="ObjectDetailsValue">8/26/2017 2:00:34 AM</td>
+		</tr>
+		<tr style="height: 10px"><td colspan="2"></td></tr>
+		<tr>
+			<td class="ObjectDetailsTopic"><img src="../../images/plus03.gif" align="absmiddle" id="proj" onclick="parent.toggleData(this.id)" />Project:</td>
+			<td class="ObjectDetailsValue"></td>
+		</tr>
+		<tr id="proj00" style="display: none;">
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Author:</td>
+			<td class="ObjectDetailsValue">BRIDG SCC</td>
+		</tr>
+		<tr id="proj01" style="display: none;">
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Version:</td>
+			<td class="ObjectDetailsValue"></td>
+		</tr>
+		<tr id="proj02" style="display: none;">
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Phase:</td>
+			<td class="ObjectDetailsValue"></td>
+		</tr>
+		<tr id="proj03" style="display: none;">
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Status:</td>
+			<td class="ObjectDetailsValue"><none></td>
+		</tr>
+		<tr id="proj04" style="display: none;">
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Complexity:</td>
+			<td class="ObjectDetailsValue">Easy</td>
+		</tr>
+		<tr id="proj05" style="display: none;">
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Difficulty:</td>
+			<td class="ObjectDetailsValue"></td>
+		</tr>
+		<tr id="proj06" style="display: none;">
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Priority:</td>
+			<td class="ObjectDetailsValue"></td>
+		</tr>
+		<tr id="proj05" style="display: none;">
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Multiplicity:</td>
+			<td class="ObjectDetailsValue"></td>
+		</tr>
+		<tr>
+			<td class="ObjectDetailsTopic"><img src="../../images/plus03.gif" align="absmiddle" id="adv" onclick="parent.toggleData(this.id)" />Advanced:</td>
+			<td class="ObjectDetailsValue"></td>
+		</tr>
+		<tr id="adv00" style="display: none;">
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">UUID:</td>
+			<td class="ObjectDetailsValue">{E19E7BDA-1414-4e62-9D51-F895667E7113}</td>
+		</tr>
+		<tr id="adv01" style="display: none;">
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Appears In:</td>
+			<td class="ObjectDetailsValue"><a href="../EA1.htm">UML-Based Comprehensive BRIDG Model Diagram</a>, <a href="../EA9/EA339.htm">View SA: Statistical Analysis</a>, <a href="../EA1/EA28.htm">View AE: Adverse Event</a>, <a href="EA60.htm">View CM: Common</a>, <a href="EA62.htm">BRIDG BackBone</a>, <a href="../EA7/EA240.htm">View PR: Protocol Representation</a>, <a href="../EA7/EA242.htm">Study Versioning View</a>, <a href="../EA8/EA325.htm">View RG: Regulatory</a>, <a href="../EA10/EA356.htm">View SC: Study Conduct</a>, <a href="../EA5/EA170.htm">View IM: Imaging</a>, <a href="../EA11/EA464.htm">StudySite and StudySubject</a>, <a href="../EA11/EA454.htm">SDTM 3.1.3 View</a>, <a href="../EA11/EA460.htm">SDTM Vital Signs (VS) View</a>, <a href="../EA11/EA458.htm">SDTM Disease Response (RS) Domain View</a>, <a href="../EA11/EA456.htm">SDTM Exposure (EX) Domain View</a>, <a href="../EA11/EA438.htm">ClinicalTrials.gov</a>, <a href="../EA11/EA448.htm">Participant Registration</a></td>
+		</tr>
+	</table>
+	<div class="ObjectDetailsNotes">DEFINITION:&lt;br/&gt;An organized representation of information in publishable, human-readable form (that persists over time).&lt;br/&gt;&lt;br/&gt;EXAMPLE(S):&lt;br/&gt;Study Protocol, Adverse Event Report, Expedited Adverse Event Report, Institutional Review Board (IRB) Report, X-Ray Report, Lab Summary Report, Autopsy Report&lt;br/&gt;&lt;br/&gt;OTHER NAME(S):&lt;br/&gt;&lt;br/&gt;NOTE(S):&lt;br/&gt;A document groups the various document versions and has the following characteristics: 1) Stewardship, 2) Potential for authentication, 3) Wholeness, 4) Human readability, 5) Persistence, 6) Global vs local context (the person that signs it is the author of all sections unless otherwise noted).&lt;br/&gt;&lt;br/&gt;Regulatory processes require the submission of documents from the Applicant to the Regulatory Authority. These documents are varied in focus and are often defined by the field of study or by the regulatory application requirements of the region or Regulatory Authority (e.g., Integrated Summary of Safety, Pharmacokinetics Written Summary). &lt;br/&gt;</div>
+
+	<div class="TableGroup" id="TableGroup">
+		<ul class="ItemTitle">
+			<li onClick="parent.toggleItem('Attributes');" id="AttributesTitle">Attributes</li>
+			<li onClick="parent.toggleItem('AssociationsFrom');" id="AssociationsFromTitle">Associations From</li>
+			<li onClick="parent.toggleItem('TaggedVal');" id="TaggedValTitle">Tagged Values</li>
+			<li onClick="parent.toggleItem('Links');" id="LinksTitle">Other Links</li>
+		</ul>
+<div class="ItemBody" id="AttributesTable">
+	<table border="0" cellspacing="0" cellpadding="0" class="Table">
+		<tr>
+			<td width="100%" class="TableHeading">Attribute</td>
+		</tr>
+						<tr>
+				<td width="100%" class="TableRow">
+					<i>Public DSET&lt;ID&gt;</i><br /><strong>&nbsp;&nbsp;identifier</strong>
+				</td>
+			</tr>
+			<tr>
+				<td class="TableRowBottomDashed"  colspan="1">										
+					<a href="#" onclick="parent.toggleData('DetailsImageAttributes377')" style="text-decoration: none; color: #000000;"><img src="../../images/plus03.gif" align="absmiddle" id="DetailsImageAttributes377" border="0" />Details:</a>
+					<table border="0" cellspacing="0" cellpadding="0" class="Table" style="padding: 4px 18px;">
+					
+						<tr id="DetailsImageAttributes377_00" style="display: none;">
+							<td width="75"><i>Alias:</i></td>
+							<td></td>
+						</tr>
+						<tr id="DetailsImageAttributes377_01" style="display: none;">
+							<td width="75"><i>Initial:</i></td>
+							<td></td>
+						</tr>
+						<tr id="DetailsImageAttributes377_02" style="display: none;">
+							<td width="75"><i>Stereotype: </i></td>
+							<td></td>
+						</tr>
+						<tr id="DetailsImageAttributes377_03" style="display: none;">
+							<td width="75"><i>Ordered: </i></td>
+							<td></td>
+						</tr>
+						<tr id="DetailsImageAttributes377_04" style="display: none;">
+							<td width="75"><i>Range: </i></td>
+							<td></td>
+						</tr>
+						<tr id="DetailsImageAttributes377_05" style="display: none;">
+							<td width="75"><i>Transient: </i></td>
+							<td>False</td>
+						</tr>
+						<tr id="DetailsImageAttributes377_06" style="display: none;">
+							<td width="75"><i>Derived: </i></td>
+							<td>False</td>
+						</tr>
+							<tr id="DetailsImageAttributes377_07" style="display: none;">
+							<td width="75"><i>IsID: </i></td>
+						<td>False</td>
+						</tr>
+					</table>
+					
+					Map:AE=SafetyReport.identifier<br>Map:AE=AmendmentFollowUpReport.reportAmendedIdentifier<br>Map:AE=Study.primaryIdentifier<br>Map:AE=Study.additionalIdentifier<br>Map:AE=SafetyReport.alternateIdentifier<br>Map:C3PR=Identifier.value<br>Map:C3PRv2.9=RemoteStudy.externalId<br>Map:C3PRv2.9=Identifier.value<br>Map:caAERSv2.2=Identifier.value > Study<br>Map:CDASHv1.1=DA.STUDYID<br>Map:CDASHv1.1=QS.STUDYID<br>Map:CDASHv1.1=LB.STUDYID<br>Map:CDASHv1.1=DV.STUDYID<br>Map:CDASHv1.1=DS.STUDYID<br>Map:CDASHv1.1=EG.STUDYID<br>Map:CDASHv1.1=AE.STUDYID<br>Map:CDASHv1.1=MH.STUDYID<br>Map:CDASHv1.1=SC.STUDYID<br>Map:CDASHv1.1=PE.STUDYID<br>Map:CDASHv1.1=VS.STUDYID<br>Map:CDASHv1.1=DM.STUDYID<br>Map:CDASHv1.1=EX.STUDYID<br>Map:CDASHv1.1=CM.STUDYID<br>Map:CDASHv1.1=SU.STUDYID<br>Map:CDASHv1.1=MB.STUDYID<br>Map:CDASHv1.1=IE.STUDYID<br>Map:CTGOV=Organization's Unique Protocol ID<br>Map:CTGOV=IND/IDE Serial Number<br>Map:CTGOV=Secondary IDs<br>Map:CTOM=Protocol.navyNCIIdentifier<br>Map:CTOM=PartcipantEligibilityAnswer.checklistNumber<br>Map:CTOM=StudySite.localProtocolIdentifier<br>Map:CTOM=Protocol.nciIdentifier<br>Map:CTR&Rr2=EudraCT number<br>Map:CTR&Rr2=US NCT number<br>Map:CTR&Rr2=ISRCTN number<br>Map:CTR&Rr2=WHO UTRN<br>Map:CTR&Rr2=Other Identifier<br>Map:CTR&Rr2=Sponsor protocol number<br>Map:CTRPv1.0=StudyParticipation.localStudyProtocolIdentifier<br>Map:CTRPv1.0=Document.identifier<br>Map:CTRPv1.0=StudyProtocol.identifier<br>Map:CTRPv1.0=InterventionalStudyProtocol.identifier<br>Map:CTRPv1.0=ObservationalStudyProtocol.identifier<br>Map:CTRPv3.8=StudyProtocol.assignedIdentifier<br>Map:CTRPv3.8=Document.identifier<br>Map:CTRPv3.8=StudyProtocol.otherIdentifiers<br>Map:CTRR=Protocol Identifier  <br>Map:CTRR=Registry Protocol Identifier<br>Map:CTRRr3=DocumentIdentifier.identifier<br>Map:CTRRr3=StudyAgent.expandedAccessRecordIdentifier<br>Map:CTRv1.0=DocumentIdentifier.identifier<br>Map:DICOM=Clinical Trial Context Module - Clinical Trial Protocol ID (0012,0020)<br>Map:DICOM=Clinical Trial Subject Module - Clinical Trial Protocol ID (0012,0020)<br>Map:FDA HL7 SD SD DSTU2012=relatedDocument.setId<br>Map:FDA HL7 SD SD DSTU2012=relatedDocument.id<br>Map:FDA HL7 SD SD DSTU2012=StudyProtocol.id<br>Map:FDA HL7 SD SD DSTU2012=StudyProtocol.setID<br>Map:HCTv1.0=CDE 2692926:Recipient Identification.Study ID#
+What is the study ID number?<br>Map:HL7SD=PlannedStudy.setID<br>Map:HL7SP=Study.id<br>Map:HL7SP=PlannedStudy.id<br>Map:HSDBv1.0=[Study].Lead Organization Trial Identifier<br>Map:HSDBv1.0=[Sponsor].Sponsor protocol no<br>Map:HSDBv1.0=[Study].Unique Trial Identifier<br>Map:ICSRr2=StudyRegistration.id (in IndividualCaseSafetyReport)<br>Map:ICSRr2=ControlActEvent.id (in IndividualCaseSafetyReport)<br>Map:ICSRr2=ResearchStudy.id (in IndividualCaseSafetyReport)<br>Map:ICSRr2=document.id (in IndividualCaseSafetyReport)<br>Map:ICSRr2=StudyRegistration.id<br>Map:ICSRr2=RelatedInvestigation.id (in IndividualCaseSafetyReport)<br>Map:ICSRr2=InvestigativeEvent.id (in IndividualCaseSafetyReport)<br>Map:Lab=Study.identifier<br>Map:LabViewer2.2=Identifier.extension<br>Map:LabViewer2.2=Identifier.displayable<br>Map:LabViewer2.2=Identifier.root<br>Map:LSDAMv2.2.3Plus=DocumentIdentifier.identifier<br>Map:NCI CRF Standard=CDE 3008882v1.0: Case Report Form Identifier<br>Map:NCI CRF Standard=CDE 2746459v1.0: Protocol Clinical Study Identifier Number<br>Map:PGx v1.0=SB.STUDYID<br>Map:PGx v1.0=PG.STUDYID<br>Map:PGx v1.0=PF.STUDYID<br>Map:PGx v1.0=BE.STUDYID<br>Map:PGx v1.0=PB.STUDYID<br>Map:PGx v1.0=BS.STUDYID<br>Map:PGx v1.0=RELSPEC.STUDYID<br>Map:PSCv2.6=StudySecondaryIdentifier.value<br>Map:PSCv2.6=Study.assignedIdentifier<br>Map:SDTM IGv3.1.1=AE.STUDYID<br>Map:SDTM IGv3.1.1=CM.STUDYID<br>Map:SDTM IGv3.1.1=EX.STUDYID<br>Map:SDTM IGv3.1.1=QS.STUDYID<br>Map:SDTM IGv3.1.1=SE.STUDYID<br>Map:SDTM IGv3.1.1=TE.STUDYID<br>Map:SDTM IGv3.1.1=SV.STUDYID<br>Map:SDTM IGv3.1.1=PE.STUDYID<br>Map:SDTM IGv3.1.1=EG.STUDYID<br>Map:SDTM IGv3.1.1=TI.STUDYID<br>Map:SDTM IGv3.1.1=IE.STUDYID<br>Map:SDTM IGv3.1.1=VS.STUDYID<br>Map:SDTM IGv3.1.1=SU.STUDYID<br>Map:SDTM IGv3.1.1=TA.STUDYID<br>Map:SDTM IGv3.1.1=MH.STUDYID<br>Map:SDTM IGv3.1.1=DA.STUDYID<br>Map:SDTM IGv3.1.1=LB.STUDYID<br>Map:SDTM IGv3.1.1=SC.STUDYID<br>Map:SDTM IGv3.1.1=TV.STUDYID<br>Map:SDTM IGv3.1.1=DS.STUDYID<br>Map:SDTM IGv3.1.1=DV.STUDYID<br>Map:SDTM IGv3.1.1=CO.STUDYID<br>Map:SDTM IGv3.1.1=DM.STUDYID<br>Map:SDTM IGv3.1.1=TS.STUDYID<br>Map:SDTM IGv3.1.2=PC.STUDYID<br>Map:SDTM IGv3.1.2=QS.STUDYID<br>Map:SDTM IGv3.1.2=AE.STUDYID<br>Map:SDTM IGv3.1.2=TS.STUDYID<br>Map:SDTM IGv3.1.2=MS.STUDYID<br>Map:SDTM IGv3.1.2=VS.STUDYID<br>Map:SDTM IGv3.1.2=CM.STUDYID<br>Map:SDTM IGv3.1.2=TI.STUDYID<br>Map:SDTM IGv3.1.2=DS.STUDYID<br>Map:SDTM IGv3.1.2=PE.STUDYID<br>Map:SDTM IGv3.1.2=FA.STUDYID<br>Map:SDTM IGv3.1.2=SV.STUDYID<br>Map:SDTM IGv3.1.2=CE.STUDYID<br>Map:SDTM IGv3.1.2=IE.STUDYID<br>Map:SDTM IGv3.1.2=PP.STUDYID<br>Map:SDTM IGv3.1.2=LB.STUDYID<br>Map:SDTM IGv3.1.2=SE.STUDYID<br>Map:SDTM IGv3.1.2=MH.STUDYID<br>Map:SDTM IGv3.1.2=TE.STUDYID<br>Map:SDTM IGv3.1.2=TV.STUDYID<br>Map:SDTM IGv3.1.2=EG.STUDYID<br>Map:SDTM IGv3.1.2=MB.STUDYID<br>Map:SDTM IGv3.1.2=EX.STUDYID<br>Map:SDTM IGv3.1.2=SC.STUDYID<br>Map:SDTM IGv3.1.2=SU.STUDYID<br>Map:SDTM IGv3.1.2=CO.STUDYID<br>Map:SDTM IGv3.1.2=DM.STUDYID<br>Map:SDTM IGv3.1.2=DV.STUDYID<br>Map:SDTM IGv3.1.2=TA.STUDYID<br>Map:SDTM IGv3.1.2=DA.STUDYID<br>Map:SDTM IGv3.1.3=SV.STUDYID<br>Map:SDTM IGv3.1.3=SU.STUDYID<br>Map:SDTM IGv3.1.3=SE.STUDYID<br>Map:SDTM IGv3.1.3=RS.STUDYID<br>Map:SDTM IGv3.1.3=TA.STUDYID<br>Map:SDTM IGv3.1.3=PE.STUDYID<br>Map:SDTM IGv3.1.3=QS.STUDYID<br>Map:SDTM IGv3.1.3=SC.STUDYID<br>Map:SDTM IGv3.1.3=TE.STUDYID<br>Map:SDTM IGv3.1.3=TI.STUDYID<br>Map:SDTM IGv3.1.3=TR.STUDYID<br>Map:SDTM IGv3.1.3=TS.STUDYID<br>Map:SDTM IGv3.1.3=TU.STUDYID<br>Map:SDTM IGv3.1.3=PC.STUDYID<br>Map:SDTM IGv3.1.3=VS.STUDYID<br>Map:SDTM IGv3.1.3=DV.STUDYID<br>Map:SDTM IGv3.1.3=TS.TSVAL WHERE TSPARMCD = "REGID"<br>Map:SDTM IGv3.1.3=TS.TSVALNF WHERE TSPARMCD = "REGID"<br>Map:SDTM IGv3.1.3=TV.STUDYID<br>Map:SDTM IGv3.1.3=DM.STUDYID<br>Map:SDTM IGv3.1.3=AE.AEREFID<br>Map:SDTM IGv3.1.3=AE.STUDYID<br>Map:SDTM IGv3.1.3=CE.STUDYID<br>Map:SDTM IGv3.1.3=CM.STUDYID<br>Map:SDTM IGv3.1.3=EX.STUDYID<br>Map:SDTM IGv3.1.3=DA.STUDYID<br>Map:SDTM IGv3.1.3=MS.STUDYID<br>Map:SDTM IGv3.1.3=DS.STUDYID<br>Map:SDTM IGv3.1.3=EG.STUDYID<br>Map:SDTM IGv3.1.3=FA.STUDYID<br>Map:SDTM IGv3.1.3=IE.STUDYID<br>Map:SDTM IGv3.1.3=LB.STUDYID<br>Map:SDTM IGv3.1.3=MB.STUDYID<br>Map:SDTM IGv3.1.3=MH.STUDYID<br>Map:SDTM IGv3.1.3=CO.STUDYID<br>Map:Statistics v1.0=DocumentIdentifier.identifier<br>Map:Vendor1v1.1=DocumentIdentifier.identifier<br>Map:WHO=Primary Registry and Trial Identifying Number<br>Map:WHO=Secondary Identifying Numbers<br>
+						<div class="ObjectDetailsNotes"><table>
+	<tr>
+		<td valign="top">
+			<i>Notes: </i><span style="margin-left: .4cm;"> </span>
+		</td>
+		<td>
+			DEFINITION:&lt;br/&gt;A unique symbol that establishes identity of the document.&lt;br/&gt;&lt;br/&gt;EXAMPLE(S):&lt;br/&gt;A study protocol identifier is assigned by the National Cancer Institute (NCI).&lt;br/&gt;&lt;br/&gt;OTHER NAME(S):&lt;br/&gt;&lt;br/&gt;NOTE(S):&lt;br/&gt;A particular document can have one or more ID.&lt;br/&gt;
+		</td>
+	</tr>
+</table></div>
+
+						
+				</td>
+			</tr>			<tr>
+				<td width="100%" class="TableRow">
+					<i>Public CD</i><br /><strong>&nbsp;&nbsp;typeCode</strong>
+				</td>
+			</tr>
+			<tr>
+				<td class="TableRowBottomDashed"  colspan="1">										
+					<a href="#" onclick="parent.toggleData('DetailsImageAttributes378')" style="text-decoration: none; color: #000000;"><img src="../../images/plus03.gif" align="absmiddle" id="DetailsImageAttributes378" border="0" />Details:</a>
+					<table border="0" cellspacing="0" cellpadding="0" class="Table" style="padding: 4px 18px;">
+					
+						<tr id="DetailsImageAttributes378_00" style="display: none;">
+							<td width="75"><i>Alias:</i></td>
+							<td></td>
+						</tr>
+						<tr id="DetailsImageAttributes378_01" style="display: none;">
+							<td width="75"><i>Initial:</i></td>
+							<td></td>
+						</tr>
+						<tr id="DetailsImageAttributes378_02" style="display: none;">
+							<td width="75"><i>Stereotype: </i></td>
+							<td></td>
+						</tr>
+						<tr id="DetailsImageAttributes378_03" style="display: none;">
+							<td width="75"><i>Ordered: </i></td>
+							<td></td>
+						</tr>
+						<tr id="DetailsImageAttributes378_04" style="display: none;">
+							<td width="75"><i>Range: </i></td>
+							<td>Range:0 to 1</td>
+						</tr>
+						<tr id="DetailsImageAttributes378_05" style="display: none;">
+							<td width="75"><i>Transient: </i></td>
+							<td>False</td>
+						</tr>
+						<tr id="DetailsImageAttributes378_06" style="display: none;">
+							<td width="75"><i>Derived: </i></td>
+							<td>False</td>
+						</tr>
+							<tr id="DetailsImageAttributes378_07" style="display: none;">
+							<td width="75"><i>IsID: </i></td>
+						<td>False</td>
+						</tr>
+					</table>
+					
+					Map:AE=AmendmentFollowUpReport<br>Map:C3PRv2.9=StudyVersion.amendmentType<br>Map:CTRPv1.0=Document.typeCode<br>Map:CTRPv3.8=Document.typeCode<br>Map:CTRRr3=Document.typeCode<br>Map:CTRv1.0=Document.typeCode<br>Map:HL7SD=ReplacementOf1.typeCode<br>Map:ICSRr2=document.code (in IndividualCaseSafetyReport)<br>Map:ICSRr2=ControlActEvent.code (in IndividualCaseSafetyReport)<br>Map:LSDAMv2.2.3Plus=Document.typeCode<br>Map:RPS1=Documentation.context<br>Map:Statistics v1.0=Document.typeCode<br>
+						<div class="ObjectDetailsNotes"><table>
+	<tr>
+		<td valign="top">
+			<i>Notes: </i><span style="margin-left: .4cm;"> </span>
+		</td>
+		<td>
+			DEFINITION:&lt;br/&gt;A coded value specifying the kind of document.&lt;br/&gt;&lt;br/&gt;EXAMPLE(S):&lt;br/&gt;amendment, background material, guide, Data Clarification Form (DCF), regulatory record&#160; (see description in NOTE(S) section)&lt;br/&gt;&lt;br/&gt;OTHER NAME(S):&lt;br/&gt;&lt;br/&gt;NOTE(S):&lt;br/&gt;In RPS, this is the code that specifies how the file is to be used within the submission process (e.g. Protocol, Summary Introduction). Also known as context of use.&lt;br/&gt;&lt;br/&gt;The example &quot;regulatory record&quot; is described as &quot;a document that meets a recording requirement of a regulatory authority and must be retained in accordance with that agency&#39;s records retention requirements&quot;.&lt;br/&gt;
+		</td>
+	</tr>
+</table></div>
+
+						
+				</td>
+			</tr>
+	</table>
+</div>
+		<div class="ItemBody" id="AssociationsFromTable">
+			<table border="0" cellspacing="0" cellpadding="0" class="Table">
+				<tr>
+					<td width="40%" class="TableHeading">Element</td>
+					<td width="30%" class="TableHeading">Source Role</td>
+					<td width="30%" class="TableHeading">Target Role</td>
+				</tr>
+				<tr>
+					<td width="40%" class="TableRow" valign="top">
+						<a href="EA92.htm">DocumentVersion</a><br />
+						Class &nbsp;
+					</td>
+					<td width="30%" class="TableRow" valign="top">
+						<strong>Name:</strong> versioningDocumentVersion<br />
+						&nbsp;
+					</td>
+					<td width="30%" class="TableRow" valign="top">
+						<strong>Name:</strong> versionedDocument<br />
+						&nbsp;	
+					</td>
+				</tr>
+				<tr>
+					<td class="TableRowBottomDashed"  colspan="3">
+						<div class="DetailsDivParent"><img src="../../images/minus03.gif" align="absmiddle" id="DetailsImageLink379" onclick="parent.toggleDiv('detailsDIVLink379','DetailsImageLink379')" />Details:
+							<div id="detailsDIVLink379" class="DetailsDiv" >
+							<div class="ObjectDetailsNotes">DESCRIPTION:&lt;br/&gt;Each DocumentVersion always is a version of one Document. Each Document might have as a version one or more DocumentVersion.&lt;br/&gt;&lt;br/&gt;DEFINITION:&lt;br/&gt;&lt;br/&gt;EXAMPLE(S):&lt;br/&gt;&lt;br/&gt;OTHER NAME(S):&lt;br/&gt;&lt;br/&gt;NOTE(S):&lt;br/&gt;&lt;br/&gt;</div>
+
+							</div>
+						</div>
+					</td>
+				</tr>
+
+			</table>
+		</div>
+<div class="ItemBody" id="TaggedValTable">
+	<table align="center" border="0" cellspacing="0" cellpadding="0" class="Table">
+		<tr>
+			<td width="50%" class="TableHeading">Tag</td>
+			<td width="50%" class="TableHeading">Value</td>
+		</tr>
+					<tr>
+				<td width="50%" class="TableRow" valign="top">Map:AE</td>
+				<td width="50%" class="TableRow" valign="top">Document</td>
+			</tr>	
+			<tr>
+				<td class="TableRowBottomDashed"  colspan="2">
+					<div class="DetailsDivParent"><img src="../../images/minus03.gif" align="absmiddle" id="DetailsImageScenario380" onclick="parent.toggleDiv('detailsDIVScenario380','DetailsImageScenario380')" />Details:
+						<div id="detailsDIVScenario380" class="DetailsDiv" >
+						&nbsp;
+						</div>
+					</div>
+				</td>
+			</tr>			<tr>
+				<td width="50%" class="TableRow" valign="top">Map:C3PRv2.9</td>
+				<td width="50%" class="TableRow" valign="top">Consent</td>
+			</tr>	
+			<tr>
+				<td class="TableRowBottomDashed"  colspan="2">
+					<div class="DetailsDivParent"><img src="../../images/minus03.gif" align="absmiddle" id="DetailsImageScenario381" onclick="parent.toggleDiv('detailsDIVScenario381','DetailsImageScenario381')" />Details:
+						<div id="detailsDIVScenario381" class="DetailsDiv" >
+						&nbsp;
+						</div>
+					</div>
+				</td>
+			</tr>			<tr>
+				<td width="50%" class="TableRow" valign="top">Map:CTRPv1.0</td>
+				<td width="50%" class="TableRow" valign="top">Document</td>
+			</tr>	
+			<tr>
+				<td class="TableRowBottomDashed"  colspan="2">
+					<div class="DetailsDivParent"><img src="../../images/minus03.gif" align="absmiddle" id="DetailsImageScenario382" onclick="parent.toggleDiv('detailsDIVScenario382','DetailsImageScenario382')" />Details:
+						<div id="detailsDIVScenario382" class="DetailsDiv" >
+						&nbsp;
+						</div>
+					</div>
+				</td>
+			</tr>			<tr>
+				<td width="50%" class="TableRow" valign="top">Map:CTRPv3.8</td>
+				<td width="50%" class="TableRow" valign="top">Document</td>
+			</tr>	
+			<tr>
+				<td class="TableRowBottomDashed"  colspan="2">
+					<div class="DetailsDivParent"><img src="../../images/minus03.gif" align="absmiddle" id="DetailsImageScenario383" onclick="parent.toggleDiv('detailsDIVScenario383','DetailsImageScenario383')" />Details:
+						<div id="detailsDIVScenario383" class="DetailsDiv" >
+						&nbsp;
+						</div>
+					</div>
+				</td>
+			</tr>			<tr>
+				<td width="50%" class="TableRow" valign="top">Map:CTRR</td>
+				<td width="50%" class="TableRow" valign="top">Protocol Title</td>
+			</tr>	
+			<tr>
+				<td class="TableRowBottomDashed"  colspan="2">
+					<div class="DetailsDivParent"><img src="../../images/minus03.gif" align="absmiddle" id="DetailsImageScenario384" onclick="parent.toggleDiv('detailsDIVScenario384','DetailsImageScenario384')" />Details:
+						<div id="detailsDIVScenario384" class="DetailsDiv" >
+						&nbsp;
+						</div>
+					</div>
+				</td>
+			</tr>			<tr>
+				<td width="50%" class="TableRow" valign="top">Map:CTRv1.0</td>
+				<td width="50%" class="TableRow" valign="top">Document</td>
+			</tr>	
+			<tr>
+				<td class="TableRowBottomDashed"  colspan="2">
+					<div class="DetailsDivParent"><img src="../../images/minus03.gif" align="absmiddle" id="DetailsImageScenario385" onclick="parent.toggleDiv('detailsDIVScenario385','DetailsImageScenario385')" />Details:
+						<div id="detailsDIVScenario385" class="DetailsDiv" >
+						&nbsp;
+						</div>
+					</div>
+				</td>
+			</tr>			<tr>
+				<td width="50%" class="TableRow" valign="top">Map:ICSRr2</td>
+				<td width="50%" class="TableRow" valign="top">document (in IndividualCaseSafetyReport)</td>
+			</tr>	
+			<tr>
+				<td class="TableRowBottomDashed"  colspan="2">
+					<div class="DetailsDivParent"><img src="../../images/minus03.gif" align="absmiddle" id="DetailsImageScenario386" onclick="parent.toggleDiv('detailsDIVScenario386','DetailsImageScenario386')" />Details:
+						<div id="detailsDIVScenario386" class="DetailsDiv" >
+						&nbsp;
+						</div>
+					</div>
+				</td>
+			</tr>			<tr>
+				<td width="50%" class="TableRow" valign="top">Map:LSDAMv2.2.3Plus</td>
+				<td width="50%" class="TableRow" valign="top">Document</td>
+			</tr>	
+			<tr>
+				<td class="TableRowBottomDashed"  colspan="2">
+					<div class="DetailsDivParent"><img src="../../images/minus03.gif" align="absmiddle" id="DetailsImageScenario387" onclick="parent.toggleDiv('detailsDIVScenario387','DetailsImageScenario387')" />Details:
+						<div id="detailsDIVScenario387" class="DetailsDiv" >
+						&nbsp;
+						</div>
+					</div>
+				</td>
+			</tr>			<tr>
+				<td width="50%" class="TableRow" valign="top">Map:RPS1</td>
+				<td width="50%" class="TableRow" valign="top">Documentation</td>
+			</tr>	
+			<tr>
+				<td class="TableRowBottomDashed"  colspan="2">
+					<div class="DetailsDivParent"><img src="../../images/minus03.gif" align="absmiddle" id="DetailsImageScenario388" onclick="parent.toggleDiv('detailsDIVScenario388','DetailsImageScenario388')" />Details:
+						<div id="detailsDIVScenario388" class="DetailsDiv" >
+						&nbsp;
+						</div>
+					</div>
+				</td>
+			</tr>			<tr>
+				<td width="50%" class="TableRow" valign="top">Map:Statistics v1.0</td>
+				<td width="50%" class="TableRow" valign="top">Document</td>
+			</tr>	
+			<tr>
+				<td class="TableRowBottomDashed"  colspan="2">
+					<div class="DetailsDivParent"><img src="../../images/minus03.gif" align="absmiddle" id="DetailsImageScenario389" onclick="parent.toggleDiv('detailsDIVScenario389','DetailsImageScenario389')" />Details:
+						<div id="detailsDIVScenario389" class="DetailsDiv" >
+						&nbsp;
+						</div>
+					</div>
+				</td>
+			</tr>
+	</table>
+</div>		<div class="ItemBody" id="LinksTable">
+			<table align="center" border="0" cellspacing="0" cellpadding="0" class="Table">
+				<tr>
+					<td width="30%" class="TableHeading">Object</td>
+					<td width="10%" class="TableHeading">Type</td>
+					<td width="10%" class="TableHeading">Connection</td>
+					<td width="10%" class="TableHeading">Direction</td>
+					<td width="40%" class="TableHeading">Notes</td>
+				</tr>
+				<tr>
+					<td width="30%" class="TableRow" valign="top"><a href="../EA7/EA320.htm">StudyProtocolDocument</a></td>
+					<td width="10%" class="TableRow" valign="top">Class</td>
+					<td width="10%" class="TableRow" valign="top">Generalization</td>
+					<td width="10%" class="TableRow" valign="top">From</td>
+					<td width="40%" class="TableRow" valign="top">DESCRIPTION:
+Each StudyProtocolDocument always specializes one Document. Each Document might be specialized by one StudyProtocolDocument.
+
+DEFINITION:
+
+EXAMPLE(S):
+
+OTHER NAME(S):
+
+NOTE(S):
+</td>
+				</tr>
+
+			</table>
+		</div>
+	</div>
+<div class="pageFooter"></div>
+ 
+</body>
+</html>

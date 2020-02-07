@@ -1,0 +1,679 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>Common Sub-Domain::Activity</title>
+<link href="../../css/ea.css" rel="stylesheet" type="text/css" />
+<script>
+function initPage(src) {	
+	if(parent==this&&(this.location+"").indexOf('EARoot')!=-1)
+		document.location=(this.location+"").substring(0,(this.location+"").indexOf('EARoot'))+"index"+(this.location+"").substring((this.location+"").lastIndexOf('.'))+"?goto="+((this.location+"").substring((this.location+"").indexOf('EARoot')+7,(this.location+"").lastIndexOf('.')).replace(/\//g,':').replace(/EA/g,""));
+	else
+		parent.initPage(src);
+}
+
+function nameClassifier(name, separator)
+{
+  var str = name;
+  var classifierName;
+  var node = document.getElementById('name_classifier');
+  if(node != null)
+  {
+    classifierName = node.innerHTML;
+  }
+  if(classifierName != "")
+  {
+   str += separator + classifierName;
+  }
+  
+  return str;
+}
+</script>
+</head>
+<body onload="initPage(this);" class="Content">
+<div class="pageHeader"></div>
+<div class="PageBody">
+	<div id="name_classifier" style="display: none;"></div>
+	<span class="ObjectTitle"><script type="text/javascript">document.write(nameClassifier("Activity", " : "))</script>  : Public abstract  Class</span>
+	<table border="0" cellpadding="0" cellspacing="0" class="ObjectDetails">
+		<tr>
+			<td width="15%" class="ObjectDetailsTopic">Created:</td>
+			<td width="85%" class="ObjectDetailsValue">3/14/2005 4:52:41 PM</td>
+		</tr>
+		<tr>
+			<td class="ObjectDetailsTopic">Modified:</td>
+			<td class="ObjectDetailsValue">8/26/2017 2:00:28 AM</td>
+		</tr>
+		<tr style="height: 10px"><td colspan="2"></td></tr>
+		<tr>
+			<td class="ObjectDetailsTopic"><img src="../../images/plus03.gif" align="absmiddle" id="proj" onclick="parent.toggleData(this.id)" />Project:</td>
+			<td class="ObjectDetailsValue"></td>
+		</tr>
+		<tr id="proj00" style="display: none;">
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Author:</td>
+			<td class="ObjectDetailsValue">BRIDG SCC</td>
+		</tr>
+		<tr id="proj01" style="display: none;">
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Version:</td>
+			<td class="ObjectDetailsValue"></td>
+		</tr>
+		<tr id="proj02" style="display: none;">
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Phase:</td>
+			<td class="ObjectDetailsValue"></td>
+		</tr>
+		<tr id="proj03" style="display: none;">
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Status:</td>
+			<td class="ObjectDetailsValue"><none></td>
+		</tr>
+		<tr id="proj04" style="display: none;">
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Complexity:</td>
+			<td class="ObjectDetailsValue">Easy</td>
+		</tr>
+		<tr id="proj05" style="display: none;">
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Difficulty:</td>
+			<td class="ObjectDetailsValue"></td>
+		</tr>
+		<tr id="proj06" style="display: none;">
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Priority:</td>
+			<td class="ObjectDetailsValue"></td>
+		</tr>
+		<tr id="proj05" style="display: none;">
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Multiplicity:</td>
+			<td class="ObjectDetailsValue"></td>
+		</tr>
+		<tr>
+			<td class="ObjectDetailsTopic"><img src="../../images/plus03.gif" align="absmiddle" id="adv" onclick="parent.toggleData(this.id)" />Advanced:</td>
+			<td class="ObjectDetailsValue"></td>
+		</tr>
+		<tr id="adv00" style="display: none;">
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">UUID:</td>
+			<td class="ObjectDetailsValue">{4633E059-ADBD-4e8e-ADD6-25E9668A7ED2}</td>
+		</tr>
+		<tr id="adv01" style="display: none;">
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Appears In:</td>
+			<td class="ObjectDetailsValue"><a href="../EA1.htm">UML-Based Comprehensive BRIDG Model Diagram</a>, <a href="../EA4/EA155.htm">View EX: Experiment</a>, <a href="../EA1/EA28.htm">View AE: Adverse Event</a>, <a href="EA60.htm">View CM: Common</a>, <a href="EA62.htm">BRIDG BackBone</a>, <a href="../EA7/EA240.htm">View PR: Protocol Representation</a>, <a href="../EA7/EA242.htm">Study Versioning View</a>, <a href="../EA10/EA356.htm">View SC: Study Conduct</a>, <a href="../EA5/EA170.htm">View IM: Imaging</a>, <a href="../EA11/EA432.htm">Activities</a>, <a href="../EA11/EA434.htm">Adverse Events</a>, <a href="../EA11/EA446.htm">Observations and Results</a>, <a href="../EA11/EA450.htm">Performer</a>, <a href="../EA5/EA174.htm">DICOM SR TID 1500 BRIDG Class Diagram</a>, <a href="../EA11/EA440.htm">Oncology View</a>, <a href="../EA11/EA454.htm">SDTM 3.1.3 View</a>, <a href="../EA11/EA460.htm">SDTM Vital Signs (VS) View</a>, <a href="../EA11/EA458.htm">SDTM Disease Response (RS) Domain View</a>, <a href="../EA11/EA456.htm">SDTM Exposure (EX) Domain View</a>, <a href="../EA11/EA448.htm">Participant Registration</a>, <a href="../EA11/EA462.htm">SEER View</a></td>
+		</tr>
+	</table>
+	<div class="ObjectDetailsNotes">DEFINITION:&lt;br/&gt;Any action that can, in the context of a study, experiment, post-marketing investigation, or disease registry, be defined, planned, scheduled or performed. &lt;br/&gt; &lt;br/&gt;EXAMPLE(S):&lt;br/&gt;Administrative activities such as subject registration or informed consent&lt;br/&gt;Clinical activities such as surgical procedure, laboratory test, administration of a drug&lt;br/&gt; &lt;br/&gt;OTHER NAME(S):&lt;br/&gt; &lt;br/&gt;NOTE(S):&lt;br/&gt;</div>
+
+	<div class="TableGroup" id="TableGroup">
+		<ul class="ItemTitle">
+			<li onClick="parent.toggleItem('Attributes');" id="AttributesTitle">Attributes</li>
+			<li onClick="parent.toggleItem('AssociationsTo');" id="AssociationsToTitle">Associations To</li>
+			<li onClick="parent.toggleItem('AssociationsFrom');" id="AssociationsFromTitle">Associations From</li>
+			<li onClick="parent.toggleItem('TaggedVal');" id="TaggedValTitle">Tagged Values</li>
+			<li onClick="parent.toggleItem('Constraints');" id="ConstraintsTitle">Constraints</li>
+			<li onClick="parent.toggleItem('Links');" id="LinksTitle">Other Links</li>
+		</ul>
+<div class="ItemBody" id="AttributesTable">
+	<table border="0" cellspacing="0" cellpadding="0" class="Table">
+		<tr>
+			<td width="100%" class="TableHeading">Attribute</td>
+		</tr>
+						<tr>
+				<td width="100%" class="TableRow">
+					<i>Public DSET&lt;ID&gt;</i><br /><strong>&nbsp;&nbsp;identifier</strong>
+				</td>
+			</tr>
+			<tr>
+				<td class="TableRowBottomDashed"  colspan="1">										
+					<a href="#" onclick="parent.toggleData('DetailsImageAttributes169')" style="text-decoration: none; color: #000000;"><img src="../../images/plus03.gif" align="absmiddle" id="DetailsImageAttributes169" border="0" />Details:</a>
+					<table border="0" cellspacing="0" cellpadding="0" class="Table" style="padding: 4px 18px;">
+					
+						<tr id="DetailsImageAttributes169_00" style="display: none;">
+							<td width="75"><i>Alias:</i></td>
+							<td></td>
+						</tr>
+						<tr id="DetailsImageAttributes169_01" style="display: none;">
+							<td width="75"><i>Initial:</i></td>
+							<td></td>
+						</tr>
+						<tr id="DetailsImageAttributes169_02" style="display: none;">
+							<td width="75"><i>Stereotype: </i></td>
+							<td></td>
+						</tr>
+						<tr id="DetailsImageAttributes169_03" style="display: none;">
+							<td width="75"><i>Ordered: </i></td>
+							<td></td>
+						</tr>
+						<tr id="DetailsImageAttributes169_04" style="display: none;">
+							<td width="75"><i>Range: </i></td>
+							<td>Range:0 to *</td>
+						</tr>
+						<tr id="DetailsImageAttributes169_05" style="display: none;">
+							<td width="75"><i>Transient: </i></td>
+							<td>False</td>
+						</tr>
+						<tr id="DetailsImageAttributes169_06" style="display: none;">
+							<td width="75"><i>Derived: </i></td>
+							<td>False</td>
+						</tr>
+							<tr id="DetailsImageAttributes169_07" style="display: none;">
+							<td width="75"><i>IsID: </i></td>
+						<td>False</td>
+						</tr>
+					</table>
+					
+					Map:AIM v4 rv48=Entity.uniqueIdentifier<br>Map:AIM v4 rv48=ActivityCollection.uniqueIdentifier<br>Map:CTRPv1.0=Activity.identifier<br>Map:CTRPv1.0=PlannedEligibilityCriterion.identifier<br>Map:CTRPv1.0=PlannedObservation.identifier<br>Map:CTRPv1.0=PlannedActivity.identifier<br>Map:CTRPv1.0=SubstanceAdministration.identifier<br>Map:CTRPv3.8=Activity.identifier<br>Map:CTRRr3=Activity.identifier<br>Map:CTRv1.0=Activity.identifier<br>Map:DICOM=Study Level Keys for the Patient Root Query/Retrieve Information Model -  Study Instance UID (0020,000D)<br>Map:DICOM=Protocol Context Module - Predecessor Protocol Sequence (0018,990E)<br>Map:DICOM=General Study Module - Study Instance UID (0020,000D)<br>Map:DICOM=TID 1410 PlanarROIMeasurements > Measurement Group > Activity Session<br>Map:DICOM=Clinical Trial Study Module - Clinical Trial Time Point ID (0012,0050)<br>Map:DICOM=Patient Study Module - Issuer of Service Episode ID Sequence (0038,0064)<br>Map:DICOM=Patient Study Module - Service Episode ID (0038,0060)<br>Map:DICOM=Patient Study Module - Issuer of Admission ID Sequence (0038,0014)<br>Map:DICOM=Patient Study Module - Admission ID (0038,0010)<br>Map:DICOM=TID 1502 TimePointContext > Subject Time Point Identifier<br>Map:DICOM=TID 1502 TimePointContext > Protocol Time Point Identifier<br>Map:DICOM=TID 1411 VolumetricROIMeasurements > Measurement Group > Activity Session<br>Map:DICOM=TID 1501 MeasurementGroup > Measurement Group > Activity Session<br>Map:FDA HL7 SD SD DSTU2012=PlannedSubjectActivity/Procedure.id<br>Map:FDA HL7 SD SD DSTU2012=plannedStudy/component4/timePointEventDefinition.id<br>Map:FDA HL7 SD SD DSTU2012=PlannedSubjectActivity/Act.id<br>Map:FDA HL7 SD SD DSTU2012=PlannedSubjectActivity/Encounter.id<br>Map:FDA HL7 SD SD DSTU2012=PlannedSubjectActivity/SubstanceAdministration.id<br>Map:FDA HL7 SD SD DSTU2012=PlannedSubjectActivity/Observation.id<br>Map:FDA HL7 SD SD DSTU2012=StudyProtocol//plannedStudy/precondition/eligibilityCriterion.id<br>Map:ICSRr2=ProductEvent.id (in R_Product)<br>Map:ICSRr2=AdverseEffectReference.id (in IndividualCaseSafetyReport)<br>Map:ICSRr2=TransportationEvent.id (in R_Product)<br>Map:Lab=Activity.identifier<br>Map:LabViewer2.2=Activity.identifier<br>Map:LabViewer2.2=SpecimenCollection.identifier<br>Map:LabViewer2.2=LaboratoryTestIdentifier<br>Map:LSDAMv2.2.3Plus=Activity.identifier<br>Map:SDTM IGv3.1.2=DS.DSREFID<br>Map:SDTM IGv3.1.3=DS.DSREFID<br>Map:SDTM IGv3.1.3=MH.MHREFID<br>
+						<div class="ObjectDetailsNotes"><table>
+	<tr>
+		<td valign="top">
+			<i>Notes: </i><span style="margin-left: .4cm;"> </span>
+		</td>
+		<td>
+			DEFINITION:&lt;br/&gt;A unique symbol that establishes identity of an activity.&lt;br/&gt;&lt;br/&gt;EXAMPLE(S):&lt;br/&gt;12345 is the identifier for a substance administration&lt;br/&gt;&lt;br/&gt;OTHER NAME(S):&lt;br/&gt;&lt;br/&gt;NOTE(S):&lt;br/&gt;
+		</td>
+	</tr>
+</table></div>
+
+						
+				</td>
+			</tr>			<tr>
+				<td width="100%" class="TableRow">
+					<i>Public DSET&lt;CD&gt;</i><br /><strong>&nbsp;&nbsp;reasonCode</strong>
+				</td>
+			</tr>
+			<tr>
+				<td class="TableRowBottomDashed"  colspan="1">										
+					<a href="#" onclick="parent.toggleData('DetailsImageAttributes170')" style="text-decoration: none; color: #000000;"><img src="../../images/plus03.gif" align="absmiddle" id="DetailsImageAttributes170" border="0" />Details:</a>
+					<table border="0" cellspacing="0" cellpadding="0" class="Table" style="padding: 4px 18px;">
+					
+						<tr id="DetailsImageAttributes170_00" style="display: none;">
+							<td width="75"><i>Alias:</i></td>
+							<td></td>
+						</tr>
+						<tr id="DetailsImageAttributes170_01" style="display: none;">
+							<td width="75"><i>Initial:</i></td>
+							<td></td>
+						</tr>
+						<tr id="DetailsImageAttributes170_02" style="display: none;">
+							<td width="75"><i>Stereotype: </i></td>
+							<td></td>
+						</tr>
+						<tr id="DetailsImageAttributes170_03" style="display: none;">
+							<td width="75"><i>Ordered: </i></td>
+							<td></td>
+						</tr>
+						<tr id="DetailsImageAttributes170_04" style="display: none;">
+							<td width="75"><i>Range: </i></td>
+							<td>Range:0 to *</td>
+						</tr>
+						<tr id="DetailsImageAttributes170_05" style="display: none;">
+							<td width="75"><i>Transient: </i></td>
+							<td>False</td>
+						</tr>
+						<tr id="DetailsImageAttributes170_06" style="display: none;">
+							<td width="75"><i>Derived: </i></td>
+							<td>False</td>
+						</tr>
+							<tr id="DetailsImageAttributes170_07" style="display: none;">
+							<td width="75"><i>IsID: </i></td>
+						<td>False</td>
+						</tr>
+					</table>
+					
+					Map:AE=ProductInvestigation.reasonCode<br>Map:AE=Indication<br>Map:C3PRv2.9=ScheduledEpoch.offEpochReasonText<br>Map:C3PRv2.9=StudySubject.backDatedReasonCode<br>Map:C3PRv2.9=ScheduledEpoch.disapprovalReasonText<br>Map:C3PRv2.9=ScheduledEpoch.eligibilityWaiverReasonText<br>Map:C3PRv2.9=ScheduledArm.eligibilityWaiverReasonText<br>Map:CDASHv1.1=CM.CMINDC<br>Map:CTOM=Procedure.reasonCode<br>Map:CTOM=SubstanceAdministration.reasonCode<br>Map:CTOM=FemaleReproductiveCharacteristic.menopauseReasonOtherText<br>Map:CTOM=Imaging.reasonCode<br>Map:CTOM=SpecimenAcquisition.reasonCode<br>Map:CTOM=Surgery.reasonCode<br>Map:CTOM=Activity.reasonCode<br>Map:CTOM=Radiation.reasonCode<br>Map:CTOM=FemaleReproductiveCharacteristic.menopauseReasonCode<br>Map:CTRPv1.0=SubstanceAdministration.reasonCode<br>Map:CTRPv1.0=PlannedEligibilityCriterion.reasonCode<br>Map:CTRPv1.0=Activity.reasonCode<br>Map:CTRPv1.0=PlannedActivity.reasonCode<br>Map:CTRPv1.0=PlannedObservation.reasonCode<br>Map:CTRPv3.8=PerformedSubjectMilestone.reasonCode<br>Map:CTRv1.0=PlannedActivity.purpose<br>Map:CTRv1.0=Activity.reasonCode<br>Map:DICOM=Performed CT Acquisition Module - Protocol Element Identification Macro > Acquisition Protocol Element Sequence (0018,9920) > Protocol Element Purpose (0018,9924)<br>Map:DICOM=General Study Module - Reason For Performed Procedure Code Sequence (0040,1012)<br>Map:DICOM=Performed CT Reconstruction Module - Protocol Element Identification Macro > Reconstruction Protocol Element Sequence (0018,9934) > Protocol Element Purpose (0018,9924)<br>Map:DICOM=Protocol Context Mdoule - Potential Reasons for Procedure Code Sequence (0018,9909)<br>Map:DICOM=Protocol Context Module - Potential Reasons for Procedure (0018,9908)<br>Map:HCTv1.0=CDE 2744499:Therapies.Purpose of therapy:<br>Map:HCTv1.0=CDE 2957528:Therapies.Specify the reason for the current HSCT:<br>Map:HCTv1.0=CDE 2957419:Therapies.What was the reason for the current HSCT:<br>Map:HCTv1.0=CDE 2775979:Therapies.Specify the indication(s) for the supplemental intravenous immunoglobulin therapy:<br>Map:HCTv1.0=CDE 2775984:Therapies.Specify the other indication type for the supplemental intravenous immunoglobulin therapy:<br>Map:HCTv1.0=CDE 3181140:Therapies.Therapeutic procedure administered begin reason:<br>Map:HCTv1.0=CDE 2691434:Therapies.What was the indication for the alternative hematopoietic cell transplantation (HCT)?<br>Map:HCTv1.0=CDE 2861356:Therapies.Indication for therapy:<br>Map:HCTv1.0=MD Anderson Specific Content: Product.Specificity #2 of product<br>Map:HCTv1.0=CDE 2680962:Therapies.Indication for DCI<br>Map:HCTv1.0=CDE 2771502:Therapies.Specify the other indication for the subsequent HSCT:<br>Map:HCTv1.0=CDE 2691344:Therapies.Specify the indication for the other alternative HCT:<br>Map:HCTv1.0=CDE 2680966:Therapies.DCI indication other: specify<br>Map:HCTv1.0=CDE 2737040:Preparative Regimen.What was the reason for the reduced intensity/ non-myeloablative preparative regimen?<br>Map:HCTv1.0=CDE 2775815:Therapies.What was the reason hematopoietic, lymphoid growth factors or cytokines were administered?<br>Map:HCTv1.0=CDE 2737050:Therapies.Specify the other reason for the non-myeloablative / reduced intensity (NST / RIC) preparative regimen:<br>Map:HCTv1.0=CDE 2861364:Therapies.If code "4" other for indication of therapy, specify:<br>Map:HCTv1.0=MD Anderson Specific Content: Product.Specificity #1 of product<br>Map:HCTv1.0=CDE 2771490:Therapies.What was the indication for the subsequent HSCT?<br>Map:ICSRr2=CausalityAssessment.reasonCode (in IndividualCaseSafetyReport)<br>Map:Lab=Activity.reason<br>Map:LabViewer2.2=Activity.reason<br>Map:LabViewer2.2=SpecimenCollection.reason<br>Map:LSDAMv2.2.3Plus=Activity.reasonCode<br>Map:LSDAMv2.2.3Plus=PlannedActivity.purpose<br>Map:NCI CRF Standard=CDE 2003870v4.0: Concomitant Agent Concomitant Intervention or Procedure Reason<br>Map:PSC=Occurred.reason<br>Map:PSC=Scheduled.reason<br>Map:PSC=ScheduledEventState.reason<br>Map:SDTM IGv3.1.1=DS.DSTERM<br>Map:SDTM IGv3.1.1=CM.CMINDC<br>Map:SDTM IGv3.1.2=CM.CMINDC<br>Map:SDTM IGv3.1.3=CM.CMINDC<br>Map:TDM=ContactActivityPurpose.purposeType<br>Map:TDMv2=(New content - DefinedObservationResult.comment)<br>
+						<div class="ObjectDetailsNotes"><table>
+	<tr>
+		<td valign="top">
+			<i>Notes: </i><span style="margin-left: .4cm;"> </span>
+		</td>
+		<td>
+			DEFINITION:&lt;br/&gt;A coded value specifying the motivation, cause, or rationale of an activity.&lt;br/&gt;&lt;br/&gt;EXAMPLE(S):&lt;br/&gt;routine requirement, drug reaction, infectious disease reporting requirement, on patient request&lt;br/&gt;&lt;br/&gt;OTHER NAME(S):&lt;br/&gt;&lt;br/&gt;NOTE(S):&lt;br/&gt;The key difference in how this attribute is used across the Activity subclasses is temporal and the attribute has essentially the same meaning wherever it is used. The most likely uses of reasonCode are with PlannedActivities, where it identifies why an activity should be done as part of the study or experiment plan, and with PerformedActivities, where it identifies why an activity was done. While it&#39;s possible for a DefinedActivity to have a reason, BRIDG has no use cases for the use of this attribute in a DefinedActivity, though some may come to harmonization in the future. Nor is it likely, based on existing use cases, to be used much, if at all, for ScheduledActivities.&lt;br/&gt;
+		</td>
+	</tr>
+</table></div>
+
+						
+				</td>
+			</tr>			<tr>
+				<td width="100%" class="TableRow">
+					<i>Public ST</i><br /><strong>&nbsp;&nbsp;comment</strong>
+				</td>
+			</tr>
+			<tr>
+				<td class="TableRowBottomDashed"  colspan="1">										
+					<a href="#" onclick="parent.toggleData('DetailsImageAttributes171')" style="text-decoration: none; color: #000000;"><img src="../../images/plus03.gif" align="absmiddle" id="DetailsImageAttributes171" border="0" />Details:</a>
+					<table border="0" cellspacing="0" cellpadding="0" class="Table" style="padding: 4px 18px;">
+					
+						<tr id="DetailsImageAttributes171_00" style="display: none;">
+							<td width="75"><i>Alias:</i></td>
+							<td></td>
+						</tr>
+						<tr id="DetailsImageAttributes171_01" style="display: none;">
+							<td width="75"><i>Initial:</i></td>
+							<td></td>
+						</tr>
+						<tr id="DetailsImageAttributes171_02" style="display: none;">
+							<td width="75"><i>Stereotype: </i></td>
+							<td></td>
+						</tr>
+						<tr id="DetailsImageAttributes171_03" style="display: none;">
+							<td width="75"><i>Ordered: </i></td>
+							<td></td>
+						</tr>
+						<tr id="DetailsImageAttributes171_04" style="display: none;">
+							<td width="75"><i>Range: </i></td>
+							<td>Range:0 to 1</td>
+						</tr>
+						<tr id="DetailsImageAttributes171_05" style="display: none;">
+							<td width="75"><i>Transient: </i></td>
+							<td>False</td>
+						</tr>
+						<tr id="DetailsImageAttributes171_06" style="display: none;">
+							<td width="75"><i>Derived: </i></td>
+							<td>False</td>
+						</tr>
+							<tr id="DetailsImageAttributes171_07" style="display: none;">
+							<td width="75"><i>IsID: </i></td>
+						<td>False</td>
+						</tr>
+					</table>
+					
+					AE:Exclude=True<br>Map:caAERSv2.2=TreatmentAssignment.comments<br>Map:caAERSv2.2=CourseAgent.comments<br>Map:caAERSv2.2=ReportReviewComment<br>Map:CTRPv1.0=SubstanceAdministration.comment<br>Map:CTRPv1.0=PlannedObservation.comment<br>Map:CTRPv1.0=Activity.comment<br>Map:CTRPv1.0=PlannedEligibilityCriterion.comment<br>Map:CTRPv1.0=PlannedActivity.comment<br>Map:CTRv1.0=Activity.comment<br>Map:CTRv1.0=DefinedObservationResult.commentText<br>Map:DICOM=Patient Study Module - Service Episode Description (0038,0062)<br>Map:ICSRr2=CausalityAssessment.text (in IndividualCaseSafetyReport)<br>Map:Lab=Specimen.commentsFromInvestigator<br>Map:Lab=LabTest.comments<br>Map:Lab=Specimen.commentsFromLaboratory<br>Map:LabViewer2.2=LaboratoryTest.comment<br>Map:LabViewer2.2=Specimen.commentFromLaboratory<br>Map:LSDAMv2.2.3Plus=Activity.comment<br>Map:LSDAMv2.2.3Plus=DefinedCompositionRelationship.comment<br>Map:PSC=ScheduledEvent.notes<br>Map:PSCv2.6=ScheduledActivity.notes<br>
+						<div class="ObjectDetailsNotes"><table>
+	<tr>
+		<td valign="top">
+			<i>Notes: </i><span style="margin-left: .4cm;"> </span>
+		</td>
+		<td>
+			DEFINITION:&lt;br/&gt;Additional description of the activity.&lt;br/&gt;&lt;br/&gt;EXAMPLE(S):&lt;br/&gt;Guidance on how to perform the observation. (for DefinedObservation.comment)&lt;br/&gt;&lt;br/&gt;OTHER NAME(S):&lt;br/&gt;&lt;br/&gt;NOTE(S):&lt;br/&gt;
+		</td>
+	</tr>
+</table></div>
+
+						
+				</td>
+			</tr>
+	</table>
+</div>
+		<div class="ItemBody" id="AssociationsToTable">
+			<table border="0" cellspacing="0" cellpadding="0" class="Table">
+				<tr>
+					<td width="40%" class="TableHeading">Element</td>
+					<td width="30%" class="TableHeading">Source Role</td>
+					<td width="30%" class="TableHeading">Target Role</td>
+				</tr>
+				<tr>
+					<td width="40%" class="TableRow" valign="top">
+						<a href="../EA10/EA419.htm">StudySite</a><br />
+						Class &nbsp;
+					</td>
+					<td width="30%" class="TableRow" valign="top">
+						<strong>Name:</strong> hasContextActivity<br />
+						&nbsp;
+					</td>
+					<td width="30%" class="TableRow" valign="top">
+						<strong>Name:</strong> contextForStudySite<br />
+						&nbsp;	
+					</td>
+				</tr>
+				<tr>
+					<td class="TableRowBottomDashed"  colspan="3">
+						<div class="DetailsDivParent"><img src="../../images/minus03.gif" align="absmiddle" id="DetailsImageLink172" onclick="parent.toggleDiv('detailsDIVLink172','DetailsImageLink172')" />Details:
+							<div id="detailsDIVLink172" class="DetailsDiv" >
+							<div class="ObjectDetailsNotes">DESCRIPTION:&lt;br/&gt;Each Activity might have as context one StudySite. Each StudySite might be the context for one or more Activity.&lt;br/&gt;&lt;br/&gt;DEFINITION:&lt;br/&gt;&lt;br/&gt;EXAMPLE(S):&lt;br/&gt;&lt;br/&gt;OTHER NAME(S):&lt;br/&gt;&lt;br/&gt;NOTE(S):&lt;br/&gt;</div>
+
+							</div>
+						</div>
+					</td>
+				</tr>
+				<tr>
+					<td width="40%" class="TableRow" valign="top">
+						<a href="EA148.htm">StudyCountry</a><br />
+						Class &nbsp;
+					</td>
+					<td width="30%" class="TableRow" valign="top">
+						<strong>Name:</strong> hasContextActivity<br />
+						&nbsp;
+					</td>
+					<td width="30%" class="TableRow" valign="top">
+						<strong>Name:</strong> contextForStudyCountry<br />
+						&nbsp;	
+					</td>
+				</tr>
+				<tr>
+					<td class="TableRowBottomDashed"  colspan="3">
+						<div class="DetailsDivParent"><img src="../../images/minus03.gif" align="absmiddle" id="DetailsImageLink173" onclick="parent.toggleDiv('detailsDIVLink173','DetailsImageLink173')" />Details:
+							<div id="detailsDIVLink173" class="DetailsDiv" >
+							<div class="ObjectDetailsNotes">DESCRIPTION:&lt;br/&gt;Each Activity might have as context one StudyCountry. Each StudyCountry might be the context for one or more Activity.&lt;br/&gt;&lt;br/&gt;DEFINITION:&lt;br/&gt;&lt;br/&gt;EXAMPLE(S):&lt;br/&gt;&lt;br/&gt;OTHER NAME(S):&lt;br/&gt;&lt;br/&gt;NOTE(S):&lt;br/&gt;</div>
+
+							</div>
+						</div>
+					</td>
+				</tr>
+				<tr>
+					<td width="40%" class="TableRow" valign="top">
+						<a href="EA130.htm">Project</a><br />
+						Class &nbsp;
+					</td>
+					<td width="30%" class="TableRow" valign="top">
+						<strong>Name:</strong> usedActivity<br />
+						&nbsp;
+					</td>
+					<td width="30%" class="TableRow" valign="top">
+						<strong>Name:</strong> usingProject<br />
+						&nbsp;	
+					</td>
+				</tr>
+				<tr>
+					<td class="TableRowBottomDashed"  colspan="3">
+						<div class="DetailsDivParent"><img src="../../images/minus03.gif" align="absmiddle" id="DetailsImageLink174" onclick="parent.toggleDiv('detailsDIVLink174','DetailsImageLink174')" />Details:
+							<div id="detailsDIVLink174" class="DetailsDiv" >
+							<div class="ObjectDetailsNotes">DESCRIPTION:&lt;br/&gt;Each Activity might be used by one Project.&#160; Each Project might use one or more Activity.&lt;br/&gt;&lt;br/&gt;DEFINITION:&lt;br/&gt;&lt;br/&gt;EXAMPLE(S):&lt;br/&gt;&lt;br/&gt;OTHER NAME(S):&lt;br/&gt;&lt;br/&gt;NOTE(S):&lt;br/&gt;</div>
+
+							</div>
+						</div>
+					</td>
+				</tr>
+				<tr>
+					<td width="40%" class="TableRow" valign="top">
+						<a href="EA151.htm">Subject</a><br />
+						Class &nbsp;
+					</td>
+					<td width="30%" class="TableRow" valign="top">
+						<strong>Name:</strong> involvingActivity<br />
+						&nbsp;
+					</td>
+					<td width="30%" class="TableRow" valign="top">
+						<strong>Name:</strong> involvedSubject<br />
+						&nbsp;	
+					</td>
+				</tr>
+				<tr>
+					<td class="TableRowBottomDashed"  colspan="3">
+						<div class="DetailsDivParent"><img src="../../images/minus03.gif" align="absmiddle" id="DetailsImageLink175" onclick="parent.toggleDiv('detailsDIVLink175','DetailsImageLink175')" />Details:
+							<div id="detailsDIVLink175" class="DetailsDiv" >
+							<div class="ObjectDetailsNotes">DESCRIPTION:&lt;br/&gt;Each Activity might be participated in by one Subject. Each Subject might participate in one or more Activity.&lt;br/&gt;&lt;br/&gt;DEFINITION:&lt;br/&gt;&lt;br/&gt;EXAMPLE(S):&lt;br/&gt;&lt;br/&gt;OTHER NAME(S):&lt;br/&gt;&lt;br/&gt;NOTE(S):&lt;br/&gt;&lt;br/&gt;</div>
+
+							</div>
+						</div>
+					</td>
+				</tr>
+				<tr>
+					<td width="40%" class="TableRow" valign="top">
+						<a href="EA98.htm">ExperimentalUnit</a><br />
+						Class &nbsp;
+					</td>
+					<td width="30%" class="TableRow" valign="top">
+						<strong>Name:</strong> involvingActivity<br />
+						&nbsp;
+					</td>
+					<td width="30%" class="TableRow" valign="top">
+						<strong>Name:</strong> involvedExperimentalUnit<br />
+						&nbsp;	
+					</td>
+				</tr>
+				<tr>
+					<td class="TableRowBottomDashed"  colspan="3">
+						<div class="DetailsDivParent"><img src="../../images/minus03.gif" align="absmiddle" id="DetailsImageLink176" onclick="parent.toggleDiv('detailsDIVLink176','DetailsImageLink176')" />Details:
+							<div id="detailsDIVLink176" class="DetailsDiv" >
+							<div class="ObjectDetailsNotes">DESCRIPTION:&lt;br/&gt;Each Activity might be participated in by one ExperimentalUnit. Each ExperimentalUnit might participate in one or more Activity.&lt;br/&gt;&lt;br/&gt;DEFINITION:&lt;br/&gt;&lt;br/&gt;EXAMPLE(S):&lt;br/&gt;&lt;br/&gt;OTHER NAME(S):&lt;br/&gt;&lt;br/&gt;NOTE(S):&lt;br/&gt;&lt;br/&gt;</div>
+
+							</div>
+						</div>
+					</td>
+				</tr>
+
+			</table>
+		</div>
+		<div class="ItemBody" id="AssociationsFromTable">
+			<table border="0" cellspacing="0" cellpadding="0" class="Table">
+				<tr>
+					<td width="40%" class="TableHeading">Element</td>
+					<td width="30%" class="TableHeading">Source Role</td>
+					<td width="30%" class="TableHeading">Target Role</td>
+				</tr>
+				<tr>
+					<td width="40%" class="TableRow" valign="top">
+						<a href="../EA4/EA163.htm">ExperimentalActivityItem</a><br />
+						Class &nbsp;
+					</td>
+					<td width="30%" class="TableRow" valign="top">
+						<strong>Name:</strong> usedExperimentalActivityItem<br />
+						&nbsp;
+					</td>
+					<td width="30%" class="TableRow" valign="top">
+						<strong>Name:</strong> usingActivity<br />
+						&nbsp;	
+					</td>
+				</tr>
+				<tr>
+					<td class="TableRowBottomDashed"  colspan="3">
+						<div class="DetailsDivParent"><img src="../../images/minus03.gif" align="absmiddle" id="DetailsImageLink177" onclick="parent.toggleDiv('detailsDIVLink177','DetailsImageLink177')" />Details:
+							<div id="detailsDIVLink177" class="DetailsDiv" >
+							<div class="ObjectDetailsNotes">DESCRIPTION:&lt;br/&gt;Each ExperimentalActivityItem always is used in one Activity.&#160; Each Activity might use one or more ExperimentalActivityItem.&lt;br/&gt;&lt;br/&gt;DEFINITION:&lt;br/&gt;&lt;br/&gt;EXAMPLE(S):&lt;br/&gt;&lt;br/&gt;OTHER NAME(S):&lt;br/&gt;&lt;br/&gt;NOTES:&lt;br/&gt;The documented use cases from life sciences are limited to procedure and observations.&#160; Use cases for other kinds of activities in life sciences are needed to support this relationship at Activity level. In the next release, this relationship will have to be re-assessed. &lt;br/&gt;</div>
+
+							</div>
+						</div>
+					</td>
+				</tr>
+				<tr>
+					<td width="40%" class="TableRow" valign="top">
+						<a href="EA119.htm">Performer</a><br />
+						Class &nbsp;
+					</td>
+					<td width="30%" class="TableRow" valign="top">
+						<strong>Name:</strong> performingPerformer<br />
+						&nbsp;
+					</td>
+					<td width="30%" class="TableRow" valign="top">
+						<strong>Name:</strong> performedActivity<br />
+						&nbsp;	
+					</td>
+				</tr>
+				<tr>
+					<td class="TableRowBottomDashed"  colspan="3">
+						<div class="DetailsDivParent"><img src="../../images/minus03.gif" align="absmiddle" id="DetailsImageLink178" onclick="parent.toggleDiv('detailsDIVLink178','DetailsImageLink178')" />Details:
+							<div id="detailsDIVLink178" class="DetailsDiv" >
+							<div class="ObjectDetailsNotes">DESCRIPTION:&lt;br/&gt;Each Performer always performs one Activity.&#160; Each Activity might be performed by one or more Performer.&lt;br/&gt;&lt;br/&gt;DEFINITION:&lt;br/&gt;&lt;br/&gt;EXAMPLE(S):&lt;br/&gt;&lt;br/&gt;OTHER NAME(S):&lt;br/&gt;&lt;br/&gt;NOTE(S):&lt;br/&gt;</div>
+
+							</div>
+						</div>
+					</td>
+				</tr>
+
+			</table>
+		</div>
+<div class="ItemBody" id="TaggedValTable">
+	<table align="center" border="0" cellspacing="0" cellpadding="0" class="Table">
+		<tr>
+			<td width="50%" class="TableHeading">Tag</td>
+			<td width="50%" class="TableHeading">Value</td>
+		</tr>
+					<tr>
+				<td width="50%" class="TableRow" valign="top">Map:AE</td>
+				<td width="50%" class="TableRow" valign="top">Activity</td>
+			</tr>	
+			<tr>
+				<td class="TableRowBottomDashed"  colspan="2">
+					<div class="DetailsDivParent"><img src="../../images/minus03.gif" align="absmiddle" id="DetailsImageScenario179" onclick="parent.toggleDiv('detailsDIVScenario179','DetailsImageScenario179')" />Details:
+						<div id="detailsDIVScenario179" class="DetailsDiv" >
+						&nbsp;
+						</div>
+					</div>
+				</td>
+			</tr>			<tr>
+				<td width="50%" class="TableRow" valign="top">Map:CTRPv1.0</td>
+				<td width="50%" class="TableRow" valign="top">Activity</td>
+			</tr>	
+			<tr>
+				<td class="TableRowBottomDashed"  colspan="2">
+					<div class="DetailsDivParent"><img src="../../images/minus03.gif" align="absmiddle" id="DetailsImageScenario180" onclick="parent.toggleDiv('detailsDIVScenario180','DetailsImageScenario180')" />Details:
+						<div id="detailsDIVScenario180" class="DetailsDiv" >
+						&nbsp;
+						</div>
+					</div>
+				</td>
+			</tr>			<tr>
+				<td width="50%" class="TableRow" valign="top">Map:CTRPv3.8</td>
+				<td width="50%" class="TableRow" valign="top">Activity</td>
+			</tr>	
+			<tr>
+				<td class="TableRowBottomDashed"  colspan="2">
+					<div class="DetailsDivParent"><img src="../../images/minus03.gif" align="absmiddle" id="DetailsImageScenario181" onclick="parent.toggleDiv('detailsDIVScenario181','DetailsImageScenario181')" />Details:
+						<div id="detailsDIVScenario181" class="DetailsDiv" >
+						&nbsp;
+						</div>
+					</div>
+				</td>
+			</tr>			<tr>
+				<td width="50%" class="TableRow" valign="top">Map:CTRRr3</td>
+				<td width="50%" class="TableRow" valign="top">Activity</td>
+			</tr>	
+			<tr>
+				<td class="TableRowBottomDashed"  colspan="2">
+					<div class="DetailsDivParent"><img src="../../images/minus03.gif" align="absmiddle" id="DetailsImageScenario182" onclick="parent.toggleDiv('detailsDIVScenario182','DetailsImageScenario182')" />Details:
+						<div id="detailsDIVScenario182" class="DetailsDiv" >
+						&nbsp;
+						</div>
+					</div>
+				</td>
+			</tr>			<tr>
+				<td width="50%" class="TableRow" valign="top">Map:CTRv1.0</td>
+				<td width="50%" class="TableRow" valign="top">Activity</td>
+			</tr>	
+			<tr>
+				<td class="TableRowBottomDashed"  colspan="2">
+					<div class="DetailsDivParent"><img src="../../images/minus03.gif" align="absmiddle" id="DetailsImageScenario183" onclick="parent.toggleDiv('detailsDIVScenario183','DetailsImageScenario183')" />Details:
+						<div id="detailsDIVScenario183" class="DetailsDiv" >
+						&nbsp;
+						</div>
+					</div>
+				</td>
+			</tr>			<tr>
+				<td width="50%" class="TableRow" valign="top">Map:LSDAMv2.2.3Plus</td>
+				<td width="50%" class="TableRow" valign="top">Activity</td>
+			</tr>	
+			<tr>
+				<td class="TableRowBottomDashed"  colspan="2">
+					<div class="DetailsDivParent"><img src="../../images/minus03.gif" align="absmiddle" id="DetailsImageScenario184" onclick="parent.toggleDiv('detailsDIVScenario184','DetailsImageScenario184')" />Details:
+						<div id="detailsDIVScenario184" class="DetailsDiv" >
+						&nbsp;
+						</div>
+					</div>
+				</td>
+			</tr>			<tr>
+				<td width="50%" class="TableRow" valign="top">Map:SEER 2015</td>
+				<td width="50%" class="TableRow" valign="top">SECTION VII FIRST COURSE OF THERAPY - DATE THERAPY INITIATED</td>
+			</tr>	
+			<tr>
+				<td class="TableRowBottomDashed"  colspan="2">
+					<div class="DetailsDivParent"><img src="../../images/minus03.gif" align="absmiddle" id="DetailsImageScenario185" onclick="parent.toggleDiv('detailsDIVScenario185','DetailsImageScenario185')" />Details:
+						<div id="detailsDIVScenario185" class="DetailsDiv" >
+						&nbsp;
+						</div>
+					</div>
+				</td>
+			</tr>
+	</table>
+</div>		<div class="ItemBody" id="ConstraintsTable">
+			<table border="0" cellspacing="0" cellpadding="0" class="Table">
+			  	<tr>
+					<td width="80%" class="TableHeading">Constraint</td>
+					<td width="10%" class="TableHeading">Type</td>
+					<td width="10%" class="TableHeading">Status</td>
+				</tr>
+				<tr>
+					<td width="80%" class="TableRow">be participated in by Declaration</td>
+					<td width="10%" class="TableRow">Invariant</td>
+					<td width="10%" class="TableRow">Approved</td>
+				</tr>
+				<tr>
+					<td class="TableRowBottomDashed"  colspan="3">
+						<div class="DetailsDivParent"><img src="../../images/minus03.gif" align="absmiddle" id="DetailsImageConstraints186" onclick="parent.toggleDiv('detailsDIVConstraints186','DetailsImageConstraints186')" />Details:
+							<div id="detailsDIVConstraints186" class="DetailsDiv" >
+							<div class="ObjectDetailsNotes">Unless constrained at any subclass level, all associations from Subject (including StudySubject) and ExperimentalUnit are valid for all activities.&lt;br/&gt;</div>
+
+							</div>
+						</div>
+					</td>
+				</tr>
+
+			</table>
+		</div>
+		<div class="ItemBody" id="LinksTable">
+			<table align="center" border="0" cellspacing="0" cellpadding="0" class="Table">
+				<tr>
+					<td width="30%" class="TableHeading">Object</td>
+					<td width="10%" class="TableHeading">Type</td>
+					<td width="10%" class="TableHeading">Connection</td>
+					<td width="10%" class="TableHeading">Direction</td>
+					<td width="40%" class="TableHeading">Notes</td>
+				</tr>
+				<tr>
+					<td width="30%" class="TableRow" valign="top"><a href="../EA7/EA293.htm">PlannedActivity</a></td>
+					<td width="10%" class="TableRow" valign="top">Class</td>
+					<td width="10%" class="TableRow" valign="top">Generalization</td>
+					<td width="10%" class="TableRow" valign="top">From</td>
+					<td width="40%" class="TableRow" valign="top">DESCRIPTION:
+Each PlannedActivity always specializes one Activity. Each Activity might be specialized by one PlannedActivity.
+
+DEFINITION:
+
+EXAMPLE(S):
+
+OTHER NAME(S):
+
+NOTE(S):
+</td>
+				</tr>
+				<tr>
+					<td width="30%" class="TableRow" valign="top"><a href="../EA7/EA256.htm">DefinedActivity</a></td>
+					<td width="10%" class="TableRow" valign="top">Class</td>
+					<td width="10%" class="TableRow" valign="top">Generalization</td>
+					<td width="10%" class="TableRow" valign="top">From</td>
+					<td width="40%" class="TableRow" valign="top">DESCRIPTION:
+Each DefinedActivity always specializes one Activity. Each Activity might be specialized by one DefinedActivity.
+
+DEFINITION:
+
+EXAMPLE(S):
+
+OTHER NAME(S):
+
+NOTE(S):
+</td>
+				</tr>
+				<tr>
+					<td width="30%" class="TableRow" valign="top"><a href="../EA10/EA407.htm">ScheduledActivity</a></td>
+					<td width="10%" class="TableRow" valign="top">Class</td>
+					<td width="10%" class="TableRow" valign="top">Generalization</td>
+					<td width="10%" class="TableRow" valign="top">From</td>
+					<td width="40%" class="TableRow" valign="top">DESCRIPTION:
+Each ScheduledActivity always specializes one Activity. Each Activity might be specialized by one ScheduledActivity.
+
+DEFINITION:
+
+EXAMPLE(S):
+
+OTHER NAME(S):
+
+NOTE(S):
+</td>
+				</tr>
+				<tr>
+					<td width="30%" class="TableRow" valign="top"><a href="../EA10/EA373.htm">PerformedActivity</a></td>
+					<td width="10%" class="TableRow" valign="top">Class</td>
+					<td width="10%" class="TableRow" valign="top">Generalization</td>
+					<td width="10%" class="TableRow" valign="top">From</td>
+					<td width="40%" class="TableRow" valign="top">DESCRIPTION:
+Each PerformedActivity always specializes one Activity. Each Activity might be specialized by one PerformedActivity.
+
+DEFINITION:
+
+EXAMPLE(S):
+
+OTHER NAME(S):
+
+NOTE(S):
+</td>
+				</tr>
+
+			</table>
+		</div>
+	</div>
+<div class="pageFooter"></div>
+ 
+</body>
+</html>

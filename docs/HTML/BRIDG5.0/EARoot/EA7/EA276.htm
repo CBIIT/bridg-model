@@ -1,0 +1,970 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>Protocol Representation Sub-Domain::DefinedObservationResult</title>
+<link href="../../css/ea.css" rel="stylesheet" type="text/css" />
+<script>
+function initPage(src) {	
+	if(parent==this&&(this.location+"").indexOf('EARoot')!=-1)
+		document.location=(this.location+"").substring(0,(this.location+"").indexOf('EARoot'))+"index"+(this.location+"").substring((this.location+"").lastIndexOf('.'))+"?goto="+((this.location+"").substring((this.location+"").indexOf('EARoot')+7,(this.location+"").lastIndexOf('.')).replace(/\//g,':').replace(/EA/g,""));
+	else
+		parent.initPage(src);
+}
+
+function nameClassifier(name, separator)
+{
+  var str = name;
+  var classifierName;
+  var node = document.getElementById('name_classifier');
+  if(node != null)
+  {
+    classifierName = node.innerHTML;
+  }
+  if(classifierName != "")
+  {
+   str += separator + classifierName;
+  }
+  
+  return str;
+}
+</script>
+</head>
+<body onload="initPage(this);" class="Content">
+<div class="pageHeader"></div>
+<div class="PageBody">
+	<div id="name_classifier" style="display: none;"></div>
+	<span class="ObjectTitle"><script type="text/javascript">document.write(nameClassifier("DefinedObservationResult", " : "))</script>  : Public   Class</span>
+	<table border="0" cellpadding="0" cellspacing="0" class="ObjectDetails">
+		<tr>
+			<td width="15%" class="ObjectDetailsTopic">Created:</td>
+			<td width="85%" class="ObjectDetailsValue">7/6/2009 2:51:26 PM</td>
+		</tr>
+		<tr>
+			<td class="ObjectDetailsTopic">Modified:</td>
+			<td class="ObjectDetailsValue">8/26/2017 2:39:25 AM</td>
+		</tr>
+		<tr style="height: 10px"><td colspan="2"></td></tr>
+		<tr>
+			<td class="ObjectDetailsTopic"><img src="../../images/plus03.gif" align="absmiddle" id="proj" onclick="parent.toggleData(this.id)" />Project:</td>
+			<td class="ObjectDetailsValue"></td>
+		</tr>
+		<tr id="proj00" style="display: none;">
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Author:</td>
+			<td class="ObjectDetailsValue">BRIDG SCC</td>
+		</tr>
+		<tr id="proj01" style="display: none;">
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Version:</td>
+			<td class="ObjectDetailsValue">1.0</td>
+		</tr>
+		<tr id="proj02" style="display: none;">
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Phase:</td>
+			<td class="ObjectDetailsValue">1.0</td>
+		</tr>
+		<tr id="proj03" style="display: none;">
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Status:</td>
+			<td class="ObjectDetailsValue"><none></td>
+		</tr>
+		<tr id="proj04" style="display: none;">
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Complexity:</td>
+			<td class="ObjectDetailsValue">Easy</td>
+		</tr>
+		<tr id="proj05" style="display: none;">
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Difficulty:</td>
+			<td class="ObjectDetailsValue"></td>
+		</tr>
+		<tr id="proj06" style="display: none;">
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Priority:</td>
+			<td class="ObjectDetailsValue"></td>
+		</tr>
+		<tr id="proj05" style="display: none;">
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Multiplicity:</td>
+			<td class="ObjectDetailsValue"></td>
+		</tr>
+		<tr>
+			<td class="ObjectDetailsTopic"><img src="../../images/plus03.gif" align="absmiddle" id="adv" onclick="parent.toggleData(this.id)" />Advanced:</td>
+			<td class="ObjectDetailsValue"></td>
+		</tr>
+		<tr id="adv00" style="display: none;">
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">UUID:</td>
+			<td class="ObjectDetailsValue">{48C1436F-3803-45e9-BF4C-512E587FE41C}</td>
+		</tr>
+		<tr id="adv01" style="display: none;">
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Appears In:</td>
+			<td class="ObjectDetailsValue"><a href="../EA1.htm">UML-Based Comprehensive BRIDG Model Diagram</a>, <a href="../EA1/EA28.htm">View AE: Adverse Event</a>, <a href="EA240.htm">View PR: Protocol Representation</a>, <a href="../EA11/EA454.htm">SDTM 3.1.3 View</a>, <a href="../EA11/EA448.htm">Participant Registration</a></td>
+		</tr>
+	</table>
+	<div class="ObjectDetailsNotes">DEFINITION:&lt;br/&gt;A reusable, &quot;template&quot; description of possible findings of an observation. &lt;br/&gt;&lt;br/&gt;EXAMPLE(S):&lt;br/&gt;A blood pressure measurement may result in a diastolic number and a systolic number.&lt;br/&gt;&lt;br/&gt;OTHER NAME(S):&lt;br/&gt;&lt;br/&gt;NOTE(S):&lt;br/&gt;The DefinedObservationResult class can be used to represent defined ranges for contingencies by constraining the value attribute from ANY to IVL#lt;PQ#gt;, for instance, or any other range value.&#160; Such DefinedObservationResults may be used as criteria for conditional activities or repeated activities.&lt;br/&gt;</div>
+
+	<div class="TableGroup" id="TableGroup">
+		<ul class="ItemTitle">
+			<li onClick="parent.toggleItem('Attributes');" id="AttributesTitle">Attributes</li>
+			<li onClick="parent.toggleItem('AssociationsTo');" id="AssociationsToTitle">Associations To</li>
+			<li onClick="parent.toggleItem('AssociationsFrom');" id="AssociationsFromTitle">Associations From</li>
+			<li onClick="parent.toggleItem('TaggedVal');" id="TaggedValTitle">Tagged Values</li>
+			<li onClick="parent.toggleItem('Links');" id="LinksTitle">Other Links</li>
+		</ul>
+<div class="ItemBody" id="AttributesTable">
+	<table border="0" cellspacing="0" cellpadding="0" class="Table">
+		<tr>
+			<td width="100%" class="TableHeading">Attribute</td>
+		</tr>
+						<tr>
+				<td width="100%" class="TableRow">
+					<i>Public ANY</i><br /><strong>&nbsp;&nbsp;value</strong>
+				</td>
+			</tr>
+			<tr>
+				<td class="TableRowBottomDashed"  colspan="1">										
+					<a href="#" onclick="parent.toggleData('DetailsImageAttributes1693')" style="text-decoration: none; color: #000000;"><img src="../../images/plus03.gif" align="absmiddle" id="DetailsImageAttributes1693" border="0" />Details:</a>
+					<table border="0" cellspacing="0" cellpadding="0" class="Table" style="padding: 4px 18px;">
+					
+						<tr id="DetailsImageAttributes1693_00" style="display: none;">
+							<td width="75"><i>Alias:</i></td>
+							<td></td>
+						</tr>
+						<tr id="DetailsImageAttributes1693_01" style="display: none;">
+							<td width="75"><i>Initial:</i></td>
+							<td></td>
+						</tr>
+						<tr id="DetailsImageAttributes1693_02" style="display: none;">
+							<td width="75"><i>Stereotype: </i></td>
+							<td></td>
+						</tr>
+						<tr id="DetailsImageAttributes1693_03" style="display: none;">
+							<td width="75"><i>Ordered: </i></td>
+							<td></td>
+						</tr>
+						<tr id="DetailsImageAttributes1693_04" style="display: none;">
+							<td width="75"><i>Range: </i></td>
+							<td>Range:0 to 1</td>
+						</tr>
+						<tr id="DetailsImageAttributes1693_05" style="display: none;">
+							<td width="75"><i>Transient: </i></td>
+							<td>False</td>
+						</tr>
+						<tr id="DetailsImageAttributes1693_06" style="display: none;">
+							<td width="75"><i>Derived: </i></td>
+							<td>False</td>
+						</tr>
+							<tr id="DetailsImageAttributes1693_07" style="display: none;">
+							<td width="75"><i>IsID: </i></td>
+						<td>False</td>
+						</tr>
+					</table>
+					
+					Map:AE=AdverseEvent.reactionText<br>Map:AE=ProductInvestigation.evaluationResultCode<br>Map:AE=InvestigativeSubject.gestationPeriod<br>Map:AE=Person.numberOfSiblings<br>Map:AE=Assessment.textInterpretation<br>Map:AE=Animal.overallStateOfHealthCode<br>Map:AE=AdverseEvent.adverseEventTermCode<br>Map:AE=Assessment.codedInterpretation<br>Map:AE=ProductObservation.value<br>Map:C3PR=StratificationCriterionPermissbleAnswer.permissibleAnswer<br>Map:C3PRv2.9=StratificationCriterionPermissibleAnswer.permissibleAnswer<br>Map:caAERSv2.2=AbstractMeddraDomain.hartsCode<br>Map:caAERSv2.2=AbstractMeddraDomain.icd9CmCode<br>Map:caAERSv2.2=AbstractMeddraDomain.icd9Code<br>Map:caAERSv2.2=AbstractMeddraDomain.meddraCode > ExpectedAEMeddraLowLevelTerm<br>Map:caAERSv2.2=Ctc.name > ExpectedAECtcTerm<br>Map:caAERSv2.2=CtcTerm.term > AbstractExpectedAE<br>Map:caAERSv2.2=AbstractMeddraDomain.icd10Code<br>Map:caAERSv2.2=AbstractMeddraDomain.jartCode<br>Map:caAERSv2.2=AbstractMeddraDomain.whoArtCode<br>Map:caAERSv2.2=CtcTerm.select > AbstractExpectedAE<br>Map:caAERSv2.2=MeddraVersion.name > ExpectedAEMeddraLowLevelTerm<br>Map:caAERSv2.2=MeddraVersion.name > SolicitedAdverseEvent (meddraTerm)<br>Map:caAERSv2.2=AbstractMeddraDomain.costartSymbol<br>Map:caAERSv2.2=AbstractMeddraDomain.meddraTerm<br>Map:caAERSv2.2=CtcTerm.ctepCode > AbstractExpectedAE<br>Map:caAERSv2.2=AbstractMeddraDomain.version_id<br>Map:caAERSv2.2=MeddraVersion.name > SolicitedAdverseEvent (otherTerm)<br>Map:caAERSv2.2=AbstractMeddraDomain.meddraCode > ExpectedAECtcTerm<br>Map:caAERSv2.2=Ctc.name > SolicitedAdverseEvent<br>Map:caAERSv2.2=MeddraVersion.name > ExpectedAECtcTerm<br>Map:CTOM=FemaleReproductiveCharacteristic.liveBirthCount<br>Map:CTOM=FemaleReproductiveCharacteristic.abortionIndicator<br>Map:CTOM=QualitativeEvaluation.painIndexCode<br>Map:CTOM=FemaleReproductiveCharacteristic.stillBirthCount<br>Map:CTOM=Specimen.volume<br>Map:CTOM=DiseaseResponse.courseDispositionCode<br>Map:CTOM=Diagnosis.diseaseDiagnosisCodeSystem<br>Map:CTOM=DiseaseResponse.responseCodeSystem<br>Map:CTOM=DeathSummary.deathCauseCode<br>Map:CTOM=DeathSummary.deathCauseText<br>Map:CTOM=Diagnosis.diseaseDiagnosisCode<br>Map:CTOM=Diagnosis.recurrenceIndicator<br>Map:CTOM=ClinicalResult.value<br>Map:CTOM=Histopathology.grossExamResultCode<br>Map:CTOM=DiseaseResponse.responseCode<br>Map:CTOM=CancerStage.stageCodeSystem<br>Map:CTOM=AdverseEvent.descriptionText<br>Map:CTOM=ClinicalResult.valueUnitOfMeasureCode<br>Map:CTOM=LesionEvaluation.evaluationCode<br>Map:CTOM=CancerStage.stageCode<br>Map:CTOM=PartcipantEligibilityAnswer.answerText<br>Map:CTOM=QualitativeEvaluation.survivalStatusDescriptionText<br>Map:CTOM=QualitativeEvaluation.anamResultAccuracyPercent<br>Map:CTOM=Participant.householdIncomeCode<br>Map:CTOM=QualitativeEvaluation.performanceStatusCode<br>Map:CTOM=QualitativeEvaluation.menstrualIndicator<br>Map:CTOM=Diagnosis.diseaseStatusCode<br>Map:CTOM=FemaleReproductiveCharacteristic.firstLiveBirthAge<br>Map:CTOM=QualitativeEvaluation.menstrualPatternTypeCode<br>Map:CTOM=FemaleReproductiveCharacteristic.menopauseAge<br>Map:CTOM=QualitativeEvaluation.survivalStatusCode<br>Map:CTOM=QualitativeEvaluation.performanceStatusCodeSystem<br>Map:CTOM=AdverseEvent.outcomeCode<br>Map:CTOM=QualitativeEvaluation.painIndexCodeSystem<br>Map:CTRPv1.0=PlannedEligibilityCriterion.requiredResponse<br>Map:CTRPv3.8=PlannedEligibilityCriterion.eligibleGenderCode<br>Map:CTRPv3.8=PlannedEligibilityCriterion.value<br>Map:CTRPv3.8=PlannedEligibilityCriterion.textValue<br>Map:CTRR=Gestational Age<br>Map:CTRR=Prior and Concomitant Medication(s)<br>Map:CTRR=Maximum Age<br>Map:CTRR=Subject Race(s)<br>Map:CTRR=Special Populations<br>Map:CTRR=Lifestyle Choices<br>Map:CTRR=Substance Use<br>Map:CTRR=Current Population Disease Condition<br>Map:CTRR=Pregnancy<br>Map:CTRR=Subject Ethnicity <br>Map:CTRR=Ethical Considerations (e.g. informed consent)<br>Map:CTRR=Nursing<br>Map:CTRR=Subject Gender<br>Map:CTRR=Minimum Age<br>Map:CTRR=BMI<br>Map:CTRR=Past Population Disease Condition<br>Map:CTRRr3=DefinedObservationResult.result<br>Map:CTRv1.0=DefinedEligibilityCriterion.requiredResponse<br>Map:CTRv1.0=DefinedObservationResult.value<br>Map:FDA HL7 SD SD DSTU2012=PlannedSubjectActivity/Observation.value<br>Map:FDA HL7 SD SD DSTU2012=StudyProtocol//plannedStudy/precondition/eligibilityCriterion.value<br>Map:HL7SP=VerificationEvent.value<br>Map:Lab=LabResult.textResult<br>Map:Lab=LabResult.referenceTextList<br>Map:Lab=LabResult.numericResult<br>Map:Lab=LabResult.numericPrecision<br>Map:PGx v1.0=PB.PBDIAG<br>Map:PSCv2.6=Population.name<br>Map:PSCv2.6=PlannedActivity.condition<br>Map:PSCv2.6=Population.abbreviation<br>Map:PSCv2.6=ScheduledActivity.condition<br>Map:SDTM IGv3.1.1=QS.QSSTRESN<br>Map:SDTM IGv3.1.1=QS.QSORRESU<br>Map:SDTM IGv3.1.1=PE.PEORRES<br>Map:SDTM IGv3.1.1=PE.PESTRESU <br>Map:SDTM IGv3.1.1=PE.PEORRESU<br>Map:SDTM IGv3.1.1=SC.SCORRES<br>Map:SDTM IGv3.1.1=PE.PESTRESN<br>Map:SDTM IGv3.1.1=IE.IESTRESC<br>Map:SDTM IGv3.1.1=EG.EGSTRESC<br>Map:SDTM IGv3.1.1=LB.LBORRES<br>Map:SDTM IGv3.1.1=DS.DSTERM<br>Map:SDTM IGv3.1.1=TS.TSVAL<br>Map:SDTM IGv3.1.1=QS.QSORRES<br>Map:SDTM IGv3.1.1=VS.VSORRES<br>Map:SDTM IGv3.1.1=LB.LBLOINC<br>Map:SDTM IGv3.1.1=EG.EGORRESU<br>Map:SDTM IGv3.1.1=EG.EGORRES<br>Map:SDTM IGv3.1.1=DV.DVDECOD<br>Map:SDTM IGv3.1.1=PE.PESTRESC<br>Map:SDTM IGv3.1.1=SC.SCORRESU<br>Map:SDTM IGv3.1.1=CM.CMOCCUR<br>Map:SDTM IGv3.1.1=MH.MHDECOD<br>Map:SDTM IGv3.1.1=VS.VSORRESU<br>Map:SDTM IGv3.1.1=EG.EGLOINC<br>Map:SDTM IGv3.1.1=QS.QSSTRESU<br>Map:SDTM IGv3.1.1=SC.SCSTRESU<br>Map:SDTM IGv3.1.1=VS.VSLOINC<br>Map:SDTM IGv3.1.1=VS.VSSTRESC<br>Map:SDTM IGv3.1.1=LB.LBSTRESU<br>Map:SDTM IGv3.1.1=EG.EGSTRESN<br>Map:SDTM IGv3.1.1=SC.SCSTRESC<br>Map:SDTM IGv3.1.1=LB.LBORRESU<br>Map:SDTM IGv3.1.1=LB.LBSTRESC<br>Map:SDTM IGv3.1.1=VS.VSSTRESN<br>Map:SDTM IGv3.1.1=QS.QSSTRESC<br>Map:SDTM IGv3.1.1=IE.IEORRES<br>Map:SDTM IGv3.1.1=EG.EGSTRESU<br>Map:SDTM IGv3.1.1=MH.MHOCCUR<br>Map:SDTM IGv3.1.1=MH.MHTERM<br>Map:SDTM IGv3.1.1=LB.LBSTRESN<br>Map:SDTM IGv3.1.1=VS.VSSTRESU<br>Map:SDTM IGv3.1.1=SC.SCSTRESN<br>Map:SDTM IGv3.1.2=TS.TSPARMCD where TSPARMCD=AGEMAX<br>Map:SDTM IGv3.1.2=TS.TSPARM where TSPARMCD=SEXPOP<br>Map:SDTM IGv3.1.2=TS.TSVAL where TSPARMCD=AGEMAX<br>Map:SDTM IGv3.1.2=TS.TSPARMCD where TSPARMCD=SEXPOP<br>Map:SDTM IGv3.1.2=TS.TSPARMCD where TSPARMCD=TDIGRP<br>Map:SDTM IGv3.1.2=TS.TSPARMCD where TSPARMCD=AGEMIN<br>Map:SDTM IGv3.1.2=TS.TSVAL where TSPARMCD=TDIGRP<br>Map:SDTM IGv3.1.2=TS.TSVAL where TSPARMCD=SEXPOP<br>Map:SDTM IGv3.1.2=TS.TSPARM where TSPARMCD=AGEMAX<br>Map:SDTM IGv3.1.2=TS.TSPARM where TSPARMCD=AGEMIN<br>Map:SDTM IGv3.1.2=TS.TSPARM where TSPARMCD=TDIGRP<br>Map:SDTM IGv3.1.3=TS.TSVALCD WHERE TSPARMCD = "AGEMIN"<br>Map:SDTM IGv3.1.3=TS.TSVALNF WHERE TSPARMCD = "SEXPOP"<br>Map:SDTM IGv3.1.3=TS.TSVCDREF WHERE TSPARMCD = "AGEMIN"<br>Map:SDTM IGv3.1.3=TS.TSVAL WHERE TSPARMCD = "HLTSUBJI"<br>Map:SDTM IGv3.1.3=TS.TSVAL WHERE TSPARMCD = "SEXPOP"<br>Map:SDTM IGv3.1.3=TS.TSVCDVER WHERE TSPARMCD = "AGEMIN"<br>Map:SDTM IGv3.1.3=TS.TSVALNF WHERE TSPARMCD = "AGEMIN"<br>Map:SDTM IGv3.1.3=TS.TSVCDVER WHERE TSPARMCD = "AGEMAX"<br>Map:SDTM IGv3.1.3=TS.TSVALCD WHERE TSPARMCD = "AGEMAX"<br>Map:SDTM IGv3.1.3=TS.TSVALNF WHERE TSPARMCD = "HLTSUBJI"<br>Map:SDTM IGv3.1.3=TS.TSVALNF WHERE TSPARMCD = "AGEMAX"<br>Map:SDTM IGv3.1.3=TS.TSVAL WHERE TSPARMCD = "AGEMAX"<br>Map:SDTM IGv3.1.3=TS.TSVCDVER WHERE TSPARMCD = "SEXPOP"<br>Map:SDTM IGv3.1.3=TS.TSVAL WHERE TSPARMCD = "AGEMIN"<br>Map:SDTM IGv3.1.3=TS.TSVCDREF WHERE TSPARMCD = "SEXPOP"<br>Map:SDTM IGv3.1.3=TS.TSVCDVER WHERE TSPARMCD = "TDIGRP"<br>Map:SDTM IGv3.1.3=TS.TSVALNF WHERE TSPARMCD = "TDIGRP"<br>Map:SDTM IGv3.1.3=TS.TSVALCD WHERE TSPARMCD = "SEXPOP"<br>Map:SDTM IGv3.1.3=TS.TSVAL WHERE TSPARMCD = "TDIGRP"<br>Map:SDTM IGv3.1.3=TS.TSVALCD WHERE TSPARMCD = "TDIGRP"<br>Map:SDTM IGv3.1.3=TS.TSVCDREF WHERE TSPARMCD = "TDIGRP"<br>Map:SDTM IGv3.1.3=TS.TSVCDREF WHERE TSPARMCD = "AGEMAX"<br>
+						<div class="ObjectDetailsNotes"><table>
+	<tr>
+		<td valign="top">
+			<i>Notes: </i><span style="margin-left: .4cm;"> </span>
+		</td>
+		<td>
+			DEFINITION:&lt;br/&gt;Data or information that is determined by an act of observation.&lt;br/&gt;&lt;br/&gt;EXAMPLE(S):&lt;br/&gt;The result of a lab test, physical finding, self-reported symptom.&lt;br/&gt;&lt;br/&gt;The adverse event term code.&lt;br/&gt;&lt;br/&gt;OTHER NAME(S):&lt;br/&gt;&lt;br/&gt;NOTE(S):&lt;br/&gt;The DefinedObservationResult class can be used to represent defined ranges for &lt;br/&gt;contingencies by constraining the result attribute from ANY to IVL#lt;PQ#gt;, for &lt;br/&gt;instance, or any other range value. Such DefinedObservationResults may be used as &lt;br/&gt;criteria for conditional activities or repeated activities.&lt;br/&gt;
+		</td>
+	</tr>
+</table></div>
+
+						
+				</td>
+			</tr>			<tr>
+				<td width="100%" class="TableRow">
+					<i>Public BL</i><br /><strong>&nbsp;&nbsp;valueNegationIndicator</strong>
+				</td>
+			</tr>
+			<tr>
+				<td class="TableRowBottomDashed"  colspan="1">										
+					<a href="#" onclick="parent.toggleData('DetailsImageAttributes1694')" style="text-decoration: none; color: #000000;"><img src="../../images/plus03.gif" align="absmiddle" id="DetailsImageAttributes1694" border="0" />Details:</a>
+					<table border="0" cellspacing="0" cellpadding="0" class="Table" style="padding: 4px 18px;">
+					
+						<tr id="DetailsImageAttributes1694_00" style="display: none;">
+							<td width="75"><i>Alias:</i></td>
+							<td></td>
+						</tr>
+						<tr id="DetailsImageAttributes1694_01" style="display: none;">
+							<td width="75"><i>Initial:</i></td>
+							<td></td>
+						</tr>
+						<tr id="DetailsImageAttributes1694_02" style="display: none;">
+							<td width="75"><i>Stereotype: </i></td>
+							<td></td>
+						</tr>
+						<tr id="DetailsImageAttributes1694_03" style="display: none;">
+							<td width="75"><i>Ordered: </i></td>
+							<td></td>
+						</tr>
+						<tr id="DetailsImageAttributes1694_04" style="display: none;">
+							<td width="75"><i>Range: </i></td>
+							<td>Range:0 to 1</td>
+						</tr>
+						<tr id="DetailsImageAttributes1694_05" style="display: none;">
+							<td width="75"><i>Transient: </i></td>
+							<td>False</td>
+						</tr>
+						<tr id="DetailsImageAttributes1694_06" style="display: none;">
+							<td width="75"><i>Derived: </i></td>
+							<td>False</td>
+						</tr>
+							<tr id="DetailsImageAttributes1694_07" style="display: none;">
+							<td width="75"><i>IsID: </i></td>
+						<td>False</td>
+						</tr>
+					</table>
+					
+					Map:HL7SDr1=TimePointEventDefinition.negationInd<br>
+						<div class="ObjectDetailsNotes"><table>
+	<tr>
+		<td valign="top">
+			<i>Notes: </i><span style="margin-left: .4cm;"> </span>
+		</td>
+		<td>
+			DEFINITION:&lt;br/&gt;Specifies whether, when the observation event occurred, the finding communicated by the value attribute was NOT found.&lt;br/&gt;&lt;br/&gt;EXAMPLE(S):&lt;br/&gt;&lt;br/&gt;OTHER NAME(S):&lt;br/&gt;&lt;br/&gt;NOTE(S):&lt;br/&gt;This attribute should only be used when the terminology used for DefinedObservationResult.value is not itself capable of expressing negated findings (e.g., ICD9).&lt;br/&gt;
+		</td>
+	</tr>
+</table></div>
+
+						
+				</td>
+			</tr>			<tr>
+				<td width="100%" class="TableRow">
+					<i>Public CD</i><br /><strong>&nbsp;&nbsp;typeCode</strong>
+				</td>
+			</tr>
+			<tr>
+				<td class="TableRowBottomDashed"  colspan="1">										
+					<a href="#" onclick="parent.toggleData('DetailsImageAttributes1695')" style="text-decoration: none; color: #000000;"><img src="../../images/plus03.gif" align="absmiddle" id="DetailsImageAttributes1695" border="0" />Details:</a>
+					<table border="0" cellspacing="0" cellpadding="0" class="Table" style="padding: 4px 18px;">
+					
+						<tr id="DetailsImageAttributes1695_00" style="display: none;">
+							<td width="75"><i>Alias:</i></td>
+							<td></td>
+						</tr>
+						<tr id="DetailsImageAttributes1695_01" style="display: none;">
+							<td width="75"><i>Initial:</i></td>
+							<td></td>
+						</tr>
+						<tr id="DetailsImageAttributes1695_02" style="display: none;">
+							<td width="75"><i>Stereotype: </i></td>
+							<td></td>
+						</tr>
+						<tr id="DetailsImageAttributes1695_03" style="display: none;">
+							<td width="75"><i>Ordered: </i></td>
+							<td></td>
+						</tr>
+						<tr id="DetailsImageAttributes1695_04" style="display: none;">
+							<td width="75"><i>Range: </i></td>
+							<td>Range:0 to 1</td>
+						</tr>
+						<tr id="DetailsImageAttributes1695_05" style="display: none;">
+							<td width="75"><i>Transient: </i></td>
+							<td>False</td>
+						</tr>
+						<tr id="DetailsImageAttributes1695_06" style="display: none;">
+							<td width="75"><i>Derived: </i></td>
+							<td>False</td>
+						</tr>
+							<tr id="DetailsImageAttributes1695_07" style="display: none;">
+							<td width="75"><i>IsID: </i></td>
+						<td>False</td>
+						</tr>
+					</table>
+					
+					Map:CTOM=ClinicalResult.value<br>Map:CTRRr3=DefinedObservationResult.typeCode<br>Map:CTRv1.0=DefinedObservationResult.typeCode<br>
+						<div class="ObjectDetailsNotes"><table>
+	<tr>
+		<td valign="top">
+			<i>Notes: </i><span style="margin-left: .4cm;"> </span>
+		</td>
+		<td>
+			DEFINITION:&lt;br/&gt;A coded value specifying the kind of observation result.&lt;br/&gt;&lt;br/&gt;EXAMPLE(S):&lt;br/&gt;For blood pressure, the results might be 120 for systolic and 80 for diastolic, where systolic and diastolic are the typeCode distinguishing the two numbers.&lt;br/&gt;&lt;br/&gt;OTHER NAME(S):&lt;br/&gt;&lt;br/&gt;NOTE(S):&lt;br/&gt;
+		</td>
+	</tr>
+</table></div>
+
+						
+				</td>
+			</tr>			<tr>
+				<td width="100%" class="TableRow">
+					<i>Public OID</i><br /><strong>&nbsp;&nbsp;targetCodingSystem</strong>
+				</td>
+			</tr>
+			<tr>
+				<td class="TableRowBottomDashed"  colspan="1">										
+					<a href="#" onclick="parent.toggleData('DetailsImageAttributes1696')" style="text-decoration: none; color: #000000;"><img src="../../images/plus03.gif" align="absmiddle" id="DetailsImageAttributes1696" border="0" />Details:</a>
+					<table border="0" cellspacing="0" cellpadding="0" class="Table" style="padding: 4px 18px;">
+					
+						<tr id="DetailsImageAttributes1696_00" style="display: none;">
+							<td width="75"><i>Alias:</i></td>
+							<td></td>
+						</tr>
+						<tr id="DetailsImageAttributes1696_01" style="display: none;">
+							<td width="75"><i>Initial:</i></td>
+							<td></td>
+						</tr>
+						<tr id="DetailsImageAttributes1696_02" style="display: none;">
+							<td width="75"><i>Stereotype: </i></td>
+							<td></td>
+						</tr>
+						<tr id="DetailsImageAttributes1696_03" style="display: none;">
+							<td width="75"><i>Ordered: </i></td>
+							<td></td>
+						</tr>
+						<tr id="DetailsImageAttributes1696_04" style="display: none;">
+							<td width="75"><i>Range: </i></td>
+							<td>Range:0 to 1</td>
+						</tr>
+						<tr id="DetailsImageAttributes1696_05" style="display: none;">
+							<td width="75"><i>Transient: </i></td>
+							<td>False</td>
+						</tr>
+						<tr id="DetailsImageAttributes1696_06" style="display: none;">
+							<td width="75"><i>Derived: </i></td>
+							<td>False</td>
+						</tr>
+							<tr id="DetailsImageAttributes1696_07" style="display: none;">
+							<td width="75"><i>IsID: </i></td>
+						<td>False</td>
+						</tr>
+					</table>
+					
+					Map:BRIDGv2.2=PlannedObservationResult.targetCodingSystem<br>Map:CTRv1.0=DefinedObservationResult.targetCodingSystem<br>
+						<div class="ObjectDetailsNotes"><table>
+	<tr>
+		<td valign="top">
+			<i>Notes: </i><span style="margin-left: .4cm;"> </span>
+		</td>
+		<td>
+			DEFINITION:&lt;br/&gt;The coding system to use for recording results for the associated activity or evaluation.&lt;br/&gt;&lt;br/&gt;EXAMPLE(S):&lt;br/&gt;&lt;br/&gt;OTHER NAME(S):&lt;br/&gt;&lt;br/&gt;NOTE(S):&lt;br/&gt;
+		</td>
+	</tr>
+</table></div>
+
+						
+				</td>
+			</tr>			<tr>
+				<td width="100%" class="TableRow">
+					<i>Public CD</i><br /><strong>&nbsp;&nbsp;targetAnatomicSiteCode</strong>
+				</td>
+			</tr>
+			<tr>
+				<td class="TableRowBottomDashed"  colspan="1">										
+					<a href="#" onclick="parent.toggleData('DetailsImageAttributes1697')" style="text-decoration: none; color: #000000;"><img src="../../images/plus03.gif" align="absmiddle" id="DetailsImageAttributes1697" border="0" />Details:</a>
+					<table border="0" cellspacing="0" cellpadding="0" class="Table" style="padding: 4px 18px;">
+					
+						<tr id="DetailsImageAttributes1697_00" style="display: none;">
+							<td width="75"><i>Alias:</i></td>
+							<td></td>
+						</tr>
+						<tr id="DetailsImageAttributes1697_01" style="display: none;">
+							<td width="75"><i>Initial:</i></td>
+							<td></td>
+						</tr>
+						<tr id="DetailsImageAttributes1697_02" style="display: none;">
+							<td width="75"><i>Stereotype: </i></td>
+							<td></td>
+						</tr>
+						<tr id="DetailsImageAttributes1697_03" style="display: none;">
+							<td width="75"><i>Ordered: </i></td>
+							<td></td>
+						</tr>
+						<tr id="DetailsImageAttributes1697_04" style="display: none;">
+							<td width="75"><i>Range: </i></td>
+							<td>Range:0 to 1</td>
+						</tr>
+						<tr id="DetailsImageAttributes1697_05" style="display: none;">
+							<td width="75"><i>Transient: </i></td>
+							<td>False</td>
+						</tr>
+						<tr id="DetailsImageAttributes1697_06" style="display: none;">
+							<td width="75"><i>Derived: </i></td>
+							<td>False</td>
+						</tr>
+							<tr id="DetailsImageAttributes1697_07" style="display: none;">
+							<td width="75"><i>IsID: </i></td>
+						<td>False</td>
+						</tr>
+					</table>
+					
+					Map:CTOM=LesionDescription.contactAnatomicSiteCode<br>Map:CTOM=LesionDescription.contactAnatomicSiteCodeSystem<br>Map:CTRv1.0=DefinedObservationResult.targetAnatomicSiteCode<br>Map:SDTM IGv3.1.1=EX.EXLOC<br>Map:SDTM IGv3.1.1=AE.AELOC<br>Map:SDTM IGv3.1.1=PE.PELOC<br>Map:SDTM IGv3.1.1=VS.VSLOC<br>
+						<div class="ObjectDetailsNotes"><table>
+	<tr>
+		<td valign="top">
+			<i>Notes: </i><span style="margin-left: .4cm;"> </span>
+		</td>
+		<td>
+			DEFINITION:&lt;br/&gt;A coded value specifying the anatomic location that is the focus of an observation result.&lt;br/&gt;&lt;br/&gt;EXAMPLE(S):&lt;br/&gt;Arm for skin rash. &lt;br/&gt;&lt;br/&gt;OTHER NAME(S):&lt;br/&gt;&lt;br/&gt;NOTE(S):&lt;br/&gt;The target site of the observation result may be different than the target site of the observation that generated it.&#160; For instance, the target site of the observation may be broad (e.g. skin) while the target site of the observation result is specific (e.g. skin on chest).&lt;br/&gt;&lt;br/&gt;Sources that capture anatomic site and laterality separately should map both to this attribute. For implementation models based on BRIDG where site and laterality are captured separately, you may wish to capture both concepts as a post-coordinated code structure or as multiple code repetitions.&lt;br/&gt;
+		</td>
+	</tr>
+</table></div>
+
+						
+				</td>
+			</tr>			<tr>
+				<td width="100%" class="TableRow">
+					<i>Public CD</i><br /><strong>&nbsp;&nbsp;targetAnatomicSiteLateralityCode</strong>
+				</td>
+			</tr>
+			<tr>
+				<td class="TableRowBottomDashed"  colspan="1">										
+					<a href="#" onclick="parent.toggleData('DetailsImageAttributes1698')" style="text-decoration: none; color: #000000;"><img src="../../images/plus03.gif" align="absmiddle" id="DetailsImageAttributes1698" border="0" />Details:</a>
+					<table border="0" cellspacing="0" cellpadding="0" class="Table" style="padding: 4px 18px;">
+					
+						<tr id="DetailsImageAttributes1698_00" style="display: none;">
+							<td width="75"><i>Alias:</i></td>
+							<td></td>
+						</tr>
+						<tr id="DetailsImageAttributes1698_01" style="display: none;">
+							<td width="75"><i>Initial:</i></td>
+							<td></td>
+						</tr>
+						<tr id="DetailsImageAttributes1698_02" style="display: none;">
+							<td width="75"><i>Stereotype: </i></td>
+							<td></td>
+						</tr>
+						<tr id="DetailsImageAttributes1698_03" style="display: none;">
+							<td width="75"><i>Ordered: </i></td>
+							<td></td>
+						</tr>
+						<tr id="DetailsImageAttributes1698_04" style="display: none;">
+							<td width="75"><i>Range: </i></td>
+							<td>Range:0 to 1</td>
+						</tr>
+						<tr id="DetailsImageAttributes1698_05" style="display: none;">
+							<td width="75"><i>Transient: </i></td>
+							<td>False</td>
+						</tr>
+						<tr id="DetailsImageAttributes1698_06" style="display: none;">
+							<td width="75"><i>Derived: </i></td>
+							<td>False</td>
+						</tr>
+							<tr id="DetailsImageAttributes1698_07" style="display: none;">
+							<td width="75"><i>IsID: </i></td>
+						<td>False</td>
+						</tr>
+					</table>
+					
+					Map:CTRv1.0=DefinedObservationResult.targetAnatomicSiteLateralityCode<br>Map:SDTM IGv3.1.1=VS.VSLOC<br>Map:SDTM IGv3.1.1=PE.PELOC<br>Map:SDTM IGv3.1.1=EX.EXLOC<br>Map:SDTM IGv3.1.1=AE.AELOC<br>
+						<div class="ObjectDetailsNotes"><table>
+	<tr>
+		<td valign="top">
+			<i>Notes: </i><span style="margin-left: .4cm;"> </span>
+		</td>
+		<td>
+			DEFINITION:&lt;br/&gt;A coded value specifying the side of the body (or a paired organ) that is a target site for a procedure. &lt;br/&gt;&lt;br/&gt;EXAMPLE(S):&lt;br/&gt;bilateral, left, right&lt;br/&gt;&lt;br/&gt;OTHER NAME(S):&lt;br/&gt;&lt;br/&gt;NOTE(S):&lt;br/&gt;This attribute was deprecated in BRIDG 3.1 but undeprecated in 4.0 since source use cases for separate laterality include SDTM and CTOM.&#160; This change ensures that users of the BRIDG model are not bound to a particular kind of vocabulary, such as pre- or post-coordinated vocabularies.&#160; Collapsing laterality into the target site code is an implementation option.&lt;br/&gt;
+		</td>
+	</tr>
+</table></div>
+
+						
+				</td>
+			</tr>			<tr>
+				<td width="100%" class="TableRow">
+					<i>Public CD</i><br /><strong>&nbsp;&nbsp;confidentialityCode</strong>
+				</td>
+			</tr>
+			<tr>
+				<td class="TableRowBottomDashed"  colspan="1">										
+					<a href="#" onclick="parent.toggleData('DetailsImageAttributes1699')" style="text-decoration: none; color: #000000;"><img src="../../images/plus03.gif" align="absmiddle" id="DetailsImageAttributes1699" border="0" />Details:</a>
+					<table border="0" cellspacing="0" cellpadding="0" class="Table" style="padding: 4px 18px;">
+					
+						<tr id="DetailsImageAttributes1699_00" style="display: none;">
+							<td width="75"><i>Alias:</i></td>
+							<td></td>
+						</tr>
+						<tr id="DetailsImageAttributes1699_01" style="display: none;">
+							<td width="75"><i>Initial:</i></td>
+							<td></td>
+						</tr>
+						<tr id="DetailsImageAttributes1699_02" style="display: none;">
+							<td width="75"><i>Stereotype: </i></td>
+							<td></td>
+						</tr>
+						<tr id="DetailsImageAttributes1699_03" style="display: none;">
+							<td width="75"><i>Ordered: </i></td>
+							<td></td>
+						</tr>
+						<tr id="DetailsImageAttributes1699_04" style="display: none;">
+							<td width="75"><i>Range: </i></td>
+							<td>Range:0 to 1</td>
+						</tr>
+						<tr id="DetailsImageAttributes1699_05" style="display: none;">
+							<td width="75"><i>Transient: </i></td>
+							<td>False</td>
+						</tr>
+						<tr id="DetailsImageAttributes1699_06" style="display: none;">
+							<td width="75"><i>Derived: </i></td>
+							<td>False</td>
+						</tr>
+							<tr id="DetailsImageAttributes1699_07" style="display: none;">
+							<td width="75"><i>IsID: </i></td>
+						<td>False</td>
+						</tr>
+					</table>
+					
+					Map:CTOM=Histopathology.confidentialityCode<br>Map:CTOM=LesionDescription.confidentialityCode<br>Map:CTOM=Observation.confidentialityCode<br>Map:CTOM=ClinicalResult.confidentialityCode<br>Map:CTRv1.0=DefinedObservationResult.confidentialityCode<br>
+						<div class="ObjectDetailsNotes"><table>
+	<tr>
+		<td valign="top">
+			<i>Notes: </i><span style="margin-left: .4cm;"> </span>
+		</td>
+		<td>
+			DEFINITION:&lt;br/&gt;A coded value specifying the degree of privacy applicable for the observation result.&lt;br/&gt;&lt;br/&gt;EXAMPLE(S):&lt;br/&gt;&lt;br/&gt;OTHER NAME(S):&lt;br/&gt;&lt;br/&gt;NOTE(S):&lt;br/&gt;
+		</td>
+	</tr>
+</table></div>
+
+						
+				</td>
+			</tr>			<tr>
+				<td width="100%" class="TableRow">
+					<i>Public ST</i><br /><strong>&nbsp;&nbsp;derivationExpression</strong>
+				</td>
+			</tr>
+			<tr>
+				<td class="TableRowBottomDashed"  colspan="1">										
+					<a href="#" onclick="parent.toggleData('DetailsImageAttributes1700')" style="text-decoration: none; color: #000000;"><img src="../../images/plus03.gif" align="absmiddle" id="DetailsImageAttributes1700" border="0" />Details:</a>
+					<table border="0" cellspacing="0" cellpadding="0" class="Table" style="padding: 4px 18px;">
+					
+						<tr id="DetailsImageAttributes1700_00" style="display: none;">
+							<td width="75"><i>Alias:</i></td>
+							<td></td>
+						</tr>
+						<tr id="DetailsImageAttributes1700_01" style="display: none;">
+							<td width="75"><i>Initial:</i></td>
+							<td></td>
+						</tr>
+						<tr id="DetailsImageAttributes1700_02" style="display: none;">
+							<td width="75"><i>Stereotype: </i></td>
+							<td></td>
+						</tr>
+						<tr id="DetailsImageAttributes1700_03" style="display: none;">
+							<td width="75"><i>Ordered: </i></td>
+							<td></td>
+						</tr>
+						<tr id="DetailsImageAttributes1700_04" style="display: none;">
+							<td width="75"><i>Range: </i></td>
+							<td>Range:0 to 1</td>
+						</tr>
+						<tr id="DetailsImageAttributes1700_05" style="display: none;">
+							<td width="75"><i>Transient: </i></td>
+							<td>False</td>
+						</tr>
+						<tr id="DetailsImageAttributes1700_06" style="display: none;">
+							<td width="75"><i>Derived: </i></td>
+							<td>False</td>
+						</tr>
+							<tr id="DetailsImageAttributes1700_07" style="display: none;">
+							<td width="75"><i>IsID: </i></td>
+						<td>False</td>
+						</tr>
+					</table>
+					
+					Map:CTRv1.0=DefinedObservationResult.derivationExpression<br>Map:TDMv2=(New content)<br>
+						<div class="ObjectDetailsNotes"><table>
+	<tr>
+		<td valign="top">
+			<i>Notes: </i><span style="margin-left: .4cm;"> </span>
+		</td>
+		<td>
+			DEFINITION:&lt;br/&gt;A character string containing a formal language expression that specifies how the observation result&#39;s attributes are, should be, or have been derived from input parameters associated with activity.&lt;br/&gt;&lt;br/&gt;EXAMPLE(S):&lt;br/&gt;&lt;br/&gt;OTHER NAME(S):&lt;br/&gt;&lt;br/&gt;NOTE(S):&lt;br/&gt;
+		</td>
+	</tr>
+</table></div>
+
+						
+				</td>
+			</tr>
+	</table>
+</div>
+		<div class="ItemBody" id="AssociationsToTable">
+			<table border="0" cellspacing="0" cellpadding="0" class="Table">
+				<tr>
+					<td width="40%" class="TableHeading">Element</td>
+					<td width="30%" class="TableHeading">Source Role</td>
+					<td width="30%" class="TableHeading">Target Role</td>
+				</tr>
+				<tr>
+					<td width="40%" class="TableRow" valign="top">
+						<a href="EA275.htm">DefinedObservation</a><br />
+						Class &nbsp;
+					</td>
+					<td width="30%" class="TableRow" valign="top">
+						<strong>Name:</strong> producedDefinedObservationResult<br />
+						&nbsp;
+					</td>
+					<td width="30%" class="TableRow" valign="top">
+						<strong>Name:</strong> producingDefinedObservation<br />
+						&nbsp;	
+					</td>
+				</tr>
+				<tr>
+					<td class="TableRowBottomDashed"  colspan="3">
+						<div class="DetailsDivParent"><img src="../../images/minus03.gif" align="absmiddle" id="DetailsImageLink1701" onclick="parent.toggleDiv('detailsDIVLink1701','DetailsImageLink1701')" />Details:
+							<div id="detailsDIVLink1701" class="DetailsDiv" >
+							<div class="ObjectDetailsNotes">DESCRIPTION:&lt;br/&gt;Each DefinedObservationResult always is a result of one DefinedObservation.&#160; Each DefinedObservation might result in one or more DefinedObservationResult.&lt;br/&gt;&lt;br/&gt;DEFINITION:&lt;br/&gt;&lt;br/&gt;EXAMPLE(S):&lt;br/&gt;&lt;br/&gt;OTHER NAME(S):&lt;br/&gt;&lt;br/&gt;NOTE(S):&lt;br/&gt;&lt;br/&gt;</div>
+
+							</div>
+						</div>
+					</td>
+				</tr>
+
+			</table>
+		</div>
+		<div class="ItemBody" id="AssociationsFromTable">
+			<table border="0" cellspacing="0" cellpadding="0" class="Table">
+				<tr>
+					<td width="40%" class="TableHeading">Element</td>
+					<td width="30%" class="TableHeading">Source Role</td>
+					<td width="30%" class="TableHeading">Target Role</td>
+				</tr>
+				<tr>
+					<td width="40%" class="TableRow" valign="top">
+						<a href="EA275.htm">DefinedObservation</a><br />
+						Class &nbsp;
+					</td>
+					<td width="30%" class="TableRow" valign="top">
+						<strong>Name:</strong> focusedDefinedObservation<br />
+						&nbsp;
+					</td>
+					<td width="30%" class="TableRow" valign="top">
+						<strong>Name:</strong> focusingDefinedObservationResult<br />
+						&nbsp;	
+					</td>
+				</tr>
+				<tr>
+					<td class="TableRowBottomDashed"  colspan="3">
+						<div class="DetailsDivParent"><img src="../../images/minus03.gif" align="absmiddle" id="DetailsImageLink1702" onclick="parent.toggleDiv('detailsDIVLink1702','DetailsImageLink1702')" />Details:
+							<div id="detailsDIVLink1702" class="DetailsDiv" >
+							<div class="ObjectDetailsNotes">DESCRIPTION:&lt;br/&gt;Each DefinedObservation might have as focal context one DefinedObservationResult. Each DefinedObservationResult might be the focal context for one or more DefinedObservation.&lt;br/&gt;&lt;br/&gt;DEFINITION:&lt;br/&gt;&lt;br/&gt;EXAMPLE(S):&lt;br/&gt;&lt;br/&gt;OTHER NAME(S):&lt;br/&gt;&lt;br/&gt;NOTE(S):&lt;br/&gt;&lt;br/&gt;</div>
+
+							</div>
+						</div>
+					</td>
+				</tr>
+				<tr>
+					<td width="40%" class="TableRow" valign="top">
+						<a href="EA260.htm">DefinedContingentOnRelationship</a><br />
+						Class &nbsp;
+					</td>
+					<td width="30%" class="TableRow" valign="top">
+						<strong>Name:</strong> contingentDefinedContingentOnRelationship<br />
+						&nbsp;
+					</td>
+					<td width="30%" class="TableRow" valign="top">
+						<strong>Name:</strong> prerequisiteDefinedObservationResult<br />
+						&nbsp;	
+					</td>
+				</tr>
+				<tr>
+					<td class="TableRowBottomDashed"  colspan="3">
+						<div class="DetailsDivParent"><img src="../../images/minus03.gif" align="absmiddle" id="DetailsImageLink1703" onclick="parent.toggleDiv('detailsDIVLink1703','DetailsImageLink1703')" />Details:
+							<div id="detailsDIVLink1703" class="DetailsDiv" >
+							<div class="ObjectDetailsNotes">DESCRIPTION:&lt;br/&gt;Each DefinedContingentOnRelationship might be contingent upon one DefinedObservationResult. Each DefinedObservationResult might be a condition for one or more DefinedContingentOnRelationship.&lt;br/&gt;&lt;br/&gt;DEFINITION:&lt;br/&gt;&lt;br/&gt;EXAMPLE(S):&lt;br/&gt;&lt;br/&gt;OTHER NAME(S):&lt;br/&gt;&lt;br/&gt;NOTE(S):&lt;br/&gt;&lt;br/&gt;</div>
+
+							</div>
+						</div>
+					</td>
+				</tr>
+				<tr>
+					<td width="40%" class="TableRow" valign="top">
+						<a href="EA298.htm">PlannedCriterionGroupOptionRelationship</a><br />
+						Class &nbsp;
+					</td>
+					<td width="30%" class="TableRow" valign="top">
+						<strong>Name:</strong> choicePlannedCriterionGroupOptionRelationship<br />
+						&nbsp;
+					</td>
+					<td width="30%" class="TableRow" valign="top">
+						<strong>Name:</strong> optionDefinedObservationResult<br />
+						&nbsp;	
+					</td>
+				</tr>
+				<tr>
+					<td class="TableRowBottomDashed"  colspan="3">
+						<div class="DetailsDivParent"><img src="../../images/minus03.gif" align="absmiddle" id="DetailsImageLink1704" onclick="parent.toggleDiv('detailsDIVLink1704','DetailsImageLink1704')" />Details:
+							<div id="detailsDIVLink1704" class="DetailsDiv" >
+							<div class="ObjectDetailsNotes">DESCRIPTION:&lt;br/&gt;Each PlannedCriterionGroupOptionRelationship might be a choice that has as option one DefinedObservationResult. Each DefinedObservationResult might be an option that can satisfy one or more PlannedCriterionGroupOptionRelationship.&lt;br/&gt;&lt;br/&gt;DEFINITION:&lt;br/&gt;&lt;br/&gt;EXAMPLE(S):&lt;br/&gt;&lt;br/&gt;OTHER NAME(S):&lt;br/&gt;&lt;br/&gt;NOTE(S):&lt;br/&gt;&lt;br/&gt;</div>
+
+							</div>
+						</div>
+					</td>
+				</tr>
+				<tr>
+					<td width="40%" class="TableRow" valign="top">
+						<a href="EA263.htm">DefinedCriterionGroupOptionRelationship</a><br />
+						Class &nbsp;
+					</td>
+					<td width="30%" class="TableRow" valign="top">
+						<strong>Name:</strong> choiceDefinedCriterionGroupOptionRelationship<br />
+						&nbsp;
+					</td>
+					<td width="30%" class="TableRow" valign="top">
+						<strong>Name:</strong> optionDefinedObservationResult<br />
+						&nbsp;	
+					</td>
+				</tr>
+				<tr>
+					<td class="TableRowBottomDashed"  colspan="3">
+						<div class="DetailsDivParent"><img src="../../images/minus03.gif" align="absmiddle" id="DetailsImageLink1705" onclick="parent.toggleDiv('detailsDIVLink1705','DetailsImageLink1705')" />Details:
+							<div id="detailsDIVLink1705" class="DetailsDiv" >
+							<div class="ObjectDetailsNotes">DESCRIPTION:&lt;br/&gt;Each DefinedCriterionGroupOptionRelationship might be a choice that has as option one DefinedObservationResult. Each DefinedObservationResult might be an option that can satisfy one or more DefinedCriterionGroupOptionRelationship.&lt;br/&gt;&lt;br/&gt;DEFINITION:&lt;br/&gt;&lt;br/&gt;EXAMPLE(S):&lt;br/&gt;&lt;br/&gt;OTHER NAME(S):&lt;br/&gt;&lt;br/&gt;NOTE(S):&lt;br/&gt;&lt;br/&gt;</div>
+
+							</div>
+						</div>
+					</td>
+				</tr>
+				<tr>
+					<td width="40%" class="TableRow" valign="top">
+						<a href="EA307.htm">PlannedRepeatActivityUntilRule</a><br />
+						Class &nbsp;
+					</td>
+					<td width="30%" class="TableRow" valign="top">
+						<strong>Name:</strong> repeatedPlannedRepeatActivityUntilRule<br />
+						&nbsp;
+					</td>
+					<td width="30%" class="TableRow" valign="top">
+						<strong>Name:</strong> triggeringDefinedObservationResult<br />
+						&nbsp;	
+					</td>
+				</tr>
+				<tr>
+					<td class="TableRowBottomDashed"  colspan="3">
+						<div class="DetailsDivParent"><img src="../../images/minus03.gif" align="absmiddle" id="DetailsImageLink1706" onclick="parent.toggleDiv('detailsDIVLink1706','DetailsImageLink1706')" />Details:
+							<div id="detailsDIVLink1706" class="DetailsDiv" >
+							<div class="ObjectDetailsNotes">DESCRIPTION:&lt;br/&gt;Each PlannedRepeatActivityUntilRule might be repeated until one DefinedObservationResult. Each DefinedObservationResult might trigger the cessation of one or more PlannedRepeatActivityUntilRule.&lt;br/&gt;&lt;br/&gt;DEFINITION:&lt;br/&gt;&lt;br/&gt;EXAMPLE(S):&lt;br/&gt;&lt;br/&gt;OTHER NAME(S):&lt;br/&gt;&lt;br/&gt;NOTE(S):&lt;br/&gt;&lt;br/&gt;</div>
+
+							</div>
+						</div>
+					</td>
+				</tr>
+				<tr>
+					<td width="40%" class="TableRow" valign="top">
+						<a href="EA295.htm">PlannedContingentOnRelationship</a><br />
+						Class &nbsp;
+					</td>
+					<td width="30%" class="TableRow" valign="top">
+						<strong>Name:</strong> contingentPlannedContingentOnRelationship<br />
+						&nbsp;
+					</td>
+					<td width="30%" class="TableRow" valign="top">
+						<strong>Name:</strong> prerequisiteDefinedObservationResult<br />
+						&nbsp;	
+					</td>
+				</tr>
+				<tr>
+					<td class="TableRowBottomDashed"  colspan="3">
+						<div class="DetailsDivParent"><img src="../../images/minus03.gif" align="absmiddle" id="DetailsImageLink1707" onclick="parent.toggleDiv('detailsDIVLink1707','DetailsImageLink1707')" />Details:
+							<div id="detailsDIVLink1707" class="DetailsDiv" >
+							<div class="ObjectDetailsNotes">DESCRIPTION:&lt;br/&gt;Each PlannedContingentOnRelationship might be contingent upon one DefinedObservationResult. Each DefinedObservationResult might be a condition for one or more PlannedContingentOnRelationship.&lt;br/&gt;&lt;br/&gt;DEFINITION:&lt;br/&gt;&lt;br/&gt;EXAMPLE(S):&lt;br/&gt;&lt;br/&gt;OTHER NAME(S):&lt;br/&gt;&lt;br/&gt;NOTE(S):&lt;br/&gt;&lt;br/&gt;</div>
+
+							</div>
+						</div>
+					</td>
+				</tr>
+				<tr>
+					<td width="40%" class="TableRow" valign="top">
+						<a href="EA281.htm">DefinedRepeatActivityUntilRule</a><br />
+						Class &nbsp;
+					</td>
+					<td width="30%" class="TableRow" valign="top">
+						<strong>Name:</strong> repeatedDefinedRepeatActivityUntilRule<br />
+						&nbsp;
+					</td>
+					<td width="30%" class="TableRow" valign="top">
+						<strong>Name:</strong> triggeringDefinedObservationResult<br />
+						&nbsp;	
+					</td>
+				</tr>
+				<tr>
+					<td class="TableRowBottomDashed"  colspan="3">
+						<div class="DetailsDivParent"><img src="../../images/minus03.gif" align="absmiddle" id="DetailsImageLink1708" onclick="parent.toggleDiv('detailsDIVLink1708','DetailsImageLink1708')" />Details:
+							<div id="detailsDIVLink1708" class="DetailsDiv" >
+							<div class="ObjectDetailsNotes">DESCRIPTION:&lt;br/&gt;Each DefinedRepeatActivityUntilRule might be repeated until one DefinedObservationResult. Each DefinedObservationResult might trigger the cessation of one or more DefinedRepeatActivityUntilRule.&lt;br/&gt;&lt;br/&gt;DEFINITION:&lt;br/&gt;&lt;br/&gt;EXAMPLE(S):&lt;br/&gt;&lt;br/&gt;OTHER NAME(S):&lt;br/&gt;&lt;br/&gt;NOTE(S):&lt;br/&gt;&lt;br/&gt;</div>
+
+							</div>
+						</div>
+					</td>
+				</tr>
+				<tr>
+					<td width="40%" class="TableRow" valign="top">
+						<a href="EA297.htm">PlannedCriterionGroupCompositionRelationship</a><br />
+						Class &nbsp;
+					</td>
+					<td width="30%" class="TableRow" valign="top">
+						<strong>Name:</strong> compositePlannedCriterionGroupCompositionRelationship<br />
+						&nbsp;
+					</td>
+					<td width="30%" class="TableRow" valign="top">
+						<strong>Name:</strong> componentDefinedObservationResult<br />
+						&nbsp;	
+					</td>
+				</tr>
+				<tr>
+					<td class="TableRowBottomDashed"  colspan="3">
+						<div class="DetailsDivParent"><img src="../../images/minus03.gif" align="absmiddle" id="DetailsImageLink1709" onclick="parent.toggleDiv('detailsDIVLink1709','DetailsImageLink1709')" />Details:
+							<div id="detailsDIVLink1709" class="DetailsDiv" >
+							<div class="ObjectDetailsNotes">DESCRIPTION:&lt;br/&gt;Each PlannedCriterionGroupCompositionRelationship might be the parent of one DefinedObservationResult. Each DefinedObservationResult might be the component of one or more PlannedCriterionGroupCompositionRelationship.&lt;br/&gt;&lt;br/&gt;DEFINITION:&lt;br/&gt;&lt;br/&gt;EXAMPLE(S):&lt;br/&gt;&lt;br/&gt;OTHER NAME(S):&lt;br/&gt;&lt;br/&gt;NOTE(S):&lt;br/&gt;&lt;br/&gt;</div>
+
+							</div>
+						</div>
+					</td>
+				</tr>
+				<tr>
+					<td width="40%" class="TableRow" valign="top">
+						<a href="EA262.htm">DefinedCriterionGroupCompositionRelationship</a><br />
+						Class &nbsp;
+					</td>
+					<td width="30%" class="TableRow" valign="top">
+						<strong>Name:</strong> compositeDefinedCriterionGroupCompositionRelationship<br />
+						&nbsp;
+					</td>
+					<td width="30%" class="TableRow" valign="top">
+						<strong>Name:</strong> componentDefinedObservationResult<br />
+						&nbsp;	
+					</td>
+				</tr>
+				<tr>
+					<td class="TableRowBottomDashed"  colspan="3">
+						<div class="DetailsDivParent"><img src="../../images/minus03.gif" align="absmiddle" id="DetailsImageLink1710" onclick="parent.toggleDiv('detailsDIVLink1710','DetailsImageLink1710')" />Details:
+							<div id="detailsDIVLink1710" class="DetailsDiv" >
+							<div class="ObjectDetailsNotes">DESCRIPTION:&lt;br/&gt;Each DefinedCriterionGroupCompositionRelationship might be the parent of one DefinedObservationResult. Each DefinedObservationResult might be the component of one or more DefinedCriterionGroupCompositionRelationship.&lt;br/&gt;&lt;br/&gt;DEFINITION:&lt;br/&gt;&lt;br/&gt;EXAMPLE(S):&lt;br/&gt;&lt;br/&gt;OTHER NAME(S):&lt;br/&gt;&lt;br/&gt;NOTE(S):&lt;br/&gt;&lt;br/&gt;</div>
+
+							</div>
+						</div>
+					</td>
+				</tr>
+
+			</table>
+		</div>
+<div class="ItemBody" id="TaggedValTable">
+	<table align="center" border="0" cellspacing="0" cellpadding="0" class="Table">
+		<tr>
+			<td width="50%" class="TableHeading">Tag</td>
+			<td width="50%" class="TableHeading">Value</td>
+		</tr>
+					<tr>
+				<td width="50%" class="TableRow" valign="top">Map:CTRRr3</td>
+				<td width="50%" class="TableRow" valign="top">DefinedObservationResult</td>
+			</tr>	
+			<tr>
+				<td class="TableRowBottomDashed"  colspan="2">
+					<div class="DetailsDivParent"><img src="../../images/minus03.gif" align="absmiddle" id="DetailsImageScenario1711" onclick="parent.toggleDiv('detailsDIVScenario1711','DetailsImageScenario1711')" />Details:
+						<div id="detailsDIVScenario1711" class="DetailsDiv" >
+						&nbsp;
+						</div>
+					</div>
+				</td>
+			</tr>			<tr>
+				<td width="50%" class="TableRow" valign="top">Map:CTRv1.0</td>
+				<td width="50%" class="TableRow" valign="top">DefinedObservationResult</td>
+			</tr>	
+			<tr>
+				<td class="TableRowBottomDashed"  colspan="2">
+					<div class="DetailsDivParent"><img src="../../images/minus03.gif" align="absmiddle" id="DetailsImageScenario1712" onclick="parent.toggleDiv('detailsDIVScenario1712','DetailsImageScenario1712')" />Details:
+						<div id="detailsDIVScenario1712" class="DetailsDiv" >
+						&nbsp;
+						</div>
+					</div>
+				</td>
+			</tr>
+	</table>
+</div>		<div class="ItemBody" id="LinksTable">
+			<table align="center" border="0" cellspacing="0" cellpadding="0" class="Table">
+				<tr>
+					<td width="30%" class="TableHeading">Object</td>
+					<td width="10%" class="TableHeading">Type</td>
+					<td width="10%" class="TableHeading">Connection</td>
+					<td width="10%" class="TableHeading">Direction</td>
+					<td width="40%" class="TableHeading">Notes</td>
+				</tr>
+				<tr>
+					<td width="30%" class="TableRow" valign="top"><a href="EA264.htm">DefinedDiagnosis</a></td>
+					<td width="10%" class="TableRow" valign="top">Class</td>
+					<td width="10%" class="TableRow" valign="top">Generalization</td>
+					<td width="10%" class="TableRow" valign="top">From</td>
+					<td width="40%" class="TableRow" valign="top">DESCRIPTION:
+Each DefinedDiagnosis always specializes one DefinedObservationResult. Each DefinedObservationResult might be specialized by one DefinedDiagnosis.
+
+DEFINITION:
+
+EXAMPLE(S):
+
+OTHER NAME(S):
+
+NOTE(S):</td>
+				</tr>
+				<tr>
+					<td width="30%" class="TableRow" valign="top"><a href="EA284.htm">DefinedStratificationCriterionPermissibleResult</a></td>
+					<td width="10%" class="TableRow" valign="top">Class</td>
+					<td width="10%" class="TableRow" valign="top">Generalization</td>
+					<td width="10%" class="TableRow" valign="top">From</td>
+					<td width="40%" class="TableRow" valign="top">DESCRIPTION:
+Each DefinedStratificationCriterionPermissibleResult always specializes one DefinedObservationResult. Each DefinedObservationResult might be specialized by one DefinedStratificationCriterionPermissibleResult.
+
+DEFINITION:
+
+EXAMPLE(S):
+
+OTHER NAME(S):
+
+NOTE(S):</td>
+				</tr>
+				<tr>
+					<td width="30%" class="TableRow" valign="top"><a href="EA258.htm">DefinedAdverseEvent</a></td>
+					<td width="10%" class="TableRow" valign="top">Class</td>
+					<td width="10%" class="TableRow" valign="top">Generalization</td>
+					<td width="10%" class="TableRow" valign="top">From</td>
+					<td width="40%" class="TableRow" valign="top">DESCRIPTION:
+Each DefinedAdverseEvent always specializes one DefinedObservationResult. Each DefinedObservationResult might be specialized by one DefinedAdverseEvent.
+
+DEFINITION:
+
+EXAMPLE(S):
+
+OTHER NAME(S):
+
+NOTE(S):
+</td>
+				</tr>
+				<tr>
+					<td width="30%" class="TableRow" valign="top"><a href="EA273.htm">DefinedMedicalConditionResult</a></td>
+					<td width="10%" class="TableRow" valign="top">Class</td>
+					<td width="10%" class="TableRow" valign="top">Generalization</td>
+					<td width="10%" class="TableRow" valign="top">From</td>
+					<td width="40%" class="TableRow" valign="top">DESCRIPTION:
+Each DefinedMedicalConditionResult always specializes one DefinedObservationResult. Each DefinedObservationResult might be specialized by one DefinedMedicalConditionResult.
+
+DEFINITION:
+
+EXAMPLE(S):
+
+OTHER NAME(S):
+
+NOTE(S):
+</td>
+				</tr>
+				<tr>
+					<td width="30%" class="TableRow" valign="top"><a href="EA266.htm">DefinedEligibilityCriterionAnswer</a></td>
+					<td width="10%" class="TableRow" valign="top">Class</td>
+					<td width="10%" class="TableRow" valign="top">Generalization</td>
+					<td width="10%" class="TableRow" valign="top">From</td>
+					<td width="40%" class="TableRow" valign="top">DESCRIPTION:
+Each DefinedEligibilityCriterionAnswer always specializes one DefinedObservationResult. Each DefinedObservationResult might be specialized by one DefinedEligibilityCriterionAnswer.
+
+DEFINITION:
+
+EXAMPLE(S):
+
+OTHER NAME(S):
+
+NOTE(S):
+</td>
+				</tr>
+
+			</table>
+		</div>
+	</div>
+<div class="pageFooter"></div>
+ 
+</body>
+</html>
