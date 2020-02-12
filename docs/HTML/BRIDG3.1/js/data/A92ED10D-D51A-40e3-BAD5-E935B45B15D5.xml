@@ -1,7 +1,0 @@
-tocTab[tocTab.length] = new Array("4.4.1", "1", "A Trial of Drug Therapy vs Surgical Treatment", "EARoot/EA4/EA4/EA730.htm", "4.png", "", "", "{E6CDE8FD-965D-433b-BC92-2F0DECFA52F0}", "Package");
-tocTab[tocTab.length] = new Array("4.4.2", "1", "Crossover Trial of AB vs. BA With Wash-Out and Follow-Up", "EARoot/EA4/EA4/EA731.htm", "4.png", "", "", "{725189BF-2958-4cb6-B185-527E9BAF0BDB}", "Package");
-tocTab[tocTab.length] = new Array("4.4.3", "1", "SOA Example", "EARoot/EA4/EA4/EA732.htm", "4.png", "", "", "{05972E5D-FF28-429e-B8BA-18FCC7068A94}", "Package");
-tocTab[tocTab.length] = new Array("4.4.4", "1", "Three-Period Crossover Trial Comparing Placebo and Low and High Doses of A", "EARoot/EA4/EA4/EA733.htm", "4.png", "", "", "{FB368F5D-7083-4745-95C8-E8AD3851999D}", "Package");
-tocTab[tocTab.length] = new Array("4.4.5", "1", "Titration Trial of A vs B", "EARoot/EA4/EA4/EA734.htm", "4.png", "", "", "{C885BC48-DB88-48dd-A9C5-6BE248B6E61A}", "Package");
-tocTab[tocTab.length] = new Array("4.4.6", "1", "Trial with Cycles of Chemotherapy", "EARoot/EA4/EA4/EA735.htm", "4.png", "", "", "{2EAFDB01-47B1-437a-9576-01B72C84E7BC}", "Package");
-tocTab[tocTab.length] = new Array("4.4.7", "1", "Trial with Two-Stage Process for Arm Assignment", "EARoot/EA4/EA4/EA736.htm", "4.png", "", "", "{117D15E7-56FA-4c90-92BB-ACFBE8CCFDF8}", "Package");

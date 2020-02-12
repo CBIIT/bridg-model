@@ -1,4 +1,0 @@
-tocTab[tocTab.length] = new Array("4.1", "1", "Adverse Event Report", "EARoot/EA4/EA416.htm", "4.png", "", "", "{F1372EC6-FAE9-4642-9B4E-D7FABD1EA12A}", "Package");
-tocTab[tocTab.length] = new Array("4.2", "1", "CDISC Study Data Tabulation Model (SDTM)", "EARoot/EA4/EA417.htm", "4.png", "", "", "{DA54A4FF-1E90-4f91-AECD-9923A086CE58}", "Package");
-tocTab[tocTab.length] = new Array("4.3", "1", "Cooperative Group", "EARoot/EA4/EA418.htm", "4.png", "", "", "{05B260BE-2B9D-453a-B1A3-D1220F6BFAA4}", "Package");
-tocTab[tocTab.length] = new Array("4.4", "1", "Trial Design", "EARoot/EA4/EA420.htm", "4.png", "", "", "{A92ED10D-D51A-40e3-BAD5-E935B45B15D5}", "Package");

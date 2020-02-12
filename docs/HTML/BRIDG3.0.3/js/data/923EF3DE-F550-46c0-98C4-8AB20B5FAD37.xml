@@ -1,8 +1,0 @@
-tocTab[tocTab.length] = new Array("3.1.4:1", "", "Scheduled Activity Status", "EARoot/EA3/EA1/EA4/EA314.htm", "183.png", "660", "0", "", "Statechart diagram0","{21653FB4-2AB0-4906-8D35-613868CB3F9E}");
-tocTab[tocTab.length] = new Array("3.1.4:2", "", "Confirmed Outside Protocol-Specific Window", "EARoot/EA3/EA1/EA4/EA316.htm", "20.png", "10048", "0", "", "State0","{CD66B95F-D7C4-4289-855E-7D9112ECE864}");
-tocTab[tocTab.length] = new Array("3.1.4:3", "", "Confirmed Within Protocol-Specific Window", "EARoot/EA3/EA1/EA4/EA317.htm", "20.png", "10049", "0", "", "State0","{515CA3A4-7358-4fa5-8550-B255446506D6}");
-tocTab[tocTab.length] = new Array("3.1.4:4", "", "Final", "EARoot/EA3/EA1/EA4/EA318.htm", "69.png", "10053", "0", "", "StateNode0","{B40509A1-BE56-4ef4-9685-080EC95F281B}");
-tocTab[tocTab.length] = new Array("3.1.4:5", "", "Missed", "EARoot/EA3/EA1/EA4/EA319.htm", "20.png", "10050", "0", "", "State0","{CF6E4B54-6872-4768-A25C-B83C254345BC}");
-tocTab[tocTab.length] = new Array("3.1.4:6", "", "Patient-Specific Study Calendar Activity Is Planned", "EARoot/EA3/EA1/EA4/EA320.htm", "68.png", "10054", "0", "", "StateNode0","{768C6005-206D-47c1-B8F0-2DD8A5B3F3DB}");
-tocTab[tocTab.length] = new Array("3.1.4:7", "", "Planned", "EARoot/EA3/EA1/EA4/EA321.htm", "20.png", "10051", "0", "", "State0","{FBBF5C11-4A18-4aa9-A1D7-AEFDC66D0529}");
-tocTab[tocTab.length] = new Array("3.1.4:8", "", "Scheduled", "EARoot/EA3/EA1/EA4/EA322.htm", "20.png", "10052", "0", "", "State0","{8446DDBA-B1D8-4212-9656-6F2763108AB0}");

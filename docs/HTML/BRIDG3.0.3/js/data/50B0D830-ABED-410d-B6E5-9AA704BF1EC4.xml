@@ -1,4 +1,0 @@
-tocTab[tocTab.length] = new Array("3.1.1", "1", "Defined Activity Status", "EARoot/EA3/EA1/EA266.htm", "4.png", "", "", "{91C92DE6-8FC0-4f23-B449-3A7CA2F65696}", "Package");
-tocTab[tocTab.length] = new Array("3.1.2", "1", "Performed Activity Status", "EARoot/EA3/EA1/EA267.htm", "4.png", "", "", "{8865EE25-5AE4-4519-8E37-7180F5BF02C4}", "Package");
-tocTab[tocTab.length] = new Array("3.1.3", "1", "Planned Activity Status", "EARoot/EA3/EA1/EA268.htm", "4.png", "", "", "{A76367EB-854A-4fb7-BA02-0D9F381DCFDE}", "Package");
-tocTab[tocTab.length] = new Array("3.1.4", "1", "Scheduled Activity Status", "EARoot/EA3/EA1/EA269.htm", "4.png", "", "", "{923EF3DE-F550-46c0-98C4-8AB20B5FAD37}", "Package");

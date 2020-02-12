@@ -1,7 +1,0 @@
-tocTab[tocTab.length] = new Array("3.1.2:1", "", "Performed Activity Status", "EARoot/EA3/EA1/EA2/EA263.htm", "183.png", "582", "0", "", "Statechart diagram0","{5117BCC3-AB92-43ce-9C0C-36350F67FEA8}");
-tocTab[tocTab.length] = new Array("3.1.2:2", "", "Aborted", "EARoot/EA3/EA1/EA2/EA265.htm", "20.png", "8598", "0", "", "State0","{1C1C2A35-94FF-4a67-BB94-433A87F6F780}");
-tocTab[tocTab.length] = new Array("3.1.2:3", "", "Activity is Performed", "EARoot/EA3/EA1/EA2/EA266.htm", "68.png", "8603", "0", "", "StateNode0","{FC866EAD-5420-4b7d-9EC5-65D9A702694B}");
-tocTab[tocTab.length] = new Array("3.1.2:4", "", "Cancelled", "EARoot/EA3/EA1/EA2/EA267.htm", "20.png", "8602", "0", "", "State0","{DC351663-2A27-49d9-8032-50B19F50DE93}");
-tocTab[tocTab.length] = new Array("3.1.2:5", "", "Completed", "EARoot/EA3/EA1/EA2/EA268.htm", "20.png", "8599", "0", "", "State0","{28D792BF-E655-4634-91C8-2E8B1BF2C827}");
-tocTab[tocTab.length] = new Array("3.1.2:6", "", "Final", "EARoot/EA3/EA1/EA2/EA269.htm", "69.png", "8601", "0", "", "StateNode0","{ABD7CFFF-3092-4671-A94E-2A3EC0C9A65F}");
-tocTab[tocTab.length] = new Array("3.1.2:7", "", "Ongoing", "EARoot/EA3/EA1/EA2/EA270.htm", "20.png", "8600", "0", "", "State0","{33B6F97D-3CFE-4abf-AC05-423B746F3E37}");
