@@ -3,20 +3,99 @@
     <TITLE>BRIDG Model</TITLE>
     <STYLE>
     body {
-      font-family: Tahoma, sans-serif;
-      padding:20px;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      line-height: 1.6;
+      color: #333;
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 20px;
+      background-color: #fafafa;
     }
+    
     div.callout-box {
-      width: 80%; /* Define a width for the block */
-      margin: 0 auto; /* Centers the block horizontally */
-      background-color: #EEE;
-      padding: 10px;
-      border:2px solid black;
-      box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
-
+      width: 85%;
+      max-width: 800px;
+      margin: 0 auto 30px auto;
+      background: linear-gradient(135deg, #2c3e50 0%, #34495e 50%, #2c3e50 100%);
+      padding: 25px 30px;
+      border-radius: 12px;
+      border: none;
+      box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15), 0 3px 10px rgba(0, 0, 0, 0.1);
+      position: relative;
+      overflow: hidden;
     }
+    
+    div.callout-box::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      height: 3px;
+      background: linear-gradient(90deg, #3498db, #2ecc71, #f39c12, #e74c3c);
+    }
+    
     h2.callout-text {
-      font-family: Tahoma, sans-serif;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      font-weight: 600;
+      font-size: 1.4em;
+      color: #ffffff;
+      margin: 0;
+      text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+    }
+    
+    h2.callout-text a {
+      color: #3498db;
+      text-decoration: none;
+      font-weight: 700;
+      transition: color 0.3s ease;
+    }
+    
+    h2.callout-text a:hover {
+      color: #5dade2;
+      text-shadow: 0 0 8px rgba(52, 152, 219, 0.4);
+    }
+    
+    h2 {
+      color: #2c3e50;
+      font-size: 1.8em;
+      margin-bottom: 15px;
+      margin-top: 30px;
+      font-weight: 600;
+      border-bottom: 2px solid #3498db;
+      padding-bottom: 8px;
+    }
+    
+    h3 {
+      color: #34495e;
+      font-size: 1.3em;
+      margin-top: 25px;
+      margin-bottom: 12px;
+      font-weight: 600;
+    }
+    
+    p {
+      margin-bottom: 16px;
+      text-align: justify;
+      font-size: 1.05em;
+    }
+    
+    ul {
+      margin: 15px 0;
+      padding-left: 30px;
+    }
+    
+    li {
+      margin-bottom: 8px;
+      font-size: 1.05em;
+    }
+    
+    .content-container {
+      background: white;
+      padding: 30px;
+      border-radius: 8px;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
+      margin-top: 20px;
     }
     </STYLE>
   </HEAD>
@@ -26,8 +105,7 @@
             Find The BRIDG Model at: <A href='https://github.com/CBIIT/bridg-model'> BRIDG MODEL Source Code </A>
         </h2>
       </div>
-      <div>
-<br/>
+      <div class="content-container">
 <h3> BRIDG: An international standard for biomedical research concepts designed to support computable semantic
 interoperability </h3>
 
