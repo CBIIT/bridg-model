@@ -100,5 +100,113 @@
     </STYLE>
   </HEAD>
   <BODY>
-timeline goes here
+  <h2> BRIDG Timeline </h2>
+  <P>Below is the BRIDG Project timeline that explains the evolution of the project since its inception. </P> 
+  <h3>2003 — 2004: CDISC and HL7 RCRIM WG </h3>
+  <P>The idea of building a Domain Analysis Model (DAM) which documented the shared semantics of the 
+      protocol-driven-research domain began with a 2003 dialogue between the CDISC Board of Directors, 
+      Charlie Mead, and HL7 leadership. The two organizations renewed a Memorandum of Understanding (MoU) 
+      to work collaboratively on data exchange standards. Following discussions, the CDISC Board of Directors 
+      began funding the development of a CDISC DAM. The process officially started with a scope definition 
+      meeting in 2004, with the resulting DAM ultimately becoming the BRIDG Model approximately one year later. 
+      The current scope definition of the BRIDG domain still encompasses what was defined at this initial 
+      meeting, <I>i.e. protocol-driven research plus its associated regulatory artifacts.</I></P> 
+  <h3>2004 — 2005: The NCI caBIG® (and CDISC) Structured Protocol Representation Teams</h3>
+  <P> In 2004, US National Cancer Institute (NCI) began to develop a structured model of a clinical 
+      trial protocol as part of the caBIG® project, awarding a grant to the University of Pittsburgh 
+      Medical Center to focus on identifying a set of data elements suitable for a computational representation. 
+      The NCI team sought out other groups interested in standardizing the exchange of information related to 
+      clinical trials research and began collaborating with CDISC and the HL7 RCRIM Work Group. The first joint 
+      modeling sessions were held in late 2004 and continued over the next 9 months. This is when the project officially 
+      adopted the name "BRIDG" (Biomedical Research Integrated Domain Group), a name chosen more for the meaning of the 
+      acronym (to draw attention to the bridging of the semantic gaps that normally impede semantic interoperability) 
+      than the collective meaning of the words behind it. This initial effort resulted in the first Domain Analysis 
+      Model of protocol-driven research, which at that time was referred to as the "CDISC Problem Space Model." </P>
+  <h3>2005 — 2006: Maturation of the BRIDG Project </h3>
+  <P> With the inclusion of multiple stakeholders, the need for more formal governance structure became apparent. 
+      As a result, the BRIDG Board of Directors (BoD) was created in 2005 with representation from each of the four 
+      BRIDG Project stakeholder organizations, i.e. HL7, NCI, CDISC, and the FDA. The BoD was charged with allocating 
+      resources to support the modeling effort, establishing priorities for harmonization, and managing the vetting 
+      and review of the evolving model within their stakeholder organizations. </P>
+  <P> It was also decided that a "Technical Harmonization Committee" (THC, later called the "Semantic Coordination 
+      Committee" (SCC) and now BRIDG Modeling Team) was needed to manage the operational details of the model 
+      construction, harmonization, maintenance, and dissemination. The SCC's responsibilities were defined as making 
+      representational changes in the model and ensuring that ambiguous semantics across the various projects 
+      contributing to the model were either normalized (different terms for the same concept mapped to that concept) or 
+      harmonized (same term for different concepts disambiguated through the creation of new concepts). Like the BoD, 
+      the SCC had representatives from the four stakeholders. </P>
+  <P> Also in 2005, the model was ported from Rational Rose to Sparx Systems Enterprise Architect (EA) tool. This was 
+      partly for the lower cost and partly because of the free model reader available from Sparx Systems, the makers 
+      of EA (<A target="_blank" href="https://www.Sparxsystems.com">www.Sparxsystems.com</A>). 
+      In addition, the model itself was moved from residence on a single laptop to a GForge site. </P>
+  <P> An early version of the BRIDG Model was presented to the HL7 RCRIM WG in late-2005/early-2006 and was subsequently 
+      adopted as the Domain Analysis Model for use by the HL7 RCRIM WG in compliance with the HL7 Development Framework 
+      (HDF) and its increased focus on robust representation of implementation-independent requirements. The intention 
+      was that the HL7 RCRIM WG and CDISC would use the BRIDG Model going forward for all message or technical specification 
+      efforts and reverse engineer all of the implementation-independent semantics from existing RCRIM & CDISC specifications 
+      into the BRIDG Model. As it turned out, some specifications were harmonized with BRIDG (e.g. HL7 Regulated Product 
+      Submission, CDISC SDTM), but not all. </P>
+  <h3>2007 - 2012: BRIDG Evolution</h3>
+  <P> BRIDG became more visible in the community, the SCC started hearing feedback from both domain experts and technologists. 
+      Many domain experts said that the model was too large, too technical, and did not represent their semantics in language 
+      they could understand. The technologists said that the model was not clear enough to map cleanly to downstream models 
+      (e.g., design models, implementation models, etc.). As a result, the BoD and SCC designed a BRIDG solution that would 
+      present each audience with its own perspective on the semantics of protocol-driven research tailored for their purposes: 
+      the UML model was intended for use by domain experts, analysts and some implementers; the HL7 RIM-based model was 
+      intended for use by HL7 v3 message developers; and the OWL-based version was intended for use by ontologists for 
+      semantic validation and inferencing. Over time, the RIM- and OWL-based versions garnered less interest than initially 
+      anticipated, especially given the additional effort required, and were eventually omitted from the later releases. </P>
+  <P> In late 2008, the BoD decided to move BRIDG forward as an international standard through the ISO, which assigned 
+      the identifier “14199” to BRIDG, and Technical Committee (TC) 215 approved the recommendation to circulate BRIDG 
+      as a Draft International Standard (DIS) ballot. During the summer of 2010, the 254 comments from that ISO Joint 
+      Initiative Council (JIC) ballot cycle (along with a parallel comment period within CDISC and a ballot within HL7) 
+      were processed and included in the next two releases of BRIDG. </P>
+  <P> There were multiple BRIDG releases during this time period, each including new semantics from the various 
+      stakeholders models. To see the entire list of BRIDG releases and the projects that were harmonized, please go to 
+      <A target="_blank" href="https://bridgmodel.nci.nih.gov/download-model/download-release"> 
+        Download & Archive > Download Release Packages & Browse Online </A> on this website. </P>
+  <h3>2013 – 2016: BRIDG Scope Expansion – Translational Research</h3>
+  <P> Following a gap in the BRIDG project in late 2012 to early 2013, during which the BoD was reorganized into the 
+      BRIDG Advisory Panel, the leadership of BRIDG determined that an NCI model called the Life Sciences Domain Analysis 
+      Model (LS DAM), a peer of BRIDG that had leveraged common concepts already defined in BRIDG, should be harmonized 
+      with BRIDG. The scope of the resulting model would then be “basic, pre-clinical, clinical, and translational research 
+      and associated regulatory artifacts”. This process started in 2013 and completed in 2015 (with another gap in the 
+      project from late 2013 to mid-2014). The LS DAM harmonization introduced 3 new sub-domains covering concepts related 
+      to biospecimens, molecular biology and experiments. </P>
+  <P> In 2014, a new work group called the <A target="_blank" href="http://www.hl7.org/Special/committees/bridg/index.cfm"> 
+      HL7 BRIDG Work Group </A> was started. This group provided a platform for BRIDG users 
+      and implementers to discuss BRIDG and identify areas of enhancement. That same year, the Advisory Panel was reorganized 
+      into the BRIDG Steering Committee which governs the development and maintenance of the model performed by the SCC as it 
+      was called then, and the BRIDG Modeling Team as it is now. </P>
+  <P> Subsequently, in early 2015, the CDISC Pharmacogenetic and Pharmacogenomic (PGx) domains were harmonized with BRIDG 
+      to complement the related genetic/genomic concepts added to the model for LS DAM. The PGx concepts leveraged and 
+      helped flesh out some concepts identified earlier by the LS DAM harmonization. </P>
+  <P> BRIDG 4.0 was balloted in May 2015 in the HL7 community as a Draft Standard for Trial Use (DSTU) with ballot 
+      comments coming from the FDA and clinical genomics communities and resulted in model changes, documentation updates 
+      and a new architectural focus on making BRIDG more SME-friendly. </P>
+  <h3>2017 – Present: Imaging, SDTM and Model Stability</h3>
+  <P> In 2017, the HL7 BRIDG Work Group was re-merged with the RCRIM Work Group under the new name Biomedical Research and 
+      Regulation (BR&R) Work Group. The BRIDG modeling team continues to vet proposed changes to the model with the BR&R Work 
+      Group which still uses BRIDG as its Domain Information Model. </P>
+  <P> In recent years, the BRIDG model has added a new Imaging sub-domain and harmonized a number of standards brought by 
+      NCI to address the integration of the clinical research domain with imaging concepts which in the past have often been 
+      disconnected. An assortment of imaging-related projects have been harmonized with BRIDG including relevant parts of the 
+      DICOM standard pertaining to the breast cancer standard report (SR TID 1500), the NCI’s Annotated Imaging Markup (AIM) 
+      project, the National Biomedical Imaging Archive, and IHE’s Anatomic Pathology Structure Report. BRIDG is not intending 
+      to absorb all of DICOM detailed level concepts, but just the portions that are overlapping with the clinical research 
+      sphere and the high level imaging parameters that researchers would want to use as search criteria to identify imaging 
+      data relevant to their research. </P>
+  <P> Notably, recent harmonizations have not added large numbers of concepts to the model, thus demonstrating its relative 
+      stability and coverage of core clinical and translational research concepts. This is seen in the harmonization of 
+      CDISC’s SDTM IG v3.2, which introduced approximately a dozen new domains and updates to several existing domains, 
+      but didn’t add substantially to the BRIDG model. Also harmonized during this time was the FDA’s Common Data Model 
+      Harmonization (CDMH), which was based on the harmonization of 4 key models: Sentinel v6.0.2, PCORnet v4.0 (and v3.1), 
+      i2b2ACTv1.7.08b, and OMOPv5.2. The purpose of this project is to provide researchers patient-centered outcomes data 
+      by leveraging the four existing systems and using BRIDG as the intermediary model in which to form a query that 
+      could be translated into the various formats of the data partners. Interestingly, CDMH harmonization also didn’t 
+      add many semantics to the BRIDG model. </P>
+  <P> Another aspect of BRIDG that has been evolving recently is the subsetting of groups of concepts into smaller 
+      diagrams and associated metadata reports, all with the intent of making it easier to find and understand the 
+      range of concepts in BRIDG. These can be found in the Additional Focused Views and CDISC Views packages. </P>
+
   </BODY>
