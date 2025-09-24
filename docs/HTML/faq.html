@@ -202,11 +202,99 @@
         BRIDG model semantics were also available through NCI’s metadata repository (caDSR). </LI>
       </UL>
       <h3> 7. What is a Domain Information Model (DIM)? </h3>
+      <P>A Domain Information Model (DIM) is defined by the following characteristics:</P>
+      <UL>
+        <LI>An implementation-independent view of a domain of interest </LI>
+        <LI>Represents a shared understanding of concepts</LI>
+        <LI>Uses domain terminology and is understandable to domain experts may have little or no UML skills but are a primary consumer </LI>
+        <LI>Includes unambiguous definitions</LI>      
+        <LI>Uses complex data types designed specifically for the domain of focus</LI>
+        <LI>Follows good modeling practices</LI>
+        <LI>Enables interoperability when systems shared a common understanding</LI>
+        <LI>Is built by analysts and subject matter experts who developed consensus</LI>
+        <LI>Informs development of downstream artifacts</LI>
+        <LI></LI>
+      </UL>
+      <P>The BRIDG model was primarily a conceptual model from which detailed design level artifacts could be built. </P>
       <h3> 8. How was BRIDG updated? What is harmonization? </h3>
+      <P>The BRIDG model was updated through a process called harmonization. Harmonization is a multi-step process of:</P> 
+      <UL>
+        <LI>Extracting knowledge from two or more sources, stakeholders, or perspectives, </LI>
+        <LI>Assessing the underlying commonalities and differences based on the meaning, not names or representation, and</LI>
+        <LI>Determining a common, non-ambiguous representation of that knowledge across the various stakeholders.</LI>
+      </UL>
+      <P>Ideally harmonization is done by an informed, neutral group who must decide if the various perspectives represent 
+      the same or different semantic content. What is challenging is that sometimes the same basic concept has different 
+      names across the various sources. Alternatively, sometimes the same name is used to mean different things across 
+      various, sources requiring an examination of differences in terms of context, culture or deep-layer semantics. Thus, 
+      the process may be complex and time-consuming and can involve back and forth discussions or investigation to identify 
+      exactly what is meant and how best to represent it. It can also impact existing concepts in the model causing a
+      refinement in definition or representation of a previously harmonized concept. At the end, the goal is to have a
+      model of shared meaning, even if different stakeholders prefer their own names; as long as the underlying meaning 
+      is the same, data exchange can successfully be conducted based on that meaning. In support of that, all BRIDG model 
+      element descriptions contained an “OTHER NAME(S)” section where synonyms could be captured. </P>
+      <P>Note that in some cases, content from a given source was not added to the BRIDG model, such as when a concept 
+      was outside the scope of BRIDG, was highly specialized for a specific purpose, was implementation-specific, 
+      such as audit metadata. Additionally, since BRIDG supported a wide range of scenarios the cardinality and data 
+      type of a given concept may be less constrained than a given source project would have it because BRIDG must 
+      satisfy the needs of other users also. In such cases, users of the BRIDG model were able to constrain the 
+      representation in BRIDG to suit their requirements, such as making something mandatory that is optional in 
+      BRIDG, or changing the data type from a generic quantity or code data type to a specific kind. Such changes 
+      were still compatible with BRIDG. With model harmonization, change is inevitable, so planning for change is essential.</P> 
       <h3> 9. How did the BRIDG Model relate to similar efforts? What was the advantage of BRIDG? </h3>
+      <P>As a Domain Information Model (DIM), BRIDG was intended to cover the domain of protocol-driven research 
+      and associated artifacts. This domain naturally overlapped with numerous other domains, some of which 
+      had domain analysis models already in process while others did not. The BRIDG Modeling Team intended to 
+      harmonize with those projects on the common semantics as directed by the Steering Committee. </P>
+      <P>The key advantage of the BRIDG Model was that it was a shared view of the semantics of protocol-driven 
+      research as understood by the stakeholders and represented countless hours of consensus development.</P>
       <h3> 10. Why should I use BRIDG? Why should I get involved? Why should I care?  </h3>
+      <P>The BRIDG Model is a mature, stable model of the domain of translational research. It is an ISO standard 
+      (ISO 14199) that was vetted by subject matter experts over its 10+ years. It provides a conceptual view of 
+      concepts which includes clear, unambiguous definitions, semantically robust data types, high-level cardinality 
+      that can be constrained, explicit relationships between concepts, as well as example values, other names, and 
+      notes when appropriate. Using such a model helps to consistently define, use, and re-use clinical information 
+      globally across the clinical information life cycle and facilitates information sharing within an organization 
+      as well as with external customers, partners, vendors, and regulators. </P>
+      <P><B>Please note: </B> The BRIDG model is no longer actively maintained. The information is provided for 
+      reference purposes only. </P>
       <h3> 11. What is Computable Semantic Interoperability?  </h3>
+      <P>The primary use case for the BRIDG Model was the need to achieve computable semantic interoperability (CSI) 
+      within the domain of protocol-driven research as well as between this domain and others that may intersect with 
+      it at the interoperability level. For example, the domains of protocol-driven research and public health both 
+      share the concept of adverse events. It is beyond the scope of this BRIDG FAQ to discuss the full details of CSI, 
+      but a summary of the so-called Pillars of Computable Semantic Interoperability can be stated as follows: </P>
+      <UL>
+        <LI>Pillar #1: Common model across the domains/sub-domains-of-interest </LI>
+        <LI>Pillar #2: Computationally robust data type specification</LI>
+        <LI>Pillar #3: Framework for binding context-specific terminologies to model elements</LI>
+        <LI>Pillar #4: Methodology for constructing interoperability “building blocks” (e.g., data interchange 
+          structures or application service specifications) built around successful construction of Pillars #1 - #3</LI>
+      </UL>
+      <P>The BRIDG Model was a manifestation of Pillar #1. The BRIDG Model supported Pillar #2 through the specification 
+      of each BRIDG Model attribute using the HL7 v3 abstract data type standard. Pillar #3 can be supported by leveraging 
+      tooling support from NCI’s Cancer Data Standards Repository (caDSR) and Enterprise Vocabulary Services (EVS). Not all 
+      organizations will address Pillar #4 in the same way, however, the evolving HL7 FHIR standard is one avenue.</P> 
       <h3> 12. What domain concepts were included in the BRIDG Model?  </h3>
+      <P>BRIDG concepts were represented by classes grouped into sub-domain packages in the Enterprise Architect 
+      (EA) file. The sub-domains logically grouped related classes and included: </P>
+      <UL>
+        <LI>Common: people, organizations, various roles, products, places</LI>
+        <LI>Protocol Representation: protocol document and amendments, study design, study agents and arms, planned 
+        study personnel, sites and resources </LI>
+        <LI>Study Conduct: scheduled and performed activities, results, actual study personnel, sites and resources, 
+        study status </LI>
+        <LI>Biospecimen: specimens – biologic and others, specimen collection groups, specimen processing and moving </LI>
+        <LI>Imaging: imaging study, imaging acquisition and reconstruction protocols, radiopharmaceuticals </LI>
+        <LI>Molecular Biology: biomarkers, genes, genetic variations, genetic observations and results </LI>
+        <LI>Adverse Event: adverse events, actions taken, causality, seriousness, outcome, product investigation </LI>
+        <LI>Experiment: experiment, experimental activity items and factors, device parameters, in vivo-, in vitro-, 
+        and physico-chemical characterization </LI>
+        <LI>Regulatory: regulatory applications, submissions, sponsors, assessments</LI>
+        <LI>Statistical Analysis: statistical analysis plans and modification summaries, general and sample-size statistical 
+        considerations, data monitoring committee charter </LI>
+      </UL>
+      <P>All classes had associations to other classes within and/or across sub-domains. </P>
       <h3> 13. How do I read a UML Class Model? </h3>
       <h3> 14. What tools do I need to view the BRIDG Model?  </h3>
       <h3> 15. Is there a glossary or dictionary for the BRIDG Model? </h3>
