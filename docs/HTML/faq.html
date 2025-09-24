@@ -213,7 +213,6 @@
         <LI>Enables interoperability when systems shared a common understanding</LI>
         <LI>Is built by analysts and subject matter experts who developed consensus</LI>
         <LI>Informs development of downstream artifacts</LI>
-        <LI></LI>
       </UL>
       <P>The BRIDG model was primarily a conceptual model from which detailed design level artifacts could be built. </P>
       <h3> 8. How was BRIDG updated? What is harmonization? </h3>
@@ -296,15 +295,142 @@
       </UL>
       <P>All classes had associations to other classes within and/or across sub-domains. </P>
       <h3> 13. How do I read a UML Class Model? </h3>
+      <P>The Unified Modeling Language (UML) is a "standardized general-purpose modeling language in the field of software 
+      engineering" defined by the Object Management Group. There is a brief introduction to UML concepts and how to read a 
+      UML class diagram in the Appendix of the BRIDG User’s Guide. Download a copy of the latest BRIDG release package and 
+      navigate to the Documentation folder to find the User’s Guide. </P>
       <h3> 14. What tools do I need to view the BRIDG Model?  </h3>
+      <P>The UML representation of the BRIDG Model was developed and maintained in a UML modeling tool from Sparx Systems 
+      called Enterprise Architect. A free viewer  which enables full traversal and inspection of the complete BRIDG Model 
+      (which is an .EAP file) can be downloaded from the Sparx Systems website  
+      <A target="_blank" href="http://www.sparxsystems.com/products/ea/downloads.html">http://www.sparxsystems.com/products/ea/downloads.html. </A></P>
+      <P>Alternatively, the BRIDG modeling team published either an RTF or PDF report of the content of the BRIDG EAP 
+      file, which can be viewed using a word processor. There is also an XMI export of the BRIDG EAP file which can 
+      be imported into most UML modeling tools. Both the report format and the XMI representation are part of every 
+      BRIDG release package. </P>
       <h3> 15. Is there a glossary or dictionary for the BRIDG Model? </h3>
+      <P>Yes, the BRIDG Model glossary is maintained on the BRIDG GitHub site. In addition, definitions for all classes, 
+      attributes, and associations can be found in the BRIDG Model. </P>
       <h3> 16. Who used BRIDG? How?  </h3>
+      <P>The BRIDG Model was used in a variety of ways by different types of organizations. Described here are some 
+      of those implementations, provided for reference purposes only, as the BRIDG model is no longer being 
+      actively maintained and the continued use of BRIDG by the organizations has not been verified. </P>
+      <UL>
+        <LI><B>NCI's caDSR </B><br>
+        The National Cancer Institute (NCI) established the cancer Data Standards Registry and Repository 
+        (caDSR) and its associated applications to help the research community manage and use data standards 
+        by providing shared standards in a variety of human and machine-readable contexts. caDSR includes a 
+        database, application programming interfaces (APIs), and web-based applications for creating and using data 
+        standards for cancer metadata. The metadata in caDSR describes data elements, forms, and information models 
+        used in cancer research and clinical trials. The 3.0.2 version of BRIDG was first registered in caDSR in 2010 
+        to help expose its classes and attributes as a set of non-enumerated CDEs specified using generic ISO datatypes. 
+        This occurred during NCI's caBIG initiative, when models were routinely recorded in caDSR. Over time, it became 
+        apparent that there were many ways to describe similar semantics when concepts were arbitrarily selected from the 
+        NCI Thesaurus, resulting in caDSR content that was not automatically connected through underlying metadata 
+        components, even when semantics were the same. In 2017, a more deliberate alignment of CDEs using BRIDG caDSR 
+        content as a higher-level semantic model was explored, helping to unify semantics through a well-designed 
+        information model. The first experiment was a joint project with the FDA and the National Center for Advancing 
+        Translational Sciences (NCATS), known as the Common Data Model Harmonization (CDMH) project. During this project, 
+        the BRIDG team mapped data elements in OMOP (OHDSI), PCORNet, I2B2ACT, and Sentinel (FDA) to BRIDG, and the 
+        caDSR curation team registered the CDEs, deliberately reusing BRIDG components. This enabled simple queries 
+        leveraging the caDSR underlying meta model to retrieve semantically related CDEs, allowing linkage of models 
+        with different levels of granularity and value sets. Multiple ways to record "mappings" to BRIDG were explored, 
+        such as adding explicit mapping tags as alternate designations for CDEs, but this method provided the most 
+        direct way to facilitate interoperability.</LI>
+        <LI><B>National Marrow Donor Program (NMDP) </B><br>
+        The Center for International Blood and Marrow Transplant Research (CIBMTR) is a combined research program 
+        of the National Marrow Donor Program® and the Medical College of Wisconsin, which facilitates critical 
+        research on cellular therapy outcomes. Since 1972, just four years after the first successful hematopoietic 
+        cell transplantation (HCT), pioneers in the field of HCT recognized the significance of their work and the 
+        importance of collating and sharing data. This collaboration with the global scientific community led to 
+        research that increased survival and enriched quality of life for thousands of patients. CIBMTR, through 
+        its research partners, embraced data standards for electronic data capture and transfer. Common data 
+        elements (CDEs) within the Cancer Data Standards Repository (caDSR) for high-profile CIBMTR forms were 
+        extracted and associated with the BRIDG model. These CDEs represented outcomes data for hematopoietic cell 
+        transplantations and other cellular therapies. </LI>
+        <LI> <B> Thomas Jefferson University </B> <br> 
+        A major barrier to the conduct of biomedical research has been the difficulty of sharing biomedical 
+        research data, both within and between institutions. Data located in different repositories were almost 
+        always organized, categorized, and represented in different ways—a problem referred to as "the Chasm of 
+        Semantic Despair." In an attempt to address this problem, the Cancer Informatics group at the NCI, in 
+        collaboration with colleagues at the FDA, ISO, HL7, and CDISC, developed an international standard data
+        model for biomedical research called the Biomedical Research Integrated Domain Group (BRIDG) model. The 
+        purpose of the BRIDG model was to "bridge" the many chasms of semantic despair that existed within and
+        between academic medical centers, pharmaceutical companies, and government regulators. The Sidney Kimmel 
+        Cancer Center at Thomas Jefferson University in Philadelphia successfully designed and implemented a 
+        cancer research information system based on the NCI-BRIDG model. In a 2019 presentation, Dr. Klumpp 
+        described how the BRIDG model was implemented in the cancer research information system at Thomas 
+        Jefferson and the benefits of such an integrated system. (Summary of Dr. Klumpp's presentation to NCI 
+        CBIIT Speakers Series, Feb. 2019) </LI>
+        <LI> <B>FDA's Common Data Model Harmonization (CDMH) </B><br>
+        The Common Data Model Harmonization (CDMH) Phase 1 project was designed to harmonize specific common 
+        data models (CDMs) so that important research information could be more easily shared and interpreted. 
+        The CDMs from Patient-Centered Outcomes Research Network (PCORNet), Informatics for Integrating Biology & the 
+        Bedside (i2b2/Accrual to Clinical Trials (ACT)), Observational Medical Outcomes Partnership (OMOP), and 
+        Sentinel were mapped to the Biomedical Research Integrated Domain Group (BRIDG) model as the intermediary 
+        model. The resulting 'reference model' from this harmonization (a BRIDG-informed database) was used to 
+        generate use case queries that were tested by several data partners, using electronic health records and 
+        administrative claims as data sources. </LI>
+        <LI> <B> FDA's Janus </B><br>
+        Janus is a data repository for subject-level clinical and nonclinical study data submitted to FDA as part 
+        of a regulatory submission. It was designed to support a transparent, consistent, and efficient scientific 
+        review process by performing automated extraction, transformation, loading, management, and integration of 
+        data to facilitate regulatory review. The Janus conceptual model was informed by the BRIDG model, was designed 
+        to receive data in CDISC SDTM format, and could support other emerging study data exchange standards, such as 
+        HL7 FHIR, v3, and RDF. </LI>
+        <LI> <B> PAREXEL </B><br>
+        Parexel Informatics utilized BRIDG as the basis for a central common data model (CDM) to increase semantic 
+        consistency and quality across a diverse portfolio of products and services. BRIDG provided standard domain 
+        models, well-defined terminologies, and consistent data types that supported the use of those terminologies 
+        and provided metadata for structured data management. Together, these benefits created a "shared language" 
+        across disparate applications. BRIDG was valuable in improving the quality of system integrations and new 
+        software development. This effort was launched to reduce the amount of time required to map customers' 
+        applications, increase the ability to reuse existing code, and achieve greater consistency across projects. 
+        All new development projects were intended to utilize the BRIDG-based CDM to provide a common understanding of 
+        business processes, a single source of interoperable schemas, and greater consistency across interoperable systems. 
+        This CDM was also expected to make it easier to reuse existing code for disparate software implementations. 
+        Implementation of any standard required an up-front investment for future value, and Parexel intended to make 
+        this investment available to the wider community by making their implementation of BRIDG widely available. </LI>
+      </UL>
       <h3> 17. How much did BRIDG cost?  </h3>
+      <P>There was no charge for accessing or using any of the BRIDG content. </P>
       <h3> 18. Was BRIDG copyrighted?   </h3>
+      <P>The BRIDG Model was governed by CDISC Intellectual Property policy.</P>
       <h3> 19. What versions of BRIDG are supported?  </h3>
+      <P>The BRIDG model, while a valuable historical resource, is <B> no longer actively maintained. </B> 
+      Access to this information is provided for reference purposes, acknowledging its past 
+      contributions to the field. <?P>
       <h3> 20. How did I know that my project semantics were harmonized with the BRIDG model?  </h3>
+      <P>As a result of the harmonization process, the BRIDG Modeling team worked closely with project teams to 
+      enable the project team to build a detailed mapping of each project team concept to a BRIDG concept. This was 
+      represented as a mapping spreadsheet (in Excel format), included in every BRIDG release. Mapping tags in the 
+      model itself indicated to which BRIDG concepts the project semantics mapped. Additionally, there was often a 
+      project-level diagram illustrating the BRIDG concepts to which the project’s concepts mapped. </P>
       <h3> 21. How could one find which BRIDG model elements a project was mapped to?  </h3>
+      <P>When a project was harmonized with BRIDG, a mapping spreadsheet was created showing the project model’s 
+      elements and their metadata in columns on the left, the corresponding BRIDG model elements and their metadata 
+      in the columns on the right, and several columns in the middle supporting the process of mapping a source model 
+      to the BRIDG model, such as a mapping path to show the connections between classes in BRIDG that link to the 
+      target element, comments and rationale, status and such. </P> 
+      <P>Another way was to review the project-level diagram. Most recent harmonizations concluded with a project-level 
+      diagram being added to the model.  </P>
+      <P>Finally, when a harmonization was finished, the BRIDG modeling team added mapping tags to each BRIDG model 
+      element that was a target of a mapping in the mapping spreadsheet. Each of these tags captured the name of the 
+      project model and its version as well as the name of the project model element that maps to that BRIDG model 
+      element. This allowed the BRIDG model to self-document its own provenance and users could use this information 
+      to run queries, generate reports, assess for impact analysis, trace back to the mapping spreadsheet, etc. </P>
       <h3> 22. What were “mapping tags”?  </h3>
+      <P>Mapping tags were a way to track what project model elements had been mapped to a given BRIDG model element. 
+      The BRIDG model leveraged a feature available in the Enterprise Architect software where a tag name and tag 
+      value could be defined on any model element. BRIDG used a convention for the tag names: </P>
+      <UL><LI> Map:ProjNamevX.X (e.g., Map:SDTM IGv3.2) </LI></UL>
+      <P>…where “Map:” was the standard prefix or boilerplate, “ProjName” was a shorthand, acronym or abbreviation 
+      of the project or model name, and “vX.X” was an indication of the version or release number.  The mapping 
+      tag values are the names of the project’s data elements. </P> 
+      <P>Mapping tags thus traced the provenance of each concept in the model and could greatly help in impact 
+      analysis when remodeling a concept or help assess interface requirements between two or more BRIDG-harmonized 
+      models or systems. The BRIDG User’s Guide published with each release of BRIDG included a table of mapping 
+      tag names and the harmonized project’s full name. </P>
       <h3> 23. Could the BRIDG Model be used to implement a physical design or generate code?  </h3>
       <h3> 24. Did BRIDG have instance diagrams or state transition diagrams?  </h3>
       
